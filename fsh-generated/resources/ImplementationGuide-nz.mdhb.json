@@ -1,0 +1,84 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "nz.mdhb",
+  "url": "http://example.org/ImplementationGuide/nz.mdhb",
+  "version": "0.1.0",
+  "name": "MidCentralIG",
+  "title": "Te Whatu Ora - MidCentral",
+  "status": "draft",
+  "publisher": "Te Whatu Ora (MidCentral)",
+  "contact": [
+    {
+      "name": "Te Whatu Ora (MidCentral)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "description": "Implementation Guide for Mid-Central's FHIR APIs",
+  "packageId": "nz.mdhb",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "fhir.org.nz.ig.base",
+      "version": "2.0.0",
+      "uri": "http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base",
+      "id": "fhir_org_nz_ig_base"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/TWOPatient"
+        },
+        "name": "TWOPatient",
+        "description": "Patient resource for Te Whatu Ora - MidCentral",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TWOPractitioner"
+        },
+        "name": "TWOPractitioner",
+        "description": "Practitioner resource for Te Whatu Ora - MidCentral",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "description": "An example of a patient with a license to krill.",
+        "exampleCanonical": "http://example.org/StructureDefinition/TWOPatient"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
