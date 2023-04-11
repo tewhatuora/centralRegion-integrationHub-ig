@@ -16,7 +16,7 @@
    <name value="MidCentralIG"/>
    <title value="Te Whatu Ora - MidCentral"/>
    <status value="draft"/>
-   <date value="2023-02-28T18:04:18+13:00"/>
+   <date value="2023-04-12T09:43:14+12:00"/>
    <publisher value="Te Whatu Ora (MidCentral)"/>
    <contact>
       <name value="Te Whatu Ora (MidCentral)"/>
@@ -266,17 +266,18 @@
          <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like."/>
       </grouping>
 
+
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-TWOPatient.html"/>
+            <valueUri value="StructureDefinition-TwocrPatient.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/TWOPatient"/>
+            <reference value="StructureDefinition/TwocrPatient"/>
          </reference>
-         <name value="TWOPatient"/>
+         <name value="TwocrPatient"/>
          <description value="Patient resource for Te Whatu Ora - MidCentral"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
@@ -286,12 +287,12 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-TWOPractitioner.html"/>
+            <valueUri value="StructureDefinition-TwocrPractitioner.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/TWOPractitioner"/>
+            <reference value="StructureDefinition/TwocrPractitioner"/>
          </reference>
-         <name value="TWOPractitioner"/>
+         <name value="TwocrPractitioner"/>
          <description value="Practitioner resource for Te Whatu Ora - MidCentral"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
@@ -308,7 +309,7 @@
          </reference>
          <name value="PatientExample"/>
          <description value="An example of a patient with a license to krill."/>
-         <exampleCanonical value="http://example.org/StructureDefinition/TWOPatient"/>
+         <exampleCanonical value="http://example.org/StructureDefinition/TwocrPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -331,13 +332,13 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
-               <nameUrl value="StructureDefinition-TWOPatient.html"/>
-               <title value="TWOPatient"/>
+               <nameUrl value="StructureDefinition-TwocrPatient.html"/>
+               <title value="TwocrPatient"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-TWOPractitioner.html"/>
-               <title value="TWOPractitioner"/>
+               <nameUrl value="StructureDefinition-TwocrPractitioner.html"/>
+               <title value="TwocrPractitioner"/>
                <generation value="generated"/>
             </page>
             <page>

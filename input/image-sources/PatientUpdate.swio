@@ -1,0 +1,28 @@
+// https://swimlanes.io/u/6XlOOINnT
+title: 2. Update Patient Details Process
+alias Clinician: Clinician {fas-user fa-lg}
+alias SmileCDR:  Smile CDR {fab-gripfire fa-lg}
+
+order: Clinician, WebPAS, Rhapsody Spoke, SmileCDR, API Client, IdProvider
+autonumber
+
+note:**PreConditions**
+1. Have valid API AccessToken
+2. Subscribed to Patient Resource Updates
+
+group: Cache HL7 Messages
+Clinician -> WebPAS: Patient Data Update
+WebPas -> Rhapsody Spoke: ADT A31
+Rhapsody Spoke -> SmileCDR: ADT A31
+SmileCDR -> SmileCDR: mapToFHIRandValidate()
+SmileCDR -> SmileCDR: saveResources()
+SmileCDR --> Rhapsody Spoke: _ack/nak_
+end
+
+group: Notify Resource Update
+SmileCDR -> API Client: notifyPatientUpdate(_{id}_)
+...: {fas-spinner} sometime later
+API Client -> SmileCDR: GET /fhir/Patient/_{id}_
+SmileCDR -> SmileCDR: retrieveResource(_{id}_)
+SmileCDR --> API Client: _response(Patient, _{id}_)
+end

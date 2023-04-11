@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "TWOPatient",
-  "url": "http://example.org/StructureDefinition/TWOPatient",
+  "id": "TwocrPatient",
+  "url": "http://example.org/StructureDefinition/TwocrPatient",
   "version": "0.1.0",
-  "name": "TWOPatient",
+  "name": "TwocrPatient",
   "status": "active",
   "description": "Patient resource for Te Whatu Ora - MidCentral",
   "fhirVersion": "4.0.1",

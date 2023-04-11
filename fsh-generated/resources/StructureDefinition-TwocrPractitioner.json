@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "TWOPractitioner",
-  "url": "http://example.org/StructureDefinition/TWOPractitioner",
+  "id": "TwocrPractitioner",
+  "url": "http://example.org/StructureDefinition/TwocrPractitioner",
   "version": "0.1.0",
-  "name": "TWOPractitioner",
+  "name": "TwocrPractitioner",
   "status": "active",
   "description": "Practitioner resource for Te Whatu Ora - MidCentral",
   "fhirVersion": "4.0.1",

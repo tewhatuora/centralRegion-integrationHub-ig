@@ -1,0 +1,35 @@
+// https://swimlanes.io/u/kuxMVOoAj
+Title: 1. Patient Referral Process
+alias Clinician: Clinician {fas-user fa-lg}
+alias SmileCDR:  Smile CDR {fab-gripfire fa-lg}
+
+order: Clinician, WebPAS, Rhapsody Spoke, SmileCDR, API Client, IdProvider
+autonumber
+
+note: **Preconditions:** 
+1. Have OAuth AccessToken
+2. Subscribe to ServiceRequest resource
+
+group: A. Patient Referral
+Clinician -> WebPAS: Create Patient Referral to WhānauTahi
+WebPas -> Rhapsody Spoke: REF I12
+Rhapsody Spoke -> SmileCDR: REF I12
+SmileCDR -> SmileCDR: mapToFHIRServiceRequestAndValidate()
+SmileCDR -> SmileCDR: saveResource()
+SmileCDR --> Rhapsody Spoke: _ack/nak_
+end
+
+group: B. Notify ServiceRequest
+SmileCDR -> API Client: notifyServiceRequest(_{patientId}_)
+...: {fas-spinner} sometime later
+API Client -> SmileCDR: GET /fhir/Patient/_{id}_
+SmileCDR -> SmileCDR: retrieveResource(_{id}_)
+SmileCDR --> API Client: _response(Patient, _{id}_)
+end
+
+group: C. Subscribe Patient Updates
+API Client -> SmileCDR: POST Subscription(_{patientId}_)
+SmileCDR -> SmileCDR: validateSubscription
+SmileCDR -> SmileCDR: saveResource()
+SmileCDR --> API Client: _ack_/_nak_
+end

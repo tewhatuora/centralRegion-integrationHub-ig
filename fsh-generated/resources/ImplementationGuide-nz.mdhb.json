@@ -35,17 +35,17 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/TWOPatient"
+          "reference": "StructureDefinition/TwocrPatient"
         },
-        "name": "TWOPatient",
+        "name": "TwocrPatient",
         "description": "Patient resource for Te Whatu Ora - MidCentral",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/TWOPractitioner"
+          "reference": "StructureDefinition/TwocrPractitioner"
         },
-        "name": "TWOPractitioner",
+        "name": "TwocrPractitioner",
         "description": "Practitioner resource for Te Whatu Ora - MidCentral",
         "exampleBoolean": false
       },
@@ -55,7 +55,7 @@
         },
         "name": "PatientExample",
         "description": "An example of a patient with a license to krill.",
-        "exampleCanonical": "http://example.org/StructureDefinition/TWOPatient"
+        "exampleCanonical": "http://example.org/StructureDefinition/TwocrPatient"
       }
     ],
     "page": {
