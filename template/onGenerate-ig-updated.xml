@@ -1,32 +1,39 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="nz.mdhb"/>
+   <id value="crih.fhir.ig"/>
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
-         <h2>MidCentralIG</h2>
+         <h2>CRIntegrationHub</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>http://example.org/ImplementationGuide/nz.mdhb</pre>
+         <pre>https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/crih.fhir.ig</pre>
          <div>
-            <p>Implementation Guide for Mid-Central's FHIR APIs</p>
+            <p>Implementation Guide for Central Region's FHIR based Integration Hub</p>
          </div>
       </div>
    </text>
-   <url value="http://example.org/ImplementationGuide/nz.mdhb"/>
+   <url value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/crih.fhir.ig"/>
    <version value="0.1.0"/>
-   <name value="MidCentralIG"/>
-   <title value="Te Whatu Ora - MidCentral"/>
+   <name value="CRIntegrationHub"/>
+   <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-04-12T09:43:14+12:00"/>
-   <publisher value="Te Whatu Ora (MidCentral)"/>
+   <date value="2023-04-14T13:16:28+12:00"/>
+   <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
-      <name value="Te Whatu Ora (MidCentral)"/>
+      <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
       <telecom>
          <system value="url"/>
-         <value value="http://example.org/example-publisher"/>
+         <value value="http://https://www.tewhatuora.govt.nz/"/>
       </telecom>
    </contact>
-   <description value="Implementation Guide for Mid-Central's FHIR APIs"/>
-   <packageId value="nz.mdhb"/>
+   <description value="Implementation Guide for Central Region's FHIR based Integration Hub"/>
+   <jurisdiction>
+      <coding>
+         <system value="urn:iso:std:iso:3166"/>
+         <code value="NZ"/>
+         <display value="New Zealand"/>
+      </coding>
+   </jurisdiction>
+   <packageId value="crih.fhir.ig"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
    <dependsOn id="hl7tx">
@@ -120,7 +127,7 @@
             <valueString value="path-history"/>
          </extension>
          <extension url="value">
-            <valueString value="http://example.org/history.html"/>
+            <valueString value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/history.html"/>
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -309,7 +316,7 @@
          </reference>
          <name value="PatientExample"/>
          <description value="An example of a patient with a license to krill."/>
-         <exampleCanonical value="http://example.org/StructureDefinition/TwocrPatient"/>
+         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -325,6 +332,30 @@
             </extension>
             <nameUrl value="index.html"/>
             <title value="Home"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="technologyLandscape.html"/>
+            </extension>
+            <nameUrl value="technologyLandscape.html"/>
+            <title value="Technology Landscape"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="useCaseReferPatient.html"/>
+            </extension>
+            <nameUrl value="useCaseReferPatient.html"/>
+            <title value="Use Case Refer Patient"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="useCaseUpdatePatient.html"/>
+            </extension>
+            <nameUrl value="useCaseUpdatePatient.html"/>
+            <title value="Use Case Update Patient"/>
             <generation value="markdown"/>
          </page>
          <page>
@@ -446,7 +477,7 @@
       </parameter>
       <parameter>
          <code value="path-history"/>
-         <value value="http://example.org/history.html"/>
+         <value value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/history.html"/>
       </parameter>
       <parameter>
          <code value="template-html"/>

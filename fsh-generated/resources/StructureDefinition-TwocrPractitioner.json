@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "TwocrPractitioner",
-  "url": "http://example.org/StructureDefinition/TwocrPractitioner",
+  "url": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPractitioner",
   "version": "0.1.0",
   "name": "TwocrPractitioner",
   "status": "active",

@@ -3,21 +3,21 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: nz.mdhb
-canonical: http://example.org
-name: MidCentralIG
-title: Te Whatu Ora - MidCentral
-description: Implementation Guide for Mid-Central's FHIR APIs
+id: crih.fhir.ig
+canonical: https://build.fhir.org/ig/tewhatuora/crih-fhir-ig
+name: CRIntegrationHub
+title: Te Whatu Ora, Central Region Integration Hub
+description: Implementation Guide for Central Region's FHIR based Integration Hub
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: urn:iso:std:iso:3166#NZ "New Zealand"
 publisher:
-  name: Te Whatu Ora (MidCentral)
-  url: http://example.org/example-publisher
+  name: Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral
+  url: http://https://www.tewhatuora.govt.nz/
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -71,6 +71,10 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Technology Landscape: technologyLandscape.html
+  Use Cases:
+     Refer Patient: useCaseReferPatient.html
+     Update Patient: useCaseUpdatePatient.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

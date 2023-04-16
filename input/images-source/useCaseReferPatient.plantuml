@@ -1,0 +1,60 @@
+@startuml
+
+skin rose
+autonumber "[#]"
+hide footbox
+skinparam responseMessageBelowArrow true
+skinparam sequenceMessageAlign direction
+skinparam sequenceGroupBorderThickness 1
+
+title 1. Refer Patient
+
+note left of WebPAS
+**Preconditions:**
+1. Have OAuth AccessToken
+2. Subscribe to ServiceRequest resource
+end note
+
+actor Clinician
+participant WebPAS
+participant "HL7 Hub" as HL7
+participant "Integration Hub" as HUB
+participant "API Client" as CLIENT
+
+group #azure Patient Referral
+  Clinician -> WebPAS: Create Patient Referral to Medical Speciality
+  WebPAS -> HL7: HL7 REF I12
+  HL7 -> HUB: HL7 REF I12
+  activate HUB #lavender
+  HUB -> HUB: mapToServiceRequest()
+  HUB -> HUB: saveResource(ServiceRequest)
+  return ack/nak
+  deactivate HUB
+
+... some time later ...
+
+  HUB -> CLIENT: POST /callback/ServiceRequest({patiendId})
+  return ack/nak
+end
+
+... ...
+
+group #azure Retrieve Patient Details
+  CLIENT -> HUB: GET /fhir/Patient/{id}
+  activate HUB #lavender
+  HUB -> HUB: retrieveResource({patientId})
+  return Patient({id})
+  deactivate HUB
+end
+
+... ...
+
+group #azure Subscribe Patient Updates
+  CLIENT -> HUB: POST /fhir/Subscription({patientId})
+  activate HUB #lavender
+  HUB -> HUB: validateSubscription
+  HUB -> HUB: saveResource()
+  return ack/nak
+  deactivate HUB
+end
+@enduml

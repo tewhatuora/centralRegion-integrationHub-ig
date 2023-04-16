@@ -1,0 +1,48 @@
+@startuml
+
+skin rose
+autonumber "[#]"
+hide footbox
+skinparam responseMessageBelowArrow true
+skinparam sequenceMessageAlign direction
+skinparam sequenceGroupBorderThickness 1
+
+title 2. Update Patient
+
+
+note left of HUB
+**PreConditions**
+1. Have valid API AccessToken
+2. Subscribed to Patient Resource Updates
+end note
+
+
+actor Clinician
+participant WebPAS
+participant "HL7 Hub" as HL7
+participant "Integration Hub" as HUB
+participant "API Client" as CLIENT
+
+group #azure Cache HL7 Message
+  Clinician -> WebPAS: Patient Data Update
+  activate HUB #lavender
+  WebPAS -> HL7: HL7 ADT A31
+  HL7 -> HUB: HL7 ADT A31
+  HUB -> HUB: mapToFHIRandValidate()
+  HUB -> HUB: saveResources()
+  deactivate HUB
+  HUB --> HL7: ack/nak
+end
+
+... ...
+
+group #azure Notify Resource Update
+  HUB -> CLIENT: notifyPatientUpdate(_{id}_)
+  ...  ...
+  CLIENT -> HUB: GET /fhir/Patient/_{id}_
+  activate HUB #lavender
+  HUB -> HUB: retrieveResource(_{id}_)
+  return _response(Patient, _{id}_)
+  deactivate HUB
+end
+@enduml

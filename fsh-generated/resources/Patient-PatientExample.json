@@ -3,7 +3,7 @@
   "id": "PatientExample",
   "meta": {
     "profile": [
-      "http://example.org/StructureDefinition/TwocrPatient"
+      "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient"
     ]
   },
   "name": [

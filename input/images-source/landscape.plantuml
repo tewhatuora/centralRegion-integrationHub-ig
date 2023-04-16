@@ -1,0 +1,41 @@
+@startuml
+
+!include <archimate/Archimate>
+
+skinparam <<verb>> {
+roundCorner 25
+}
+
+sprite $aService jar:archimate/application-service
+sprite $aComponent jar:archimate/application-component
+
+Business_Actor(AC1, "Clinicians")
+Business_Actor(AC2, "Clinicians")
+Application_Service(PAS, "WebPAS")
+Application_Service(HL7, "HL7 v2 Hub")
+Application_Service(CLIENT, "FHIR API Client")
+
+
+' Manufacture a pretend ApplicationService ...
+rectangle "Integration Hub" as HUB <<$aService>> <<verb>> #Application {
+  Application_Interface(Listener, "HL7 Listener")
+  Application_DataObject(Repo, "FHIR Resources")
+  Application_Interface(APIs, "FHIR EndPoints")
+}
+
+
+' Rel_Composition_Up(Listener, HUB, "")
+' Rel_Composition_Up(Repo, HUB, "")
+' Rel_Composition_Up(APIs, HUB, "")
+
+Rel_Triggering_Right(AC1, PAS, "use")
+Rel_Triggering_Left(AC2, CLIENT, "use")
+
+Rel_Flow_Right(PAS, HL7, "HL7 v2\nADT & REF")
+Rel_Flow(HL7, Listener, "HL7 v2\nADT & REF")
+Rel_Flow_Right(Listener, Repo, "FHIR Resources")
+Rel_Flow_Right(Repo, APIs, "FHIR Resources")
+
+Rel_Flow(APIs, CLIENT, "Patient, Flag &\nAllergy Intolerance")
+
+@enduml
