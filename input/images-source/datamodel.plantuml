@@ -1,0 +1,44 @@
+@startuml
+!include <archimate/Archimate>
+
+left to right direction
+skinparam linetype ortho
+
+skinparam <<verb>> {
+  roundCorner 25
+}
+
+
+sprite $bDataObject jar:archimate/business-object
+
+
+' Manufacture a parent Resource class...
+rectangle "Patient Data" as clPatient <<$bDataObject>> <<verb>> #Business {
+  Application_DataObject(rsPatient, "Patient\n(FHIR Resource)")
+  Application_DataObject(rsFlag, "Flag\n(FHIR Resource)")
+  Application_DataObject(rsAllergyIntolerance, "AllergyIntolerance\n(FHIR Resource)")
+}
+
+rectangle "Health Practitioner" as clPractitioner <<$bDataObject>> <<verb>> #Business {
+  Application_DataObject(rsPractitioner, "Practitioner\n(FHIR Resource)")
+}
+
+rectangle "Referral Data" as clReferral <<$bDataObject>> <<verb>> #Business {
+  Application_DataObject(rsServiceRequest, "ServiceRequest\n(FHIR Resource)")
+}
+
+Technology_Artifact(rsSubscription, "Subscription\n(FHIR Resource)")
+
+clPractitioner -[hidden]-> clPatient
+rsPatient --> rsFlag: is subject of
+rsPatient --> rsAllergyIntolerance: has
+rsPatient -> rsServiceRequest: is subject of
+
+rsPractitioner --> rsFlag: is author of
+rsPractitioner --> rsAllergyIntolerance: is recorder of
+
+rsPractitioner ----> rsServiceRequest: is requestor of
+rsPractitioner ----> rsServiceRequest: is performer of
+
+rsPatient --[hidden]--> rsSubscription
+@enduml
