@@ -11,6 +11,13 @@ The components in the technology landscape are:
 * FHIR API Client - generic name for multiple FHIR capable applications used by specific medical specialities.
 
 
+## Logical Data Model
+The Integration Hub supports a small set of FHIR Resource:
+
+{::nomarkdown}
+{% include datamodel.svg %}
+{:/}
+
 ## HL7 v2.4 Listener
 The Integration Hub provides a FHIR façade for the following HL7 v2.4 messages, from the regional messaging specification.
 * ADT A28 - Create New Patient
@@ -19,10 +26,3 @@ The Integration Hub provides a FHIR façade for the following HL7 v2.4 messages,
 * REF I12 - Add Referral
 * REF I13 - Update Referral
 * REF I14 - Delete Referral
-
-## Logical Data Model
-The Integration Hub supports a small set of FHIR Resource:
-
-{::nomarkdown}
-{% include datamodel.svg %}
-{:/}

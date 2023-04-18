@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TwocrMaritalStatusCS",
+  "id": "twocr-marital-status-code-system",
+  "title": "Te Whatu Ora Central Region, Marital Status Code System",
+  "description": "A few extra Marital Status codes that are in use in Central Region",
+  "version": "0.1.0",
+  "url": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/CodeSystem/twocr-marital-status-code-system",
+  "concept": [
+    {
+      "code": "V",
+      "display": "Civil Union",
+      "definition": "Person is in a Civil Union"
+    },
+    {
+      "code": "C",
+      "display": "de Facto",
+      "definition": "Person is in a de Facto relationship"
+    }
+  ],
+  "count": 2
+}

@@ -49,7 +49,7 @@
           "reference": "StructureDefinition/TwocrPatient"
         },
         "name": "TwocrPatient",
-        "description": "Patient resource for Te Whatu Ora - MidCentral",
+        "description": "Patient resource for Te Whatu Ora, Central Region",
         "exampleBoolean": false
       },
       {
@@ -62,10 +62,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/twocr-marital-status-value-set"
+        },
+        "name": "Te Whatu Ora Central Region, Marital Status Value Set",
+        "description": "Combined Marital Status value set that are in use in Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/twocr-marital-status-code-system"
+        },
+        "name": "Te Whatu Ora Central Region, Marital Status Code System",
+        "description": "A few extra Marital Status codes that are in use in Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Patient/PatientExample"
         },
         "name": "PatientExample",
-        "description": "An example of a patient with a license to krill.",
+        "description": "An example of a patient from Te Whatu Ora, Central Region",
         "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient"
       }
     ],

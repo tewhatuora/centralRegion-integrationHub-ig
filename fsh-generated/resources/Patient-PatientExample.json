@@ -13,5 +13,39 @@
       ],
       "family": "Pond"
     }
-  ]
+  ],
+  "birthDate": "1966-01-05",
+  "gender": "male",
+  "maritalStatus": {
+    "coding": [
+      {
+        "code": "SomethingElse",
+        "system": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ValueSet/twocr-marital-status-value-set",
+        "display": "Civil Union"
+      }
+    ],
+    "text": "Civil Union"
+  },
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "021 555 888 6",
+      "use": "home",
+      "rank": 1
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "type": "postal",
+      "text": "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND",
+      "line": [
+        "100 Broadway Avenue"
+      ],
+      "city": "Palmerston North",
+      "postalCode": "4410",
+      "country": "NEW ZEALAND"
+    }
+  ],
+  "deceasedBoolean": false
 }

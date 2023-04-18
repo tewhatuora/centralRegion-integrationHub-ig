@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-04-17T14:14:37+12:00"/>
+   <date value="2023-04-18T17:33:20+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -261,8 +261,14 @@
       </grouping>
 
 
-
-
+      <grouping id="-term-valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-term-codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming to this implementation guide."/>
+      </grouping>
 
 
 
@@ -285,7 +291,7 @@
             <reference value="StructureDefinition/TwocrPatient"/>
          </reference>
          <name value="TwocrPatient"/>
-         <description value="Patient resource for Te Whatu Ora - MidCentral"/>
+         <description value="Patient resource for Te Whatu Ora, Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -306,6 +312,36 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-twocr-marital-status-value-set.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/twocr-marital-status-value-set"/>
+         </reference>
+         <name value="Te Whatu Ora Central Region, Marital Status Value Set"/>
+         <description value="Combined Marital Status value set that are in use in Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-twocr-marital-status-code-system.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/twocr-marital-status-code-system"/>
+         </reference>
+         <name value="Te Whatu Ora Central Region, Marital Status Code System"/>
+         <description value="A few extra Marital Status codes that are in use in Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -315,7 +351,7 @@
             <reference value="Patient/PatientExample"/>
          </reference>
          <name value="PatientExample"/>
-         <description value="An example of a patient with a license to krill."/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region"/>
          <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -370,6 +406,16 @@
             <page>
                <nameUrl value="StructureDefinition-TwocrPractitioner.html"/>
                <title value="TwocrPractitioner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-twocr-marital-status-value-set.html"/>
+               <title value="Te Whatu Ora Central Region, Marital Status Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-twocr-marital-status-code-system.html"/>
+               <title value="Te Whatu Ora Central Region, Marital Status Code System"/>
                <generation value="generated"/>
             </page>
             <page>
