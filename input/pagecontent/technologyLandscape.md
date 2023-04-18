@@ -1,8 +1,6 @@
 The Central Region Integration Hub acts as a caching proxy of existing HL7 v2 messaging:
 
-{::nomarkdown}
 {% include landscape.svg %}
-{:/}
 
 The components in the technology landscape are:
 * WebPAS - Regional Patient Administration System (PAS); the primary system used by clinicians to record patient details, referrals, lab and x-ray requests, etc...
