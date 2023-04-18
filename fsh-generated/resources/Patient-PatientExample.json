@@ -19,7 +19,7 @@
   "maritalStatus": {
     "coding": [
       {
-        "code": "SomethingElse",
+        "code": "V",
         "system": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ValueSet/twocr-marital-status-value-set",
         "display": "Civil Union"
       }

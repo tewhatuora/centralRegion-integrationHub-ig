@@ -9,7 +9,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region"
 * gender = #male
 
 * maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(twocr-marital-status-code-system)
+* maritalStatus.coding[=].system = Canonical(twocr-marital-status-value-set)
 * maritalStatus.coding[=].display = "Civil Union"
 * maritalStatus.text = "Civil Union"
 
