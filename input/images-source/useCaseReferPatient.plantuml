@@ -1,5 +1,4 @@
 @startuml
-
 skin rose
 autonumber "[#]"
 hide footbox
@@ -9,17 +8,17 @@ skinparam sequenceGroupBorderThickness 1
 
 title 1. Refer Patient
 
+actor Clinician
+participant "WebPas\nPatient Admin" as WebPAS
+participant "HL7 v2\nHub & Spoke" as HL7
+participant "FHIR API\nIntegration Hub" as HUB
+participant "API Client\n(ConnectedCare, Scope, etc)" as CLIENT
+
 note left of WebPAS
 **Preconditions:**
 1. Have OAuth AccessToken
 2. Subscribe to ServiceRequest resource
 end note
-
-actor Clinician
-participant WebPAS
-participant "HL7 Hub" as HL7
-participant "Integration Hub" as HUB
-participant "API Client" as CLIENT
 
 group #azure Patient Referral
   Clinician -> WebPAS: Create Patient Referral to Medical Speciality

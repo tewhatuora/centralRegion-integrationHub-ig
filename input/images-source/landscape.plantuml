@@ -11,13 +11,13 @@ sprite $aComponent jar:archimate/application-component
 
 Business_Actor(AC1, "Clinicians")
 Business_Actor(AC2, "Clinicians")
-Application_Service(PAS, "WebPAS")
-Application_Service(HL7, "HL7 v2 Hub")
-Application_Service(CLIENT, "FHIR API Client")
+Application_Service(PAS, "WebPAS\nPatient Admin")
+Application_Service(HL7, "HL7 v2\nHub & Spoke")
+Application_Service(CLIENT, "API Client\n(ConnectedCare, Scope, etc)")
 
 
 ' Manufacture a pretend ApplicationService ...
-rectangle "Integration Hub" as HUB <<$aService>> <<verb>> #Application {
+rectangle "FHIR API Integration Hub" as HUB <<$aService>> <<verb>> #Application {
   Application_Interface(Listener, "HL7 Listener")
   Application_DataObject(Repo, "FHIR Resources")
   Application_Interface(APIs, "FHIR EndPoints")

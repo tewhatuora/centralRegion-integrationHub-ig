@@ -9,6 +9,11 @@ skinparam sequenceGroupBorderThickness 1
 
 title 2. Update Patient
 
+actor Clinician
+participant "WebPas\nPatient Admin" as WebPAS
+participant "HL7 v2\nHub & Spoke" as HL7
+participant "FHIR API\nIntegration Hub" as HUB
+participant "API Client\n(ConnectedCare, Scope, etc)" as CLIENT
 
 note left of HUB
 **PreConditions**
@@ -16,12 +21,6 @@ note left of HUB
 2. Subscribed to Patient Resource Updates
 end note
 
-
-actor Clinician
-participant WebPAS
-participant "HL7 Hub" as HL7
-participant "Integration Hub" as HUB
-participant "API Client" as CLIENT
 
 group #azure Cache HL7 Message
   Clinician -> WebPAS: Patient Data Update
