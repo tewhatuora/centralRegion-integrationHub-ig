@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "TwocrPractitioner",
-  "url": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPractitioner",
+  "id": "NZCentralRegionPractitioner",
+  "url": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPractitioner",
   "version": "0.1.0",
-  "name": "TwocrPractitioner",
+  "name": "NZCentralRegionPractitioner",
   "status": "active",
-  "description": "Practitioner resource for Te Whatu Ora - MidCentral",
+  "description": "Practitioner resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

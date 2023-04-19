@@ -46,51 +46,51 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/TwocrPatient"
+          "reference": "StructureDefinition/NZCentralRegionPatient"
         },
-        "name": "TwocrPatient",
+        "name": "NZCentralRegionPatient",
         "description": "Patient resource for Te Whatu Ora, Central Region",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/TwocrPractitioner"
+          "reference": "StructureDefinition/NZCentralRegionPractitioner"
         },
-        "name": "TwocrPractitioner",
-        "description": "Practitioner resource for Te Whatu Ora - MidCentral",
+        "name": "NZCentralRegionPractitioner",
+        "description": "Practitioner resource for Te Whatu Ora, Central Region",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/twocr-marital-status-value-set"
+          "reference": "ValueSet/nzcr-marital-status-value-set"
         },
-        "name": "Te Whatu Ora Central Region, Marital Status Value Set",
+        "name": "NZ Central Region - Marital Status Value Set",
         "description": "Combined Marital Status value set with values that are in use in Central Region",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/twocr-extra-marital-status-code-system"
+          "reference": "CodeSystem/nzcr-extra-marital-status-code-system"
         },
-        "name": "Te Whatu Ora Central Region, Marital Status Code System",
+        "name": "NZ Central Region - Marital Status Code System",
         "description": "A few extra Marital Status codes that are in use in Central Region",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "Patient/Example-Patient-CivilUnion"
+          "reference": "Patient/Patient-CivilUnion"
         },
-        "name": "Example-Patient-CivilUnion",
+        "name": "Patient-CivilUnion",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes",
-        "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient"
+        "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
         "reference": {
-          "reference": "Patient/Example-Patient-Single"
+          "reference": "Patient/Patient-Single"
         },
-        "name": "Example-Patient-Single",
+        "name": "Patient-Single",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes",
-        "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient"
+        "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       }
     ],
     "page": {

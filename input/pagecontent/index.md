@@ -1,4 +1,4 @@
-# Te Whatu Ora Central Region Integration Hub FHIR Implementation Guide
+# Te Whatu Ora, Central Region Integration Hub FHIR Implementation Guide
 This is the Implementation Guide for the [HL7® FHIR©](http://hl7.org/fhir) interface for the Central Region Integration Hub service used to integrate HL7 v2 and FHIR capable applications. It brings together all the artifacts that are necessary to understand and use the FHIR API. It is based on [FHIR R4](http://hl7.org/fhir/) and [NZBase 2.0-rc1](http://build.fhir.org/ig/HL7NZ/nzbase/)
 
 ## Sections

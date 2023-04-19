@@ -1,6 +1,6 @@
 // Example Instances of Patient with different Marital Status values
-Instance: Example-Patient-CivilUnion
-InstanceOf: TwocrPatient
+Instance: Patient-CivilUnion
+InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes"
 * name
   * given[0] = "James"
@@ -9,7 +9,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 * gender = #male
 
 * maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(twocr-extra-marital-status-code-system)
+* maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-code-system)
 * maritalStatus.coding[=].display = "Civil Union"
 * maritalStatus.text = "Civil Union"
 
@@ -28,8 +28,8 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 
 * deceasedBoolean = false
 
-Instance: Example-Patient-Single
-InstanceOf: TwocrPatient
+Instance: Patient-Single
+InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes"
 * name
   * given[0] = "James"

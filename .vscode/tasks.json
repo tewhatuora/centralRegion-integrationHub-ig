@@ -1,0 +1,47 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "fsh",
+			"task": "Build SUSHI",
+			"problemMatcher": [
+				"$sushi"
+			],
+			"group": "build",
+			"label": "fsh: sushi"
+		},
+		{
+			"label": "fsh: FHIR Validator",
+			"type": "shell",
+			"command": "java",
+			"args": [
+				"-jar",
+				"${workspaceFolder}/input-cache/validator_cli.jar",
+				"${workspaceFolder}/fsh-generated/resources",
+				"-version",	"4.0",
+				"-output-style", "eslint-compact"
+			],
+			"presentation": {
+				"clear": true
+			},
+			"problemMatcher": [
+				{
+					"source": "FHIR Validator",
+					"fileLocation": "absolute",
+					"owner": "fihrValidator",
+					"pattern": [
+						{
+							"regexp": "^(\\S+): line ?(\\d+), col ?(\\d+), ((?:Info|Warning|Error)) - (.*)$",
+							"file": 1,
+							"line": 2,
+							"column": 3,
+							"severity": 4,
+							"message": 5,
+							"loop": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

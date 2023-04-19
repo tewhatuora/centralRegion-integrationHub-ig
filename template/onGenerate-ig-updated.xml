@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-04-19T14:21:19+12:00"/>
+   <date value="2023-04-20T09:43:54+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -285,12 +285,12 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-TwocrPatient.html"/>
+            <valueUri value="StructureDefinition-NZCentralRegionPatient.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/TwocrPatient"/>
+            <reference value="StructureDefinition/NZCentralRegionPatient"/>
          </reference>
-         <name value="TwocrPatient"/>
+         <name value="NZCentralRegionPatient"/>
          <description value="Patient resource for Te Whatu Ora, Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
@@ -300,13 +300,13 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-TwocrPractitioner.html"/>
+            <valueUri value="StructureDefinition-NZCentralRegionPractitioner.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/TwocrPractitioner"/>
+            <reference value="StructureDefinition/NZCentralRegionPractitioner"/>
          </reference>
-         <name value="TwocrPractitioner"/>
-         <description value="Practitioner resource for Te Whatu Ora - MidCentral"/>
+         <name value="NZCentralRegionPractitioner"/>
+         <description value="Practitioner resource for Te Whatu Ora, Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -315,13 +315,13 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-twocr-marital-status-value-set.html"/>
+            <valueUri value="ValueSet-nzcr-marital-status-value-set.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/twocr-marital-status-value-set"/>
+            <reference value="ValueSet/nzcr-marital-status-value-set"/>
          </reference>
-         <name value="Te Whatu Ora Central Region, Marital Status Value Set"/>
-         <description value="Combined Marital Status value set that are in use in Central Region"/>
+         <name value="NZ Central Region - Marital Status Value Set"/>
+         <description value="Combined Marital Status value set with values that are in use in Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -330,12 +330,12 @@
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-twocr-extra-marital-status-code-system.html"/>
+            <valueUri value="CodeSystem-nzcr-extra-marital-status-code-system.html"/>
          </extension>
          <reference>
-            <reference value="CodeSystem/twocr-extra-marital-status-code-system"/>
+            <reference value="CodeSystem/nzcr-extra-marital-status-code-system"/>
          </reference>
-         <name value="Te Whatu Ora Central Region, Marital Status Code System"/>
+         <name value="NZ Central Region - Marital Status Code System"/>
          <description value="A few extra Marital Status codes that are in use in Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
@@ -345,14 +345,29 @@
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-PatientExample.html"/>
+            <valueUri value="Patient-Patient-CivilUnion.html"/>
          </extension>
          <reference>
-            <reference value="Patient/PatientExample"/>
+            <reference value="Patient/Patient-CivilUnion"/>
          </reference>
-         <name value="PatientExample"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region"/>
-         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient"/>
+         <name value="Patient-CivilUnion"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes"/>
+         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Single.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Single"/>
+         </reference>
+         <name value="Patient-Single"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes"/>
+         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -399,28 +414,33 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
-               <nameUrl value="StructureDefinition-TwocrPatient.html"/>
-               <title value="TwocrPatient"/>
+               <nameUrl value="StructureDefinition-NZCentralRegionPatient.html"/>
+               <title value="NZCentralRegionPatient"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-TwocrPractitioner.html"/>
-               <title value="TwocrPractitioner"/>
+               <nameUrl value="StructureDefinition-NZCentralRegionPractitioner.html"/>
+               <title value="NZCentralRegionPractitioner"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-twocr-marital-status-value-set.html"/>
-               <title value="Te Whatu Ora Central Region, Marital Status Value Set"/>
+               <nameUrl value="ValueSet-nzcr-marital-status-value-set.html"/>
+               <title value="NZ Central Region - Marital Status Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="CodeSystem-twocr-extra-marital-status-code-system.html"/>
-               <title value="Te Whatu Ora Central Region, Marital Status Code System"/>
+               <nameUrl value="CodeSystem-nzcr-extra-marital-status-code-system.html"/>
+               <title value="NZ Central Region - Marital Status Code System"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Patient-PatientExample.html"/>
-               <title value="PatientExample"/>
+               <nameUrl value="Patient-Patient-CivilUnion.html"/>
+               <title value="Patient-CivilUnion"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-Single.html"/>
+               <title value="Patient-Single"/>
                <generation value="generated"/>
             </page>
          </page>
