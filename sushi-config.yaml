@@ -76,6 +76,8 @@ menu:
      Refer Patient: useCaseReferPatient.html
      Update Patient: useCaseUpdatePatient.html
   Artifacts: artifacts.html
+  Support:
+     IG Q&A: qa.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

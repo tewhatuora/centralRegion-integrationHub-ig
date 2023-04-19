@@ -1,9 +1,9 @@
 {
   "resourceType": "Patient",
-  "id": "PatientExample",
+  "id": "Patient-CivilUnion",
   "meta": {
     "profile": [
-      "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient"
+      "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
     ]
   },
   "name": [
@@ -20,7 +20,7 @@
     "coding": [
       {
         "code": "V",
-        "system": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ValueSet/twocr-marital-status-value-set",
+        "system": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/CodeSystem/nzcr-extra-marital-status-code-system",
         "display": "Civil Union"
       }
     ],

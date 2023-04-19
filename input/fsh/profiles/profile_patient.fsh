@@ -1,7 +1,7 @@
-// This is a simple example of a FSH file.
-// This file can be renamed, and additional FSH files can be added.
-// SUSHI will look for definitions in any file using the .fsh ending.
-Profile: TwocrPatient
+// Patient profile for Central Region
+//   - We don't support many fields from NZBasePatient
+//   - We have many of our own Terminology codings
+Profile: NZCentralRegionPatient
 Parent: $NZBasePatient
 Description: "Patient resource for Te Whatu Ora, Central Region"
 
@@ -15,8 +15,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * address 0..*
 
 * maritalStatus 1..1 MS
-* maritalStatus from twocr-marital-status-value-set (required)
-* maritalStatus.coding.system = Canonical(twocr-marital-status-value-set)
+* maritalStatus from nzcr-marital-status-value-set (required)
 
 * multipleBirthBoolean 0..0
 * multipleBirthInteger 0..0

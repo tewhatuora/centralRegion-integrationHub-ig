@@ -32,4 +32,14 @@
   <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="qa.html">IG Q&amp;A</a>
+      </li>
+    </ul>
+  </li>
 </ul>

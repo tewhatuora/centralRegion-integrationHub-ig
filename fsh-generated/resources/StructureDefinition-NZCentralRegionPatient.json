@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "TwocrPatient",
-  "url": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient",
+  "id": "NZCentralRegionPatient",
+  "url": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient",
   "version": "0.1.0",
-  "name": "TwocrPatient",
+  "name": "NZCentralRegionPatient",
   "status": "active",
   "description": "Patient resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
@@ -84,13 +84,8 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ValueSet/twocr-marital-status-value-set"
+          "valueSet": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ValueSet/nzcr-marital-status-value-set"
         }
-      },
-      {
-        "id": "Patient.maritalStatus.coding.system",
-        "path": "Patient.maritalStatus.coding.system",
-        "patternUri": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ValueSet/twocr-marital-status-value-set"
       },
       {
         "id": "Patient.multipleBirthBoolean",
