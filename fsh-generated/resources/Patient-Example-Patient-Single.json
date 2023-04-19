@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "PatientExample",
+  "id": "Example-Patient-Single",
   "meta": {
     "profile": [
       "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/TwocrPatient"
@@ -19,12 +19,12 @@
   "maritalStatus": {
     "coding": [
       {
-        "code": "V",
-        "system": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ValueSet/twocr-marital-status-value-set",
-        "display": "Civil Union"
+        "code": "S",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "display": "Never Married"
       }
     ],
-    "text": "Civil Union"
+    "text": "Never Married"
   },
   "telecom": [
     {

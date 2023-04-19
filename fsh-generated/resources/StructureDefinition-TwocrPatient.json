@@ -88,11 +88,6 @@
         }
       },
       {
-        "id": "Patient.maritalStatus.coding.system",
-        "path": "Patient.maritalStatus.coding.system",
-        "patternUri": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ValueSet/twocr-marital-status-value-set"
-      },
-      {
         "id": "Patient.multipleBirthBoolean",
         "path": "Patient.multipleBirthBoolean",
         "min": 0,

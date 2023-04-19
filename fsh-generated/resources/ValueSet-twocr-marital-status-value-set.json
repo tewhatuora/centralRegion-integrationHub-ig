@@ -4,9 +4,10 @@
   "name": "TwocrMaritalStatusVS",
   "id": "twocr-marital-status-value-set",
   "title": "Te Whatu Ora Central Region, Marital Status Value Set",
-  "description": "Combined Marital Status value set that are in use in Central Region",
+  "description": "Combined Marital Status value set with values that are in use in Central Region",
   "version": "0.1.0",
   "url": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ValueSet/twocr-marital-status-value-set",
+  "experimental": false,
   "compose": {
     "include": [
       {
@@ -15,7 +16,7 @@
         ]
       },
       {
-        "system": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/CodeSystem/twocr-marital-status-code-system"
+        "system": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/CodeSystem/twocr-extra-marital-status-code-system"
       }
     ]
   }

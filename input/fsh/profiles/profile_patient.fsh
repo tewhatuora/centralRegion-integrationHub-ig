@@ -16,7 +16,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * maritalStatus 1..1 MS
 * maritalStatus from twocr-marital-status-value-set (required)
-* maritalStatus.coding.system = Canonical(twocr-marital-status-value-set)
 
 * multipleBirthBoolean 0..0
 * multipleBirthInteger 0..0
