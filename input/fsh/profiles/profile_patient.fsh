@@ -55,7 +55,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 
 * extension[iwi] 0..0
-
 * maritalStatus 1..1 MS
 * maritalStatus from nzcr-marital-status-value-set (required)
 
