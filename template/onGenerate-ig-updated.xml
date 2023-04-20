@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-04-20T09:43:54+12:00"/>
+   <date value="2023-04-21T10:42:04+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -370,6 +370,21 @@
          <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Suburb.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Suburb"/>
+         </reference>
+         <name value="Patient-Suburb"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"/>
+         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
       <page>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="toc.html"/>
@@ -441,6 +456,11 @@
             <page>
                <nameUrl value="Patient-Patient-Single.html"/>
                <title value="Patient-Single"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-Suburb.html"/>
+               <title value="Patient-Suburb"/>
                <generation value="generated"/>
             </page>
          </page>

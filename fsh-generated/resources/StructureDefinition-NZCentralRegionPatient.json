@@ -42,6 +42,78 @@
   "differential": {
     "element": [
       {
+        "id": "Patient.extension:ethnicity",
+        "path": "Patient.extension",
+        "sliceName": "ethnicity",
+        "max": "3",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nzCitizen",
+        "path": "Patient.extension",
+        "sliceName": "nzCitizen",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nzCitizen.id",
+        "path": "Patient.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension",
+        "path": "Patient.extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status",
+        "path": "Patient.extension.extension",
+        "sliceName": "status",
+        "short": "Is this person a New Zealand citizen? CodeableConcept: #yes / #no / #unknown",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.id",
+        "path": "Patient.extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:source",
+        "path": "Patient.extension.extension",
+        "sliceName": "source",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:dhb",
+        "path": "Patient.extension",
+        "sliceName": "dhb",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:domicile-code",
+        "path": "Patient.extension",
+        "sliceName": "domicile-code",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:pho",
+        "path": "Patient.extension",
+        "sliceName": "pho",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:sex-at-birth",
+        "path": "Patient.extension",
+        "sliceName": "sex-at-birth",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:iwi",
+        "path": "Patient.extension",
+        "sliceName": "iwi",
+        "max": "0"
+      },
+      {
         "id": "Patient.name",
         "path": "Patient.name",
         "min": 1,
@@ -54,9 +126,42 @@
         "max": "3"
       },
       {
+        "id": "Patient.telecom.id",
+        "path": "Patient.telecom.id",
+        "max": "0"
+      },
+      {
         "id": "Patient.telecom.extension:cp-purpose",
         "path": "Patient.telecom.extension",
         "sliceName": "cp-purpose",
+        "max": "0"
+      },
+      {
+        "id": "Patient.telecom.system",
+        "path": "Patient.telecom.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom.value",
+        "path": "Patient.telecom.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom.use",
+        "path": "Patient.telecom.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom.rank",
+        "path": "Patient.telecom.rank",
+        "max": "0"
+      },
+      {
+        "id": "Patient.telecom.period",
+        "path": "Patient.telecom.period",
         "max": "0"
       },
       {
@@ -74,8 +179,94 @@
       {
         "id": "Patient.deceased[x]",
         "path": "Patient.deceased[x]",
+        "short": "deceasedBoolean = true if patient is deceased and deceased date/time is unknown, deceasedDateTime if known",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.id",
+        "path": "Patient.address.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.extension:nz-geocode",
+        "path": "Patient.address.extension",
+        "sliceName": "nz-geocode",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.extension:suburb",
+        "path": "Patient.address.extension",
+        "sliceName": "suburb",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.extension:building-name",
+        "path": "Patient.address.extension",
+        "sliceName": "building-name",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.extension:domicile-code",
+        "path": "Patient.address.extension",
+        "sliceName": "domicile-code",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.use",
+        "path": "Patient.address.use",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.type",
+        "path": "Patient.address.type",
+        "short": "Fixed value #postal",
+        "min": 1,
+        "patternCode": "postal",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.text",
+        "path": "Patient.address.text",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.line",
+        "path": "Patient.address.line",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.city",
+        "path": "Patient.address.city",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.district",
+        "path": "Patient.address.district",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.postalCode",
+        "path": "Patient.address.postalCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.country",
+        "path": "Patient.address.country",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.period",
+        "path": "Patient.address.period",
+        "max": "0"
       },
       {
         "id": "Patient.maritalStatus",
@@ -88,26 +279,9 @@
         }
       },
       {
-        "id": "Patient.multipleBirthBoolean",
-        "path": "Patient.multipleBirthBoolean",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "Patient.multipleBirthInteger",
-        "path": "Patient.multipleBirthInteger",
-        "min": 0,
-        "max": "0",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ]
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
       },
       {
         "id": "Patient.photo",
@@ -138,6 +312,29 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.contact.telecom.system",
+        "path": "Patient.contact.telecom.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.contact.telecom.value",
+        "path": "Patient.contact.telecom.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.contact.telecom.use",
+        "path": "Patient.contact.telecom.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.contact.telecom.rank",
+        "path": "Patient.contact.telecom.rank",
+        "max": "0"
+      },
+      {
         "id": "Patient.contact.address",
         "path": "Patient.contact.address",
         "max": "0"
@@ -163,9 +360,15 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.communication.language",
+        "path": "Patient.communication.language",
+        "mustSupport": true
+      },
+      {
         "id": "Patient.communication.preferred",
         "path": "Patient.communication.preferred",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Patient.generalPractitioner",

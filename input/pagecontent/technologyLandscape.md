@@ -1,6 +1,9 @@
 The Central Region Integration Hub acts as a caching proxy of existing HL7 v2 messaging:
 
+<figure>
 {% include landscape.svg %}
+<figcaption>Technology Landscape</figcaption>
+</figure>
 
 The components in the technology landscape are:
 * WebPAS - Regional Patient Administration System (PAS); the primary system used by clinicians to record patient details, referrals, lab and x-ray requests, etc...
@@ -12,9 +15,10 @@ The components in the technology landscape are:
 ## Logical Data Model
 The Integration Hub supports a small set of FHIR Resource:
 
-{::nomarkdown}
+<figure>
 {% include datamodel.svg %}
-{:/}
+<figcaption>Supported FHIR Resources</figcaption>
+</figure>
 
 ## HL7 v2.4 Listener
 The Integration Hub provides a FHIR façade for the following HL7 v2.4 messages, from the regional messaging specification.
