@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-CivilUnion",
+  "id": "Patient-Suburb",
   "meta": {
     "profile": [
       "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
@@ -9,13 +9,19 @@
   "address": [
     {
       "type": "postal",
-      "text": "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND",
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
+          "valueString": "Kelvin Grove"
+        }
+      ],
       "line": [
-        "100 Broadway Avenue"
+        "100 Cambridge Street"
       ],
       "city": "Palmerston North",
       "postalCode": "4410",
-      "country": "NEW ZEALAND"
+      "country": "NEW ZEALAND",
+      "text": "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
     }
   ],
   "name": [

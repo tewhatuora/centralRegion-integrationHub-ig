@@ -91,6 +91,14 @@
         "name": "Patient-Single",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes",
         "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-Suburb"
+        },
+        "name": "Patient-Suburb",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field",
+        "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       }
     ],
     "page": {

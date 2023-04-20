@@ -16,10 +16,8 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 * telecom[+].system = #phone
 * telecom[=].value = "021 555 888 6"
 * telecom[=].use = #home
-* telecom[=].rank = 1
 
-* address[+].use = #home
-* address[=].type = #postal
+* address[+].type = #postal
 * address[=].text = "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND"
 * address[=].line[+] = "100 Broadway Avenue"
 * address[=].city = "Palmerston North"
@@ -45,10 +43,8 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 * telecom[+].system = #phone
 * telecom[=].value = "021 555 888 6"
 * telecom[=].use = #home
-* telecom[=].rank = 1
 
-* address[+].use = #home
-* address[=].type = #postal
+* address[+].type = #postal
 * address[=].text = "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND"
 * address[=].line[+] = "100 Broadway Avenue"
 * address[=].city = "Palmerston North"
