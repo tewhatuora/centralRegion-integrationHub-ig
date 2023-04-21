@@ -3,8 +3,8 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: crih.fhir.ig
-canonical: https://build.fhir.org/ig/tewhatuora/crih-fhir-ig
+id: nz.central.ihub.ig
+canonical: https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig
 name: CRIntegrationHub
 title: Te Whatu Ora, Central Region Integration Hub
 description: Implementation Guide for Central Region's FHIR based Integration Hub

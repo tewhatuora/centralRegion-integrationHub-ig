@@ -5,8 +5,15 @@ Profile: NZCentralRegionPatient
 Parent: $NZBasePatient
 Description: "Patient resource for Te Whatu Ora, Central Region"
 
-* active 0..1 
+* active 0..0
+
 * name 1..* MS
+  * use 1..1 MS
+  * text 1..1 MS
+  * family 1..1 MS
+  * given MS
+  * prefix MS
+  * suffix 0..0
 
 * address 0..* MS
   * extension[building-name] 0..0
@@ -21,7 +28,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * line 0..1 MS
   * city 0..1 MS
   * district 0..0
-  * state 0..1
+  * state 0..1 MS // req'd for foreign addresses
   * postalCode 0..1 MS
   * country 1..1 MS
   * period 0..0
@@ -46,8 +53,22 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension[sex-at-birth] 0..0
 
 * extension[ethnicity] 0..3 MS
+  * valueCodeableConcept.coding.code 1..1 MS      // from PID-22.1
+  * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-22.1
+  * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-22.1 ??
+  * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
+  * valueCodeableConcept.coding.userSelected 0..0 // data not available
+  * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-22.1
+  * ^short = "Two codings required: Level-2 codes as provided by WebPAS and Level-4 codes as preferred by NZ Base"
+
 * extension[nzCitizen] 0..1 MS
   * extension[status] 1..1 MS
+    * valueCodeableConcept.coding.code 1..1 MS      // from PID-22.1
+    * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-22.1
+    * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-22.1 ??
+    * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
+    * valueCodeableConcept.coding.userSelected 0..0 // data not available
+    * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-22.1
     * ^short = "Is this person a New Zealand citizen? CodeableConcept: #yes / #no / #unknown"
     * extension 0..0
     * id 0..0
@@ -56,13 +77,31 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * extension[iwi] 0..0
 * maritalStatus 1..1 MS
-* maritalStatus from nzcr-marital-status-value-set (required)
+* maritalStatus from  nzcr-marital-status-value-set (required)
+  * coding.code 1..1 MS      // from PID-16.1
+  * coding.system 1..1 MS    // based on which code from PID-16.1
+  * coding.display 1..1 MS   // from PID-16.2 or by lookup from PID-16.1 ??
+  * coding.version 0..0      // code systems are not explicitly versioned
+  * coding.userSelected 0..0 // data not available
+  * text 0..0    //  Code, Value and Display are all derived from Code value from PID-16.1
 
 * photo 0..0
 
 * contact 0..* MS // A contact party (e.g. guardian, partner, friend) for the patient
   * relationship 1..1 MS
+    * coding.code 1..1 MS      // from NK1-3.1
+    * coding.system 1..1 MS    // based on which code from NK1-3.1
+    * coding.display 1..1 MS   // from NK1-3.2 or by lookup from NK1-3.1 ??
+    * coding.version 0..0      // code systems are not explicitly versioned
+    * coding.userSelected 0..0 // data not available
+    * text 0..0    //  Code, Value and Display are all derived from Code value from PID-16.1
   * name 1..1 MS
+    * use 0..0
+    * text 1..1 MS
+    * family 1..1 MS
+    * given MS
+    * prefix 0..0
+    * suffix 0..0      
   * telecom 0..* MS
     * system 1..1 MS
     * value 1..1 MS
@@ -76,6 +115,13 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * communication 0..* MS
   * language 1.. MS
+    * coding.code 1..1 MS      // from PID-15.1
+    * coding.system 1..1 MS    // based on which code from PID-15.1
+    * coding.display 1..1 MS   // from PID-15.2 or by lookup from PID-15.1 ??
+    * coding.version 0..0      // code systems are not explicitly versioned
+    * coding.userSelected 0..0 // data not available
+    * text 0..0    //  Code, Value and Display are all derived from Code value from PID-15.1
+
   * preferred 1..1 MS
 
 * generalPractitioner 0..1 MS // Patient's nominated primary care provider 

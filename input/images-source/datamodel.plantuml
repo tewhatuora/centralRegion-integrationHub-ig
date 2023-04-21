@@ -15,7 +15,7 @@ sprite $bDataObject jar:archimate/business-object
 ' Manufacture a parent Resource class...
 rectangle "Patient Data" as clPatient <<$bDataObject>> <<verb>> #Business {
   Application_DataObject(rsPatient, "Patient\n(FHIR Resource)")
-  Application_DataObject(rsFlag, "Flag\n(FHIR Resource)")
+  Application_DataObject(rsFlag,    "Flag\n(FHIR Resource)")
   Application_DataObject(rsAllergyIntolerance, "AllergyIntolerance\n(FHIR Resource)")
 }
 
@@ -28,6 +28,9 @@ rectangle "Referral Data" as clReferral <<$bDataObject>> <<verb>> #Business {
 }
 
 Technology_Artifact(rsSubscription, "Subscription\n(FHIR Resource)")
+
+url of rsPatient is [[StructureDefinition-NZCentralRegionPatient.html]]
+url of rsPractitioner is [[StructureDefinition-NZCentralRegionPractitioner.html]]
 
 clPractitioner -[hidden]-> clPatient
 rsPatient --> rsFlag: is subject of

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionPractitioner",
-  "url": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPractitioner",
+  "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPractitioner",
   "version": "0.1.0",
   "name": "NZCentralRegionPractitioner",
   "status": "active",
@@ -37,8 +37,9 @@
   "differential": {
     "element": [
       {
-        "id": "Practitioner",
-        "path": "Practitioner"
+        "id": "Practitioner.id",
+        "path": "Practitioner.id",
+        "max": "0"
       }
     ]
   }

@@ -1,21 +1,41 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-Single",
+  "id": "Patient-Ethnicity-Level2",
   "meta": {
     "profile": [
       "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "21",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
+            "display": "Māori"
+          }
+        ]
+      }
+    }
+  ],
   "address": [
     {
       "type": "postal",
-      "text": "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND",
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
+          "valueString": "Kelvin Grove"
+        }
+      ],
       "line": [
-        "100 Broadway Avenue"
+        "100 Cambridge Street"
       ],
       "city": "Palmerston North",
       "postalCode": "4410",
-      "country": "NEW ZEALAND"
+      "country": "NEW ZEALAND",
+      "text": "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
     }
   ],
   "name": [
