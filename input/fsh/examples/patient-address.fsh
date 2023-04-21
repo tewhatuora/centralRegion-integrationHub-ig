@@ -2,16 +2,18 @@
 Instance: Patient-Suburb
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"
+
 * name
+  * use = #official
   * given[0] = "James"
   * family = "Pond"
+  * text = "James Pond" 
 * birthDate = "1966-01-05"
 * gender = #male
 
 * maritalStatus.coding[+].code = #V
 * maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-code-system)
 * maritalStatus.coding[=].display = "Civil Union"
-* maritalStatus.text = "Civil Union"
 
 * telecom[+].system = #phone
 * telecom[=].value = "021 555 888 6"

@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-04-21T10:42:04+12:00"/>
+   <date value="2023-04-21T22:48:17+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -390,13 +390,28 @@
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-Ethnicity.html"/>
+            <valueUri value="Patient-Patient-Ethnicity-Level2.html"/>
          </extension>
          <reference>
-            <reference value="Patient/Patient-Ethnicity"/>
+            <reference value="Patient/Patient-Ethnicity-Level2"/>
          </reference>
-         <name value="Patient-Ethnicity"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with multiple ethnicities included"/>
+         <name value="Patient-Ethnicity-Level2"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with only ethnicity level-2 coding included"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Ethnicity-MultipleCodings.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Ethnicity-MultipleCodings"/>
+         </reference>
+         <name value="Patient-Ethnicity-MultipleCodings"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with multiple ethnicity codings included"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -411,23 +426,7 @@
             <reference value="Patient/Patient-Single"/>
          </reference>
          <name value="Patient-Single"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"/>
-         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
-         
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-Suburb.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/Patient-Suburb"/>
-         </reference>
-         <name value="Patient-Suburb"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -443,22 +442,7 @@
          </reference>
          <name value="Patient-Suburb"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"/>
-         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-Suburb.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/Patient-Suburb"/>
-         </reference>
-         <name value="Patient-Suburb"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"/>
-         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -540,8 +524,13 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Patient-Patient-Ethnicity.html"/>
-               <title value="Patient-Ethnicity"/>
+               <nameUrl value="Patient-Patient-Ethnicity-Level2.html"/>
+               <title value="Patient-Ethnicity-Level2"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-Ethnicity-MultipleCodings.html"/>
+               <title value="Patient-Ethnicity-MultipleCodings"/>
                <generation value="generated"/>
             </page>
             <page>
