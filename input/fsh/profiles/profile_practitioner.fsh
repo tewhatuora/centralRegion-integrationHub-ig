@@ -4,3 +4,5 @@
 Profile: NZCentralRegionPractitioner
 Parent: $NZBasePractitioner
 Description: "Practitioner resource for Te Whatu Ora, Central Region"
+
+* id 0..0

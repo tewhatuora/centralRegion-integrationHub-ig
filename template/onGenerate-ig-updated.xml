@@ -1,22 +1,22 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="crih.fhir.ig"/>
+   <id value="nz.central.ihub.ig"/>
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <h2>CRIntegrationHub</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/crih.fhir.ig</pre>
+         <pre>https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig</pre>
          <div>
             <p>Implementation Guide for Central Region's FHIR based Integration Hub</p>
          </div>
       </div>
    </text>
-   <url value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/crih.fhir.ig"/>
+   <url value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig"/>
    <version value="0.1.0"/>
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-04-21T10:42:04+12:00"/>
+   <date value="2023-04-21T21:52:39+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -33,7 +33,7 @@
          <display value="New Zealand"/>
       </coding>
    </jurisdiction>
-   <packageId value="crih.fhir.ig"/>
+   <packageId value="nz.central.ihub.ig"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
    <dependsOn id="hl7tx">
@@ -127,7 +127,7 @@
             <valueString value="path-history"/>
          </extension>
          <extension url="value">
-            <valueString value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/history.html"/>
+            <valueString value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/history.html"/>
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -315,6 +315,21 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nzcr-ethnicity-level-2-value-set.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nzcr-ethnicity-level-2-value-set"/>
+         </reference>
+         <name value="NZ Central Region - Ethnicityi Level 2 Value Set"/>
+         <description value="Ethnicity Level 2 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-nzcr-marital-status-value-set.html"/>
          </extension>
          <reference>
@@ -324,6 +339,21 @@
          <description value="Combined Marital Status value set with values that are in use in Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-ethnicity-level-2-code-system.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-ethnicity-level-2-code-system"/>
+         </reference>
+         <name value="NZ Central Region - Ethnicity Level 2 Code System"/>
+         <description value="Ethnicity Level 2 codes from &#xA;   [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -352,7 +382,22 @@
          </reference>
          <name value="Patient-CivilUnion"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes"/>
-         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Ethnicity.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Ethnicity"/>
+         </reference>
+         <name value="Patient-Ethnicity"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with multiple ethnicities included"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -367,7 +412,7 @@
          </reference>
          <name value="Patient-Single"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes"/>
-         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -382,7 +427,7 @@
          </reference>
          <name value="Patient-Suburb"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"/>
-         <exampleCanonical value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -439,8 +484,18 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-nzcr-ethnicity-level-2-value-set.html"/>
+               <title value="NZ Central Region - Ethnicityi Level 2 Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-nzcr-marital-status-value-set.html"/>
                <title value="NZ Central Region - Marital Status Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nzcr-ethnicity-level-2-code-system.html"/>
+               <title value="NZ Central Region - Ethnicity Level 2 Code System"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -451,6 +506,11 @@
             <page>
                <nameUrl value="Patient-Patient-CivilUnion.html"/>
                <title value="Patient-CivilUnion"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-Ethnicity.html"/>
+               <title value="Patient-Ethnicity"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -563,7 +623,7 @@
       </parameter>
       <parameter>
          <code value="path-history"/>
-         <value value="https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/history.html"/>
+         <value value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/history.html"/>
       </parameter>
       <parameter>
          <code value="template-html"/>

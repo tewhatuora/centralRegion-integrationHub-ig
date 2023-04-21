@@ -3,15 +3,16 @@ Instance: Patient-Suburb
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"
 * name
+  * use = #usual
   * given[0] = "James"
   * family = "Pond"
+  * text = "James Pond"
 * birthDate = "1966-01-05"
 * gender = #male
 
-* maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-code-system)
-* maritalStatus.coding[=].display = "Civil Union"
-* maritalStatus.text = "Civil Union"
+* maritalStatus.coding[+].code = #S
+* maritalStatus.coding[=].system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+* maritalStatus.coding[=].display = "Never Married"
 
 * telecom[+].system = #phone
 * telecom[=].value = "021 555 888 6"

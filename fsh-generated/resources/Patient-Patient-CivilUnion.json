@@ -3,7 +3,7 @@
   "id": "Patient-CivilUnion",
   "meta": {
     "profile": [
-      "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
     ]
   },
   "address": [
@@ -20,10 +20,12 @@
   ],
   "name": [
     {
+      "use": "usual",
       "given": [
         "James"
       ],
-      "family": "Pond"
+      "family": "Pond",
+      "text": "James Pond"
     }
   ],
   "birthDate": "1966-01-05",
@@ -32,11 +34,10 @@
     "coding": [
       {
         "code": "V",
-        "system": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/CodeSystem/nzcr-extra-marital-status-code-system",
+        "system": "https://standards.digital.health.nz/ns/central-region/extra-marital-status",
         "display": "Civil Union"
       }
-    ],
-    "text": "Civil Union"
+    ]
   },
   "telecom": [
     {

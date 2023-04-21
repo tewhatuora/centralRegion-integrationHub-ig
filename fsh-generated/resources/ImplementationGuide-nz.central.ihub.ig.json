@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "crih.fhir.ig",
-  "url": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/crih.fhir.ig",
+  "id": "nz.central.ihub.ig",
+  "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig",
   "version": "0.1.0",
   "name": "CRIntegrationHub",
   "title": "Te Whatu Ora, Central Region Integration Hub",
@@ -30,7 +30,7 @@
       ]
     }
   ],
-  "packageId": "crih.fhir.ig",
+  "packageId": "nz.central.ihub.ig",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -62,10 +62,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nzcr-ethnicity-level-2-value-set"
+        },
+        "name": "NZ Central Region - Ethnicityi Level 2 Value Set",
+        "description": "Ethnicity Level 2 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nzcr-marital-status-value-set"
         },
         "name": "NZ Central Region - Marital Status Value Set",
         "description": "Combined Marital Status value set with values that are in use in Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-ethnicity-level-2-code-system"
+        },
+        "name": "NZ Central Region - Ethnicity Level 2 Code System",
+        "description": "Ethnicity Level 2 codes from \n   [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)",
         "exampleBoolean": false
       },
       {
@@ -82,7 +98,23 @@
         },
         "name": "Patient-CivilUnion",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes",
-        "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-Ethnicity-Level2"
+        },
+        "name": "Patient-Ethnicity-Level2",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with only ethnicity level-2 coding included",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-Ethnicity-MultipleCodings"
+        },
+        "name": "Patient-Ethnicity-MultipleCodings",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple ethnicity codings included",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
         "reference": {
@@ -90,7 +122,7 @@
         },
         "name": "Patient-Single",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes",
-        "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
         "reference": {
@@ -98,7 +130,7 @@
         },
         "name": "Patient-Suburb",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field",
-        "exampleCanonical": "https://build.fhir.org/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       }
     ],
     "page": {
