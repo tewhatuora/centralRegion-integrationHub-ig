@@ -15,3 +15,11 @@ This is the Implementation Guide for the [HL7® FHIR©](http://hl7.org/fhir) int
 
 - [Artifact Index](artifacts.html): A page with all artifacts (Logical Models, Profiles, Extensions, Terminology and others) defined in this guide.
 
+## Logical Data Model
+The Integration Hub supports a small set of FHIR Resources:
+
+<figure>
+{% include datamodel.svg %}
+<figcaption>Supported FHIR Resources</figcaption>
+</figure>
+

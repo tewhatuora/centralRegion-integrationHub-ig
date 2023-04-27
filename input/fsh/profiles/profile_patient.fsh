@@ -48,8 +48,27 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 
 * extension[domicile-code] 0..1 MS
+  * valueCodeableConcept.coding.code 1..1 MS 
+  * valueCodeableConcept.coding.system 1..1 MS
+  * valueCodeableConcept.coding.display 1..1 MS
+  * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
+  * valueCodeableConcept.coding.userSelected 0..0 // data not available
+  * valueCodeableConcept.text 0..0                // ode, Value and Display are all derived from Code value
+  * valueCodeableConcept.extension 0..0
+  * extension 0..0
+  * id 0..0
+  
 * extension[dhb] 0..1 MS
-
+  * valueCodeableConcept.coding.code 1..1 MS 
+  * valueCodeableConcept.coding.system 1..1 MS
+  * valueCodeableConcept.coding.display 1..1 MS
+  * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
+  * valueCodeableConcept.coding.userSelected 0..0 // data not available
+  * valueCodeableConcept.text 0..0                // ode, Value and Display are all derived from Code value
+  * valueCodeableConcept.extension 0..0
+  * extension 0..0
+  * id 0..0
+  
 * gender 1..1  MS
 
 * birthDate 1..1 MS
@@ -63,30 +82,14 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
   * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-22.1
+  * valueCodeableConcept.extension 0..0
   * ^short = "Two codings required: Level-2 codes as provided by WebPAS and Level-4 codes as preferred by NZ Base"
   * extension 0..0
   * id 0..0
 
-/*
 * extension[nzCitizen] 1..1 MS
   * extension[status] 1..1 MS
-    * valueCodeableConcept.coding.code 1..1 MS      // from PID-22.1
-    * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-22.1
-    * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-22.1 ??
-    * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
-    * valueCodeableConcept.coding.userSelected 0..0 // data not available
-    * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-22.1
-    * valueCodeableConcept.extension 0..0
-    * valueCodeableConcept.id 0..0
-    * ^short = "Is this person a New Zealand citizen? CodeableConcept: yes / no / unknown"
-    * extension 0..0
-    * id 0..0
-  * id 0..0
-
-// NZ Base v2.0.0 - hasn't defined things quite completely yet - so reusing Citizenship structure with Residency name....
-* extension contains $NZBaseNZResidency named nzResidency 0..1 MS
-* extension[nz-residency]
-  * extension[status]
+    * valueCodeableConcept.coding.code 1..1 MS      // from PID-26.1
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-26.1
     * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-26.1
     * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-26.1 ??
@@ -95,11 +98,29 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-26.1
     * valueCodeableConcept.extension 0..0
     * valueCodeableConcept.id 0..0
+    * ^short = "Is this person a New Zealand citizen? CodeableConcept: yes / no / unknown"
+    * extension 0..0
+    * id 0..0
+  * extension[source] 0..0
+  * id 0..0
+
+// NZ Base v2.0.0 - hasn't defined things quite completely yet - so reusing Citizenship structure with Residency name....
+* extension contains $NZBaseNZResidency named nzResidency 0..1 MS
+* extension[nz-residency]
+  * extension[status]
+    * valueCodeableConcept.coding.code 1..1 MS      // from PID-28.1
+    * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-28.1
+    * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-28.1 ??
+    * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
+    * valueCodeableConcept.coding.userSelected 0..0 // data not available
+    * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-28.1
+    * valueCodeableConcept.extension 0..0
+    * valueCodeableConcept.id 0..0
     * ^short = "Does this person have New Zealand residency?"
     * extension 0..0
     * id 0..0
+  * extension[source] 0..0
   * id 0..0
-*/
 
 * extension[iwi] 0..0
 

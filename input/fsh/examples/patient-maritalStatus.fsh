@@ -27,6 +27,14 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 
 * extension[interpreterRequired].valueBoolean = false
 
+* extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
+* extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipVS
+* extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "Yes"
+
+* extension[nzResidency].extension[status].valueCodeableConcept.coding.code = #no
+* extension[nzResidency].extension[status].valueCodeableConcept.coding.system = $NZBaseNZResidencyVS
+* extension[nzResidency].extension[status].valueCodeableConcept.coding.display = "No"
+
 * deceasedBoolean = false
 
 Instance: Patient-Single
@@ -58,7 +66,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 * address[=].country = "NEW ZEALAND"
 
 * extension[interpreterRequired].valueBoolean = false
-/*
+
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipVS
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "Yes"
@@ -66,5 +74,5 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.code = #no
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.system = $NZBaseNZResidencyVS
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.display = "No"
-*/
+
 * deceasedBoolean = false

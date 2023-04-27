@@ -57,18 +57,17 @@
         ]
       },
       {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "min": 1
+      },
+      {
         "id": "Patient.extension:ethnicity",
         "path": "Patient.extension",
         "sliceName": "ethnicity",
         "short": "Two codings required: Level-2 codes as provided by WebPAS and Level-4 codes as preferred by NZ Base",
         "max": "3",
-        "mustSupport": true,
-        "mapping": [
-          {
-            "identity": "nzcr-patient-from-hl7v2",
-            "map": "Two coding entries, one each for https://standards.digital.health.nz/ns/ethnic-group-level-4-code and https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
-          }
-        ]
+        "mustSupport": true
       },
       {
         "id": "Patient.extension:ethnicity.id",
@@ -78,6 +77,11 @@
       {
         "id": "Patient.extension:ethnicity.valueCodeableConcept",
         "path": "Patient.extension.valueCodeableConcept"
+      },
+      {
+        "id": "Patient.extension:ethnicity.valueCodeableConcept.extension",
+        "path": "Patient.extension.valueCodeableConcept.extension",
+        "max": "0"
       },
       {
         "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.system",
@@ -131,10 +135,122 @@
         "max": "0"
       },
       {
+        "id": "Patient.extension:nzCitizen",
+        "path": "Patient.extension",
+        "sliceName": "nzCitizen",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Only using status, source not availabnle"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:nzCitizen.id",
+        "path": "Patient.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension",
+        "path": "Patient.extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status",
+        "path": "Patient.extension.extension",
+        "sliceName": "status",
+        "short": "Is this person a New Zealand citizen? CodeableConcept: yes / no / unknown",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.id",
+        "path": "Patient.extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept",
+        "path": "Patient.extension.extension.valueCodeableConcept"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.id",
+        "path": "Patient.extension.extension.valueCodeableConcept.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.extension",
+        "path": "Patient.extension.extension.valueCodeableConcept.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "https://standards.digital.health.nz/ns/nz-citizenship-status-code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PID-26.1 = 'Y' then 'yes'\nelif PID-26.1='N' then 'no'\nelse 'unknown'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.display",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PID-26.1 = 'Y' then 'Yes'\nelif PID-26.1='N' then 'No'\nelse 'Unknown'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.text",
+        "path": "Patient.extension.extension.valueCodeableConcept.text",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzCitizen.extension:source",
+        "path": "Patient.extension.extension",
+        "sliceName": "source",
+        "max": "0"
+      },
+      {
         "id": "Patient.extension:dhb",
         "path": "Patient.extension",
         "sliceName": "dhb",
         "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:dhb.id",
+        "path": "Patient.extension.id",
+        "max": "0"
       },
       {
         "id": "Patient.extension:dhb.valueCodeableConcept",
@@ -143,8 +259,15 @@
         "max": "1"
       },
       {
+        "id": "Patient.extension:dhb.valueCodeableConcept.extension",
+        "path": "Patient.extension.valueCodeableConcept.extension",
+        "max": "0"
+      },
+      {
         "id": "Patient.extension:dhb.valueCodeableConcept.coding.system",
         "path": "Patient.extension.valueCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -153,8 +276,15 @@
         ]
       },
       {
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.valueCodeableConcept.coding.version",
+        "max": "0"
+      },
+      {
         "id": "Patient.extension:dhb.valueCodeableConcept.coding.code",
         "path": "Patient.extension.valueCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -163,18 +293,46 @@
         ]
       },
       {
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.valueCodeableConcept.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.valueCodeableConcept.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:dhb.valueCodeableConcept.text",
+        "path": "Patient.extension.valueCodeableConcept.text",
+        "max": "0"
+      },
+      {
         "id": "Patient.extension:domicile-code",
         "path": "Patient.extension",
         "sliceName": "domicile-code",
         "mustSupport": true
       },
       {
+        "id": "Patient.extension:domicile-code.id",
+        "path": "Patient.extension.id",
+        "max": "0"
+      },
+      {
         "id": "Patient.extension:domicile-code.valueCodeableConcept",
         "path": "Patient.extension.valueCodeableConcept"
       },
       {
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.extension",
+        "path": "Patient.extension.valueCodeableConcept.extension",
+        "max": "0"
+      },
+      {
         "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.system",
         "path": "Patient.extension.valueCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -183,14 +341,37 @@
         ]
       },
       {
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.valueCodeableConcept.coding.version",
+        "max": "0"
+      },
+      {
         "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.code",
         "path": "Patient.extension.valueCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
             "map": "PID-12"
           }
         ]
+      },
+      {
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.valueCodeableConcept.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.valueCodeableConcept.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.text",
+        "path": "Patient.extension.valueCodeableConcept.text",
+        "max": "0"
       },
       {
         "id": "Patient.extension:pho",
@@ -208,6 +389,115 @@
         "id": "Patient.extension:iwi",
         "path": "Patient.extension",
         "sliceName": "iwi",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency",
+        "path": "Patient.extension",
+        "sliceName": "nzResidency",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/nz-residency"
+            ]
+          }
+        ],
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Only using status, source not availabnle"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:nzResidency.id",
+        "path": "Patient.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status",
+        "path": "Patient.extension.extension",
+        "sliceName": "status",
+        "short": "Does this person have New Zealand residency?"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.id",
+        "path": "Patient.extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept",
+        "path": "Patient.extension.extension.valueCodeableConcept"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.id",
+        "path": "Patient.extension.extension.valueCodeableConcept.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.extension",
+        "path": "Patient.extension.extension.valueCodeableConcept.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PID-28.1 = 'Y' then 'yes'\nelif PID-28.1='N' then 'no'\nelse 'unknown'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.display",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PID-28.1 = 'Y' then 'Yes'\nelif PID-28.1='N' then 'No'\nelse 'Unknown'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.text",
+        "path": "Patient.extension.extension.valueCodeableConcept.text",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:source",
+        "path": "Patient.extension.extension",
+        "sliceName": "source",
         "max": "0"
       },
       {

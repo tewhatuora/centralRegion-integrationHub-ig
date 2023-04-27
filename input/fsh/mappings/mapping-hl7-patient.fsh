@@ -41,7 +41,7 @@ elif PIF-8 == 'U' then 'unknown'"
 
 * birthDate -> "PID-7"
 
-* extension[ethnicity] -> "Two coding entries, one each for https://standards.digital.health.nz/ns/ethnic-group-level-4-code and https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
+// * extension[ethnicity] -> "Two coding entries, one each for https://standards.digital.health.nz/ns/ethnic-group-level-4-code and https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
 * extension[ethnicity].valueCodeableConcept.coding.code -> "PID-22.1 - which is group-level-2"
 * extension[ethnicity].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/ethnic-group-level-4-code and https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
 * extension[ethnicity].valueCodeableConcept.coding.display -> "Check for macrons in Māori and Cook Island Māori"
@@ -79,7 +79,6 @@ elif PID 11.7 == 'B' then 'work'"
 * generalPractitioner.identifier.system -> "if PD1-4.9.2 == '2.16.840.1.113883.2.18.66.3.2.0' then 'https://standards.digital.health.nz/ns/pas-practitioner-id'"
 * generalPractitioner.display -> "PD1-4.2 + ', ' + PD1-4.3 + ' ' + PD1-4.4 + '  + PD1=4.6"
 
-/*
 * extension[nzCitizen] -> "Only using status, source not availabnle"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code -> "if PID-26.1 = 'Y' then 'yes'
 elif PID-26.1='N' then 'no'
@@ -97,4 +96,3 @@ else 'unknown'"
 elif PID-28.1='N' then 'No'
 else 'Unknown'"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.system -> "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code"
-*/
