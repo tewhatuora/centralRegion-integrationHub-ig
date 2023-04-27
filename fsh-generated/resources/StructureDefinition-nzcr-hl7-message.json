@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nzcr-hl7-message",
+  "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7-message",
+  "version": "0.1.0",
+  "name": "NZCentralRegionHL7Message",
+  "title": "HL7 Message",
+  "status": "active",
+  "description": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "HL7 Message",
+        "definition": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7-message"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "base64Binary"
+          }
+        ]
+      }
+    ]
+  }
+}

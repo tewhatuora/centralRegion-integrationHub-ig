@@ -32,6 +32,11 @@
       "identity": "loinc",
       "uri": "http://loinc.org",
       "name": "LOINC code for the element"
+    },
+    {
+      "identity": "nzcr-patient-from-hl7v2",
+      "name": "Central Region Message Specification (1.14)",
+      "uri": "https://standards.digital.health.nz/ns/central-region/hl7-v2"
     }
   ],
   "kind": "resource",
@@ -42,12 +47,33 @@
   "differential": {
     "element": [
       {
+        "id": "Patient",
+        "path": "Patient",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Patient"
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:ethnicity",
         "path": "Patient.extension",
         "sliceName": "ethnicity",
         "short": "Two codings required: Level-2 codes as provided by WebPAS and Level-4 codes as preferred by NZ Base",
         "max": "3",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Two coding entries, one each for https://standards.digital.health.nz/ns/ethnic-group-level-4-code and https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:ethnicity.id",
+        "path": "Patient.extension.id",
+        "max": "0"
       },
       {
         "id": "Patient.extension:ethnicity.valueCodeableConcept",
@@ -57,7 +83,13 @@
         "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.system",
         "path": "Patient.extension.valueCodeableConcept.coding.system",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code and https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
+          }
+        ]
       },
       {
         "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.version",
@@ -68,13 +100,25 @@
         "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.code",
         "path": "Patient.extension.valueCodeableConcept.coding.code",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-22.1 - which is group-level-2"
+          }
+        ]
       },
       {
         "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.display",
         "path": "Patient.extension.valueCodeableConcept.coding.display",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Check for macrons in Māori and Cook Island Māori"
+          }
+        ]
       },
       {
         "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.userSelected",
@@ -87,88 +131,66 @@
         "max": "0"
       },
       {
-        "id": "Patient.extension:nzCitizen",
-        "path": "Patient.extension",
-        "sliceName": "nzCitizen",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.extension:nzCitizen.id",
-        "path": "Patient.extension.id",
-        "max": "0"
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension",
-        "path": "Patient.extension.extension",
-        "min": 1
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status",
-        "path": "Patient.extension.extension",
-        "sliceName": "status",
-        "short": "Is this person a New Zealand citizen? CodeableConcept: #yes / #no / #unknown",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status.id",
-        "path": "Patient.extension.extension.id",
-        "max": "0"
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept",
-        "path": "Patient.extension.extension.valueCodeableConcept"
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.system",
-        "path": "Patient.extension.extension.valueCodeableConcept.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.version",
-        "path": "Patient.extension.extension.valueCodeableConcept.coding.version",
-        "max": "0"
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.code",
-        "path": "Patient.extension.extension.valueCodeableConcept.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.display",
-        "path": "Patient.extension.extension.valueCodeableConcept.coding.display",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.userSelected",
-        "path": "Patient.extension.extension.valueCodeableConcept.coding.userSelected",
-        "max": "0"
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.text",
-        "path": "Patient.extension.extension.valueCodeableConcept.text",
-        "max": "0"
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:source",
-        "path": "Patient.extension.extension",
-        "sliceName": "source",
-        "max": "0"
-      },
-      {
         "id": "Patient.extension:dhb",
         "path": "Patient.extension",
         "sliceName": "dhb",
         "mustSupport": true
       },
       {
+        "id": "Patient.extension:dhb.valueCodeableConcept",
+        "path": "Patient.extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.valueCodeableConcept.coding.system",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "https://standards.digital.health.nz/ns/dhb-code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.valueCodeableConcept.coding.code",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "dhbLookup(PID-12) - perhaps with ConceptMap ??"
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:domicile-code",
         "path": "Patient.extension",
         "sliceName": "domicile-code",
         "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:domicile-code.valueCodeableConcept",
+        "path": "Patient.extension.valueCodeableConcept"
+      },
+      {
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.valueCodeableConcept.coding.system",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "https://standards.digital.health.nz/ns/domicile-code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.valueCodeableConcept.coding.code",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-12"
+          }
+        ]
       },
       {
         "id": "Patient.extension:pho",
@@ -189,6 +211,114 @@
         "max": "0"
       },
       {
+        "id": "Patient.extension:interpreterRequired",
+        "path": "Patient.extension",
+        "sliceName": "interpreterRequired",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:interpreterRequired.valueBoolean",
+        "path": "Patient.extension.valueBoolean",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-15.4"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:hl7Message",
+        "path": "Patient.extension",
+        "sliceName": "hl7Message",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7-message"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier"
+      },
+      {
+        "id": "Patient.identifier.use",
+        "path": "Patient.identifier.use",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2' then 'usual'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier.type.coding.system",
+        "path": "Patient.identifier.type.coding.system",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2' then 'https://www.hl7.org/fhir/v2/0203'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier.type.coding.code",
+        "path": "Patient.identifier.type.coding.code",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2' then 'MR'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier.type.coding.display",
+        "path": "Patient.identifier.type.coding.display",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2' then 'Medical Record Number'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier.system",
+        "path": "Patient.identifier.system",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "https://standards.digital.health.nz/ns/nhi-id"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier.value",
+        "path": "Patient.identifier.value",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-3.1"
+          }
+        ]
+      },
+      {
         "id": "Patient.active",
         "path": "Patient.active",
         "max": "0"
@@ -196,36 +326,84 @@
       {
         "id": "Patient.name",
         "path": "Patient.name",
+        "short": "one of: official / nickname",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Repeat for PID-5 Patient Name and PID-9 Patient Aliases"
+          }
+        ]
+      },
+      {
+        "id": "Patient.name.id",
+        "path": "Patient.name.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.extension",
+        "path": "Patient.name.extension",
+        "max": "0"
       },
       {
         "id": "Patient.name.use",
         "path": "Patient.name.use",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if mapping PID-5 then 'official' elif mapping PID-9 then 'nickname'"
+          }
+        ]
       },
       {
         "id": "Patient.name.text",
         "path": "Patient.name.text",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-5.5 + ' ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.1 or PID-9.5 + ' ' + PID-9.2 + ' ' + PID-9.3 + ' ' + PID-9.1"
+          }
+        ]
       },
       {
         "id": "Patient.name.family",
         "path": "Patient.name.family",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-5.1 or PID-9.1"
+          }
+        ]
       },
       {
         "id": "Patient.name.given",
         "path": "Patient.name.given",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-5.2 or PID-9.2 and PID-5.3 or PID-9.3",
+            "comment": "name.given[0] -> FirstName AND name.given[1] -> middleNamaes - Do NOT attempt to separate middle names"
+          }
+        ]
       },
       {
         "id": "Patient.name.prefix",
         "path": "Patient.name.prefix",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-5.5 or PID-9.5"
+          }
+        ]
       },
       {
         "id": "Patient.name.suffix",
@@ -236,11 +414,22 @@
         "id": "Patient.telecom",
         "path": "Patient.telecom",
         "min": 1,
-        "max": "3"
+        "max": "3",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Repeat for PID-13 and PID-14"
+          }
+        ]
       },
       {
         "id": "Patient.telecom.id",
         "path": "Patient.telecom.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.telecom.extension",
+        "path": "Patient.telecom.extension",
         "max": "0"
       },
       {
@@ -253,19 +442,37 @@
         "id": "Patient.telecom.system",
         "path": "Patient.telecom.system",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-13.3 or PID-14.3 -\nif 'PH' then 'phone'\nif 'FX' then 'fax'\nif 'CP' then 'sms'\nif 'BP' then 'pager'\nif 'NET' then 'email'\n\nNote: If only one phone entry with type 'CP' then use 'phone'"
+          }
+        ]
       },
       {
         "id": "Patient.telecom.value",
         "path": "Patient.telecom.value",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-13.1 or PID-14.1"
+          }
+        ]
       },
       {
         "id": "Patient.telecom.use",
         "path": "Patient.telecom.use",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if mapping PID-13 then 'home' elif mapping PID-13 then 'work'"
+          }
+        ]
       },
       {
         "id": "Patient.telecom.rank",
@@ -281,13 +488,25 @@
         "id": "Patient.gender",
         "path": "Patient.gender",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-8 - \nif PID-8 == 'F' then 'female'\nelif PID-8 == 'M' then 'male'\nelif PIF-8 == 'U' then 'unknown'"
+          }
+        ]
       },
       {
         "id": "Patient.birthDate",
         "path": "Patient.birthDate",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-7"
+          }
+        ]
       },
       {
         "id": "Patient.deceased[x]",
@@ -319,6 +538,18 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.address.extension:suburb.valueString",
+        "path": "Patient.address.extension.valueString",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-11.8"
+          }
+        ]
+      },
+      {
         "id": "Patient.address.extension:building-name",
         "path": "Patient.address.extension",
         "sliceName": "building-name",
@@ -333,32 +564,62 @@
       {
         "id": "Patient.address.use",
         "path": "Patient.address.use",
-        "max": "0"
+        "max": "0",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PID-11.7 == 'C' then 'home'\nelif PID 11.7 == 'B' then 'work'"
+          }
+        ]
       },
       {
         "id": "Patient.address.type",
         "path": "Patient.address.type",
-        "short": "Fixed value #postal",
+        "short": "Fixed value: postal",
         "min": 1,
         "patternCode": "postal",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Hard-coded to 'postal'"
+          }
+        ]
       },
       {
         "id": "Patient.address.text",
         "path": "Patient.address.text",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-11.1 + ' ' + PID-11.2 + ' ' + PID-11.8 + ' ' + PID-11.3 + ' '+ PID-11.4 + ' '+ PID-11.5"
+          }
+        ]
       },
       {
         "id": "Patient.address.line",
         "path": "Patient.address.line",
         "max": "1",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-11.1 and PID-11.2 (if present)"
+          }
+        ]
       },
       {
         "id": "Patient.address.city",
         "path": "Patient.address.city",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-11.3"
+          }
+        ]
       },
       {
         "id": "Patient.address.district",
@@ -368,18 +629,36 @@
       {
         "id": "Patient.address.state",
         "path": "Patient.address.state",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-11.4"
+          }
+        ]
       },
       {
         "id": "Patient.address.postalCode",
         "path": "Patient.address.postalCode",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-11.5"
+          }
+        ]
       },
       {
         "id": "Patient.address.country",
         "path": "Patient.address.country",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-11.6"
+          }
+        ]
       },
       {
         "id": "Patient.address.period",
@@ -397,10 +676,36 @@
         }
       },
       {
+        "id": "Patient.maritalStatus.id",
+        "path": "Patient.maritalStatus.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.maritalStatus.extension",
+        "path": "Patient.maritalStatus.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.maritalStatus.coding.id",
+        "path": "Patient.maritalStatus.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.maritalStatus.coding.extension",
+        "path": "Patient.maritalStatus.coding.extension",
+        "max": "0"
+      },
+      {
         "id": "Patient.maritalStatus.coding.system",
         "path": "Patient.maritalStatus.coding.system",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus or https://standards.digital.health.nz/ns/central-region/extra-marital-status (as appropriate)"
+          }
+        ]
       },
       {
         "id": "Patient.maritalStatus.coding.version",
@@ -411,13 +716,25 @@
         "id": "Patient.maritalStatus.coding.code",
         "path": "Patient.maritalStatus.coding.code",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-16.1"
+          }
+        ]
       },
       {
         "id": "Patient.maritalStatus.coding.display",
         "path": "Patient.maritalStatus.coding.display",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-16.2"
+          }
+        ]
       },
       {
         "id": "Patient.maritalStatus.coding.userSelected",
@@ -445,11 +762,41 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.contact.id",
+        "path": "Patient.contact.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.extension",
+        "path": "Patient.contact.extension",
+        "max": "0"
+      },
+      {
         "id": "Patient.contact.relationship",
         "path": "Patient.contact.relationship",
         "min": 1,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Patient.contact.relationship.id",
+        "path": "Patient.contact.relationship.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.relationship.extension",
+        "path": "Patient.contact.relationship.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.relationship.coding.id",
+        "path": "Patient.contact.relationship.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.relationship.coding.extension",
+        "path": "Patient.contact.relationship.coding.extension",
+        "max": "0"
       },
       {
         "id": "Patient.contact.relationship.coding.system",
@@ -491,6 +838,16 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.contact.name.id",
+        "path": "Patient.contact.name.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.name.extension",
+        "path": "Patient.contact.name.extension",
+        "max": "0"
+      },
+      {
         "id": "Patient.contact.name.use",
         "path": "Patient.contact.name.use",
         "max": "0"
@@ -526,6 +883,16 @@
         "id": "Patient.contact.telecom",
         "path": "Patient.contact.telecom",
         "mustSupport": true
+      },
+      {
+        "id": "Patient.contact.telecom.id",
+        "path": "Patient.contact.telecom.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.telecom.extension",
+        "path": "Patient.contact.telecom.extension",
+        "max": "0"
       },
       {
         "id": "Patient.contact.telecom.system",
@@ -576,15 +943,51 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.communication.id",
+        "path": "Patient.communication.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication.extension",
+        "path": "Patient.communication.extension",
+        "max": "0"
+      },
+      {
         "id": "Patient.communication.language",
         "path": "Patient.communication.language",
         "mustSupport": true
       },
       {
+        "id": "Patient.communication.language.id",
+        "path": "Patient.communication.language.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication.language.extension",
+        "path": "Patient.communication.language.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication.language.coding.id",
+        "path": "Patient.communication.language.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication.language.coding.extension",
+        "path": "Patient.communication.language.coding.extension",
+        "max": "0"
+      },
+      {
         "id": "Patient.communication.language.coding.system",
         "path": "Patient.communication.language.coding.system",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": ""
+          }
+        ]
       },
       {
         "id": "Patient.communication.language.coding.version",
@@ -595,13 +998,25 @@
         "id": "Patient.communication.language.coding.code",
         "path": "Patient.communication.language.coding.code",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-15.1"
+          }
+        ]
       },
       {
         "id": "Patient.communication.language.coding.display",
         "path": "Patient.communication.language.coding.display",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-15.2"
+          }
+        ]
       },
       {
         "id": "Patient.communication.language.coding.userSelected",
@@ -623,7 +1038,53 @@
         "id": "Patient.generalPractitioner",
         "path": "Patient.generalPractitioner",
         "max": "1",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Lookup using PD1-4.1 (local identifier) ??"
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.type",
+        "path": "Patient.generalPractitioner.type",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'Practitioner'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.system",
+        "path": "Patient.generalPractitioner.identifier.system",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "if PD1-4.9.2 == '2.16.840.1.113883.2.18.66.3.2.0' then 'https://standards.digital.health.nz/ns/pas-practitioner-id'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.value",
+        "path": "Patient.generalPractitioner.identifier.value",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PD1-4.1"
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.display",
+        "path": "Patient.generalPractitioner.display",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PD1-4.2 + ', ' + PD1-4.3 + ' ' + PD1-4.4 + '  + PD1=4.6"
+          }
+        ]
       },
       {
         "id": "Patient.managingOrganization",
@@ -633,7 +1094,28 @@
       {
         "id": "Patient.link",
         "path": "Patient.link",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.link.id",
+        "path": "Patient.link.id",
         "max": "0"
+      },
+      {
+        "id": "Patient.link.extension",
+        "path": "Patient.link.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.link.other",
+        "path": "Patient.link.other",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.link.type",
+        "path": "Patient.link.type",
+        "short": "replaced-by | replaces",
+        "mustSupport": true
       }
     ]
   }

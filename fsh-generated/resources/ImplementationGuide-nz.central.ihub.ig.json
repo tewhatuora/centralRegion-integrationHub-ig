@@ -62,6 +62,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nzcr-hl7-message"
+        },
+        "name": "HL7 Message",
+        "description": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nz-residency"
+        },
+        "name": "NZResidency",
+        "description": "NZ Residency status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nzcr-ethnicity-level-2-value-set"
         },
         "name": "NZ Central Region - Ethnicityi Level 2 Value Set",
@@ -74,6 +90,14 @@
         },
         "name": "NZ Central Region - Marital Status Value Set",
         "description": "Combined Marital Status value set with values that are in use in Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nz-residency"
+        },
+        "name": "NZ Residency status",
+        "description": "Is the person a NZ resident",
         "exampleBoolean": false
       },
       {
@@ -94,18 +118,18 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/nz-residency"
+        },
+        "name": "NZ Residency status",
+        "description": "NZ Residency status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Patient/Patient-CivilUnion"
         },
         "name": "Patient-CivilUnion",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/Patient-Ethnicity-Level2"
-        },
-        "name": "Patient-Ethnicity-Level2",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with only ethnicity level-2 coding included",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {

@@ -9,11 +9,14 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * name 1..* MS
   * use 1..1 MS
+  * ^short = "one of: official / nickname"
   * text 1..1 MS
   * family 1..1 MS
   * given MS
   * prefix MS
   * suffix 0..0
+  * extension 0..0
+  * id 0..0
 
 * address 0..* MS
   * extension[building-name] 0..0
@@ -23,7 +26,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * use 0..0
   * type 1..1 MS
   * type = #postal
-  * type ^short = "Fixed value #postal"
+  * type ^short = "Fixed value: postal"
   * text 1..1 MS
   * line 0..1 MS
   * city 0..1 MS
@@ -41,6 +44,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * system 1..1 MS
   * value 1..1 MS
   * use 1..1 MS
+  * extension 0..0
   * id 0..0
 
 * extension[domicile-code] 0..1 MS
@@ -60,8 +64,11 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
   * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-22.1
   * ^short = "Two codings required: Level-2 codes as provided by WebPAS and Level-4 codes as preferred by NZ Base"
+  * extension 0..0
+  * id 0..0
 
-* extension[nzCitizen] 0..1 MS
+/*
+* extension[nzCitizen] 1..1 MS
   * extension[status] 1..1 MS
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-22.1
     * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-22.1
@@ -69,13 +76,33 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
     * valueCodeableConcept.coding.userSelected 0..0 // data not available
     * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-22.1
-    * ^short = "Is this person a New Zealand citizen? CodeableConcept: #yes / #no / #unknown"
+    * valueCodeableConcept.extension 0..0
+    * valueCodeableConcept.id 0..0
+    * ^short = "Is this person a New Zealand citizen? CodeableConcept: yes / no / unknown"
     * extension 0..0
     * id 0..0
-  * extension[source] 0..0
   * id 0..0
 
+// NZ Base v2.0.0 - hasn't defined things quite completely yet - so reusing Citizenship structure with Residency name....
+* extension contains $NZBaseNZResidency named nzResidency 0..1 MS
+* extension[nz-residency]
+  * extension[status]
+    * valueCodeableConcept.coding.code 1..1 MS      // from PID-26.1
+    * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-26.1
+    * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-26.1 ??
+    * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
+    * valueCodeableConcept.coding.userSelected 0..0 // data not available
+    * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-26.1
+    * valueCodeableConcept.extension 0..0
+    * valueCodeableConcept.id 0..0
+    * ^short = "Does this person have New Zealand residency?"
+    * extension 0..0
+    * id 0..0
+  * id 0..0
+*/
+
 * extension[iwi] 0..0
+
 * maritalStatus 1..1 MS
 * maritalStatus from  nzcr-marital-status-value-set (required)
   * coding.code 1..1 MS      // from PID-16.1
@@ -83,8 +110,11 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * coding.display 1..1 MS   // from PID-16.2 or by lookup from PID-16.1 ??
   * coding.version 0..0      // code systems are not explicitly versioned
   * coding.userSelected 0..0 // data not available
+  * coding.extension 0..0
+  * coding.id 0..0
   * text 0..0    //  Code, Value and Display are all derived from Code value from PID-16.1
-
+  * extension 0..0
+  * id 0..0
 * photo 0..0
 
 * contact 0..* MS // A contact party (e.g. guardian, partner, friend) for the patient
@@ -94,24 +124,36 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * coding.display 1..1 MS   // from NK1-3.2 or by lookup from NK1-3.1 ??
     * coding.version 0..0      // code systems are not explicitly versioned
     * coding.userSelected 0..0 // data not available
+    * coding.extension 0..0
+    * coding.id 0..0
     * text 0..0    //  Code, Value and Display are all derived from Code value from PID-16.1
+    * extension 0..0
+    * id 0..0
   * name 1..1 MS
     * use 0..0
     * text 1..1 MS
     * family 1..1 MS
     * given MS
     * prefix 0..0
-    * suffix 0..0      
+    * suffix 0..0
+    * extension 0..0
+    * id 0..0   
   * telecom 0..* MS
     * system 1..1 MS
     * value 1..1 MS
     * use 1..1 MS
     * rank 0..0
+    * extension 0..0
+    * id 0..0
 
   * address 0..0 // Contact Address is not included in RegionalMessageSpecification (yet)
   * gender 0..0
   * organization 0..0
   * period 0..1 MS
+  * extension 0..0
+  * id 0..0
+
+* extension contains $HL7InterpreterRequired named interpreterRequired 0..1 MS
 
 * communication 0..* MS
   * language 1.. MS
@@ -120,9 +162,14 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * coding.display 1..1 MS   // from PID-15.2 or by lookup from PID-15.1 ??
     * coding.version 0..0      // code systems are not explicitly versioned
     * coding.userSelected 0..0 // data not available
+    * coding.extension 0..0
+    * coding.id 0..0
     * text 0..0    //  Code, Value and Display are all derived from Code value from PID-15.1
-
+    * extension 0..0
+    * id 0..0
   * preferred 1..1 MS
+  * extension 0..0
+  * id 0..0
 
 * generalPractitioner 0..1 MS // Patient's nominated primary care provider 
 * managingOrganization 0..0   // Organization that is the custodian of the patient record    ... or maybe use PHO from NZBase ??
@@ -132,6 +179,13 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * ^short = "deceasedBoolean = true if patient is deceased and deceased date/time is unknown, deceasedDateTime if known"
 
 
-* link 0..0 // Link to another patient resource that concerns the same actual person  
-  * other   // The other patient or related person resource that the link refers to
-  * type    // R!  replaced-by | replaces | refer | seealso
+* link MS // Link to another patient resource that concerns the same actual person  
+  * other  MS  
+  * type   MS 
+  * type ^short = "replaced-by | replaces"
+  * extension 0..0
+  * id 0..0
+
+* extension contains 
+    NZCentralRegionHL7Message named hl7Message 0..1 MS
+* extension[hl7Message].value[x] only base64Binary

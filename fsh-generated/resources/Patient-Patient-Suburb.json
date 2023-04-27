@@ -24,6 +24,12 @@
       "text": "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
     }
   ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+      "valueBoolean": false
+    }
+  ],
   "name": [
     {
       "use": "official",
