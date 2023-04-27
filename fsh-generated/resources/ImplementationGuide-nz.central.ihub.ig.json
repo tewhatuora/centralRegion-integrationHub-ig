@@ -134,6 +134,14 @@
       },
       {
         "reference": {
+          "reference": "Patient/Patient-Ethnicity-Level2"
+        },
+        "name": "Patient-Ethnicity-Level2",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with only ethnicity level-2 coding included",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
           "reference": "Patient/Patient-Ethnicity-MultipleCodings"
         },
         "name": "Patient-Ethnicity-MultipleCodings",

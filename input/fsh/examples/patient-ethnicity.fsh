@@ -44,7 +44,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with mu
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.code = #no
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.system = $NZBaseNZResidencyVS
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.display = "No"
-
+*/
 * deceasedBoolean = false
 
 // Example Instances of Patient including ethnicity
@@ -79,7 +79,6 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 * address[=].postalCode = "4410"
 * address[=].country = "NEW ZEALAND"
 * address[=].text = "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
-*/
 
 * extension[interpreterRequired].valueBoolean = false
 

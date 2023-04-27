@@ -38,6 +38,5 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with ad
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.system = $NZBaseNZResidencyVS
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.display = "No"
 */
-
 * deceasedBoolean = false
 
