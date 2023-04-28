@@ -1,0 +1,13 @@
+{
+    "name": "ihe.fhir.template",
+    "version": "0.1.0",
+    "type": "fhir.template",
+    "license": "CC0-1.0",
+    "description": "Stu's Custom FHIR Template",
+    "author": "Stuart McGrigor",
+    "canonical": "http://hl7.org.nz/tewhatuora/central-region/stu-template",
+    "base": "fhir.base.template",
+    "dependencies": {
+        "fhir.base.template": "current"
+        }
+    }
