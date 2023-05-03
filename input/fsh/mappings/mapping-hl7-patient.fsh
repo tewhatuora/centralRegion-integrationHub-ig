@@ -57,17 +57,19 @@ elif PID 11.7 == 'B' then 'work'"
 * address.country -> "PID-11.6"
 * address.extension[suburb].valueString -> "PID-11.8"
 
+/*
 * extension[domicile-code].valueCodeableConcept.coding.code -> "PID-12"
 * extension[domicile-code].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/domicile-code"
 
 * extension[dhb].valueCodeableConcept.coding.code -> "dhbLookup(PID-12) - perhaps with ConceptMap ??"
 * extension[dhb].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/dhb-code"
+*/
 
 * maritalStatus.coding.code -> "PID-16.1"
 * maritalStatus.coding.display -> "PID-16.2"
 * maritalStatus.coding.system -> "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus or https://standards.digital.health.nz/ns/central-region/extra-marital-status (as appropriate)"
 
-* extension[interpreterRequired].valueBoolean -> "PID-15.4"
+// * extension[interpreterRequired].valueBoolean -> "PID-15.4"
 
 * communication.language.coding.code -> "PID-15.1"
 * communication.language.coding.display -> "PID-15.2"
@@ -79,6 +81,7 @@ elif PID 11.7 == 'B' then 'work'"
 * generalPractitioner.identifier.system -> "if PD1-4.9.2 == '2.16.840.1.113883.2.18.66.3.2.0' then 'https://standards.digital.health.nz/ns/pas-practitioner-id'"
 * generalPractitioner.display -> "PD1-4.2 + ', ' + PD1-4.3 + ' ' + PD1-4.4 + '  + PD1=4.6"
 
+/*
 * extension[nzCitizen] -> "Only using status, source not availabnle"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code -> "if PID-26.1 = 'Y' then 'yes'
 elif PID-26.1='N' then 'no'
@@ -96,3 +99,4 @@ else 'unknown'"
 elif PID-28.1='N' then 'No'
 else 'Unknown'"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.system -> "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code"
+*/

@@ -11,15 +11,12 @@
          </div>
       </div>
    </text>
-   <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#current"/>
-   </extension>
    <url value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig"/>
    <version value="0.1.0"/>
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-04-28T15:39:02+12:00"/>
+   <date value="2023-05-03T17:53:40+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -244,6 +241,9 @@
          <extension url="value">
             <valueString value="true"/>
          </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+         <valueCode value="hl7.fhir.uv.tools#current"/>
       </extension>
 
 

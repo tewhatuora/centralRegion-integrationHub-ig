@@ -5,11 +5,13 @@ Profile: NZCentralRegionPatient
 Parent: $NZBasePatient
 Description: "Patient resource for Te Whatu Ora, Central Region"
 
+* ^derivation = #constraint
+
 * active 0..0
 
 * name 1..* MS
   * use 1..1 MS
-  * ^short = "one of: official / nickname"
+    * ^short = "one of: official / nickname"
   * text 1..1 MS
   * family 1..1 MS
   * given MS
@@ -48,6 +50,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 
 * extension[domicile-code] 0..1 MS
+  * valueCodeableConcept.coding 1..1 MS
   * valueCodeableConcept.coding.code 1..1 MS 
   * valueCodeableConcept.coding.system 1..1 MS
   * valueCodeableConcept.coding.display 1..1 MS
@@ -59,6 +62,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
   
 * extension[dhb] 0..1 MS
+  * valueCodeableConcept.coding 1..1 MS
   * valueCodeableConcept.coding.code 1..1 MS 
   * valueCodeableConcept.coding.system 1..1 MS
   * valueCodeableConcept.coding.display 1..1 MS
@@ -68,7 +72,8 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.extension 0..0
   * extension 0..0
   * id 0..0
-  
+
+
 * gender 1..1  MS
 
 * birthDate 1..1 MS
@@ -76,6 +81,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension[sex-at-birth] 0..0
 
 * extension[ethnicity] 0..3 MS
+  * valueCodeableConcept.coding 1..* MS           //  <<<---- THIS ONE HERE is required to make the publisher work with the rest
   * valueCodeableConcept.coding.code 1..1 MS      // from PID-22.1
   * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-22.1
   * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-22.1 ??
@@ -89,7 +95,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * extension[nzCitizen] 1..1 MS
   * extension[status] 1..1 MS
-    * valueCodeableConcept.coding.code 1..1 MS      // from PID-26.1
+    * valueCodeableConcept.coding 1..1 MS
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-26.1
     * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-26.1
     * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-26.1 ??
@@ -108,6 +114,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension contains $NZBaseNZResidency named nzResidency 0..1 MS
 * extension[nz-residency]
   * extension[status]
+    * valueCodeableConcept.coding 1..1 MS
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-28.1
     * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-28.1
     * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-28.1 ??
@@ -126,6 +133,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * maritalStatus 1..1 MS
 * maritalStatus from  nzcr-marital-status-value-set (required)
+  * coding 1..1 MS
   * coding.code 1..1 MS      // from PID-16.1
   * coding.system 1..1 MS    // based on which code from PID-16.1
   * coding.display 1..1 MS   // from PID-16.2 or by lookup from PID-16.1 ??
@@ -140,6 +148,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * contact 0..* MS // A contact party (e.g. guardian, partner, friend) for the patient
   * relationship 1..1 MS
+    * coding 1..1 MS
     * coding.code 1..1 MS      // from NK1-3.1
     * coding.system 1..1 MS    // based on which code from NK1-3.1
     * coding.display 1..1 MS   // from NK1-3.2 or by lookup from NK1-3.1 ??
@@ -178,6 +187,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * communication 0..* MS
   * language 1.. MS
+    * coding 1..* MS
     * coding.code 1..1 MS      // from PID-15.1
     * coding.system 1..1 MS    // based on which code from PID-15.1
     * coding.display 1..1 MS   // from PID-15.2 or by lookup from PID-15.1 ??

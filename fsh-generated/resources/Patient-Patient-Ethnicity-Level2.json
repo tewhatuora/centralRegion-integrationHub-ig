@@ -48,8 +48,8 @@
             "coding": [
               {
                 "code": "no",
-                "system": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code",
-                "display": "No"
+                "system": "https://standards.digital.health.nz/ns/nz-residency-code",
+                "display": "Not a Permanent Resident"
               }
             ]
           }

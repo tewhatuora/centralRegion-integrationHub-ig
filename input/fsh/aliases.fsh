@@ -11,8 +11,9 @@ Alias:   $NZBaseNZResidency     = http://hl7.org.nz/fhir/StructureDefinition/nz-
 Alias:   $NZBaseEthnicity       = http://hl7.org.nz/fhir.StructureDefinition/nz-ethnicity
 
 Alias:   $NZBaseNHI              = https://standards.digital.health.nz/ns/nhi-id
-Alias:   $NZBaseNZCitizenshipVS  = https://standards.digital.health.nz/ns/nz-citizenship-status-code
-Alias:   $NZBaseNZResidencyVS    = https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code
+Alias:   $NZBaseNZCitizenshipCS  = https://standards.digital.health.nz/ns/nz-citizenship-status-code
+Alias:   $NZBaseNZResidencyCS    = https://standards.digital.health.nz/ns/nz-residency-code
+
 Alias:   $NZStatsEthnicityLevel4 = https://standards.digital.health.nz/ns/ethnic-group-level-4-code
 
 // Local URLs for locally defined extensions & code systems
