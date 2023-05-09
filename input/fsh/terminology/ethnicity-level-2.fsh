@@ -4,7 +4,7 @@ Title: "NZ Central Region - Ethnicity Level 2 Code System"
 Description:  "Ethnicity Level 2 codes from 
    [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"
 
-* ^url = $NZStatsEthnicityLevel2
+* ^url = $NZStatsEthnicityLevel2CS
 * ^experimental = false
 * ^caseSensitive = true
 

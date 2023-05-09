@@ -1,7 +1,7 @@
-// Example Instances of Patient with different address fields
-Instance: Patient-Suburb
+// Example Instances of Patient
+Instance: Patient-Religion
 InstanceOf: NZCentralRegionPatient
-Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"
+Description: "An example of a patient from Te Whatu Ora, Central Region, with Religion element"
 
 * name
   * use = #official
@@ -36,6 +36,10 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with ad
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #no
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].system = $NZBaseNZResidencyCS
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Not a Permanent Resident"
+
+* extension[patient-religion].valueCodeableConcept.coding[+].code = #R033
+* extension[patient-religion].valueCodeableConcept.coding[=].system = $NZCentralRegionPatientReligionCS
+* extension[patient-religion].valueCodeableConcept.coding[=].display = "Details required"
 
 * deceasedBoolean = false
 

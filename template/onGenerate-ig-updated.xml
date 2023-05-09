@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-05-03T17:53:40+12:00"/>
+   <date value="2023-05-09T17:04:58+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -351,6 +351,21 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nzcr-contact-relationship-value-set.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nzcr-contact-relationship-value-set"/>
+         </reference>
+         <name value="NZ Central Region - NZ ContactRelationship Value Set"/>
+         <description value="NZ ContactRelationship Codes ex. WebPAS in NZ Central Region&#xA;&#xA;This codeset is to be used alongside the HL7 defined general relationship codeset http://terminology.hl7.org/CodeSystem/v2-0131"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-nzcr-ethnicity-level-2-value-set.html"/>
          </extension>
          <reference>
@@ -381,6 +396,36 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nzcr-religion-value-set.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nzcr-religion-value-set"/>
+         </reference>
+         <name value="NZ Central Region - NZ Religion Value Set"/>
+         <description value="NZ Religion Codes ex. WebPAS in NZ Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nzcr-residency-value-set.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nzcr-residency-value-set"/>
+         </reference>
+         <name value="NZ Central Region - NZ Residency Value Set"/>
+         <description value="NZ Residency Codes ex. WebPAS in NZ Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-nz-residency.html"/>
          </extension>
          <reference>
@@ -390,6 +435,21 @@
          <description value="Is the person a NZ resident"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-contact-relationship-code-system.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-contact-relationship-code-system"/>
+         </reference>
+         <name value="NZ Central Region - NZ ContactRelationship Code System"/>
+         <description value="More granular ContactRelationship codes ex. WebPAS in NZ Central Region.&#xA;&#xA;This codeset is to be used alongside the HL7 defined general relationship codeset in http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -418,6 +478,36 @@
          </reference>
          <name value="NZ Central Region - Marital Status Code System"/>
          <description value="A few extra Marital Status codes that are in use in Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-religion-code-system.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-religion-code-system"/>
+         </reference>
+         <name value="NZ Central Region - NZ Religion Code System"/>
+         <description value="Religion codes ex. WebPAS in NZ Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-residency-code-system.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-residency-code-system"/>
+         </reference>
+         <name value="NZ Central Region - NZ Residency Code System"/>
+         <description value="Residency codes ex. WebPAS in NZ Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
       </resource>
@@ -456,6 +546,21 @@
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Contact.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Contact"/>
+         </reference>
+         <name value="Patient-Contact"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with Contact elements"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="Patient-Patient-Ethnicity-Level2.html"/>
          </extension>
          <reference>
@@ -478,6 +583,51 @@
          </reference>
          <name value="Patient-Ethnicity-MultipleCodings"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with multiple ethnicity codings included"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Practitioner.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Practitioner"/>
+         </reference>
+         <name value="Patient-Practitioner"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with General Practitioner element"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Religion.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Religion"/>
+         </reference>
+         <name value="Patient-Religion"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with Religion element"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Residency.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Residency"/>
+         </reference>
+         <name value="Patient-Residency"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -575,6 +725,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-nzcr-contact-relationship-value-set.html"/>
+               <title value="NZ Central Region - NZ ContactRelationship Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-nzcr-ethnicity-level-2-value-set.html"/>
                <title value="NZ Central Region - Ethnicityi Level 2 Value Set"/>
                <generation value="generated"/>
@@ -585,8 +740,23 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-nzcr-religion-value-set.html"/>
+               <title value="NZ Central Region - NZ Religion Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nzcr-residency-value-set.html"/>
+               <title value="NZ Central Region - NZ Residency Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-nz-residency.html"/>
                <title value="NZ Residency status"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nzcr-contact-relationship-code-system.html"/>
+               <title value="NZ Central Region - NZ ContactRelationship Code System"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -600,6 +770,16 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="CodeSystem-nzcr-religion-code-system.html"/>
+               <title value="NZ Central Region - NZ Religion Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nzcr-residency-code-system.html"/>
+               <title value="NZ Central Region - NZ Residency Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="CodeSystem-nz-residency.html"/>
                <title value="NZ Residency status"/>
                <generation value="generated"/>
@@ -610,6 +790,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Patient-Patient-Contact.html"/>
+               <title value="Patient-Contact"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Patient-Patient-Ethnicity-Level2.html"/>
                <title value="Patient-Ethnicity-Level2"/>
                <generation value="generated"/>
@@ -617,6 +802,21 @@
             <page>
                <nameUrl value="Patient-Patient-Ethnicity-MultipleCodings.html"/>
                <title value="Patient-Ethnicity-MultipleCodings"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-Practitioner.html"/>
+               <title value="Patient-Practitioner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-Religion.html"/>
+               <title value="Patient-Religion"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-Residency.html"/>
+               <title value="Patient-Residency"/>
                <generation value="generated"/>
             </page>
             <page>

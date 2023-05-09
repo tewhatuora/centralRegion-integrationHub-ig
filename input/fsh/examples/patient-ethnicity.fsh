@@ -11,10 +11,10 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with mu
 * gender = #male
 
 * extension[ethnicity][+].valueCodeableConcept.coding[+].code = #21111
-* extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel4
+* extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel4CS
 * extension[ethnicity][=].valueCodeableConcept.coding[=].display = "Māori"
 * extension[ethnicity][=].valueCodeableConcept.coding[+].code = #21
-* extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel2
+* extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel2CS
 * extension[ethnicity][=].valueCodeableConcept.coding[=].display = "Māori"
 
 
@@ -59,7 +59,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 * gender = #male
 
 * extension[ethnicity][+].valueCodeableConcept.coding[+].code = #21
-* extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel2
+* extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel2CS
 * extension[ethnicity][=].valueCodeableConcept.coding[=].display = "Māori"
 
 

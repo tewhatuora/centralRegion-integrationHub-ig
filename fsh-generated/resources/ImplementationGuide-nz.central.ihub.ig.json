@@ -78,6 +78,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nzcr-contact-relationship-value-set"
+        },
+        "name": "NZ Central Region - NZ ContactRelationship Value Set",
+        "description": "NZ ContactRelationship Codes ex. WebPAS in NZ Central Region\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset http://terminology.hl7.org/CodeSystem/v2-0131",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nzcr-ethnicity-level-2-value-set"
         },
         "name": "NZ Central Region - Ethnicityi Level 2 Value Set",
@@ -94,10 +102,34 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nzcr-religion-value-set"
+        },
+        "name": "NZ Central Region - NZ Religion Value Set",
+        "description": "NZ Religion Codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-residency-value-set"
+        },
+        "name": "NZ Central Region - NZ Residency Value Set",
+        "description": "NZ Residency Codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nz-residency"
         },
         "name": "NZ Residency status",
         "description": "Is the person a NZ resident",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-contact-relationship-code-system"
+        },
+        "name": "NZ Central Region - NZ ContactRelationship Code System",
+        "description": "More granular ContactRelationship codes ex. WebPAS in NZ Central Region.\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset in http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html",
         "exampleBoolean": false
       },
       {
@@ -118,6 +150,22 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/nzcr-religion-code-system"
+        },
+        "name": "NZ Central Region - NZ Religion Code System",
+        "description": "Religion codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-residency-code-system"
+        },
+        "name": "NZ Central Region - NZ Residency Code System",
+        "description": "Residency codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nz-residency"
         },
         "name": "NZ Residency status",
@@ -134,6 +182,14 @@
       },
       {
         "reference": {
+          "reference": "Patient/Patient-Contact"
+        },
+        "name": "Patient-Contact",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with Contact elements",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
           "reference": "Patient/Patient-Ethnicity-Level2"
         },
         "name": "Patient-Ethnicity-Level2",
@@ -146,6 +202,30 @@
         },
         "name": "Patient-Ethnicity-MultipleCodings",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple ethnicity codings included",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-Practitioner"
+        },
+        "name": "Patient-Practitioner",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with General Practitioner element",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-Religion"
+        },
+        "name": "Patient-Religion",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with Religion element",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-Residency"
+        },
+        "name": "Patient-Residency",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {

@@ -1,0 +1,108 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-Practitioner",
+  "meta": {
+    "profile": [
+      "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship",
+      "extension": [
+        {
+          "url": "status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "yes",
+                "system": "https://standards.digital.health.nz/ns/nz-citizenship-status-code",
+                "display": "Yes"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+      "valueBoolean": false
+    },
+    {
+      "extension": [
+        {
+          "url": "status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "no",
+                "system": "https://standards.digital.health.nz/ns/nz-residency-code",
+                "display": "Not a Permanent Resident"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency"
+    }
+  ],
+  "address": [
+    {
+      "type": "postal",
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
+          "valueString": "Kelvin Grove"
+        }
+      ],
+      "line": [
+        "100 Cambridge Street"
+      ],
+      "city": "Palmerston North",
+      "postalCode": "4410",
+      "country": "NEW ZEALAND",
+      "text": "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "given": [
+        "James"
+      ],
+      "family": "Pond",
+      "text": "James Pond"
+    }
+  ],
+  "birthDate": "1966-01-05",
+  "gender": "male",
+  "maritalStatus": {
+    "coding": [
+      {
+        "code": "V",
+        "system": "https://standards.digital.health.nz/ns/central-region/extra-marital-status",
+        "display": "Civil Union"
+      }
+    ]
+  },
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "021 555 888 6",
+      "use": "home"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "type": "'Practitioner'",
+      "reference": "61cee2d0-7f24-4573-be25-bd6c6d8d5522",
+      "identifier": {
+        "use": "usual",
+        "system": "https://standards.digital.health.nz/ns/pas-practitioner-id",
+        "value": "666665"
+      },
+      "display": "Dr Amber-Lea Aroha"
+    }
+  ],
+  "deceasedBoolean": false
+}

@@ -1,7 +1,7 @@
-// Example Instances of Patient with different address fields
-Instance: Patient-Suburb
+// Example Instances of Patient
+Instance: Patient-Practitioner
 InstanceOf: NZCentralRegionPatient
-Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"
+Description: "An example of a patient from Te Whatu Ora, Central Region, with General Practitioner element"
 
 * name
   * use = #official
@@ -36,6 +36,13 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with ad
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #no
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].system = $NZBaseNZResidencyCS
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Not a Permanent Resident"
+
+* generalPractitioner.type = "'Practitioner'"
+* generalPractitioner.reference = "61cee2d0-7f24-4573-be25-bd6c6d8d5522"
+* generalPractitioner.identifier.use = #usual
+* generalPractitioner.identifier.system = "https://standards.digital.health.nz/ns/pas-practitioner-id"
+* generalPractitioner.identifier.value = "666665"
+* generalPractitioner.display = "Dr Amber-Lea Aroha"
 
 * deceasedBoolean = false
 

@@ -1,7 +1,7 @@
-// Example Instances of Patient with different address fields
-Instance: Patient-Suburb
+// Example Instances of Patient
+Instance: Patient-Contact
 InstanceOf: NZCentralRegionPatient
-Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"
+Description: "An example of a patient from Te Whatu Ora, Central Region, with Contact elements"
 
 * name
   * use = #official
@@ -36,6 +36,22 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with ad
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #no
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].system = $NZBaseNZResidencyCS
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Not a Permanent Resident"
+
+* contact
+  * relationship.coding[+].code = #S
+  * relationship.coding[=].system = "http://terminology.hl7.org/CodeSystem/v2-0131"
+  * relationship.coding[=].display = "State Agency" 
+  * relationship.coding[+].code = #21
+  * relationship.coding[=].system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
+  * relationship.coding[=].display = "Dept of Correction (NZ)"
+
+  * name.family = "O'Leary"
+  * name.given = "Karen"
+  * name.text = "Officer Karen O'Leary"
+
+  * telecom.system = #phone
+  * telecom.use = #work
+  * telecom.value = "+64 6 356 8855"
 
 * deceasedBoolean = false
 

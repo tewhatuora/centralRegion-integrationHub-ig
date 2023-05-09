@@ -25,7 +25,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension[nz-geocode] 0..0
   * extension[domicile-code] 0..0
   * extension[suburb] 0..1 MS
-  * use 0..0
+  * use 0..1 MS
   * type 1..1 MS
   * type = #postal
   * type ^short = "Fixed value: postal"
@@ -114,16 +114,17 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension contains $NZBaseNZResidency named nzResidency 0..1 MS
 * extension[nz-residency]
   * extension[status]
-    * valueCodeableConcept.coding 1..1 MS
+    * valueCodeableConcept.coding 1..* MS    
+      * ^short = "Two codings possible 'yes|no' from NZ Base, and more detailed as available from WebPAS "       // Multiple codings possible
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-28.1
-    * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-28.1
-    * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-28.1 ??
+    * valueCodeableConcept.coding.system 1..1 MS    
+    * valueCodeableConcept.coding.display 1..1 MS   // from PID-28.2 or by lookup from PID-28.1 ??
     * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
     * valueCodeableConcept.coding.userSelected 0..0 // data not available
     * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-28.1
     * valueCodeableConcept.extension 0..0
     * valueCodeableConcept.id 0..0
-    * ^short = "Does this person have New Zealand residency?"
+    * ^short = "Two codings possible:  'yes|no' from NZ Base, and more detailed as available from WebPAS"
     * extension 0..0
     * id 0..0
   * extension[source] 0..0
@@ -146,9 +147,23 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 * photo 0..0
 
+* extension contains $NZCentralRegionPatientReligion named patient-religion 0..1 MS
+* extension[patient-religion] 0..1 MS
+  * valueCodeableConcept.coding 1..* MS           //  <<<---- THIS ONE HERE is required to make the publisher work with the rest
+  * valueCodeableConcept.coding.code 1..1 MS      // from PID-17.1
+  * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-17.1
+  * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-17.1 ??
+  * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
+  * valueCodeableConcept.coding.userSelected 0..0 // data not available
+  * valueCodeableConcept.text 0..0                //  Code, Value and Display are all derived from Code value from PID-17.1
+  * valueCodeableConcept.extension 0..0
+  * extension 0..0
+  * id 0..0
+
 * contact 0..* MS // A contact party (e.g. guardian, partner, friend) for the patient
   * relationship 1..1 MS
-    * coding 1..1 MS
+    * coding 2..* MS           // Both original raw value and value from http://terminology.hl7.org/CodeSystem/v2-0131
+      * ^short = "One each for\r\n * http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\n * https://standards.digital.health.nz/ns/central-region/contact-relationship"
     * coding.code 1..1 MS      // from NK1-3.1
     * coding.system 1..1 MS    // based on which code from NK1-3.1
     * coding.display 1..1 MS   // from NK1-3.2 or by lookup from NK1-3.1 ??
@@ -164,7 +179,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * text 1..1 MS
     * family 1..1 MS
     * given MS
-    * prefix 0..0
+    * prefix 0..1 MS
     * suffix 0..0
     * extension 0..0
     * id 0..0   
@@ -183,10 +198,10 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
 
-* extension contains $HL7InterpreterRequired named interpreterRequired 0..1 MS
+* extension contains $HL7InterpreterRequiredCS named interpreterRequired 0..1 MS
 
 * communication 0..* MS
-  * language 1.. MS
+  * language 1..1 MS
     * coding 1..* MS
     * coding.code 1..1 MS      // from PID-15.1
     * coding.system 1..1 MS    // based on which code from PID-15.1
@@ -202,13 +217,27 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
 
-* generalPractitioner 0..1 MS // Patient's nominated primary care provider 
+* generalPractitioner 0..1 MS // Patient's nominated primary care provider
+  * type 1..1 MS
+  * reference 0..1 MS
+  * identifier 1..1 MS  // We must have at least local ID
+    * use 1..1 MS
+    * system 1..1 MS
+    * value 1..1 MS
+    * type 0..0 MS    // Data irrelevant
+    * period 0..0     // Data not available
+    * assigner 0..0   // Data not availale
+    * extension 0..0
+    * id 0..0
+  * extension 0..0
+  * id 0..0
+  
+
 * managingOrganization 0..0   // Organization that is the custodian of the patient record    ... or maybe use PHO from NZBase ??
 * extension[pho] 0..0 
 
 * deceased[x] 1..1 MS
   * ^short = "deceasedBoolean = true if patient is deceased and deceased date/time is unknown, deceasedDateTime if known"
-
 
 * link MS // Link to another patient resource that concerns the same actual person  
   * other  MS  
