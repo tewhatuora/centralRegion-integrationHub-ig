@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nzcr-hl7-message",
-  "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7-message",
+  "id": "nzcr-hl7v2-message",
+  "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7v2-message",
   "version": "0.1.0",
-  "name": "NZCentralRegionHL7Message",
-  "title": "HL7 Message",
+  "name": "NZCentralRegionHL7v2Message",
+  "title": "HL7 v2 Message",
   "status": "active",
   "description": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource",
   "fhirVersion": "4.0.1",
@@ -20,7 +20,19 @@
   "context": [
     {
       "type": "element",
-      "expression": "Element"
+      "expression": "Patient"
+    },
+    {
+      "type": "element",
+      "expression": "Practitioner"
+    },
+    {
+      "type": "element",
+      "expression": "Flag"
+    },
+    {
+      "type": "element",
+      "expression": "AllergyIntolerance"
     }
   ],
   "type": "Extension",
@@ -31,7 +43,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "HL7 Message",
+        "short": "HL7 v2 Message",
         "definition": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource"
       },
       {
@@ -42,7 +54,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7-message"
+        "fixedUri": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7v2-message"
       },
       {
         "id": "Extension.value[x]",

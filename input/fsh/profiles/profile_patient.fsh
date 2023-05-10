@@ -115,7 +115,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension[nz-residency]
   * extension[status]
     * valueCodeableConcept.coding 1..* MS    
-      * ^short = "Two codings possible 'yes|no' from NZ Base, and more detailed as available from WebPAS "       // Multiple codings possible
+      * ^short = "Two codings possible 'yes|no' from NZ Base, and more detailed as available from WebPAS"       // Multiple codings possible
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-28.1
     * valueCodeableConcept.coding.system 1..1 MS    
     * valueCodeableConcept.coding.display 1..1 MS   // from PID-28.2 or by lookup from PID-28.1 ??
@@ -247,5 +247,4 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 
 * extension contains 
-    NZCentralRegionHL7Message named hl7Message 0..1 MS
-* extension[hl7Message].value[x] only base64Binary
+    NZCentralRegionHL7v2Message named hl7v2Message 0..1 MS

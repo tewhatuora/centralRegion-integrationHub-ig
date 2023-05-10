@@ -14,7 +14,7 @@ Title:    "Central Region Message Specification (1.14)"
 // * identifier.period.start -> "PID-3.7"
 // * identifier.period.end -> "PID-3.8"
 
-* name -> "" "Repeat for PID-5 Patient Name and PID-9 Patient Aliases"
+* name -> "PID-5 and PID-9" "Repeat for PID-5 Patient Name and PID-9 Patient Aliases"
 * name.use -> "'official' | 'nickname'" "if mapping PID-5 then 'official' elif mapping PID-9 then 'nickname'"
 * name.text -> "PID-5.5 + ' ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.1 or PID-9.5 + ' ' + PID-9.2 + ' ' + PID-9.3 + ' ' + PID-9.1"
 * name.family -> "PID-5.1 or PID-9.1"
@@ -23,7 +23,7 @@ PID-5.3 and PID-9.3 -> name.given[1]\r\n
 Do NOT attempt to separate middle names"
 * name.prefix -> "PID-5.5 or PID-9.5"
 
-* telecom -> "" "Repeat for PID-13 and PID-14"
+* telecom -> "PID-13 and PID-14" "Repeat for PID-13 and PID-14"
 * telecom.value -> "PID-13.1 or PID-14.1"
 * telecom.use -> "'home' | 'work'" "if mapping PID-13 then '**home**'\r\n elif mapping PID-14 then '**work**'"
 * telecom.system -> "PID-13.3 or PID-14.3" "if 'PH' then '**phone**'\r\n
@@ -41,7 +41,7 @@ elif PIF-8 == '**U**' then '**unknown**'"
 
 * birthDate -> "PID-7"
 
-* extension[ethnicity] -> "" "Repeat for eachc entry in PID-22.\r\nTwo coding entries, one each for\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-4-code and\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
+* extension[ethnicity] -> "PID-22" "Repeat for each entry in PID-22.\r\nTwo coding entries, one each for\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-4-code and\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
 * extension[ethnicity].valueCodeableConcept.coding.code -> "PID-22.1" "Which is group-level-2; lookup required for group-level-4.  ConceptMap ?"
 * extension[ethnicity].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/ethnic-group-level-4-code and https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
 * extension[ethnicity].valueCodeableConcept.coding.display -> "PID-22.2" "Check for macrons in Māori and Cook Island Māori"
@@ -73,15 +73,15 @@ elif PID 11.7 == 'B' then 'work'"
 * communication.language.coding.display -> "PID-15.2"
 * communication.language.coding.system -> "urn:ietf:bcp:47"  "ietf:bcp:47 includes all iso-639 language codes"
 
-* generalPractitioner -> "" "Lookup using PD1-4.1 (local identifier) ??"
+* generalPractitioner -> "PD1-4" "Lookup using PD1-4.1 (local identifier) ??"
 * generalPractitioner.type -> "'Practitioner'"
-* generalPractitioner.reference -> "" "Internal GUID"
+* generalPractitioner.reference -> "n/a" "Internal GUID"
 * generalPractitioner.identifier.use -> "'usual'" 
 * generalPractitioner.identifier.value -> "PD1-4.1"
 * generalPractitioner.identifier.system -> "https://standards.digital.health.nz/ns/pas-practitioner-id" "if PD1-4.9.2 == '2.16.840.1.113883.2.18.66.3.2.0'"
 * generalPractitioner.display -> "PD1-4.2 + ', ' + PD1-4.3 + ' ' + PD1-4.4 + '  + PD1=4.6"
 
-* extension[nzCitizen] -> "" "Only using status, source not availabnle"
+* extension[nzCitizen] -> "PID-26" "Only using status, source not availabnle"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code -> "PID-26.1" "if PID-26.1 = 'Y' then 'yes'
 elif PID-26.1='N' then 'no'
 else 'unknown'"
@@ -90,7 +90,7 @@ elif PID-26.1='N' then 'No'
 else 'Unknown'"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/nz-citizenship-status-code"
 
-* extension[nzResidency] -> "" "Only using status, source not availabnle"
+* extension[nzResidency] -> "PID-28" "Only using status, source not availabnle"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding -> "Repeat for each coding"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.code -> "PID-28.1" "Raw value and mapped from webPAS residency status.  ConceptMap ?'"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.display -> "PID-28.2" "Raw value and mapped from webPAS residency status."
@@ -102,7 +102,7 @@ https://standards.digital.health.nz/ns/nz-residency-code"
 * extension[patient-religion].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/central-region/patient-religion"
 
 * contact -> "NK1" "Repeat for each NK1 segment"
-* contact.relationship.coding -> "" "At least two codings:\r\n * http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\n * https://standards.digital.health.nz/ns/central-region/contact-relationship"
+* contact.relationship.coding -> "NK1" "At least two codings:\r\n * http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\n * https://standards.digital.health.nz/ns/central-region/contact-relationship"
 * contact.relationship.coding.code -> "NK1-3.1" "Raw value in one entry, lookup to HL7 base value in the other.  ConceptMap ?"
 * contact.relationship.coding.display -> "NK1-3.2"
 * contact.relationship.coding.system -> "https://standards.digital.health.nz/ns/central-region/contact-relationship OR\r\nhttp://terminology.hl7.org/CodeSystem/v2-0131"
@@ -112,7 +112,7 @@ https://standards.digital.health.nz/ns/nz-residency-code"
 * contact.name.given -> "NK1-2.2"
 * contact.name.prefix -> "NK1-2.5" "if present"
 
-* contact.telecom -> "" "Repeat for NK1-5 and NK1-6"
+* contact.telecom -> "NK1" "Repeat for NK1-5 and NK1-6"
 * contact.telecom.value -> "NK1-5.1 or NK1-6.1"
 * contact.telecom.use -> "'home' | 'work'" "if mapping NK1-5 then '**home**'\r\n elif mapping NK1-6 then '**work**'"
 * contact.telecom.system -> "NK1-5.3 or NK1-6.3" "if 'PH' then '**phone**'\r\n

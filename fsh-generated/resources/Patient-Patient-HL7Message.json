@@ -1,0 +1,291 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-HL7Message",
+  "meta": {
+    "profile": [
+      "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship",
+      "extension": [
+        {
+          "url": "status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "yes",
+                "system": "https://standards.digital.health.nz/ns/nz-citizenship-status-code",
+                "display": "Yes"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "21",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
+            "display": "Māori"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "11",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
+            "display": "NZ European"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "32",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
+            "display": "Cook Island Māori"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+      "valueBoolean": false
+    },
+    {
+      "extension": [
+        {
+          "url": "status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "no",
+                "system": "https://standards.digital.health.nz/ns/nz-residency-code",
+                "display": "Not a Permanent Resident"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency"
+    }
+  ],
+  "address": [
+    {
+      "type": "postal",
+      "line": [
+        "100 Broadway Avenue"
+      ],
+      "city": "Palmerston North",
+      "postalCode": "4410",
+      "country": "NEW ZEALAND",
+      "text": "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND"
+    },
+    {
+      "type": "postal",
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
+          "valueString": "Kelvin Grove"
+        }
+      ],
+      "line": [
+        "100 Cambridge Street"
+      ],
+      "city": "Palmerston North",
+      "postalCode": "4410",
+      "country": "NEW ZEALAND",
+      "text": "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "given": [
+        "James"
+      ],
+      "family": "Pond",
+      "text": "James Pond"
+    }
+  ],
+  "birthDate": "1972-03-23",
+  "gender": "male",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical record number"
+          }
+        ]
+      },
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/nhi-id",
+      "value": "ZHY4846"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "02758880032",
+      "use": "home"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "code": "V",
+        "system": "https://standards.digital.health.nz/ns/central-region/extra-marital-status",
+        "display": "Civil Union"
+      }
+    ]
+  },
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "en",
+            "system": "urn:ietf:bcp:47",
+            "display": "English"
+          }
+        ]
+      },
+      "preferred": true
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "type": "Practitioner",
+      "reference": "Practitioner/61cee2d0-7f24-4573-be25-bd6c6d8d5522",
+      "identifier": {
+        "use": "usual",
+        "system": "https://standards.digital.health.nz/ns/pas-practitioner-id",
+        "value": "666665"
+      },
+      "display": "Dr Amber-Lea Aroha"
+    }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "code": "O",
+              "display": "Other"
+            },
+            {
+              "system": "https://standards.digital.health.nz/ns/central-region/contact-relationship",
+              "code": "3",
+              "display": "Sister"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "family": "Lake",
+        "given": [
+          "Elaine"
+        ],
+        "prefix": [
+          "Mrs"
+        ],
+        "text": "Mrs Elaine Lake"
+      },
+      "telecom": [
+        {
+          "value": "027 8887743",
+          "system": "phone",
+          "use": "home"
+        }
+      ]
+    },
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "code": "O",
+              "display": "Other"
+            },
+            {
+              "system": "https://standards.digital.health.nz/ns/central-region/contact-relationship",
+              "code": "1",
+              "display": "Mother"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "family": "Pond",
+        "given": [
+          "Gwenyth"
+        ],
+        "prefix": [
+          "Mrs"
+        ],
+        "text": "Mrs Gwenyth Pond"
+      },
+      "telecom": [
+        {
+          "value": "027 5 666 325",
+          "system": "phone",
+          "use": "home"
+        }
+      ]
+    },
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "code": "N",
+              "display": "Next-of-Kin"
+            },
+            {
+              "system": "https://standards.digital.health.nz/ns/central-region/contact-relationship",
+              "code": "18",
+              "display": "De facto"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "family": "Moneypenny",
+        "given": [
+          "Louise"
+        ],
+        "prefix": [
+          "Miss"
+        ],
+        "text": "Miss Louise Moneypenny"
+      },
+      "telecom": [
+        {
+          "value": "021 555 888 6",
+          "system": "phone",
+          "use": "home"
+        }
+      ]
+    }
+  ],
+  "deceasedBoolean": false
+}

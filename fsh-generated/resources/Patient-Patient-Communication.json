@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-Practitioner",
+  "id": "Patient-Communication",
   "meta": {
     "profile": [
       "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
@@ -104,18 +104,6 @@
         ]
       },
       "preferred": true
-    }
-  ],
-  "generalPractitioner": [
-    {
-      "type": "Practitioner",
-      "reference": "Practitioner/61cee2d0-7f24-4573-be25-bd6c6d8d5522",
-      "identifier": {
-        "use": "usual",
-        "system": "https://standards.digital.health.nz/ns/pas-practitioner-id",
-        "value": "666665"
-      },
-      "display": "Dr Amber-Lea Aroha"
     }
   ],
   "deceasedBoolean": false

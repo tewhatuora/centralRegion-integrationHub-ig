@@ -92,5 +92,19 @@
       "use": "home"
     }
   ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "en",
+            "system": "urn:ietf:bcp:47",
+            "display": "English"
+          }
+        ]
+      },
+      "preferred": true
+    }
+  ],
   "deceasedBoolean": false
 }

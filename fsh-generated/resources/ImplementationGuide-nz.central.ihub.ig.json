@@ -46,6 +46,22 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/NZCentralRegionAllergyIntolerance"
+        },
+        "name": "NZCentralRegionAllergyIntolerance",
+        "description": "AllergyIntolerance resource for Te Whatu Ora, Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NZCentralRegionFlag"
+        },
+        "name": "NZCentralRegionFlag",
+        "description": "Flag resource for Te Whatu Ora, Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/NZCentralRegionPatient"
         },
         "name": "NZCentralRegionPatient",
@@ -62,9 +78,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nzcr-hl7-message"
+          "reference": "StructureDefinition/nzcr-hl7v2-message"
         },
-        "name": "HL7 Message",
+        "name": "HL7 v2 Message",
         "description": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource",
         "exampleBoolean": false
       },
@@ -182,10 +198,18 @@
       },
       {
         "reference": {
+          "reference": "Patient/Patient-Communication"
+        },
+        "name": "Patient-Communication",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with a single language of communication",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
           "reference": "Patient/Patient-Contact"
         },
         "name": "Patient-Contact",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with Contact elements",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with Contact that has multiple codings for the relationship",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
@@ -206,6 +230,22 @@
       },
       {
         "reference": {
+          "reference": "Patient/Patient-HL7Message"
+        },
+        "name": "Patient-HL7Message",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, including the source HL7 v2 message, which when `base64decoded` looks like this:\n\nMSH|^~\\&|PROD_WebPAS^RPAS|MCDHB^G00033|Regional HUB^RHUB|RHIP^G09999|20220316091410000+1300||ADT^A31|341P0000000000462041|P|2.4\nEVN||20220316091358\nPID|||ZHY4846^^^&2.16.840.1.113883.2.18.2||Pond^James^^^FR||19720223000000|M||21^NZ Maori^NZHIS|100 Broadway Avenue^^Palmerston North^^4410^NEW ZEALAND^C~^^^^^NEW ZEALAND^M|1845|^PRN^PH~02758880032^ORN^CP|^WPN^PH|ENG^English^NHDD-132^U|V^Civil Union^HL70002||||||21^NZ Maori^NZHIS~11^NZ European / Pakeha^NZHIS~32^Cook Island Maori^NZHIS||||Y||NZ^New Zealand citizen^RHIP_Resident_Status||N\nPD1|||Feilding Health Care^^12482^^^&2.16.840.1.113883.2.18.66.3.3.0|66665^Rerekura^Amber-Lea Aroha^^^Dr^^^&2.16.840.1.113883.2.18.66.3.2.0\nNK1|1|Lake^Elaine^^^Mrs|03^Sister^webPAS||^PRN^PH~027 8887743^ORN^CP|^WPN^PH\nNK1|2|Pond^Gwenyth^^^Mrs|01^Mother^webPAS||^PRN^PH~027 5 666 325^ORN^CP|^WPN^PH\nNK1|3|Moneypenny^Louise^^^Miss|18^De Facto^webPAS||^PRN^PH~021 555 888 6^ORN^CP|^WPN^PH",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-LanguageList"
+        },
+        "name": "Patient-LanguageList",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with an impossibly large set of languages; lets see that we can validate all of them",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
           "reference": "Patient/Patient-Practitioner"
         },
         "name": "Patient-Practitioner",
@@ -214,10 +254,18 @@
       },
       {
         "reference": {
-          "reference": "Patient/Patient-Religion"
+          "reference": "Patient/Patient-Religion-Presbyterian"
         },
-        "name": "Patient-Religion",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with Religion element",
+        "name": "Patient-Religion-Presbyterian",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation requiring two codings:\n * The raw coding from WebPAS with coding from https://standards.digital.health.nz/ns/central-region/patient-religion\n * Equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-Religion-no-answer"
+        },
+        "name": "Patient-Religion-no-answer",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'\n  Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {

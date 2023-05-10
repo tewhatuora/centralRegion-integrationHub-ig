@@ -37,7 +37,7 @@ Id: nzcr-residency-value-set
 Title: "NZ Central Region - NZ Residency Value Set"
 Description:  "NZ Residency Codes ex. WebPAS in NZ Central Region"
 
-* ^url = $NZCentralRegionEthnicityLevel2VS
+* ^url = $NZCentralRegionResidencyVS
 * ^experimental = false
 
 * include codes from system nzcr-residency-code-system

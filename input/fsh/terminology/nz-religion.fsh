@@ -53,7 +53,7 @@ Id: nzcr-religion-value-set
 Title: "NZ Central Region - NZ Religion Value Set"
 Description:  "NZ Religion Codes ex. WebPAS in NZ Central Region"
 
-* ^url = $NZCentralRegionEthnicityLevel2VS
+* ^url = $NZCentralRegionPatientReligionVS
 * ^experimental = false
 
 * include codes from system nzcr-religion-code-system

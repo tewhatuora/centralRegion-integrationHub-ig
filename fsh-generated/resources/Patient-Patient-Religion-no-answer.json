@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-Religion",
+  "id": "Patient-Religion-no-answer",
   "meta": {
     "profile": [
       "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
@@ -50,9 +50,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "R033",
+            "code": "R27",
             "system": "https://standards.digital.health.nz/ns/central-region/patient-religion",
-            "display": "Details required"
+            "display": "Objects to question"
           }
         ]
       }
@@ -102,6 +102,20 @@
       "system": "phone",
       "value": "021 555 888 6",
       "use": "home"
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "en",
+            "system": "urn:ietf:bcp:47",
+            "display": "English"
+          }
+        ]
+      },
+      "preferred": true
     }
   ],
   "deceasedBoolean": false

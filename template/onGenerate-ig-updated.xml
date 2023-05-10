@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-05-09T17:04:58+12:00"/>
+   <date value="2023-05-10T18:10:52+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -291,6 +291,36 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-NZCentralRegionAllergyIntolerance.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/NZCentralRegionAllergyIntolerance"/>
+         </reference>
+         <name value="NZCentralRegionAllergyIntolerance"/>
+         <description value="AllergyIntolerance resource for Te Whatu Ora, Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-NZCentralRegionFlag.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/NZCentralRegionFlag"/>
+         </reference>
+         <name value="NZCentralRegionFlag"/>
+         <description value="Flag resource for Te Whatu Ora, Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-NZCentralRegionPatient.html"/>
          </extension>
          <reference>
@@ -321,12 +351,12 @@
             <valueString value="StructureDefinition:extension"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-nzcr-hl7-message.html"/>
+            <valueUri value="StructureDefinition-nzcr-hl7v2-message.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/nzcr-hl7-message"/>
+            <reference value="StructureDefinition/nzcr-hl7v2-message"/>
          </reference>
-         <name value="HL7 Message"/>
+         <name value="HL7 v2 Message"/>
          <description value="Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-extension"/>
@@ -546,13 +576,28 @@
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Communication.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Communication"/>
+         </reference>
+         <name value="Patient-Communication"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with a single language of communication"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="Patient-Patient-Contact.html"/>
          </extension>
          <reference>
             <reference value="Patient/Patient-Contact"/>
          </reference>
          <name value="Patient-Contact"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with Contact elements"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with Contact that has multiple codings for the relationship"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -591,6 +636,36 @@
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-HL7Message.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-HL7Message"/>
+         </reference>
+         <name value="Patient-HL7Message"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, including the source HL7 v2 message, which when `base64decoded` looks like this:&#xA;&#xA;MSH|^~\&amp;|PROD_WebPAS^RPAS|MCDHB^G00033|Regional HUB^RHUB|RHIP^G09999|20220316091410000+1300||ADT^A31|341P0000000000462041|P|2.4&#xA;EVN||20220316091358&#xA;PID|||ZHY4846^^^&amp;2.16.840.1.113883.2.18.2||Pond^James^^^FR||19720223000000|M||21^NZ Maori^NZHIS|100 Broadway Avenue^^Palmerston North^^4410^NEW ZEALAND^C~^^^^^NEW ZEALAND^M|1845|^PRN^PH~02758880032^ORN^CP|^WPN^PH|ENG^English^NHDD-132^U|V^Civil Union^HL70002||||||21^NZ Maori^NZHIS~11^NZ European / Pakeha^NZHIS~32^Cook Island Maori^NZHIS||||Y||NZ^New Zealand citizen^RHIP_Resident_Status||N&#xA;PD1|||Feilding Health Care^^12482^^^&amp;2.16.840.1.113883.2.18.66.3.3.0|66665^Rerekura^Amber-Lea Aroha^^^Dr^^^&amp;2.16.840.1.113883.2.18.66.3.2.0&#xA;NK1|1|Lake^Elaine^^^Mrs|03^Sister^webPAS||^PRN^PH~027 8887743^ORN^CP|^WPN^PH&#xA;NK1|2|Pond^Gwenyth^^^Mrs|01^Mother^webPAS||^PRN^PH~027 5 666 325^ORN^CP|^WPN^PH&#xA;NK1|3|Moneypenny^Louise^^^Miss|18^De Facto^webPAS||^PRN^PH~021 555 888 6^ORN^CP|^WPN^PH"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-LanguageList.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-LanguageList"/>
+         </reference>
+         <name value="Patient-LanguageList"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with an impossibly large set of languages; lets see that we can validate all of them"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="Patient-Patient-Practitioner.html"/>
          </extension>
          <reference>
@@ -606,13 +681,28 @@
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-Religion.html"/>
+            <valueUri value="Patient-Patient-Religion-Presbyterian.html"/>
          </extension>
          <reference>
-            <reference value="Patient/Patient-Religion"/>
+            <reference value="Patient/Patient-Religion-Presbyterian"/>
          </reference>
-         <name value="Patient-Religion"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with Religion element"/>
+         <name value="Patient-Religion-Presbyterian"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with religious affiliation requiring two codings:&#xA; * The raw coding from WebPAS with coding from https://standards.digital.health.nz/ns/central-region/patient-religion&#xA; * Equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Religion-no-answer.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Religion-no-answer"/>
+         </reference>
+         <name value="Patient-Religion-no-answer"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'&#xA;  Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -705,6 +795,16 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
+               <nameUrl value="StructureDefinition-NZCentralRegionAllergyIntolerance.html"/>
+               <title value="NZCentralRegionAllergyIntolerance"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-NZCentralRegionFlag.html"/>
+               <title value="NZCentralRegionFlag"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-NZCentralRegionPatient.html"/>
                <title value="NZCentralRegionPatient"/>
                <generation value="generated"/>
@@ -715,8 +815,8 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-nzcr-hl7-message.html"/>
-               <title value="HL7 Message"/>
+               <nameUrl value="StructureDefinition-nzcr-hl7v2-message.html"/>
+               <title value="HL7 v2 Message"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -790,6 +890,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Patient-Patient-Communication.html"/>
+               <title value="Patient-Communication"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Patient-Patient-Contact.html"/>
                <title value="Patient-Contact"/>
                <generation value="generated"/>
@@ -805,13 +910,28 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Patient-Patient-HL7Message.html"/>
+               <title value="Patient-HL7Message"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-LanguageList.html"/>
+               <title value="Patient-LanguageList"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Patient-Patient-Practitioner.html"/>
                <title value="Patient-Practitioner"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Patient-Patient-Religion.html"/>
-               <title value="Patient-Religion"/>
+               <nameUrl value="Patient-Patient-Religion-Presbyterian.html"/>
+               <title value="Patient-Religion-Presbyterian"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-Religion-no-answer.html"/>
+               <title value="Patient-Religion-no-answer"/>
                <generation value="generated"/>
             </page>
             <page>

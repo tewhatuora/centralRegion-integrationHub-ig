@@ -71,8 +71,8 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "",
-            "comment": "Repeat for eachc entry in PID-22.\r\nTwo coding entries, one each for\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-4-code and\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
+            "map": "PID-22",
+            "comment": "Repeat for each entry in PID-22.\r\nTwo coding entries, one each for\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-4-code and\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
           }
         ]
       },
@@ -158,7 +158,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "",
+            "map": "PID-26",
             "comment": "Only using status, source not availabnle"
           }
         ]
@@ -449,7 +449,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "",
+            "map": "PID-28",
             "comment": "Only using status, source not availabnle"
           }
         ]
@@ -487,7 +487,7 @@
       {
         "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding",
         "path": "Patient.extension.extension.valueCodeableConcept.coding",
-        "short": "Two codings possible 'yes|no' from NZ Base, and more detailed as available from WebPAS ",
+        "short": "Two codings possible 'yes|no' from NZ Base, and more detailed as available from WebPAS",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -675,16 +675,16 @@
         ]
       },
       {
-        "id": "Patient.extension:hl7Message",
+        "id": "Patient.extension:hl7v2Message",
         "path": "Patient.extension",
-        "sliceName": "hl7Message",
+        "sliceName": "hl7v2Message",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7-message"
+              "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7v2-message"
             ]
           }
         ],
@@ -772,7 +772,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "",
+            "map": "PID-5 and PID-9",
             "comment": "Repeat for PID-5 Patient Name and PID-9 Patient Aliases"
           }
         ]
@@ -861,7 +861,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "",
+            "map": "PID-13 and PID-14",
             "comment": "Repeat for PID-13 and PID-14"
           }
         ]
@@ -1310,7 +1310,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "",
+            "map": "NK1",
             "comment": "At least two codings:\r\n * http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\n * https://standards.digital.health.nz/ns/central-region/contact-relationship"
           }
         ]
@@ -1458,7 +1458,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "",
+            "map": "NK1",
             "comment": "Repeat for NK1-5 and NK1-6"
           }
         ]
@@ -1648,7 +1648,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "",
+            "map": "PD1-4",
             "comment": "Lookup using PD1-4.1 (local identifier) ??"
           }
         ]
@@ -1670,7 +1670,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "",
+            "map": "n/a",
             "comment": "Internal GUID"
           }
         ]

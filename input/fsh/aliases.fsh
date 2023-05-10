@@ -2,6 +2,7 @@
 Alias:   $HL7MaritalStatusCS       = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias:   $HL7InterpreterRequiredCS = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
 Alias:   $HL7RelationshipCS        = http://terminology.hl7.org/CodeSystem/v2-0131
+Alias:   $HL7PatientRelgionCS      = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
 
 // NZ Base 
 Alias:   $NZBasePatient         = http://hl7.org.nz/fhir/StructureDefinition/NzPatient

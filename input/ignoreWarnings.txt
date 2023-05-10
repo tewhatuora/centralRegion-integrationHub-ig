@@ -1,5 +1,15 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# Can't fig bugs from NZBase myself
+Wrong Display Name 'Waikato' for https://standards.digital.health.nz/ns/dhb-code#G00027-C - should be 'Waikato District Health Board' (for the language(s) 'en') for 'https://standards.digital.health.nz/ns/dhb-code#G00027-C'
+
+# Ignore cultural imperialism in regards to languages
+Wrong Display Name 'Māori' for urn:ietf:bcp:47#mi - should be 'Maori' (for the language(s) '--') (from Tx-Server) for 'urn:ietf:bcp:47#mi'
+Wrong Display Name 'Cook Island Māori' for urn:ietf:bcp:47#rar - should be 'Rarotongan' (for the language(s) '--') (from Tx-Server) for 'urn:ietf:bcp:47#rar'
+Wrong Display Name 'Cook Island Māori' for urn:ietf:bcp:47#mi-CK - should be one of 2 choices: 'Maori (Region=Cook Islands), "Maori (Cook Islands)"' for the language(s) '--' (from Tx-Server) for 'urn:ietf:bcp:47#mi-CK'
+Wrong Display Name 'Tongan' for urn:ietf:bcp:47#to - should be 'Tonga (Tonga Islands)' (for the language(s) '--') (from Tx-Server) for 'urn:ietf:bcp:47#to'
+
+Wrong Display Name 'Mandarin' for urn:ietf:bcp:47#cmn - should be 'Mandarin Chinese' (for the language(s) '--') (from Tx-Server) for 'urn:ietf:bcp:47#cmn'
+Wrong Display Name 'Cantonese' for urn:ietf:bcp:47#yue - should be 'Yue Chinese' (for the language(s) '--') (from Tx-Server) for 'urn:ietf:bcp:47#yue'
