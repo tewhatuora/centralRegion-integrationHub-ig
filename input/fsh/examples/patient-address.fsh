@@ -1,5 +1,5 @@
 // Example Instances of Patient with different address fields
-Instance: Patient-Suburb
+Instance: Patient-Address-Suburb
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"
 

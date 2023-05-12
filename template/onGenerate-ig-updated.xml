@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-05-10T18:10:52+12:00"/>
+   <date value="2023-05-12T13:13:10+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -371,7 +371,7 @@
          <reference>
             <reference value="StructureDefinition/nz-residency"/>
          </reference>
-         <name value="NZResidency"/>
+         <name value="NZ Residency"/>
          <description value="NZ Residency status"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-extension"/>
@@ -401,7 +401,7 @@
          <reference>
             <reference value="ValueSet/nzcr-ethnicity-level-2-value-set"/>
          </reference>
-         <name value="NZ Central Region - Ethnicityi Level 2 Value Set"/>
+         <name value="NZ Central Region - Ethnicity Level 2 Value Set"/>
          <description value="Ethnicity Level 2 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
@@ -561,28 +561,13 @@
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-CivilUnion.html"/>
+            <valueUri value="Patient-Patient-Address-Suburb.html"/>
          </extension>
          <reference>
-            <reference value="Patient/Patient-CivilUnion"/>
+            <reference value="Patient/Patient-Address-Suburb"/>
          </reference>
-         <name value="Patient-CivilUnion"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes"/>
-         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-Communication.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/Patient-Communication"/>
-         </reference>
-         <name value="Patient-Communication"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with a single language of communication"/>
+         <name value="Patient-Address-Suburb"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -598,21 +583,6 @@
          </reference>
          <name value="Patient-Contact"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with Contact that has multiple codings for the relationship"/>
-         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-Ethnicity-Level2.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/Patient-Ethnicity-Level2"/>
-         </reference>
-         <name value="Patient-Ethnicity-Level2"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with only ethnicity level-2 coding included"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -666,6 +636,51 @@
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-LanguageSingle.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-LanguageSingle"/>
+         </reference>
+         <name value="Patient-LanguageSingle"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with a single language of communication"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-MaritalStatus-CivilUnion.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-MaritalStatus-CivilUnion"/>
+         </reference>
+         <name value="Patient-MaritalStatus-CivilUnion"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-MaritalStatus-Single.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-MaritalStatus-Single"/>
+         </reference>
+         <name value="Patient-MaritalStatus-Single"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="Patient-Patient-Practitioner.html"/>
          </extension>
          <reference>
@@ -673,6 +688,21 @@
          </reference>
          <name value="Patient-Practitioner"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with General Practitioner element"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Patient"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Patient-Patient-Religion-NoAnswer.html"/>
+         </extension>
+         <reference>
+            <reference value="Patient/Patient-Religion-NoAnswer"/>
+         </reference>
+         <name value="Patient-Religion-NoAnswer"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'&#xA;  Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -696,21 +726,6 @@
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-Religion-no-answer.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/Patient-Religion-no-answer"/>
-         </reference>
-         <name value="Patient-Religion-no-answer"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'&#xA;  Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
-         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="Patient-Patient-Residency.html"/>
          </extension>
          <reference>
@@ -718,36 +733,6 @@
          </reference>
          <name value="Patient-Residency"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings"/>
-         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-Single.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/Patient-Single"/>
-         </reference>
-         <name value="Patient-Single"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes"/>
-         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Patient"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Patient-Patient-Suburb.html"/>
-         </extension>
-         <reference>
-            <reference value="Patient/Patient-Suburb"/>
-         </reference>
-         <name value="Patient-Suburb"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
@@ -821,7 +806,7 @@
             </page>
             <page>
                <nameUrl value="StructureDefinition-nz-residency.html"/>
-               <title value="NZResidency"/>
+               <title value="NZ Residency"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -831,7 +816,7 @@
             </page>
             <page>
                <nameUrl value="ValueSet-nzcr-ethnicity-level-2-value-set.html"/>
-               <title value="NZ Central Region - Ethnicityi Level 2 Value Set"/>
+               <title value="NZ Central Region - Ethnicity Level 2 Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -885,23 +870,13 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Patient-Patient-CivilUnion.html"/>
-               <title value="Patient-CivilUnion"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Patient-Patient-Communication.html"/>
-               <title value="Patient-Communication"/>
+               <nameUrl value="Patient-Patient-Address-Suburb.html"/>
+               <title value="Patient-Address-Suburb"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="Patient-Patient-Contact.html"/>
                <title value="Patient-Contact"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Patient-Patient-Ethnicity-Level2.html"/>
-               <title value="Patient-Ethnicity-Level2"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -920,8 +895,28 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Patient-Patient-LanguageSingle.html"/>
+               <title value="Patient-LanguageSingle"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-MaritalStatus-CivilUnion.html"/>
+               <title value="Patient-MaritalStatus-CivilUnion"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-MaritalStatus-Single.html"/>
+               <title value="Patient-MaritalStatus-Single"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Patient-Patient-Practitioner.html"/>
                <title value="Patient-Practitioner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Patient-Patient-Religion-NoAnswer.html"/>
+               <title value="Patient-Religion-NoAnswer"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -930,23 +925,8 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Patient-Patient-Religion-no-answer.html"/>
-               <title value="Patient-Religion-no-answer"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="Patient-Patient-Residency.html"/>
                <title value="Patient-Residency"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Patient-Patient-Single.html"/>
-               <title value="Patient-Single"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="Patient-Patient-Suburb.html"/>
-               <title value="Patient-Suburb"/>
                <generation value="generated"/>
             </page>
          </page>

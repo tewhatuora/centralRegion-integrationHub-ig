@@ -35,6 +35,7 @@ Description: "Is the person a NZ resident"
 
 Extension: NZResidency
 Id: nz-residency
+Title: "NZ Residency"
 Description: "NZ Residency status"
 
 /*

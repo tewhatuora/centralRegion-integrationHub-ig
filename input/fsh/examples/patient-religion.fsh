@@ -53,7 +53,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * deceasedBoolean = false
 
 
-Instance: Patient-Religion-no-answer
+Instance: Patient-Religion-NoAnswer
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'
   Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"

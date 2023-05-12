@@ -88,7 +88,7 @@
         "reference": {
           "reference": "StructureDefinition/nz-residency"
         },
-        "name": "NZResidency",
+        "name": "NZ Residency",
         "description": "NZ Residency status",
         "exampleBoolean": false
       },
@@ -104,7 +104,7 @@
         "reference": {
           "reference": "ValueSet/nzcr-ethnicity-level-2-value-set"
         },
-        "name": "NZ Central Region - Ethnicityi Level 2 Value Set",
+        "name": "NZ Central Region - Ethnicity Level 2 Value Set",
         "description": "Ethnicity Level 2 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)",
         "exampleBoolean": false
       },
@@ -190,18 +190,10 @@
       },
       {
         "reference": {
-          "reference": "Patient/Patient-CivilUnion"
+          "reference": "Patient/Patient-Address-Suburb"
         },
-        "name": "Patient-CivilUnion",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/Patient-Communication"
-        },
-        "name": "Patient-Communication",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with a single language of communication",
+        "name": "Patient-Address-Suburb",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
@@ -210,14 +202,6 @@
         },
         "name": "Patient-Contact",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with Contact that has multiple codings for the relationship",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/Patient-Ethnicity-Level2"
-        },
-        "name": "Patient-Ethnicity-Level2",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with only ethnicity level-2 coding included",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
@@ -246,10 +230,42 @@
       },
       {
         "reference": {
+          "reference": "Patient/Patient-LanguageSingle"
+        },
+        "name": "Patient-LanguageSingle",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with a single language of communication",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-MaritalStatus-CivilUnion"
+        },
+        "name": "Patient-MaritalStatus-CivilUnion",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-MaritalStatus-Single"
+        },
+        "name": "Patient-MaritalStatus-Single",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
           "reference": "Patient/Patient-Practitioner"
         },
         "name": "Patient-Practitioner",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with General Practitioner element",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-Religion-NoAnswer"
+        },
+        "name": "Patient-Religion-NoAnswer",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'\n  Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
@@ -262,34 +278,10 @@
       },
       {
         "reference": {
-          "reference": "Patient/Patient-Religion-no-answer"
-        },
-        "name": "Patient-Religion-no-answer",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'\n  Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
           "reference": "Patient/Patient-Residency"
         },
         "name": "Patient-Residency",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/Patient-Single"
-        },
-        "name": "Patient-Single",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/Patient-Suburb"
-        },
-        "name": "Patient-Suburb",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       }
     ],

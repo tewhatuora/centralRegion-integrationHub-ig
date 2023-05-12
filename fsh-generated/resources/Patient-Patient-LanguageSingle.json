@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-Suburb",
+  "id": "Patient-LanguageSingle",
   "meta": {
     "profile": [
       "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"

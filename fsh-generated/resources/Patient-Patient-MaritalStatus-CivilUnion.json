@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-Communication",
+  "id": "Patient-MaritalStatus-CivilUnion",
   "meta": {
     "profile": [
       "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
@@ -49,24 +49,18 @@
   "address": [
     {
       "type": "postal",
-      "extension": [
-        {
-          "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
-          "valueString": "Kelvin Grove"
-        }
-      ],
+      "text": "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND",
       "line": [
-        "100 Cambridge Street"
+        "100 Broadway Avenue"
       ],
       "city": "Palmerston North",
       "postalCode": "4410",
-      "country": "NEW ZEALAND",
-      "text": "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
+      "country": "NEW ZEALAND"
     }
   ],
   "name": [
     {
-      "use": "official",
+      "use": "usual",
       "given": [
         "James"
       ],

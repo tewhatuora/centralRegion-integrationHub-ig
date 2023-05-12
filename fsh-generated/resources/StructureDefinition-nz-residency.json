@@ -4,6 +4,7 @@
   "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency",
   "version": "0.1.0",
   "name": "NZResidency",
+  "title": "NZ Residency",
   "status": "active",
   "description": "NZ Residency status",
   "jurisdiction": [
@@ -40,6 +41,7 @@
       {
         "id": "Extension",
         "path": "Extension",
+        "short": "NZ Residency",
         "definition": "NZ Residency status"
       },
       {

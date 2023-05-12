@@ -36,7 +36,7 @@ Description:  "Ethnicity Level 2 codes from
 
 ValueSet: NZCentralRegionEthnicityLevel2ValueSet
 Id: nzcr-ethnicity-level-2-value-set
-Title: "NZ Central Region - Ethnicityi Level 2 Value Set"
+Title: "NZ Central Region - Ethnicity Level 2 Value Set"
 Description:  "Ethnicity Level 2 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"
 
 * ^url = $NZCentralRegionEthnicityLevel2VS

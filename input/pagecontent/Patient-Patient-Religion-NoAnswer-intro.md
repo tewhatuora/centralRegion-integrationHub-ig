@@ -1,0 +1,2 @@
+An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'
+  Which means there is no equivalent coding from [HL7 Base](http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation)
