@@ -8,6 +8,9 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * ^derivation = #constraint
 
 * active 0..0
+* implicitRules 0..0
+* language 0..0
+* contained 0..0
 
 * name 1..* MS
   * use 1..1 MS

@@ -37,14 +37,48 @@
   "differential": {
     "element": [
       {
-        "id": "Practitioner.id",
-        "path": "Practitioner.id",
+        "id": "Practitioner.implicitRules",
+        "path": "Practitioner.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.language",
+        "path": "Practitioner.language",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.contained",
+        "path": "Practitioner.contained",
         "max": "0"
       },
       {
         "id": "Practitioner.extension",
         "path": "Practitioner.extension",
         "min": 1
+      },
+      {
+        "id": "Practitioner.extension:death-date",
+        "path": "Practitioner.extension",
+        "sliceName": "death-date",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.extension:educational-qualification",
+        "path": "Practitioner.extension",
+        "sliceName": "educational-qualification",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.extension:ethnicity",
+        "path": "Practitioner.extension",
+        "sliceName": "ethnicity",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.extension:iwi",
+        "path": "Practitioner.extension",
+        "sliceName": "iwi",
+        "max": "0"
       },
       {
         "id": "Practitioner.extension:hl7v2Message",
@@ -61,6 +95,103 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.id",
+        "path": "Practitioner.name.id",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.name.extension",
+        "path": "Practitioner.name.extension",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.name.use",
+        "path": "Practitioner.name.use",
+        "short": "one of: official / nickname",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.prefix",
+        "path": "Practitioner.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.suffix",
+        "path": "Practitioner.name.suffix",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.photo",
+        "path": "Practitioner.photo",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "max": "0"
       }
     ]
   }
