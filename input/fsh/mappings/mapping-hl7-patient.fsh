@@ -41,7 +41,7 @@ elif PIF-8 == '**U**' then '**unknown**'"
 
 * birthDate -> "PID-7"
 
-* extension[ethnicity] -> "PID-22" "Repeat for each entry in PID-22.\r\nTwo coding entries, one each for\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-4-code and\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
+* extension[ethnicity] -> "PID-22, PID-10" "Repeat for each entry in PID-22.\r\nTwo coding entries, one each for\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-4-code and\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-2-code\r\nNote: May have to check *primary* ethnicity in PID-10 as well"
 * extension[ethnicity].valueCodeableConcept.coding.code -> "PID-22.1" "Which is group-level-2; lookup required for group-level-4.  ConceptMap ?"
 * extension[ethnicity].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/ethnic-group-level-4-code and https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
 * extension[ethnicity].valueCodeableConcept.coding.display -> "PID-22.2" "Check for macrons in Māori and Cook Island Māori"

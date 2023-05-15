@@ -15,9 +15,9 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "yes",
+                "code": "no",
                 "system": "https://standards.digital.health.nz/ns/nz-citizenship-status-code",
-                "display": "Yes"
+                "display": "No"
               }
             ]
           }
@@ -35,9 +35,9 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "no",
+                "code": "unknown",
                 "system": "https://standards.digital.health.nz/ns/nz-residency-code",
-                "display": "Not a Permanent Resident"
+                "display": "Unknown"
               },
               {
                 "code": "DET",

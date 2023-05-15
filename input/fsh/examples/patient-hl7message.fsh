@@ -1,15 +1,7 @@
 // Example Instances of Patient
 Instance: Patient-HL7Message
 InstanceOf: NZCentralRegionPatient
-Description: """An example of a patient from Te Whatu Ora, Central Region, including the source HL7 v2 message, which when `base64decoded` looks like this:
-
-MSH|^~\&|PROD_WebPAS^RPAS|MCDHB^G00033|Regional HUB^RHUB|RHIP^G09999|20220316091410000+1300||ADT^A31|341P0000000000462041|P|2.4
-EVN||20220316091358
-PID|||ZHY4846^^^&2.16.840.1.113883.2.18.2||Pond^James^^^FR||19720223000000|M||21^NZ Maori^NZHIS|100 Broadway Avenue^^Palmerston North^^4410^NEW ZEALAND^C~^^^^^NEW ZEALAND^M|1845|^PRN^PH~02758880032^ORN^CP|^WPN^PH|ENG^English^NHDD-132^U|V^Civil Union^HL70002||||||21^NZ Maori^NZHIS~11^NZ European / Pakeha^NZHIS~32^Cook Island Maori^NZHIS||||Y||NZ^New Zealand citizen^RHIP_Resident_Status||N
-PD1|||Feilding Health Care^^12482^^^&2.16.840.1.113883.2.18.66.3.3.0|66665^Rerekura^Amber-Lea Aroha^^^Dr^^^&2.16.840.1.113883.2.18.66.3.2.0
-NK1|1|Lake^Elaine^^^Mrs|03^Sister^webPAS||^PRN^PH~027 8887743^ORN^CP|^WPN^PH
-NK1|2|Pond^Gwenyth^^^Mrs|01^Mother^webPAS||^PRN^PH~027 5 666 325^ORN^CP|^WPN^PH
-NK1|3|Moneypenny^Louise^^^Miss|18^De Facto^webPAS||^PRN^PH~021 555 888 6^ORN^CP|^WPN^PH"""
+Description: "An example of a patient from Te Whatu Ora, Central Region, including the source HL7 v2 message"
 
 * name
   * use = #official

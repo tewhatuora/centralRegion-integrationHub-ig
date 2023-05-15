@@ -14,6 +14,7 @@ sprite $bDataObject jar:archimate/business-object
 
 ' Manufacture a parent Resource class...
 rectangle "Patient Data" as clPatient <<$bDataObject>> <<verb>> #Business {
+  Application_DataObject(rsClinicalImpression, "ClinicalImpression\n(FHIR Resource)")
   Application_DataObject(rsPatient, "Patient\n(FHIR Resource)")
   Application_DataObject(rsFlag,    "Flag\n(FHIR Resource)")
   Application_DataObject(rsAllergyIntolerance, "AllergyIntolerance\n(FHIR Resource)")
@@ -27,21 +28,40 @@ rectangle "Referral Data" as clReferral <<$bDataObject>> <<verb>> #Business {
   Application_DataObject(rsServiceRequest, "ServiceRequest\n(FHIR Resource)")
 }
 
+
 Technology_Artifact(rsSubscription, "Subscription\n(FHIR Resource)")
+Technology_Artifact(rsCodeSystem,   "CodeSystem\n(FHIR Resource)")
+Technology_Artifact(rsValueSet,     "ValueSet\n(FHIR Resource)")
+Technology_Artifact(rsConceptMap,   "ConceptMap\n(FHIR Resource)")
+
+
 
 url of rsPatient is [[StructureDefinition-NZCentralRegionPatient.html]]
+url of rsAllergyIntolerance is [[StructureDefinition-NZCentralRegionAllergyIntolerance.html]]
+url of rsFlag is [[StructureDefinition-NZCentralRegionFlag.html]]
+url of rsClinicalImpression is [[StructureDefinition-NZCentralRegionClinicalImpression.html]]
 url of rsPractitioner is [[StructureDefinition-NZCentralRegionPractitioner.html]]
+url of rsServiceRequest is [[StructureDefinition-NZCentralRegionServiceRequest.html]]
 
-clPractitioner -[hidden]-> clPatient
-rsPatient --> rsFlag: is subject of
-rsPatient --> rsAllergyIntolerance: has
-rsPatient -> rsServiceRequest: is subject of
+
+rsPatient -r-> rsClinicalImpression: is subject of
+rsPatient -l-> rsFlag: is subject of
+rsPatient -l--> rsAllergyIntolerance: has
+rsPatient --> rsServiceRequest: is subject of
 
 rsPractitioner --> rsFlag: is author of
 rsPractitioner --> rsAllergyIntolerance: is recorder of
-
 rsPractitioner ----> rsServiceRequest: is requestor of
 rsPractitioner ----> rsServiceRequest: is performer of
+rsPractitioner ----> rsClinicalImpression: is performer of
 
-rsPatient --[hidden]--> rsSubscription
+rsCodeSystem --> rsValueSet: defines values for
+rsCodeSystem ---> rsConceptMap: is source for
+rsCodeSystem ---> rsConceptMap: is target for
+
+clPractitioner -[hidden]-> clPatient
+rsFlag -[hidden]--> rsAllergyIntolerance
+rsClinicalImpression --[hidden]--> rsCodeSystem
+rsSubscription -[hidden]-> rsValueSet
+
 @enduml

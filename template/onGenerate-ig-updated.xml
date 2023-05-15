@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-05-12T13:13:10+12:00"/>
+   <date value="2023-05-15T11:35:36+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -567,7 +567,7 @@
             <reference value="Patient/Patient-Address-Suburb"/>
          </reference>
          <name value="Patient-Address-Suburb"/>
-         <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"/>
+         <description value="An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field,&#xA;  and mappings to Domicile and DHB codes."/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>

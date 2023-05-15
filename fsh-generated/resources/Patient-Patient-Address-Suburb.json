@@ -25,6 +25,30 @@
       ]
     },
     {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/domicile-code",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "1842",
+            "system": "https://standards.digital.health.nz/ns/domicile-code",
+            "display": "Kelvin Grove"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/dhb",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "G00033-J",
+            "system": "https://standards.digital.health.nz/ns/dhb-code",
+            "display": "Mid Central District Health Board"
+          }
+        ]
+      }
+    },
+    {
       "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
       "valueBoolean": false
     },

@@ -1,4 +1,4 @@
-// Example Instances of Patient with different address fields
+// Example Instances of Patient with different NZ Residency settings
 Instance: Patient-Residency
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings"
@@ -33,13 +33,13 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with mu
 * communication.language.coding.display = "English"
 * communication.preferred = true
 
-* extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
+* extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #no
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS
-* extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "Yes"
+* extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "No"
 
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #no
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #unknown
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].system = $NZBaseNZResidencyCS
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Not a Permanent Resident"
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Unknown"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #DET
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].system = $NZCentralRegionResidencyCS
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Details required"

@@ -71,8 +71,8 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "PID-22",
-            "comment": "Repeat for each entry in PID-22.\r\nTwo coding entries, one each for\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-4-code and\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
+            "map": "PID-22, PID-10",
+            "comment": "Repeat for each entry in PID-22.\r\nTwo coding entries, one each for\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-4-code and\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-2-code\r\nNote: May have to check *primary* ethnicity in PID-10 as well"
           }
         ]
       },

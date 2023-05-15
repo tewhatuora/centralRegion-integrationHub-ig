@@ -1,7 +1,8 @@
 // Example Instances of Patient with different address fields
 Instance: Patient-Address-Suburb
 InstanceOf: NZCentralRegionPatient
-Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field"
+Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field,
+  and mappings to Domicile and DHB codes."
 
 * name
   * use = #official
@@ -26,6 +27,14 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with ad
 * address[=].postalCode = "4410"
 * address[=].country = "NEW ZEALAND"
 * address[=].text = "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
+
+* extension[domicile-code].valueCodeableConcept.coding.code = #1842
+* extension[domicile-code].valueCodeableConcept.coding.system = $NZBaseDomicileCode
+* extension[domicile-code].valueCodeableConcept.coding.display = "Kelvin Grove"
+
+* extension[dhb].valueCodeableConcept.coding.code = #G00033-J
+* extension[dhb].valueCodeableConcept.coding.system = $NZBaseDHBCode
+* extension[dhb].valueCodeableConcept.coding.display = "Mid Central District Health Board"
 
 * extension[interpreterRequired].valueBoolean = false
 * communication.language.coding.code = #en

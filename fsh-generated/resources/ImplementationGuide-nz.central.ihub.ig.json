@@ -193,7 +193,7 @@
           "reference": "Patient/Patient-Address-Suburb"
         },
         "name": "Patient-Address-Suburb",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field,\n  and mappings to Domicile and DHB codes.",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
