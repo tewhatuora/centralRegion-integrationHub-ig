@@ -4,6 +4,8 @@ Title:  "HL7 v2 Message"
 Description: "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource"
 
 * ^status = #active
+* ^url = $NZCentralRegionHL7v2Message
+
 * ^context[+].type = #element
 * ^context[=].expression = "Patient"
 * ^context[+].type = #element

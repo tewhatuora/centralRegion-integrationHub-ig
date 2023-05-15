@@ -61,7 +61,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7v2-message"
+              "https://standards.digital.health.nz/ns/central-region/hl7-message"
             ]
           }
         ],

@@ -147,7 +147,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 * photo 0..0
 
-* extension contains $NZCentralRegionPatientReligion named patient-religion 0..1 MS
+* extension contains $HL7PatientReligion named patient-religion 0..1 MS
 * extension[patient-religion] 0..1 MS
   * valueCodeableConcept.coding 1..* MS           //  <<<---- THIS ONE HERE is required to make the publisher work with the rest
   * valueCodeableConcept.coding.code 1..1 MS      // from PID-17.1
@@ -246,5 +246,4 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
 
-* extension contains 
-    NZCentralRegionHL7v2Message named hl7v2Message 0..1 MS
+* extension contains $NZCentralRegionHL7v2Message named hl7v2-message 0..1 MS

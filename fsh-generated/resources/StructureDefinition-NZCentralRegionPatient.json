@@ -675,16 +675,16 @@
         ]
       },
       {
-        "id": "Patient.extension:hl7v2Message",
+        "id": "Patient.extension:hl7v2-message",
         "path": "Patient.extension",
-        "sliceName": "hl7v2Message",
+        "sliceName": "hl7v2-message",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7v2-message"
+              "https://standards.digital.health.nz/ns/central-region/hl7-message"
             ]
           }
         ],

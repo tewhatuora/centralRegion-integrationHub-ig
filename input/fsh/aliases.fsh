@@ -1,3 +1,6 @@
+// Extension URLs from FHIR base
+Alias:   $HL7PatientReligion      = http://hl7.org/fhir/StructureDefinition/patient-religion
+
 // Code System URLs from FHIR base
 Alias:   $HL7MaritalStatusCS       = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias:   $HL7InterpreterRequiredCS = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
@@ -21,8 +24,7 @@ Alias:   $NZBaseNZResidencyCS      = https://standards.digital.health.nz/ns/nz-r
 Alias:   $NZStatsEthnicityLevel4CS = https://standards.digital.health.nz/ns/ethnic-group-level-4-code
 
 // Local URLs for locally defined extensions
-Alias:   $NZCentralRegionHL7Message           = https://standards.digital.health.nz/ns/hl7-message
-Alias:   $NZCentralRegionPatientReligion      = http://hl7.org/fhir/StructureDefinition/patient-religion
+Alias:   $NZCentralRegionHL7v2Message          = https://standards.digital.health.nz/ns/central-region/hl7-message
 
 // Local URLs for locally defined CodeSystems
 Alias:   $NZStatsEthnicityLevel2CS             = https://standards.digital.health.nz/ns/ethnic-group-level-2-code

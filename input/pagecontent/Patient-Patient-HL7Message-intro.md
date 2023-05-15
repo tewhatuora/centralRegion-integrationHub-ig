@@ -1,0 +1,1 @@
+An example of a patient from Te Whatu Ora, Central Region, including the source HL7 v2 message

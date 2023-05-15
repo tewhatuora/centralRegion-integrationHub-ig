@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "nzcr-hl7v2-message",
-  "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7v2-message",
+  "url": "https://standards.digital.health.nz/ns/central-region/hl7-message",
   "version": "0.1.0",
   "name": "NZCentralRegionHL7v2Message",
   "title": "HL7 v2 Message",
@@ -54,7 +54,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/nzcr-hl7v2-message"
+        "fixedUri": "https://standards.digital.health.nz/ns/central-region/hl7-message"
       },
       {
         "id": "Extension.value[x]",
