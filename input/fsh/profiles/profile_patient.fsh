@@ -232,6 +232,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * assigner 0..0   // Data not availale
     * extension 0..0
     * id 0..0
+  * display 0..1 MS
   * extension 0..0
   * id 0..0
   

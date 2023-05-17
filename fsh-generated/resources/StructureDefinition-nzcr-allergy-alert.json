@@ -1,0 +1,257 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nzcr-allergy-alert",
+  "url": "https://standards.digital.health.nz/ns/central-region/allergy-alert",
+  "version": "0.1.0",
+  "name": "NZCentralRegionAllergyAlert",
+  "title": "NZ Central Region Allergy/Alert",
+  "status": "active",
+  "description": "NZ Residency status",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Flag"
+    },
+    {
+      "type": "element",
+      "expression": "AllergyIntolerance"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NZ Central Region Allergy/Alert",
+        "definition": "NZ Residency status"
+      },
+      {
+        "id": "Extension.extension:severityLevel",
+        "path": "Extension.extension",
+        "sliceName": "severityLevel",
+        "definition": "Severity Level in range 0-9",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:severityLevel.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:severityLevel.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "severityLevel"
+      },
+      {
+        "id": "Extension.extension:severityLevel.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:severityLevel.valueInteger",
+        "path": "Extension.extension.valueInteger",
+        "min": 0,
+        "max": "1",
+        "minValueInteger": 0,
+        "maxValueInteger": 9
+      },
+      {
+        "id": "Extension.extension:allergyReaction",
+        "path": "Extension.extension",
+        "sliceName": "allergyReaction",
+        "definition": "Allergy Reaction",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:allergyReaction.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:allergyReaction.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "allergyReaction"
+      },
+      {
+        "id": "Extension.extension:allergyReaction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:allergyReaction.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/allergy-reaction"
+        }
+      },
+      {
+        "id": "Extension.extension:reviewDate",
+        "path": "Extension.extension",
+        "sliceName": "reviewDate",
+        "definition": "Review Date",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:reviewDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reviewDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reviewDate"
+      },
+      {
+        "id": "Extension.extension:reviewDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:inactiveDate",
+        "path": "Extension.extension",
+        "sliceName": "inactiveDate",
+        "definition": "Inactive Date",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:inactiveDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:inactiveDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "inactiveDate"
+      },
+      {
+        "id": "Extension.extension:inactiveDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastUpdatedBy",
+        "path": "Extension.extension",
+        "sliceName": "lastUpdatedBy",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:lastUpdatedBy.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lastUpdatedBy"
+      },
+      {
+        "id": "Extension.extension:lastUpdatedDateTime",
+        "path": "Extension.extension",
+        "sliceName": "lastUpdatedDateTime",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:lastUpdatedDateTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lastUpdatedDateTime"
+      },
+      {
+        "id": "Extension.extension:recordingHospital",
+        "path": "Extension.extension",
+        "sliceName": "recordingHospital",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:recordingHospital.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "recordingHospital"
+      },
+      {
+        "id": "Extension.extension:comments",
+        "path": "Extension.extension",
+        "sliceName": "comments",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:comments.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "comments"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://standards.digital.health.nz/ns/central-region/allergy-alert"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

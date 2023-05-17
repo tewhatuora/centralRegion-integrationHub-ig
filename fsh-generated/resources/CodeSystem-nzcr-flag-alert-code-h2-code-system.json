@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionFlagAlertCodeH2CodeSystem",
+  "id": "nzcr-flag-alert-code-h2-code-system",
+  "title": "NZ Central Region - Flag Alert Code (H2) Code System",
+  "description": "H2 alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2",
+  "concept": [
+    {
+      "code": "A01",
+      "display": "Adrenal insufficiency"
+    },
+    {
+      "code": "A02",
+      "display": "Anaesthetic risk"
+    },
+    {
+      "code": "B01",
+      "display": "Clotting disorder"
+    },
+    {
+      "code": "B02",
+      "display": "Brugada syndrome"
+    },
+    {
+      "code": "D01",
+      "display": "Diabetic Mx plan"
+    },
+    {
+      "code": "D02",
+      "display": "Difficult intub/airw"
+    },
+    {
+      "code": "I01",
+      "display": "Immunosuppressed"
+    },
+    {
+      "code": "K01",
+      "display": "Known hospice/pall"
+    },
+    {
+      "code": "L01",
+      "display": "Lond QT syndrome"
+    },
+    {
+      "code": "M01",
+      "display": "Malig hyperthermia"
+    },
+    {
+      "code": "O01",
+      "display": "Other medical condition"
+    },
+    {
+      "code": "R01",
+      "display": "Respiratory Mx plan"
+    },
+    {
+      "code": "T01",
+      "display": "transplant patient"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 13
+}

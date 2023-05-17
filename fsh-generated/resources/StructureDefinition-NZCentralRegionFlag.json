@@ -32,6 +32,21 @@
         "max": "0"
       },
       {
+        "id": "Flag.implicitRules",
+        "path": "Flag.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Flag.language",
+        "path": "Flag.language",
+        "max": "0"
+      },
+      {
+        "id": "Flag.contained",
+        "path": "Flag.contained",
+        "max": "0"
+      },
+      {
         "id": "Flag.extension",
         "path": "Flag.extension",
         "slicing": {
@@ -44,7 +59,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 1
+        "min": 2
       },
       {
         "id": "Flag.extension:hl7v2Message",
@@ -60,6 +75,325 @@
             ]
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.extension:allergy-alert",
+        "path": "Flag.extension",
+        "sliceName": "allergy-alert",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/allergy-alert"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.category",
+        "path": "Flag.category",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/alert-type-flag"
+        }
+      },
+      {
+        "id": "Flag.category.id",
+        "path": "Flag.category.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.extension",
+        "path": "Flag.category.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding",
+        "path": "Flag.category.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.category.coding.id",
+        "path": "Flag.category.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding.extension",
+        "path": "Flag.category.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding.system",
+        "path": "Flag.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.category.coding.version",
+        "path": "Flag.category.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding.code",
+        "path": "Flag.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.category.coding.display",
+        "path": "Flag.category.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.category.coding.userSelected",
+        "path": "Flag.category.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.text",
+        "path": "Flag.category.text",
+        "max": "0"
+      },
+      {
+        "id": "Flag.code",
+        "path": "Flag.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/falg-alert-code"
+        }
+      },
+      {
+        "id": "Flag.code.id",
+        "path": "Flag.code.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.code.extension",
+        "path": "Flag.code.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.code.coding",
+        "path": "Flag.code.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.code.coding.id",
+        "path": "Flag.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.code.coding.extension",
+        "path": "Flag.code.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.code.coding.system",
+        "path": "Flag.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.code.coding.version",
+        "path": "Flag.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Flag.code.coding.code",
+        "path": "Flag.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.code.coding.display",
+        "path": "Flag.code.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.code.coding.userSelected",
+        "path": "Flag.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Flag.code.text",
+        "path": "Flag.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Flag.subject",
+        "path": "Flag.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.subject.reference",
+        "path": "Flag.subject.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.subject.type",
+        "path": "Flag.subject.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.subject.identifier",
+        "path": "Flag.subject.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.subject.identifier.id",
+        "path": "Flag.subject.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.subject.identifier.extension",
+        "path": "Flag.subject.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.subject.identifier.use",
+        "path": "Flag.subject.identifier.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.subject.identifier.type",
+        "path": "Flag.subject.identifier.type",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.subject.identifier.system",
+        "path": "Flag.subject.identifier.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.subject.identifier.value",
+        "path": "Flag.subject.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.subject.identifier.period",
+        "path": "Flag.subject.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Flag.subject.identifier.assigner",
+        "path": "Flag.subject.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Flag.subject.display",
+        "path": "Flag.subject.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.period",
+        "path": "Flag.period",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.period.start",
+        "path": "Flag.period.start",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.period.end",
+        "path": "Flag.period.end",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.encounter",
+        "path": "Flag.encounter",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author",
+        "path": "Flag.author",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.author.reference",
+        "path": "Flag.author.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.author.type",
+        "path": "Flag.author.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.author.identifier",
+        "path": "Flag.author.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.author.identifier.id",
+        "path": "Flag.author.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.identifier.extension",
+        "path": "Flag.author.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.identifier.use",
+        "path": "Flag.author.identifier.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.author.identifier.type",
+        "path": "Flag.author.identifier.type",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.author.identifier.system",
+        "path": "Flag.author.identifier.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.author.identifier.value",
+        "path": "Flag.author.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.author.identifier.period",
+        "path": "Flag.author.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.identifier.assigner",
+        "path": "Flag.author.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.display",
+        "path": "Flag.author.display",
         "mustSupport": true
       }
     ]

@@ -1,0 +1,604 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionAllergyAlertCodeH1CodeSystem",
+  "id": "nzcr-allergy-alert-code-h1-code-system",
+  "title": "NZ Central Region - Allergy Alert Code (H1) Code System",
+  "description": "H2 Allergy alert codes (H1) ex. WebPAS in NZ Central Region.",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Alcuronium"
+    },
+    {
+      "code": "2",
+      "display": "Althesin"
+    },
+    {
+      "code": "3",
+      "display": "Aminoglycosides"
+    },
+    {
+      "code": "4",
+      "display": "Aminophylline"
+    },
+    {
+      "code": "5",
+      "display": "Antihistamines (Hi)"
+    },
+    {
+      "code": "6",
+      "display": "Antineoplastics"
+    },
+    {
+      "code": "7",
+      "display": "Anti-Inflamm Drugs"
+    },
+    {
+      "code": "8",
+      "display": "Aprotonni"
+    },
+    {
+      "code": "9",
+      "display": "Aspirin"
+    },
+    {
+      "code": "10",
+      "display": "Barbiturates"
+    },
+    {
+      "code": "11",
+      "display": "Benzodiazepines"
+    },
+    {
+      "code": "12",
+      "display": "Beta Blockers"
+    },
+    {
+      "code": "13",
+      "display": "Cephalosporins"
+    },
+    {
+      "code": "14",
+      "display": "Codeine"
+    },
+    {
+      "code": "15",
+      "display": "Corticotrophins"
+    },
+    {
+      "code": "16",
+      "display": "Co-Trimoxazole"
+    },
+    {
+      "code": "17",
+      "display": "Dextropropoxyphene"
+    },
+    {
+      "code": "18",
+      "display": "Diagnostic Agents"
+    },
+    {
+      "code": "19",
+      "display": "Erythromycins"
+    },
+    {
+      "code": "20",
+      "display": "Gallamine"
+    },
+    {
+      "code": "21",
+      "display": "Iodides"
+    },
+    {
+      "code": "22",
+      "display": "Iron Compounds"
+    },
+    {
+      "code": "23",
+      "display": "Isoniazid"
+    },
+    {
+      "code": "24",
+      "display": "Local Anaesthetics"
+    },
+    {
+      "code": "25",
+      "display": "Nalidixic Acid"
+    },
+    {
+      "code": "26",
+      "display": "Nitrofurantoin"
+    },
+    {
+      "code": "27",
+      "display": "Pancuronium"
+    },
+    {
+      "code": "28",
+      "display": "Paracetamol"
+    },
+    {
+      "code": "29",
+      "display": "Pencillins"
+    },
+    {
+      "code": "30",
+      "display": "Plasma Substitutes"
+    },
+    {
+      "code": "31",
+      "display": "Propanidid"
+    },
+    {
+      "code": "32",
+      "display": "Quinidine"
+    },
+    {
+      "code": "33",
+      "display": "Steroid Hormones"
+    },
+    {
+      "code": "34",
+      "display": "Sulphonamides"
+    },
+    {
+      "code": "35",
+      "display": "Suxamethonium"
+    },
+    {
+      "code": "36",
+      "display": "Tetracyclines"
+    },
+    {
+      "code": "37",
+      "display": "Theophylline"
+    },
+    {
+      "code": "38",
+      "display": "Thiopentone"
+    },
+    {
+      "code": "39",
+      "display": "Tricclic Antidepr"
+    },
+    {
+      "code": "40",
+      "display": "Tubocuraraine"
+    },
+    {
+      "code": "41",
+      "display": "Vaccines"
+    },
+    {
+      "code": "42",
+      "display": "Iv Anaesthetics"
+    },
+    {
+      "code": "43",
+      "display": "Relaxants"
+    },
+    {
+      "code": "44",
+      "display": "Antihistamines (Hii)"
+    },
+    {
+      "code": "45",
+      "display": "Medroxyprogesterone"
+    },
+    {
+      "code": "46",
+      "display": "Morphine"
+    },
+    {
+      "code": "47",
+      "display": "Danazol"
+    },
+    {
+      "code": "48",
+      "display": "Dapsone"
+    },
+    {
+      "code": "49",
+      "display": "Tinidazole"
+    },
+    {
+      "code": "50",
+      "display": "Trimethoprim"
+    },
+    {
+      "code": "51",
+      "display": "Thiazide Diuretics"
+    },
+    {
+      "code": "52",
+      "display": "Calcium Antagonists"
+    },
+    {
+      "code": "53",
+      "display": "Metronidazole"
+    },
+    {
+      "code": "54",
+      "display": "Quinine"
+    },
+    {
+      "code": "55",
+      "display": "Atracurium"
+    },
+    {
+      "code": "56",
+      "display": "Mianserin"
+    },
+    {
+      "code": "57",
+      "display": "Phenothiazines"
+    },
+    {
+      "code": "58",
+      "display": "Plasma"
+    },
+    {
+      "code": "59",
+      "display": "Pyrantel"
+    },
+    {
+      "code": "60",
+      "display": "Halothane Hepatitis"
+    },
+    {
+      "code": "61",
+      "display": "Anticoag Hypersuscep"
+    },
+    {
+      "code": "62",
+      "display": "G6Pd Deficiency"
+    },
+    {
+      "code": "63",
+      "display": "Malig.Hyperthermia"
+    },
+    {
+      "code": "64",
+      "display": "Porphyria"
+    },
+    {
+      "code": "65",
+      "display": "Opiate Idiosyncrasy"
+    },
+    {
+      "code": "66",
+      "display": "Pseudocholin.Def"
+    },
+    {
+      "code": "67",
+      "display": "Antipsy.Drug Idiosyn"
+    },
+    {
+      "code": "68",
+      "display": "Addisons Disease"
+    },
+    {
+      "code": "69",
+      "display": "Methyldopa Hypersens"
+    },
+    {
+      "code": "70",
+      "display": "Spherocytosis"
+    },
+    {
+      "code": "71",
+      "display": "Antihyper.Bblk.Mdopa"
+    },
+    {
+      "code": "72",
+      "display": "Anticholinesterase"
+    },
+    {
+      "code": "73",
+      "display": "Antithyroid Drugs"
+    },
+    {
+      "code": "74",
+      "display": "Allopurinol"
+    },
+    {
+      "code": "75",
+      "display": "Beesting Hypersensiv"
+    },
+    {
+      "code": "76",
+      "display": "Card.Arrest/Anaes"
+    },
+    {
+      "code": "77",
+      "display": "Carbamazepine"
+    },
+    {
+      "code": "78",
+      "display": "Phenytoin"
+    },
+    {
+      "code": "79",
+      "display": "Procainamide"
+    },
+    {
+      "code": "80",
+      "display": "Perhexiline"
+    },
+    {
+      "code": "81",
+      "display": "Drug Thrombocytopen."
+    },
+    {
+      "code": "82",
+      "display": "Captopril"
+    },
+    {
+      "code": "83",
+      "display": "Enalapril"
+    },
+    {
+      "code": "84",
+      "display": "Nefopam"
+    },
+    {
+      "code": "85",
+      "display": "Dicobalt Edetate"
+    },
+    {
+      "code": "86",
+      "display": "Tocainide"
+    },
+    {
+      "code": "87",
+      "display": "Vit. B6"
+    },
+    {
+      "code": "88",
+      "display": "Angioedema-Drug Rela"
+    },
+    {
+      "code": "89",
+      "display": "Angioedema-Hereditar"
+    },
+    {
+      "code": "90",
+      "display": "Coagul.Abnormality"
+    },
+    {
+      "code": "91",
+      "display": "Famil.Parox.Myoglob."
+    },
+    {
+      "code": "92",
+      "display": "Patient Has Asthma"
+    },
+    {
+      "code": "93",
+      "display": "Diabetic On Nisulin"
+    },
+    {
+      "code": "95",
+      "display": "Hyperten. Treatment"
+    },
+    {
+      "code": "96",
+      "display": "M.A.O Inhibitor"
+    },
+    {
+      "code": "97",
+      "display": "Pt On Anticoagulants"
+    },
+    {
+      "code": "98",
+      "display": "Pt On Steriods"
+    },
+    {
+      "code": "101",
+      "display": "Vecuronium"
+    },
+    {
+      "code": "AAT",
+      "display": "A1 Anti-Trisin Def."
+    },
+    {
+      "code": "AL",
+      "display": "Alzheimer'S"
+    },
+    {
+      "code": "AN",
+      "display": "Angina"
+    },
+    {
+      "code": "AST",
+      "display": "Asthma"
+    },
+    {
+      "code": "AY",
+      "display": "Aneurism"
+    },
+    {
+      "code": "BLP",
+      "display": "Blood Products"
+    },
+    {
+      "code": "BP",
+      "display": "Bleeding Problem"
+    },
+    {
+      "code": "CAN",
+      "display": "Cancer"
+    },
+    {
+      "code": "CBO",
+      "display": "Coronary Bypass Op"
+    },
+    {
+      "code": "CD",
+      "display": "Communicable Disease"
+    },
+    {
+      "code": "CHD",
+      "display": "Congenital Heart Def"
+    },
+    {
+      "code": "CON",
+      "display": "Cong Immunoglobulin"
+    },
+    {
+      "code": "CR",
+      "display": "Crohns Disease"
+    },
+    {
+      "code": "CVA",
+      "display": "Cerebral Vascular Ac"
+    },
+    {
+      "code": "DIA",
+      "display": "Diabetes"
+    },
+    {
+      "code": "DVT",
+      "display": "Deep Vein Thrombosis"
+    },
+    {
+      "code": "EC",
+      "display": "Eczema"
+    },
+    {
+      "code": "EP",
+      "display": "Epilepsy"
+    },
+    {
+      "code": "G6",
+      "display": "G6Pd Deficiency"
+    },
+    {
+      "code": "HAE",
+      "display": "Haemophilia"
+    },
+    {
+      "code": "HF",
+      "display": "Hayfever"
+    },
+    {
+      "code": "HOP",
+      "display": "Hypertension Of Preg"
+    },
+    {
+      "code": "HY",
+      "display": "Hydatids"
+    },
+    {
+      "code": "HYP",
+      "display": "Hyperactive"
+    },
+    {
+      "code": "IGA",
+      "display": "Iga Deficiency"
+    },
+    {
+      "code": "LF",
+      "display": "Renal Failure"
+    },
+    {
+      "code": "M",
+      "display": "Malaria"
+    },
+    {
+      "code": "MD",
+      "display": "Muscular Distrophy"
+    },
+    {
+      "code": "MI",
+      "display": "Myocarial Infarction"
+    },
+    {
+      "code": "MIG",
+      "display": "Migraine"
+    },
+    {
+      "code": "MRS",
+      "display": "Mrsa"
+    },
+    {
+      "code": "MS",
+      "display": "Multiple Sclerosis"
+    },
+    {
+      "code": "MUR",
+      "display": "Murmur Heart/Systol."
+    },
+    {
+      "code": "MV",
+      "display": "Mitral Valve Defic."
+    },
+    {
+      "code": "N",
+      "display": "Nil"
+    },
+    {
+      "code": "OI",
+      "display": "Osteogenesis Imperfe"
+    },
+    {
+      "code": "OTH",
+      "display": "Other"
+    },
+    {
+      "code": "PE",
+      "display": "Pulmonary Embolism"
+    },
+    {
+      "code": "PK",
+      "display": "Parkinsons Disease"
+    },
+    {
+      "code": "RF",
+      "display": "Rheumatic Fever"
+    },
+    {
+      "code": "SCA",
+      "display": "Sickle Cell Anaemia"
+    },
+    {
+      "code": "STR",
+      "display": "Streptokinase"
+    },
+    {
+      "code": "SUB",
+      "display": "Subarachnoid Haem"
+    },
+    {
+      "code": "TB",
+      "display": "Tuberculosis"
+    },
+    {
+      "code": "TD",
+      "display": "Tropical Disease"
+    },
+    {
+      "code": "TH",
+      "display": "Thyroid/Cushings"
+    },
+    {
+      "code": "TIA",
+      "display": "Trans Ischaemic Att"
+    },
+    {
+      "code": "UC",
+      "display": "Ulcerative Colitis"
+    },
+    {
+      "code": "VR",
+      "display": "Valve Replacemen"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 147
+}

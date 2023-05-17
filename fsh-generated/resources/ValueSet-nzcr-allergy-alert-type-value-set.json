@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NZCentralRegionAllergyAlertTypeValueSet",
+  "id": "nzcr-allergy-alert-type-value-set",
+  "title": "NZ Central Region - Allergy Alert Type Value Set",
+  "description": "Alert Type codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/central-region/alert-type-allergy",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/alert-type",
+        "concept": [
+          {
+            "code": "A3"
+          },
+          {
+            "code": "A4"
+          },
+          {
+            "code": "H1"
+          },
+          {
+            "code": "H3"
+          },
+          {
+            "code": "FA"
+          },
+          {
+            "code": "DA"
+          }
+        ]
+      }
+    ]
+  }
+}

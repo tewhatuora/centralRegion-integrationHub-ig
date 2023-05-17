@@ -1,0 +1,112 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionAllergyAlertCodeH3CodeSystem",
+  "id": "nzcr-allergy-alert-code-h3-code-system",
+  "title": "NZ Central Region - Allergy Alert Code (H3) Code System",
+  "description": "H2 Allergy alert codes (H3) ex. WebPAS in NZ Central Region.",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3",
+  "concept": [
+    {
+      "code": "A01",
+      "display": "Alcohol wipes"
+    },
+    {
+      "code": "A02",
+      "display": "Animals"
+    },
+    {
+      "code": "B01",
+      "display": "bee sting hypersens"
+    },
+    {
+      "code": "C01",
+      "display": "cuticerin"
+    },
+    {
+      "code": "D01",
+      "display": "dettol"
+    },
+    {
+      "code": "E01",
+      "display": "egg"
+    },
+    {
+      "code": "F01",
+      "display": "fish"
+    },
+    {
+      "code": "K01",
+      "display": "kiwifruit"
+    },
+    {
+      "code": "L01",
+      "display": "latex"
+    },
+    {
+      "code": "M01",
+      "display": "metal skin staples"
+    },
+    {
+      "code": "M02",
+      "display": " milk"
+    },
+    {
+      "code": "N01",
+      "display": "nickel"
+    },
+    {
+      "code": "N02",
+      "display": "nuts"
+    },
+    {
+      "code": "O01",
+      "display": "other allergy"
+    },
+    {
+      "code": "P01",
+      "display": "peanut"
+    },
+    {
+      "code": "P02",
+      "display": "perfume"
+    },
+    {
+      "code": "P03",
+      "display": "plasters"
+    },
+    {
+      "code": "P04",
+      "display": "pollen"
+    },
+    {
+      "code": "P05",
+      "display": "pork"
+    },
+    {
+      "code": "R01",
+      "display": "rubber"
+    },
+    {
+      "code": "S01",
+      "display": "shellfish"
+    },
+    {
+      "code": "S02",
+      "display": "soy"
+    },
+    {
+      "code": "T01",
+      "display": "tegaderm"
+    },
+    {
+      "code": "W01",
+      "display": "wheat/gluten"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 24
+}

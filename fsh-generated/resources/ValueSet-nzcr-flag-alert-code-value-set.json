@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NZCentralRegionFlagAlertCodeValueSet",
+  "id": "nzcr-flag-alert-code-value-set",
+  "title": "NZ Central Region - Flag Alert Code Value Set",
+  "description": "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/central-region/falg-alert-code",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2"
+      }
+    ]
+  }
+}
