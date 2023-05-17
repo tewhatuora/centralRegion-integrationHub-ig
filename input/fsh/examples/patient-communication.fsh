@@ -12,7 +12,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with a 
 * gender = #male
 
 * maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-code-system)
+* maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-cs)
 * maritalStatus.coding[=].display = "Civil Union"
 
 * telecom[+].system = #phone
@@ -60,7 +60,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with an
 * gender = #male
 
 * maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-code-system)
+* maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-cs)
 * maritalStatus.coding[=].display = "Civil Union"
 
 * telecom[+].system = #phone

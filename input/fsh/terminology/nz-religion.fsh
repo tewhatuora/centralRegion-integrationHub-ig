@@ -1,5 +1,5 @@
 CodeSystem:  NZCentralRegionReligionCodeSystem
-Id: nzcr-religion-code-system
+Id: nzcr-religion-cs
 Title: "NZ Central Region - NZ Religion Code System"
 Description:  "Religion codes ex. WebPAS in NZ Central Region"
 
@@ -49,11 +49,11 @@ Description:  "Religion codes ex. WebPAS in NZ Central Region"
 
 
 ValueSet: NZCentralRegionReligionValueSet
-Id: nzcr-religion-value-set
+Id: nzcr-religion-vs
 Title: "NZ Central Region - NZ Religion Value Set"
 Description:  "NZ Religion Codes ex. WebPAS in NZ Central Region"
 
 * ^url = $NZCentralRegionPatientReligionVS
 * ^experimental = false
 
-* include codes from system nzcr-religion-code-system
+* include codes from system nzcr-religion-cs

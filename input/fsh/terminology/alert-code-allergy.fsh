@@ -1,10 +1,10 @@
 CodeSystem:  NZCentralRegionAllergyAlertCodeH1CodeSystem
-Id: nzcr-allergy-alert-code-h1-code-system
-Title: "NZ Central Region - Allergy Alert Code (H1) Code System"
-Description:  "H2 Allergy alert codes (H1) ex. WebPAS in NZ Central Region."
+Id: nzcr-allergy-alert-code-h1-cs
+Title: "NZ Central Region - Allergy Alert Codes (H1)"
+Description:  "H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyAlertCodeH1CS
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 
 * #1    "Alcuronium"
@@ -158,9 +158,9 @@ Description:  "H2 Allergy alert codes (H1) ex. WebPAS in NZ Central Region."
 
 
 CodeSystem:  NZCentralRegionAllergyAlertCodeH3CodeSystem
-Id: nzcr-allergy-alert-code-h3-code-system
-Title: "NZ Central Region - Allergy Alert Code (H3) Code System"
-Description:  "H2 Allergy alert codes (H3) ex. WebPAS in NZ Central Region."
+Id: nzcr-allergy-alert-code-h3-cs
+Title: "NZ Central Region - Allergy Alert Codes (H3)"
+Description:  "H2 Allergy alert codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyAlertCodeH3CS
 * ^experimental = false
@@ -176,7 +176,7 @@ Description:  "H2 Allergy alert codes (H3) ex. WebPAS in NZ Central Region."
 * #K01  "kiwifruit"
 * #L01  "latex"
 * #M01  "metal skin staples"
-* #M02  " milk"
+* #M02  "milk"
 * #N01  "nickel"
 * #N02  "nuts"
 * #O01  "other allergy"
@@ -192,15 +192,13 @@ Description:  "H2 Allergy alert codes (H3) ex. WebPAS in NZ Central Region."
 * #W01  "wheat/gluten"
 
 
-
-
 ValueSet: NZCentralRegionAllergyAlertCodeValueSet
-Id: nzcr-allergy-alert-code-value-set
+Id: nzcr-allergy-alert-code-vs
 Title: "NZ Central Region - Allergy Alert Code Value Set"
-Description:  "Allergy Alert Codes (H1, H3, A3 & A4) codes ex. WebPAS in NZ Central Region."
+Description:  "Allergy alert codes (H1, H3, A3 & A4) ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyAlertCodeVS
 * ^experimental = false
 
-* include codes from system nzcr-allergy-alert-code-h1-code-system
-* include codes from system nzcr-allergy-alert-code-h3-code-system
+* include codes from system nzcr-allergy-alert-code-h1-cs
+* include codes from system nzcr-allergy-alert-code-h3-cs

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "NZCentralRegionAllergyAlertTypeValueSet",
-  "id": "nzcr-allergy-alert-type-value-set",
+  "id": "nzcr-allergy-alert-type-vs",
   "title": "NZ Central Region - Allergy Alert Type Value Set",
   "description": "Alert Type codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance",
   "version": "0.1.0",

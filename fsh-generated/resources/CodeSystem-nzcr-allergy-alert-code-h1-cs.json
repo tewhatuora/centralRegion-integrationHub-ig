@@ -3,9 +3,9 @@
   "status": "active",
   "content": "complete",
   "name": "NZCentralRegionAllergyAlertCodeH1CodeSystem",
-  "id": "nzcr-allergy-alert-code-h1-code-system",
-  "title": "NZ Central Region - Allergy Alert Code (H1) Code System",
-  "description": "H2 Allergy alert codes (H1) ex. WebPAS in NZ Central Region.",
+  "id": "nzcr-allergy-alert-code-h1-cs",
+  "title": "NZ Central Region - Allergy Alert Codes (H1)",
+  "description": "H1 Allergy alert codes ex. WebPAS in NZ Central Region.",
   "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1",
   "concept": [
@@ -598,7 +598,7 @@
       "display": "Valve Replacemen"
     }
   ],
-  "experimental": false,
+  "experimental": true,
   "caseSensitive": true,
   "count": 147
 }

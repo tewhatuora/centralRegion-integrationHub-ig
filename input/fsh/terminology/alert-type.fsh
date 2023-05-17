@@ -1,5 +1,5 @@
 CodeSystem:  NZCentralRegionAlertTypeCodeSystem
-Id: nzcr-alert-type-code-system
+Id: nzcr-alert-type-cs
 Title: "NZ Central Region - Alert Type Code System"
 Description:  "Alert Type codes ex. WebPAS in NZ Central Region"
 
@@ -29,32 +29,32 @@ Description:  "Alert Type codes ex. WebPAS in NZ Central Region"
 
 
 ValueSet: NZCentralRegionAllergyAlertTypeValueSet
-Id: nzcr-allergy-alert-type-value-set
+Id: nzcr-allergy-alert-type-vs
 Title: "NZ Central Region - Allergy Alert Type Value Set"
 Description:  "Alert Type codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance"
 
 * ^url = $NZCentralRegionAllergyAlertTypeVS
 * ^experimental = false
 
-*  nzcr-alert-type-code-system#A3
-*  nzcr-alert-type-code-system#A4
-*  nzcr-alert-type-code-system#H1
-*  nzcr-alert-type-code-system#H3
-*  nzcr-alert-type-code-system#FA     // Food Allergy --> implies it's an allergy alert type
-*  nzcr-alert-type-code-system#DA     // Drug Allergy --> implies it's an allergy alert type
+*  nzcr-alert-type-cs#A3
+*  nzcr-alert-type-cs#A4
+*  nzcr-alert-type-cs#H1
+*  nzcr-alert-type-cs#H3
+*  nzcr-alert-type-cs#FA     // Food Allergy --> implies it's an allergy alert type
+*  nzcr-alert-type-cs#DA     // Drug Allergy --> implies it's an allergy alert type
 
 
 
 
 
 ValueSet: NZCentralRegionFlagAlertTypeValueSet
-Id: nzcr-flag-alert-type-value-set
+Id: nzcr-flag-alert-type-vs
 Title: "NZ Central Region - Flag Alert Type Value Set"
 Description:  "Alert Type codes ex. WebPAS in NZ Central Region that denote a Flag"
 
 * ^url = $NZCentralRegionFlagAlertTypeVS
 * ^experimental = false
 
-* include codes from system nzcr-alert-type-code-system
-* exclude codes from valueset nzcr-allergy-alert-type-value-set
+* include codes from system nzcr-alert-type-cs
+* exclude codes from valueset nzcr-allergy-alert-type-vs
 

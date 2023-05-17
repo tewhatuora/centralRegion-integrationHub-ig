@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionFlagAlertCodeH8CodeSystem",
+  "id": "nzcr-flag-alert-code-h8-cs",
+  "title": "NZ Central Region - Flag Alert Codes (H8)",
+  "description": "H8 (care plan) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8",
+  "concept": [
+    {
+      "code": "A01",
+      "display": "Advance care plan"
+    },
+    {
+      "code": "E01",
+      "display": "EPOA"
+    },
+    {
+      "code": "F01",
+      "display": "FCT (Cancer)"
+    },
+    {
+      "code": "P01",
+      "display": "PPPR Act"
+    },
+    {
+      "code": "R01",
+      "display": "Renal Dialysis"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 5
+}

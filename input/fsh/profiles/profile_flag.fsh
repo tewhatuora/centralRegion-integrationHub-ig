@@ -10,7 +10,7 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
 * language 0..0
 * contained 0..0
 
-* category from nzcr-flag-alert-type-value-set (required)
+* category from nzcr-flag-alert-type-vs (required)
 * category 1..1 MS
   * coding 1..* MS
   * coding.code 1..1 MS 
@@ -25,7 +25,7 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
   * id 0..0
 
 
-* code from nzcr-flag-alert-code-value-set (required)
+* code from nzcr-flag-alert-code-vs (required)
 * code 1..1 MS
   * coding 1..* MS
   * coding.code 1..1 MS 

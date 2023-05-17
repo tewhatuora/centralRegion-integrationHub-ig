@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "NZCentralRegionFlagAlertTypeValueSet",
-  "id": "nzcr-flag-alert-type-value-set",
+  "id": "nzcr-flag-alert-type-vs",
   "title": "NZ Central Region - Flag Alert Type Value Set",
   "description": "Alert Type codes ex. WebPAS in NZ Central Region that denote a Flag",
   "version": "0.1.0",

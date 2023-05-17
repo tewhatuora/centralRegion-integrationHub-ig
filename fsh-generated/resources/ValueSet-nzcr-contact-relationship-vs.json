@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "NZCentralRegionContactRelationshipValueSet",
-  "id": "nzcr-contact-relationship-value-set",
+  "id": "nzcr-contact-relationship-vs",
   "title": "NZ Central Region - NZ ContactRelationship Value Set",
   "description": "NZ ContactRelationship Codes ex. WebPAS in NZ Central Region\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset http://terminology.hl7.org/CodeSystem/v2-0131",
   "version": "0.1.0",

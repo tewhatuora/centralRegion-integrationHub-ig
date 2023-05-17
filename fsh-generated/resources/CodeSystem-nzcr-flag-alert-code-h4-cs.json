@@ -1,0 +1,76 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionFlagAlertCodeH4CodeSystem",
+  "id": "nzcr-flag-alert-code-h4-cs",
+  "title": "NZ Central Region - Flag Alert Codes (H4)",
+  "description": "H4 (infection prevention) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h4",
+  "concept": [
+    {
+      "code": "C01",
+      "display": "CRE"
+    },
+    {
+      "code": "E01",
+      "display": "ESBL Ecoli"
+    },
+    {
+      "code": "E02",
+      "display": "ESBL Kleb pn"
+    },
+    {
+      "code": "E03",
+      "display": "ESBL Other"
+    },
+    {
+      "code": "M01",
+      "display": "MDRO other"
+    },
+    {
+      "code": "M02",
+      "display": "Multi resist MRSA"
+    },
+    {
+      "code": "M03",
+      "display": "MRSA"
+    },
+    {
+      "code": "N01",
+      "display": "Non multi resist MRSA"
+    },
+    {
+      "code": "O01",
+      "display": "Other"
+    },
+    {
+      "code": "R01",
+      "display": "COVID 19"
+    },
+    {
+      "code": "R02",
+      "display": "Symptom watch"
+    },
+    {
+      "code": "R03",
+      "display": "Suspect watch"
+    },
+    {
+      "code": "R04",
+      "display": "suspect case"
+    },
+    {
+      "code": "R05",
+      "display": "Overseastravel"
+    },
+    {
+      "code": "V01",
+      "display": "VRE"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 15
+}

@@ -1,5 +1,5 @@
 CodeSystem:  NZCentralRegionResidencyCodeSystem
-Id: nzcr-residency-code-system
+Id: nzcr-residency-cs
 Title: "NZ Central Region - NZ Residency Code System"
 Description:  "Residency codes ex. WebPAS in NZ Central Region"
 
@@ -33,11 +33,11 @@ Description:  "Residency codes ex. WebPAS in NZ Central Region"
 
 
 ValueSet: NZCentralRegionResidencyValueSet
-Id: nzcr-residency-value-set
+Id: nzcr-residency-vs
 Title: "NZ Central Region - NZ Residency Value Set"
 Description:  "NZ Residency Codes ex. WebPAS in NZ Central Region"
 
 * ^url = $NZCentralRegionResidencyVS
 * ^experimental = false
 
-* include codes from system nzcr-residency-code-system
+* include codes from system nzcr-residency-cs

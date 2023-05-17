@@ -3,7 +3,7 @@
   "status": "active",
   "content": "complete",
   "name": "NZCentralRegionContactRelationshipCodeSystem",
-  "id": "nzcr-contact-relationship-code-system",
+  "id": "nzcr-contact-relationship-cs",
   "title": "NZ Central Region - NZ ContactRelationship Code System",
   "description": "More granular ContactRelationship codes ex. WebPAS in NZ Central Region.\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset in http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html",
   "version": "0.1.0",

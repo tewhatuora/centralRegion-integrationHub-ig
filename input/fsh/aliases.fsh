@@ -40,6 +40,11 @@ Alias:   $NZCentralRegionAllergyAlertCodeH3CS   = https://standards.digital.heal
 Alias:   $NZCentralRegionAllergyReactionCS      = https://standards.digital.health.nz/ns/central-region/allergy-reaction
 
 Alias:   $NZCentralRegionFlagAlertCodeH2CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2
+Alias:   $NZCentralRegionFlagAlertCodeH4CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h4
+Alias:   $NZCentralRegionFlagAlertCodeH5CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h5
+Alias:   $NZCentralRegionFlagAlertCodeH6CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h6
+Alias:   $NZCentralRegionFlagAlertCodeH7CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h7
+Alias:   $NZCentralRegionFlagAlertCodeH8CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8
 
 // Local URIs for various ValueSets
 Alias:   $NZCentralRegionEthnicityLevel2VS      = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2

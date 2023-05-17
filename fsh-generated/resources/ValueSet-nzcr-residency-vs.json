@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "NZCentralRegionResidencyValueSet",
-  "id": "nzcr-residency-value-set",
+  "id": "nzcr-residency-vs",
   "title": "NZ Central Region - NZ Residency Value Set",
   "description": "NZ Residency Codes ex. WebPAS in NZ Central Region",
   "version": "0.1.0",

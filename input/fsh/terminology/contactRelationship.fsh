@@ -1,5 +1,5 @@
 CodeSystem:  NZCentralRegionContactRelationshipCodeSystem
-Id: nzcr-contact-relationship-code-system
+Id: nzcr-contact-relationship-cs
 Title: "NZ Central Region - NZ ContactRelationship Code System"
 Description:  "More granular ContactRelationship codes ex. WebPAS in NZ Central Region.
 
@@ -45,7 +45,7 @@ This codeset is to be used alongside the HL7 defined general relationship codese
 
 
 ValueSet: NZCentralRegionContactRelationshipValueSet
-Id: nzcr-contact-relationship-value-set
+Id: nzcr-contact-relationship-vs
 Title: "NZ Central Region - NZ ContactRelationship Value Set"
 Description:  "NZ ContactRelationship Codes ex. WebPAS in NZ Central Region
 
@@ -54,4 +54,4 @@ This codeset is to be used alongside the HL7 defined general relationship codese
 * ^url = $NZCentralRegionContactRelationshipVS
 * ^experimental = false
 
-* include codes from system nzcr-contact-relationship-code-system
+* include codes from system nzcr-contact-relationship-cs

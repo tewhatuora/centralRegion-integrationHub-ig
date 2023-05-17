@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "NZCentralRegionMaritalStatusValueSet",
-  "id": "nzcr-marital-status-value-set",
+  "id": "nzcr-marital-status-vs",
   "title": "NZ Central Region - Marital Status Value Set",
   "description": "Combined Marital Status value set with values that are in use in Central Region",
   "version": "0.1.0",

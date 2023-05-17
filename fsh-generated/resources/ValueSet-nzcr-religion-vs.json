@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "NZCentralRegionReligionValueSet",
-  "id": "nzcr-religion-value-set",
+  "id": "nzcr-religion-vs",
   "title": "NZ Central Region - NZ Religion Value Set",
   "description": "NZ Religion Codes ex. WebPAS in NZ Central Region",
   "version": "0.1.0",

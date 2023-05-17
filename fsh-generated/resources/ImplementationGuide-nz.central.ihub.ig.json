@@ -102,15 +102,15 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-allergy-alert-code-value-set"
+          "reference": "ValueSet/nzcr-allergy-alert-code-vs"
         },
         "name": "NZ Central Region - Allergy Alert Code Value Set",
-        "description": "Allergy Alert Codes (H1, H3, A3 & A4) codes ex. WebPAS in NZ Central Region.",
+        "description": "Allergy alert codes (H1, H3, A3 & A4) ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-allergy-alert-type-value-set"
+          "reference": "ValueSet/nzcr-allergy-alert-type-vs"
         },
         "name": "NZ Central Region - Allergy Alert Type Value Set",
         "description": "Alert Type codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance",
@@ -126,7 +126,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-contact-relationship-value-set"
+          "reference": "ValueSet/nzcr-contact-relationship-vs"
         },
         "name": "NZ Central Region - NZ ContactRelationship Value Set",
         "description": "NZ ContactRelationship Codes ex. WebPAS in NZ Central Region\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -142,7 +142,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-flag-alert-code-value-set"
+          "reference": "ValueSet/nzcr-flag-alert-code-vs"
         },
         "name": "NZ Central Region - Flag Alert Code Value Set",
         "description": "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
@@ -150,7 +150,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-flag-alert-type-value-set"
+          "reference": "ValueSet/nzcr-flag-alert-type-vs"
         },
         "name": "NZ Central Region - Flag Alert Type Value Set",
         "description": "Alert Type codes ex. WebPAS in NZ Central Region that denote a Flag",
@@ -158,7 +158,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-marital-status-value-set"
+          "reference": "ValueSet/nzcr-marital-status-vs"
         },
         "name": "NZ Central Region - Marital Status Value Set",
         "description": "Combined Marital Status value set with values that are in use in Central Region",
@@ -166,7 +166,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-religion-value-set"
+          "reference": "ValueSet/nzcr-religion-vs"
         },
         "name": "NZ Central Region - NZ Religion Value Set",
         "description": "NZ Religion Codes ex. WebPAS in NZ Central Region",
@@ -174,7 +174,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-residency-value-set"
+          "reference": "ValueSet/nzcr-residency-vs"
         },
         "name": "NZ Central Region - NZ Residency Value Set",
         "description": "NZ Residency Codes ex. WebPAS in NZ Central Region",
@@ -190,7 +190,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-alert-type-code-system"
+          "reference": "CodeSystem/nzcr-alert-type-cs"
         },
         "name": "NZ Central Region - Alert Type Code System",
         "description": "Alert Type codes ex. WebPAS in NZ Central Region",
@@ -198,18 +198,18 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-allergy-alert-code-h1-code-system"
+          "reference": "CodeSystem/nzcr-allergy-alert-code-h1-cs"
         },
-        "name": "NZ Central Region - Allergy Alert Code (H1) Code System",
-        "description": "H2 Allergy alert codes (H1) ex. WebPAS in NZ Central Region.",
+        "name": "NZ Central Region - Allergy Alert Codes (H1)",
+        "description": "H1 Allergy alert codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-allergy-alert-code-h3-code-system"
+          "reference": "CodeSystem/nzcr-allergy-alert-code-h3-cs"
         },
-        "name": "NZ Central Region - Allergy Alert Code (H3) Code System",
-        "description": "H2 Allergy alert codes (H3) ex. WebPAS in NZ Central Region.",
+        "name": "NZ Central Region - Allergy Alert Codes (H3)",
+        "description": "H2 Allergy alert codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -222,7 +222,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-contact-relationship-code-system"
+          "reference": "CodeSystem/nzcr-contact-relationship-cs"
         },
         "name": "NZ Central Region - NZ ContactRelationship Code System",
         "description": "More granular ContactRelationship codes ex. WebPAS in NZ Central Region.\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset in http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html",
@@ -238,7 +238,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-extra-marital-status-code-system"
+          "reference": "CodeSystem/nzcr-extra-marital-status-cs"
         },
         "name": "NZ Central Region - Marital Status Code System",
         "description": "A few extra Marital Status codes that are in use in Central Region",
@@ -246,15 +246,55 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-flag-alert-code-h2-code-system"
+          "reference": "CodeSystem/nzcr-flag-alert-code-h2-cs"
         },
-        "name": "NZ Central Region - Flag Alert Code (H2) Code System",
-        "description": "H2 alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "name": "NZ Central Region - Flag Alert Codes (H2)",
+        "description": "H2 (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-religion-code-system"
+          "reference": "CodeSystem/nzcr-flag-alert-code-h4-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (H4)",
+        "description": "H4 (infection prevention) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-flag-alert-code-h5-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (H5)",
+        "description": "H5 (situational) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-flag-alert-code-h6-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (H6)",
+        "description": "H6 (transfusion) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-flag-alert-code-h7-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (H7)",
+        "description": "H7 (disability) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-flag-alert-code-h8-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (H8)",
+        "description": "H8 (care plan) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-religion-cs"
         },
         "name": "NZ Central Region - NZ Religion Code System",
         "description": "Religion codes ex. WebPAS in NZ Central Region",
@@ -262,7 +302,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-residency-code-system"
+          "reference": "CodeSystem/nzcr-residency-cs"
         },
         "name": "NZ Central Region - NZ Residency Code System",
         "description": "Residency codes ex. WebPAS in NZ Central Region",

@@ -43,7 +43,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, includi
 * telecom[=].use = #home
 
 * maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-code-system)
+* maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-cs)
 * maritalStatus.coding[=].display = "Civil Union"
 
 * address[+].type = #postal

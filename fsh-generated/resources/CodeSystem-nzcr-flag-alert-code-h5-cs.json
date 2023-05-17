@@ -1,0 +1,76 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionFlagAlertCodeH5CodeSystem",
+  "id": "nzcr-flag-alert-code-h5-cs",
+  "title": "NZ Central Region - Flag Alert Codes (H5)",
+  "description": "H5 (situational) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h5",
+  "concept": [
+    {
+      "code": "C01",
+      "display": "Child abuse"
+    },
+    {
+      "code": "C02",
+      "display": "child at risk"
+    },
+    {
+      "code": "C03",
+      "display": "child protection"
+    },
+    {
+      "code": "D01",
+      "display": "dangerous dogs"
+    },
+    {
+      "code": "D02",
+      "display": "dmestic/IP violence"
+    },
+    {
+      "code": "D03",
+      "display": "don't visit alone"
+    },
+    {
+      "code": "D04",
+      "display": "duplicate NHI"
+    },
+    {
+      "code": "D05",
+      "display": "med run"
+    },
+    {
+      "code": "E01",
+      "display": "elder abuse/neglect"
+    },
+    {
+      "code": "I01",
+      "display": "incorrect NHI"
+    },
+    {
+      "code": "M01",
+      "display": "med run"
+    },
+    {
+      "code": "O01",
+      "display": "other"
+    },
+    {
+      "code": "P01",
+      "display": "protection order"
+    },
+    {
+      "code": "R01",
+      "display": "risk to others/staff"
+    },
+    {
+      "code": "R02",
+      "display": "reserve NHI"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 15
+}
