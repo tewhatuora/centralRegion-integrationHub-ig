@@ -64,6 +64,34 @@
       "text": "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
     }
   ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "system": "https://standards.digital.health.nz/ns/pas-practitioner-id",
+        "use": "usual",
+        "value": "666665"
+      },
+      "type": "Practitioner",
+      "reference": "Practitioner/61cee2d0-7f24-4573-be25-bd6c6d8d5522",
+      "display": "Dr Amber-Lea Aroha"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "https://standards.digital.health.nz/ns/nhi-id",
+      "value": "ZKY0099",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical record number"
+          }
+        ]
+      }
+    }
+  ],
   "name": [
     {
       "use": "official",
@@ -104,18 +132,6 @@
         ]
       },
       "preferred": true
-    }
-  ],
-  "generalPractitioner": [
-    {
-      "type": "Practitioner",
-      "reference": "Practitioner/61cee2d0-7f24-4573-be25-bd6c6d8d5522",
-      "identifier": {
-        "use": "usual",
-        "system": "https://standards.digital.health.nz/ns/pas-practitioner-id",
-        "value": "666665"
-      },
-      "display": "Dr Amber-Lea Aroha"
     }
   ],
   "deceasedBoolean": false

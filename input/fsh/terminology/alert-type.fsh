@@ -20,7 +20,7 @@ Description:  "Alert Type codes ex. WebPAS in NZ Central Region"
 * #H3	"Other allergy alerts"
 * #H4	"Infection prevention alerts"
 * #H5	"Situational alerts"
-* #H6	"Transfusion issue alerts "
+* #H6	"Transfusion issue alerts"
 * #H7	"Disability Alerts"
 * #H8	"Care planning alerts"
 

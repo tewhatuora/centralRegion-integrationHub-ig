@@ -1,3 +1,51 @@
+CodeSystem:  NZCentralRegionFlagAlertCodeNHIMWSCodeSystem
+Id: nzcr-flag-alert-code-nhimws-cs
+Title: "NZ Central Region - Flag Alert Codes (NHIMWS)"
+Description:  "H2 (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
+
+* ^url = $NZCentralRegionFlagAlertCodeNHIMWSCS
+* ^experimental = false
+* ^caseSensitive = true
+
+
+
+
+CodeSystem:  NZCentralRegionFlagAlertCodeMCCodeSystem
+Id: nzcr-flag-alert-code-mc-cs
+Title: "NZ Central Region - Flag Alert Codes (MC)"
+Description:  "MC (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
+
+* ^url = $NZCentralRegionFlagAlertCodeMCCS
+* ^experimental = false
+* ^caseSensitive = true
+
+
+
+
+CodeSystem:  NZCentralRegionFlagAlertCodeMACodeSystem
+Id: nzcr-flag-alert-code-ma-cs
+Title: "NZ Central Region - Flag Alert Codes (MA)"
+Description:  "MA (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
+
+* ^url = $NZCentralRegionFlagAlertCodeMACS
+* ^experimental = false
+* ^caseSensitive = true
+
+
+
+
+CodeSystem:  NZCentralRegionFlagAlertCodeLSCodeSystem
+Id: nzcr-flag-alert-code-ls-cs
+Title: "NZ Central Region - Flag Alert Codes (LS)"
+Description:  "LS (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
+
+* ^url = $NZCentralRegionFlagAlertCodeLSCS
+* ^experimental = false
+* ^caseSensitive = true
+
+
+
+
 CodeSystem:  NZCentralRegionFlagAlertCodeH2CodeSystem
 Id: nzcr-flag-alert-code-h2-cs
 Title: "NZ Central Region - Flag Alert Codes (H2)"
@@ -139,6 +187,10 @@ Description:  "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag 
 * ^url = $NZCentralRegionFlagAlertCodeVS
 * ^experimental = false
 
+* include codes from system nzcr-flag-alert-code-nhimws-cs
+* include codes from system nzcr-flag-alert-code-mc-cs
+* include codes from system nzcr-flag-alert-code-ma-cs
+* include codes from system nzcr-flag-alert-code-ls-cs
 * include codes from system nzcr-flag-alert-code-h2-cs
 * include codes from system nzcr-flag-alert-code-h4-cs
 * include codes from system nzcr-flag-alert-code-h5-cs

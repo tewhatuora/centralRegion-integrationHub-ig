@@ -2,11 +2,21 @@
 Instance: Patient-MaritalStatus-CivilUnion
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes"
+
+* identifier
+  * use = #usual
+  * system = $NZBaseNHI
+  * value = "ZKY0099"
+  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding.code = #MR
+  * type.coding.display = "Medical record number"
+
 * name
   * use = #usual
   * given[0] = "James"
   * family = "Pond"
   * text = "James Pond"
+
 * birthDate = "1966-01-05"
 * gender = #male
 
@@ -46,6 +56,15 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 Instance: Patient-MaritalStatus-Single
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes"
+
+* identifier
+  * use = #usual
+  * system = $NZBaseNHI
+  * value = "ZKY0099"
+  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding.code = #MR
+  * type.coding.display = "Medical record number"
+
 * name
   * use = #usual
   * name

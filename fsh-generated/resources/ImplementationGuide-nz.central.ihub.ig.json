@@ -78,10 +78,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nzcr-allergy-alert"
+          "reference": "StructureDefinition/nzcr-alert"
         },
-        "name": "NZ Central Region Allergy/Alert",
-        "description": "NZ Residency status",
+        "name": "NZ Central Region Alert",
+        "description": "Complex extension recording meta data about all alerts, on who recorded the\n[Flag](./StructureDefinition-NZCentralRegionFlag.html) \nand [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html) flavours of Alert and when.",
         "exampleBoolean": false
       },
       {
@@ -118,10 +118,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-allergy-reaction-value-set"
+          "reference": "ValueSet/nzcr-allergy-reaction-vs"
         },
-        "name": "NZ Central Region - Allergy Severity Level Value Set",
-        "description": "Allergy Severity codes ex. WebPAS in NZ Central Region.",
+        "name": "NZ Central Region - Allergy Reaction Value Set",
+        "description": "Allergy Reaction codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -154,6 +154,14 @@
         },
         "name": "NZ Central Region - Flag Alert Type Value Set",
         "description": "Alert Type codes ex. WebPAS in NZ Central Region that denote a Flag",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-hospital-code-vs"
+        },
+        "name": "NZ Central Region - Hospital Value Set",
+        "description": "Hospital identification codes ex. WebPAS in NZ Central Region",
         "exampleBoolean": false
       },
       {
@@ -214,10 +222,10 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-allergy-reaction-code-system"
+          "reference": "CodeSystem/nzcr-allergy-reaction-cs"
         },
-        "name": "NZ Central Region - Allergy Severity Level Code System",
-        "description": "Allergy Severity codes ex. WebPAS in NZ Central Region.",
+        "name": "NZ Central Region - Allergy Reaction Code System",
+        "description": "Allergy Reaction codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -290,6 +298,46 @@
         },
         "name": "NZ Central Region - Flag Alert Codes (H8)",
         "description": "H8 (care plan) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-flag-alert-code-ls-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (LS)",
+        "description": "LS (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-flag-alert-code-ma-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (MA)",
+        "description": "MA (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-flag-alert-code-mc-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (MC)",
+        "description": "MC (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-flag-alert-code-nhimws-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (NHIMWS)",
+        "description": "H2 (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-hospital-code-cs"
+        },
+        "name": "NZ Central Region - Hospital Code System",
+        "description": "Hospital identification codes ex. WebPAS in NZ Central Region",
         "exampleBoolean": false
       },
       {

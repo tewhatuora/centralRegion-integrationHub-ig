@@ -7,6 +7,20 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * ^derivation = #constraint
 
+* identifier 1..* MS  // We must have at least local ID
+  * use 1..1 MS
+  * system 1..1 MS
+  * value 1..1 MS
+  * type 1..1 MS
+  * type.coding MS
+    * code 1..1 MS
+    * system 1..1 MS
+    * display 1..1 MS
+  * period 0..0     // Data not available
+  * assigner 0..0   // Data not availale
+  * extension 0..0
+  * id 0..0
+
 * active 0..0
 * implicitRules 0..0
 * language 0..0
@@ -201,7 +215,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
 
-* extension contains $HL7InterpreterRequiredCS named interpreterRequired 0..1 MS
+* extension contains $HL7InterpreterRequired named interpreterRequired 0..1 MS
 
 * communication 0..* MS
   * language 1..1 MS
@@ -226,6 +240,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * identifier 1..1 MS  // We must have at least local ID
     * use 1..1 MS
     * system 1..1 MS
+    * system = $NZCentralRegionPASPractitioner
     * value 1..1 MS
     * type 0..0 MS    // Data irrelevant
     * period 0..0     // Data not available

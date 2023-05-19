@@ -3,9 +3,9 @@
   "status": "active",
   "content": "complete",
   "name": "NZCentralRegionAllergyReactionCodeSystem",
-  "id": "nzcr-allergy-reaction-code-system",
-  "title": "NZ Central Region - Allergy Severity Level Code System",
-  "description": "Allergy Severity codes ex. WebPAS in NZ Central Region.",
+  "id": "nzcr-allergy-reaction-cs",
+  "title": "NZ Central Region - Allergy Reaction Code System",
+  "description": "Allergy Reaction codes ex. WebPAS in NZ Central Region.",
   "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/allergy-reaction",
   "concept": [

@@ -707,11 +707,25 @@
       },
       {
         "id": "Patient.identifier",
-        "path": "Patient.identifier"
+        "path": "Patient.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.id",
+        "path": "Patient.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier.extension",
+        "path": "Patient.identifier.extension",
+        "max": "0"
       },
       {
         "id": "Patient.identifier.use",
         "path": "Patient.identifier.use",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -721,12 +735,25 @@
         ]
       },
       {
+        "id": "Patient.identifier.type",
+        "path": "Patient.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.type.coding",
+        "path": "Patient.identifier.type.coding",
+        "mustSupport": true
+      },
+      {
         "id": "Patient.identifier.type.coding.system",
         "path": "Patient.identifier.type.coding.system",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "'https://www.hl7.org/fhir/v2/0203'",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'",
             "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
           }
         ]
@@ -734,6 +761,8 @@
       {
         "id": "Patient.identifier.type.coding.code",
         "path": "Patient.identifier.type.coding.code",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -745,10 +774,12 @@
       {
         "id": "Patient.identifier.type.coding.display",
         "path": "Patient.identifier.type.coding.display",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "'Medical Record Number'",
+            "map": "'Medical record number'",
             "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
           }
         ]
@@ -756,6 +787,8 @@
       {
         "id": "Patient.identifier.system",
         "path": "Patient.identifier.system",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -767,12 +800,72 @@
       {
         "id": "Patient.identifier.value",
         "path": "Patient.identifier.value",
+        "min": 1,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
             "map": "PID-3.1"
           }
         ]
+      },
+      {
+        "id": "Patient.identifier.period",
+        "path": "Patient.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier.assigner",
+        "path": "Patient.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:NHI",
+        "path": "Patient.identifier",
+        "sliceName": "NHI"
+      },
+      {
+        "id": "Patient.identifier:NHI.id",
+        "path": "Patient.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:NHI.extension",
+        "path": "Patient.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:NHI.use",
+        "path": "Patient.identifier.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NHI.type",
+        "path": "Patient.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NHI.system",
+        "path": "Patient.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NHI.value",
+        "path": "Patient.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:NHI.period",
+        "path": "Patient.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:NHI.assigner",
+        "path": "Patient.identifier.assigner",
+        "max": "0"
       },
       {
         "id": "Patient.active",
@@ -1740,6 +1833,7 @@
         "id": "Patient.generalPractitioner.identifier.system",
         "path": "Patient.generalPractitioner.identifier.system",
         "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/pas-practitioner-id",
         "mustSupport": true,
         "mapping": [
           {

@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nzcr-allergy-alert",
-  "url": "https://standards.digital.health.nz/ns/central-region/allergy-alert",
+  "id": "nzcr-alert",
+  "url": "https://standards.digital.health.nz/ns/central-region/alert",
   "version": "0.1.0",
-  "name": "NZCentralRegionAllergyAlert",
-  "title": "NZ Central Region Allergy/Alert",
+  "name": "NZCentralRegionAlert",
+  "title": "NZ Central Region Alert",
   "status": "active",
-  "description": "NZ Residency status",
+  "description": "Complex extension recording meta data about all alerts, on who recorded the\n[Flag](./StructureDefinition-NZCentralRegionFlag.html) \nand [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html) flavours of Alert and when.",
   "jurisdiction": [
     {
       "coding": [
@@ -45,16 +45,18 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "NZ Central Region Allergy/Alert",
-        "definition": "NZ Residency status"
+        "short": "NZ Central Region Alert",
+        "definition": "Complex extension recording meta data about all alerts, on who recorded the\n[Flag](./StructureDefinition-NZCentralRegionFlag.html) \nand [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html) flavours of Alert and when."
       },
       {
         "id": "Extension.extension:severityLevel",
         "path": "Extension.extension",
         "sliceName": "severityLevel",
+        "short": "Severity Level in range 0-9",
         "definition": "Severity Level in range 0-9",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:severityLevel.extension",
@@ -69,27 +71,12 @@
       {
         "id": "Extension.extension:severityLevel.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
+        "min": 1,
         "type": [
           {
             "code": "integer"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:severityLevel.valueInteger",
-        "path": "Extension.extension.valueInteger",
-        "min": 0,
-        "max": "1",
+        ],
         "minValueInteger": 0,
         "maxValueInteger": 9
       },
@@ -97,9 +84,11 @@
         "id": "Extension.extension:allergyReaction",
         "path": "Extension.extension",
         "sliceName": "allergyReaction",
+        "short": "Allergy Reaction",
         "definition": "Allergy Reaction",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:allergyReaction.extension",
@@ -114,66 +103,26 @@
       {
         "id": "Extension.extension:allergyReaction.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
+        "min": 1,
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:allergyReaction.valueCodeableConcept",
-        "path": "Extension.extension.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://standards.digital.health.nz/fhir/central-region/allergy-reaction"
         }
       },
       {
-        "id": "Extension.extension:reviewDate",
-        "path": "Extension.extension",
-        "sliceName": "reviewDate",
-        "definition": "Review Date",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:reviewDate.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:reviewDate.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "reviewDate"
-      },
-      {
-        "id": "Extension.extension:reviewDate.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "date"
-          }
-        ]
-      },
-      {
         "id": "Extension.extension:inactiveDate",
         "path": "Extension.extension",
         "sliceName": "inactiveDate",
-        "definition": "Inactive Date",
+        "short": "When will this alert be next reviewed?",
+        "definition": "When will this alert be made inactive",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:inactiveDate.extension",
@@ -188,6 +137,37 @@
       {
         "id": "Extension.extension:inactiveDate.value[x]",
         "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reviewDate",
+        "path": "Extension.extension",
+        "sliceName": "reviewDate",
+        "short": "When is this alert to be next reviewed?",
+        "definition": "When is this alert to be next reviewed?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:reviewDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reviewDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reviewDate"
+      },
+      {
+        "id": "Extension.extension:reviewDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "date"
@@ -198,8 +178,16 @@
         "id": "Extension.extension:lastUpdatedBy",
         "path": "Extension.extension",
         "sliceName": "lastUpdatedBy",
+        "short": "Who has updated the alert",
+        "definition": "Who has updated the alert",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:lastUpdatedBy.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
         "id": "Extension.extension:lastUpdatedBy.url",
@@ -207,11 +195,29 @@
         "fixedUri": "lastUpdatedBy"
       },
       {
+        "id": "Extension.extension:lastUpdatedBy.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
         "id": "Extension.extension:lastUpdatedDateTime",
         "path": "Extension.extension",
         "sliceName": "lastUpdatedDateTime",
+        "short": "When was the alert last updated",
+        "definition": "When was the alert last updated",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:lastUpdatedDateTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
         "id": "Extension.extension:lastUpdatedDateTime.url",
@@ -219,11 +225,29 @@
         "fixedUri": "lastUpdatedDateTime"
       },
       {
+        "id": "Extension.extension:lastUpdatedDateTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
         "id": "Extension.extension:recordingHospital",
         "path": "Extension.extension",
         "sliceName": "recordingHospital",
+        "short": "Where was the alert recorded?",
+        "definition": "Where was the alert recorded?",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:recordingHospital.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
         "id": "Extension.extension:recordingHospital.url",
@@ -231,11 +255,33 @@
         "fixedUri": "recordingHospital"
       },
       {
+        "id": "Extension.extension:recordingHospital.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/hospital-code"
+        }
+      },
+      {
         "id": "Extension.extension:comments",
         "path": "Extension.extension",
         "sliceName": "comments",
+        "short": "Free text comments",
+        "definition": "Free text comments",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:comments.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
         "id": "Extension.extension:comments.url",
@@ -243,9 +289,19 @@
         "fixedUri": "comments"
       },
       {
+        "id": "Extension.extension:comments.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://standards.digital.health.nz/ns/central-region/allergy-alert"
+        "fixedUri": "https://standards.digital.health.nz/ns/central-region/alert"
       },
       {
         "id": "Extension.value[x]",

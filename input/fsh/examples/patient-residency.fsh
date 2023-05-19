@@ -3,11 +3,20 @@ Instance: Patient-Residency
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings"
 
+* identifier
+  * use = #usual
+  * system = $NZBaseNHI
+  * value = "ZKY0099"
+  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding.code = #MR
+  * type.coding.display = "Medical record number"
+
 * name
   * use = #official
   * given[0] = "James"
   * family = "Pond"
   * text = "James Pond" 
+
 * birthDate = "1966-01-05"
 * gender = #male
 

@@ -4,6 +4,14 @@ InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field,
   and mappings to Domicile and DHB codes."
 
+* identifier
+  * use = #usual
+  * system = $NZBaseNHI
+  * value = "ZKY0099"
+  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding.code = #MR
+  * type.coding.display = "Medical record number"
+
 * name
   * use = #official
   * given[0] = "James"

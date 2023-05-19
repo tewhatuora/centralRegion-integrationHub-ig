@@ -3,11 +3,20 @@ Instance: Patient-Practitioner
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with General Practitioner element"
 
+* identifier
+  * use = #usual
+  * system = $NZBaseNHI
+  * value = "ZKY0099"
+  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding.code = #MR
+  * type.coding.display = "Medical record number"
+
 * name
   * use = #official
   * given[0] = "James"
   * family = "Pond"
   * text = "James Pond" 
+
 * birthDate = "1966-01-05"
 * gender = #male
 
@@ -44,7 +53,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with Ge
 * generalPractitioner.type = #Practitioner
 * generalPractitioner.reference = "Practitioner/61cee2d0-7f24-4573-be25-bd6c6d8d5522"
 * generalPractitioner.identifier.use = #usual
-* generalPractitioner.identifier.system = "https://standards.digital.health.nz/ns/pas-practitioner-id"
+* generalPractitioner.identifier.system = $NZCentralRegionPASPractitioner
 * generalPractitioner.identifier.value = "666665"
 * generalPractitioner.display = "Dr Amber-Lea Aroha"
 

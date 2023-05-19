@@ -1,7 +1,7 @@
 CodeSystem:  NZCentralRegionAllergyReactionCodeSystem
-Id: nzcr-allergy-reaction-code-system
-Title: "NZ Central Region - Allergy Severity Level Code System"
-Description:  "Allergy Severity codes ex. WebPAS in NZ Central Region."
+Id: nzcr-allergy-reaction-cs
+Title: "NZ Central Region - Allergy Reaction Code System"
+Description:  "Allergy Reaction codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyReactionCS
 * ^experimental = false
@@ -10,11 +10,11 @@ Description:  "Allergy Severity codes ex. WebPAS in NZ Central Region."
 * #01 "Swelling and Rash"
 
 ValueSet: NZCentralRegionAllergyReactionValueSet
-Id: nzcr-allergy-reaction-value-set
-Title: "NZ Central Region - Allergy Severity Level Value Set"
-Description:  "Allergy Severity codes ex. WebPAS in NZ Central Region."
+Id: nzcr-allergy-reaction-vs
+Title: "NZ Central Region - Allergy Reaction Value Set"
+Description:  "Allergy Reaction codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyReactionVS
 * ^experimental = false
 
-* include codes from system nzcr-allergy-reaction-code-system
+* include codes from system nzcr-allergy-reaction-cs
