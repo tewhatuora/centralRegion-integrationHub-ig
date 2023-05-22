@@ -49,14 +49,30 @@
         "definition": "Complex extension recording meta data about all alerts, on who recorded the\n[Flag](./StructureDefinition-NZCentralRegionFlag.html) \nand [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html) flavours of Alert and when."
       },
       {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "short": "Container holding the individual elements of the Alert extension.",
+        "definition": "Container holding the individual elements of the Alert extension."
+      },
+      {
         "id": "Extension.extension:severityLevel",
         "path": "Extension.extension",
         "sliceName": "severityLevel",
         "short": "Severity Level in range 0-9",
-        "definition": "Severity Level in range 0-9",
+        "definition": "Security Level in range 0-9",
         "min": 0,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:severityLevel.id",
+        "path": "Extension.extension.id",
+        "max": "0"
       },
       {
         "id": "Extension.extension:severityLevel.extension",
@@ -91,6 +107,11 @@
         "mustSupport": true
       },
       {
+        "id": "Extension.extension:allergyReaction.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
         "id": "Extension.extension:allergyReaction.extension",
         "path": "Extension.extension.extension",
         "max": "0"
@@ -118,11 +139,16 @@
         "id": "Extension.extension:inactiveDate",
         "path": "Extension.extension",
         "sliceName": "inactiveDate",
-        "short": "When will this alert be next reviewed?",
-        "definition": "When will this alert be made inactive",
+        "short": "When will/did this alert stop being active?",
+        "definition": "When will/did this alert stop being active?",
         "min": 0,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:inactiveDate.id",
+        "path": "Extension.extension.id",
+        "max": "0"
       },
       {
         "id": "Extension.extension:inactiveDate.extension",
@@ -155,6 +181,11 @@
         "mustSupport": true
       },
       {
+        "id": "Extension.extension:reviewDate.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
         "id": "Extension.extension:reviewDate.extension",
         "path": "Extension.extension.extension",
         "max": "0"
@@ -178,11 +209,16 @@
         "id": "Extension.extension:lastUpdatedBy",
         "path": "Extension.extension",
         "sliceName": "lastUpdatedBy",
-        "short": "Who has updated the alert",
-        "definition": "Who has updated the alert",
+        "short": "Who has updated the alert? (Not usually the authorising clinician)",
+        "definition": "Who has updated the alert, not usually the authorising clinician",
         "min": 0,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:lastUpdatedBy.id",
+        "path": "Extension.extension.id",
+        "max": "0"
       },
       {
         "id": "Extension.extension:lastUpdatedBy.extension",
@@ -215,6 +251,11 @@
         "mustSupport": true
       },
       {
+        "id": "Extension.extension:lastUpdatedDateTime.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
         "id": "Extension.extension:lastUpdatedDateTime.extension",
         "path": "Extension.extension.extension",
         "max": "0"
@@ -238,11 +279,16 @@
         "id": "Extension.extension:recordingHospital",
         "path": "Extension.extension",
         "sliceName": "recordingHospital",
-        "short": "Where was the alert recorded?",
-        "definition": "Where was the alert recorded?",
+        "short": "Which hospital recorded the allergy?",
+        "definition": "Which hospital recorded the allergy?",
         "min": 0,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:recordingHospital.id",
+        "path": "Extension.extension.id",
+        "max": "0"
       },
       {
         "id": "Extension.extension:recordingHospital.extension",
@@ -269,6 +315,26 @@
         }
       },
       {
+        "id": "Extension.extension:recordingHospital.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
         "id": "Extension.extension:comments",
         "path": "Extension.extension",
         "sliceName": "comments",
@@ -277,6 +343,11 @@
         "min": 0,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:comments.id",
+        "path": "Extension.extension.id",
+        "max": "0"
       },
       {
         "id": "Extension.extension:comments.extension",

@@ -78,6 +78,7 @@ menu:
      Update Patient: useCaseUpdatePatient.html
   Artifacts: artifacts.html
   Support:
+     IG Package: package.tgz
      IG Q&A: qa.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

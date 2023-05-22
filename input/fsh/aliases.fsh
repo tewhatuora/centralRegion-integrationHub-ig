@@ -18,7 +18,9 @@ Alias:   $NZBaseNZCitizenship   = http://hl7.org.nz/fhir/StructureDefinition/nz-
 Alias:   $NZBaseNZResidency     = http://hl7.org.nz/fhir/StructureDefinition/nz-residency
 Alias:   $NZBaseEthnicity       = http://hl7.org.nz/fhir.StructureDefinition/nz-ethnicity
 
+// Patient Identifier System URLs
 Alias:   $NZBaseNHI                = https://standards.digital.health.nz/ns/nhi-id
+Alias:   $NZCentralRegionLocalID   = https://standards.digital.health.nz/ns/central_region/pas-patient-id
 
 // Code System URLs from NZ Base
 Alias:   $NZBaseNZCitizenshipCS    = https://standards.digital.health.nz/ns/nz-citizenship-status-code

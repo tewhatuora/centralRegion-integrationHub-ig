@@ -99,11 +99,6 @@
         "mustSupport": true
       },
       {
-        "id": "Flag.extension:flag-alert.id",
-        "path": "Flag.extension.id",
-        "max": "0"
-      },
-      {
         "id": "Flag.extension:flag-alert.extension:severityLevel",
         "path": "Flag.extension.extension",
         "sliceName": "severityLevel",
@@ -127,11 +122,6 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:inactiveDate.id",
-        "path": "Flag.extension.extension.id",
-        "max": "0"
-      },
-      {
         "id": "Flag.extension:flag-alert.extension:reviewDate",
         "path": "Flag.extension.extension",
         "sliceName": "reviewDate",
@@ -141,11 +131,6 @@
             "map": "ZAL-7"
           }
         ]
-      },
-      {
-        "id": "Flag.extension:flag-alert.extension:reviewDate.id",
-        "path": "Flag.extension.extension.id",
-        "max": "0"
       },
       {
         "id": "Flag.extension:flag-alert.extension:lastUpdatedBy",
@@ -160,11 +145,6 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:lastUpdatedBy.id",
-        "path": "Flag.extension.extension.id",
-        "max": "0"
-      },
-      {
         "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime",
         "path": "Flag.extension.extension",
         "sliceName": "lastUpdatedDateTime",
@@ -176,29 +156,9 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime.id",
-        "path": "Flag.extension.extension.id",
-        "max": "0"
-      },
-      {
         "id": "Flag.extension:flag-alert.extension:recordingHospital",
         "path": "Flag.extension.extension",
         "sliceName": "recordingHospital"
-      },
-      {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.id",
-        "path": "Flag.extension.extension.id",
-        "max": "0"
-      },
-      {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].id",
-        "path": "Flag.extension.extension.value[x].id",
-        "max": "0"
-      },
-      {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].extension",
-        "path": "Flag.extension.extension.value[x].extension",
-        "max": "0"
       },
       {
         "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].system",
@@ -209,11 +169,6 @@
             "map": "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
           }
         ]
-      },
-      {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].version",
-        "path": "Flag.extension.extension.value[x].version",
-        "max": "0"
       },
       {
         "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].code",
@@ -236,11 +191,6 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].userSelected",
-        "path": "Flag.extension.extension.value[x].userSelected",
-        "max": "0"
-      },
-      {
         "id": "Flag.extension:flag-alert.extension:comments",
         "path": "Flag.extension.extension",
         "sliceName": "comments",
@@ -250,11 +200,6 @@
             "map": "ZAL-14"
           }
         ]
-      },
-      {
-        "id": "Flag.extension:flag-alert.extension:comments.id",
-        "path": "Flag.extension.extension.id",
-        "max": "0"
       },
       {
         "id": "Flag.category",
@@ -636,10 +581,6 @@
           {
             "identity": "nzcr-flag-from-hl7v2",
             "map": "ZAL-5"
-          },
-          {
-            "identity": "nzcr-flag-from-hl7v2",
-            "map": "ZAL-5"
           }
         ]
       },
@@ -651,10 +592,6 @@
           {
             "identity": "nzcr-flag-from-hl7v2",
             "map": "ZAL-9"
-          },
-          {
-            "identity": "nzcr-flag-from-hl7v2",
-            "map": "ZAL-8"
           }
         ]
       },

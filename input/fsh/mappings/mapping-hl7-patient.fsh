@@ -5,12 +5,20 @@ Id:       nzcr-patient-from-hl7v2
 Title:    "Central Region Message Specification (1.14)"
 
 * -> "Patient"
+* identifier[NHI] -> "" "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+* identifier[NHI].system -> "'https://standards.digital.health.nz/ns/nhi-id'" "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+* identifier[NHI].use -> "'usual'" "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+* identifier[NHI].type -> "" "**as above**"
+* identifier[NHI].value -> "PID-3.1"
+
+* identifier -> "" "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
+* identifier.system -> "'https://standards.digital.health.nz/ns/central_region/pas-patient-id'" "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
+* identifier.use -> "'temp'" "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
+
 * identifier.value -> "PID-3.1"
-* identifier.system -> "'https://standards.digital.health.nz/ns/nhi-id'" "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
-* identifier.use -> "'usual'" "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
-* identifier.type.coding.code -> "'MR'" "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
-* identifier.type.coding.system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'" "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
-* identifier.type.coding.display -> "'Medical record number'" "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+* identifier.type.coding.code -> "'MR'"
+* identifier.type.coding.system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+* identifier.type.coding.display -> "'Medical record number'"
 // * identifier.period.start -> "PID-3.7"
 // * identifier.period.end -> "PID-3.8"
 
@@ -42,6 +50,7 @@ elif PIF-8 == '**U**' then '**unknown**'"
 * birthDate -> "PID-7"
 
 * extension[ethnicity] -> "PID-22, PID-10" "Repeat for each entry in PID-22.\r\nTwo coding entries, one each for\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-4-code and\r\n * https://standards.digital.health.nz/ns/ethnic-group-level-2-code\r\nNote: May have to check *primary* ethnicity in PID-10 as well"
+* extension[ethnicity].url -> "'http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity'"
 * extension[ethnicity].valueCodeableConcept.coding.code -> "PID-22.1" "Which is group-level-2; lookup required for group-level-4.  ConceptMap ?"
 * extension[ethnicity].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/ethnic-group-level-4-code and https://standards.digital.health.nz/ns/ethnic-group-level-2-code"
 * extension[ethnicity].valueCodeableConcept.coding.display -> "PID-22.2" "Check for macrons in Māori and Cook Island Māori"
@@ -57,9 +66,11 @@ elif PID 11.7 == 'B' then 'work'"
 * address.country -> "PID-11.6" "if present"
 * address.extension[suburb].valueString -> "PID-11.8" "if present"
 
+* extension[domicile-code].url -> "'http://hl7.org.nz/fhir/StructureDefinition/domicile-code'"
 * extension[domicile-code].valueCodeableConcept.coding.code -> "PID-12"
 * extension[domicile-code].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/domicile-code"
 
+* extension[dhb].url -> "'http://hl7.org.nz/fhir/StructureDefinition/dhb'"
 * extension[dhb].valueCodeableConcept.coding.code -> "PID-12" "one-to-many mapping from PID-12. Perhaps with ConceptMap ??"
 * extension[dhb].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/dhb-code"
 
@@ -82,6 +93,8 @@ elif PID 11.7 == 'B' then 'work'"
 * generalPractitioner.display -> "PD1-4.2 + ', ' + PD1-4.3 + ' ' + PD1-4.4 + '  + PD1=4.6"
 
 * extension[nzCitizen] -> "PID-26" "Only using status, source not availabnle"
+* extension[nzCitizen].url -> "'http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship'"
+* extension[nzCitizen].extension[status].url -> "'status'"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code -> "PID-26.1" "if PID-26.1 = 'Y' then 'yes'
 elif PID-26.1='N' then 'no'
 else 'unknown'"
@@ -90,13 +103,16 @@ elif PID-26.1='N' then 'No'
 else 'Unknown'"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/nz-citizenship-status-code"
 
+* extension[nzResidency].url -> "'http://hl7.org.nz/fhir/StructureDefinition/nz-residency'"
 * extension[nzResidency] -> "PID-28" "Only using status, source not availabnle"
+* extension[nzResidency].extension[status].url -> "'status'"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding -> "Repeat for each coding"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.code -> "PID-28.1" "Raw value and mapped from webPAS residency status.  ConceptMap ?'"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.display -> "PID-28.2" "Raw value and mapped from webPAS residency status."
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/central-region/nz-residency-code AND\r\n
 https://standards.digital.health.nz/ns/nz-residency-code"
 
+* extension[patient-religion].url -> "'http://hl7.org/fhir/StructureDefinition/patient-religion'"
 * extension[patient-religion].valueCodeableConcept.coding.code -> "PID-17.1"
 * extension[patient-religion].valueCodeableConcept.coding.display -> "PID-17.2"
 * extension[patient-religion].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/central-region/patient-religion"

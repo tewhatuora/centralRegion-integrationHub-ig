@@ -38,6 +38,9 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="package.tgz">IG Package</a>
+      </li>
+      <li>
         <a href="qa.html">IG Q&amp;A</a>
       </li>
     </ul>

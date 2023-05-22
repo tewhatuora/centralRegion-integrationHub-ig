@@ -97,6 +97,16 @@
         "max": "0"
       },
       {
+        "id": "Patient.extension:ethnicity.url",
+        "path": "Patient.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity'"
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:ethnicity.valueCodeableConcept",
         "path": "Patient.extension.valueCodeableConcept"
       },
@@ -202,6 +212,16 @@
         "max": "0"
       },
       {
+        "id": "Patient.extension:nzCitizen.extension:status.url",
+        "path": "Patient.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'status'"
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept",
         "path": "Patient.extension.extension.valueCodeableConcept"
       },
@@ -282,6 +302,16 @@
         "max": "0"
       },
       {
+        "id": "Patient.extension:nzCitizen.url",
+        "path": "Patient.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship'"
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:dhb",
         "path": "Patient.extension",
         "sliceName": "dhb",
@@ -291,6 +321,16 @@
         "id": "Patient.extension:dhb.id",
         "path": "Patient.extension.id",
         "max": "0"
+      },
+      {
+        "id": "Patient.extension:dhb.url",
+        "path": "Patient.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'http://hl7.org.nz/fhir/StructureDefinition/dhb'"
+          }
+        ]
       },
       {
         "id": "Patient.extension:dhb.valueCodeableConcept",
@@ -366,6 +406,16 @@
         "id": "Patient.extension:domicile-code.id",
         "path": "Patient.extension.id",
         "max": "0"
+      },
+      {
+        "id": "Patient.extension:domicile-code.url",
+        "path": "Patient.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'http://hl7.org.nz/fhir/StructureDefinition/domicile-code'"
+          }
+        ]
       },
       {
         "id": "Patient.extension:domicile-code.valueCodeableConcept",
@@ -486,6 +536,16 @@
         "max": "0"
       },
       {
+        "id": "Patient.extension:nzResidency.extension:status.url",
+        "path": "Patient.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'status'"
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept",
         "path": "Patient.extension.extension.valueCodeableConcept"
       },
@@ -572,6 +632,16 @@
         "max": "0"
       },
       {
+        "id": "Patient.extension:nzResidency.url",
+        "path": "Patient.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'http://hl7.org.nz/fhir/StructureDefinition/nz-residency'"
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:patient-religion",
         "path": "Patient.extension",
         "sliceName": "patient-religion",
@@ -591,6 +661,16 @@
         "id": "Patient.extension:patient-religion.id",
         "path": "Patient.extension.id",
         "max": "0"
+      },
+      {
+        "id": "Patient.extension:patient-religion.url",
+        "path": "Patient.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'http://hl7.org/fhir/StructureDefinition/patient-religion'"
+          }
+        ]
       },
       {
         "id": "Patient.extension:patient-religion.valueCodeableConcept",
@@ -709,7 +789,14 @@
         "id": "Patient.identifier",
         "path": "Patient.identifier",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "",
+            "comment": "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
+          }
+        ]
       },
       {
         "id": "Patient.identifier.id",
@@ -729,8 +816,8 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "'usual'",
-            "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+            "map": "'temp'",
+            "comment": "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
           }
         ]
       },
@@ -753,8 +840,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'",
-            "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
           }
         ]
       },
@@ -766,8 +852,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "'MR'",
-            "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+            "map": "'MR'"
           }
         ]
       },
@@ -779,8 +864,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "'Medical record number'",
-            "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+            "map": "'Medical record number'"
           }
         ]
       },
@@ -792,8 +876,8 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/nhi-id'",
-            "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+            "map": "'https://standards.digital.health.nz/ns/central_region/pas-patient-id'",
+            "comment": "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
           }
         ]
       },
@@ -822,7 +906,14 @@
       {
         "id": "Patient.identifier:NHI",
         "path": "Patient.identifier",
-        "sliceName": "NHI"
+        "sliceName": "NHI",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "",
+            "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+          }
+        ]
       },
       {
         "id": "Patient.identifier:NHI.id",
@@ -838,24 +929,51 @@
         "id": "Patient.identifier:NHI.use",
         "path": "Patient.identifier.use",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'usual'",
+            "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+          }
+        ]
       },
       {
         "id": "Patient.identifier:NHI.type",
         "path": "Patient.identifier.type",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "",
+            "comment": "**as above**"
+          }
+        ]
       },
       {
         "id": "Patient.identifier:NHI.system",
         "path": "Patient.identifier.system",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/nhi-id'",
+            "comment": "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"
+          }
+        ]
       },
       {
         "id": "Patient.identifier:NHI.value",
         "path": "Patient.identifier.value",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-3.1"
+          }
+        ]
       },
       {
         "id": "Patient.identifier:NHI.period",

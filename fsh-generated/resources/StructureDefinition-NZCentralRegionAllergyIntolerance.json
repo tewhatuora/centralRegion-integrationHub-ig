@@ -84,79 +84,25 @@
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.id",
-        "path": "AllergyIntolerance.extension.id",
-        "max": "0"
+        "id": "AllergyIntolerance.extension:allergy-alert.extension",
+        "path": "AllergyIntolerance.extension.extension",
+        "min": 2
       },
       {
         "id": "AllergyIntolerance.extension:allergy-alert.extension:severityLevel",
         "path": "AllergyIntolerance.extension.extension",
-        "sliceName": "severityLevel"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:severityLevel.id",
-        "path": "AllergyIntolerance.extension.extension.id",
-        "max": "0"
+        "sliceName": "severityLevel",
+        "short": "Severity level in range 0..9",
+        "definition": "Severity level in range 0..9",
+        "min": 1
       },
       {
         "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction",
         "path": "AllergyIntolerance.extension.extension",
-        "sliceName": "allergyReaction"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.id",
-        "path": "AllergyIntolerance.extension.extension.id",
-        "max": "0"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:reviewDate",
-        "path": "AllergyIntolerance.extension.extension",
-        "sliceName": "reviewDate"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:reviewDate.id",
-        "path": "AllergyIntolerance.extension.extension.id",
-        "max": "0"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedBy",
-        "path": "AllergyIntolerance.extension.extension",
-        "sliceName": "lastUpdatedBy"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedBy.id",
-        "path": "AllergyIntolerance.extension.extension.id",
-        "max": "0"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedDateTime",
-        "path": "AllergyIntolerance.extension.extension",
-        "sliceName": "lastUpdatedDateTime"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedDateTime.id",
-        "path": "AllergyIntolerance.extension.extension.id",
-        "max": "0"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital",
-        "path": "AllergyIntolerance.extension.extension",
-        "sliceName": "recordingHospital"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.id",
-        "path": "AllergyIntolerance.extension.extension.id",
-        "max": "0"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:comments",
-        "path": "AllergyIntolerance.extension.extension",
-        "sliceName": "comments"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:comments.id",
-        "path": "AllergyIntolerance.extension.extension.id",
-        "max": "0"
+        "sliceName": "allergyReaction",
+        "short": "Allergy reaction code",
+        "definition": "Allergy reaction code",
+        "min": 1
       },
       {
         "id": "AllergyIntolerance.onset[x]",

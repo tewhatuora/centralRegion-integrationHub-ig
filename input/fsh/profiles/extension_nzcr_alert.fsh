@@ -23,46 +23,72 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
     recordingHospital 0..1 MS and
     comments 0..1 MS
 
-* extension[severityLevel] ^definition = "Severity Level in range 0-9"
-* extension[severityLevel] ^short = "Severity Level in range 0-9"
-* extension[severityLevel].value[x] only integer
-* extension[severityLevel].value[x] 1..1
-* extension[severityLevel].value[x] ^minValueInteger = 0
-* extension[severityLevel].value[x] ^maxValueInteger = 9
+* extension
+  * ^definition = "Container holding the individual elements of the Alert extension."
+  * ^short = "Container holding the individual elements of the Alert extension."
 
-* extension[allergyReaction] ^definition = "Allergy Reaction"
-* extension[allergyReaction] ^short = "Allergy Reaction"
-* extension[allergyReaction].value[x] only Coding
-* extension[allergyReaction].value[x] 1..1
-* extension[allergyReaction].value[x] from nzcr-allergy-reaction-vs (required)
+* extension[severityLevel]
+  * ^definition = "Security Level in range 0-9"
+  * ^short = "Severity Level in range 0-9"
+  * value[x] only integer
+  * value[x] 1..1
+  * value[x] ^minValueInteger = 0
+  * value[x] ^maxValueInteger = 9
+  * id 0..0
 
-* extension[inactiveDate] ^definition = "When will this alert be made inactive"
-* extension[inactiveDate] ^short = "When will this alert be next reviewed?"
-* extension[inactiveDate].value[x] only date
-* extension[inactiveDate].value[x] 1..1
+* extension[allergyReaction]
+  * ^definition = "Allergy Reaction"
+  * ^short = "Allergy Reaction"
+  * value[x] only Coding
+  * value[x] 1..1
+  * value[x] from nzcr-allergy-reaction-vs (required)
+  * id 0..0
 
-* extension[reviewDate] ^definition = "When is this alert to be next reviewed?"
-* extension[reviewDate] ^short = "When is this alert to be next reviewed?"
-* extension[reviewDate].value[x] only date
-* extension[reviewDate].value[x] 1..1
+* extension[inactiveDate]
+  * ^definition = "When will/did this alert stop being active?"
+  * ^short = "When will/did this alert stop being active?"
+  * value[x] only date
+  * value[x] 1..1
+  * id 0..0
 
-* extension[lastUpdatedBy] ^definition = "Who has updated the alert"
-* extension[lastUpdatedBy] ^short = "Who has updated the alert"
-* extension[lastUpdatedBy].value[x] only string
-* extension[lastUpdatedBy].value[x] 1..1
+* extension[reviewDate]
+  * ^definition = "When is this alert to be next reviewed?"
+  * ^short = "When is this alert to be next reviewed?"
+  * value[x] only date
+  * value[x] 1..1
+  * id 0..0
 
-* extension[lastUpdatedDateTime] ^definition = "When was the alert last updated"
-* extension[lastUpdatedDateTime] ^short = "When was the alert last updated"
-* extension[lastUpdatedDateTime].value[x] only dateTime
-* extension[lastUpdatedDateTime].value[x] 1..1
+* extension[lastUpdatedBy]
+  * ^definition = "Who has updated the alert, not usually the authorising clinician"
+  * ^short = "Who has updated the alert? (Not usually the authorising clinician)"
+  * value[x] only string
+  * value[x] 1..1
+  * id 0..0
 
-* extension[recordingHospital] ^definition = "Where was the alert recorded?"
-* extension[recordingHospital] ^short = "Where was the alert recorded?"
-* extension[recordingHospital].value[x] only Coding
-* extension[recordingHospital].value[x] 1..1
-* extension[recordingHospital].value[x] from nzcr-hospital-code-vs (required)
+* extension[lastUpdatedDateTime]
+  * ^definition = "When was the alert last updated"
+  * ^short = "When was the alert last updated"
+  * value[x] only dateTime
+  * value[x] 1..1
+  * id 0..0
 
-* extension[comments] ^definition = "Free text comments"
-* extension[comments] ^short = "Free text comments"
-* extension[comments].value[x] only string
-* extension[comments].value[x] 1..1
+* extension[recordingHospital]
+  * ^definition = "Which hospital recorded the allergy?"
+  * ^short = "Which hospital recorded the allergy?"
+  * value[x] only Coding
+  * value[x] 1..1
+  * value[x] from nzcr-hospital-code-vs (required)
+  * value[x].version 0..0        // not versioned
+  * value[x].userSelected 0..0   // not used
+  * value[x].extension 0..0
+  * value[x].id 0..0  
+  * id 0..0
+
+* extension[comments]
+  * ^definition = "Free text comments"
+  * ^short = "Free text comments"
+  * value[x] only string
+  * value[x] 1..1
+  * id 0..0
+
+* id 0..0

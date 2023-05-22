@@ -23,6 +23,7 @@ Title:    "Central Region Message Specification (1.14)"
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-h7
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8"
 * code.coding.display -> "ZAL-3.2"
+
 * period.start -> "ZAL-5"
 * period.end -> "ZAL-9"   // or perhaps ZAL-8  - depends if we're using inactiveDate or endDate
 
@@ -44,9 +45,6 @@ Title:    "Central Region Message Specification (1.14)"
 * author.identifier.system -> "'https://standards.digital.health.nz/ns/pas-practitioner-id'"
 * author.identifier.value -> "ZAL-10.1"
 * author.display -> "ZAL-10.1 + ', ' + ZAL-10.2 + ' ' + ZAL-10.3 + ' ' + ZAL-10.5"
-
-* period.start ->  "ZAL-5"
-* period.end -> "ZAL-8"
 
 * extension[flag-alert].extension[reviewDate] -> "ZAL-7"
 * extension[flag-alert].extension[inactiveDate] -> "ZAL-9"
