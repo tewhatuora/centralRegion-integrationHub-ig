@@ -89,10 +89,14 @@ elif PID 11.7 == 'B' then 'work'"
 * generalPractitioner.reference -> "n/a" "Internal GUID"
 * generalPractitioner.identifier.use -> "'usual'" 
 * generalPractitioner.identifier.value -> "PD1-4.1"
-* generalPractitioner.identifier.system -> "https://standards.digital.health.nz/ns/pas-practitioner-id" "if PD1-4.9.2 == '2.16.840.1.113883.2.18.66.3.2.0'"
+* generalPractitioner.identifier.system -> "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id" "if PD1-4.9.2 == '2.16.840.1.113883.2.18.66.3.2.0'"
+* generalPractitioner.identifier.type.coding -> "" "Practitioner Identifiers are locally assigned within PAS"
+  * code -> "'LR'"
+  * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+  * display -> "'Local registry ID'"
 * generalPractitioner.display -> "PD1-4.2 + ', ' + PD1-4.3 + ' ' + PD1-4.4 + '  + PD1=4.6"
 
-* extension[nzCitizen] -> "PID-26" "Only using status, source not availabnle"
+* extension[nzCitizen] -> "PID-26" "Only using status, source not available"
 * extension[nzCitizen].url -> "'http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship'"
 * extension[nzCitizen].extension[status].url -> "'status'"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code -> "PID-26.1" "if PID-26.1 = 'Y' then 'yes'
@@ -104,7 +108,7 @@ else 'Unknown'"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/nz-citizenship-status-code"
 
 * extension[nzResidency].url -> "'http://hl7.org.nz/fhir/StructureDefinition/nz-residency'"
-* extension[nzResidency] -> "PID-28" "Only using status, source not availabnle"
+* extension[nzResidency] -> "PID-28" "Only using status, source not available"
 * extension[nzResidency].extension[status].url -> "'status'"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding -> "Repeat for each coding"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.code -> "PID-28.1" "Raw value and mapped from webPAS residency status.  ConceptMap ?'"
@@ -140,3 +144,7 @@ if 'NET' then '**email**'\r\n
 Note: If only one phone entry with type '**CP**' then use '**phone**'"
 * deceasedDateTime -> "PID-29"  "if known"
 * deceasedBoolean -> "PID-30"
+
+
+* extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+* extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

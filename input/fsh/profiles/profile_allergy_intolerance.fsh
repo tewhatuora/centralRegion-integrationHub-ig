@@ -13,16 +13,16 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
     nzcr-alert named allergy-alert 1..1 MS 
 
 * extension[allergy-alert]
-  * extension[severityLevel] 1..1 MS    // required for allergies
+  * extension[severityLevel] 1..1 MS     
     * ^definition = "Severity level in range 0..9"
     * ^short = "Severity level in range 0..9"
-  * extension[allergyReaction] 1..1 MS  // required for allergies
+  * extension[allergyReaction] 1..1 MS
     * ^definition = "Allergy reaction code"
     * ^short = "Allergy reaction code"
   * extension[inactiveDate] 0..1 MS     // not to be confused with period.end
   * extension[reviewDate] 0..1 MS
   * extension[lastUpdatedBy] 0..1 MS
   * extension[lastUpdatedDateTime] 0..1 MS
-  * extension[recordingHospital] 0..1 MS
+  * extension[recordingHospital] 1..1 MS
   * extension[comments] 0..1 MS
 

@@ -6,7 +6,18 @@ Title:    "Central Region Message Specification (1.14)"
 
 * category -> "ZAL-2"
 * category.coding.code -> "ZAL-2.1"
-* category.coding.system -> "https://standards.digital.health.nz/ns/central-region/alert-type"
+* category.coding.system -> "https://standards.digital.health.nz/ns/central-region/alert-category"
+* category.coding.display -> "ZAL-2.2"
+
+* identifier.use -> "'usual'"
+* identifier.system -> "'https://standards.digital.health.nz/ns/pas-alert-id'"
+* identifier.value -> "PID-3.1 + '-' + ZAL2.1 + '-' + ZAL-3.1" "Concatenation of PatientId, Alert Category and Alert Code"
+
+* status -> "ZAL-8 & ZAL-9" "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty **then** 'active' **else** 'inactive'"
+
+* category -> "ZAL-2"
+* category.coding.code -> "ZAL-2.1"
+* category.coding.system -> "''"
 * category.coding.display -> "ZAL-2.2"
 
 * code -> "ZAL-3"
@@ -42,15 +53,38 @@ Title:    "Central Region Message Specification (1.14)"
 * author.reference -> " " "read-only field"
 * author.type -> "'Practitioner'"
 * author.identifier.use -> "'usual'"
-* author.identifier.system -> "'https://standards.digital.health.nz/ns/pas-practitioner-id'"
+* author.identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
 * author.identifier.value -> "ZAL-10.1"
+* author.identifier.type.coding -> "" "Practitioner Identifiers are locally assigned within PAS"
+  * code -> "'LR'"
+  * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+  * display -> "'Local registry ID'"
 * author.display -> "ZAL-10.1 + ', ' + ZAL-10.2 + ' ' + ZAL-10.3 + ' ' + ZAL-10.5"
 
-* extension[flag-alert].extension[reviewDate] -> "ZAL-7"
-* extension[flag-alert].extension[inactiveDate] -> "ZAL-9"
-* extension[flag-alert].extension[lastUpdatedDateTime] -> "ZAL-11"
-* extension[flag-alert].extension[lastUpdatedBy] -> "ZAL-11.1 + ' - ' + ZAL-11.2" "Not to be confused with Author"
+* extension[flag-alert].url -> "'https://standards.digital.health.nz/ns/central-region/alert'"
+
+* extension[flag-alert].extension[severityLevel].url -> "'severityLevel'"
+* extension[flag-alert].extension[severityLevel].valueInteger -> "ZAL-6"
+
+* extension[flag-alert].extension[reviewDate].url -> "'reviewDate'"
+* extension[flag-alert].extension[reviewDate].valueDate -> "ZAL-7"
+
+* extension[flag-alert].extension[inactiveDate].url -> "'inactiveDate'"
+* extension[flag-alert].extension[inactiveDate].valueDate -> "ZAL-9"
+
+* extension[flag-alert].extension[lastUpdatedDateTime].url -> "'lastUpdatedDateTime"
+* extension[flag-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11"
+
+* extension[flag-alert].extension[lastUpdatedBy].url -> "'lastUpdatedBy'"
+* extension[flag-alert].extension[lastUpdatedBy].valueString -> "ZAL-11.1 + ' - ' + ZAL-11.2" "Not to be confused with Author"
+
+* extension[flag-alert].extension[recordingHospital].url -> "'recordingHospital'"
 * extension[flag-alert].extension[recordingHospital].value[x].code -> "ZAL-13.1"
 * extension[flag-alert].extension[recordingHospital].value[x].system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
 * extension[flag-alert].extension[recordingHospital].value[x].display -> "ZAL-13.2"
-* extension[flag-alert].extension[comments] -> "ZAL-14"
+
+* extension[flag-alert].extension[comments].url -> "'comments'"
+* extension[flag-alert].extension[comments].valueString -> "ZAL-14"
+
+* extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+* extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

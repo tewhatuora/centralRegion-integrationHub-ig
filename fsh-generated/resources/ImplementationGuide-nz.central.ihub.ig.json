@@ -102,18 +102,18 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-allergy-alert-code-vs"
+          "reference": "ValueSet/nzcr-allergy-alert-category-vs"
         },
-        "name": "NZ Central Region - Allergy Alert Code Value Set",
-        "description": "Allergy alert codes (H1, H3, A3 & A4) ex. WebPAS in NZ Central Region.",
+        "name": "NZ Central Region - Allergy Alert Category Value Set",
+        "description": "Alert Category codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-allergy-alert-type-vs"
+          "reference": "ValueSet/nzcr-allergy-alert-code-vs"
         },
-        "name": "NZ Central Region - Allergy Alert Type Value Set",
-        "description": "Alert Type codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance",
+        "name": "NZ Central Region - Allergy Alert Code Value Set",
+        "description": "Allergy alert codes (H1, H3, A3 & A4) ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -142,18 +142,18 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-flag-alert-code-vs"
+          "reference": "ValueSet/nzcr-flag-alert-category-vs"
         },
-        "name": "NZ Central Region - Flag Alert Code Value Set",
-        "description": "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "name": "NZ Central Region - Flag Alert Category Value Set",
+        "description": "Alert Category codes ex. WebPAS in NZ Central Region that denote a Flag",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-flag-alert-type-vs"
+          "reference": "ValueSet/nzcr-flag-alert-code-vs"
         },
-        "name": "NZ Central Region - Flag Alert Type Value Set",
-        "description": "Alert Type codes ex. WebPAS in NZ Central Region that denote a Flag",
+        "name": "NZ Central Region - Flag Alert Code Value Set",
+        "description": "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
         "exampleBoolean": false
       },
       {
@@ -198,10 +198,10 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-alert-type-cs"
+          "reference": "CodeSystem/nzcr-alert-category-cs"
         },
-        "name": "NZ Central Region - Alert Type Code System",
-        "description": "Alert Type codes ex. WebPAS in NZ Central Region",
+        "name": "NZ Central Region - Alert Category Code System",
+        "description": "Alert Category codes ex. WebPAS in NZ Central Region",
         "exampleBoolean": false
       },
       {

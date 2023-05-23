@@ -5,7 +5,7 @@
       "type" : "Practitioner",
       "identifier" : {
         "use" : "usual",
-        "system" : "https://standards.digital.health.nz/ns/pas-practitioner-id",
+        "system" : "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
         "value" : "666665"
       },
       "display" : "Dr Amber-Lea Aroha"

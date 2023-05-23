@@ -57,7 +57,8 @@
         "id": "Extension.extension",
         "path": "Extension.extension",
         "short": "Container holding the individual elements of the Alert extension.",
-        "definition": "Container holding the individual elements of the Alert extension."
+        "definition": "Container holding the individual elements of the Alert extension.",
+        "min": 1
       },
       {
         "id": "Extension.extension:severityLevel",
@@ -279,9 +280,9 @@
         "id": "Extension.extension:recordingHospital",
         "path": "Extension.extension",
         "sliceName": "recordingHospital",
-        "short": "Which hospital recorded the allergy?",
-        "definition": "Which hospital recorded the allergy?",
-        "min": 0,
+        "short": "Which hospital recorded the alert?",
+        "definition": "Which hospital recorded the alert?",
+        "min": 1,
         "max": "1",
         "mustSupport": true
       },

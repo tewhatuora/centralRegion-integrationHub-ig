@@ -19,8 +19,11 @@ Alias:   $NZBaseNZResidency     = http://hl7.org.nz/fhir/StructureDefinition/nz-
 Alias:   $NZBaseEthnicity       = http://hl7.org.nz/fhir.StructureDefinition/nz-ethnicity
 
 // Patient Identifier System URLs
-Alias:   $NZBaseNHI                = https://standards.digital.health.nz/ns/nhi-id
-Alias:   $NZCentralRegionLocalID   = https://standards.digital.health.nz/ns/central_region/pas-patient-id
+Alias:   $NZBaseNHI                       = https://standards.digital.health.nz/ns/nhi-id
+Alias:   $NZCentralRegionLocalPatientId   = https://standards.digital.health.nz/ns/central_region/pas-patient-id
+
+// Other resource Identifier System URLs
+Alias:   $NZCentralRegionLocalAlertId     = https://standards.digital.health.nz/ns/pas-alert-id
 
 // Code System URLs from NZ Base
 Alias:   $NZBaseNZCitizenshipCS    = https://standards.digital.health.nz/ns/nz-citizenship-status-code
@@ -33,13 +36,13 @@ Alias:   $NZCentralRegionAlert                 = https://standards.digital.healt
 
 // Local URLs for locally defined CodeSystems
 Alias:   $NZStatsEthnicityLevel2CS              = https://standards.digital.health.nz/ns/ethnic-group-level-2-code
-Alias:   $NZCentralRegionPASPractitioner        = https://standards.digital.health.nz/ns/pas-practitioner-id
+Alias:   $NZCentralRegionPASPractitioner        = https://standards.digital.health.nz/ns/central-region/pas-practitioner-id
 Alias:   $NZCentralRegionHospitalCS             = https://standards.digital.health.nz/ns/central-region/hospital-code
 Alias:   $NZCentralRegionExtraMaritalStatusCS   = https://standards.digital.health.nz/ns/central-region/extra-marital-status
 Alias:   $NZCentralRegionResidencyCS            = https://standards.digital.health.nz/ns/central-region/nz-residency-code
 Alias:   $NZCentralRegionPatientReligionCS      = https://standards.digital.health.nz/ns/central-region/patient-religion
 Alias:   $NZCentralRegionContactRelationshipCS  = https://standards.digital.health.nz/ns/central-region/contact-relationship
-Alias:   $NZCentralRegionAlertTypeCS            = https://standards.digital.health.nz/ns/central-region/alert-type
+Alias:   $NZCentralRegionAlertCategoryCS        = https://standards.digital.health.nz/ns/central-region/alert-category
 
 Alias:   $NZCentralRegionAllergyAlertCodeH1CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1
 Alias:   $NZCentralRegionAllergyAlertCodeH3CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
@@ -63,8 +66,8 @@ Alias:   $NZCentralRegionMaritalStatusVS        = https://standards.digital.heal
 Alias:   $NZCentralRegionResidencyVS            = https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency
 Alias:   $NZCentralRegionPatientReligionVS      = https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion
 Alias:   $NZCentralRegionContactRelationshipVS  = https://standards.digital.health.nz/fhir/central-region/ValueSet-contact-relationship
-Alias:   $NZCentralRegionFlagAlertTypeVS        = https://standards.digital.health.nz/fhir/central-region/alert-type-flag
-Alias:   $NZCentralRegionAllergyAlertTypeVS     = https://standards.digital.health.nz/fhir/central-region/alert-type-allergy
+Alias:   $NZCentralRegionFlagAlertCategoryVS    = https://standards.digital.health.nz/fhir/central-region/alert-type-flag
+Alias:   $NZCentralRegionAllergyAlertCategoryVS = https://standards.digital.health.nz/fhir/central-region/alert-type-allergy
 Alias:   $NZCentralRegionAllergyAlertCodeVS     = https://standards.digital.health.nz/fhir/central-region/allergy-alert-code
 Alias:   $NZCentralRegionAllergyReactionVS      = https://standards.digital.health.nz/fhir/central-region/allergy-reaction
 Alias:   $NZCentralRegionFlagAlertCodeVS        = https://standards.digital.health.nz/fhir/central-region/falg-alert-code

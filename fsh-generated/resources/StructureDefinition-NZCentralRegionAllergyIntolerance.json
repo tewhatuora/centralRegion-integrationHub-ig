@@ -86,7 +86,7 @@
       {
         "id": "AllergyIntolerance.extension:allergy-alert.extension",
         "path": "AllergyIntolerance.extension.extension",
-        "min": 2
+        "min": 3
       },
       {
         "id": "AllergyIntolerance.extension:allergy-alert.extension:severityLevel",

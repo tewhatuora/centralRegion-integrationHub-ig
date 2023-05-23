@@ -241,9 +241,22 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * use 1..1 MS
     * system 1..1 MS
     * system = $NZCentralRegionPASPractitioner
-    * value 1..1 MS
-    * type 0..0 MS    // Data irrelevant
-    * period 0..0     // Data not available
+    * type 1..1 MS
+      * coding MS  
+        * code 1..1 MS
+        * code = #LR
+        * system 1..1 MS 
+        * system = $HL7IdentifierTypeCS
+        * display 1..1 MS
+        * display = "Local Registry ID"
+        * version 0..0
+        * userSelected 0..0
+        * extension 0..0
+        * id 0..0
+      * text 0..0
+      * extension 0..0
+      * id 0..0
+    * period 0..0
     * assigner 0..0   // Data not availale
     * extension 0..0
     * id 0..0
@@ -265,4 +278,4 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
 
-* extension contains $NZCentralRegionHL7v2Message named hl7v2-message 0..1 MS
+* extension contains $NZCentralRegionHL7v2Message named hl7v2Message 0..1 MS

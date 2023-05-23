@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-05-23T08:28:48+12:00"/>
+   <date value="2023-05-23T13:43:01+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -412,13 +412,13 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-nzcr-allergy-alert-code-vs.html"/>
+            <valueUri value="ValueSet-nzcr-allergy-alert-category-vs.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/nzcr-allergy-alert-code-vs"/>
+            <reference value="ValueSet/nzcr-allergy-alert-category-vs"/>
          </reference>
-         <name value="NZ Central Region - Allergy Alert Code Value Set"/>
-         <description value="Allergy alert codes (H1, H3, A3 &amp; A4) ex. WebPAS in NZ Central Region."/>
+         <name value="NZ Central Region - Allergy Alert Category Value Set"/>
+         <description value="Alert Category codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -427,13 +427,13 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-nzcr-allergy-alert-type-vs.html"/>
+            <valueUri value="ValueSet-nzcr-allergy-alert-code-vs.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/nzcr-allergy-alert-type-vs"/>
+            <reference value="ValueSet/nzcr-allergy-alert-code-vs"/>
          </reference>
-         <name value="NZ Central Region - Allergy Alert Type Value Set"/>
-         <description value="Alert Type codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance"/>
+         <name value="NZ Central Region - Allergy Alert Code Value Set"/>
+         <description value="Allergy alert codes (H1, H3, A3 &amp; A4) ex. WebPAS in NZ Central Region."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -487,13 +487,13 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-nzcr-flag-alert-code-vs.html"/>
+            <valueUri value="ValueSet-nzcr-flag-alert-category-vs.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/nzcr-flag-alert-code-vs"/>
+            <reference value="ValueSet/nzcr-flag-alert-category-vs"/>
          </reference>
-         <name value="NZ Central Region - Flag Alert Code Value Set"/>
-         <description value="Alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"/>
+         <name value="NZ Central Region - Flag Alert Category Value Set"/>
+         <description value="Alert Category codes ex. WebPAS in NZ Central Region that denote a Flag"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -502,13 +502,13 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-nzcr-flag-alert-type-vs.html"/>
+            <valueUri value="ValueSet-nzcr-flag-alert-code-vs.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/nzcr-flag-alert-type-vs"/>
+            <reference value="ValueSet/nzcr-flag-alert-code-vs"/>
          </reference>
-         <name value="NZ Central Region - Flag Alert Type Value Set"/>
-         <description value="Alert Type codes ex. WebPAS in NZ Central Region that denote a Flag"/>
+         <name value="NZ Central Region - Flag Alert Code Value Set"/>
+         <description value="Alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -592,13 +592,13 @@
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-nzcr-alert-type-cs.html"/>
+            <valueUri value="CodeSystem-nzcr-alert-category-cs.html"/>
          </extension>
          <reference>
-            <reference value="CodeSystem/nzcr-alert-type-cs"/>
+            <reference value="CodeSystem/nzcr-alert-category-cs"/>
          </reference>
-         <name value="NZ Central Region - Alert Type Code System"/>
-         <description value="Alert Type codes ex. WebPAS in NZ Central Region"/>
+         <name value="NZ Central Region - Alert Category Code System"/>
+         <description value="Alert Category codes ex. WebPAS in NZ Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
       </resource>
@@ -1161,13 +1161,13 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-nzcr-allergy-alert-code-vs.html"/>
-               <title value="NZ Central Region - Allergy Alert Code Value Set"/>
+               <nameUrl value="ValueSet-nzcr-allergy-alert-category-vs.html"/>
+               <title value="NZ Central Region - Allergy Alert Category Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-nzcr-allergy-alert-type-vs.html"/>
-               <title value="NZ Central Region - Allergy Alert Type Value Set"/>
+               <nameUrl value="ValueSet-nzcr-allergy-alert-code-vs.html"/>
+               <title value="NZ Central Region - Allergy Alert Code Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1186,13 +1186,13 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-nzcr-flag-alert-code-vs.html"/>
-               <title value="NZ Central Region - Flag Alert Code Value Set"/>
+               <nameUrl value="ValueSet-nzcr-flag-alert-category-vs.html"/>
+               <title value="NZ Central Region - Flag Alert Category Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-nzcr-flag-alert-type-vs.html"/>
-               <title value="NZ Central Region - Flag Alert Type Value Set"/>
+               <nameUrl value="ValueSet-nzcr-flag-alert-code-vs.html"/>
+               <title value="NZ Central Region - Flag Alert Code Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1221,8 +1221,8 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="CodeSystem-nzcr-alert-type-cs.html"/>
-               <title value="NZ Central Region - Alert Type Code System"/>
+               <nameUrl value="CodeSystem-nzcr-alert-category-cs.html"/>
+               <title value="NZ Central Region - Alert Category Code System"/>
                <generation value="generated"/>
             </page>
             <page>

@@ -20,7 +20,7 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
     reviewDate 0..1 MS and
     lastUpdatedBy 0..1 MS and
     lastUpdatedDateTime 0..1 MS and
-    recordingHospital 0..1 MS and
+    recordingHospital 1..1 MS and
     comments 0..1 MS
 
 * extension
@@ -73,8 +73,8 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
   * id 0..0
 
 * extension[recordingHospital]
-  * ^definition = "Which hospital recorded the allergy?"
-  * ^short = "Which hospital recorded the allergy?"
+  * ^definition = "Which hospital recorded the alert?"
+  * ^short = "Which hospital recorded the alert?"
   * value[x] only Coding
   * value[x] 1..1
   * value[x] from nzcr-hospital-code-vs (required)

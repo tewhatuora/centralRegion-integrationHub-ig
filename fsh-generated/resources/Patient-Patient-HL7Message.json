@@ -117,7 +117,16 @@
   "generalPractitioner": [
     {
       "identifier": {
-        "system": "https://standards.digital.health.nz/ns/pas-practitioner-id",
+        "system": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "LR",
+              "display": "Local Registry ID"
+            }
+          ]
+        },
         "use": "usual",
         "value": "666665"
       },

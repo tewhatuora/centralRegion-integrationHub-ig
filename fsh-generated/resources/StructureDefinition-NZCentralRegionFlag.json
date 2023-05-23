@@ -83,6 +83,29 @@
         "mustSupport": true
       },
       {
+        "id": "Flag.extension:hl7v2Message.url",
+        "path": "Flag.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.extension:hl7v2Message.valueBase64Binary",
+        "path": "Flag.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "Entire incoming HL7 message",
+            "comment": "Base64 encoded"
+          }
+        ]
+      },
+      {
         "id": "Flag.extension:flag-alert",
         "path": "Flag.extension",
         "sliceName": "flag-alert",
@@ -99,10 +122,39 @@
         "mustSupport": true
       },
       {
+        "id": "Flag.extension:flag-alert.extension",
+        "path": "Flag.extension.extension",
+        "min": 2
+      },
+      {
         "id": "Flag.extension:flag-alert.extension:severityLevel",
         "path": "Flag.extension.extension",
         "sliceName": "severityLevel",
-        "max": "0"
+        "short": "Severity level in range 0..9",
+        "definition": "Severity level in range 0..9",
+        "min": 1
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:severityLevel.url",
+        "path": "Flag.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'severityLevel'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:severityLevel.valueInteger",
+        "path": "Flag.extension.extension.valueInteger",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "ZAL-6"
+          }
+        ]
       },
       {
         "id": "Flag.extension:flag-alert.extension:allergyReaction",
@@ -113,7 +165,23 @@
       {
         "id": "Flag.extension:flag-alert.extension:inactiveDate",
         "path": "Flag.extension.extension",
-        "sliceName": "inactiveDate",
+        "sliceName": "inactiveDate"
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:inactiveDate.url",
+        "path": "Flag.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'inactiveDate'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:inactiveDate.valueDate",
+        "path": "Flag.extension.extension.valueDate",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -124,7 +192,23 @@
       {
         "id": "Flag.extension:flag-alert.extension:reviewDate",
         "path": "Flag.extension.extension",
-        "sliceName": "reviewDate",
+        "sliceName": "reviewDate"
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:reviewDate.url",
+        "path": "Flag.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'reviewDate'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:reviewDate.valueDate",
+        "path": "Flag.extension.extension.valueDate",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -135,7 +219,23 @@
       {
         "id": "Flag.extension:flag-alert.extension:lastUpdatedBy",
         "path": "Flag.extension.extension",
-        "sliceName": "lastUpdatedBy",
+        "sliceName": "lastUpdatedBy"
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedBy.url",
+        "path": "Flag.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'lastUpdatedBy'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedBy.valueString",
+        "path": "Flag.extension.extension.valueString",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -147,7 +247,23 @@
       {
         "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime",
         "path": "Flag.extension.extension",
-        "sliceName": "lastUpdatedDateTime",
+        "sliceName": "lastUpdatedDateTime"
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime.url",
+        "path": "Flag.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'lastUpdatedDateTime"
+          }
+        ]
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime.valueDateTime",
+        "path": "Flag.extension.extension.valueDateTime",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -159,6 +275,16 @@
         "id": "Flag.extension:flag-alert.extension:recordingHospital",
         "path": "Flag.extension.extension",
         "sliceName": "recordingHospital"
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.url",
+        "path": "Flag.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'recordingHospital'"
+          }
+        ]
       },
       {
         "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].system",
@@ -193,11 +319,112 @@
       {
         "id": "Flag.extension:flag-alert.extension:comments",
         "path": "Flag.extension.extension",
-        "sliceName": "comments",
+        "sliceName": "comments"
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:comments.url",
+        "path": "Flag.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'comments'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:comments.valueString",
+        "path": "Flag.extension.extension.valueString",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
             "map": "ZAL-14"
+          }
+        ]
+      },
+      {
+        "id": "Flag.extension:flag-alert.url",
+        "path": "Flag.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/alert'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.identifier",
+        "path": "Flag.identifier",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.identifier.id",
+        "path": "Flag.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.identifier.extension",
+        "path": "Flag.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.identifier.use",
+        "path": "Flag.identifier.use",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.identifier.type",
+        "path": "Flag.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Flag.identifier.system",
+        "path": "Flag.identifier.system",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/pas-alert-id'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.identifier.value",
+        "path": "Flag.identifier.value",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "PID-3.1 + '-' + ZAL2.1 + '-' + ZAL-3.1",
+            "comment": "Concatenation of PatientId, Alert Category and Alert Code"
+          }
+        ]
+      },
+      {
+        "id": "Flag.identifier.period",
+        "path": "Flag.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Flag.identifier.assigner",
+        "path": "Flag.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Flag.status",
+        "path": "Flag.status",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "ZAL-8 & ZAL-9",
+            "comment": "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty **then** 'active' **else** 'inactive'"
           }
         ]
       },
@@ -212,6 +439,10 @@
           "valueSet": "https://standards.digital.health.nz/fhir/central-region/alert-type-flag"
         },
         "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "ZAL-2"
+          },
           {
             "identity": "nzcr-flag-from-hl7v2",
             "map": "ZAL-2"
@@ -252,7 +483,11 @@
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "https://standards.digital.health.nz/ns/central-region/alert-type"
+            "map": "https://standards.digital.health.nz/ns/central-region/alert-category"
+          },
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "''"
           }
         ]
       },
@@ -270,6 +505,10 @@
           {
             "identity": "nzcr-flag-from-hl7v2",
             "map": "ZAL-2.1"
+          },
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "ZAL-2.1"
           }
         ]
       },
@@ -279,6 +518,10 @@
         "min": 1,
         "mustSupport": true,
         "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "ZAL-2.2"
+          },
           {
             "identity": "nzcr-flag-from-hl7v2",
             "map": "ZAL-2.2"
@@ -419,6 +662,7 @@
         "id": "Flag.subject.type",
         "path": "Flag.subject.type",
         "min": 1,
+        "patternUri": "Patient",
         "mustSupport": true,
         "mapping": [
           {
@@ -469,9 +713,29 @@
         "mustSupport": true
       },
       {
+        "id": "Flag.subject.identifier.type.id",
+        "path": "Flag.subject.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.subject.identifier.type.extension",
+        "path": "Flag.subject.identifier.type.extension",
+        "max": "0"
+      },
+      {
         "id": "Flag.subject.identifier.type.coding",
         "path": "Flag.subject.identifier.type.coding",
         "mustSupport": true
+      },
+      {
+        "id": "Flag.subject.identifier.type.coding.id",
+        "path": "Flag.subject.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.subject.identifier.type.coding.extension",
+        "path": "Flag.subject.identifier.type.coding.extension",
+        "max": "0"
       },
       {
         "id": "Flag.subject.identifier.type.coding.system",
@@ -485,6 +749,11 @@
             "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
           }
         ]
+      },
+      {
+        "id": "Flag.subject.identifier.type.coding.version",
+        "path": "Flag.subject.identifier.type.coding.version",
+        "max": "0"
       },
       {
         "id": "Flag.subject.identifier.type.coding.code",
@@ -509,6 +778,16 @@
             "map": "'Medical record number'"
           }
         ]
+      },
+      {
+        "id": "Flag.subject.identifier.type.coding.userSelected",
+        "path": "Flag.subject.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Flag.subject.identifier.type.text",
+        "path": "Flag.subject.identifier.type.text",
+        "max": "0"
       },
       {
         "id": "Flag.subject.identifier.system",
@@ -631,6 +910,7 @@
       {
         "id": "Flag.author.type",
         "path": "Flag.author.type",
+        "short": "Type the reference refers to (e.g. 'Practitioner')",
         "min": 1,
         "patternUri": "Practitioner",
         "mustSupport": true,
@@ -672,27 +952,111 @@
       {
         "id": "Flag.author.identifier.type",
         "path": "Flag.author.identifier.type",
-        "max": "0",
+        "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Flag.author.identifier.type.id",
+        "path": "Flag.author.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.identifier.type.extension",
+        "path": "Flag.author.identifier.type.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.identifier.type.coding",
+        "path": "Flag.author.identifier.type.coding",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "",
+            "comment": "Practitioner Identifiers are locally assigned within PAS"
+          }
+        ]
+      },
+      {
+        "id": "Flag.author.identifier.type.coding.id",
+        "path": "Flag.author.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.identifier.type.coding.extension",
+        "path": "Flag.author.identifier.type.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.identifier.type.coding.system",
+        "path": "Flag.author.identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.author.identifier.type.coding.version",
+        "path": "Flag.author.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.identifier.type.coding.code",
+        "path": "Flag.author.identifier.type.coding.code",
+        "min": 1,
+        "patternCode": "LS",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'LR'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.author.identifier.type.coding.display",
+        "path": "Flag.author.identifier.type.coding.display",
+        "min": 1,
+        "patternString": "Local Registry ID",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'Local registry ID'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.author.identifier.type.coding.userSelected",
+        "path": "Flag.author.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Flag.author.identifier.type.text",
+        "path": "Flag.author.identifier.type.text",
+        "max": "0"
       },
       {
         "id": "Flag.author.identifier.system",
         "path": "Flag.author.identifier.system",
         "min": 1,
-        "patternUri": "https://standards.digital.health.nz/ns/pas-practitioner-id",
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
         "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/pas-practitioner-id'"
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
           }
         ]
       },
       {
         "id": "Flag.author.identifier.value",
         "path": "Flag.author.identifier.value",
-        "min": 1,
-        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",

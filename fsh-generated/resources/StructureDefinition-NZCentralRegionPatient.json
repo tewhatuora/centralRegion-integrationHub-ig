@@ -184,7 +184,7 @@
           {
             "identity": "nzcr-patient-from-hl7v2",
             "map": "PID-26",
-            "comment": "Only using status, source not availabnle"
+            "comment": "Only using status, source not available"
           }
         ]
       },
@@ -515,7 +515,7 @@
           {
             "identity": "nzcr-patient-from-hl7v2",
             "map": "PID-28",
-            "comment": "Only using status, source not availabnle"
+            "comment": "Only using status, source not available"
           }
         ]
       },
@@ -770,9 +770,9 @@
         ]
       },
       {
-        "id": "Patient.extension:hl7v2-message",
+        "id": "Patient.extension:hl7v2Message",
         "path": "Patient.extension",
-        "sliceName": "hl7v2-message",
+        "sliceName": "hl7v2Message",
         "min": 0,
         "max": "1",
         "type": [
@@ -784,6 +784,29 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:hl7v2Message.url",
+        "path": "Patient.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:hl7v2Message.valueBase64Binary",
+        "path": "Patient.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Entire incoming HL7 message",
+            "comment": "Base64 encoded"
+          }
+        ]
       },
       {
         "id": "Patient.identifier",
@@ -1944,19 +1967,105 @@
       {
         "id": "Patient.generalPractitioner.identifier.type",
         "path": "Patient.generalPractitioner.identifier.type",
-        "max": "0",
+        "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.id",
+        "path": "Patient.generalPractitioner.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.extension",
+        "path": "Patient.generalPractitioner.identifier.type.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.coding",
+        "path": "Patient.generalPractitioner.identifier.type.coding",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "",
+            "comment": "Practitioner Identifiers are locally assigned within PAS"
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.coding.id",
+        "path": "Patient.generalPractitioner.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.coding.extension",
+        "path": "Patient.generalPractitioner.identifier.type.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.coding.system",
+        "path": "Patient.generalPractitioner.identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.coding.version",
+        "path": "Patient.generalPractitioner.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.coding.code",
+        "path": "Patient.generalPractitioner.identifier.type.coding.code",
+        "min": 1,
+        "patternCode": "LR",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'LR'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.coding.display",
+        "path": "Patient.generalPractitioner.identifier.type.coding.display",
+        "min": 1,
+        "patternString": "Local Registry ID",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'Local registry ID'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.coding.userSelected",
+        "path": "Patient.generalPractitioner.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier.type.text",
+        "path": "Patient.generalPractitioner.identifier.type.text",
+        "max": "0"
       },
       {
         "id": "Patient.generalPractitioner.identifier.system",
         "path": "Patient.generalPractitioner.identifier.system",
         "min": 1,
-        "patternUri": "https://standards.digital.health.nz/ns/pas-practitioner-id",
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
         "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "https://standards.digital.health.nz/ns/pas-practitioner-id",
+            "map": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
             "comment": "if PD1-4.9.2 == '2.16.840.1.113883.2.18.66.3.2.0'"
           }
         ]
@@ -1964,8 +2073,6 @@
       {
         "id": "Patient.generalPractitioner.identifier.value",
         "path": "Patient.generalPractitioner.identifier.value",
-        "min": 1,
-        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
