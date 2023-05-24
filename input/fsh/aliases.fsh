@@ -7,6 +7,7 @@ Alias:   $HL7IdentifierTypeCS      = http://terminology.hl7.org/CodeSystem/v2-02
 Alias:   $HL7MaritalStatusCS       = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias:   $HL7RelationshipCS        = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias:   $HL7PatientRelgionCS      = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
+Alias:   $HL7AllergyVerificationCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
 // Extension URLs from NZ Base 
 Alias:   $NZBasePatient         = http://hl7.org.nz/fhir/StructureDefinition/NzPatient
@@ -36,6 +37,7 @@ Alias:   $NZCentralRegionAlert                 = https://standards.digital.healt
 
 // Local URLs for locally defined CodeSystems
 Alias:   $NZStatsEthnicityLevel2CS              = https://standards.digital.health.nz/ns/ethnic-group-level-2-code
+Alias:   $NZCentralRegionLanguageCS             = https://standards.digital.health.nz/ns/central-region/language
 Alias:   $NZCentralRegionPASPractitioner        = https://standards.digital.health.nz/ns/central-region/pas-practitioner-id
 Alias:   $NZCentralRegionHospitalCS             = https://standards.digital.health.nz/ns/central-region/hospital-code
 Alias:   $NZCentralRegionExtraMaritalStatusCS   = https://standards.digital.health.nz/ns/central-region/extra-marital-status
@@ -46,7 +48,8 @@ Alias:   $NZCentralRegionAlertCategoryCS        = https://standards.digital.heal
 
 Alias:   $NZCentralRegionAllergyAlertCodeH1CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1
 Alias:   $NZCentralRegionAllergyAlertCodeH3CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
-Alias:   $NZCentralRegionAllergyReactionCS      = https://standards.digital.health.nz/ns/central-region/allergy-reaction
+Alias:   $NZCentralRegionAllergyReactionA3A4CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4
+Alias:   $NZCentralRegionAllergyReactionH1H3CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3
 
 Alias:   $NZCentralRegionFlagAlertCodeNHIMWSCS  = https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws
 Alias:   $NZCentralRegionFlagAlertCodeMCCS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc
@@ -61,6 +64,7 @@ Alias:   $NZCentralRegionFlagAlertCodeH8CS      = https://standards.digital.heal
 
 // Local URIs for various ValueSets
 Alias:   $NZCentralRegionEthnicityLevel2VS      = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2
+Alias:   $NZCentralRegionLanguageVS             = https://standards.digital.health.nz/fhir/central-region/language
 Alias:   $NZCentralRegionHospitalVS             = https://standards.digital.health.nz/fhir/central-region/hospital-code
 Alias:   $NZCentralRegionMaritalStatusVS        = https://standards.digital.health.nz/fhir/central-region/ValueSet-marital-status
 Alias:   $NZCentralRegionResidencyVS            = https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency

@@ -11,7 +11,10 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/central-region/allergy-reaction"
+        "system": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4"
+      },
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3"
       }
     ]
   }

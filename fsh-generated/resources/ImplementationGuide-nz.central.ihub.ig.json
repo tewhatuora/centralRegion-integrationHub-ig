@@ -166,6 +166,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nzcr-language-value-set"
+        },
+        "name": "NZ Central Region - Language Value Set",
+        "description": "Language codes ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nzcr-marital-status-vs"
         },
         "name": "NZ Central Region - Marital Status Value Set",
@@ -222,10 +230,18 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-allergy-reaction-cs"
+          "reference": "CodeSystem/nzcr-allergy-reaction-a3a4-cs"
         },
-        "name": "NZ Central Region - Allergy Reaction Code System",
-        "description": "Allergy Reaction codes ex. WebPAS in NZ Central Region.",
+        "name": "NZ Central Region - Allergy Reaction (A3, A4) Code System",
+        "description": "Allergy Reaction codes for categories A3 & A4; ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-allergy-reaction-h1h3-cs"
+        },
+        "name": "NZ Central Region - Allergy Reaction (H1, H3) Code System",
+        "description": "Allergy Reaction codes for categories H1 & H3; ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -338,6 +354,14 @@
         },
         "name": "NZ Central Region - Hospital Code System",
         "description": "Hospital identification codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-language-code-system"
+        },
+        "name": "NZ Central Region - Language Code System",
+        "description": "Language codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {

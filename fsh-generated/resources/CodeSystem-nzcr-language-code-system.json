@@ -1,0 +1,344 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionLanguageCodeSystem",
+  "id": "nzcr-language-code-system",
+  "title": "NZ Central Region - Language Code System",
+  "description": "Language codes ex. WebPAS in NZ Central Region.",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/language",
+  "concept": [
+    {
+      "code": "ACE",
+      "display": "Acehnese"
+    },
+    {
+      "code": "ACH",
+      "display": "Acoli"
+    },
+    {
+      "code": "AFR",
+      "display": "Afrikaans"
+    },
+    {
+      "code": "AII",
+      "display": "Assyrian Arabic"
+    },
+    {
+      "code": "AMH",
+      "display": "Amharic"
+    },
+    {
+      "code": "ARA",
+      "display": "Arabic"
+    },
+    {
+      "code": "ASE",
+      "display": "Sign Lang - American"
+    },
+    {
+      "code": "BEN",
+      "display": "Bengali"
+    },
+    {
+      "code": "BUL",
+      "display": "Bulgarian"
+    },
+    {
+      "code": "CDO",
+      "display": "Chinese - Foochow"
+    },
+    {
+      "code": "CES",
+      "display": "Czechoslovakian"
+    },
+    {
+      "code": "CHM",
+      "display": "Chinese - Mandarin"
+    },
+    {
+      "code": "DAN",
+      "display": "Danish"
+    },
+    {
+      "code": "DIN",
+      "display": "Dinka"
+    },
+    {
+      "code": "DUT",
+      "display": "Dutch"
+    },
+    {
+      "code": "DZO",
+      "display": "Bhutanese"
+    },
+    {
+      "code": "ENG",
+      "display": "English"
+    },
+    {
+      "code": "FAS",
+      "display": "Farsi"
+    },
+    {
+      "code": "FIJ",
+      "display": "Fijian"
+    },
+    {
+      "code": "FIL",
+      "display": "Filipino"
+    },
+    {
+      "code": "FIN",
+      "display": "Finnish"
+    },
+    {
+      "code": "FRE",
+      "display": "French"
+    },
+    {
+      "code": "GER",
+      "display": "German"
+    },
+    {
+      "code": "GRE",
+      "display": "Greek"
+    },
+    {
+      "code": "GUJ",
+      "display": "Indian - Gujarati"
+    },
+    {
+      "code": "HAK",
+      "display": "Chinese - Hakka"
+    },
+    {
+      "code": "HEB",
+      "display": "Hebrew"
+    },
+    {
+      "code": "HIF",
+      "display": "Fijian - Hindi"
+    },
+    {
+      "code": "HIN",
+      "display": "Indian - Hindi"
+    },
+    {
+      "code": "HLT",
+      "display": "Matu (T Burmese)"
+    },
+    {
+      "code": "HRV",
+      "display": "Croatian"
+    },
+    {
+      "code": "HUN",
+      "display": "Hungarian"
+    },
+    {
+      "code": "ILS",
+      "display": "Sign Lang - Std Intl"
+    },
+    {
+      "code": "IND",
+      "display": "Indonesian"
+    },
+    {
+      "code": "ITA",
+      "display": "Italian"
+    },
+    {
+      "code": "JAP",
+      "display": "Japanese"
+    },
+    {
+      "code": "KHM",
+      "display": "Khmer"
+    },
+    {
+      "code": "KIN",
+      "display": "Kinyarwanda"
+    },
+    {
+      "code": "KMR",
+      "display": "Kurdish - Badinani"
+    },
+    {
+      "code": "KOR",
+      "display": "Korean"
+    },
+    {
+      "code": "KUR",
+      "display": "Kurdish"
+    },
+    {
+      "code": "LAO",
+      "display": "Lao"
+    },
+    {
+      "code": "MAO",
+      "display": "NZ Maori"
+    },
+    {
+      "code": "MSA",
+      "display": "Malay"
+    },
+    {
+      "code": "MYA",
+      "display": "Burmese"
+    },
+    {
+      "code": "NAN",
+      "display": "Chinese - Hokkien"
+    },
+    {
+      "code": "NEP",
+      "display": "Nepalese"
+    },
+    {
+      "code": "NIU",
+      "display": "Niuean"
+    },
+    {
+      "code": "NOR",
+      "display": "Norwegian"
+    },
+    {
+      "code": "NZS",
+      "display": "Sign Lang - NZ"
+    },
+    {
+      "code": "ORM",
+      "display": "Oromo"
+    },
+    {
+      "code": "PAN",
+      "display": "Indian - Punjabi"
+    },
+    {
+      "code": "POL",
+      "display": "Polish"
+    },
+    {
+      "code": "POR",
+      "display": "Portuguese"
+    },
+    {
+      "code": "PRS",
+      "display": "Dari-Afghanistan"
+    },
+    {
+      "code": "RAR",
+      "display": "Cook Island Maori"
+    },
+    {
+      "code": "RUN",
+      "display": "Kirundi"
+    },
+    {
+      "code": "RUS",
+      "display": "Russian"
+    },
+    {
+      "code": "SAM",
+      "display": "Samoan"
+    },
+    {
+      "code": "SIN",
+      "display": "Sinhalese (Sri Lankan)"
+    },
+    {
+      "code": "SLK",
+      "display": "Slovak"
+    },
+    {
+      "code": "SOM",
+      "display": "Somalian"
+    },
+    {
+      "code": "SPA",
+      "display": "Spanish"
+    },
+    {
+      "code": "SRP",
+      "display": "Serbo-croatian"
+    },
+    {
+      "code": "SWA",
+      "display": "Swahili"
+    },
+    {
+      "code": "SWE",
+      "display": "Swedish"
+    },
+    {
+      "code": "TAM",
+      "display": "Tamil"
+    },
+    {
+      "code": "THA",
+      "display": "Thai"
+    },
+    {
+      "code": "TIR",
+      "display": "Tigrinya"
+    },
+    {
+      "code": "TKL",
+      "display": "Tokelauan"
+    },
+    {
+      "code": "TON",
+      "display": "Tongan"
+    },
+    {
+      "code": "TUR",
+      "display": "Turkish"
+    },
+    {
+      "code": "TVL",
+      "display": "Tuvalu"
+    },
+    {
+      "code": "UKR",
+      "display": "Ukrainian"
+    },
+    {
+      "code": "URD",
+      "display": "Urdu"
+    },
+    {
+      "code": "VIE",
+      "display": "Vietnamese"
+    },
+    {
+      "code": "YUE",
+      "display": "Chinese - Cantonese"
+    },
+    {
+      "code": "zFOO",
+      "display": "Chinese - Fookien"
+    },
+    {
+      "code": "zLEB",
+      "display": "Lebanese"
+    },
+    {
+      "code": "zOTH",
+      "display": "Other - Not Further Defined"
+    },
+    {
+      "code": "zROH",
+      "display": "Rohingya"
+    },
+    {
+      "code": "zTEO",
+      "display": "Chinese - Teochoew"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 82
+}

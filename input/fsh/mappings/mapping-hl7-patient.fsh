@@ -1,8 +1,9 @@
-Mapping:  NZCentralRegionV2ToPatient
+Mapping:  NZCentralRegionHL7V2ToPatient
 Source:   NZCentralRegionPatient
 Target:   "https://standards.digital.health.nz/ns/central-region/hl7-v2"
 Id:       nzcr-patient-from-hl7v2
 Title:    "Central Region Message Specification (1.14)"
+Description:    "Central Region Message Specification (1.14) - Patient from ADT^031"
 
 * -> "Patient"
 * identifier[NHI] -> "" "if PID-3.4.2 == '2.16.840.1.113883.2.18.2'"

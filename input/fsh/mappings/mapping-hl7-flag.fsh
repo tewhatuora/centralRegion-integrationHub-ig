@@ -1,8 +1,9 @@
-Mapping:  NZCentralRegionV2ToFlag
+Mapping:  NZCentralRegionHL7V2ToFlag
 Source:   NZCentralRegionFlag
 Target:   "https://standards.digital.health.nz/ns/central-region/hl7-v2"
 Id:       nzcr-flag-from-hl7v2
 Title:    "Central Region Message Specification (1.14)"
+Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZAL"
 
 * category -> "ZAL-2"
 * category.coding.code -> "ZAL-2.1"

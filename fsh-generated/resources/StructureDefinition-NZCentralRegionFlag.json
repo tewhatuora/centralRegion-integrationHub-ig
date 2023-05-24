@@ -21,7 +21,8 @@
     {
       "identity": "nzcr-flag-from-hl7v2",
       "name": "Central Region Message Specification (1.14)",
-      "uri": "https://standards.digital.health.nz/ns/central-region/hl7-v2"
+      "uri": "https://standards.digital.health.nz/ns/central-region/hl7-v2",
+      "comment": "Central Region Message Specification (1.14) - Flag from ADT^031 ZAL"
     }
   ],
   "kind": "resource",
