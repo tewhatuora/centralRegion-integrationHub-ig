@@ -11,11 +11,16 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
 * contained 0..0
 
 * identifier 1..1 MS
-  * type 0..0
+  * use 1..1 MS
+  * system 1..1 MS
+  * system = $NZCentralRegionLocalAlertId
+  * value 1..1 MS
+  * type 0..0       // Nothing appropriate
   * period 0..0
   * assigner 0..0
   * extension 0..0
   * id 0..0
+
 * status 1..1 MS
 
 * category from nzcr-flag-alert-category-vs (required)
@@ -95,7 +100,7 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
     * type 1..1 MS
       * coding MS  
         * code 1..1 MS
-        * code = #LS
+        * code = #LR
         * system 1..1 MS 
         * system = $HL7IdentifierTypeCS
         * display 1..1 MS

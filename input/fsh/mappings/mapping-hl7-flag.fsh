@@ -3,7 +3,8 @@ Source:   NZCentralRegionFlag
 Target:   "https://standards.digital.health.nz/ns/central-region/hl7-v2"
 Id:       nzcr-flag-from-hl7v2
 Title:    "Central Region Message Specification (1.14)"
-Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZAL"
+Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZAL where Alert Type field `ZAL-2.1` with values from 
+[Flag Alert Type](./ValueSet-nzcr-flag-alert-type-vs.html) codes."
 
 * category -> "ZAL-2"
 * category.coding.code -> "ZAL-2.1"
@@ -18,7 +19,7 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 
 * category -> "ZAL-2"
 * category.coding.code -> "ZAL-2.1"
-* category.coding.system -> "''"
+* category.coding.system -> "'https://standards.digital.health.nz/ns/central-region/alert-category'"
 * category.coding.display -> "ZAL-2.2"
 
 * code -> "ZAL-3"
@@ -36,9 +37,6 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8"
 * code.coding.display -> "ZAL-3.2"
 
-* period.start -> "ZAL-5"
-* period.end -> "ZAL-9"   // or perhaps ZAL-8  - depends if we're using inactiveDate or endDate
-
 * subject.reference -> " " "read-only field"
 * subject.type -> "'Patient'"
 * subject.identifier -> "" "Select the NHI identifier from the list provided; where PID-3.4.2 = 2.16.840.1.113883.2.18.2"
@@ -50,6 +48,9 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
   * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
   * display -> "'Medical record number'"
 * subject.display -> "PID-5.1 + ', ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.5"
+
+* period.start -> "ZAL-5" "**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
+* period.end -> "ZAL-9"   // or perhaps ZAL-8  - depends if we're using inactiveDate or endDate
 
 * author.reference -> " " "read-only field"
 * author.type -> "'Practitioner'"
@@ -73,8 +74,8 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * extension[flag-alert].extension[inactiveDate].url -> "'inactiveDate'"
 * extension[flag-alert].extension[inactiveDate].valueDate -> "ZAL-9"
 
-* extension[flag-alert].extension[lastUpdatedDateTime].url -> "'lastUpdatedDateTime"
-* extension[flag-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11"
+* extension[flag-alert].extension[lastUpdatedDateTime].url -> "'lastUpdatedDateTime'"
+* extension[flag-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11" "**Note:** ISO-8601 datetime format includes dashes, 'T' and '+12:00' timezone"
 
 * extension[flag-alert].extension[lastUpdatedBy].url -> "'lastUpdatedBy'"
 * extension[flag-alert].extension[lastUpdatedBy].valueString -> "ZAL-11.1 + ' - ' + ZAL-11.2" "Not to be confused with Author"

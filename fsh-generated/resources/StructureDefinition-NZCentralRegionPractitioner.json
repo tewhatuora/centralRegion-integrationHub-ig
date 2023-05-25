@@ -90,7 +90,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://standards.digital.health.nz/ns/central-region/hl7-message"
+              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
             ]
           }
         ],

@@ -3,11 +3,16 @@ Alias:   $HL7PatientReligion       = http://hl7.org/fhir/StructureDefinition/pat
 Alias:   $HL7InterpreterRequired   = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
 
 // Code System URLs from FHIR base
-Alias:   $HL7IdentifierTypeCS      = http://terminology.hl7.org/CodeSystem/v2-0203
-Alias:   $HL7MaritalStatusCS       = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
-Alias:   $HL7RelationshipCS        = http://terminology.hl7.org/CodeSystem/v2-0131
-Alias:   $HL7PatientRelgionCS      = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
-Alias:   $HL7AllergyVerificationCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias:   $HL7IdentifierTypeCS        = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias:   $HL7MaritalStatusCS         = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
+Alias:   $HL7RelationshipCS          = http://terminology.hl7.org/CodeSystem/v2-0131
+Alias:   $HL7PatientRelgionCS        = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
+
+Alias:   $HL7AllergyTypeCS           = http://hl7.org/fhir/allergy-intolerance-type
+Alias:   $HL7AllergyCategoryCS       = http://hl7.org/fhir/allergy-intolerance-category
+Alias:   $HL7AllergyCriticalityCS    = http://hl7.org/fhir/allergy-intolerance-criticality
+Alias:   $HL7AllergyClinicalStatusCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias:   $HL7AllergyVerificationCS   = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
 // Extension URLs from NZ Base 
 Alias:   $NZBasePatient         = http://hl7.org.nz/fhir/StructureDefinition/NzPatient
@@ -32,7 +37,7 @@ Alias:   $NZBaseNZResidencyCS      = https://standards.digital.health.nz/ns/nz-r
 Alias:   $NZStatsEthnicityLevel4CS = https://standards.digital.health.nz/ns/ethnic-group-level-4-code
 
 // Local URLs for locally defined extensions
-Alias:   $NZCentralRegionHL7v2Message          = https://standards.digital.health.nz/ns/central-region/hl7-message
+Alias:   $NZCentralRegionHL7v2Message          = https://standards.digital.health.nz/ns/central-region/hl7v2-message
 Alias:   $NZCentralRegionAlert                 = https://standards.digital.health.nz/ns/central-region/alert
 
 // Local URLs for locally defined CodeSystems

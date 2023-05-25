@@ -27,7 +27,7 @@
       "identity": "nzcr-allergyintolerance-from-hl7v2",
       "name": "Central Region Message Specification (1.14)",
       "uri": "https://standards.digital.health.nz/ns/central-region/hl7-v2",
-      "comment": "Central Region Message Specification (1.14) - Allergy Intolerance from ADT^031 ZAL"
+      "comment": "Central Region Message Specification (1.14) - Allergy Intolerance from ADT^031 ZAL where Alert Type field `ZAL-2.1` with values from  [Allergy Alert Category](./ValueSet-nzcr-allergy-alert-category-vs.html) codes."
     }
   ],
   "kind": "resource",
@@ -67,7 +67,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://standards.digital.health.nz/ns/central-region/hl7-message"
+              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
             ]
           }
         ],
@@ -79,7 +79,7 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7v2-message'"
           }
         ]
       },
@@ -200,7 +200,8 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": "ZAL-8"
+            "map": "ZAL-8",
+            "comment": "**Note:** ISO Date format has dashes"
           }
         ]
       },
@@ -227,7 +228,8 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": "ZAL-7"
+            "map": "ZAL-7",
+            "comment": "**Note:** ISO Date format has dashes"
           }
         ]
       },
@@ -282,7 +284,8 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": "ZAL-11"
+            "map": "ZAL-11",
+            "comment": "\n**Note** Extend date field to ISO DateTime with 'T00:00:00+1200'"
           }
         ]
       },
@@ -367,8 +370,6 @@
       {
         "id": "AllergyIntolerance.identifier.use",
         "path": "AllergyIntolerance.identifier.use",
-        "min": 1,
-        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -377,9 +378,15 @@
         ]
       },
       {
+        "id": "AllergyIntolerance.identifier.type",
+        "path": "AllergyIntolerance.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "AllergyIntolerance.identifier.system",
         "path": "AllergyIntolerance.identifier.system",
         "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/pas-alert-id",
         "mustSupport": true,
         "mapping": [
           {
@@ -400,6 +407,16 @@
             "comment": "Concatenation of PatientId, Alert Category and Alert Code"
           }
         ]
+      },
+      {
+        "id": "AllergyIntolerance.identifier.period",
+        "path": "AllergyIntolerance.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.identifier.assigner",
+        "path": "AllergyIntolerance.identifier.assigner",
+        "max": "0"
       },
       {
         "id": "AllergyIntolerance.clinicalStatus",
@@ -438,6 +455,7 @@
         "id": "AllergyIntolerance.clinicalStatus.coding.system",
         "path": "AllergyIntolerance.clinicalStatus.coding.system",
         "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
         "mustSupport": true,
         "mapping": [
           {
@@ -518,6 +536,7 @@
         "id": "AllergyIntolerance.verificationStatus.coding.system",
         "path": "AllergyIntolerance.verificationStatus.coding.system",
         "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
         "mustSupport": true,
         "mapping": [
           {
@@ -570,7 +589,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "allergy | intolerance",
-            "comment": "TODO:  check if data available"
+            "comment": "TODO:  check if data available\n**Note:** not coding, so no system or display sub-fields"
           }
         ]
       },
@@ -599,7 +618,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "food | medication | environment | biologic",
-            "comment": "Lookup from ZAL-2.1 - perhaps ConceptMap from [A3 A4 Code System](./CodeSystem-nzcr-allergy-reaction-a3a4-cs.html) or [H1 H3 Code System](/CodeSystem-nzcr-allergy-reaction-h1h3-cs.html)"
+            "comment": "Lookup from ZAL-2.1 - perhaps ConceptMap from [A3 A4 Code System](./CodeSystem-nzcr-allergy-reaction-a3a4-cs.html) or [H1 H3 Code System](/CodeSystem-nzcr-allergy-reaction-h1h3-cs.html)\n**Note:** not coding, so no system or display sub-fields"
           }
         ]
       },
@@ -627,7 +646,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "low | high | unable-to-assess",
-            "comment": "perhaps derived from severity ??"
+            "comment": "perhaps derived from severity ??\n**Note:** not coding, so no system or display sub-fields"
           }
         ]
       },
@@ -980,7 +999,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-5",
-            "comment": "if there is no ZAL-9 value to complete onsetPeriod"
+            "comment": "if there is no ZAL-9 value to complete onsetPeriod\n**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
           }
         ]
       },
@@ -1003,7 +1022,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-5",
-            "comment": "only if there is ZAL-9 value to complete Period"
+            "comment": "only if there is ZAL-9 value to complete Period\n**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
           }
         ]
       },
@@ -1053,7 +1072,7 @@
       {
         "id": "AllergyIntolerance.recorder.type",
         "path": "AllergyIntolerance.recorder.type",
-        "short": "Type the reference refers to (e.g. 'Practitioner')",
+        "short": "Resource the reference refers to (e.g. 'Practitioner')",
         "min": 1,
         "patternUri": "Practitioner",
         "mustSupport": true,
@@ -1152,7 +1171,7 @@
         "id": "AllergyIntolerance.recorder.identifier.type.coding.code",
         "path": "AllergyIntolerance.recorder.identifier.type.coding.code",
         "min": 1,
-        "patternCode": "LS",
+        "patternCode": "LR",
         "mustSupport": true,
         "mapping": [
           {
@@ -1224,7 +1243,7 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": "ZAL-10.1 + ', ' + ZAL-10.2 + ' ' + ZAL-10.3 + ' ' + ZAL-10.5"
+            "map": "ZAL-10.2 + ', ' + ZAL-10.3 + ' ' + ZAL-10.4 + ' ' + ZAL-10.5"
           }
         ]
       },
@@ -1250,6 +1269,21 @@
             "map": "ZAL-14"
           }
         ]
+      },
+      {
+        "id": "AllergyIntolerance.note.author[x]",
+        "path": "AllergyIntolerance.note.author[x]",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.note.time",
+        "path": "AllergyIntolerance.note.time",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.note.text",
+        "path": "AllergyIntolerance.note.text",
+        "mustSupport": true
       },
       {
         "id": "AllergyIntolerance.reaction",

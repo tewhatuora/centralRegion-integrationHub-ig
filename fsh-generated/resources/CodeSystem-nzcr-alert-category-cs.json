@@ -72,9 +72,13 @@
     {
       "code": "H8",
       "display": "Care planning alerts"
+    },
+    {
+      "code": "food",
+      "display": "Food Allergy"
     }
   ],
   "experimental": false,
   "caseSensitive": true,
-  "count": 16
+  "count": 17
 }

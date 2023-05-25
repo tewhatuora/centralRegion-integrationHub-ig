@@ -225,7 +225,7 @@
           "reference": "CodeSystem/nzcr-allergy-alert-code-h3-cs"
         },
         "name": "NZ Central Region - Allergy Alert Codes (H3)",
-        "description": "H2 Allergy alert codes ex. WebPAS in NZ Central Region.",
+        "description": "H3 Allergy alert codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -390,6 +390,14 @@
       },
       {
         "reference": {
+          "reference": "Flag/PalliativeCare"
+        },
+        "name": "PalliativeCare",
+        "description": "An example of a Flag alert derived from ZAL custom segment, in Te Whatu Ora Central Region",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag"
+      },
+      {
+        "reference": {
           "reference": "Patient/Patient-Address-Suburb"
         },
         "name": "Patient-Address-Suburb",
@@ -483,6 +491,14 @@
         "name": "Patient-Residency",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/PeanutAllergy"
+        },
+        "name": "PeanutAllergy",
+        "description": "An example of an allergy/intolerance alert derived from ZAL custom segment, in Te Whatu Ora Central Region",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance"
       }
     ],
     "page": {

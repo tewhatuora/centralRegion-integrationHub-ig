@@ -7,9 +7,12 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
 * id 0..0
 
 * identifier 1..1 MS
-  * use 1..1 MS
   * system 1..1 MS
+  * system = $NZCentralRegionLocalAlertId
   * value 1..1 MS
+  * type 0..0       // Nothing appropriate
+  * period 0..0
+  * assigner 0..0
   * extension 0..0
   * id 0..0
   
@@ -17,6 +20,7 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
   * coding 1..1 MS
     * code 1..1 MS
     * system 1..1 MS
+    * system = $HL7AllergyClinicalStatusCS
     * display 1..1 MS
     * version 0..0
     * userSelected 0..0
@@ -29,6 +33,7 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
   * coding 1..1 MS
     * code 1..1 MS
     * system 1..1 MS
+    * system = $HL7AllergyVerificationCS
     * display 1..1 MS
     * version 0..0
     * userSelected 0..0
@@ -106,7 +111,7 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
 * recorder 1..1 MS
   * type 1..1 MS
   * type = "Practitioner"
-    * ^short = "Type the reference refers to (e.g. 'Practitioner')"
+    * ^short = "Resource the reference refers to (e.g. 'Practitioner')"
   * reference 0..1 MS
   * identifier 1..1 MS  // We must have the PAS Practitioner Id
     * use 1..1 MS
@@ -115,7 +120,7 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
     * type 1..1 MS
       * coding MS  
         * code 1..1 MS
-        * code = #LS
+        * code = #LR
         * system 1..1 MS 
         * system = $HL7IdentifierTypeCS
         * display 1..1 MS
@@ -136,6 +141,9 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
   * id 0..0
   
 * note 1..1 MS
+  * author[x] 0..0 // no data available
+  * time 0..0      // no data available
+  * text 1..1 MS   // no data available
 
 * reaction 0..0         // no data available - is record of specific reaction event
 * encounter 0..0        // no data available
@@ -161,4 +169,3 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
   * extension[lastUpdatedDateTime] 0..1 MS
   * extension[recordingHospital] 1..1 MS
   * extension[comments] 0..0 MS   // AllergyIntolerance has 'note' field
-

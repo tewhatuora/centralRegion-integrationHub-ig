@@ -3,7 +3,7 @@ Source:   NZCentralRegionAllergyIntolerance
 Target:   "https://standards.digital.health.nz/ns/central-region/hl7-v2"
 Id:       nzcr-allergyintolerance-from-hl7v2
 Title:    "Central Region Message Specification (1.14)"
-Description: "Central Region Message Specification (1.14) - Allergy Intolerance from ADT^031 ZAL"
+Description: "Central Region Message Specification (1.14) - Allergy Intolerance from ADT^031 ZAL where Alert Type field `ZAL-2.1` with values from  [Allergy Alert Category](./ValueSet-nzcr-allergy-alert-category-vs.html) codes."
 
 * identifier.use -> "'usual'"
 * identifier.system -> "'https://standards.digital.health.nz/ns/pas-alert-id'"
@@ -22,11 +22,11 @@ Description: "Central Region Message Specification (1.14) - Allergy Intolerance 
     * system -> "'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification'"
     * display -> "'Confirmed'"
 
-* type -> "allergy | intolerance" "TODO:  check if data available"
+* type -> "allergy | intolerance" "TODO:  check if data available\n**Note:** not coding, so no system or display sub-fields"
 
-* category -> "food | medication | environment | biologic" "Lookup from ZAL-2.1 - perhaps ConceptMap from [A3 A4 Code System](./CodeSystem-nzcr-allergy-reaction-a3a4-cs.html) or [H1 H3 Code System](/CodeSystem-nzcr-allergy-reaction-h1h3-cs.html)"
+* category -> "food | medication | environment | biologic" "Lookup from ZAL-2.1 - perhaps ConceptMap from [A3 A4 Code System](./CodeSystem-nzcr-allergy-reaction-a3a4-cs.html) or [H1 H3 Code System](/CodeSystem-nzcr-allergy-reaction-h1h3-cs.html)\n**Note:** not coding, so no system or display sub-fields"
 
-* criticality -> "low | high | unable-to-assess" "perhaps derived from severity ??"
+* criticality -> "low | high | unable-to-assess" "perhaps derived from severity ??\n**Note:** not coding, so no system or display sub-fields"
 
 * code.coding.code -> "ZAL-3.1"
 * code.coding.system -> " " "One of:
@@ -50,8 +50,8 @@ depending upon value of ZAL-2.1"
   * display -> "'Medical record number'"
 * patient.display -> "PID-5.1 + ', ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.5"
 
-* onsetDateTime -> "ZAL-5"  "if there is no ZAL-9 value to complete onsetPeriod"
-* onsetPeriod.start -> "ZAL-5" "only if there is ZAL-9 value to complete Period"
+* onsetDateTime -> "ZAL-5"  "if there is no ZAL-9 value to complete onsetPeriod\n**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
+* onsetPeriod.start -> "ZAL-5" "only if there is ZAL-9 value to complete Period\n**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
 * onsetPeriod.end -> "ZAL-9" 
 
 * recorder.reference -> " " "read-only field"
@@ -64,7 +64,7 @@ depending upon value of ZAL-2.1"
   * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
   * display -> "'Local registry ID'"
 
-* recorder.display -> "ZAL-10.1 + ', ' + ZAL-10.2 + ' ' + ZAL-10.3 + ' ' + ZAL-10.5"
+* recorder.display -> "ZAL-10.2 + ', ' + ZAL-10.3 + ' ' + ZAL-10.4 + ' ' + ZAL-10.5"
 
 * note -> "ZAL-14"
 
@@ -77,13 +77,13 @@ depending upon value of ZAL-2.1"
 * extension[allergy-alert].extension[allergyReaction].valueString -> "ZAL-4"
 
 * extension[allergy-alert].extension[reviewDate].url -> "'reviewDate'"
-* extension[allergy-alert].extension[reviewDate].valueDate -> "ZAL-7"
+* extension[allergy-alert].extension[reviewDate].valueDate -> "ZAL-7" "**Note:** ISO Date format has dashes"
 
 * extension[allergy-alert].extension[inactiveDate].url -> "'inactiveDate'"
-* extension[allergy-alert].extension[inactiveDate].valueDate -> "ZAL-8"
+* extension[allergy-alert].extension[inactiveDate].valueDate -> "ZAL-8" "**Note:** ISO Date format has dashes"
 
 * extension[allergy-alert].extension[lastUpdatedDateTime].url -> "'lastUpdatedDateTime'"
-* extension[allergy-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11"
+* extension[allergy-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11" "\n**Note** Extend date field to ISO DateTime with 'T00:00:00+1200'" 
 
 * extension[allergy-alert].extension[lastUpdatedBy].url -> "'lastUpdatedBy'"
 * extension[allergy-alert].extension[lastUpdatedBy].valueString -> "ZAL-11.1 + ' - ' + ZAL-11.2" "Not to be confused with Recorder"
@@ -93,5 +93,5 @@ depending upon value of ZAL-2.1"
 * extension[allergy-alert].extension[recordingHospital].value[x].system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
 * extension[allergy-alert].extension[recordingHospital].value[x].display -> "ZAL-13.2"
 
-* extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+* extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7v2-message'"
 * extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

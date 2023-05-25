@@ -24,6 +24,7 @@ Description:  "Alert Category codes ex. WebPAS in NZ Central Region"
 * #H7	"Disability Alerts"
 * #H8	"Care planning alerts"
 
+* #food "Food Allergy"   // from sample not documentation
 
 
 

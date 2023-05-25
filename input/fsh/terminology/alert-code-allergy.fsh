@@ -160,7 +160,7 @@ Description:  "H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 CodeSystem:  NZCentralRegionAllergyAlertCodeH3CodeSystem
 Id: nzcr-allergy-alert-code-h3-cs
 Title: "NZ Central Region - Allergy Alert Codes (H3)"
-Description:  "H2 Allergy alert codes ex. WebPAS in NZ Central Region."
+Description:  "H3 Allergy alert codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyAlertCodeH3CS
 * ^experimental = false
@@ -191,6 +191,7 @@ Description:  "H2 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #T01  "tegaderm"
 * #W01  "wheat/gluten"
 
+* #PEANUT "Allergy to Peanuts"  // from sample not documentation
 
 ValueSet: NZCentralRegionAllergyAlertCodeValueSet
 Id: nzcr-allergy-alert-code-vs

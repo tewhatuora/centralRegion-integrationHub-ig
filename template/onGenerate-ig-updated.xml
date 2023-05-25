@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-05-24T16:14:11+12:00"/>
+   <date value="2023-05-25T17:13:38+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -643,7 +643,7 @@
             <reference value="CodeSystem/nzcr-allergy-alert-code-h3-cs"/>
          </reference>
          <name value="NZ Central Region - Allergy Alert Codes (H3)"/>
-         <description value="H2 Allergy alert codes ex. WebPAS in NZ Central Region."/>
+         <description value="H3 Allergy alert codes ex. WebPAS in NZ Central Region."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
       </resource>
@@ -949,6 +949,21 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Flag"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Flag-PalliativeCare.html"/>
+         </extension>
+         <reference>
+            <reference value="Flag/PalliativeCare"/>
+         </reference>
+         <name value="PalliativeCare"/>
+         <description value="An example of a Flag alert derived from ZAL custom segment, in Te Whatu Ora Central Region"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -1125,6 +1140,21 @@
          <name value="Patient-Residency"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="AllergyIntolerance"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="AllergyIntolerance-PeanutAllergy.html"/>
+         </extension>
+         <reference>
+            <reference value="AllergyIntolerance/PeanutAllergy"/>
+         </reference>
+         <name value="PeanutAllergy"/>
+         <description value="An example of an allergy/intolerance alert derived from ZAL custom segment, in Te Whatu Ora Central Region"/>
+         <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -1386,6 +1416,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Flag-PalliativeCare.html"/>
+               <title value="PalliativeCare"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Patient-Patient-Address-Suburb.html"/>
                <title value="Patient-Address-Suburb"/>
                <generation value="generated"/>
@@ -1443,6 +1478,11 @@
             <page>
                <nameUrl value="Patient-Patient-Residency.html"/>
                <title value="Patient-Residency"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="AllergyIntolerance-PeanutAllergy.html"/>
+               <title value="PeanutAllergy"/>
                <generation value="generated"/>
             </page>
          </page>
