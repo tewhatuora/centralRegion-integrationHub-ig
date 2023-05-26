@@ -160,8 +160,8 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
     * ^definition = "Severity level in range 0..9"
     * ^short = "Severity level in range 0..9"
   * extension[allergyReaction] 1..1 MS
-    * ^definition = "Allergy reaction description"
-    * ^short = "Allergy reaction description"
+    * ^definition = "Allergy reaction code - defined as string, should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)"
+    * ^short = "Allergy reaction - should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)"
 
   * extension[inactiveDate] 0..1 MS     // not to be confused with period.end
   * extension[reviewDate] 0..1 MS

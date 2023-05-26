@@ -1,5 +1,5 @@
 CodeSystem:  NZCentralRegionLanguageCodeSystem
-Id: nzcr-language-code-system
+Id: nzcr-language-cs
 Title: "NZ Central Region - Language Code System"
 Description:  "Language codes ex. WebPAS in NZ Central Region."
 
@@ -92,11 +92,11 @@ Description:  "Language codes ex. WebPAS in NZ Central Region."
 
 
 ValueSet: NZCentralRegionLanguageValueSet
-Id: nzcr-language-value-set
+Id: nzcr-language-vs
 Title: "NZ Central Region - Language Value Set"
 Description:  "Language codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionLanguageVS
 * ^experimental = false
 
-* include codes from system nzcr-language-code-system
+* include codes from system nzcr-language-cs

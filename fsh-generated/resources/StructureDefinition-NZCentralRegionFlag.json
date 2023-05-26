@@ -553,7 +553,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/falg-alert-code"
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/flag-alert-code"
         },
         "mapping": [
           {

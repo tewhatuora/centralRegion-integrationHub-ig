@@ -1,0 +1,352 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionMentalHealthLegalStatusCodeSystem",
+  "id": "nzcr-mental-health-legal-status-cs",
+  "title": "NZ Central Region - MentalHealthLegalStatus Code System",
+  "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/mental-health-legal-status",
+  "concept": [
+    {
+      "code": "R01",
+      "display": "Informal patient"
+    },
+    {
+      "code": "R02",
+      "display": "A & D Act - S21"
+    },
+    {
+      "code": "R03",
+      "display": "A & D Act - S8"
+    },
+    {
+      "code": "R04",
+      "display": "A & D Act - S9"
+    },
+    {
+      "code": "R05",
+      "display": "CPMIP S23"
+    },
+    {
+      "code": "R06",
+      "display": "CPMIP S24(2)a Insane"
+    },
+    {
+      "code": "R07",
+      "display": "CPMIP S24(2)a UTST"
+    },
+    {
+      "code": "R08",
+      "display": "CPMIP S24(2)b Insane"
+    },
+    {
+      "code": "R09",
+      "display": "CPMIP S24(2)b UTST"
+    },
+    {
+      "code": "R10",
+      "display": "CPMIP S25(1)b"
+    },
+    {
+      "code": "R11",
+      "display": "CPMIP S34(1)(a)(i)"
+    },
+    {
+      "code": "R12",
+      "display": "CPMIP S34(1)a(ii)"
+    },
+    {
+      "code": "R13",
+      "display": "CPMIP S34(1)b(ii)"
+    },
+    {
+      "code": "R14",
+      "display": "CPMIP S35"
+    },
+    {
+      "code": "R15",
+      "display": "CPMIP S38(2)(a)"
+    },
+    {
+      "code": "R16",
+      "display": "CPMIP S38(2)c"
+    },
+    {
+      "code": "R17",
+      "display": "CPMIP S44(1)"
+    },
+    {
+      "code": "R18",
+      "display": "CYPF Act - S181"
+    },
+    {
+      "code": "R19",
+      "display": "CYPF Act - S178"
+    },
+    {
+      "code": "R20",
+      "display": "Health Act - S126"
+    },
+    {
+      "code": "R21",
+      "display": "ID(CC & R) Act - S35"
+    },
+    {
+      "code": "R22",
+      "display": "ID(CC & R) Act - S45"
+    },
+    {
+      "code": "R23",
+      "display": "MHA S11"
+    },
+    {
+      "code": "R24",
+      "display": "MHA S13"
+    },
+    {
+      "code": "R25",
+      "display": "MHA S15(1)"
+    },
+    {
+      "code": "R26",
+      "display": "MHA S15(2)"
+    },
+    {
+      "code": "R27",
+      "display": "MHA S29 CTO"
+    },
+    {
+      "code": "R28",
+      "display": "MHA S29 Extn"
+    },
+    {
+      "code": "R29",
+      "display": "MHA S29 Indef CTO"
+    },
+    {
+      "code": "R30",
+      "display": "MHA S29(3)a"
+    },
+    {
+      "code": "R31",
+      "display": "MHA S30 CTO"
+    },
+    {
+      "code": "R32",
+      "display": "MHA S30 Extn"
+    },
+    {
+      "code": "R33",
+      "display": "MHA S30 Indef CTO"
+    },
+    {
+      "code": "R34",
+      "display": "MHA S31 IP on leave"
+    },
+    {
+      "code": "R35",
+      "display": "MHA S45 & S11Special"
+    },
+    {
+      "code": "R36",
+      "display": "MHA S45 & S13Special"
+    },
+    {
+      "code": "R37",
+      "display": "MHA S45 & S30Special"
+    },
+    {
+      "code": "R38",
+      "display": "MHA S45 &S15(1)"
+    },
+    {
+      "code": "R39",
+      "display": "MHA S45 & S15(2)"
+    },
+    {
+      "code": "R40",
+      "display": "MHA S46 Special"
+    },
+    {
+      "code": "R41",
+      "display": "MHA S55 Restricted"
+    },
+    {
+      "code": "R42",
+      "display": "Parole Act - S35"
+    },
+    {
+      "code": "R44",
+      "display": "MHA S111"
+    },
+    {
+      "code": "R45",
+      "display": "MHA S16 (H/held)"
+    },
+    {
+      "code": "R46",
+      "display": "MHA S31(4) Leave can"
+    },
+    {
+      "code": "R47",
+      "display": "MHA S59 consent 2 Tx"
+    },
+    {
+      "code": "R48",
+      "display": "MHA S76(3) review"
+    },
+    {
+      "code": "R49",
+      "display": "MHA Tribunal h/held"
+    },
+    {
+      "code": "R50",
+      "display": "Released from Act"
+    },
+    {
+      "code": "R51",
+      "display": "MHA S34 extension"
+    },
+    {
+      "code": "R52",
+      "display": "MHA S8A(Appl for Ax)"
+    },
+    {
+      "code": "R53",
+      "display": "MHA S8B (med cert)"
+    },
+    {
+      "code": "R54",
+      "display": "MHA S9 Notice client"
+    },
+    {
+      "code": "R55",
+      "display": "MHA S10 Cert Of Ax"
+    },
+    {
+      "code": "R56",
+      "display": "MHA Transfer in"
+    },
+    {
+      "code": "R57",
+      "display": "MHA Transfer out"
+    },
+    {
+      "code": "R58",
+      "display": "Lapsed to informal"
+    },
+    {
+      "code": "R59",
+      "display": "MHA S29 volun admiss"
+    },
+    {
+      "code": "R60",
+      "display": "Released fm assess"
+    },
+    {
+      "code": "R61",
+      "display": "MHA S29(3b)"
+    },
+    {
+      "code": "R62",
+      "display": "MHA S113A (warrant)"
+    },
+    {
+      "code": "R63",
+      "display": "MHA S59 2nd opinion"
+    },
+    {
+      "code": "R64",
+      "display": "MHA S60 2nd opin ECT"
+    },
+    {
+      "code": "R65",
+      "display": "MHA S60 Consent 2 Tx"
+    },
+    {
+      "code": "R66",
+      "display": "Unfit to drive"
+    },
+    {
+      "code": "R67",
+      "display": "SA(CAT) Act - S14"
+    },
+    {
+      "code": "R68",
+      "display": "SA(CAT) Act - S23"
+    },
+    {
+      "code": "R69",
+      "display": "SA(CAT) Act - S32"
+    },
+    {
+      "code": "R70",
+      "display": "SA(CAT) Act - S46"
+    },
+    {
+      "code": "R71",
+      "display": "SA(CAT) Act - S47"
+    },
+    {
+      "code": "R72",
+      "display": "SA(CAT) Act - S39"
+    },
+    {
+      "code": "R73",
+      "display": "MHA S08A Application"
+    },
+    {
+      "code": "R74",
+      "display": "MHA S08B Med cert"
+    },
+    {
+      "code": "R75",
+      "display": "MHA S09 DAO notice"
+    },
+    {
+      "code": "R76",
+      "display": "MHA S11(5)(b)"
+    },
+    {
+      "code": "R77",
+      "display": "MHA S13(5)(b)"
+    },
+    {
+      "code": "R78",
+      "display": "MHA S109 Police"
+    },
+    {
+      "code": "R79",
+      "display": "Notice of death S132"
+    },
+    {
+      "code": "R80",
+      "display": "Cust Sent S36(2)(b))"
+    },
+    {
+      "code": "R81",
+      "display": "Released (S35)"
+    },
+    {
+      "code": "R82",
+      "display": "CPMIP S25(1)a UTST"
+    },
+    {
+      "code": "R83",
+      "display": "S11(4) Cancel Leave"
+    },
+    {
+      "code": "R84",
+      "display": "S13(4) Ntce Can Leav"
+    },
+    {
+      "code": "R85",
+      "display": "S16 Withdrawn"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 84
+}

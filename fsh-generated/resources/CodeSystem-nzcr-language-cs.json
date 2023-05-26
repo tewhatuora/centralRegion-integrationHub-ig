@@ -3,7 +3,7 @@
   "status": "active",
   "content": "complete",
   "name": "NZCentralRegionLanguageCodeSystem",
-  "id": "nzcr-language-code-system",
+  "id": "nzcr-language-cs",
   "title": "NZ Central Region - Language Code System",
   "description": "Language codes ex. WebPAS in NZ Central Region.",
   "version": "0.1.0",

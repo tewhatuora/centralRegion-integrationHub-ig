@@ -151,8 +151,8 @@
         "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction",
         "path": "AllergyIntolerance.extension.extension",
         "sliceName": "allergyReaction",
-        "short": "Allergy reaction description",
-        "definition": "Allergy reaction description",
+        "short": "Allergy reaction - should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)",
+        "definition": "Allergy reaction code - defined as string, should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)",
         "min": 1
       },
       {

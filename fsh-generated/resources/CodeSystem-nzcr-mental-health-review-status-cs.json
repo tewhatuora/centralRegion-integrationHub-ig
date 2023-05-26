@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionMentalHealthReviewStatusCodeSystem",
+  "id": "nzcr-mental-health-review-status-cs",
+  "title": "NZ Central Region - MentalHealthReviewStatus Code System",
+  "description": "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region.",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/mental-health-review-status",
+  "concept": [
+    {
+      "code": "R02",
+      "display": "Not in pat interest"
+    },
+    {
+      "code": "R03",
+      "display": "Not recorded"
+    },
+    {
+      "code": "R04",
+      "display": "Not reas practical"
+    },
+    {
+      "code": "R05",
+      "display": "Yes"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 4
+}

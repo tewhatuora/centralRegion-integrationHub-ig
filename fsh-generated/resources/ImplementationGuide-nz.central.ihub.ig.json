@@ -54,6 +54,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/NZCentralRegionClinicalImpression"
+        },
+        "name": "NZCentralRegionClinicalImpression",
+        "description": "ClinicalImpression resource for Te Whatu Ora, Central Region - holds mental health legal statuses",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/NZCentralRegionFlag"
         },
         "name": "NZCentralRegionFlag",
@@ -90,6 +98,14 @@
         },
         "name": "HL7 v2 Message",
         "description": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nzcr-mental-health"
+        },
+        "name": "NZ Central Region Mental Health",
+        "description": "Complex extension recording meta data about patient's mental health, particularly legal status",
         "exampleBoolean": false
       },
       {
@@ -166,7 +182,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-language-value-set"
+          "reference": "ValueSet/nzcr-language-vs"
         },
         "name": "NZ Central Region - Language Value Set",
         "description": "Language codes ex. WebPAS in NZ Central Region.",
@@ -178,6 +194,22 @@
         },
         "name": "NZ Central Region - Marital Status Value Set",
         "description": "Combined Marital Status value set with values that are in use in Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-mental-health-legal-status-vs"
+        },
+        "name": "NZ Central Region - MentalHealthLegalStatus Value Set",
+        "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-mental-health-review-status-vs"
+        },
+        "name": "NZ Central Region - MentalHealthReviewStatus Value Set",
+        "description": "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -358,10 +390,26 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-language-code-system"
+          "reference": "CodeSystem/nzcr-language-cs"
         },
         "name": "NZ Central Region - Language Code System",
         "description": "Language codes ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-mental-health-legal-status-cs"
+        },
+        "name": "NZ Central Region - MentalHealthLegalStatus Code System",
+        "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-mental-health-review-status-cs"
+        },
+        "name": "NZ Central Region - MentalHealthReviewStatus Code System",
+        "description": "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {

@@ -1,0 +1,521 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NZCentralRegionClinicalImpression",
+  "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionClinicalImpression",
+  "version": "0.1.0",
+  "name": "NZCentralRegionClinicalImpression",
+  "status": "active",
+  "description": "ClinicalImpression resource for Te Whatu Ora, Central Region - holds mental health legal statuses",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ClinicalImpression",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ClinicalImpression.id",
+        "path": "ClinicalImpression.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.implicitRules",
+        "path": "ClinicalImpression.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.language",
+        "path": "ClinicalImpression.language",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.contained",
+        "path": "ClinicalImpression.contained",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.extension",
+        "path": "ClinicalImpression.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth",
+        "path": "ClinicalImpression.extension",
+        "sliceName": "mentalHealth",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/mental-health"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.extension:hl7v2Message",
+        "path": "ClinicalImpression.extension",
+        "sliceName": "hl7v2Message",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.identifier",
+        "path": "ClinicalImpression.identifier",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.identifier.id",
+        "path": "ClinicalImpression.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.identifier.extension",
+        "path": "ClinicalImpression.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.identifier.use",
+        "path": "ClinicalImpression.identifier.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.identifier.type",
+        "path": "ClinicalImpression.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.identifier.system",
+        "path": "ClinicalImpression.identifier.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/pas-clinical-impression-id",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.identifier.value",
+        "path": "ClinicalImpression.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.identifier.period",
+        "path": "ClinicalImpression.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.identifier.assigner",
+        "path": "ClinicalImpression.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.status",
+        "path": "ClinicalImpression.status",
+        "patternCode": "completed",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.statusReason",
+        "path": "ClinicalImpression.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.code",
+        "path": "ClinicalImpression.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.description",
+        "path": "ClinicalImpression.description",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject",
+        "path": "ClinicalImpression.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.id",
+        "path": "ClinicalImpression.subject.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.extension",
+        "path": "ClinicalImpression.subject.extension",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.reference",
+        "path": "ClinicalImpression.subject.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.type",
+        "path": "ClinicalImpression.subject.type",
+        "min": 1,
+        "patternUri": "Patient",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier",
+        "path": "ClinicalImpression.subject.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.id",
+        "path": "ClinicalImpression.subject.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.extension",
+        "path": "ClinicalImpression.subject.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.use",
+        "path": "ClinicalImpression.subject.identifier.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type",
+        "path": "ClinicalImpression.subject.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.id",
+        "path": "ClinicalImpression.subject.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.extension",
+        "path": "ClinicalImpression.subject.identifier.type.extension",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.coding",
+        "path": "ClinicalImpression.subject.identifier.type.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.coding.id",
+        "path": "ClinicalImpression.subject.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.coding.extension",
+        "path": "ClinicalImpression.subject.identifier.type.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.coding.system",
+        "path": "ClinicalImpression.subject.identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.coding.version",
+        "path": "ClinicalImpression.subject.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.coding.code",
+        "path": "ClinicalImpression.subject.identifier.type.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.coding.display",
+        "path": "ClinicalImpression.subject.identifier.type.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.coding.userSelected",
+        "path": "ClinicalImpression.subject.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.type.text",
+        "path": "ClinicalImpression.subject.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.system",
+        "path": "ClinicalImpression.subject.identifier.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/nhi-id",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.value",
+        "path": "ClinicalImpression.subject.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.period",
+        "path": "ClinicalImpression.subject.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.identifier.assigner",
+        "path": "ClinicalImpression.subject.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.subject.display",
+        "path": "ClinicalImpression.subject.display",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.encounter",
+        "path": "ClinicalImpression.encounter",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.effective[x]",
+        "path": "ClinicalImpression.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.date",
+        "path": "ClinicalImpression.date",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.id",
+        "path": "ClinicalImpression.assessor.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.extension",
+        "path": "ClinicalImpression.assessor.extension",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.reference",
+        "path": "ClinicalImpression.assessor.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.type",
+        "path": "ClinicalImpression.assessor.type",
+        "short": "Type the reference refers to (e.g. 'Practitioner')",
+        "min": 1,
+        "patternUri": "Practitioner",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier",
+        "path": "ClinicalImpression.assessor.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.id",
+        "path": "ClinicalImpression.assessor.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.extension",
+        "path": "ClinicalImpression.assessor.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.use",
+        "path": "ClinicalImpression.assessor.identifier.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type",
+        "path": "ClinicalImpression.assessor.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.id",
+        "path": "ClinicalImpression.assessor.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.extension",
+        "path": "ClinicalImpression.assessor.identifier.type.extension",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.coding",
+        "path": "ClinicalImpression.assessor.identifier.type.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.coding.id",
+        "path": "ClinicalImpression.assessor.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.coding.extension",
+        "path": "ClinicalImpression.assessor.identifier.type.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.coding.system",
+        "path": "ClinicalImpression.assessor.identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.coding.version",
+        "path": "ClinicalImpression.assessor.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.coding.code",
+        "path": "ClinicalImpression.assessor.identifier.type.coding.code",
+        "min": 1,
+        "patternCode": "LR",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.coding.display",
+        "path": "ClinicalImpression.assessor.identifier.type.coding.display",
+        "min": 1,
+        "patternString": "Local Registry ID",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.coding.userSelected",
+        "path": "ClinicalImpression.assessor.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.type.text",
+        "path": "ClinicalImpression.assessor.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.system",
+        "path": "ClinicalImpression.assessor.identifier.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.period",
+        "path": "ClinicalImpression.assessor.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.assigner",
+        "path": "ClinicalImpression.assessor.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.assessor.display",
+        "path": "ClinicalImpression.assessor.display",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.previous",
+        "path": "ClinicalImpression.previous",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.problem",
+        "path": "ClinicalImpression.problem",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.protocol",
+        "path": "ClinicalImpression.protocol",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.summary",
+        "path": "ClinicalImpression.summary",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.prognosisCodeableConcept",
+        "path": "ClinicalImpression.prognosisCodeableConcept",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.prognosisReference",
+        "path": "ClinicalImpression.prognosisReference",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.supportingInfo",
+        "path": "ClinicalImpression.supportingInfo",
+        "max": "0"
+      },
+      {
+        "id": "ClinicalImpression.note",
+        "path": "ClinicalImpression.note",
+        "max": "0"
+      }
+    ]
+  }
+}

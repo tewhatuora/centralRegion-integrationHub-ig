@@ -1,0 +1,137 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nzcr-mental-health",
+  "url": "https://standards.digital.health.nz/ns/central-region/mental-health",
+  "version": "0.1.0",
+  "name": "NZCentralRegionMentalHealth",
+  "title": "NZ Central Region Mental Health",
+  "status": "active",
+  "description": "Complex extension recording meta data about patient's mental health, particularly legal status",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ClinicalImpression"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NZ Central Region Mental Health",
+        "definition": "Complex extension recording meta data about patient's mental health, particularly legal status"
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "short": "Container holding the individual elements of the Patient's mental health status.",
+        "definition": "Container holding the individual elements of the Patient's mental health status.",
+        "min": 2
+      },
+      {
+        "id": "Extension.extension:legalStatus",
+        "path": "Extension.extension",
+        "sliceName": "legalStatus",
+        "short": "Mental Health Legal Status",
+        "definition": "Mental Health Legal Status (at the time of the review)",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:legalStatus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:legalStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "legalStatus"
+      },
+      {
+        "id": "Extension.extension:legalStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-legal-status"
+        }
+      },
+      {
+        "id": "Extension.extension:reviewStatus",
+        "path": "Extension.extension",
+        "sliceName": "reviewStatus",
+        "short": "Mental Health Review Status",
+        "definition": "Mental Health Review Status (Section 7A Consultation)",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:reviewStatus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reviewStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reviewStatus"
+      },
+      {
+        "id": "Extension.extension:reviewStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-review-status"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://standards.digital.health.nz/ns/central-region/mental-health"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
