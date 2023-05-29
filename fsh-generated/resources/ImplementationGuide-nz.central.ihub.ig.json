@@ -198,10 +198,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nzcr-mental-health-court-type-vs"
+        },
+        "name": "NZ Central Region - Mental Health Court Type Value Set",
+        "description": "Mental Health Court Type identification codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/nzcr-mental-health-legal-status-vs"
         },
         "name": "NZ Central Region - MentalHealthLegalStatus Value Set",
         "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-mental-health-review-location-vs"
+        },
+        "name": "NZ Central Region - Mental Health Review Location Value Set",
+        "description": "Mental Health Review Location identification codes ex. WebPAS in NZ Central Region",
         "exampleBoolean": false
       },
       {
@@ -398,10 +414,26 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/nzcr-mental-health-court-type-cs"
+        },
+        "name": "NZ Central Region - Mental Health Court Type Code System",
+        "description": "Mental Health Court Type identification codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nzcr-mental-health-legal-status-cs"
         },
         "name": "NZ Central Region - MentalHealthLegalStatus Code System",
         "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-mental-health-review-location-code-cs"
+        },
+        "name": "NZ Central Region - Mental Health Review Location Code System",
+        "description": "Mental Health Review Location identification codes ex. WebPAS in NZ Central Region",
         "exampleBoolean": false
       },
       {

@@ -27,6 +27,12 @@
       "identity": "rim",
       "uri": "http://hl7.org/v3",
       "name": "RIM Mapping"
+    },
+    {
+      "identity": "nzcr-clinical-impression-from-hl7v2",
+      "name": "Central Region Message Specification (1.14)",
+      "uri": "https://standards.digital.health.nz/ns/central-region/hl7-v2",
+      "comment": "Central Region Message Specification (1.14) - ClinicalImpression from ADT^031 ZLS segment"
     }
   ],
   "kind": "resource",
@@ -88,6 +94,593 @@
         "mustSupport": true
       },
       {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "legalStatus"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'legalStatus'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": ""
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/mental-health-legal-status'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-2.1"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-2.2"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "reviewStatus"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'reviewStatus'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": ""
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/mental-health-review-status'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-5.1"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-5.2"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:startDateTime",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "startDateTime"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:startDateTime.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'startDateTime'"
+          },
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'endDateTime'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:startDateTime.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-3",
+            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+          },
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-4",
+            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "location"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'location'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": ""
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/mental-health-review-location'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-7.1"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-7.2"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reminderDate",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "reminderDate"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reminderDate.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'reminderDate'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reminderDate.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-9",
+            "comment": "**Note**ISO Date has field separators"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:addedBy",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "addedBy"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:addedBy.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'addedBy'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:addedBy.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-11.1 + ' - ' + ZLS=11.2"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:addedDateTime",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "addedDateTime"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:addedDateTime.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'addedDateTime'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:addedDateTime.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-12",
+            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:lastUpdatedBy",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "lastUpdatedBy"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:lastUpdatedBy.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'lastUpdatedBy'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:lastUpdatedBy.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-13.1 + ' - ' + ZLS=13.2"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:lastUpdatedDateTime",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "lastUpdatedDateTime"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:lastUpdatedDateTime.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'addedDateTime'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:lastUpdatedDateTime.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-14",
+            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "supplementaryLegalStatus"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'supplementaryLegalStatus'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": ""
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/mental-health-legal-status'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-15.1"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-15.2"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatusDate",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "supplementaryLegalStatusDate"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatusDate.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'supplementaryLegalStatusDate'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatusDate.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-16",
+            "comment": "**Note**ISO Date has field separators"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewDate",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "reviewDate"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewDate.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'reviewDate'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewDate.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-17",
+            "comment": "**Note**ISO Date has field separators"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtNoticeSentDate",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "courtNoticeSentDate"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtNoticeSentDate.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'courtNoticeSentDate'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtNoticeSentDate.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-18",
+            "comment": "**Note**ISO Date has field separators"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:tribunalDate",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "tribunalDate"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:tribunalDate.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'tribunalDate'"
+          },
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'tribunalDate'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:tribunalDate.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-19",
+            "comment": "**Note**ISO Date has field separators"
+          },
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-20",
+            "comment": "**Note**ISO Date has field separators"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtLodgedDate",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "courtLodgedDate"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtLodgedDate.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'courtLodgedDate'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtLodgedDate.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-21",
+            "comment": "**Note**ISO Date has field separators"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType",
+        "path": "ClinicalImpression.extension.extension",
+        "sliceName": "courtType"
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.url",
+        "path": "ClinicalImpression.extension.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'courtType'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": ""
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/mental-health-legal-status'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-22.1"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-22.2"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:mentalHealth.url",
+        "path": "ClinicalImpression.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/alert'"
+          }
+        ]
+      },
+      {
         "id": "ClinicalImpression.extension:hl7v2Message",
         "path": "ClinicalImpression.extension",
         "sliceName": "hl7v2Message",
@@ -102,6 +695,29 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.extension:hl7v2Message.url",
+        "path": "ClinicalImpression.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.extension:hl7v2Message.valueBase64Binary",
+        "path": "ClinicalImpression.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "Entire incoming HL7 message",
+            "comment": "Base64 encoded"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.identifier",
@@ -194,20 +810,40 @@
       {
         "id": "ClinicalImpression.subject.reference",
         "path": "ClinicalImpression.subject.reference",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": " ",
+            "comment": "read-only field"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.subject.type",
         "path": "ClinicalImpression.subject.type",
         "min": 1,
         "patternUri": "Patient",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'Patient'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.subject.identifier",
         "path": "ClinicalImpression.subject.identifier",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "",
+            "comment": "Select the NHI identifier from the list provided; where PID-3.4.2 = 2.16.840.1.113883.2.18.2"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.subject.identifier.id",
@@ -223,7 +859,13 @@
         "id": "ClinicalImpression.subject.identifier.use",
         "path": "ClinicalImpression.subject.identifier.use",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.subject.identifier.type",
@@ -261,7 +903,13 @@
         "path": "ClinicalImpression.subject.identifier.type.coding.system",
         "min": 1,
         "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.subject.identifier.type.coding.version",
@@ -272,13 +920,25 @@
         "id": "ClinicalImpression.subject.identifier.type.coding.code",
         "path": "ClinicalImpression.subject.identifier.type.coding.code",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'MR'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.subject.identifier.type.coding.display",
         "path": "ClinicalImpression.subject.identifier.type.coding.display",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'Medical record number'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.subject.identifier.type.coding.userSelected",
@@ -295,13 +955,25 @@
         "path": "ClinicalImpression.subject.identifier.system",
         "min": 1,
         "patternUri": "https://standards.digital.health.nz/ns/nhi-id",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/nhi-id'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.subject.identifier.value",
         "path": "ClinicalImpression.subject.identifier.value",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "PID-3.1"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.subject.identifier.period",
@@ -316,7 +988,13 @@
       {
         "id": "ClinicalImpression.subject.display",
         "path": "ClinicalImpression.subject.display",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "PID-5.1 + ', ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.5"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.encounter",
@@ -326,6 +1004,16 @@
       {
         "id": "ClinicalImpression.effective[x]",
         "path": "ClinicalImpression.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
@@ -333,6 +1021,19 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.effectiveDateTime",
+        "path": "ClinicalImpression.effectiveDateTime",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-8",
+            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.date",
@@ -352,7 +1053,14 @@
       {
         "id": "ClinicalImpression.assessor.reference",
         "path": "ClinicalImpression.assessor.reference",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": " ",
+            "comment": "read-only field"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.assessor.type",
@@ -360,7 +1068,13 @@
         "short": "Type the reference refers to (e.g. 'Practitioner')",
         "min": 1,
         "patternUri": "Practitioner",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'Practitioner'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.assessor.identifier",
@@ -382,7 +1096,13 @@
         "id": "ClinicalImpression.assessor.identifier.use",
         "path": "ClinicalImpression.assessor.identifier.use",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.assessor.identifier.type",
@@ -403,7 +1123,14 @@
       {
         "id": "ClinicalImpression.assessor.identifier.type.coding",
         "path": "ClinicalImpression.assessor.identifier.type.coding",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "",
+            "comment": "Practitioner Identifiers are locally assigned within PAS"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.assessor.identifier.type.coding.id",
@@ -420,7 +1147,13 @@
         "path": "ClinicalImpression.assessor.identifier.type.coding.system",
         "min": 1,
         "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.assessor.identifier.type.coding.version",
@@ -432,14 +1165,26 @@
         "path": "ClinicalImpression.assessor.identifier.type.coding.code",
         "min": 1,
         "patternCode": "LR",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'LR'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.assessor.identifier.type.coding.display",
         "path": "ClinicalImpression.assessor.identifier.type.coding.display",
         "min": 1,
         "patternString": "Local Registry ID",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'Local registry ID'"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.assessor.identifier.type.coding.userSelected",
@@ -456,7 +1201,23 @@
         "path": "ClinicalImpression.assessor.identifier.system",
         "min": 1,
         "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.assessor.identifier.value",
+        "path": "ClinicalImpression.assessor.identifier.value",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-6.1"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.assessor.identifier.period",
@@ -471,7 +1232,13 @@
       {
         "id": "ClinicalImpression.assessor.display",
         "path": "ClinicalImpression.assessor.display",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-6.2 + ', ' + ZLS-6.3 + ' ' + ZLS-6.4 + ' ' + ZLS-6.5"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.previous",
@@ -494,7 +1261,13 @@
         "id": "ClinicalImpression.summary",
         "path": "ClinicalImpression.summary",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "ZLS-10"
+          }
+        ]
       },
       {
         "id": "ClinicalImpression.prognosisCodeableConcept",

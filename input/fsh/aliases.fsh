@@ -69,8 +69,10 @@ Alias:   $NZCentralRegionFlagAlertCodeH6CS      = https://standards.digital.heal
 Alias:   $NZCentralRegionFlagAlertCodeH7CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h7
 Alias:   $NZCentralRegionFlagAlertCodeH8CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8
 
-Alias:   $NZCentralRegionMentalHealthLegalStatusCS  = https://standards.digital.health.nz/ns/central-region/mental-health-legal-status
-Alias:   $NZCentralRegionMentalHealthReviewStatusCS = https://standards.digital.health.nz/ns/central-region/mental-health-review-status
+Alias:   $NZCentralRegionMentalHealthLegalStatusCS    = https://standards.digital.health.nz/ns/central-region/mental-health-legal-status
+Alias:   $NZCentralRegionMentalHealthReviewStatusCS   = https://standards.digital.health.nz/ns/central-region/mental-health-review-status
+Alias:   $NZCentralRegionMentalHealthReviewLocationCS = https://standards.digital.health.nz/ns/central-region/mental-health-review-location
+Alias:   $NZCentralRegionMentalHealthCourtTypeCS      = https://standards.digital.health.nz/ns/central-region/mental-health-court-type
 
 // Local URIs for various ValueSets
 Alias:   $NZCentralRegionEthnicityLevel2VS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2
@@ -86,5 +88,7 @@ Alias:   $NZCentralRegionAllergyAlertCodeVS        = https://standards.digital.h
 Alias:   $NZCentralRegionAllergyReactionVS         = https://standards.digital.health.nz/fhir/central-region/allergy-reaction
 Alias:   $NZCentralRegionFlagAlertCodeVS           = https://standards.digital.health.nz/fhir/central-region/flag-alert-code
 
-Alias:   $NZCentralRegionMentalHealthLegalStatusVS  = https://standards.digital.health.nz/fhir/central-region/mental-health-legal-status
-Alias:   $NZCentralRegionMentalHealthReviewStatusVS = https://standards.digital.health.nz/fhir/central-region/mental-health-review-status
+Alias:   $NZCentralRegionMentalHealthLegalStatusVS    = https://standards.digital.health.nz/fhir/central-region/mental-health-legal-status
+Alias:   $NZCentralRegionMentalHealthReviewStatusVS   = https://standards.digital.health.nz/fhir/central-region/mental-health-review-status
+Alias:   $NZCentralRegionMentalHealthReviewLocationVS = https://standards.digital.health.nz/fhir/central-region/mental-health-review-location
+Alias:   $NZCentralRegionMentalHealthCourtTypeVS      = https://standards.digital.health.nz/fhir/central-region/mental-health-court-type

@@ -1,0 +1,21 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NZCentralRegionMentalHealthReviewLocationValueSet",
+  "id": "nzcr-mental-health-review-location-vs",
+  "title": "NZ Central Region - Mental Health Review Location Value Set",
+  "description": "Mental Health Review Location identification codes ex. WebPAS in NZ Central Region",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/central-region/mental-health-review-location",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/hospital-code"
+      },
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/mental-health-review-location"
+      }
+    ]
+  }
+}

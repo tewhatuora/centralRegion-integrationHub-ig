@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-05-26T13:52:41+12:00"/>
+   <date value="2023-05-29T14:46:52+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -592,6 +592,21 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nzcr-mental-health-court-type-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nzcr-mental-health-court-type-vs"/>
+         </reference>
+         <name value="NZ Central Region - Mental Health Court Type Value Set"/>
+         <description value="Mental Health Court Type identification codes ex. WebPAS in NZ Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-nzcr-mental-health-legal-status-vs.html"/>
          </extension>
          <reference>
@@ -599,6 +614,21 @@
          </reference>
          <name value="NZ Central Region - MentalHealthLegalStatus Value Set"/>
          <description value="MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nzcr-mental-health-review-location-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nzcr-mental-health-review-location-vs"/>
+         </reference>
+         <name value="NZ Central Region - Mental Health Review Location Value Set"/>
+         <description value="Mental Health Review Location identification codes ex. WebPAS in NZ Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -967,6 +997,21 @@
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-mental-health-court-type-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-mental-health-court-type-cs"/>
+         </reference>
+         <name value="NZ Central Region - Mental Health Court Type Code System"/>
+         <description value="Mental Health Court Type identification codes ex. WebPAS in NZ Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="CodeSystem-nzcr-mental-health-legal-status-cs.html"/>
          </extension>
          <reference>
@@ -974,6 +1019,21 @@
          </reference>
          <name value="NZ Central Region - MentalHealthLegalStatus Code System"/>
          <description value="MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-mental-health-review-location-code-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-mental-health-review-location-code-cs"/>
+         </reference>
+         <name value="NZ Central Region - Mental Health Review Location Code System"/>
+         <description value="Mental Health Review Location identification codes ex. WebPAS in NZ Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
       </resource>
@@ -1386,8 +1446,18 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-nzcr-mental-health-court-type-vs.html"/>
+               <title value="NZ Central Region - Mental Health Court Type Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-nzcr-mental-health-legal-status-vs.html"/>
                <title value="NZ Central Region - MentalHealthLegalStatus Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nzcr-mental-health-review-location-vs.html"/>
+               <title value="NZ Central Region - Mental Health Review Location Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1511,8 +1581,18 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="CodeSystem-nzcr-mental-health-court-type-cs.html"/>
+               <title value="NZ Central Region - Mental Health Court Type Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="CodeSystem-nzcr-mental-health-legal-status-cs.html"/>
                <title value="NZ Central Region - MentalHealthLegalStatus Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nzcr-mental-health-review-location-code-cs.html"/>
+               <title value="NZ Central Region - Mental Health Review Location Code System"/>
                <generation value="generated"/>
             </page>
             <page>

@@ -285,7 +285,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-11",
-            "comment": "\n**Note** Extend date field to ISO DateTime with 'T00:00:00+1200'"
+            "comment": "**Note** Extend date field to ISO DateTime with 'T00:00:00+1200'"
           }
         ]
       },

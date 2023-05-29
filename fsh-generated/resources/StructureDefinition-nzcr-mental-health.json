@@ -53,8 +53,7 @@
         "id": "Extension.extension",
         "path": "Extension.extension",
         "short": "Container holding the individual elements of the Patient's mental health status.",
-        "definition": "Container holding the individual elements of the Patient's mental health status.",
-        "min": 2
+        "definition": "Container holding the individual elements of the Patient's mental health status."
       },
       {
         "id": "Extension.extension:legalStatus",
@@ -62,9 +61,14 @@
         "sliceName": "legalStatus",
         "short": "Mental Health Legal Status",
         "definition": "Mental Health Legal Status (at the time of the review)",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:legalStatus.id",
+        "path": "Extension.extension.id",
+        "max": "0"
       },
       {
         "id": "Extension.extension:legalStatus.extension",
@@ -79,15 +83,37 @@
       {
         "id": "Extension.extension:legalStatus.value[x]",
         "path": "Extension.extension.value[x]",
+        "min": 1,
         "type": [
           {
-            "code": "code"
+            "code": "Coding"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-legal-status"
         }
+      },
+      {
+        "id": "Extension.extension:legalStatus.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:legalStatus.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:legalStatus.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:legalStatus.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
       },
       {
         "id": "Extension.extension:reviewStatus",
@@ -95,9 +121,14 @@
         "sliceName": "reviewStatus",
         "short": "Mental Health Review Status",
         "definition": "Mental Health Review Status (Section 7A Consultation)",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:reviewStatus.id",
+        "path": "Extension.extension.id",
+        "max": "0"
       },
       {
         "id": "Extension.extension:reviewStatus.extension",
@@ -112,15 +143,629 @@
       {
         "id": "Extension.extension:reviewStatus.value[x]",
         "path": "Extension.extension.value[x]",
+        "min": 1,
         "type": [
           {
-            "code": "code"
+            "code": "Coding"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-review-status"
         }
+      },
+      {
+        "id": "Extension.extension:reviewStatus.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reviewStatus.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reviewStatus.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reviewStatus.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startDateTime",
+        "path": "Extension.extension",
+        "sliceName": "startDateTime",
+        "short": "Mental health legal status start dateTime ",
+        "definition": "Mental Health Legal Status start dateTime",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:startDateTime.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startDateTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startDateTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "startDateTime"
+      },
+      {
+        "id": "Extension.extension:startDateTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:endDateTime",
+        "path": "Extension.extension",
+        "sliceName": "endDateTime",
+        "short": "Mental health legal status end dateTime ",
+        "definition": "Mental Health Legal Status end dateTime",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:endDateTime.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endDateTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endDateTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "endDateTime"
+      },
+      {
+        "id": "Extension.extension:endDateTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension",
+        "sliceName": "location",
+        "short": "Mental health legal status end dateTime ",
+        "definition": "Mental Health Legal Status end dateTime",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:location.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:location.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:location.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:location.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-review-location"
+        }
+      },
+      {
+        "id": "Extension.extension:location.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:location.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:location.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:location.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reminderDate",
+        "path": "Extension.extension",
+        "sliceName": "reminderDate",
+        "short": "Mental health legal status reminder date",
+        "definition": "Mental Health Legal Status reminder date",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:reminderDate.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reminderDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reminderDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reminderDate"
+      },
+      {
+        "id": "Extension.extension:reminderDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:addedBy",
+        "path": "Extension.extension",
+        "sliceName": "addedBy",
+        "short": "Who added the review? (Not usually the assessing clinician)",
+        "definition": "Who added the review, not usually the assesing clinician",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:addedBy.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:addedBy.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:addedBy.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "addedBy"
+      },
+      {
+        "id": "Extension.extension:addedBy.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:addedDateTime",
+        "path": "Extension.extension",
+        "sliceName": "addedDateTime",
+        "short": "When was the review first added?",
+        "definition": "When was the review first added?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:addedDateTime.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:addedDateTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:addedDateTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "addedDateTime"
+      },
+      {
+        "id": "Extension.extension:addedDateTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastUpdatedBy",
+        "path": "Extension.extension",
+        "sliceName": "lastUpdatedBy",
+        "short": "Who has updated the review? (Not usually the assessing clinician)",
+        "definition": "Who has updated the review, not usually the assesing clinician",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:lastUpdatedBy.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lastUpdatedBy.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lastUpdatedBy.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lastUpdatedBy"
+      },
+      {
+        "id": "Extension.extension:lastUpdatedBy.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastUpdatedDateTime",
+        "path": "Extension.extension",
+        "sliceName": "lastUpdatedDateTime",
+        "short": "When was the review last updated",
+        "definition": "When was the review last updated",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:lastUpdatedDateTime.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lastUpdatedDateTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lastUpdatedDateTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lastUpdatedDateTime"
+      },
+      {
+        "id": "Extension.extension:lastUpdatedDateTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatus",
+        "path": "Extension.extension",
+        "sliceName": "supplementaryLegalStatus",
+        "short": "Mental Health Supplmentary Legal Status",
+        "definition": "Mental Health Supplementary Legal Status (at the time of the review)",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatus.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "supplementaryLegalStatus"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-legal-status"
+        }
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatus.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatus.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatus.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatus.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatusDate",
+        "path": "Extension.extension",
+        "sliceName": "supplementaryLegalStatusDate",
+        "short": "Mental health date of supplementary legal status",
+        "definition": "Mental Health Date of Supplementary Legal Status",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatusDate.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatusDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatusDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "supplementaryLegalStatusDate"
+      },
+      {
+        "id": "Extension.extension:supplementaryLegalStatusDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reviewDate",
+        "path": "Extension.extension",
+        "sliceName": "reviewDate",
+        "short": "Mental health legal status review date",
+        "definition": "Mental Health Legal Status review date",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:reviewDate.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reviewDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reviewDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reviewDate"
+      },
+      {
+        "id": "Extension.extension:reviewDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:courtNoticeSentDate",
+        "path": "Extension.extension",
+        "sliceName": "courtNoticeSentDate",
+        "short": "Mental health legal status court notice sent date",
+        "definition": "Mental Health Legal Status court notice sent date",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:courtNoticeSentDate.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:courtNoticeSentDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:courtNoticeSentDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "courtNoticeSentDate"
+      },
+      {
+        "id": "Extension.extension:courtNoticeSentDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:tribunalDate",
+        "path": "Extension.extension",
+        "sliceName": "tribunalDate",
+        "short": "Mental health legal status tribunal date",
+        "definition": "Mental Health Legal Status tribunal date",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:tribunalDate.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:tribunalDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:tribunalDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "tribunalDate"
+      },
+      {
+        "id": "Extension.extension:tribunalDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:courtLodgedDate",
+        "path": "Extension.extension",
+        "sliceName": "courtLodgedDate",
+        "short": "Mental health legal status court lodged date",
+        "definition": "Mental Health Legal Status court lodged date",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:courtLodgedDate.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:courtLodgedDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:courtLodgedDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "courtLodgedDate"
+      },
+      {
+        "id": "Extension.extension:courtLodgedDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:courtType",
+        "path": "Extension.extension",
+        "sliceName": "courtType",
+        "short": "Mental Health Supplmentary Legal Status Court Type",
+        "definition": "Mental Health Legal Status Court Type",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:courtType.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:courtType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:courtType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "courtType"
+      },
+      {
+        "id": "Extension.extension:courtType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-court-type"
+        }
+      },
+      {
+        "id": "Extension.extension:courtType.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:courtType.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:courtType.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:courtType.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
       },
       {
         "id": "Extension.url",
