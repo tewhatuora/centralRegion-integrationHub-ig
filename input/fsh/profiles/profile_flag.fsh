@@ -126,16 +126,14 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
     nzcr-hl7v2-message named hl7v2Message 1..1 MS and
     nzcr-alert named flag-alert 1..1 MS 
 
+/*
 * extension[flag-alert]
   * extension[allergyReaction] 0..0  // only for allergies
-
   * extension[severityLevel] 1..1 MS
-    * ^definition = "Severity level in range 0..9"
-    * ^short = "Severity level in range 0..9"
-
   * extension[inactiveDate] 0..1 MS   // not to be confused with period.end
   * extension[reviewDate] 0..1 MS
   * extension[lastUpdatedBy] 0..1 MS
   * extension[lastUpdatedDateTime] 0..1 MS
   * extension[recordingHospital] 1..1 MS
   * extension[comments] 0..1 MS
+*/

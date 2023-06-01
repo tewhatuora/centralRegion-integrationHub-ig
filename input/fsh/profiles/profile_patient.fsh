@@ -6,6 +6,10 @@ Parent: $NZBasePatient
 Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * ^derivation = #constraint
+* id 0..0
+
+* meta 
+  * profile = "NZCentralRegionPatient"   // not accepting other profiles of Patient
 
 * identifier 1..* MS  // We must have at least local ID
   * use 1..1 MS
@@ -21,10 +25,11 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
 
-* active 0..0
+* contained 0..0
 * implicitRules 0..0
 * language 0..0
-* contained 0..0
+
+* active 0..0  // insufficient data
 
 * name 1..* MS
   * use 1..1 MS

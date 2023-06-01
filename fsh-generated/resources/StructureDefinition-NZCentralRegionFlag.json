@@ -123,17 +123,9 @@
         "mustSupport": true
       },
       {
-        "id": "Flag.extension:flag-alert.extension",
-        "path": "Flag.extension.extension",
-        "min": 2
-      },
-      {
         "id": "Flag.extension:flag-alert.extension:severityLevel",
         "path": "Flag.extension.extension",
-        "sliceName": "severityLevel",
-        "short": "Severity level in range 0..9",
-        "definition": "Severity level in range 0..9",
-        "min": 1
+        "sliceName": "severityLevel"
       },
       {
         "id": "Flag.extension:flag-alert.extension:severityLevel.url",
@@ -156,12 +148,6 @@
             "map": "ZAL-6"
           }
         ]
-      },
-      {
-        "id": "Flag.extension:flag-alert.extension:allergyReaction",
-        "path": "Flag.extension.extension",
-        "sliceName": "allergyReaction",
-        "max": "0"
       },
       {
         "id": "Flag.extension:flag-alert.extension:inactiveDate",

@@ -10,8 +10,8 @@
   "url": "https://standards.digital.health.nz/ns/central-region/mental-health-court-type",
   "concept": [
     {
-      "code": "DCT",
-      "display": "District Court"
+      "code": "HG",
+      "display": "High"
     }
   ],
   "experimental": false,

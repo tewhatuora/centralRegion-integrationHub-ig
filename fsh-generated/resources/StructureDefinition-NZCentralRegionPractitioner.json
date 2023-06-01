@@ -37,6 +37,11 @@
   "differential": {
     "element": [
       {
+        "id": "Practitioner.id",
+        "path": "Practitioner.id",
+        "max": "0"
+      },
+      {
         "id": "Practitioner.implicitRules",
         "path": "Practitioner.implicitRules",
         "max": "0"

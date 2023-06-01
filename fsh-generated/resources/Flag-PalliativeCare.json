@@ -15,16 +15,16 @@
       "url": "https://standards.digital.health.nz/ns/central-region/alert",
       "extension": [
         {
-          "url": "severityLevel",
-          "valueInteger": 9
-        },
-        {
           "url": "recordingHospital",
           "valueCoding": {
             "code": "PNH",
             "system": "https://standards.digital.health.nz/ns/central-region/hospital-code",
             "display": "Palmerston North Hospital"
           }
+        },
+        {
+          "url": "severityLevel",
+          "valueInteger": 9
         },
         {
           "url": "reviewDate",

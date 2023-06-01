@@ -229,12 +229,12 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-3",
-            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
           },
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-4",
-            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
           }
         ]
       },
@@ -315,7 +315,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-9",
-            "comment": "**Note**ISO Date has field separators"
+            "comment": "**Note:** ISO Date has field separators"
           }
         ]
       },
@@ -366,7 +366,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-12",
-            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
           }
         ]
       },
@@ -417,7 +417,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-14",
-            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
           }
         ]
       },
@@ -498,7 +498,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-16",
-            "comment": "**Note**ISO Date has field separators"
+            "comment": "**Note:** ISO Date has field separators"
           }
         ]
       },
@@ -524,7 +524,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-17",
-            "comment": "**Note**ISO Date has field separators"
+            "comment": "**Note:** ISO Date has field separators"
           }
         ]
       },
@@ -550,7 +550,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-18",
-            "comment": "**Note**ISO Date has field separators"
+            "comment": "**Note:** ISO Date has field separators"
           }
         ]
       },
@@ -566,10 +566,6 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "'tribunalDate'"
-          },
-          {
-            "identity": "nzcr-clinical-impression-from-hl7v2",
-            "map": "'tribunalDate'"
           }
         ]
       },
@@ -580,12 +576,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-19",
-            "comment": "**Note**ISO Date has field separators"
-          },
-          {
-            "identity": "nzcr-clinical-impression-from-hl7v2",
-            "map": "ZLS-20",
-            "comment": "**Note**ISO Date has field separators"
+            "comment": "**Note:** ISO Date has field separators"
           }
         ]
       },
@@ -610,8 +601,8 @@
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
-            "map": "ZLS-21",
-            "comment": "**Note**ISO Date has field separators"
+            "map": "ZLS-20",
+            "comment": "**Note:** ISO Date has field separators"
           }
         ]
       },
@@ -646,7 +637,7 @@
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/central-region/mental-health-legal-status'"
+            "map": "'https://standards.digital.health.nz/ns/central-region/mental-health-court-type'"
           }
         ]
       },
@@ -656,7 +647,7 @@
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
-            "map": "ZLS-22.1"
+            "map": "ZLS-21.1"
           }
         ]
       },
@@ -666,7 +657,7 @@
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
-            "map": "ZLS-22.2"
+            "map": "ZLS-21.2"
           }
         ]
       },
@@ -1031,7 +1022,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-8",
-            "comment": "**Note**ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
           }
         ]
       },

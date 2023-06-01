@@ -4,6 +4,7 @@ Parent: $NZBasePractitioner
 Description: "Practitioner resource for Te Whatu Ora, Central Region"
 
 * ^derivation = #constraint
+* id 0..0
 
 * implicitRules 0..0
 * language 0..0

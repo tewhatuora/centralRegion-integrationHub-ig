@@ -58,6 +58,16 @@
         ]
       },
       {
+        "id": "Patient.id",
+        "path": "Patient.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.meta.profile",
+        "path": "Patient.meta.profile",
+        "patternCanonical": "NZCentralRegionPatient"
+      },
+      {
         "id": "Patient.implicitRules",
         "path": "Patient.implicitRules",
         "max": "0"
