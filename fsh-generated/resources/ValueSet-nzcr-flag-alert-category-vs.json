@@ -6,7 +6,7 @@
   "title": "NZ Central Region - Flag Alert Category Value Set",
   "description": "Alert Category codes ex. WebPAS in NZ Central Region that denote a Flag",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/central-region/alert-type-flag",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag",
   "experimental": false,
   "compose": {
     "include": [
@@ -17,7 +17,7 @@
     "exclude": [
       {
         "valueSet": [
-          "https://standards.digital.health.nz/fhir/central-region/alert-type-allergy"
+          "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-allergy"
         ]
       }
     ]

@@ -6,7 +6,7 @@
   "title": "NZ Central Region - Allergy Reaction Value Set",
   "description": "Allergy Reaction codes ex. WebPAS in NZ Central Region.",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/central-region/allergy-reaction",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-reaction",
   "experimental": false,
   "compose": {
     "include": [

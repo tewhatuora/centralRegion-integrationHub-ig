@@ -6,7 +6,7 @@
   "title": "NZ Central Region - MentalHealthReviewStatus Value Set",
   "description": "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region.",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/central-region/mental-health-review-status",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-review-status",
   "experimental": false,
   "compose": {
     "include": [

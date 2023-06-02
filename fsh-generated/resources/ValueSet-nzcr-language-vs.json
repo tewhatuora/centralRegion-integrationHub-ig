@@ -4,14 +4,97 @@
   "name": "NZCentralRegionLanguageValueSet",
   "id": "nzcr-language-vs",
   "title": "NZ Central Region - Language Value Set",
-  "description": "Language codes ex. WebPAS in NZ Central Region.",
+  "description": "IETF equivalent Language codes, matching the raw codes used by WebPAS in NZ Central Region.",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/central-region/language",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-language",
   "experimental": false,
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/central-region/language"
+        "system": "urn:ietf:bcp:47",
+        "concept": [
+          {
+            "code": "ace"
+          },
+          {
+            "code": "ach"
+          },
+          {
+            "code": "af"
+          },
+          {
+            "code": "ayp"
+          },
+          {
+            "code": "am"
+          },
+          {
+            "code": "ar"
+          },
+          {
+            "code": "ase"
+          },
+          {
+            "code": "bn"
+          },
+          {
+            "code": "bg"
+          },
+          {
+            "code": "cdo"
+          },
+          {
+            "code": "cz"
+          },
+          {
+            "code": "cmn"
+          },
+          {
+            "code": "dan"
+          },
+          {
+            "code": "din"
+          },
+          {
+            "code": "nl"
+          },
+          {
+            "code": "dz"
+          },
+          {
+            "code": "en"
+          },
+          {
+            "code": "fa"
+          },
+          {
+            "code": "fj"
+          },
+          {
+            "code": "fil"
+          },
+          {
+            "code": "fi"
+          },
+          {
+            "code": "fr"
+          },
+          {
+            "code": "de"
+          },
+          {
+            "code": "el"
+          },
+          {
+            "code": "gu"
+          },
+          {
+            "code": "hak"
+          },
+          {
+            "code": "heb"
+          }
+        ]
       }
     ]
   }

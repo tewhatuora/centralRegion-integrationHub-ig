@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-06-01T13:55:59+12:00"/>
+   <date value="2023-06-02T12:45:17+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -568,7 +568,7 @@
             <reference value="ValueSet/nzcr-language-vs"/>
          </reference>
          <name value="NZ Central Region - Language Value Set"/>
-         <description value="Language codes ex. WebPAS in NZ Central Region."/>
+         <description value="IETF equivalent Language codes, matching the raw codes used by WebPAS in NZ Central Region."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -982,21 +982,6 @@
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-nzcr-language-cs.html"/>
-         </extension>
-         <reference>
-            <reference value="CodeSystem/nzcr-language-cs"/>
-         </reference>
-         <name value="NZ Central Region - Language Code System"/>
-         <description value="Language codes ex. WebPAS in NZ Central Region."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-term-codesystem"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CodeSystem"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="CodeSystem-nzcr-mental-health-court-type-cs.html"/>
          </extension>
          <reference>
@@ -1057,6 +1042,21 @@
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-raw-language-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-raw-language-cs"/>
+         </reference>
+         <name value="NZ Central Region - Language Code System"/>
+         <description value="3 and 4 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **NOT** from ietf:bcp:47"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="CodeSystem-nzcr-religion-cs.html"/>
          </extension>
          <reference>
@@ -1096,6 +1096,21 @@
          <description value="NZ Residency status"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-ConceptMap-LanguageMap.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/ConceptMap-LanguageMap"/>
+         </reference>
+         <name value="ConceptMap-LanguageMap"/>
+         <description value="Concept map mapping raw Langeuage codes ex. WebPAS to proper ietf:bcp:47 language codes"/>
+         <exampleBoolean value="true"/>
+         <groupingId value="-ex-example"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1576,11 +1591,6 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="CodeSystem-nzcr-language-cs.html"/>
-               <title value="NZ Central Region - Language Code System"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="CodeSystem-nzcr-mental-health-court-type-cs.html"/>
                <title value="NZ Central Region - Mental Health Court Type Code System"/>
                <generation value="generated"/>
@@ -1601,6 +1611,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="CodeSystem-nzcr-raw-language-cs.html"/>
+               <title value="NZ Central Region - Language Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="CodeSystem-nzcr-religion-cs.html"/>
                <title value="NZ Central Region - NZ Religion Code System"/>
                <generation value="generated"/>
@@ -1613,6 +1628,11 @@
             <page>
                <nameUrl value="CodeSystem-nz-residency.html"/>
                <title value="NZ Residency status"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ConceptMap-ConceptMap-LanguageMap.html"/>
+               <title value="ConceptMap-LanguageMap"/>
                <generation value="generated"/>
             </page>
             <page>

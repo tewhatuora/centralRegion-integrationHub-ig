@@ -113,13 +113,337 @@
       "language": {
         "coding": [
           {
+            "code": "ace",
+            "system": "urn:ietf:bcp:47",
+            "display": "Achinese"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ach",
+            "system": "urn:ietf:bcp:47",
+            "display": "Acholi"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "af",
+            "system": "urn:ietf:bcp:47",
+            "display": "Afrikaans"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ayp",
+            "system": "urn:ietf:bcp:47",
+            "display": "North Mesopotamian Arabic"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "am",
+            "system": "urn:ietf:bcp:47",
+            "display": "Amharic"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ar",
+            "system": "urn:ietf:bcp:47",
+            "display": "Arabic"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ase",
+            "system": "urn:ietf:bcp:47",
+            "display": "American Sign Language"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "bn",
+            "system": "urn:ietf:bcp:47",
+            "display": "Bengali"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "bg",
+            "system": "urn:ietf:bcp:47",
+            "display": "Bulgarian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "cdo",
+            "system": "urn:ietf:bcp:47",
+            "display": "Min Dong Chinese"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "cs",
+            "system": "urn:ietf:bcp:47",
+            "display": "Czech"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "cmn",
+            "system": "urn:ietf:bcp:47",
+            "display": "Mandarin"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "da",
+            "system": "urn:ietf:bcp:47",
+            "display": "Danish"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "din",
+            "system": "urn:ietf:bcp:47",
+            "display": "Dinka"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "nl",
+            "system": "urn:ietf:bcp:47",
+            "display": "Dutch"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "dz",
+            "system": "urn:ietf:bcp:47",
+            "display": "Dzongkha"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
             "code": "en",
             "system": "urn:ietf:bcp:47",
             "display": "English"
           }
         ]
       },
-      "preferred": true
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "fa",
+            "system": "urn:ietf:bcp:47",
+            "display": "Persian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "fj",
+            "system": "urn:ietf:bcp:47",
+            "display": "Fijian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "fil",
+            "system": "urn:ietf:bcp:47",
+            "display": "Filipino"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "fi",
+            "system": "urn:ietf:bcp:47",
+            "display": "Finnish"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "fr",
+            "system": "urn:ietf:bcp:47",
+            "display": "French"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "de",
+            "system": "urn:ietf:bcp:47",
+            "display": "German"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "el",
+            "system": "urn:ietf:bcp:47",
+            "display": "Modern Greek (1453 - "
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "gu",
+            "system": "urn:ietf:bcp:47",
+            "display": "Gujurati"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "hak",
+            "system": "urn:ietf:bcp:47",
+            "display": "Hakka Chinese"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "heb",
+            "system": "urn:ietf:bcp:47",
+            "display": "Hebrew"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "he",
+            "system": "urn:ietf:bcp:47",
+            "display": "Hebrew"
+          }
+        ]
+      },
+      "preferred": false
     },
     {
       "language": {
@@ -236,18 +560,6 @@
             "code": "zh",
             "system": "urn:ietf:bcp:47",
             "display": "Chinese"
-          }
-        ]
-      },
-      "preferred": false
-    },
-    {
-      "language": {
-        "coding": [
-          {
-            "code": "cmn",
-            "system": "urn:ietf:bcp:47",
-            "display": "Mandarin"
           }
         ]
       },

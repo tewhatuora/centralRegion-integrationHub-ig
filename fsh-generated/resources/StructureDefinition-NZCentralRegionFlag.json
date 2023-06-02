@@ -431,7 +431,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/alert-type-flag"
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag"
         },
         "mapping": [
           {
@@ -539,7 +539,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/flag-alert-code"
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-flag-alert-code"
         },
         "mapping": [
           {

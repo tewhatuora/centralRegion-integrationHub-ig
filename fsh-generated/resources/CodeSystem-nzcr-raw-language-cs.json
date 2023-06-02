@@ -2,12 +2,12 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "complete",
-  "name": "NZCentralRegionLanguageCodeSystem",
-  "id": "nzcr-language-cs",
+  "name": "NZCentralRegionRawLanguageCodeSystem",
+  "id": "nzcr-raw-language-cs",
   "title": "NZ Central Region - Language Code System",
-  "description": "Language codes ex. WebPAS in NZ Central Region.",
+  "description": "3 and 4 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **NOT** from ietf:bcp:47",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/ns/central-region/language",
+  "url": "https://standards.digital.health.nz/ns/central-region/raw-language",
   "concept": [
     {
       "code": "ACE",

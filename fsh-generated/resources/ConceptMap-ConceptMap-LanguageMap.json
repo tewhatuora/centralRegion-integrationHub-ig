@@ -1,0 +1,326 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ConceptMap-LanguageMap",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-language",
+  "purpose": "To translate raw language codes used in WebPAS to more recognised language codes",
+  "status": "draft",
+  "sourceUri": "https://standards.digital.health.nz/ns/central-region/raw-language",
+  "targetUri": "urn:ietf:bcp:47",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/central-region/raw-language",
+      "target": "urn:ietf:bcp:47",
+      "element": [
+        {
+          "code": "ACH",
+          "display": "Acoli",
+          "target": [
+            {
+              "code": "ach",
+              "display": "Acoli",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DIN",
+          "display": "Dinka",
+          "target": [
+            {
+              "code": "din",
+              "display": "Dinka",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FIL",
+          "display": "Filipino",
+          "target": [
+            {
+              "code": "fil",
+              "display": "Filipino",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ACE",
+          "display": "Acehnese",
+          "target": [
+            {
+              "code": "ace",
+              "display": "Achinese",
+              "equivalence": "equivalent",
+              "comment": "note name correction; aka Acehnese"
+            }
+          ]
+        },
+        {
+          "code": "AFR",
+          "display": "Afrikaans",
+          "target": [
+            {
+              "code": "af",
+              "display": "Afrikaans",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "AII",
+          "display": "Assyrian Arabic",
+          "target": [
+            {
+              "code": "ayp",
+              "display": "North Mesopotamian Arabic",
+              "equivalence": "equivalent",
+              "comment": "utter confusion in correct langauge code and name"
+            }
+          ]
+        },
+        {
+          "code": "AMH",
+          "display": "Amharic",
+          "target": [
+            {
+              "code": "am",
+              "display": "Amharic",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "ARA",
+          "display": "Arabic",
+          "target": [
+            {
+              "code": "ar",
+              "display": "Arabic",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "ASE",
+          "display": "Sign Lang - American",
+          "target": [
+            {
+              "code": "ase",
+              "display": "American Sign Language",
+              "equivalence": "equivalent",
+              "comment": "note name correction"
+            }
+          ]
+        },
+        {
+          "code": "BEN",
+          "display": "Bengali",
+          "target": [
+            {
+              "code": "bn",
+              "display": "Bengali",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "BUL",
+          "display": "Bulgarian",
+          "target": [
+            {
+              "code": "bg",
+              "display": "Bulgarian",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "CDO",
+          "display": "Chinese - Foochow",
+          "target": [
+            {
+              "code": "cdo",
+              "display": "Min Dong Chinese",
+              "equivalence": "equivalent",
+              "comment": "note name correction"
+            }
+          ]
+        },
+        {
+          "code": "CES",
+          "display": "Czechoslovakian",
+          "target": [
+            {
+              "code": "cs",
+              "display": "Czech",
+              "equivalence": "equivalent",
+              "comment": "note name correction; iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "CHM",
+          "display": "Chinese - Mandarin",
+          "target": [
+            {
+              "code": "cmn",
+              "display": "Mandarin",
+              "equivalence": "equivalent",
+              "comment": "please use correct iso code"
+            }
+          ]
+        },
+        {
+          "code": "DAN",
+          "display": "Danish",
+          "target": [
+            {
+              "code": "da",
+              "display": "Danish",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "DUT",
+          "display": "Dutch",
+          "target": [
+            {
+              "code": "nl",
+              "display": "Dutch",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "DZO",
+          "display": "Bhutanese",
+          "target": [
+            {
+              "code": "dz",
+              "display": "Dzongkha",
+              "equivalence": "equivalent",
+              "comment": "note name correction; iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "ENG",
+          "display": "English",
+          "target": [
+            {
+              "code": "en",
+              "display": "English",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "FAS",
+          "display": "Farsi",
+          "target": [
+            {
+              "code": "fa",
+              "display": "Persian",
+              "equivalence": "equivalent",
+              "comment": "note name correction; iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "FIJ",
+          "display": "Fijian",
+          "target": [
+            {
+              "code": "fj",
+              "display": "Fijian",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "FIN",
+          "display": "Finnish",
+          "target": [
+            {
+              "code": "fi",
+              "display": "Finish",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "GER",
+          "display": "German",
+          "target": [
+            {
+              "code": "de",
+              "display": "German",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "GRE",
+          "display": "Greek",
+          "target": [
+            {
+              "code": "el",
+              "display": "Modern Greek (1453 - ",
+              "equivalence": "equivalent",
+              "comment": "note name correction; iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "GUJ",
+          "display": "Indian - Gujarati",
+          "target": [
+            {
+              "code": "gu",
+              "display": "Gujurati",
+              "equivalence": "equivalent",
+              "comment": "note name correction; iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "HAK",
+          "display": "Chinese - Hakka",
+          "target": [
+            {
+              "code": "hak",
+              "display": "Hakka Chinese",
+              "equivalence": "equivalent",
+              "comment": "note name correction; iso-639-1 takes precedence"
+            }
+          ]
+        },
+        {
+          "code": "HEB",
+          "display": "Hebrew",
+          "target": [
+            {
+              "code": "he",
+              "display": "Hebrew",
+              "equivalence": "equivalent",
+              "comment": "iso-639-1 takes precedence"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

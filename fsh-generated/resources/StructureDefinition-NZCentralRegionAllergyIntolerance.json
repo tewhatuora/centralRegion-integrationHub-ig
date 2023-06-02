@@ -672,7 +672,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/allergy-alert-code"
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-alert-code"
         }
       },
       {

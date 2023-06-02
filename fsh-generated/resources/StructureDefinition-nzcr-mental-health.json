@@ -92,7 +92,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-legal-status"
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-legal-status"
         }
       },
       {
@@ -152,7 +152,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-review-status"
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-review-status"
         }
       },
       {
@@ -280,7 +280,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-review-location"
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-review-location"
         }
       },
       {
@@ -514,7 +514,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-legal-status"
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-legal-status"
         }
       },
       {
@@ -744,7 +744,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/mental-health-court-type"
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-court-type"
         }
       },
       {
