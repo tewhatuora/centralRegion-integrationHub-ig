@@ -5,6 +5,7 @@ Alias:   $HL7InterpreterRequired   = http://hl7.org/fhir/StructureDefinition/pat
 
 // Code System URLs from FHIR base
 Alias:   $IETFLanguageCS             = urn:ietf:bcp:47
+Alias:   $HL7NullFlavourCS           = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias:   $HL7IdentifierTypeCS        = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias:   $HL7MaritalStatusCS         = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias:   $HL7RelationshipCS          = http://terminology.hl7.org/CodeSystem/v2-0131
@@ -47,6 +48,7 @@ Alias:   $NZCentralRegionMentalHealth          = https://standards.digital.healt
 // Local URLs for locally defined CodeSystems
 Alias:   $NZStatsEthnicityLevel2CS              = https://standards.digital.health.nz/ns/ethnic-group-level-2-code
 Alias:   $NZCentralRegionRawLanguageCS          = https://standards.digital.health.nz/ns/central-region/raw-language         // non-IETF codes
+Alias:   $NZCentralRegionProposedLanguageCS     = https://standards.digital.health.nz/ns/central-region/proposed-language    // proposed IETF codes
 Alias:   $NZCentralRegionPASPractitioner        = https://standards.digital.health.nz/ns/central-region/pas-practitioner-id
 Alias:   $NZCentralRegionHospitalCS             = https://standards.digital.health.nz/ns/central-region/hospital-code
 Alias:   $NZCentralRegionExtraMaritalStatusCS   = https://standards.digital.health.nz/ns/central-region/extra-marital-status

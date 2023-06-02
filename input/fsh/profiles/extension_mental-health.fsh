@@ -59,19 +59,19 @@ Description: "Complex extension recording meta data about patient's mental healt
 
 * extension[startDateTime]
   * ^definition = "Mental Health Legal Status start dateTime"
-  * ^short = "Mental health legal status start dateTime "
+  * ^short = "Mental health legal status start dateTime"
   * value[x] only dateTime
   * id 0..0
 
 * extension[endDateTime]
   * ^definition = "Mental Health Legal Status end dateTime"
-  * ^short = "Mental health legal status end dateTime "
+  * ^short = "Mental health legal status end dateTime"
   * value[x] only dateTime
   * id 0..0
 
 * extension[location]
   * ^definition = "Mental Health Legal Status end dateTime"
-  * ^short = "Mental health legal status end dateTime "
+  * ^short = "Mental health legal status end dateTime"
   * value[x] only Coding
   * value[x] from nzcr-mental-health-review-location-vs (required)
   * value[x] 1..1 MS

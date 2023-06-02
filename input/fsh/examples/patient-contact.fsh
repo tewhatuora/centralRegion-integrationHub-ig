@@ -4,7 +4,7 @@ InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with Contact that has multiple codings for the relationship"
 
 * identifier
-  * use = #usual
+  * use = #official
   * system = $NZBaseNHI
   * value = "ZKY0099"
   * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"

@@ -438,9 +438,17 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/nzcr-proposed-language-cs"
+        },
+        "name": "NZ Central Region - Proposed Language Code System",
+        "description": "3 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **PROPOSED** for ietf:bcp:47",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nzcr-raw-language-cs"
         },
-        "name": "NZ Central Region - Language Code System",
+        "name": "NZ Central Region - Raw Language Code System",
         "description": "3 and 4 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **NOT** from ietf:bcp:47",
         "exampleBoolean": false
       },

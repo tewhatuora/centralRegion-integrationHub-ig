@@ -44,13 +44,13 @@
             "code": "cdo"
           },
           {
-            "code": "cz"
+            "code": "cs"
           },
           {
             "code": "cmn"
           },
           {
-            "code": "dan"
+            "code": "da"
           },
           {
             "code": "din"
@@ -92,7 +92,176 @@
             "code": "hak"
           },
           {
-            "code": "heb"
+            "code": "he"
+          },
+          {
+            "code": "hif"
+          },
+          {
+            "code": "hi"
+          },
+          {
+            "code": "hlt"
+          },
+          {
+            "code": "hr"
+          },
+          {
+            "code": "hu"
+          },
+          {
+            "code": "ils"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "it"
+          },
+          {
+            "code": "ja"
+          },
+          {
+            "code": "km"
+          },
+          {
+            "code": "rw"
+          },
+          {
+            "code": "kmr"
+          },
+          {
+            "code": "ko"
+          },
+          {
+            "code": "ku"
+          },
+          {
+            "code": "lo"
+          },
+          {
+            "code": "mi"
+          },
+          {
+            "code": "ms"
+          },
+          {
+            "code": "my"
+          },
+          {
+            "code": "nan"
+          },
+          {
+            "code": "ne"
+          },
+          {
+            "code": "niu"
+          },
+          {
+            "code": "no"
+          },
+          {
+            "code": "nzs"
+          },
+          {
+            "code": "om"
+          },
+          {
+            "code": "pa"
+          },
+          {
+            "code": "pl"
+          },
+          {
+            "code": "pt"
+          },
+          {
+            "code": "prs"
+          },
+          {
+            "code": "rar"
+          },
+          {
+            "code": "rn"
+          },
+          {
+            "code": "rhg"
+          },
+          {
+            "code": "ru"
+          },
+          {
+            "code": "sm"
+          },
+          {
+            "code": "si"
+          },
+          {
+            "code": "sk"
+          },
+          {
+            "code": "so"
+          },
+          {
+            "code": "es"
+          },
+          {
+            "code": "sr"
+          },
+          {
+            "code": "sw"
+          },
+          {
+            "code": "sv"
+          },
+          {
+            "code": "ta"
+          },
+          {
+            "code": "th"
+          },
+          {
+            "code": "ti"
+          },
+          {
+            "code": "tkl"
+          },
+          {
+            "code": "to"
+          },
+          {
+            "code": "tr"
+          },
+          {
+            "code": "tvl"
+          },
+          {
+            "code": "uk"
+          },
+          {
+            "code": "ur"
+          },
+          {
+            "code": "vi"
+          },
+          {
+            "code": "yue"
+          }
+        ]
+      },
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/proposed-language",
+        "concept": [
+          {
+            "code": "tws"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "OTH"
           }
         ]
       }

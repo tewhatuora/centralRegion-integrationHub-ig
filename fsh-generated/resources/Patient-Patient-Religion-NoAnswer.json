@@ -78,7 +78,7 @@
   ],
   "identifier": [
     {
-      "use": "usual",
+      "use": "official",
       "system": "https://standards.digital.health.nz/ns/nhi-id",
       "value": "ZKY0099",
       "type": {

@@ -66,7 +66,7 @@
   ],
   "identifier": [
     {
-      "use": "usual",
+      "use": "official",
       "system": "https://standards.digital.health.nz/ns/nhi-id",
       "value": "ZKY0099",
       "type": {
@@ -127,7 +127,7 @@
           {
             "code": "ach",
             "system": "urn:ietf:bcp:47",
-            "display": "Acholi"
+            "display": "Acoli"
           }
         ]
       },
@@ -140,6 +140,18 @@
             "code": "af",
             "system": "urn:ietf:bcp:47",
             "display": "Afrikaans"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "apc",
+            "system": "urn:ietf:bcp:47",
+            "display": "North Levantine Arabic"
           }
         ]
       },
@@ -247,7 +259,7 @@
           {
             "code": "cmn",
             "system": "urn:ietf:bcp:47",
-            "display": "Mandarin"
+            "display": "Mandarin Chinese"
           }
         ]
       },
@@ -391,7 +403,7 @@
           {
             "code": "el",
             "system": "urn:ietf:bcp:47",
-            "display": "Modern Greek (1453 - "
+            "display": "Modern Greek (1453-)"
           }
         ]
       },
@@ -403,7 +415,7 @@
           {
             "code": "gu",
             "system": "urn:ietf:bcp:47",
-            "display": "Gujurati"
+            "display": "Gujarati"
           }
         ]
       },
@@ -425,7 +437,7 @@
       "language": {
         "coding": [
           {
-            "code": "heb",
+            "code": "he",
             "system": "urn:ietf:bcp:47",
             "display": "Hebrew"
           }
@@ -437,9 +449,177 @@
       "language": {
         "coding": [
           {
-            "code": "he",
+            "code": "hif",
             "system": "urn:ietf:bcp:47",
-            "display": "Hebrew"
+            "display": "Fiji Hindi"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "hi",
+            "system": "urn:ietf:bcp:47",
+            "display": "Hindi"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "hlt",
+            "system": "urn:ietf:bcp:47",
+            "display": "Matu Chin"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "hr",
+            "system": "urn:ietf:bcp:47",
+            "display": "Croatian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "hu",
+            "system": "urn:ietf:bcp:47",
+            "display": "Hungarian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ils",
+            "system": "urn:ietf:bcp:47",
+            "display": "International Sign"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "id",
+            "system": "urn:ietf:bcp:47",
+            "display": "Indonesian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "it",
+            "system": "urn:ietf:bcp:47",
+            "display": "Italian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ja",
+            "system": "urn:ietf:bcp:47",
+            "display": "Japanese"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "km",
+            "system": "urn:ietf:bcp:47",
+            "display": "Central Khmer"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "rw",
+            "system": "urn:ietf:bcp:47",
+            "display": "Kinyarwanda"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "kmr",
+            "system": "urn:ietf:bcp:47",
+            "display": "Northern Kurdish"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ko",
+            "system": "urn:ietf:bcp:47",
+            "display": "Korean"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ku",
+            "system": "urn:ietf:bcp:47",
+            "display": "Kurdish"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "lo",
+            "system": "urn:ietf:bcp:47",
+            "display": "Lao"
           }
         ]
       },
@@ -461,9 +641,9 @@
       "language": {
         "coding": [
           {
-            "code": "mi-CK",
+            "code": "ms",
             "system": "urn:ietf:bcp:47",
-            "display": "Cook Island Māori"
+            "display": "Malay (macrolanguage)"
           }
         ]
       },
@@ -473,9 +653,9 @@
       "language": {
         "coding": [
           {
-            "code": "rar",
+            "code": "my",
             "system": "urn:ietf:bcp:47",
-            "display": "Cook Island Māori"
+            "display": "Burmese"
           }
         ]
       },
@@ -485,9 +665,21 @@
       "language": {
         "coding": [
           {
-            "code": "tkl",
+            "code": "nan",
             "system": "urn:ietf:bcp:47",
-            "display": "Tokelau"
+            "display": "Min nan chinese"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ne",
+            "system": "urn:ietf:bcp:47",
+            "display": "Nepali (macrolanguage)"
           }
         ]
       },
@@ -509,9 +701,129 @@
       "language": {
         "coding": [
           {
-            "code": "tvl",
+            "code": "no",
             "system": "urn:ietf:bcp:47",
-            "display": "Tuvalu"
+            "display": "Norwegian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "nzs",
+            "system": "urn:ietf:bcp:47",
+            "display": "New Zealand Sign Language"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "om",
+            "system": "urn:ietf:bcp:47",
+            "display": "Oromo"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "pa",
+            "system": "urn:ietf:bcp:47",
+            "display": "Panjabi"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "pl",
+            "system": "urn:ietf:bcp:47",
+            "display": "Polish"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "pt",
+            "system": "urn:ietf:bcp:47",
+            "display": "Portuguese"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "prs",
+            "system": "urn:ietf:bcp:47",
+            "display": "Dari"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "rar",
+            "system": "urn:ietf:bcp:47",
+            "display": "Cook Island Māori"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "rhg",
+            "system": "urn:ietf:bcp:47",
+            "display": "Rohingya"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "rn",
+            "system": "urn:ietf:bcp:47",
+            "display": "Rundi"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ru",
+            "system": "urn:ietf:bcp:47",
+            "display": "Russian"
           }
         ]
       },
@@ -533,9 +845,9 @@
       "language": {
         "coding": [
           {
-            "code": "to",
+            "code": "si",
             "system": "urn:ietf:bcp:47",
-            "display": "Tongan"
+            "display": "Sinhala"
           }
         ]
       },
@@ -545,9 +857,201 @@
       "language": {
         "coding": [
           {
-            "code": "fj",
+            "code": "sk",
             "system": "urn:ietf:bcp:47",
-            "display": "Fijian"
+            "display": "Slovak"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "so",
+            "system": "urn:ietf:bcp:47",
+            "display": "Somali"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "es",
+            "system": "urn:ietf:bcp:47",
+            "display": "Spanish"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "sr",
+            "system": "urn:ietf:bcp:47",
+            "display": "Serbian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "sw",
+            "system": "urn:ietf:bcp:47",
+            "display": "Swahili"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "sv",
+            "system": "urn:ietf:bcp:47",
+            "display": "Swedish"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ta",
+            "system": "urn:ietf:bcp:47",
+            "display": "Tamil"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "th",
+            "system": "urn:ietf:bcp:47",
+            "display": "Thai"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ti",
+            "system": "urn:ietf:bcp:47",
+            "display": "Tigrinya"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "tkl",
+            "system": "urn:ietf:bcp:47",
+            "display": "Tokelau"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "to",
+            "system": "urn:ietf:bcp:47",
+            "display": "Tonga (Tonga Islands)"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "tr",
+            "system": "urn:ietf:bcp:47",
+            "display": "Turkish"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "tvl",
+            "system": "urn:ietf:bcp:47",
+            "display": "Tuvalu"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "uk",
+            "system": "urn:ietf:bcp:47",
+            "display": "Ukrainian"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "ur",
+            "system": "urn:ietf:bcp:47",
+            "display": "Urdu"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "vi",
+            "system": "urn:ietf:bcp:47",
+            "display": "Vietnamese"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "yue",
+            "system": "urn:ietf:bcp:47",
+            "display": "Yue Chinese"
           }
         ]
       },
@@ -569,9 +1073,21 @@
       "language": {
         "coding": [
           {
-            "code": "yue",
-            "system": "urn:ietf:bcp:47",
-            "display": "Cantonese"
+            "code": "tws",
+            "system": "https://standards.digital.health.nz/ns/central-region/proposed-language",
+            "display": "Teochew"
+          }
+        ]
+      },
+      "preferred": false
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "OTH",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "Other"
           }
         ]
       },

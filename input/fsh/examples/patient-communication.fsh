@@ -3,7 +3,7 @@ InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with a single language of communication"
 
 * identifier
-  * use = #usual
+  * use = #official
   * system = $NZBaseNHI
   * value = "ZKY0099"
   * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
@@ -64,7 +64,7 @@ InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with an impossibly large set of languages; lets see that we can validate all of them"
 
 * identifier
-  * use = #usual
+  * use = #official
   * system = $NZBaseNHI
   * value = "ZKY0099"
   * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
@@ -98,8 +98,9 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with an
 
 * extension[interpreterRequired].valueBoolean = false
 * insert patientLanguage(ace,   "Achinese")
-* insert patientLanguage(ach,   "Acholi")
+* insert patientLanguage(ach,   "Acoli")
 * insert patientLanguage(af,    "Afrikaans")
+* insert patientLanguage(apc,   "North Levantine Arabic")
 * insert patientLanguage(ayp,   "North Mesopotamian Arabic")
 * insert patientLanguage(am,    "Amharic")
 * insert patientLanguage(ar,    "Arabic")
@@ -108,7 +109,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with an
 * insert patientLanguage(bg,    "Bulgarian")
 * insert patientLanguage(cdo,   "Min Dong Chinese")
 * insert patientLanguage(cs,    "Czech")
-* insert patientLanguage(cmn,   "Mandarin")
+* insert patientLanguage(cmn,   "Mandarin Chinese")
 * insert patientLanguage(da,    "Danish")
 * insert patientLanguage(din,   "Dinka")
 * insert patientLanguage(nl,    "Dutch")
@@ -120,23 +121,74 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with an
 * insert patientLanguage(fi,    "Finnish")
 * insert patientLanguage(fr,    "French")
 * insert patientLanguage(de,    "German")
-* insert patientLanguage(el,    "Modern Greek (1453 - ")
-* insert patientLanguage(gu,    "Gujurati")
+* insert patientLanguage(el,    "Modern Greek (1453-\)")
+* insert patientLanguage(gu,    "Gujarati")
 * insert patientLanguage(hak,   "Hakka Chinese")
-* insert patientLanguage(heb,   "Hebrew")
 * insert patientLanguage(he,    "Hebrew")
-
-* insert patientLanguage(mi, "Māori")
-* insert patientLanguage(mi-CK, "Cook Island Māori")
-* insert patientLanguage(rar,   "Cook Island Māori")
-* insert patientLanguage(tkl,   "Tokelau")
+* insert patientLanguage(hif,   "Fiji Hindi")
+* insert patientLanguage(hi,    "Hindi")
+* insert patientLanguage(hlt,   "Matu Chin")
+* insert patientLanguage(hr,    "Croatian")
+* insert patientLanguage(hu,    "Hungarian")
+* insert patientLanguage(ils,   "International Sign")
+* insert patientLanguage(id,    "Indonesian")
+* insert patientLanguage(it,    "Italian")
+* insert patientLanguage(ja,    "Japanese")
+* insert patientLanguage(km,    "Central Khmer")
+* insert patientLanguage(rw,    "Kinyarwanda")
+* insert patientLanguage(kmr,   "Northern Kurdish")
+* insert patientLanguage(ko,    "Korean")
+* insert patientLanguage(ku,    "Kurdish")
+* insert patientLanguage(lo,    "Lao")
+* insert patientLanguage(mi,    "Māori")
+* insert patientLanguage(ms,    "Malay (macrolanguage\)")
+* insert patientLanguage(my,    "Burmese")
+* insert patientLanguage(nan,   "Min nan chinese")
+* insert patientLanguage(ne,    "Nepali (macrolanguage\)")
 * insert patientLanguage(niu,   "Niuean")
-* insert patientLanguage(tvl,   "Tuvalu")
+* insert patientLanguage(no,    "Norwegian")
+* insert patientLanguage(nzs,   "New Zealand Sign Language")
+* insert patientLanguage(om,    "Oromo")
+* insert patientLanguage(pa,    "Panjabi")
+* insert patientLanguage(pl,    "Polish")
+* insert patientLanguage(pt,    "Portuguese")
+* insert patientLanguage(prs,   "Dari")
+* insert patientLanguage(rar,   "Cook Island Māori")
+* insert patientLanguage(rhg,   "Rohingya")
+* insert patientLanguage(rn,    "Rundi")
+* insert patientLanguage(ru,    "Russian")
 * insert patientLanguage(sm,    "Samoan")
-* insert patientLanguage(to,    "Tongan")
-* insert patientLanguage(fj,    "Fijian")
+* insert patientLanguage(si,    "Sinhala")
+* insert patientLanguage(sk,    "Slovak")
+* insert patientLanguage(so,    "Somali")
+* insert patientLanguage(es,    "Spanish")
+* insert patientLanguage(sr,    "Serbian")
+* insert patientLanguage(sw,    "Swahili")
+* insert patientLanguage(sv,    "Swedish")
+* insert patientLanguage(ta,    "Tamil")
+* insert patientLanguage(th,    "Thai")
+* insert patientLanguage(ti,    "Tigrinya")
+* insert patientLanguage(tkl,   "Tokelau")
+* insert patientLanguage(to,    "Tonga (Tonga Islands\)")
+* insert patientLanguage(tr,    "Turkish")
+* insert patientLanguage(tvl,   "Tuvalu")
+* insert patientLanguage(uk,    "Ukrainian")
+* insert patientLanguage(ur,    "Urdu")
+* insert patientLanguage(vi,    "Vietnamese")
+* insert patientLanguage(yue,   "Yue Chinese")
 * insert patientLanguage(zh,    "Chinese")
-* insert patientLanguage(yue,   "Cantonese")
+
+// the proposed TWS value
+* communication[+].language.coding[+].code = #tws
+* communication[=].language.coding[=].system = $NZCentralRegionProposedLanguageCS
+* communication[=].language.coding[=].display = "Teochew"
+* communication[=].preferred = false
+
+// ... and the orphan OTH value
+* communication[+].language.coding[+].code = #OTH
+* communication[=].language.coding[=].system = $HL7NullFlavourCS
+* communication[=].language.coding[=].display = "Other"
+* communication[=].preferred = false
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS

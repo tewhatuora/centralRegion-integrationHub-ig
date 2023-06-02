@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-06-02T12:45:17+12:00"/>
+   <date value="2023-06-02T20:01:20+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -1042,12 +1042,27 @@
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-proposed-language-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-proposed-language-cs"/>
+         </reference>
+         <name value="NZ Central Region - Proposed Language Code System"/>
+         <description value="3 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **PROPOSED** for ietf:bcp:47"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="CodeSystem-nzcr-raw-language-cs.html"/>
          </extension>
          <reference>
             <reference value="CodeSystem/nzcr-raw-language-cs"/>
          </reference>
-         <name value="NZ Central Region - Language Code System"/>
+         <name value="NZ Central Region - Raw Language Code System"/>
          <description value="3 and 4 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **NOT** from ietf:bcp:47"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
@@ -1611,8 +1626,13 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="CodeSystem-nzcr-proposed-language-cs.html"/>
+               <title value="NZ Central Region - Proposed Language Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="CodeSystem-nzcr-raw-language-cs.html"/>
-               <title value="NZ Central Region - Language Code System"/>
+               <title value="NZ Central Region - Raw Language Code System"/>
                <generation value="generated"/>
             </page>
             <page>

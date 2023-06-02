@@ -6,7 +6,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
  * Equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"
 
 * identifier
-  * use = #usual
+  * use = #official
   * system = $NZBaseNHI
   * value = "ZKY0099"
   * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
@@ -68,7 +68,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
   Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"
 
 * identifier
-  * use = #usual
+  * use = #official
   * system = $NZBaseNHI
   * value = "ZKY0099"
   * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
