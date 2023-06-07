@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "NZCentralRegionMaritalStatusValueSet",
   "id": "nzcr-marital-status-vs",
   "title": "NZ Central Region - Marital Status Value Set",
   "description": "Combined Marital Status value set with values that are in use in Central Region",
-  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-marital-status",
   "experimental": false,
   "compose": {

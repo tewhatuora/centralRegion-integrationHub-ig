@@ -1,6 +1,5 @@
 {
   "resourceType": "AllergyIntolerance",
-  "id": "PeanutAllergy",
   "meta": {
     "profile": [
       "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance"

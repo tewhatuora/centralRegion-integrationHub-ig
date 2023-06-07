@@ -81,9 +81,9 @@ elif PID 11.7 == 'B' then 'work'"
 
 * extension[interpreterRequired].valueBoolean -> "PID-15.4" "if PID-15.4='Y' then 'true' else 'false'"
 
-* communication.language.coding.code -> "PID-15.1"
+* communication.language.coding.code -> "PID-15.1" " [Languge Concept Map](./ConceptMap-LanguageMap.html) provides mapping from [WebPAS raw code](./CodeSystem-nzcr-raw-language-cs.html)\r\n**Note:** `zOTH` and `zTEO` codes are mapped to special systems"
 * communication.language.coding.display -> "PID-15.2"
-* communication.language.coding.system -> "urn:ietf:bcp:47"  "ietf:bcp:47 includes all iso-639 language codes"
+* communication.language.coding.system -> "urn:ietf:bcp:47"  "ietf:bcp:47 includes all iso-639 language codes;"
 
 * generalPractitioner -> "PD1-4" "Lookup using PD1-4.1 (local identifier) ??"
 * generalPractitioner.type -> "'Practitioner'"

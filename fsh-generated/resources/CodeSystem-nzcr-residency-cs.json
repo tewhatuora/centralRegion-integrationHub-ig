@@ -1,12 +1,11 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
+  "status": "draft",
   "content": "complete",
   "name": "NZCentralRegionResidencyCodeSystem",
   "id": "nzcr-residency-cs",
   "title": "NZ Central Region - NZ Residency Code System",
   "description": "Residency codes ex. WebPAS in NZ Central Region",
-  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
   "concept": [
     {

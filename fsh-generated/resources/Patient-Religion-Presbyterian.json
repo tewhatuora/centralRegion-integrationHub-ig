@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-MaritalStatus-Single",
+  "id": "Religion-Presbyterian",
   "meta": {
     "profile": [
       "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
@@ -44,18 +44,41 @@
         }
       ],
       "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "1076",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+            "display": "Presbyterian"
+          },
+          {
+            "code": "R33",
+            "system": "https://standards.digital.health.nz/ns/central-region/patient-religion",
+            "display": "Presbyterian"
+          }
+        ]
+      }
     }
   ],
   "address": [
     {
       "type": "postal",
-      "text": "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND",
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
+          "valueString": "Kelvin Grove"
+        }
+      ],
       "line": [
-        "100 Broadway Avenue"
+        "100 Cambridge Street"
       ],
       "city": "Palmerston North",
       "postalCode": "4410",
-      "country": "NEW ZEALAND"
+      "country": "NEW ZEALAND",
+      "text": "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
     }
   ],
   "identifier": [
@@ -76,7 +99,7 @@
   ],
   "name": [
     {
-      "use": "usual",
+      "use": "official",
       "given": [
         "James"
       ],
@@ -89,9 +112,9 @@
   "maritalStatus": {
     "coding": [
       {
-        "code": "S",
-        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-        "display": "Never Married"
+        "code": "V",
+        "system": "https://standards.digital.health.nz/ns/central-region/extra-marital-status",
+        "display": "Civil Union"
       }
     ]
   },

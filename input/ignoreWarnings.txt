@@ -2,9 +2,15 @@
 
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# Can't fig bugs from NZBase myself
+# Can't fix bugs from NZBase myself
 Wrong Display Name 'Waikato' for https://standards.digital.health.nz/ns/dhb-code#G00027-C - should be 'Waikato District Health Board' (for the language(s) 'en') for 'https://standards.digital.health.nz/ns/dhb-code#G00027-C'
 
 # Ignore cultural imperialism in regards to languages
 Wrong Display Name 'Māori' for urn:ietf:bcp:47#mi - should be 'Maori' (for the language(s) '--') (from Tx-Server) for 'urn:ietf:bcp:47#mi'
 Wrong Display Name 'Cook Island Māori' for urn:ietf:bcp:47#rar - should be 'Rarotongan' (for the language(s) '--') (from Tx-Server) for 'urn:ietf:bcp:47#rar'
+
+# Sometimes it's ok to have an empty middle column in a mapping entry
+value should not be all whitespace '\u00a0'
+
+# 'twould appear ClinicalImpression.problem.comment has a problem
+The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}

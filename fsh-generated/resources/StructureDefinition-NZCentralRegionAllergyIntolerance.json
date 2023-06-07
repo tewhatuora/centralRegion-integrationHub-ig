@@ -2,9 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionAllergyIntolerance",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance",
-  "version": "0.1.0",
   "name": "NZCentralRegionAllergyIntolerance",
-  "status": "active",
+  "status": "draft",
   "description": "AllergyIntolerance resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -37,11 +36,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "AllergyIntolerance.id",
-        "path": "AllergyIntolerance.id",
-        "max": "0"
-      },
       {
         "id": "AllergyIntolerance.extension",
         "path": "AllergyIntolerance.extension",
@@ -84,10 +78,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:hl7v2Message.valueBase64Binary",
-        "path": "AllergyIntolerance.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:hl7v2Message.value[x]",
+        "path": "AllergyIntolerance.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -136,10 +128,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:severityLevel.valueInteger",
-        "path": "AllergyIntolerance.extension.extension.valueInteger",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:severityLevel.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -166,10 +156,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.valueString",
-        "path": "AllergyIntolerance.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -193,10 +181,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:inactiveDate.valueDate",
-        "path": "AllergyIntolerance.extension.extension.valueDate",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:inactiveDate.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -221,10 +207,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:reviewDate.valueDate",
-        "path": "AllergyIntolerance.extension.extension.valueDate",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:reviewDate.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -249,10 +233,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedBy.valueString",
-        "path": "AllergyIntolerance.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedBy.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -277,10 +259,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedDateTime.valueDateTime",
-        "path": "AllergyIntolerance.extension.extension.valueDateTime",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedDateTime.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -710,7 +690,7 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": " ",
+            "map": " ",
             "comment": "One of:\n* https://standards.digital.health.nz/ns/central-region/allergy-alert-code-a3\n* https://standards.digital.health.nz/ns/central-region/allergy-alert-code-a4\n* https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1\n* https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3\n\ndepending upon value of ZAL-2.1"
           }
         ]
@@ -771,7 +751,7 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": " ",
+            "map": " ",
             "comment": "read-only field"
           }
         ]
@@ -797,7 +777,7 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": "",
+            "map": " ",
             "comment": "Select the NHI identifier from the list provided; where PID-3.4.2 = 2.16.840.1.113883.2.18.2"
           }
         ]
@@ -985,8 +965,9 @@
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.onsetDateTime",
-        "path": "AllergyIntolerance.onsetDateTime",
+        "id": "AllergyIntolerance.onset[x]:onsetDateTime",
+        "path": "AllergyIntolerance.onset[x]",
+        "sliceName": "onsetDateTime",
         "min": 0,
         "max": "1",
         "type": [
@@ -1004,8 +985,9 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.onsetPeriod",
-        "path": "AllergyIntolerance.onsetPeriod",
+        "id": "AllergyIntolerance.onset[x]:onsetPeriod",
+        "path": "AllergyIntolerance.onset[x]",
+        "sliceName": "onsetPeriod",
         "min": 0,
         "max": "1",
         "type": [
@@ -1016,8 +998,8 @@
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.onsetPeriod.start",
-        "path": "AllergyIntolerance.onsetPeriod.start",
+        "id": "AllergyIntolerance.onset[x]:onsetPeriod.start",
+        "path": "AllergyIntolerance.onset[x].start",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -1027,8 +1009,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.onsetPeriod.end",
-        "path": "AllergyIntolerance.onsetPeriod.end",
+        "id": "AllergyIntolerance.onset[x]:onsetPeriod.end",
+        "path": "AllergyIntolerance.onset[x].end",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -1064,7 +1046,7 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": " ",
+            "map": " ",
             "comment": "read-only field"
           }
         ]
@@ -1134,7 +1116,7 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": "",
+            "map": " ",
             "comment": "Practitioner Identifiers are locally assigned within PAS"
           }
         ]

@@ -1,12 +1,11 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
+  "status": "draft",
   "content": "complete",
   "name": "NZCentralRegionAllergyAlertCodeH3CodeSystem",
   "id": "nzcr-allergy-alert-code-h3-cs",
   "title": "NZ Central Region - Allergy Alert Codes (H3)",
   "description": "H3 Allergy alert codes ex. WebPAS in NZ Central Region.",
-  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3",
   "concept": [
     {

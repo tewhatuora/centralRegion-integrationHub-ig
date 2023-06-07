@@ -1,12 +1,11 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
+  "status": "draft",
   "content": "complete",
   "name": "NZCentralRegionEthnicityLevel2CodeSystem",
   "id": "nzcr-ethnicity-level-2-code-system",
   "title": "NZ Central Region - Ethnicity Level 2 Code System",
   "description": "Ethnicity Level 2 codes from \n   [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)",
-  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
   "concept": [
     {

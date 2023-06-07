@@ -6,7 +6,6 @@ Parent: $NZBasePatient
 Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * ^derivation = #constraint
-* id 0..0
 
 * meta 
   * profile = "NZCentralRegionPatient"   // not accepting other profiles of Patient

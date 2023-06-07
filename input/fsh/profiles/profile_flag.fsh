@@ -4,7 +4,6 @@ Parent: http://hl7.org/fhir/StructureDefinition/Flag
 Description: "Flag resource for Te Whatu Ora, Central Region"
 
 * ^derivation = #constraint
-* id 0..0
 
 * implicitRules 0..0
 * language 0..0

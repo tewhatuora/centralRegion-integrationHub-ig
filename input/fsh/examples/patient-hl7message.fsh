@@ -1,5 +1,5 @@
 // Example Instances of Patient
-Instance: Patient-HL7Message
+Instance: HL7Message
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, including the source HL7 v2 message"
 

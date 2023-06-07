@@ -2,9 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionFlag",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag",
-  "version": "0.1.0",
   "name": "NZCentralRegionFlag",
-  "status": "active",
+  "status": "draft",
   "description": "Flag resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -32,11 +31,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Flag.id",
-        "path": "Flag.id",
-        "max": "0"
-      },
       {
         "id": "Flag.implicitRules",
         "path": "Flag.implicitRules",
@@ -94,10 +88,8 @@
         ]
       },
       {
-        "id": "Flag.extension:hl7v2Message.valueBase64Binary",
-        "path": "Flag.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
+        "id": "Flag.extension:hl7v2Message.value[x]",
+        "path": "Flag.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -138,10 +130,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:severityLevel.valueInteger",
-        "path": "Flag.extension.extension.valueInteger",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:severityLevel.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -165,10 +155,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:inactiveDate.valueDate",
-        "path": "Flag.extension.extension.valueDate",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:inactiveDate.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -192,10 +180,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:reviewDate.valueDate",
-        "path": "Flag.extension.extension.valueDate",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:reviewDate.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -219,10 +205,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:lastUpdatedBy.valueString",
-        "path": "Flag.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedBy.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -247,10 +231,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime.valueDateTime",
-        "path": "Flag.extension.extension.valueDateTime",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -320,10 +302,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:comments.valueString",
-        "path": "Flag.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:comments.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",

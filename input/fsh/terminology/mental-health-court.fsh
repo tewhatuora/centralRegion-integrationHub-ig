@@ -7,7 +7,10 @@ Description:  "Mental Health Court Type identification codes ex. WebPAS in NZ Ce
 * ^experimental = false
 * ^caseSensitive = true
 
-* #HG "High"
+* #R01 "District Court"
+* #R02 "Familty Court"
+* #R03 "High Court"
+
 
 
 ValueSet: NZCentralRegionMentalHealthCourtTypeValueSet

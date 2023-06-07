@@ -4,7 +4,6 @@ Parent: http://hl7.org/fhir/StructureDefinition/ClinicalImpression
 Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - holds mental health legal statuses"
 
 * ^derivation = #constraint
-* id 0..0
 
 * implicitRules 0..0
 * language 0..0
@@ -22,9 +21,6 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
   * id 0..0
 
 * status 1..1 MS
-* status = #completed
-
-* code 1..1 MS
 
 * subject 1..1 MS
   * type 1..1 MS
@@ -93,13 +89,15 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
   * extension 0..0
   * id 0..0
 
-* problem 1..1 MS
+* problem 0..1 MS
 
 * summary 1..1 MS
  
 * extension contains
     nzcr-mental-health named mentalHealth 1..1 MS and
     nzcr-hl7v2-message named hl7v2Message 1..1 MS
+
+* code 0..0                        // no data
 
 * statusReason 0..0                // no data
 * description 0..0                 // no data

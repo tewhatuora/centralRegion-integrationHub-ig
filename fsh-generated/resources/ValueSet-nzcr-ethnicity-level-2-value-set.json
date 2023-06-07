@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "NZCentralRegionEthnicityLevel2ValueSet",
   "id": "nzcr-ethnicity-level-2-value-set",
   "title": "NZ Central Region - Ethnicity Level 2 Value Set",
   "description": "Ethnicity Level 2 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)",
-  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2",
   "experimental": false,
   "compose": {

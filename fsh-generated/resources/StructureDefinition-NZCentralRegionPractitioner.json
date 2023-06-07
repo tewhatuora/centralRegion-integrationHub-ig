@@ -2,9 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionPractitioner",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPractitioner",
-  "version": "0.1.0",
   "name": "NZCentralRegionPractitioner",
-  "status": "active",
+  "status": "draft",
   "description": "Practitioner resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -27,6 +26,12 @@
       "identity": "w5",
       "uri": "http://hl7.org/fhir/fivews",
       "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "nzcr-practitioner-from-hl7v2",
+      "name": "Central Region Message Specification (1.14)",
+      "uri": "https://standards.digital.health.nz/ns/central-region/hl7-v2",
+      "comment": "Central Region Message Specification (1.14) - Practitioner from ADT^031 PID, PD1, ZAL and ZLS segments"
     }
   ],
   "kind": "resource",
@@ -37,9 +42,14 @@
   "differential": {
     "element": [
       {
-        "id": "Practitioner.id",
-        "path": "Practitioner.id",
-        "max": "0"
+        "id": "Practitioner",
+        "path": "Practitioner",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "Practitioner"
+          }
+        ]
       },
       {
         "id": "Practitioner.implicitRules",
@@ -102,10 +112,127 @@
         "mustSupport": true
       },
       {
+        "id": "Practitioner.extension:hl7v2Message.url",
+        "path": "Practitioner.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.extension:hl7v2Message.value[x]",
+        "path": "Practitioner.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "Entire incoming HL7 message",
+            "comment": "Base64 encoded"
+          }
+        ]
+      },
+      {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "PD1->4",
+            "comment": "Patient's General Practitioner"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZAL->10",
+            "comment": "Clinician authorising Patient's medical alert"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZLS-6",
+            "comment": "Clinician authorising conducting Patient's medical health legal status review"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier.use",
+        "path": "Practitioner.identifier.use",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier.type.coding",
+        "path": "Practitioner.identifier.type.coding",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "",
+            "comment": "Practitioner Identifiers are locally assigned within PAS"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.system",
+        "path": "Practitioner.identifier.type.coding.system",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.code",
+        "path": "Practitioner.identifier.type.coding.code",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "'LR'"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.display",
+        "path": "Practitioner.identifier.type.coding.display",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "'Local registry ID'"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "PD1-4.1"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZAL-10.1"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZLS-6.1"
+          }
+        ]
       },
       {
         "id": "Practitioner.active",
@@ -117,7 +244,21 @@
         "id": "Practitioner.name",
         "path": "Practitioner.name",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "PD1-4"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZAL-10"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZLS-6"
+          }
+        ]
       },
       {
         "id": "Practitioner.name.id",
@@ -132,31 +273,93 @@
       {
         "id": "Practitioner.name.use",
         "path": "Practitioner.name.use",
-        "short": "one of: official / nickname",
+        "short": "official | nickname",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
       },
       {
         "id": "Practitioner.name.text",
         "path": "Practitioner.name.text",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "PD1-4.4 + ' ' + PD1-4.3 + ' ' + PD1-5.2"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZAL-10.4 + ' ' + ZAL-10.3 + ' ' + ZAL-10.2"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZLS-6.4 + ' ' + ZLS-6.3 + ' ' + ZLS-6.2"
+          }
+        ]
       },
       {
         "id": "Practitioner.name.family",
         "path": "Practitioner.name.family",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "PD1-4.2"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZAL-10.2"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZLS-6.2"
+          }
+        ]
       },
       {
         "id": "Practitioner.name.given",
         "path": "Practitioner.name.given",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "PD1-4.3"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZAL-10.3"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZLS-6.3"
+          }
+        ]
       },
       {
         "id": "Practitioner.name.prefix",
         "path": "Practitioner.name.prefix",
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "PD1-4.4"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZAL-10.4"
+          },
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "ZLS-6.4"
+          }
+        ]
       },
       {
         "id": "Practitioner.name.suffix",

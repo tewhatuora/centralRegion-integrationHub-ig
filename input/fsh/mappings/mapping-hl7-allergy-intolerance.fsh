@@ -29,7 +29,7 @@ Description: "Central Region Message Specification (1.14) - Allergy Intolerance 
 * criticality -> "low | high | unable-to-assess" "perhaps derived from severity ??\n**Note:** not coding, so no system or display sub-fields"
 
 * code.coding.code -> "ZAL-3.1"
-* code.coding.system -> " " "One of:
+* code.coding.system -> " " "One of:
 * https://standards.digital.health.nz/ns/central-region/allergy-alert-code-a3
 * https://standards.digital.health.nz/ns/central-region/allergy-alert-code-a4
 * https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1
@@ -38,9 +38,9 @@ Description: "Central Region Message Specification (1.14) - Allergy Intolerance 
 depending upon value of ZAL-2.1"
 * code.coding.display -> "ZAL-3.2"
 
-* patient.reference -> " " "read-only field"
+* patient.reference -> " " "read-only field"
 * patient.type -> "'Patient'"
-* patient.identifier -> "" "Select the NHI identifier from the list provided; where PID-3.4.2 = 2.16.840.1.113883.2.18.2"
+* patient.identifier -> " " "Select the NHI identifier from the list provided; where PID-3.4.2 = 2.16.840.1.113883.2.18.2"
 * patient.identifier.use -> "'usual'"
 * patient.identifier.system -> "'https://standards.digital.health.nz/ns/nhi-id'"
 * patient.identifier.value -> "PID-3.1"
@@ -54,12 +54,12 @@ depending upon value of ZAL-2.1"
 * onsetPeriod.start -> "ZAL-5" "only if there is ZAL-9 value to complete Period\n**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
 * onsetPeriod.end -> "ZAL-9" 
 
-* recorder.reference -> " " "read-only field"
+* recorder.reference -> " " "read-only field"
 * recorder.type -> "'Practitioner'"
 * recorder.identifier.use -> "'usual'"
 * recorder.identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
 * recorder.identifier.value -> "ZAL-10.1"
-* recorder.identifier.type.coding -> "" "Practitioner Identifiers are locally assigned within PAS"
+* recorder.identifier.type.coding -> " " "Practitioner Identifiers are locally assigned within PAS"
   * code -> "'LR'"
   * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
   * display -> "'Local registry ID'"
@@ -89,9 +89,9 @@ depending upon value of ZAL-2.1"
 * extension[allergy-alert].extension[lastUpdatedBy].valueString -> "ZAL-11.1 + ' - ' + ZAL-11.2" "Not to be confused with Recorder"
 
 * extension[allergy-alert].extension[recordingHospital].url -> "'recordingHospital'"
-* extension[allergy-alert].extension[recordingHospital].value[x].code -> "ZAL-13.1"
-* extension[allergy-alert].extension[recordingHospital].value[x].system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
-* extension[allergy-alert].extension[recordingHospital].value[x].display -> "ZAL-13.2"
+* extension[allergy-alert].extension[recordingHospital].valueCoding.code -> "ZAL-13.1"
+* extension[allergy-alert].extension[recordingHospital].valueCoding.system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
+* extension[allergy-alert].extension[recordingHospital].valueCoding.display -> "ZAL-13.2"
 
 * extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7v2-message'"
 * extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

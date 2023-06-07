@@ -1,12 +1,11 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
+  "status": "draft",
   "content": "complete",
   "name": "NZCentralRegionRawLanguageCodeSystem",
   "id": "nzcr-raw-language-cs",
   "title": "NZ Central Region - Raw Language Code System",
   "description": "3 and 4 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **NOT** from ietf:bcp:47",
-  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/raw-language",
   "concept": [
     {

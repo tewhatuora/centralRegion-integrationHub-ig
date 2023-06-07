@@ -4,7 +4,6 @@ Parent: http://hl7.org/fhir/StructureDefinition/AllergyIntolerance
 Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
 
 * ^derivation = #constraint
-* id 0..0
 
 * identifier 1..1 MS
   * system 1..1 MS

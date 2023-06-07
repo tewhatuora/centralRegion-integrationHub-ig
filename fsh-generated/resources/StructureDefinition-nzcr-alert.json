@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "nzcr-alert",
   "url": "https://standards.digital.health.nz/ns/central-region/alert",
-  "version": "0.1.0",
   "name": "NZCentralRegionAlert",
   "title": "NZ Central Region Alert",
   "status": "active",

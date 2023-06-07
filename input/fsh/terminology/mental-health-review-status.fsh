@@ -1,7 +1,7 @@
 CodeSystem:  NZCentralRegionMentalHealthReviewStatusCodeSystem
 Id: nzcr-mental-health-review-status-cs
 Title: "NZ Central Region - MentalHealthReviewStatus Code System"
-Description:  "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region."
+Description:  "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region - denoting if the patient's mental health status review has been completed, if not the reason why."
 
 * ^url = $NZCentralRegionMentalHealthReviewStatusCS
 * ^experimental = false
@@ -16,7 +16,7 @@ Description:  "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region."
 ValueSet: NZCentralRegionMentalHealthReviewStatusValueSet
 Id: nzcr-mental-health-review-status-vs
 Title: "NZ Central Region - MentalHealthReviewStatus Value Set"
-Description:  "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region."
+Description:  "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region.  - denoting if the patient's mental health status review has been completed, if not the reason why."
 
 * ^url = $NZCentralRegionMentalHealthReviewStatusVS
 * ^experimental = false

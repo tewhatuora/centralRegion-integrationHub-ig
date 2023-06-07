@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "NZCentralRegionLanguageValueSet",
   "id": "nzcr-language-vs",
   "title": "NZ Central Region - Language Value Set",
   "description": "IETF equivalent Language codes, matching the raw codes used by WebPAS in NZ Central Region.",
-  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-language",
   "experimental": false,
   "compose": {

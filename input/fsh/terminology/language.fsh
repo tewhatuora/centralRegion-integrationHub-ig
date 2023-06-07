@@ -214,17 +214,17 @@ RuleSet: langEntryComment(from, frDisplay, to, toDisplay, comment)
 
 
 // WebPAS language codes are nearly right...
-Instance: ConceptMap-LanguageMap
+Instance: LanguageMap
 InstanceOf: ConceptMap
-Description: "Concept map mapping raw Langeuage codes ex. WebPAS to proper ietf:bcp:47 language codes"
+Description: "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes"
 
-* name = "nzcr-language-cm"
+* name = "NZCRLanguageConceptMap"
 * title = "NZ Central Region Language Concept Map"
-* description = "Concept map mapping raw Langeuage codes ex. WebPAS to proper ietf:bcp:47 language codes"
+* description = "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes"
 
 * url = $NZCentralRegionLanguageConceptMap
 * experimental = false
-* purpose = "To translate raw language codes used in WebPAS to more recognised language codes"
+* purpose = "Translates raw language codes used in WebPAS to more recognised `ietf:bcp:47` language codes"
 * status = #draft
 * sourceUri = $NZCentralRegionRawLanguageCS
 * targetUri = $IETFLanguageCS
