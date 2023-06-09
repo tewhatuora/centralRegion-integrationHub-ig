@@ -1,11 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionReligionCodeSystem",
   "id": "nzcr-religion-cs",
   "title": "NZ Central Region - NZ Religion Code System",
   "description": "Religion codes ex. WebPAS in NZ Central Region",
+  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/patient-religion",
   "concept": [
     {

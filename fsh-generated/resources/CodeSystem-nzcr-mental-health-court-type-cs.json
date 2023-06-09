@@ -1,11 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionMentalHealthCourtTypeCodeSystem",
   "id": "nzcr-mental-health-court-type-cs",
   "title": "NZ Central Region - Mental Health Court Type Code System",
   "description": "Mental Health Court Type identification codes ex. WebPAS in NZ Central Region",
+  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/mental-health-court-type",
   "concept": [
     {

@@ -7,9 +7,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * ^derivation = #constraint
 
-* meta 
-  * profile = "NZCentralRegionPatient"   // not accepting other profiles of Patient
-
 * identifier 1..* MS  // We must have at least local ID
   * use 1..1 MS
   * system 1..1 MS

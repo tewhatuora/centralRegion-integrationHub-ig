@@ -6,6 +6,7 @@
       "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionClinicalImpression"
     ]
   },
+  "status": "completed",
   "extension": [
     {
       "url": "https://standards.digital.health.nz/ns/central-region/mental-health",
@@ -111,7 +112,6 @@
     },
     "display": "Barnes, Abby Dr"
   },
-  "status": "completed",
   "effectiveDateTime": "2022-08-28T16:52:04+12:00",
   "summary": "This is comments made within the patients legal status Extra comments made within the patients legal status"
 }

@@ -1,11 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionHospitalCodeSystem",
   "id": "nzcr-hospital-code-cs",
   "title": "NZ Central Region - Hospital Code System",
   "description": "Hospital identification codes ex. WebPAS in NZ Central Region",
+  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/hospital-code",
   "concept": [
     {

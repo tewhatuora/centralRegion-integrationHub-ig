@@ -76,7 +76,7 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
   * ^short = "Which hospital recorded the alert?"
   * value[x] only Coding
   * value[x] from nzcr-hospital-code-vs (required)
-  * value[x] 1..1
+  * valueCoding 1..1
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
     * extension 0..0

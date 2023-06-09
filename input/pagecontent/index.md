@@ -22,4 +22,3 @@ The Integration Hub supports a small set of FHIR Resources:
 {% include datamodel.svg %}
 <figcaption>Supported FHIR Resources</figcaption>
 </figure>
-

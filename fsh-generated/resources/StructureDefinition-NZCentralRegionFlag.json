@@ -2,8 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionFlag",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag",
+  "version": "0.1.0",
   "name": "NZCentralRegionFlag",
-  "status": "draft",
+  "status": "active",
   "description": "Flag resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -21,7 +22,7 @@
       "identity": "nzcr-flag-from-hl7v2",
       "name": "Central Region Message Specification (1.14)",
       "uri": "https://standards.digital.health.nz/ns/central-region/hl7-v2",
-      "comment": "Central Region Message Specification (1.14) - Flag from ADT^031 ZAL where Alert Type field `ZAL-2.1` with values from \n[Flag Alert Type](./ValueSet-nzcr-flag-alert-type-vs.html) codes."
+      "comment": "Central Region Message Specification (1.14) - Flag from ADT^031 ZAL where Alert Type field `ZAL-2.1` with values from \n[Flag Alert Code](./ValueSet-nzcr-flag-alert-code-vs.html) codes."
     }
   ],
   "kind": "resource",
@@ -88,8 +89,10 @@
         ]
       },
       {
-        "id": "Flag.extension:hl7v2Message.value[x]",
-        "path": "Flag.extension.value[x]",
+        "id": "Flag.extension:hl7v2Message.valueBase64Binary",
+        "path": "Flag.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -130,8 +133,10 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:severityLevel.value[x]",
-        "path": "Flag.extension.extension.value[x]",
+        "id": "Flag.extension:flag-alert.extension:severityLevel.valueInteger",
+        "path": "Flag.extension.extension.valueInteger",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -155,8 +160,10 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:inactiveDate.value[x]",
-        "path": "Flag.extension.extension.value[x]",
+        "id": "Flag.extension:flag-alert.extension:inactiveDate.valueDate",
+        "path": "Flag.extension.extension.valueDate",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -180,8 +187,10 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:reviewDate.value[x]",
-        "path": "Flag.extension.extension.value[x]",
+        "id": "Flag.extension:flag-alert.extension:reviewDate.valueDate",
+        "path": "Flag.extension.extension.valueDate",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -205,8 +214,10 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:lastUpdatedBy.value[x]",
-        "path": "Flag.extension.extension.value[x]",
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedBy.valueString",
+        "path": "Flag.extension.extension.valueString",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -231,8 +242,10 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime.value[x]",
-        "path": "Flag.extension.extension.value[x]",
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime.valueDateTime",
+        "path": "Flag.extension.extension.valueDateTime",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -257,8 +270,12 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].system",
-        "path": "Flag.extension.extension.value[x].system",
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.valueCoding",
+        "path": "Flag.extension.extension.valueCoding"
+      },
+      {
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.valueCoding.system",
+        "path": "Flag.extension.extension.valueCoding.system",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -267,8 +284,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].code",
-        "path": "Flag.extension.extension.value[x].code",
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.valueCoding.code",
+        "path": "Flag.extension.extension.valueCoding.code",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -277,8 +294,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].display",
-        "path": "Flag.extension.extension.value[x].display",
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.valueCoding.display",
+        "path": "Flag.extension.extension.valueCoding.display",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -302,8 +319,10 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:comments.value[x]",
-        "path": "Flag.extension.extension.value[x]",
+        "id": "Flag.extension:flag-alert.extension:comments.valueString",
+        "path": "Flag.extension.extension.valueString",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -562,7 +581,7 @@
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": " ",
+            "map": " ",
             "comment": "One of:\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-ma\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h4\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h5\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h6\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h7\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8"
           }
         ]
@@ -628,7 +647,7 @@
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": " ",
+            "map": " ",
             "comment": "read-only field"
           }
         ]
@@ -654,7 +673,7 @@
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "",
+            "map": " ",
             "comment": "Select the NHI identifier from the list provided; where PID-3.4.2 = 2.16.840.1.113883.2.18.2"
           }
         ]
@@ -878,7 +897,7 @@
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": " ",
+            "map": " ",
             "comment": "read-only field"
           }
         ]
@@ -948,7 +967,7 @@
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "",
+            "map": " ",
             "comment": "Practitioner Identifiers are locally assigned within PAS"
           }
         ]

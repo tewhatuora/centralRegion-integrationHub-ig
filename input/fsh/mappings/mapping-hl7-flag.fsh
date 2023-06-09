@@ -4,7 +4,7 @@ Target:   "https://standards.digital.health.nz/ns/central-region/hl7-v2"
 Id:       nzcr-flag-from-hl7v2
 Title:    "Central Region Message Specification (1.14)"
 Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZAL where Alert Type field `ZAL-2.1` with values from 
-[Flag Alert Type](./ValueSet-nzcr-flag-alert-type-vs.html) codes."
+[Flag Alert Code](./ValueSet-nzcr-flag-alert-code-vs.html) codes."
 
 * category -> "ZAL-2"
 * category.coding.code -> "ZAL-2.1"
@@ -24,7 +24,7 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 
 * code -> "ZAL-3"
 * code.coding.code -> "ZAL-3.1"
-* code.coding.system -> " " "One of:
+* code.coding.system -> " " "One of:
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-ma
@@ -37,9 +37,9 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8"
 * code.coding.display -> "ZAL-3.2"
 
-* subject.reference -> " " "read-only field"
+* subject.reference -> " " "read-only field"
 * subject.type -> "'Patient'"
-* subject.identifier -> "" "Select the NHI identifier from the list provided; where PID-3.4.2 = 2.16.840.1.113883.2.18.2"
+* subject.identifier -> " " "Select the NHI identifier from the list provided; where PID-3.4.2 = 2.16.840.1.113883.2.18.2"
 * subject.identifier.use -> "'usual'"
 * subject.identifier.system -> "'https://standards.digital.health.nz/ns/nhi-id'"
 * subject.identifier.value -> "PID-3.1"
@@ -52,12 +52,12 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * period.start -> "ZAL-5" "**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
 * period.end -> "ZAL-9"   // or perhaps ZAL-8  - depends if we're using inactiveDate or endDate
 
-* author.reference -> " " "read-only field"
+* author.reference -> " " "read-only field"
 * author.type -> "'Practitioner'"
 * author.identifier.use -> "'usual'"
 * author.identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
 * author.identifier.value -> "ZAL-10.1"
-* author.identifier.type.coding -> "" "Practitioner Identifiers are locally assigned within PAS"
+* author.identifier.type.coding -> " " "Practitioner Identifiers are locally assigned within PAS"
   * code -> "'LR'"
   * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
   * display -> "'Local registry ID'"
@@ -81,9 +81,9 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * extension[flag-alert].extension[lastUpdatedBy].valueString -> "ZAL-11.1 + ' - ' + ZAL-11.2" "Not to be confused with Author"
 
 * extension[flag-alert].extension[recordingHospital].url -> "'recordingHospital'"
-* extension[flag-alert].extension[recordingHospital].value[x].code -> "ZAL-13.1"
-* extension[flag-alert].extension[recordingHospital].value[x].system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
-* extension[flag-alert].extension[recordingHospital].value[x].display -> "ZAL-13.2"
+* extension[flag-alert].extension[recordingHospital].valueCoding.code -> "ZAL-13.1"
+* extension[flag-alert].extension[recordingHospital].valueCoding.system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
+* extension[flag-alert].extension[recordingHospital].valueCoding.display -> "ZAL-13.2"
 
 * extension[flag-alert].extension[comments].url -> "'comments'"
 * extension[flag-alert].extension[comments].valueString -> "ZAL-14"

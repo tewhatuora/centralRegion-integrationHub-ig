@@ -10,7 +10,7 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
 * identifier.system -> "'https://standards.digital.health.nz/ns/pas-clinical-impression-id'"
 * identifier.value -> "PID-3.1 + '-' + ZLS-3" "Concatenation of PatientId and startDateTime"
 
-* status -> "'completed' | 'in-progress'" "**if** ZLS-5.1 = 'R05' **then** 'completed' **else** 'in-progress'"
+* status -> "'completed'"
 
 * subject
   * reference -> " " "read-only field"
@@ -40,13 +40,13 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
 * extension[mentalHealth].url -> "'https://standards.digital.health.nz/ns/central-region/alert'"
 
 * extension[mentalHealth].extension[legalStatus].url -> "'legalStatus'"
-* extension[mentalHealth].extension[legalStatus].value[x] -> " "   // non breaking space to shut the validator up
+* extension[mentalHealth].extension[legalStatus].valueCoding -> " "   // non breaking space to shut the validator up
   * code -> "ZLS-2.1"
   * system -> "'https://standards.digital.health.nz/ns/central-region/mental-health-legal-status'"
   * display -> "ZLS-2.2"
 
 * extension[mentalHealth].extension[reviewStatus].url -> "'reviewStatus'"
-* extension[mentalHealth].extension[reviewStatus].value[x] -> " "   // non breaking space to shut the validator up
+* extension[mentalHealth].extension[reviewStatus].valueCoding -> " "   // non breaking space to shut the validator up
   * code -> "ZLS-5.1"
   * system -> "'https://standards.digital.health.nz/ns/central-region/mental-health-review-status'"
   * display -> "ZLS-5.2"
@@ -60,7 +60,7 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
 * effectiveDateTime -> "ZLS-8" "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
 
 * extension[mentalHealth].extension[location].url -> "'location'"
-* extension[mentalHealth].extension[location].value[x] -> " "   // non breaking space to shut the validator up
+* extension[mentalHealth].extension[location].valueCoding -> " "   // non breaking space to shut the validator up
   * code -> "ZLS-7.1"
   * system -> "'https://standards.digital.health.nz/ns/central-region/mental-health-review-location'"
   * display -> "ZLS-7.2"
@@ -83,7 +83,7 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
 * extension[mentalHealth].extension[lastUpdatedDateTime].value[x] -> "ZLS-14" "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
 
 * extension[mentalHealth].extension[supplementaryLegalStatus].url -> "'supplementaryLegalStatus'"
-* extension[mentalHealth].extension[supplementaryLegalStatus].value[x] -> " "   // non breaking space to shut the validator up
+* extension[mentalHealth].extension[supplementaryLegalStatus].valueCoding -> " "   // non breaking space to shut the validator up
   * code -> "ZLS-15.1"
   * system -> "'https://standards.digital.health.nz/ns/central-region/mental-health-legal-status'"
   * display -> "ZLS-15.2"
@@ -104,7 +104,7 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
 * extension[mentalHealth].extension[courtLodgedDate].value[x] -> "ZLS-20" "**Note:** ISO Date has field separators"
 
 * extension[mentalHealth].extension[courtType].url -> "'courtType'"
-* extension[mentalHealth].extension[courtType].value[x] -> " "
+* extension[mentalHealth].extension[courtType].valueCoding -> " "
   * code -> "ZLS-21.1"
   * system -> "'https://standards.digital.health.nz/ns/central-region/mental-health-court-type'"
   * display -> "ZLS-21.2"

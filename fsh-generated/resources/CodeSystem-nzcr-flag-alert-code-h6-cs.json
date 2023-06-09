@@ -1,11 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionFlagAlertCodeH6CodeSystem",
   "id": "nzcr-flag-alert-code-h6-cs",
   "title": "NZ Central Region - Flag Alert Codes (H6)",
   "description": "H6 (transfusion) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h6",
   "concept": [
     {

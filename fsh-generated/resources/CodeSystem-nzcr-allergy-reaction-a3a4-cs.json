@@ -1,11 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionAllergyReactionA3A4CodeSystem",
   "id": "nzcr-allergy-reaction-a3a4-cs",
   "title": "NZ Central Region - Allergy Reaction (A3, A4) Code System",
   "description": "Allergy Reaction codes for categories A3 & A4; ex. WebPAS in NZ Central Region.",
+  "version": "0.1.0",
   "url": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4",
   "concept": [
     {

@@ -11,7 +11,7 @@ Description:    "Central Region Message Specification (1.14) - Practitioner from
 * identifier.use -> "'usual'" 
 * identifier.value -> "PD1-4.1"
 * identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
-* identifier.type.coding -> "" "Practitioner Identifiers are locally assigned within PAS"
+* identifier.type.coding -> " " "Practitioner Identifiers are locally assigned within PAS"
   * code -> "'LR'"
   * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
   * display -> "'Local registry ID'"

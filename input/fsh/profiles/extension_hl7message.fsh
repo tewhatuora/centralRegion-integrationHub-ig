@@ -14,5 +14,7 @@ Description: "Base64 encoded string containing the original HL7 v2 message that 
 * ^context[=].expression = "Flag"
 * ^context[+].type = #element
 * ^context[=].expression = "AllergyIntolerance"
+* ^context[+].type = #element
+* ^context[=].expression = "ClinicalImpression"
 
 * value[x] only base64Binary

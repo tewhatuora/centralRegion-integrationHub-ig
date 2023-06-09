@@ -70,7 +70,6 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, includi
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Not a Permanent Resident"
 
 * generalPractitioner.type = #Practitioner
-* generalPractitioner.reference = "Practitioner/61cee2d0-7f24-4573-be25-bd6c6d8d5522"
 * generalPractitioner.identifier.use = #usual
 * generalPractitioner.identifier.type.coding.code = #LR
 * generalPractitioner.identifier.type.coding.system = $HL7IdentifierTypeCS
