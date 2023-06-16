@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionAllergyIntolerance",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "name": "NZCentralRegionAllergyIntolerance",
   "status": "active",
   "description": "AllergyIntolerance resource for Te Whatu Ora, Central Region",
@@ -251,7 +251,7 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": "ZAL-11.1 + ' - ' + ZAL-11.2",
+            "map": "ZAL-12.1 + ' - ' + ZAL-12.2",
             "comment": "Not to be confused with Recorder"
           }
         ]

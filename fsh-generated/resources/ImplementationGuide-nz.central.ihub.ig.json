@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "nz.central.ihub.ig",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "name": "CRIntegrationHub",
   "title": "Te Whatu Ora, Central Region Integration Hub",
   "status": "draft",
@@ -486,6 +486,13 @@
       },
       {
         "reference": {
+          "reference": "CapabilityStatement/CentralRegionIntegrationHubCapabilityStatement"
+        },
+        "name": "CentralRegionIntegrationHubCapabilityStatement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Patient/Contact"
         },
         "name": "Contact",
@@ -523,14 +530,6 @@
         "name": "LanguageList",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with an impossibly large set of languages; lets see that we can validate all of them",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "ConceptMap/LanguageMap"
-        },
-        "name": "LanguageMap",
-        "description": "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes",
-        "exampleBoolean": true
       },
       {
         "reference": {
@@ -603,6 +602,14 @@
         "name": "Residency",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/nzcr-language-map"
+        },
+        "name": "nzcr-language-map",
+        "description": "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes",
+        "exampleBoolean": false
       }
     ],
     "page": {
@@ -614,6 +621,11 @@
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "capabilityStatement.html",
+          "title": "Capability Statement",
+          "generation": "html"
         },
         {
           "nameUrl": "technologyLandscape.html",

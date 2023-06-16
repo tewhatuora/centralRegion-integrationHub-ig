@@ -1,0 +1,153 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "CentralRegionIntegrationHubCapabilityStatement",
+  "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/CapabilityStatement/CentralRegionIntegrationHubCapabilityStatement",
+  "name": "NZCentralRegionIntegrationHubCapabilityStatement",
+  "title": "Te Whatu Ora, Central Region Integration Hub Capability Statement",
+  "status": "active",
+  "date": "2023-02-14",
+  "publisher": "Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral",
+  "description": "Te Whatu Ora, Central Region Integration Hub FHIR API",
+  "kind": "instance",
+  "implementation": {
+    "description": "Te Whatu Ora, Central Region Integration Hub FHIR API",
+    "url": "https://fhir.ap1.digital.health.nz/R4"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "security": {
+        "cors": true,
+        "service": [
+          {
+            "coding": [
+              {
+                "code": "OAuth",
+                "system": "http://terminology.hl7.org/CodeSystem/restful-security-service"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris",
+            "extension": [
+              {
+                "url": "token",
+                "valueUri": "https://stuart.geek.nz/oauth2/token"
+              },
+              {
+                "url": "authorize",
+                "valueUri": "https://stuart.geek.nz/oauth2/authorize"
+              }
+            ]
+          }
+        ]
+      },
+      "resource": [
+        {
+          "type": "Patient",
+          "profile": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "readHistory": false,
+          "updateCreate": false,
+          "conditionalCreate": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "searchInclude": [
+            "*"
+          ],
+          "searchParam": [
+            {
+              "name": "family",
+              "definition": "http://hl7.org/fhir/SearchParameter/individual-family",
+              "type": "string",
+              "documentation": "A portion of the Patient's Family name"
+            },
+            {
+              "name": "given",
+              "definition": "http://hl7.org/fhir/SearchParameter/individual-given",
+              "type": "string",
+              "documentation": "A portion of the Patient's Given name(s)"
+            }
+          ]
+        },
+        {
+          "type": "AllergyIntolerance",
+          "profile": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance",
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "versioning": "versioned",
+          "readHistory": false,
+          "updateCreate": false,
+          "conditionalCreate": false,
+          "conditionalRead": "not-supported",
+          "conditionalUpdate": false,
+          "conditionalDelete": "not-supported",
+          "searchInclude": [
+            "*"
+          ],
+          "searchParam": [
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+              "type": "reference",
+              "documentation": "Who the sensitivity is for \n [Patient](http://hl7.org/fhir/R4/patient.html)"
+            },
+            {
+              "name": "recorder",
+              "definition": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-recorder",
+              "type": "reference",
+              "documentation": "Who recorded the sensitivity \n [AllergyIntolerance.recorder](http://hl7.org/fhir/R4/allergyintolerance-definitions.html#AllergyIntolerance.recorder)"
+            },
+            {
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+              "type": "token",
+              "documentation": "Code that identifies the allergy or intolerance \n [AllergyIntolerance Code ValueSet](http://hl7.org/fhir/ValueSet/allergyintolerance-code)"
+            },
+            {
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-category",
+              "type": "token",
+              "documentation": "Must be one of \n* food\n* medication\n* environment\n* biologic \n [AllergyIntolerance Category ValueSet](http://hl7.org/fhir/ValueSet/allergy-intolerance-category)"
+            },
+            {
+              "name": "clinical-status",
+              "definition": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-clinical-status",
+              "type": "token",
+              "documentation": "Must be one of \n* active\n * inactive\n * resolved\n[AllergyIntolerance Clinical Status ValueSet](http://hl7.org/fhir/R4/valueset-allergyintolerance-clinical.html)"
+            }
+          ]
+        }
+      ],
+      "interaction": [
+        {
+          "code": "transaction"
+        }
+      ]
+    }
+  ]
+}

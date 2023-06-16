@@ -5,7 +5,7 @@
   "id": "nzcr-mental-health-review-location-vs",
   "title": "NZ Central Region - Mental Health Review Location Value Set",
   "description": "Mental Health Review Location identification codes ex. WebPAS in NZ Central Region",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-review-location",
   "experimental": false,
   "compose": {

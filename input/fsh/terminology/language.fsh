@@ -214,7 +214,7 @@ RuleSet: langEntryComment(from, frDisplay, to, toDisplay, comment)
 
 
 // WebPAS language codes are nearly right...
-Instance: LanguageMap
+Instance: nzcr-language-map
 InstanceOf: ConceptMap
 Description: "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes"
 

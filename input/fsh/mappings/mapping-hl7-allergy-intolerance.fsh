@@ -86,7 +86,7 @@ depending upon value of ZAL-2.1"
 * extension[allergy-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11" "**Note** Extend date field to ISO DateTime with 'T00:00:00+1200'" 
 
 * extension[allergy-alert].extension[lastUpdatedBy].url -> "'lastUpdatedBy'"
-* extension[allergy-alert].extension[lastUpdatedBy].valueString -> "ZAL-11.1 + ' - ' + ZAL-11.2" "Not to be confused with Recorder"
+* extension[allergy-alert].extension[lastUpdatedBy].valueString -> "ZAL-12.1 + ' - ' + ZAL-12.2" "Not to be confused with Recorder"
 
 * extension[allergy-alert].extension[recordingHospital].url -> "'recordingHospital'"
 * extension[allergy-alert].extension[recordingHospital].valueCoding.code -> "ZAL-13.1"

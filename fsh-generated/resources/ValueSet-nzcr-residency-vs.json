@@ -5,7 +5,7 @@
   "id": "nzcr-residency-vs",
   "title": "NZ Central Region - NZ Residency Value Set",
   "description": "NZ Residency Codes ex. WebPAS in NZ Central Region",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency",
   "experimental": false,
   "compose": {

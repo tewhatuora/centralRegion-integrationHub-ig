@@ -78,7 +78,7 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * extension[flag-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11" "**Note:** ISO-8601 datetime format includes dashes, 'T' and '+12:00' timezone"
 
 * extension[flag-alert].extension[lastUpdatedBy].url -> "'lastUpdatedBy'"
-* extension[flag-alert].extension[lastUpdatedBy].valueString -> "ZAL-11.1 + ' - ' + ZAL-11.2" "Not to be confused with Author"
+* extension[flag-alert].extension[lastUpdatedBy].valueString -> "ZAL-12.1 + ' - ' + ZAL-12.2" "Not to be confused with Author"
 
 * extension[flag-alert].extension[recordingHospital].url -> "'recordingHospital'"
 * extension[flag-alert].extension[recordingHospital].valueCoding.code -> "ZAL-13.1"

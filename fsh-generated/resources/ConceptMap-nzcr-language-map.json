@@ -1,6 +1,6 @@
 {
   "resourceType": "ConceptMap",
-  "id": "LanguageMap",
+  "id": "nzcr-language-map",
   "name": "NZCRLanguageConceptMap",
   "title": "NZ Central Region Language Concept Map",
   "description": "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes",

@@ -12,11 +12,11 @@
       </div>
    </text>
    <url value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig"/>
-   <version value="0.1.0"/>
+   <version value="0.3.0"/>
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-06-09T13:28:30+12:00"/>
+   <date value="2023-06-16T11:20:16+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -262,7 +262,10 @@
          <valueCode value="hl7.fhir.uv.tools#current"/>
       </extension>
 
-
+      <grouping id="-dyn-capabilitystatement">
+         <name value="Behavior: Capability Statements"/>
+         <description value="The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements."/>
+      </grouping>
 
 
 
@@ -293,7 +296,10 @@
       </grouping>
 
 
-
+      <grouping id="-map-conceptmap">
+         <name value="Terminology: Concept Maps"/>
+         <description value="These define transformations to convert between codes by systems conforming with this implementation guide."/>
+      </grouping>
 
 
       <grouping id="-ex-example">
@@ -1129,6 +1135,21 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CapabilityStatement"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CapabilityStatement-CentralRegionIntegrationHubCapabilityStatement.html"/>
+         </extension>
+         <reference>
+            <reference value="CapabilityStatement/CentralRegionIntegrationHubCapabilityStatement"/>
+         </reference>
+         <name value="CentralRegionIntegrationHubCapabilityStatement"/>
+         <description value="Te Whatu Ora, Central Region Integration Hub FHIR API"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-capabilitystatement"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -1200,21 +1221,6 @@
          <name value="LanguageList"/>
          <description value="An example of a patient from Te Whatu Ora, Central Region, with an impossibly large set of languages; lets see that we can validate all of them"/>
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ConceptMap"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ConceptMap-LanguageMap.html"/>
-         </extension>
-         <reference>
-            <reference value="ConceptMap/LanguageMap"/>
-         </reference>
-         <name value="LanguageMap"/>
-         <description value="Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes"/>
-         <exampleBoolean value="true"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -1352,6 +1358,21 @@
          <exampleCanonical value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-nzcr-language-map.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/nzcr-language-map"/>
+         </reference>
+         <name value="nzcr-language-map"/>
+         <description value="Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
+      </resource>
       <page>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="toc.html"/>
@@ -1366,6 +1387,14 @@
             <nameUrl value="index.html"/>
             <title value="Home"/>
             <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="capabilityStatement.html"/>
+            </extension>
+            <nameUrl value="capabilityStatement.html"/>
+            <title value="Capability Statement"/>
+            <generation value="html"/>
          </page>
          <page>
             <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -1395,6 +1424,11 @@
             <nameUrl value="artifacts.html"/>
             <title value="Artifacts Summary"/>
             <generation value="html"/>
+            <page>
+               <nameUrl value="CapabilityStatement-CentralRegionIntegrationHubCapabilityStatement.html"/>
+               <title value="CentralRegionIntegrationHubCapabilityStatement"/>
+               <generation value="generated"/>
+            </page>
             <page>
                <nameUrl value="StructureDefinition-NZCentralRegionAllergyIntolerance.html"/>
                <title value="NZCentralRegionAllergyIntolerance"/>
@@ -1666,6 +1700,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ConceptMap-nzcr-language-map.html"/>
+               <title value="nzcr-language-map"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Patient-Address-Suburb.html"/>
                <title value="Address-Suburb"/>
                <generation value="generated"/>
@@ -1693,11 +1732,6 @@
             <page>
                <nameUrl value="Patient-LanguageList.html"/>
                <title value="LanguageList"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="ConceptMap-LanguageMap.html"/>
-               <title value="LanguageMap"/>
                <generation value="generated"/>
             </page>
             <page>

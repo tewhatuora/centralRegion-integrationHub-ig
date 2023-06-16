@@ -90,8 +90,6 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
   * extension 0..0
   * id 0..0
 
-* problem 0..1 MS
-
 * summary 1..1 MS
  
 * extension contains
@@ -99,7 +97,7 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
     nzcr-hl7v2-message named hl7v2Message 1..1 MS
 
 * code 0..0                        // no data
-
+* problem 0..0                     // no data
 * statusReason 0..0                // no data
 * description 0..0                 // no data
 * encounter 0..0                   // no data

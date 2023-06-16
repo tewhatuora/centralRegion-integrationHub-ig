@@ -1,3 +1,5 @@
 temp/*
 output/*
 input-cache/*
+node_modules/*
+packages/*

@@ -6,7 +6,7 @@
   "id": "nzcr-allergy-reaction-h1h3-cs",
   "title": "NZ Central Region - Allergy Reaction (H1, H3) Code System",
   "description": "Allergy Reaction codes for categories H1 & H3; ex. WebPAS in NZ Central Region.",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "url": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3",
   "concept": [
     {
