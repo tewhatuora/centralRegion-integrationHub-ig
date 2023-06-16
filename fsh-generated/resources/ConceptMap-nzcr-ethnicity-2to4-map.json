@@ -1,0 +1,296 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "nzcr-ethnicity-2to4-map",
+  "name": "NZCRLanguageConceptMap",
+  "title": "NZ Central Region Language Concept Map",
+  "description": "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper level 4 ethnicity codes",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-language",
+  "experimental": false,
+  "purpose": "Translates level 2 ethnicity codes used in WebPAS to more recognised level 4 ethnicity codes",
+  "status": "draft",
+  "sourceUri": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
+  "targetUri": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
+      "target": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
+      "element": [
+        {
+          "code": "10",
+          "display": "European (nfd)",
+          "target": [
+            {
+              "code": "10000",
+              "display": "European nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "11",
+          "display": "NZ European",
+          "target": [
+            {
+              "code": "11111",
+              "display": "NZ European",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12",
+          "display": "Other European",
+          "target": [
+            {
+              "code": "10000",
+              "display": "European nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "21",
+          "display": "Māori",
+          "target": [
+            {
+              "code": "21111",
+              "display": "Māori",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "30",
+          "display": "Pacific Island (nfd)",
+          "target": [
+            {
+              "code": "30000",
+              "display": "Pacific Peoples nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "31",
+          "display": "Samoan",
+          "target": [
+            {
+              "code": "31111",
+              "display": "Samoan",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "32",
+          "display": "Cook Island Māori",
+          "target": [
+            {
+              "code": "32100",
+              "display": "Cook Islands Maori",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "33",
+          "display": "Tongan",
+          "target": [
+            {
+              "code": "33111",
+              "display": "Tongan",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "34",
+          "display": "Niuean",
+          "target": [
+            {
+              "code": "34111",
+              "display": "Niuean",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "35",
+          "display": "Tokelauan",
+          "target": [
+            {
+              "code": "35111",
+              "display": "Tokelauan",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "36",
+          "display": "Fijian",
+          "target": [
+            {
+              "code": "36111",
+              "display": "Fijian",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37",
+          "display": "Other Pacific Island",
+          "target": [
+            {
+              "code": "30000",
+              "display": "Pacific Peoples nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "40",
+          "display": "Asian (nfd)",
+          "target": [
+            {
+              "code": "40000",
+              "display": "Asian nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41",
+          "display": "Southeast Asian",
+          "target": [
+            {
+              "code": "41000",
+              "display": "Southeast Asian nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42",
+          "display": "Chinese",
+          "target": [
+            {
+              "code": "42100",
+              "display": "Chinese nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43",
+          "display": "Indian",
+          "target": [
+            {
+              "code": "43100",
+              "display": "Indian nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44",
+          "display": "Other Asian",
+          "target": [
+            {
+              "code": "40000",
+              "display": "Asian nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51",
+          "display": "Middle Eastern",
+          "target": [
+            {
+              "code": "51100",
+              "display": "Middle Eastern nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52",
+          "display": "Latin American / Hispanic",
+          "target": [
+            {
+              "code": "52100",
+              "display": "Latin American nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53",
+          "display": "African",
+          "target": [
+            {
+              "code": "53100",
+              "display": "African nfd",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "61",
+          "display": "Other ethnicity",
+          "target": [
+            {
+              "code": "61199",
+              "display": "Other Ethnicity nec",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "94",
+          "display": "Don't know",
+          "target": [
+            {
+              "code": "94444",
+              "display": "Don't Know",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "95",
+          "display": "Refused to answer",
+          "target": [
+            {
+              "code": "95555",
+              "display": "Refused to Answer",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "97",
+          "display": "Response unidentifiable",
+          "target": [
+            {
+              "code": "97777",
+              "display": "Response unidentifiable",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "99",
+          "display": "Not stated",
+          "target": [
+            {
+              "code": "99999",
+              "display": "Not Stated",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

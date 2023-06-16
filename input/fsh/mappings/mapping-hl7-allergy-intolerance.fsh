@@ -70,8 +70,9 @@ depending upon value of ZAL-2.1"
 
 * extension[allergy-alert].url -> "'https://standards.digital.health.nz/ns/central-region/alert'"
 
+// TODO: severityLevel should be integer??
 * extension[allergy-alert].extension[severityLevel].url -> "'severityLevel'"
-* extension[allergy-alert].extension[severityLevel].valueInteger -> "ZAL-6"
+* extension[allergy-alert].extension[severityLevel].valueString -> "ZAL-6"   "TODO: severityLevel should be integer"
 
 * extension[allergy-alert].extension[allergyReaction].url -> "'allergyReaction'"
 * extension[allergy-alert].extension[allergyReaction].valueString -> "ZAL-4"

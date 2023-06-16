@@ -65,8 +65,9 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 
 * extension[flag-alert].url -> "'https://standards.digital.health.nz/ns/central-region/alert'"
 
+// TODO: severityLevel should be integer??
 * extension[flag-alert].extension[severityLevel].url -> "'severityLevel'"
-* extension[flag-alert].extension[severityLevel].valueInteger -> "ZAL-6"
+* extension[flag-alert].extension[severityLevel].valueString -> "ZAL-6"  "TODO: severityLevel should be integer"
 
 * extension[flag-alert].extension[reviewDate].url -> "'reviewDate'"
 * extension[flag-alert].extension[reviewDate].valueDate -> "ZAL-7"

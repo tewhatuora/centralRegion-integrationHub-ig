@@ -16,7 +16,7 @@
       "extension": [
         {
           "url": "severityLevel",
-          "valueInteger": 5
+          "valueString": "S"
         },
         {
           "url": "allergyReaction",

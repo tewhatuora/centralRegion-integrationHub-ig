@@ -50,7 +50,7 @@ Description: "An example of a Flag alert derived from ZAL custom segment, in Te 
   * display = "Ramadan, Mohamed Mahmoud S DR"
 
 * extension[flag-alert]
-  * extension[severityLevel].valueInteger = 9
+  * extension[severityLevel].valueString = "9"    // TODO: severityLevel should be integer??
   * extension[reviewDate].valueDate = "2020-10-20"
   * extension[lastUpdatedBy].valueString = "melissab - Melissa Brosnan MDHB"
   * extension[lastUpdatedDateTime].valueDateTime = "2020-08-26T14:23:57+12:00"

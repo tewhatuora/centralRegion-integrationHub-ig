@@ -41,3 +41,46 @@ Description:  "NZ Residency Codes ex. WebPAS in NZ Central Region"
 * ^experimental = false
 
 * include codes from system nzcr-residency-cs
+
+// WebPAS residency codes are far too detailed...
+Instance: nzcr-nz-residency-map
+InstanceOf: ConceptMap
+Description: "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base"
+
+* name = "NZCRResidencyConceptMap"
+* title = "NZ Central Region NZ Residency Concept Map"
+* description = "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base"
+
+* url = $NZCentralRegionResidencyConceptMap
+* experimental = false
+* purpose = "Translates raw detailed NZ Visa & Citizenship codes used in WebPAS to more generic yes | no | unknown codes from NZ Base"
+* status = #draft
+* sourceUri = $NZCentralRegionResidencyCS
+* targetUri = $NZBaseNZResidencyCS
+* group[+]
+  * source = $NZCentralRegionResidencyCS
+  * target = $NZBaseNZResidencyCS
+
+* insert cmapEntry(ACC,	"Non-NZ ACC cover",         no, "Not a Permanent Resident")
+* insert cmapEntry(AUS,	"Australian",               no, "Not a Permanent Resident")
+* insert cmapEntry(CEL,	"Child <18 eligible",       yes, "Permanent Resident")
+* insert cmapEntry(CNE,	"Child <18 not eligible",   no, "Not a Permanent Resident")
+* insert cmapEntry(CWH,	"Commonwealth Scholar",     yes, "Permanent Resident")
+* insert cmapEntry(DET,	"Details required",         unknown, "Unknown")
+* insert cmapEntry(DIP,	"Foreign diplomat",         no, "Not a Permanent Resident")
+* insert cmapEntry(ELI,	"Eligible",                 yes, "Permanent Resident")
+* insert cmapEntry(MNE,	"Maternity not eligible",   no, "Not a Permanent Resident")
+* insert cmapEntry(MPE, "Maternity ptnr eligible",  yes, "Permanent Resident")
+* insert cmapEntry(NEL, "Not eligible",             no, "Not a Permanent Resident")
+* insert cmapEntry(NLR, "Not legally resident",     no, "Not a Permanent Resident")
+* insert cmapEntry(NZ,  "New Zealand citizen",      no, "Not a Permanent Resident")
+* insert cmapEntry(NZR, "NZ residence visa",        yes, "Permanent Resident")
+* insert cmapEntry(ODF,	"Funded O'seas Devt",       no, "Not a Permanent Resident")
+* insert cmapEntry(REC,	"Reciprocal urgent",        no, "Not a Permanent Resident") 
+* insert cmapEntry(REF,	"Refugee",                  no, "Not a Permanent Resident")
+* insert cmapEntry(RES,	"Resident before 1974",     yes, "Permanent Resident")
+* insert cmapEntry(RRV,	"Returning Res Visa",       yes, "Permanent Resident")
+* insert cmapEntry(STU,	"Student visa",             no, "Not a Permanent Resident")
+* insert cmapEntry(VIS,	"Visitor's visa",           no, "Not a Permanent Resident")
+* insert cmapEntry(VO2,	"Work visa > 2 years",      no, "Not a Permanent Resident")
+* insert cmapEntry(VU2,	"Work visa < 2 years",      no, "Not a Permanent Resident") 

@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-06-16T13:16:23+12:00"/>
+   <date value="2023-06-16T17:01:01+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
@@ -1363,6 +1363,21 @@
             <valueString value="ConceptMap"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-nzcr-ethnicity-2to4-map.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/nzcr-ethnicity-2to4-map"/>
+         </reference>
+         <name value="nzcr-ethnicity-2to4-map"/>
+         <description value="Concept map mapping level 2 ethnicity codes ex. WebPAS to proper level 4 ethnicity codes"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ConceptMap-nzcr-language-map.html"/>
          </extension>
          <reference>
@@ -1370,6 +1385,21 @@
          </reference>
          <name value="nzcr-language-map"/>
          <description value="Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-nzcr-nz-residency-map.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/nzcr-nz-residency-map"/>
+         </reference>
+         <name value="nzcr-nz-residency-map"/>
+         <description value="Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
       </resource>
@@ -1700,8 +1730,18 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ConceptMap-nzcr-ethnicity-2to4-map.html"/>
+               <title value="nzcr-ethnicity-2to4-map"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ConceptMap-nzcr-language-map.html"/>
                <title value="nzcr-language-map"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ConceptMap-nzcr-nz-residency-map.html"/>
+               <title value="nzcr-nz-residency-map"/>
                <generation value="generated"/>
             </page>
             <page>

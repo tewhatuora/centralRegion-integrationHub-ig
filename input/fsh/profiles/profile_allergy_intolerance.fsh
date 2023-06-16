@@ -156,8 +156,9 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
 
 * extension[allergy-alert]
   * extension[severityLevel] 1..1 MS     
-    * ^definition = "Severity level in range 0..9"
-    * ^short = "Severity level in range 0..9"
+    * ^definition = "Severity level in range '0'..'9'"
+    * ^short = "Severity level in range '0'..'9'"
+
   * extension[allergyReaction] 1..1 MS
     * ^definition = "Allergy reaction code - defined as string, should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)"
     * ^short = "Allergy reaction - should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)"

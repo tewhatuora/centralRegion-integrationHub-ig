@@ -19,11 +19,22 @@ export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8"
 #
 ## We need to do a fixup after SUSHI and before IG-Publisher
 #
+echo "Running SUSHI separately...."
 sushi .
 
-jq '.definition.resource[70].exampleBoolean |= false' <fsh-generated/resources/ImplementationGuide-nz.central.ihub.ig.json >temp/fixedIg.json
-cp temp/fixedIg.json fsh-generated/resources/ImplementationGuide-nz.central.ihub.ig.json
+echo "Doing a few little fixups:"
+echo "  - nzcr-language-map is not an example"
+jq '(.definition.resource[] | select(.name == "nzcr-language-map")).exampleBoolean |= false' <fsh-generated/resources/ImplementationGuide-nz.central.ihub.ig.json >temp/fixedIg-01.json
 
+echo "  - nzcr-nz-residency-map is not an example"
+jq '(.definition.resource[] | select(.name == "nzcr-nz-residency-map")).exampleBoolean |= false' <temp/fixedIg-01.json >temp/fixedIg-02.json
+
+echo "  - nzcr-ethnicity-2to4-map is not an example"
+jq '(.definition.resource[] | select(.name == "nzcr-ethnicity-2to4-map")).exampleBoolean |= false' <temp/fixedIg-02.json >temp/fixedIg-03.json
+
+cp temp/fixedIg-03.json fsh-generated/resources/ImplementationGuide-nz.central.ihub.ig.json
+
+echo "Running IG Publisher..."
 publisher=$input_cache_path/$publisher_jar
 if test -f "$publisher"; then
 	java -jar $publisher -ig . $txoption -no-sushi $*

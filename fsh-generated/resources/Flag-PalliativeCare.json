@@ -24,7 +24,7 @@
         },
         {
           "url": "severityLevel",
-          "valueInteger": 9
+          "valueString": "9"
         },
         {
           "url": "reviewDate",

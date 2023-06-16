@@ -27,13 +27,15 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
   * ^definition = "Container holding the individual elements of the Alert extension."
   * ^short = "Container holding the individual elements of the Alert extension."
 
+// TODO: - Regional message spec says integer in range 0..9 - but samples have 'W' and 'S' values
 * extension[severityLevel]
-  * ^definition = "Security Level in range 0-9"
-  * ^short = "Severity Level in range 0-9"
-  * value[x] only integer
+  * ^definition = "Severity Level in range 0-9 for Allergy/Intolerance; 'W' for Alert/Flag"
+  * ^short = "Severity Level in range 0-9 for Allergy/Intolerance; 'W' for Alert/Flag"
   * value[x] 1..1
-  * value[x] ^minValueInteger = 0
-  * value[x] ^maxValueInteger = 9
+  * value[x] only string
+  // * value[x] only integer
+  // * valueInteger ^minValueInteger = 0
+  // * valueInteger ^maxValueInteger = 9
   * id 0..0
 
 * extension[allergyReaction]

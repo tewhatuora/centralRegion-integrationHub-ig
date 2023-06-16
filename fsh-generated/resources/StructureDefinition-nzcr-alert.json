@@ -64,8 +64,8 @@
         "id": "Extension.extension:severityLevel",
         "path": "Extension.extension",
         "sliceName": "severityLevel",
-        "short": "Severity Level in range 0-9",
-        "definition": "Security Level in range 0-9",
+        "short": "Severity Level in range 0-9 for Allergy/Intolerance; 'W' for Alert/Flag",
+        "definition": "Severity Level in range 0-9 for Allergy/Intolerance; 'W' for Alert/Flag",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -91,11 +91,9 @@
         "min": 1,
         "type": [
           {
-            "code": "integer"
+            "code": "string"
           }
-        ],
-        "minValueInteger": 0,
-        "maxValueInteger": 9
+        ]
       },
       {
         "id": "Extension.extension:allergyReaction",

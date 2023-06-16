@@ -125,6 +125,10 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
     nzcr-hl7v2-message named hl7v2Message 1..1 MS and
     nzcr-alert named flag-alert 1..1 MS 
 
+* extension[flag-alert].extension[severityLevel]
+  * ^definition = "Severity Level - 'W' for Alert/Flag"
+  * ^short = "Severity Level - 'W' for Alert/Flag"
+
 /*
 * extension[flag-alert]
   * extension[allergyReaction] 0..0  // only for allergies

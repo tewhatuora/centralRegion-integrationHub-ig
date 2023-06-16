@@ -100,3 +100,5 @@ Alias:   $NZCentralRegionMentalHealthCourtTypeVS      = https://standards.digita
 
 // Local URIs for ConceptMaps
 Alias:   $NZCentralRegionLanguageConceptMap = https://standards.digital.health.nz/fhir/central-region/ConceptMap-language
+Alias:   $NZCentralRegionEthnicityConceptMap = https://standards.digital.health.nz/fhir/central-region/ConceptMap-ethnicity
+Alias:   $NZCentralRegionResidencyConceptMap = https://standards.digital.health.nz/fhir/central-region/ConceptMap-nz-residency

@@ -60,7 +60,7 @@ Description: "An example of an allergy/intolerance alert derived from ZAL custom
 * note.text = "Palliative Care, Contact Arohanui Hospice, Ph (06) 3566606"
 
 * extension[allergy-alert]
-  * extension[severityLevel].valueInteger = 5   // but should be 'S'  !!!
+  * extension[severityLevel].valueString = "S"   // TODO: severityLevel should be integer??
   * extension[allergyReaction].valueString = "Swelling and Rash"
   * extension[reviewDate].valueDate = "2020-10-20"
   * extension[lastUpdatedBy].valueString = "melissab - Melissa Brosnan MDHB"

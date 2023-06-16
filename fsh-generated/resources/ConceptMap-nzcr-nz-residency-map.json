@@ -1,0 +1,274 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "nzcr-nz-residency-map",
+  "name": "NZCRResidencyConceptMap",
+  "title": "NZ Central Region NZ Residency Concept Map",
+  "description": "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-nz-residency",
+  "experimental": false,
+  "purpose": "Translates raw detailed NZ Visa & Citizenship codes used in WebPAS to more generic yes | no | unknown codes from NZ Base",
+  "status": "draft",
+  "sourceUri": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
+  "targetUri": "https://standards.digital.health.nz/ns/nz-residency-code",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
+      "target": "https://standards.digital.health.nz/ns/nz-residency-code",
+      "element": [
+        {
+          "code": "ACC",
+          "display": "Non-NZ ACC cover",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AUS",
+          "display": "Australian",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CEL",
+          "display": "Child <18 eligible",
+          "target": [
+            {
+              "code": "yes",
+              "display": "Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CNE",
+          "display": "Child <18 not eligible",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CWH",
+          "display": "Commonwealth Scholar",
+          "target": [
+            {
+              "code": "yes",
+              "display": "Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DET",
+          "display": "Details required",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "Unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DIP",
+          "display": "Foreign diplomat",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ELI",
+          "display": "Eligible",
+          "target": [
+            {
+              "code": "yes",
+              "display": "Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MNE",
+          "display": "Maternity not eligible",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MPE",
+          "display": "Maternity ptnr eligible",
+          "target": [
+            {
+              "code": "yes",
+              "display": "Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NEL",
+          "display": "Not eligible",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NLR",
+          "display": "Not legally resident",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NZ",
+          "display": "New Zealand citizen",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NZR",
+          "display": "NZ residence visa",
+          "target": [
+            {
+              "code": "yes",
+              "display": "Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ODF",
+          "display": "Funded O'seas Devt",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REC",
+          "display": "Reciprocal urgent",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "REF",
+          "display": "Refugee",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RES",
+          "display": "Resident before 1974",
+          "target": [
+            {
+              "code": "yes",
+              "display": "Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RRV",
+          "display": "Returning Res Visa",
+          "target": [
+            {
+              "code": "yes",
+              "display": "Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "STU",
+          "display": "Student visa",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VIS",
+          "display": "Visitor's visa",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VO2",
+          "display": "Work visa > 2 years",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "VU2",
+          "display": "Work visa < 2 years",
+          "target": [
+            {
+              "code": "no",
+              "display": "Not a Permanent Resident",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

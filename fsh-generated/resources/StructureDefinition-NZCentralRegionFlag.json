@@ -120,7 +120,9 @@
       {
         "id": "Flag.extension:flag-alert.extension:severityLevel",
         "path": "Flag.extension.extension",
-        "sliceName": "severityLevel"
+        "sliceName": "severityLevel",
+        "short": "Severity Level - 'W' for Alert/Flag",
+        "definition": "Severity Level - 'W' for Alert/Flag"
       },
       {
         "id": "Flag.extension:flag-alert.extension:severityLevel.url",
@@ -133,14 +135,15 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:severityLevel.valueInteger",
-        "path": "Flag.extension.extension.valueInteger",
+        "id": "Flag.extension:flag-alert.extension:severityLevel.valueString",
+        "path": "Flag.extension.extension.valueString",
         "min": 1,
         "max": "1",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "ZAL-6"
+            "map": "ZAL-6",
+            "comment": "TODO: severityLevel should be integer"
           }
         ]
       },
