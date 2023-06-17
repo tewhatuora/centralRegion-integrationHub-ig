@@ -195,6 +195,7 @@ Description:  "IETF equivalent Language codes, matching the raw codes used by We
 // WebPAS language codes are nearly right...
 Instance: nzcr-language-map
 InstanceOf: ConceptMap
+Usage: #definition
 Description: "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes"
 
 * name = "NZCRLanguageConceptMap"

@@ -1,10 +1,10 @@
 {
   "resourceType": "ConceptMap",
   "id": "nzcr-ethnicity-2to4-map",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-language",
   "name": "NZCRLanguageConceptMap",
   "title": "NZ Central Region Language Concept Map",
   "description": "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper level 4 ethnicity codes",
-  "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-language",
   "experimental": false,
   "purpose": "Translates level 2 ethnicity codes used in WebPAS to more recognised level 4 ethnicity codes",
   "status": "draft",

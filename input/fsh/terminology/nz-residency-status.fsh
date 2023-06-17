@@ -45,6 +45,7 @@ Description:  "NZ Residency Codes ex. WebPAS in NZ Central Region"
 // WebPAS residency codes are far too detailed...
 Instance: nzcr-nz-residency-map
 InstanceOf: ConceptMap
+Usage: #definition
 Description: "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base"
 
 * name = "NZCRResidencyConceptMap"

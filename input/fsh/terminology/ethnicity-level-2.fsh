@@ -48,6 +48,8 @@ Description:  "Ethnicity Level 2 codes from [Ministry of Health](https://www.hea
 // WebPAS ethnicity codes are the wrong level...
 Instance: nzcr-ethnicity-2to4-map
 InstanceOf: ConceptMap
+Usage: #definition
+
 Description: "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper level 4 ethnicity codes"
 
 * name = "NZCRLanguageConceptMap"
