@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "nzcr-hl7v2-message",
   "url": "https://standards.digital.health.nz/ns/central-region/hl7v2-message",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "name": "NZCentralRegionHL7v2Message",
   "title": "HL7 v2 Message",
   "status": "active",

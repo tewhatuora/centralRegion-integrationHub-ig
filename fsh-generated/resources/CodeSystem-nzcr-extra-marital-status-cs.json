@@ -6,7 +6,7 @@
   "id": "nzcr-extra-marital-status-cs",
   "title": "NZ Central Region - Marital Status Code System",
   "description": "A few extra Marital Status codes that are in use in Central Region",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "url": "https://standards.digital.health.nz/ns/central-region/extra-marital-status",
   "concept": [
     {

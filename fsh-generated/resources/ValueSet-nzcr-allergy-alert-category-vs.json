@@ -5,7 +5,7 @@
   "id": "nzcr-allergy-alert-category-vs",
   "title": "NZ Central Region - Allergy Alert Category Value Set",
   "description": "Alert Category codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-allergy",
   "experimental": false,
   "compose": {
