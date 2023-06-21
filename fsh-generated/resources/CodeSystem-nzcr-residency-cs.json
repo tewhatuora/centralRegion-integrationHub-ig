@@ -6,7 +6,7 @@
   "id": "nzcr-residency-cs",
   "title": "NZ Central Region - NZ Residency Code System",
   "description": "Residency codes ex. WebPAS in NZ Central Region",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "url": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
   "concept": [
     {

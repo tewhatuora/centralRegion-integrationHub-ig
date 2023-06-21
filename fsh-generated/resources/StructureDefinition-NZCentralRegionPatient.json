@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionPatient",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "name": "NZCentralRegionPatient",
   "status": "active",
   "description": "Patient resource for Te Whatu Ora, Central Region",

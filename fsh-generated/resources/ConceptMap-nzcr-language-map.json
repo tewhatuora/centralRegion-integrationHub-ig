@@ -7,7 +7,7 @@
   "description": "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes",
   "experimental": false,
   "purpose": "Translates raw language codes used in WebPAS to more recognised `ietf:bcp:47` language codes",
-  "status": "draft",
+  "status": "active",
   "sourceUri": "https://standards.digital.health.nz/ns/central-region/raw-language",
   "targetUri": "urn:ietf:bcp:47",
   "group": [

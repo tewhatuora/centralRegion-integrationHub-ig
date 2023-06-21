@@ -6,7 +6,7 @@
   "id": "nzcr-flag-alert-code-h8-cs",
   "title": "NZ Central Region - Flag Alert Codes (H8)",
   "description": "H8 (care plan) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "url": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8",
   "concept": [
     {

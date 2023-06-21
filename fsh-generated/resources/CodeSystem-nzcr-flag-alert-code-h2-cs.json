@@ -6,7 +6,7 @@
   "id": "nzcr-flag-alert-code-h2-cs",
   "title": "NZ Central Region - Flag Alert Codes (H2)",
   "description": "H2 (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "url": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2",
   "concept": [
     {

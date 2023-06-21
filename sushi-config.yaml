@@ -9,7 +9,7 @@ name: CRIntegrationHub
 title: Te Whatu Ora, Central Region Integration Hub
 description: Implementation Guide for Central Region's FHIR based Integration Hub
 status: draft # draft | active | retired | unknown
-version: 0.3.1
+version: 0.3.2
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use

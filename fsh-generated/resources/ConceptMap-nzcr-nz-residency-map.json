@@ -7,7 +7,7 @@
   "description": "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base",
   "experimental": false,
   "purpose": "Translates raw detailed NZ Visa & Citizenship codes used in WebPAS to more generic yes | no | unknown codes from NZ Base",
-  "status": "draft",
+  "status": "active",
   "sourceUri": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
   "targetUri": "https://standards.digital.health.nz/ns/nz-residency-code",
   "group": [

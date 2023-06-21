@@ -52,14 +52,14 @@ Usage: #definition
 
 Description: "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper level 4 ethnicity codes"
 
-* name = "NZCRLanguageConceptMap"
-* title = "NZ Central Region Language Concept Map"
+* name = "NZCREthnicityConceptMap"
+* title = "NZ Central Region Ethnicity Concept Map"
 * description = "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper level 4 ethnicity codes"
 
-* url = $NZCentralRegionLanguageConceptMap
+* url = $NZCentralRegionEthnicityConceptMap
 * experimental = false
 * purpose = "Translates level 2 ethnicity codes used in WebPAS to more recognised level 4 ethnicity codes"
-* status = #draft
+* status = #active
 * sourceUri = $NZStatsEthnicityLevel2CS
 * targetUri = $NZStatsEthnicityLevel4CS
 * group[+]
@@ -67,7 +67,7 @@ Description: "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper l
   * target = $NZStatsEthnicityLevel4CS
 
 * insert cmapEntry(10,  "European (nfd\)",           10000,  "European nfd")
-* insert cmapEntry(11,	"NZ European",               11111,  "NZ European")
+* insert cmapEntry(11,	"NZ European",               11111,  "New Zealand European")
 * insert cmapEntry(12,	"Other European",            10000,  "European nfd")
 * insert cmapEntry(21,	"Māori",                     21111,  "Māori")
 * insert cmapEntry(30,	"Pacific Island (nfd\)",     30000,  "Pacific Peoples nfd")

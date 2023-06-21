@@ -55,7 +55,7 @@ Description: "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to 
 * url = $NZCentralRegionResidencyConceptMap
 * experimental = false
 * purpose = "Translates raw detailed NZ Visa & Citizenship codes used in WebPAS to more generic yes | no | unknown codes from NZ Base"
-* status = #draft
+* status = #active
 * sourceUri = $NZCentralRegionResidencyCS
 * targetUri = $NZBaseNZResidencyCS
 * group[+]

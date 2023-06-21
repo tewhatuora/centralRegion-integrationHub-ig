@@ -5,7 +5,7 @@
   "id": "nzcr-flag-alert-category-vs",
   "title": "NZ Central Region - Flag Alert Category Value Set",
   "description": "Alert Category codes ex. WebPAS in NZ Central Region that denote a Flag",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag",
   "experimental": false,
   "compose": {

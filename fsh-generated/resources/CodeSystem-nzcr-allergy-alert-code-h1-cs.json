@@ -6,7 +6,7 @@
   "id": "nzcr-allergy-alert-code-h1-cs",
   "title": "NZ Central Region - Allergy Alert Codes (H1)",
   "description": "H1 Allergy alert codes ex. WebPAS in NZ Central Region.",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "url": "https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1",
   "concept": [
     {
