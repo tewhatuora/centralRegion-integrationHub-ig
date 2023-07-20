@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionFlag",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "name": "NZCentralRegionFlag",
   "status": "active",
   "description": "Flag resource for Te Whatu Ora, Central Region",

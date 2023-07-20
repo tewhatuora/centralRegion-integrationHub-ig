@@ -12,14 +12,14 @@
       </div>
    </text>
    <url value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig"/>
-   <version value="0.3.2"/>
+   <version value="0.3.3"/>
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-06-21T14:07:47+12:00"/>
-   <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
+   <date value="2023-07-20T17:59:47+12:00"/>
+   <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
    <contact>
-      <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral"/>
+      <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
       <telecom>
          <system value="url"/>
          <value value="http://https://www.tewhatuora.govt.nz/"/>
@@ -300,6 +300,7 @@
          <name value="Terminology: Concept Maps"/>
          <description value="These define transformations to convert between codes by systems conforming with this implementation guide."/>
       </grouping>
+
 
 
       <grouping id="-ex-example">
@@ -1135,21 +1136,6 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CapabilityStatement"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CapabilityStatement-CentralRegionIntegrationHubCapabilityStatement.html"/>
-         </extension>
-         <reference>
-            <reference value="CapabilityStatement/CentralRegionIntegrationHubCapabilityStatement"/>
-         </reference>
-         <name value="CentralRegionIntegrationHubCapabilityStatement"/>
-         <description value="Te Whatu Ora, Central Region Integration Hub FHIR API"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-dyn-capabilitystatement"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -1403,6 +1389,20 @@
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
       </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CapabilityStatement"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CapabilityStatement-nzcr-SmileCDR.html"/>
+         </extension>
+         <reference>
+            <reference value="CapabilityStatement/nzcr-SmileCDR"/>
+         </reference>
+         <name value="Central Region FHIR REST Endpoints"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-capabilitystatement"/>
+      </resource>
       <page>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="toc.html"/>
@@ -1455,8 +1455,8 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
-               <nameUrl value="CapabilityStatement-CentralRegionIntegrationHubCapabilityStatement.html"/>
-               <title value="CentralRegionIntegrationHubCapabilityStatement"/>
+               <nameUrl value="CapabilityStatement-nzcr-SmileCDR.html"/>
+               <title value="Central Region FHIR REST Endpoints"/>
                <generation value="generated"/>
             </page>
             <page>

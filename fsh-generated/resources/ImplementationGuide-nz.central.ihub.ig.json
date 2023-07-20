@@ -2,14 +2,14 @@
   "resourceType": "ImplementationGuide",
   "id": "nz.central.ihub.ig",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "name": "CRIntegrationHub",
   "title": "Te Whatu Ora, Central Region Integration Hub",
   "status": "draft",
-  "publisher": "Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral",
+  "publisher": "Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral",
   "contact": [
     {
-      "name": "Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua MidCentral",
+      "name": "Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral",
       "telecom": [
         {
           "system": "url",
@@ -486,13 +486,6 @@
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/CentralRegionIntegrationHubCapabilityStatement"
-        },
-        "name": "CentralRegionIntegrationHubCapabilityStatement",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Patient/Contact"
         },
         "name": "Contact",
@@ -626,6 +619,13 @@
         "name": "nzcr-nz-residency-map",
         "description": "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/nzcr-SmileCDR"
+        },
+        "exampleBoolean": false,
+        "name": "Central Region FHIR REST Endpoints"
       }
     ],
     "page": {
