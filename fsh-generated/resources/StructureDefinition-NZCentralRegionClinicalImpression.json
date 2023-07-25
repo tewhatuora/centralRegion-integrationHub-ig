@@ -2,9 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionClinicalImpression",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionClinicalImpression",
-  "version": "0.3.3",
   "name": "NZCentralRegionClinicalImpression",
-  "status": "active",
+  "status": "draft",
   "description": "ClinicalImpression resource for Te Whatu Ora, Central Region - holds mental health legal statuses",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -104,10 +103,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.valueCoding",
-        "path": "ClinicalImpression.extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -116,8 +113,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.valueCoding.system",
-        "path": "ClinicalImpression.extension.extension.valueCoding.system",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -126,8 +123,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.valueCoding.code",
-        "path": "ClinicalImpression.extension.extension.valueCoding.code",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -136,8 +133,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.valueCoding.display",
-        "path": "ClinicalImpression.extension.extension.valueCoding.display",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:legalStatus.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -161,10 +158,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.valueCoding",
-        "path": "ClinicalImpression.extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -173,8 +168,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.valueCoding.system",
-        "path": "ClinicalImpression.extension.extension.valueCoding.system",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -183,8 +178,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.valueCoding.code",
-        "path": "ClinicalImpression.extension.extension.valueCoding.code",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -193,8 +188,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.valueCoding.display",
-        "path": "ClinicalImpression.extension.extension.valueCoding.display",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:reviewStatus.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -270,10 +265,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:location.valueCoding",
-        "path": "ClinicalImpression.extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -282,8 +275,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:location.valueCoding.system",
-        "path": "ClinicalImpression.extension.extension.valueCoding.system",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -292,8 +285,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:location.valueCoding.code",
-        "path": "ClinicalImpression.extension.extension.valueCoding.code",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -302,8 +295,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:location.valueCoding.display",
-        "path": "ClinicalImpression.extension.extension.valueCoding.display",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:location.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -455,10 +448,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.valueCoding",
-        "path": "ClinicalImpression.extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -467,8 +458,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.valueCoding.system",
-        "path": "ClinicalImpression.extension.extension.valueCoding.system",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -477,8 +468,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.valueCoding.code",
-        "path": "ClinicalImpression.extension.extension.valueCoding.code",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -487,8 +478,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.valueCoding.display",
-        "path": "ClinicalImpression.extension.extension.valueCoding.display",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:supplementaryLegalStatus.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -642,10 +633,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.valueCoding",
-        "path": "ClinicalImpression.extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.value[x]",
+        "path": "ClinicalImpression.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -654,8 +643,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.valueCoding.system",
-        "path": "ClinicalImpression.extension.extension.valueCoding.system",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.value[x].system",
+        "path": "ClinicalImpression.extension.extension.value[x].system",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -664,8 +653,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.valueCoding.code",
-        "path": "ClinicalImpression.extension.extension.valueCoding.code",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.value[x].code",
+        "path": "ClinicalImpression.extension.extension.value[x].code",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -674,8 +663,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.valueCoding.display",
-        "path": "ClinicalImpression.extension.extension.valueCoding.display",
+        "id": "ClinicalImpression.extension:mentalHealth.extension:courtType.value[x].display",
+        "path": "ClinicalImpression.extension.extension.value[x].display",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -720,10 +709,8 @@
         ]
       },
       {
-        "id": "ClinicalImpression.extension:hl7v2Message.valueBase64Binary",
-        "path": "ClinicalImpression.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
+        "id": "ClinicalImpression.extension:hl7v2Message.value[x]",
+        "path": "ClinicalImpression.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
@@ -1041,29 +1028,13 @@
       {
         "id": "ClinicalImpression.effective[x]",
         "path": "ClinicalImpression.effective[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "dateTime"
           }
         ],
-        "mustSupport": true
-      },
-      {
-        "id": "ClinicalImpression.effectiveDateTime",
-        "path": "ClinicalImpression.effectiveDateTime",
-        "min": 1,
-        "max": "1",
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",

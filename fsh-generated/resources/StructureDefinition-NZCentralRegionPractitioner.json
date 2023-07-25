@@ -2,9 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionPractitioner",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPractitioner",
-  "version": "0.3.3",
   "name": "NZCentralRegionPractitioner",
-  "status": "active",
+  "status": "draft",
   "description": "Practitioner resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -123,10 +122,8 @@
         ]
       },
       {
-        "id": "Practitioner.extension:hl7v2Message.valueBase64Binary",
-        "path": "Practitioner.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
+        "id": "Practitioner.extension:hl7v2Message.value[x]",
+        "path": "Practitioner.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-practitioner-from-hl7v2",

@@ -46,51 +46,42 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/NZCentralRegionAllergyIntolerance"
+          "reference": "Patient/Address-Suburb"
         },
-        "name": "NZCentralRegionAllergyIntolerance",
-        "description": "AllergyIntolerance resource for Te Whatu Ora, Central Region",
-        "exampleBoolean": false
+        "name": "Address-Suburb",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field,\n  and mappings to Domicile and DHB codes.",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NZCentralRegionClinicalImpression"
+          "reference": "CapabilityStatement/nzcr-SmileCDR"
         },
-        "name": "NZCentralRegionClinicalImpression",
-        "description": "ClinicalImpression resource for Te Whatu Ora, Central Region - holds mental health legal statuses",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "name": "Central Region FHIR REST Endpoints"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NZCentralRegionFlag"
+          "reference": "Patient/Contact"
         },
-        "name": "NZCentralRegionFlag",
-        "description": "Flag resource for Te Whatu Ora, Central Region",
-        "exampleBoolean": false
+        "name": "Contact",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with Contact that has multiple codings for the relationship",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NZCentralRegionPatient"
+          "reference": "Patient/Ethnicity-MultipleCodings"
         },
-        "name": "NZCentralRegionPatient",
-        "description": "Patient resource for Te Whatu Ora, Central Region",
-        "exampleBoolean": false
+        "name": "Ethnicity-MultipleCodings",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple ethnicity codings included",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NZCentralRegionPractitioner"
+          "reference": "Patient/GeneralPractitioner"
         },
-        "name": "NZCentralRegionPractitioner",
-        "description": "Practitioner resource for Te Whatu Ora, Central Region",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/nzcr-alert"
-        },
-        "name": "NZ Central Region Alert",
-        "description": "Complex extension recording meta data about all alerts, on who recorded the\n[Flag](./StructureDefinition-NZCentralRegionFlag.html) \nand [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html) flavours of Alert and when.",
-        "exampleBoolean": false
+        "name": "GeneralPractitioner",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with General Practitioner element",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
         "reference": {
@@ -102,18 +93,58 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nzcr-mental-health"
+          "reference": "Patient/HL7Message"
         },
-        "name": "NZ Central Region Mental Health",
-        "description": "Complex extension recording meta data about patient's mental health, particularly legal status",
-        "exampleBoolean": false
+        "name": "HL7Message",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, including the source HL7 v2 message",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/nz-residency"
+          "reference": "Patient/LanguageList"
         },
-        "name": "NZ Residency",
-        "description": "NZ Residency status",
+        "name": "LanguageList",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with an impossibly large set of languages; lets see that we can validate all of them",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/LanguageSingle"
+        },
+        "name": "LanguageSingle",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with a single language of communication",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/MaritalStatus-CivilUnion"
+        },
+        "name": "MaritalStatus-CivilUnion",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/MaritalStatus-Single"
+        },
+        "name": "MaritalStatus-Single",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "ClinicalImpression/MentalHealthLegalStatus"
+        },
+        "name": "MentalHealthLegalStatus",
+        "description": "An example of a mental health legal status review ClinicalImpression derived from ZLS custom segment, in Te Whatu Ora Central Region",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionClinicalImpression"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-alert-category-cs"
+        },
+        "name": "NZ Central Region - Alert Category Code System",
+        "description": "Alert Category codes ex. WebPAS in NZ Central Region",
         "exampleBoolean": false
       },
       {
@@ -130,134 +161,6 @@
         },
         "name": "NZ Central Region - Allergy Alert Code Value Set",
         "description": "Allergy alert codes (H1, H3, A3 & A4) ex. WebPAS in NZ Central Region.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-allergy-reaction-vs"
-        },
-        "name": "NZ Central Region - Allergy Reaction Value Set",
-        "description": "Allergy Reaction codes ex. WebPAS in NZ Central Region.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-contact-relationship-vs"
-        },
-        "name": "NZ Central Region - NZ ContactRelationship Value Set",
-        "description": "NZ ContactRelationship Codes ex. WebPAS in NZ Central Region\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset http://terminology.hl7.org/CodeSystem/v2-0131",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-ethnicity-level-2-value-set"
-        },
-        "name": "NZ Central Region - Ethnicity Level 2 Value Set",
-        "description": "Ethnicity Level 2 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-flag-alert-category-vs"
-        },
-        "name": "NZ Central Region - Flag Alert Category Value Set",
-        "description": "Alert Category codes ex. WebPAS in NZ Central Region that denote a Flag",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-flag-alert-code-vs"
-        },
-        "name": "NZ Central Region - Flag Alert Code Value Set",
-        "description": "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-hospital-code-vs"
-        },
-        "name": "NZ Central Region - Hospital Value Set",
-        "description": "Hospital identification codes ex. WebPAS in NZ Central Region",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-language-vs"
-        },
-        "name": "NZ Central Region - Language Value Set",
-        "description": "IETF equivalent Language codes, matching the raw codes used by WebPAS in NZ Central Region.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-marital-status-vs"
-        },
-        "name": "NZ Central Region - Marital Status Value Set",
-        "description": "Combined Marital Status value set with values that are in use in Central Region",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-mental-health-court-type-vs"
-        },
-        "name": "NZ Central Region - Mental Health Court Type Value Set",
-        "description": "Mental Health Court Type identification codes ex. WebPAS in NZ Central Region",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-mental-health-legal-status-vs"
-        },
-        "name": "NZ Central Region - MentalHealthLegalStatus Value Set",
-        "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-mental-health-review-location-vs"
-        },
-        "name": "NZ Central Region - Mental Health Review Location Value Set",
-        "description": "Mental Health Review Location identification codes ex. WebPAS in NZ Central Region",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-mental-health-review-status-vs"
-        },
-        "name": "NZ Central Region - MentalHealthReviewStatus Value Set",
-        "description": "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region.  - denoting if the patient's mental health status review has been completed, if not the reason why.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-religion-vs"
-        },
-        "name": "NZ Central Region - NZ Religion Value Set",
-        "description": "NZ Religion Codes ex. WebPAS in NZ Central Region",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nzcr-residency-vs"
-        },
-        "name": "NZ Central Region - NZ Residency Value Set",
-        "description": "NZ Residency Codes ex. WebPAS in NZ Central Region",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/nz-residency"
-        },
-        "name": "NZ Residency status",
-        "description": "Is the person a NZ resident",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/nzcr-alert-category-cs"
-        },
-        "name": "NZ Central Region - Alert Category Code System",
-        "description": "Alert Category codes ex. WebPAS in NZ Central Region",
         "exampleBoolean": false
       },
       {
@@ -294,10 +197,10 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-contact-relationship-cs"
+          "reference": "ValueSet/nzcr-allergy-reaction-vs"
         },
-        "name": "NZ Central Region - NZ ContactRelationship Code System",
-        "description": "More granular ContactRelationship codes ex. WebPAS in NZ Central Region.\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset in http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html",
+        "name": "NZ Central Region - Allergy Reaction Value Set",
+        "description": "Allergy Reaction codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -310,10 +213,26 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-extra-marital-status-cs"
+          "reference": "ValueSet/nzcr-ethnicity-level-2-value-set"
         },
-        "name": "NZ Central Region - Marital Status Code System",
-        "description": "A few extra Marital Status codes that are in use in Central Region",
+        "name": "NZ Central Region - Ethnicity Level 2 Value Set",
+        "description": "Ethnicity Level 2 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-flag-alert-category-vs"
+        },
+        "name": "NZ Central Region - Flag Alert Category Value Set",
+        "description": "Alert Category codes ex. WebPAS in NZ Central Region that denote a Flag",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-flag-alert-code-vs"
+        },
+        "name": "NZ Central Region - Flag Alert Code Value Set",
+        "description": "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
         "exampleBoolean": false
       },
       {
@@ -406,6 +325,38 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nzcr-hospital-code-vs"
+        },
+        "name": "NZ Central Region - Hospital Value Set",
+        "description": "Hospital identification codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-language-vs"
+        },
+        "name": "NZ Central Region - Language Value Set",
+        "description": "IETF equivalent Language codes, matching the raw codes used by WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-extra-marital-status-cs"
+        },
+        "name": "NZ Central Region - Marital Status Code System",
+        "description": "A few extra Marital Status codes that are in use in Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-marital-status-vs"
+        },
+        "name": "NZ Central Region - Marital Status Value Set",
+        "description": "Combined Marital Status value set with values that are in use in Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nzcr-mental-health-court-type-cs"
         },
         "name": "NZ Central Region - Mental Health Court Type Code System",
@@ -414,10 +365,10 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-mental-health-legal-status-cs"
+          "reference": "ValueSet/nzcr-mental-health-court-type-vs"
         },
-        "name": "NZ Central Region - MentalHealthLegalStatus Code System",
-        "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
+        "name": "NZ Central Region - Mental Health Court Type Value Set",
+        "description": "Mental Health Court Type identification codes ex. WebPAS in NZ Central Region",
         "exampleBoolean": false
       },
       {
@@ -430,10 +381,90 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/nzcr-mental-health-review-location-vs"
+        },
+        "name": "NZ Central Region - Mental Health Review Location Value Set",
+        "description": "Mental Health Review Location identification codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-mental-health-legal-status-cs"
+        },
+        "name": "NZ Central Region - MentalHealthLegalStatus Code System",
+        "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-mental-health-legal-status-vs"
+        },
+        "name": "NZ Central Region - MentalHealthLegalStatus Value Set",
+        "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nzcr-mental-health-review-status-cs"
         },
         "name": "NZ Central Region - MentalHealthReviewStatus Code System",
         "description": "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region - denoting if the patient's mental health status review has been completed, if not the reason why.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-mental-health-review-status-vs"
+        },
+        "name": "NZ Central Region - MentalHealthReviewStatus Value Set",
+        "description": "MentalHealthReviewStatus codes ex. WebPAS in NZ Central Region.  - denoting if the patient's mental health status review has been completed, if not the reason why.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-contact-relationship-cs"
+        },
+        "name": "NZ Central Region - NZ ContactRelationship Code System",
+        "description": "More granular ContactRelationship codes ex. WebPAS in NZ Central Region.\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset in http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-contact-relationship-vs"
+        },
+        "name": "NZ Central Region - NZ ContactRelationship Value Set",
+        "description": "NZ ContactRelationship Codes ex. WebPAS in NZ Central Region\n\nThis codeset is to be used alongside the HL7 defined general relationship codeset http://terminology.hl7.org/CodeSystem/v2-0131",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-religion-cs"
+        },
+        "name": "NZ Central Region - NZ Religion Code System",
+        "description": "Religion codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-religion-vs"
+        },
+        "name": "NZ Central Region - NZ Religion Value Set",
+        "description": "NZ Religion Codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-residency-cs"
+        },
+        "name": "NZ Central Region - NZ Residency Code System",
+        "description": "Residency codes ex. WebPAS in NZ Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzcr-residency-vs"
+        },
+        "name": "NZ Central Region - NZ Residency Value Set",
+        "description": "NZ Residency Codes ex. WebPAS in NZ Central Region",
         "exampleBoolean": false
       },
       {
@@ -454,18 +485,42 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-religion-cs"
+          "reference": "StructureDefinition/nzcr-alert"
         },
-        "name": "NZ Central Region - NZ Religion Code System",
-        "description": "Religion codes ex. WebPAS in NZ Central Region",
+        "name": "NZ Central Region Alert",
+        "description": "Complex extension recording meta data about all alerts, on who recorded the\n[Flag](./StructureDefinition-NZCentralRegionFlag.html) \nand [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html) flavours of Alert and when.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-residency-cs"
+          "reference": "StructureDefinition/nzcr-mental-health"
         },
-        "name": "NZ Central Region - NZ Residency Code System",
-        "description": "Residency codes ex. WebPAS in NZ Central Region",
+        "name": "NZ Central Region Mental Health",
+        "description": "Complex extension recording meta data about patient's mental health, particularly legal status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nzcr-referral"
+        },
+        "name": "NZ Central Region Referral",
+        "description": "Complex extension recording extra data about referrals",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nz-residency"
+        },
+        "name": "NZ Residency",
+        "description": "NZ Residency status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nz-residency"
+        },
+        "name": "NZ Residency status",
+        "description": "Is the person a NZ resident",
         "exampleBoolean": false
       },
       {
@@ -478,123 +533,51 @@
       },
       {
         "reference": {
-          "reference": "Patient/Address-Suburb"
+          "reference": "StructureDefinition/NZCentralRegionAllergyIntolerance"
         },
-        "name": "Address-Suburb",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field,\n  and mappings to Domicile and DHB codes.",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+        "name": "NZCentralRegionAllergyIntolerance",
+        "description": "AllergyIntolerance resource for Te Whatu Ora, Central Region",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "Patient/Contact"
+          "reference": "StructureDefinition/NZCentralRegionClinicalImpression"
         },
-        "name": "Contact",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with Contact that has multiple codings for the relationship",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+        "name": "NZCentralRegionClinicalImpression",
+        "description": "ClinicalImpression resource for Te Whatu Ora, Central Region - holds mental health legal statuses",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "Patient/Ethnicity-MultipleCodings"
+          "reference": "StructureDefinition/NZCentralRegionFlag"
         },
-        "name": "Ethnicity-MultipleCodings",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple ethnicity codings included",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+        "name": "NZCentralRegionFlag",
+        "description": "Flag resource for Te Whatu Ora, Central Region",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "Patient/GeneralPractitioner"
+          "reference": "StructureDefinition/NZCentralRegionPatient"
         },
-        "name": "GeneralPractitioner",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with General Practitioner element",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+        "name": "NZCentralRegionPatient",
+        "description": "Patient resource for Te Whatu Ora, Central Region",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "Patient/HL7Message"
+          "reference": "StructureDefinition/NZCentralRegionPractitioner"
         },
-        "name": "HL7Message",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, including the source HL7 v2 message",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+        "name": "NZCentralRegionPractitioner",
+        "description": "Practitioner resource for Te Whatu Ora, Central Region",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "Patient/LanguageList"
+          "reference": "StructureDefinition/NZCentralRegionReferral"
         },
-        "name": "LanguageList",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with an impossibly large set of languages; lets see that we can validate all of them",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/LanguageSingle"
-        },
-        "name": "LanguageSingle",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with a single language of communication",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/MaritalStatus-CivilUnion"
-        },
-        "name": "MaritalStatus-CivilUnion",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/MaritalStatus-Single"
-        },
-        "name": "MaritalStatus-Single",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with one of the HL7 v3 marital status codes",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "ClinicalImpression/MentalHealthLegalStatus"
-        },
-        "name": "MentalHealthLegalStatus",
-        "description": "An example of a mental health legal status review ClinicalImpression derived from ZLS custom segment, in Te Whatu Ora Central Region",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionClinicalImpression"
-      },
-      {
-        "reference": {
-          "reference": "Flag/PalliativeCare"
-        },
-        "name": "PalliativeCare",
-        "description": "An example of a Flag alert derived from ZAL custom segment, in Te Whatu Ora Central Region",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag"
-      },
-      {
-        "reference": {
-          "reference": "AllergyIntolerance/PeanutAllergy"
-        },
-        "name": "PeanutAllergy",
-        "description": "An example of an allergy/intolerance alert derived from ZAL custom segment, in Te Whatu Ora Central Region",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance"
-      },
-      {
-        "reference": {
-          "reference": "Patient/Religion-NoAnswer"
-        },
-        "name": "Religion-NoAnswer",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'\n  Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/Religion-Presbyterian"
-        },
-        "name": "Religion-Presbyterian",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation requiring two codings:\n * The raw coding from WebPAS with coding from https://standards.digital.health.nz/ns/central-region/patient-religion\n * Equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
-      },
-      {
-        "reference": {
-          "reference": "Patient/Residency"
-        },
-        "name": "Residency",
-        "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings",
-        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+        "name": "NZCentralRegionReferral",
+        "description": "Referral flavour of ServiceRequest resource for Te Whatu Ora, Central Region",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -622,10 +605,51 @@
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/nzcr-SmileCDR"
+          "reference": "Flag/PalliativeCare"
         },
-        "exampleBoolean": false,
-        "name": "Central Region FHIR REST Endpoints"
+        "name": "PalliativeCare",
+        "description": "An example of a Flag alert derived from ZAL custom segment, in Te Whatu Ora Central Region",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/PeanutAllergy"
+        },
+        "name": "PeanutAllergy",
+        "description": "An example of an allergy/intolerance alert derived from ZAL custom segment, in Te Whatu Ora Central Region",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance"
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/Referral"
+        },
+        "name": "Referral",
+        "description": "An example of a Referral flavour of ServiceRequest resource, in Te Whatu Ora Central Region",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionReferral"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Religion-NoAnswer"
+        },
+        "name": "Religion-NoAnswer",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation 'Objects to question'\n  Which means there is no equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Religion-Presbyterian"
+        },
+        "name": "Religion-Presbyterian",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation requiring two codings:\n * The raw coding from WebPAS with coding from https://standards.digital.health.nz/ns/central-region/patient-religion\n * Equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Residency"
+        },
+        "name": "Residency",
+        "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings",
+        "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
       }
     ],
     "page": {

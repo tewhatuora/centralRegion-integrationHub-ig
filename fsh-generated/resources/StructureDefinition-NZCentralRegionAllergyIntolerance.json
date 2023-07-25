@@ -2,9 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionAllergyIntolerance",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance",
-  "version": "0.3.3",
   "name": "NZCentralRegionAllergyIntolerance",
-  "status": "active",
+  "status": "draft",
   "description": "AllergyIntolerance resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -79,10 +78,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:hl7v2Message.valueBase64Binary",
-        "path": "AllergyIntolerance.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:hl7v2Message.value[x]",
+        "path": "AllergyIntolerance.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -131,10 +128,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:severityLevel.valueString",
-        "path": "AllergyIntolerance.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:severityLevel.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -162,10 +157,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.valueString",
-        "path": "AllergyIntolerance.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -189,10 +182,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:inactiveDate.valueDate",
-        "path": "AllergyIntolerance.extension.extension.valueDate",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:inactiveDate.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -217,10 +208,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:reviewDate.valueDate",
-        "path": "AllergyIntolerance.extension.extension.valueDate",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:reviewDate.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -245,10 +234,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedBy.valueString",
-        "path": "AllergyIntolerance.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedBy.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -273,10 +260,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedDateTime.valueDateTime",
-        "path": "AllergyIntolerance.extension.extension.valueDateTime",
-        "min": 1,
-        "max": "1",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:lastUpdatedDateTime.value[x]",
+        "path": "AllergyIntolerance.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -301,12 +286,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.valueCoding",
-        "path": "AllergyIntolerance.extension.extension.valueCoding"
-      },
-      {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.valueCoding.system",
-        "path": "AllergyIntolerance.extension.extension.valueCoding.system",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.value[x].system",
+        "path": "AllergyIntolerance.extension.extension.value[x].system",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -315,8 +296,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.valueCoding.code",
-        "path": "AllergyIntolerance.extension.extension.valueCoding.code",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.value[x].code",
+        "path": "AllergyIntolerance.extension.extension.value[x].code",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -325,8 +306,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.valueCoding.display",
-        "path": "AllergyIntolerance.extension.extension.valueCoding.display",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.value[x].display",
+        "path": "AllergyIntolerance.extension.extension.value[x].display",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -985,8 +966,9 @@
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.onsetDateTime",
-        "path": "AllergyIntolerance.onsetDateTime",
+        "id": "AllergyIntolerance.onset[x]:onsetDateTime",
+        "path": "AllergyIntolerance.onset[x]",
+        "sliceName": "onsetDateTime",
         "min": 0,
         "max": "1",
         "type": [
@@ -1004,8 +986,9 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.onsetPeriod",
-        "path": "AllergyIntolerance.onsetPeriod",
+        "id": "AllergyIntolerance.onset[x]:onsetPeriod",
+        "path": "AllergyIntolerance.onset[x]",
+        "sliceName": "onsetPeriod",
         "min": 0,
         "max": "1",
         "type": [
@@ -1016,8 +999,8 @@
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.onsetPeriod.start",
-        "path": "AllergyIntolerance.onsetPeriod.start",
+        "id": "AllergyIntolerance.onset[x]:onsetPeriod.start",
+        "path": "AllergyIntolerance.onset[x].start",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -1027,8 +1010,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.onsetPeriod.end",
-        "path": "AllergyIntolerance.onsetPeriod.end",
+        "id": "AllergyIntolerance.onset[x]:onsetPeriod.end",
+        "path": "AllergyIntolerance.onset[x].end",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",

@@ -1,0 +1,1325 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NZCentralRegionReferral",
+  "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionReferral",
+  "name": "NZCentralRegionReferral",
+  "status": "draft",
+  "description": "Referral flavour of ServiceRequest resource for Te Whatu Ora, Central Region",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "quick",
+      "uri": "http://siframework.org/cqf",
+      "name": "Quality Improvement and Clinical Knowledge (QUICK)"
+    },
+    {
+      "identity": "nzcr-referral-from-hl7v2",
+      "name": "Central Region Message Specification (1.14)",
+      "uri": "https://standards.digital.health.nz/ns/central-region/hl7-v2",
+      "comment": "Central Region Message Specification (1.14) - Referral (ServiceRequest) from REF^I12"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest",
+        "path": "ServiceRequest",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ServiceRequest"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.implicitRules",
+        "path": "ServiceRequest.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.language",
+        "path": "ServiceRequest.language",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.contained",
+        "path": "ServiceRequest.contained",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.extension",
+        "path": "ServiceRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "ServiceRequest.extension:hl7v2Message",
+        "path": "ServiceRequest.extension",
+        "sliceName": "hl7v2Message",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.extension:hl7v2Message.url",
+        "path": "ServiceRequest.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:hl7v2Message.value[x]",
+        "path": "ServiceRequest.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "Entire incoming HL7 message",
+            "comment": "Base64 encoded"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral",
+        "path": "ServiceRequest.extension",
+        "sliceName": "referral",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/referral"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:preferredSite",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "preferredSite"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:preferredSite.value[x].system",
+        "path": "ServiceRequest.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/referral-site'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:preferredSite.value[x].code",
+        "path": "ServiceRequest.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-35.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:preferredSite.value[x].display",
+        "path": "ServiceRequest.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXC-35.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referralSource",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "referralSource"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referralSource.value[x].system",
+        "path": "ServiceRequest.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/referral-source'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referralSource.value[x].code",
+        "path": "ServiceRequest.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-15.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referralSource.value[x].display",
+        "path": "ServiceRequest.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXC-15.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referringPractice",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "referringPractice"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].system",
+        "path": "ServiceRequest.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/referring-practice'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].code",
+        "path": "ServiceRequest.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-35.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].display",
+        "path": "ServiceRequest.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXC-35.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.identifier",
+        "path": "ServiceRequest.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.identifier.id",
+        "path": "ServiceRequest.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.extension",
+        "path": "ServiceRequest.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.use",
+        "path": "ServiceRequest.identifier.use",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.identifier.type",
+        "path": "ServiceRequest.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.identifier.type.coding",
+        "path": "ServiceRequest.identifier.type.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.identifier.type.coding.system",
+        "path": "ServiceRequest.identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.identifier.type.coding.code",
+        "path": "ServiceRequest.identifier.type.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'RI'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.identifier.type.coding.display",
+        "path": "ServiceRequest.identifier.type.coding.display",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'Referral Identifier'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.identifier.system",
+        "path": "ServiceRequest.identifier.system",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/pas-referral-id'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.identifier.value",
+        "path": "ServiceRequest.identifier.value",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "RF1-11.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.identifier.period",
+        "path": "ServiceRequest.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.assigner",
+        "path": "ServiceRequest.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.instantiatesCanonical",
+        "path": "ServiceRequest.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.instantiatesUri",
+        "path": "ServiceRequest.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.basedOn",
+        "path": "ServiceRequest.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.replaces",
+        "path": "ServiceRequest.replaces",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requisition",
+        "path": "ServiceRequest.requisition",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.status",
+        "path": "ServiceRequest.status",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "draft | active | revoked ",
+            "comment": "**if** RF1-1.1 == 'P' **then** 'draft'\r\n\n  **elif** RF1-1.1 == 'A' **then** 'active'\r\n\n  **elif** RF1-1.1 == 'R' **then** 'revoked'\r\n\n  **else** 'unknown'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'order'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.category",
+        "path": "ServiceRequest.category",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.category.coding",
+        "path": "ServiceRequest.category.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.category.coding.system",
+        "path": "ServiceRequest.category.coding.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/referral-category",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/referral-category'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.category.coding.code",
+        "path": "ServiceRequest.category.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "RF1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.category.coding.display",
+        "path": "ServiceRequest.category.coding.display",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "RF1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.priority",
+        "path": "ServiceRequest.priority",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.doNotPerform",
+        "path": "ServiceRequest.doNotPerform",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.code.coding.system",
+        "path": "ServiceRequest.code.coding.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/referral-type",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/referral-type'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.code.coding.code",
+        "path": "ServiceRequest.code.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-34.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.code.coding.display",
+        "path": "ServiceRequest.code.coding.display",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-34.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.orderDetail",
+        "path": "ServiceRequest.orderDetail",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.quantity[x]",
+        "path": "ServiceRequest.quantity[x]",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.subject.id",
+        "path": "ServiceRequest.subject.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.extension",
+        "path": "ServiceRequest.subject.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.reference",
+        "path": "ServiceRequest.subject.reference",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": " ",
+            "comment": "read-only field"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.type",
+        "path": "ServiceRequest.subject.type",
+        "min": 1,
+        "patternUri": "Patient",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'Patient'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.identifier",
+        "path": "ServiceRequest.subject.identifier",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": " ",
+            "comment": "Select the NHI identifier from the list provided; where PID-3.4.2 = 2.16.840.1.113883.2.18.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.id",
+        "path": "ServiceRequest.subject.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.extension",
+        "path": "ServiceRequest.subject.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.use",
+        "path": "ServiceRequest.subject.identifier.use",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type",
+        "path": "ServiceRequest.subject.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.id",
+        "path": "ServiceRequest.subject.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.extension",
+        "path": "ServiceRequest.subject.identifier.type.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.coding",
+        "path": "ServiceRequest.subject.identifier.type.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.coding.id",
+        "path": "ServiceRequest.subject.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.coding.extension",
+        "path": "ServiceRequest.subject.identifier.type.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.coding.system",
+        "path": "ServiceRequest.subject.identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.coding.version",
+        "path": "ServiceRequest.subject.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.coding.code",
+        "path": "ServiceRequest.subject.identifier.type.coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'MR'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.coding.display",
+        "path": "ServiceRequest.subject.identifier.type.coding.display",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'Medical record number'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.coding.userSelected",
+        "path": "ServiceRequest.subject.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.type.text",
+        "path": "ServiceRequest.subject.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.system",
+        "path": "ServiceRequest.subject.identifier.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/nhi-id",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/nhi-id'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.value",
+        "path": "ServiceRequest.subject.identifier.value",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "PID-3.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.period",
+        "path": "ServiceRequest.subject.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier.assigner",
+        "path": "ServiceRequest.subject.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.display",
+        "path": "ServiceRequest.subject.display",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "PID-5.1 + ', ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.5"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.occurrence[x]",
+        "path": "ServiceRequest.occurrence[x]",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.asNeeded[x]",
+        "path": "ServiceRequest.asNeeded[x]",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "path": "ServiceRequest.authoredOn",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-9"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "PV1-8 / PRD",
+            "comment": "Repeat for each PV1-8 (or first PRD if no PV1 segment)"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.id",
+        "path": "ServiceRequest.requester.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.extension",
+        "path": "ServiceRequest.requester.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.reference",
+        "path": "ServiceRequest.requester.reference",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "n/a",
+            "comment": "Internal GUID"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.type",
+        "path": "ServiceRequest.requester.type",
+        "short": "Type the reference refers to (e.g. 'Practitioner')",
+        "min": 1,
+        "patternUri": "Practitioner",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'Practitioner'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.identifier",
+        "path": "ServiceRequest.requester.identifier",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": " ",
+            "comment": "Only available from PV1-8"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.id",
+        "path": "ServiceRequest.requester.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.extension",
+        "path": "ServiceRequest.requester.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.use",
+        "path": "ServiceRequest.requester.identifier.use",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type",
+        "path": "ServiceRequest.requester.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.id",
+        "path": "ServiceRequest.requester.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.extension",
+        "path": "ServiceRequest.requester.identifier.type.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.coding",
+        "path": "ServiceRequest.requester.identifier.type.coding",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": " ",
+            "comment": "Practitioner Identifiers are locally assigned within PAS"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.coding.id",
+        "path": "ServiceRequest.requester.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.coding.extension",
+        "path": "ServiceRequest.requester.identifier.type.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.coding.system",
+        "path": "ServiceRequest.requester.identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.coding.version",
+        "path": "ServiceRequest.requester.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.coding.code",
+        "path": "ServiceRequest.requester.identifier.type.coding.code",
+        "min": 1,
+        "patternCode": "LR",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'LR'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.coding.display",
+        "path": "ServiceRequest.requester.identifier.type.coding.display",
+        "min": 1,
+        "patternString": "Local Registry ID",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'Local registry ID'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.coding.userSelected",
+        "path": "ServiceRequest.requester.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.type.text",
+        "path": "ServiceRequest.requester.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.system",
+        "path": "ServiceRequest.requester.identifier.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.value",
+        "path": "ServiceRequest.requester.identifier.value",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "PV1-8.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.period",
+        "path": "ServiceRequest.requester.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier.assigner",
+        "path": "ServiceRequest.requester.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.display",
+        "path": "ServiceRequest.requester.display",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "PV1-8.2/PRD-2.1 + ', ' + PV1-8.3/PRD-2.2 + ' ' + PV1-8.4/PRD-2.5 + ' ' + PV1-8.6",
+            "comment": "from PV1-8 or second PRD-2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performerType",
+        "path": "ServiceRequest.performerType",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer",
+        "path": "ServiceRequest.performer",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "PV1-7",
+            "comment": "Repeat for each PV1-7 (or second PRD if no PV1 segment)"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.id",
+        "path": "ServiceRequest.performer.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.extension",
+        "path": "ServiceRequest.performer.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.reference",
+        "path": "ServiceRequest.performer.reference",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "n/a",
+            "comment": "Internal GUID"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.type",
+        "path": "ServiceRequest.performer.type",
+        "short": "Type the reference refers to (e.g. 'Practitioner')",
+        "min": 1,
+        "patternUri": "Practitioner",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'Practitioner'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.identifier",
+        "path": "ServiceRequest.performer.identifier",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": " ",
+            "comment": "Only available from PV1-7"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.id",
+        "path": "ServiceRequest.performer.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.extension",
+        "path": "ServiceRequest.performer.identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.use",
+        "path": "ServiceRequest.performer.identifier.use",
+        "min": 1,
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type",
+        "path": "ServiceRequest.performer.identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.id",
+        "path": "ServiceRequest.performer.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.extension",
+        "path": "ServiceRequest.performer.identifier.type.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.coding",
+        "path": "ServiceRequest.performer.identifier.type.coding",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": " ",
+            "comment": "Practitioner Identifiers are locally assigned within PAS"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.coding.id",
+        "path": "ServiceRequest.performer.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.coding.extension",
+        "path": "ServiceRequest.performer.identifier.type.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.coding.system",
+        "path": "ServiceRequest.performer.identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.coding.version",
+        "path": "ServiceRequest.performer.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.coding.code",
+        "path": "ServiceRequest.performer.identifier.type.coding.code",
+        "min": 1,
+        "patternCode": "LR",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'LR'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.coding.display",
+        "path": "ServiceRequest.performer.identifier.type.coding.display",
+        "min": 1,
+        "patternString": "Local Registry ID",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'Local registry ID'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.coding.userSelected",
+        "path": "ServiceRequest.performer.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.type.text",
+        "path": "ServiceRequest.performer.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.system",
+        "path": "ServiceRequest.performer.identifier.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.value",
+        "path": "ServiceRequest.performer.identifier.value",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "PV1-7.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.period",
+        "path": "ServiceRequest.performer.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier.assigner",
+        "path": "ServiceRequest.performer.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.display",
+        "path": "ServiceRequest.performer.display",
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "PV1-7.2/PRD-2.1 + ', ' + PV1-7.3/PRD-2.2 + ' ' + PV1-7.4/PRD-2.5 + ' ' + PV1-7.6",
+            "comment": "from PV1-7 or second PRD-2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.locationCode",
+        "path": "ServiceRequest.locationCode",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding.system",
+        "path": "ServiceRequest.locationCode.coding.system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/referral-department'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding.code",
+        "path": "ServiceRequest.locationCode.coding.code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-40.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding.display",
+        "path": "ServiceRequest.locationCode.coding.display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-40.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.locationReference",
+        "path": "ServiceRequest.locationReference",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "path": "ServiceRequest.reasonCode",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.system",
+        "path": "ServiceRequest.reasonCode.coding.system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/referral-reason'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.code",
+        "path": "ServiceRequest.reasonCode.coding.code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-7.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.display",
+        "path": "ServiceRequest.reasonCode.coding.display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-7.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.reasonReference",
+        "path": "ServiceRequest.reasonReference",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.insurance",
+        "path": "ServiceRequest.insurance",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.supportingInfo",
+        "path": "ServiceRequest.supportingInfo",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.specimen",
+        "path": "ServiceRequest.specimen",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.bodySite",
+        "path": "ServiceRequest.bodySite",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.note",
+        "path": "ServiceRequest.note",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.patientInstruction",
+        "path": "ServiceRequest.patientInstruction",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.relevantHistory",
+        "path": "ServiceRequest.relevantHistory",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "NZCentralRegionMentalHealthCourtTypeValueSet",
   "id": "nzcr-mental-health-court-type-vs",
   "title": "NZ Central Region - Mental Health Court Type Value Set",
   "description": "Mental Health Court Type identification codes ex. WebPAS in NZ Central Region",
-  "version": "0.3.3",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-court-type",
   "experimental": false,
   "compose": {

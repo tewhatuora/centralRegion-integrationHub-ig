@@ -6,7 +6,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with a 
   * use = #official
   * system = $NZBaseNHI
   * value = "ZKY0099"
-  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding.system = $HL7IdentifierTypeCS
   * type.coding.code = #MR
   * type.coding.display = "Medical record number"
 

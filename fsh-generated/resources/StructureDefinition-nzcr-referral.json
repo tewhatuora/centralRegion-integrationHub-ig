@@ -1,0 +1,246 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nzcr-referral",
+  "url": "https://standards.digital.health.nz/ns/central-region/referral",
+  "name": "NZCentralRegionExtensionReferral",
+  "title": "NZ Central Region Referral",
+  "status": "active",
+  "description": "Complex extension recording extra data about referrals",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NZ Central Region Referral",
+        "definition": "Complex extension recording extra data about referrals"
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "short": "Container holding the individual elements of the Referral extension.",
+        "definition": "Container holding the individual elements of the Referral extension."
+      },
+      {
+        "id": "Extension.extension:preferredSite",
+        "path": "Extension.extension",
+        "sliceName": "preferredSite",
+        "short": "Which hospital / clinic does patient prefer to attend?",
+        "definition": "Which site does patient prefer to attend the referral?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:preferredSite.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:preferredSite.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:preferredSite.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "preferredSite"
+      },
+      {
+        "id": "Extension.extension:preferredSite.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/hospital-code"
+        }
+      },
+      {
+        "id": "Extension.extension:preferredSite.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:preferredSite.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:preferredSite.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:preferredSite.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referralSource",
+        "path": "Extension.extension",
+        "sliceName": "referralSource",
+        "short": "Which organisation made the referral?",
+        "definition": "Which organisation made the referral?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referralSource.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referralSource.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referralSource.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "referralSource"
+      },
+      {
+        "id": "Extension.extension:referralSource.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/ns/central-region/referral-source"
+        }
+      },
+      {
+        "id": "Extension.extension:referralSource.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referralSource.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referralSource.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referralSource.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice",
+        "path": "Extension.extension",
+        "sliceName": "referringPractice",
+        "short": "Which medical practice made the referral?",
+        "definition": "When source is General Practice, which medical practice made the referral?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "referringPractice"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/ns/central-region/referring-practice"
+        }
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://standards.digital.health.nz/ns/central-region/referral"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

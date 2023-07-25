@@ -41,7 +41,7 @@ url of rsAllergyIntolerance is [[StructureDefinition-NZCentralRegionAllergyIntol
 url of rsFlag is [[StructureDefinition-NZCentralRegionFlag.html]]
 url of rsClinicalImpression is [[StructureDefinition-NZCentralRegionClinicalImpression.html]]
 url of rsPractitioner is [[StructureDefinition-NZCentralRegionPractitioner.html]]
-url of rsServiceRequest is [[StructureDefinition-NZCentralRegionServiceRequest.html]]
+url of rsServiceRequest is [[StructureDefinition-NZCentralRegionReferral.html]]
 
 
 rsPatient -r-> rsClinicalImpression: is subject of

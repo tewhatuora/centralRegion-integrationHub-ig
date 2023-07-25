@@ -52,24 +52,6 @@
       "value": "WYS1973-food-PEANUT"
     }
   ],
-  "clinicalStatus": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-        "code": "active",
-        "display": "Active"
-      }
-    ]
-  },
-  "verificationStatus": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-        "code": "confirmed",
-        "display": "Confirmed"
-      }
-    ]
-  },
   "patient": {
     "type": "Patient",
     "identifier": {
@@ -104,6 +86,24 @@
       "value": "22548"
     },
     "display": "Ramadan, Mohamed Mahmoud S DR"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
   },
   "type": "allergy",
   "category": [

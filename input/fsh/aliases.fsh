@@ -32,8 +32,9 @@ Alias:   $NZBaseNHI                       = https://standards.digital.health.nz/
 Alias:   $NZCentralRegionLocalPatientId   = https://standards.digital.health.nz/ns/central_region/pas-patient-id
 
 // Other resource Identifier System URLs
-Alias:   $NZCentralRegionLocalAlertId                = https://standards.digital.health.nz/ns/pas-alert-id   // For Flag and AllergyIntolerance
-Alias:   $NZCentralRegionLocalClinicalImpressionId   = https://standards.digital.health.nz/ns/pas-clinical-impression-id // for Mental Health Legal Status
+Alias:   $NZCentralRegionLocalAlertId                = https://standards.digital.health.nz/ns/pas-alert-id                // For Flag and AllergyIntolerance
+Alias:   $NZCentralRegionLocalClinicalImpressionId   = https://standards.digital.health.nz/ns/pas-clinical-impression-id  // for Mental Health Legal Status
+Alias:   $NZCentralRegionReferralId                  = https://standards.digital.health.nz/ns/pas-referral-id
 
 // Code System URLs from NZ Base
 Alias:   $NZBaseNZCitizenshipCS    = https://standards.digital.health.nz/ns/nz-citizenship-status-code
@@ -44,6 +45,7 @@ Alias:   $NZStatsEthnicityLevel4CS = https://standards.digital.health.nz/ns/ethn
 Alias:   $NZCentralRegionHL7v2Message          = https://standards.digital.health.nz/ns/central-region/hl7v2-message
 Alias:   $NZCentralRegionAlert                 = https://standards.digital.health.nz/ns/central-region/alert
 Alias:   $NZCentralRegionMentalHealth          = https://standards.digital.health.nz/ns/central-region/mental-health
+Alias:   $NZCentralRegionReferral              = https://standards.digital.health.nz/ns/central-region/referral
 
 // Local URLs for locally defined CodeSystems
 Alias:   $NZStatsEthnicityLevel2CS              = https://standards.digital.health.nz/ns/ethnic-group-level-2-code
@@ -77,6 +79,14 @@ Alias:   $NZCentralRegionMentalHealthLegalStatusCS    = https://standards.digita
 Alias:   $NZCentralRegionMentalHealthReviewStatusCS   = https://standards.digital.health.nz/ns/central-region/mental-health-review-status
 Alias:   $NZCentralRegionMentalHealthReviewLocationCS = https://standards.digital.health.nz/ns/central-region/mental-health-review-location
 Alias:   $NZCentralRegionMentalHealthCourtTypeCS      = https://standards.digital.health.nz/ns/central-region/mental-health-court-type
+
+Alias:   $NZCentralRegionReferralTypeCS            = https://standards.digital.health.nz/ns/central-region/referral-type
+Alias:   $NZCentralRegionReferralCategoryCS        = https://standards.digital.health.nz/ns/central-region/referral-category
+Alias:   $NZCentralRegionReferralReasonCS          = https://standards.digital.health.nz/ns/central-region/referral-reason
+Alias:   $NZCentralRegionReferralDepartmentCS      = https://standards.digital.health.nz/ns/central-region/referral-department   // (Location ??)
+Alias:   $NZCentralRegionReferralSiteCS            = https://standards.digital.health.nz/ns/central-region/referral-site         // (Location ??)
+Alias:   $NZCentralRegionReferralSourceCS          = https://standards.digital.health.nz/ns/central-region/referral-source
+Alias:   $NZCentralRegionReferringPracticeCS       = https://standards.digital.health.nz/ns/central-region/referring-practice
 
 // Local URIs for various ValueSets
 Alias:   $NZCentralRegionEthnicityLevel2VS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2

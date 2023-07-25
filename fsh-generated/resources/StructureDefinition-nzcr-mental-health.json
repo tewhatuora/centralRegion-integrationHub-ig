@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "nzcr-mental-health",
   "url": "https://standards.digital.health.nz/ns/central-region/mental-health",
-  "version": "0.3.3",
   "name": "NZCentralRegionMentalHealth",
   "title": "NZ Central Region Mental Health",
   "status": "active",
