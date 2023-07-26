@@ -86,14 +86,12 @@ Description: "Complex extension recording extra data about referrals"
   * ^definition = "Date and time the referral was last updated in the originating system?"
   * ^short = "When was the referral last updated in the originating system?"
   * value[x] only dateTime
-  * extension 0..0
   * id 0..0
 
 * extension[informGP]
   * ^definition = "Is Patient's GP to be informed about referral?"
   * ^short = "Is Patient's GP to be informed about referral?"
   * value[x] only boolean
-  * extension 0..0
   * id 0..0
 
 * id 0..0
