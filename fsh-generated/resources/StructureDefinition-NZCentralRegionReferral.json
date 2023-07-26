@@ -170,7 +170,7 @@
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
-            "map": "ZXC-35.2"
+            "map": "ZXV-35.2"
           }
         ]
       },
@@ -205,7 +205,7 @@
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
-            "map": "ZXC-15.2"
+            "map": "ZXV-15.2"
           }
         ]
       },
@@ -240,7 +240,109 @@
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
-            "map": "ZXC-35.2"
+            "map": "ZXV-35.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:healthPurchaser",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "healthPurchaser"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.value[x].system",
+        "path": "ServiceRequest.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/health-purchaser'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.value[x].code",
+        "path": "ServiceRequest.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-51.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.value[x].display",
+        "path": "ServiceRequest.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-51.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:clinicType",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "clinicType"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:clinicType.value[x].system",
+        "path": "ServiceRequest.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/referral-clinic'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:clinicType.value[x].code",
+        "path": "ServiceRequest.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-37.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:clinicType.value[x].display",
+        "path": "ServiceRequest.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-37.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:lastUpdated",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "lastUpdated"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:lastUpdated.value[x]",
+        "path": "ServiceRequest.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-41",
+            "comment": "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:informGP",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "informGP"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:informGP.value[x]",
+        "path": "ServiceRequest.extension.extension.value[x]",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-19",
+            "comment": "**if** ZXV-19 == 'Y' **then** 'true' **else** 'false'"
           }
         ]
       },
@@ -386,7 +488,7 @@
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
-            "map": "draft | active | revoked ",
+            "map": "draft | active | revoked",
             "comment": "**if** RF1-1.1 == 'P' **then** 'draft'\r\n\n  **elif** RF1-1.1 == 'A' **then** 'active'\r\n\n  **elif** RF1-1.1 == 'R' **then** 'revoked'\r\n\n  **else** 'unknown'"
           }
         ]
@@ -455,7 +557,14 @@
         "id": "ServiceRequest.priority",
         "path": "ServiceRequest.priority",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "routine | urgent | asap | stat",
+            "comment": "**if** RF1-2.1 == 'SEM' **then** 'urgent'\r\n\n**elif** RF1-2.1 == 'URG' **then** 'asap'\r\n\n**if** RF1-2.1 == 'IMM' **then** 'stat'"
+          }
+        ]
       },
       {
         "id": "ServiceRequest.doNotPerform",
@@ -749,7 +858,8 @@
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
-            "map": "ZXV-9"
+            "map": "ZXV-9",
+            "comment": "**Note:** ISO-8601 Date has field separators"
           }
         ]
       },

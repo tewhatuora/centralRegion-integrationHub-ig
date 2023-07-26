@@ -219,7 +219,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-3",
-            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },
@@ -245,7 +245,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-4",
-            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },
@@ -326,7 +326,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-9",
-            "comment": "**Note:** ISO Date has field separators"
+            "comment": "**Note:** ISO-8601 Date has field separators"
           }
         ]
       },
@@ -377,7 +377,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-12",
-            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },
@@ -428,7 +428,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-14",
-            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },
@@ -509,7 +509,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-16",
-            "comment": "**Note:** ISO Date has field separators"
+            "comment": "**Note:** ISO-8601 Date has field separators"
           }
         ]
       },
@@ -561,7 +561,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-18",
-            "comment": "**Note:** ISO Date has field separators"
+            "comment": "**Note:** ISO-8601 Date has field separators"
           }
         ]
       },
@@ -587,7 +587,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-19",
-            "comment": "**Note:** ISO Date has field separators"
+            "comment": "**Note:** ISO-8601 Date has field separators"
           }
         ]
       },
@@ -613,7 +613,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-20",
-            "comment": "**Note:** ISO Date has field separators"
+            "comment": "**Note:** ISO-8601 Date has field separators"
           }
         ]
       },
@@ -1039,7 +1039,7 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "ZLS-8",
-            "comment": "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+            "comment": "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },

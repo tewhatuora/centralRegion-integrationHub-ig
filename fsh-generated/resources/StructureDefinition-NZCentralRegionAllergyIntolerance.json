@@ -188,7 +188,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-8",
-            "comment": "**Note:** ISO Date format has dashes"
+            "comment": "**Note:** ISO-8601 date format includes dashes"
           }
         ]
       },
@@ -214,7 +214,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-7",
-            "comment": "**Note:** ISO Date format has dashes"
+            "comment": "**Note:** ISO-8601 date format includes dashes"
           }
         ]
       },
@@ -266,7 +266,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-11",
-            "comment": "**Note** Extend date field to ISO DateTime with 'T00:00:00+1200'"
+            "comment": "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },
@@ -981,7 +981,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-5",
-            "comment": "if there is no ZAL-9 value to complete onsetPeriod\n**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
+            "comment": "if there is no ZAL-9 value to complete onsetPeriod\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },
@@ -1005,7 +1005,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-5",
-            "comment": "only if there is ZAL-9 value to complete Period\n**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
+            "comment": "only if there is ZAL-9 value to complete Period\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },

@@ -49,7 +49,7 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
   * display -> "'Medical record number'"
 * subject.display -> "PID-5.1 + ', ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.5"
 
-* period.start -> "ZAL-5" "**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
+* period.start -> "ZAL-5" "**Note:** ISO-8601 date format includes dashes"
 * period.end -> "ZAL-9"   // or perhaps ZAL-8  - depends if we're using inactiveDate or endDate
 
 * author.reference -> " " "read-only field"
@@ -76,7 +76,7 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * extension[flag-alert].extension[inactiveDate].valueDate -> "ZAL-9"
 
 * extension[flag-alert].extension[lastUpdatedDateTime].url -> "'lastUpdatedDateTime'"
-* extension[flag-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11" "**Note:** ISO-8601 datetime format includes dashes, 'T' and '+12:00' timezone"
+* extension[flag-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 
 * extension[flag-alert].extension[lastUpdatedBy].url -> "'lastUpdatedBy'"
 * extension[flag-alert].extension[lastUpdatedBy].valueString -> "ZAL-12.1 + ' - ' + ZAL-12.2" "Not to be confused with Author"

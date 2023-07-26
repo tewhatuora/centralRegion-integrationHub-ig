@@ -50,8 +50,8 @@ depending upon value of ZAL-2.1"
   * display -> "'Medical record number'"
 * patient.display -> "PID-5.1 + ', ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.5"
 
-* onsetDateTime -> "ZAL-5"  "if there is no ZAL-9 value to complete onsetPeriod\n**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
-* onsetPeriod.start -> "ZAL-5" "only if there is ZAL-9 value to complete Period\n**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
+* onsetDateTime -> "ZAL-5"  "if there is no ZAL-9 value to complete onsetPeriod\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
+* onsetPeriod.start -> "ZAL-5" "only if there is ZAL-9 value to complete Period\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 * onsetPeriod.end -> "ZAL-9" 
 
 * recorder.reference -> " " "read-only field"
@@ -78,13 +78,13 @@ depending upon value of ZAL-2.1"
 * extension[allergy-alert].extension[allergyReaction].valueString -> "ZAL-4"
 
 * extension[allergy-alert].extension[reviewDate].url -> "'reviewDate'"
-* extension[allergy-alert].extension[reviewDate].valueDate -> "ZAL-7" "**Note:** ISO Date format has dashes"
+* extension[allergy-alert].extension[reviewDate].valueDate -> "ZAL-7" "**Note:** ISO-8601 date format includes dashes"
 
 * extension[allergy-alert].extension[inactiveDate].url -> "'inactiveDate'"
-* extension[allergy-alert].extension[inactiveDate].valueDate -> "ZAL-8" "**Note:** ISO Date format has dashes"
+* extension[allergy-alert].extension[inactiveDate].valueDate -> "ZAL-8" "**Note:** ISO-8601 date format includes dashes"
 
 * extension[allergy-alert].extension[lastUpdatedDateTime].url -> "'lastUpdatedDateTime'"
-* extension[allergy-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11" "**Note** Extend date field to ISO DateTime with 'T00:00:00+1200'" 
+* extension[allergy-alert].extension[lastUpdatedDateTime].valueDateTime -> "ZAL-11" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 
 * extension[allergy-alert].extension[lastUpdatedBy].url -> "'lastUpdatedBy'"
 * extension[allergy-alert].extension[lastUpdatedBy].valueString -> "ZAL-12.1 + ' - ' + ZAL-12.2" "Not to be confused with Recorder"

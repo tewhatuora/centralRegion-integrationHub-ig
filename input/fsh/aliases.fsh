@@ -84,9 +84,11 @@ Alias:   $NZCentralRegionReferralTypeCS            = https://standards.digital.h
 Alias:   $NZCentralRegionReferralCategoryCS        = https://standards.digital.health.nz/ns/central-region/referral-category
 Alias:   $NZCentralRegionReferralReasonCS          = https://standards.digital.health.nz/ns/central-region/referral-reason
 Alias:   $NZCentralRegionReferralDepartmentCS      = https://standards.digital.health.nz/ns/central-region/referral-department   // (Location ??)
+Alias:   $NZCentralRegionReferralClinicCS          = https://standards.digital.health.nz/ns/central-region/referral-clinic       // Department has multiple clinic types
 Alias:   $NZCentralRegionReferralSiteCS            = https://standards.digital.health.nz/ns/central-region/referral-site         // (Location ??)
 Alias:   $NZCentralRegionReferralSourceCS          = https://standards.digital.health.nz/ns/central-region/referral-source
 Alias:   $NZCentralRegionReferringPracticeCS       = https://standards.digital.health.nz/ns/central-region/referring-practice
+Alias:   $NZCentralRegionHealthPurchaserCS         = https://standards.digital.health.nz/ns/central-region/health-purchaser
 
 // Local URIs for various ValueSets
 Alias:   $NZCentralRegionEthnicityLevel2VS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2

@@ -37,6 +37,30 @@
             "system": "https://standards.digital.health.nz/ns/central-region/referring-practice",
             "display": "The Palms Medical Centre"
           }
+        },
+        {
+          "url": "healthPurchaser",
+          "valueCoding": {
+            "code": "35M",
+            "system": "https://standards.digital.health.nz/ns/central-region/health-purchaser",
+            "display": "MDHB Funded"
+          }
+        },
+        {
+          "url": "clinicType",
+          "valueCoding": {
+            "code": "MDT",
+            "system": "https://standards.digital.health.nz/ns/central-region/referral-clinic",
+            "display": "MC Dietetics"
+          }
+        },
+        {
+          "url": "lastUpdated",
+          "valueDateTime": "2022-02-10T12:55:27+12:00"
+        },
+        {
+          "url": "informGP",
+          "valueBoolean": false
         }
       ]
     }
@@ -152,7 +176,7 @@
         {
           "code": "MDT",
           "system": "https://standards.digital.health.nz/ns/central-region/referral-department",
-          "display": "MidCentral Diatetics"
+          "display": "MC Dietetics"
         }
       ]
     }

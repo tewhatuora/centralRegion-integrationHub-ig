@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-07-25T17:49:25+12:00"/>
+   <date value="2023-07-26T12:29:11+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
@@ -1176,6 +1176,21 @@
             <valueString value="StructureDefinition:extension"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-nzcr-referral.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/nzcr-referral"/>
+         </reference>
+         <name value="NZ Central Region Referral"/>
+         <description value="Complex extension recording extra data about referrals"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-nz-residency.html"/>
          </extension>
          <reference>
@@ -1540,6 +1555,11 @@
             <page>
                <nameUrl value="StructureDefinition-nzcr-mental-health.html"/>
                <title value="NZ Central Region Mental Health"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-nzcr-referral.html"/>
+               <title value="NZ Central Region Referral"/>
                <generation value="generated"/>
             </page>
             <page>

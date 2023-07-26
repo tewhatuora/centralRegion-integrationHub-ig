@@ -13,10 +13,14 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
 * identifier.type.coding.system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
 * identifier.type.coding.display -> "'Referral Identifier'"
 
-* status -> "draft | active | revoked " "**if** RF1-1.1 == 'P' **then** 'draft'\r\n
+* status -> "draft | active | revoked" "**if** RF1-1.1 == 'P' **then** 'draft'\r\n
   **elif** RF1-1.1 == 'A' **then** 'active'\r\n
   **elif** RF1-1.1 == 'R' **then** 'revoked'\r\n
   **else** 'unknown'"
+
+* priority -> "routine | urgent | asap | stat" "**if** RF1-2.1 == 'SEM' **then** 'urgent'\r\n
+**elif** RF1-2.1 == 'URG' **then** 'asap'\r\n
+**if** RF1-2.1 == 'IMM' **then** 'stat'"
 
 * intent -> "'order'"
 
@@ -30,7 +34,7 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
   * display  -> "RF1-3.2"
   * system -> "'https://standards.digital.health.nz/ns/central-region/referral-category'"
 
-* authoredOn -> "ZXV-9"
+* authoredOn -> "ZXV-9" "**Note:** ISO-8601 Date has field separators"
 
 * reasonCode.coding
   * code -> "ZXV-7.1"
@@ -86,15 +90,25 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
   * extension[preferredSite].valueCoding
     * code -> "ZXV-35.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/referral-site'"
-    * display -> "ZXC-35.2"
+    * display -> "ZXV-35.2"
   * extension[referralSource].valueCoding
     * code -> "ZXV-15.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/referral-source'"
-    * display -> "ZXC-15.2"
+    * display -> "ZXV-15.2"
   * extension[referringPractice].valueCoding
     * code -> "ZXV-35.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/referring-practice'"
-    * display -> "ZXC-35.2"
+    * display -> "ZXV-35.2"
+  * extension[healthPurchaser].valueCoding
+    * code -> "ZXV-51.1"
+    * system -> "'https://standards.digital.health.nz/ns/central-region/health-purchaser'"
+    * display -> "ZXV-51.2"
+  * extension[clinicType].valueCoding
+    * code -> "ZXV-37.1"
+    * system -> "'https://standards.digital.health.nz/ns/central-region/referral-clinic'"
+    * display -> "ZXV-37.2"
+  * extension[lastUpdated].value[x] -> "ZXV-41" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
+  * extension[informGP].valueBoolean -> "ZXV-19" "**if** ZXV-19 == 'Y' **then** 'true' **else** 'false'"
 
 * extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
 * extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

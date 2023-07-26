@@ -117,8 +117,8 @@
         "id": "Extension.extension:referralSource",
         "path": "Extension.extension",
         "sliceName": "referralSource",
-        "short": "Which organisation made the referral?",
-        "definition": "Which organisation made the referral?",
+        "short": "Which organisation / hospital department made the referral?",
+        "definition": "Which organisation hospital department made the referral? Not to be confused with requestor which is the actual clinician.",
         "min": 0,
         "max": "1",
         "mustSupport": true
@@ -230,6 +230,192 @@
         "id": "Extension.extension:referringPractice.value[x].userSelected",
         "path": "Extension.extension.value[x].userSelected",
         "max": "0"
+      },
+      {
+        "id": "Extension.extension:healthPurchaser",
+        "path": "Extension.extension",
+        "sliceName": "healthPurchaser",
+        "short": "Which funding source is paying for the referral?",
+        "definition": "Which funding source is paying for the referral?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:healthPurchaser.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:healthPurchaser.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:healthPurchaser.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "healthPurchaser"
+      },
+      {
+        "id": "Extension.extension:healthPurchaser.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/ns/central-region/health-purchaser"
+        }
+      },
+      {
+        "id": "Extension.extension:healthPurchaser.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:healthPurchaser.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:healthPurchaser.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:healthPurchaser.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:clinicType",
+        "path": "Extension.extension",
+        "sliceName": "clinicType",
+        "short": "Which clinic is the referral to?",
+        "definition": "Which clinic run by the Department/Location is the referral for?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:clinicType.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:clinicType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:clinicType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "clinicType"
+      },
+      {
+        "id": "Extension.extension:clinicType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/ns/central-region/referral-clinic"
+        }
+      },
+      {
+        "id": "Extension.extension:clinicType.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:clinicType.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:clinicType.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:clinicType.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lastUpdated",
+        "path": "Extension.extension",
+        "sliceName": "lastUpdated",
+        "short": "When was the referral last updated in the originating system?",
+        "definition": "Date and time the referral was last updated in the originating system?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:lastUpdated.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lastUpdated.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lastUpdated.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lastUpdated"
+      },
+      {
+        "id": "Extension.extension:lastUpdated.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:informGP",
+        "path": "Extension.extension",
+        "sliceName": "informGP",
+        "short": "Is Patient's GP to be informed about referral?",
+        "definition": "Is Patient's GP to be informed about referral?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:informGP.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:informGP.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:informGP.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "informGP"
+      },
+      {
+        "id": "Extension.extension:informGP.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
       },
       {
         "id": "Extension.url",

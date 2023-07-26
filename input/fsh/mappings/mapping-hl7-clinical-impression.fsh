@@ -52,12 +52,12 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
   * display -> "ZLS-5.2"
 
 * extension[mentalHealth].extension[startDateTime].url -> "'startDateTime'"
-* extension[mentalHealth].extension[startDateTime].value[x] -> "ZLS-3" "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+* extension[mentalHealth].extension[startDateTime].value[x] -> "ZLS-3" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 
 * extension[mentalHealth].extension[endDateTime].url -> "'endDateTime'"
-* extension[mentalHealth].extension[endDateTime].value[x] -> "ZLS-4" "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+* extension[mentalHealth].extension[endDateTime].value[x] -> "ZLS-4" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 
-* effectiveDateTime -> "ZLS-8" "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+* effectiveDateTime -> "ZLS-8" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 
 * extension[mentalHealth].extension[location].url -> "'location'"
 * extension[mentalHealth].extension[location].valueCoding -> " "   // non breaking space to shut the validator up
@@ -68,19 +68,19 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
 * summary -> "ZLS-10"
 
 * extension[mentalHealth].extension[reminderDate].url -> "'reminderDate'"
-* extension[mentalHealth].extension[reminderDate].value[x] -> "ZLS-9" "**Note:** ISO Date has field separators"
+* extension[mentalHealth].extension[reminderDate].value[x] -> "ZLS-9" "**Note:** ISO-8601 Date has field separators"
 
 * extension[mentalHealth].extension[addedBy].url -> "'addedBy'"
 * extension[mentalHealth].extension[addedBy].value[x] -> "ZLS-11.1 + ' - ' + ZLS=11.2"
 
 * extension[mentalHealth].extension[addedDateTime].url -> "'addedDateTime'"
-* extension[mentalHealth].extension[addedDateTime].value[x] -> "ZLS-12" "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+* extension[mentalHealth].extension[addedDateTime].value[x] -> "ZLS-12" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 
 * extension[mentalHealth].extension[lastUpdatedBy].url -> "'lastUpdatedBy'"
 * extension[mentalHealth].extension[lastUpdatedBy].value[x] -> "ZLS-13.1 + ' - ' + ZLS=13.2"
 
 * extension[mentalHealth].extension[lastUpdatedDateTime].url -> "'addedDateTime'"
-* extension[mentalHealth].extension[lastUpdatedDateTime].value[x] -> "ZLS-14" "**Note:** ISO DateTime has field separators and '+1200' timezone indicator"
+* extension[mentalHealth].extension[lastUpdatedDateTime].value[x] -> "ZLS-14" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 
 * extension[mentalHealth].extension[supplementaryLegalStatus].url -> "'supplementaryLegalStatus'"
 * extension[mentalHealth].extension[supplementaryLegalStatus].valueCoding -> " "   // non breaking space to shut the validator up
@@ -89,19 +89,19 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
   * display -> "ZLS-15.2"
 
 * extension[mentalHealth].extension[supplementaryLegalStatusDate].url -> "'supplementaryLegalStatusDate'"
-* extension[mentalHealth].extension[supplementaryLegalStatusDate].value[x] -> "ZLS-16" "**Note:** ISO Date has field separators"
+* extension[mentalHealth].extension[supplementaryLegalStatusDate].value[x] -> "ZLS-16" "**Note:** ISO-8601 Date has field separators"
 
 * extension[mentalHealth].extension[reviewDate].url -> "'reviewDate'"
 * extension[mentalHealth].extension[reviewDate].value[x] -> "ZLS-17" "**Note:** ISO Date has field separators"
 
 * extension[mentalHealth].extension[courtNoticeSentDate].url -> "'courtNoticeSentDate'"
-* extension[mentalHealth].extension[courtNoticeSentDate].value[x] -> "ZLS-18" "**Note:** ISO Date has field separators"
+* extension[mentalHealth].extension[courtNoticeSentDate].value[x] -> "ZLS-18" "**Note:** ISO-8601 Date has field separators"
 
 * extension[mentalHealth].extension[tribunalDate].url -> "'tribunalDate'"
-* extension[mentalHealth].extension[tribunalDate].value[x] -> "ZLS-19" "**Note:** ISO Date has field separators"
+* extension[mentalHealth].extension[tribunalDate].value[x] -> "ZLS-19" "**Note:** ISO-8601 Date has field separators"
 
 * extension[mentalHealth].extension[courtLodgedDate].url -> "'courtLodgedDate'"
-* extension[mentalHealth].extension[courtLodgedDate].value[x] -> "ZLS-20" "**Note:** ISO Date has field separators"
+* extension[mentalHealth].extension[courtLodgedDate].value[x] -> "ZLS-20" "**Note:** ISO-8601 Date has field separators"
 
 * extension[mentalHealth].extension[courtType].url -> "'courtType'"
 * extension[mentalHealth].extension[courtType].valueCoding -> " "

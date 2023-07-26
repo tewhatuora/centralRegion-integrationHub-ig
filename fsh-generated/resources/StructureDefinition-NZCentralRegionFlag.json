@@ -240,7 +240,7 @@
           {
             "identity": "nzcr-flag-from-hl7v2",
             "map": "ZAL-11",
-            "comment": "**Note:** ISO-8601 datetime format includes dashes, 'T' and '+12:00' timezone"
+            "comment": "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },
@@ -838,7 +838,7 @@
           {
             "identity": "nzcr-flag-from-hl7v2",
             "map": "ZAL-5",
-            "comment": "**Note** Add dashes to given date; no need to extend date field to ISO DateTime"
+            "comment": "**Note:** ISO-8601 date format includes dashes"
           }
         ]
       },
