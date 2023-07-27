@@ -12,11 +12,11 @@
       </div>
    </text>
    <url value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig"/>
-   <version value="0.3.3"/>
+   <version value="0.4.0"/>
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-07-26T12:29:11+12:00"/>
+   <date value="2023-07-27T14:05:53+12:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>

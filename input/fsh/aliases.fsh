@@ -87,7 +87,6 @@ Alias:   $NZCentralRegionReferralDepartmentCS      = https://standards.digital.h
 Alias:   $NZCentralRegionReferralClinicCS          = https://standards.digital.health.nz/ns/central-region/referral-clinic       // Department has multiple clinic types
 Alias:   $NZCentralRegionReferralSiteCS            = https://standards.digital.health.nz/ns/central-region/referral-site         // (Location ??)
 Alias:   $NZCentralRegionReferralSourceCS          = https://standards.digital.health.nz/ns/central-region/referral-source
-Alias:   $NZCentralRegionReferringPracticeCS       = https://standards.digital.health.nz/ns/central-region/referring-practice
 Alias:   $NZCentralRegionHealthPurchaserCS         = https://standards.digital.health.nz/ns/central-region/health-purchaser
 
 // Local URIs for various ValueSets

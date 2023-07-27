@@ -88,6 +88,7 @@
             "code": "Coding"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://standards.digital.health.nz/fhir/central-region/hospital-code"
@@ -147,6 +148,7 @@
             "code": "Coding"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://standards.digital.health.nz/ns/central-region/referral-source"
@@ -183,11 +185,6 @@
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.id",
-        "path": "Extension.extension.id",
-        "max": "0"
-      },
-      {
         "id": "Extension.extension:referringPractice.extension",
         "path": "Extension.extension.extension",
         "max": "0"
@@ -200,16 +197,11 @@
       {
         "id": "Extension.extension:referringPractice.value[x]",
         "path": "Extension.extension.value[x]",
-        "min": 1,
         "type": [
           {
-            "code": "Coding"
+            "code": "Reference"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/ns/central-region/referring-practice"
-        }
+        ]
       },
       {
         "id": "Extension.extension:referringPractice.value[x].id",
@@ -222,14 +214,128 @@
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.value[x].version",
-        "path": "Extension.extension.value[x].version",
+        "id": "Extension.extension:referringPractice.value[x].reference",
+        "path": "Extension.extension.value[x].reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].type",
+        "path": "Extension.extension.value[x].type",
+        "short": "Medical Practice is an Organisation",
+        "min": 1,
+        "patternUri": "Organisation",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier",
+        "path": "Extension.extension.value[x].identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.id",
+        "path": "Extension.extension.value[x].identifier.id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.value[x].userSelected",
-        "path": "Extension.extension.value[x].userSelected",
+        "id": "Extension.extension:referringPractice.value[x].identifier.extension",
+        "path": "Extension.extension.value[x].identifier.extension",
         "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.use",
+        "path": "Extension.extension.value[x].identifier.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type",
+        "path": "Extension.extension.value[x].identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.id",
+        "path": "Extension.extension.value[x].identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.extension",
+        "path": "Extension.extension.value[x].identifier.type.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding",
+        "path": "Extension.extension.value[x].identifier.type.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.id",
+        "path": "Extension.extension.value[x].identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.extension",
+        "path": "Extension.extension.value[x].identifier.type.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.system",
+        "path": "Extension.extension.value[x].identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.version",
+        "path": "Extension.extension.value[x].identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.code",
+        "path": "Extension.extension.value[x].identifier.type.coding.code",
+        "min": 1,
+        "patternCode": "LR",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.display",
+        "path": "Extension.extension.value[x].identifier.type.coding.display",
+        "min": 1,
+        "patternString": "Local Registry ID",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.userSelected",
+        "path": "Extension.extension.value[x].identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.text",
+        "path": "Extension.extension.value[x].identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.system",
+        "path": "Extension.extension.value[x].identifier.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.period",
+        "path": "Extension.extension.value[x].identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].identifier.assigner",
+        "path": "Extension.extension.value[x].identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:referringPractice.value[x].display",
+        "path": "Extension.extension.value[x].display",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Extension.extension:healthPurchaser",

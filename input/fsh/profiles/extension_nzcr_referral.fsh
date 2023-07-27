@@ -27,7 +27,7 @@ Description: "Complex extension recording extra data about referrals"
   * ^short = "Which hospital / clinic does patient prefer to attend?"
   * value[x] only Coding
   * value[x] from nzcr-hospital-code-vs (required)   // TODO - track down appropriate referral site codes
-  * valueCoding 1..1
+  * valueCoding 1..1 MS
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
     * extension 0..0
@@ -39,7 +39,7 @@ Description: "Complex extension recording extra data about referrals"
   * ^short = "Which organisation / hospital department made the referral?"
   * value[x] only Coding
   * value[x] from $NZCentralRegionReferralSourceCS (required)    // TODO - track down appropriate referral source
-  * valueCoding 1..1
+  * valueCoding 1..1 MS
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
     * extension 0..0
@@ -49,14 +49,38 @@ Description: "Complex extension recording extra data about referrals"
 * extension[referringPractice]
   * ^definition = "When source is General Practice, which medical practice made the referral?"
   * ^short = "Which medical practice made the referral?"
-  * value[x] only Coding
-  * value[x] from $NZCentralRegionReferringPracticeCS (required)    // TODO - track down appropriate referring practice codes
-  * valueCoding 1..1
-    * version 0..0        // not versioned
-    * userSelected 0..0   // not used
+  * value[x] only Reference
+  * valueReference
+    * type 1..1 MS
+    * type = "Organisation"
+      * ^short = "Medical Practice is an Organisation"
+    * reference 0..1 MS
+    * identifier 0..1 MS
+      * use 1..1 MS
+      * system 1..1 MS
+      * system = $NZCentralRegionPASPractitioner
+      * type 1..1 MS
+        * coding MS  
+          * code 1..1 MS
+          * code = #LR
+          * system 1..1 MS 
+          * system = $HL7IdentifierTypeCS
+          * display 1..1 MS
+          * display = "Local Registry ID"
+          * version 0..0
+          * userSelected 0..0
+          * extension 0..0
+          * id 0..0
+        * extension 0..0
+        * id 0..0
+        * text 0..0
+      * period 0..0     // Data not available
+      * assigner 0..0   // Data not available
+      * extension 0..0
+      * id 0..0
+    * display 1..1 MS
     * extension 0..0
-    * id 0..0  
-  * id 0..0
+    * id 0..0
 
 * extension[healthPurchaser]
   * ^definition = "Which funding source is paying for the referral?"

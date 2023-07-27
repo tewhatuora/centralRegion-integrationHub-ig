@@ -95,10 +95,19 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
     * code -> "ZXV-15.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/referral-source'"
     * display -> "ZXV-15.2"
-  * extension[referringPractice].valueCoding
-    * code -> "ZXV-35.1"
-    * system -> "'https://standards.digital.health.nz/ns/central-region/referring-practice'"
+
+  * extension[referringPractice].valueReference
+    * type -> "'Organisation'"
+    * identifier
+      * use -> "'usual'"
+      * system -> "'https://standards.digital.health.nz/ns/central-region/referring-practice'"
+      * value -> "ZXV-35.1"
+      * type.coding
+        * code -> "'LR'"
+        * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+        * display -> "'Local Registry ID'"
     * display -> "ZXV-35.2"
+
   * extension[healthPurchaser].valueCoding
     * code -> "ZXV-51.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/health-purchaser'"

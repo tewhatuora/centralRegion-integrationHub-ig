@@ -84,11 +84,18 @@ Description: "An example of a Referral flavour of ServiceRequest resource, in Te
     * display = "Palmerston North Outpatients"
   * extension[referralSource].valueCoding
     * code = #R08
-    * system = $NZCentralRegionReferringPracticeCS
+    * system = $NZCentralRegionReferralSourceCS
     * display = "General Practice"
-  * extension[referringPractice].valueCoding
-    * code = #16478
-    * system = $NZCentralRegionReferringPracticeCS
+  * extension[referringPractice].valueReference
+    * type = "Organisation"
+    * identifier
+      * use = #usual
+      * system = $NZCentralRegionPASPractitioner
+      * value = #16478
+      * type.coding
+        * code = #LR
+        * system = $HL7IdentifierTypeCS
+        * display = "Local Registry ID"
     * display = "The Palms Medical Centre"
   * extension[healthPurchaser].valueCoding
     * code = #35M
