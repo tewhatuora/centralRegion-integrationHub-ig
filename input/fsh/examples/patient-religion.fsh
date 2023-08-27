@@ -56,7 +56,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * extension[patient-religion].valueCodeableConcept.coding[=].system = $HL7PatientRelgionCS
 * extension[patient-religion].valueCodeableConcept.coding[=].display = "Presbyterian"
 * extension[patient-religion].valueCodeableConcept.coding[+].code = #R33
-* extension[patient-religion].valueCodeableConcept.coding[=].system = $NZCentralRegionPatientReligionCS
+* extension[patient-religion].valueCodeableConcept.coding[=].system = $NZCentralRegionReligionCS
 * extension[patient-religion].valueCodeableConcept.coding[=].display = "Presbyterian"
 
 * deceasedBoolean = false
@@ -115,7 +115,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Not a Permanent Resident"
 
 * extension[patient-religion].valueCodeableConcept.coding[+].code = #R27
-* extension[patient-religion].valueCodeableConcept.coding[=].system = $NZCentralRegionPatientReligionCS
+* extension[patient-religion].valueCodeableConcept.coding[=].system = $NZCentralRegionReligionCS
 * extension[patient-religion].valueCodeableConcept.coding[=].display = "Objects to question"
 
 * deceasedBoolean = false

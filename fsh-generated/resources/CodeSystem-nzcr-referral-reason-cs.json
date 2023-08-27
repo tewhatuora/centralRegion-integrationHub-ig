@@ -1,0 +1,6376 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionReferralReasonCodeSystem",
+  "id": "nzcr-referral-reason-cs",
+  "title": "NZ Central Region - Referral Reason Code System",
+  "description": "Referral Reason codes; ex. WebPAS in NZ Central Region.",
+  "version": "0.4.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/referral-reason",
+  "concept": [
+    {
+      "code": "AA",
+      "display": "Axillary Abscess"
+    },
+    {
+      "code": "AAA",
+      "display": "Abdominal aortic anuerysm"
+    },
+    {
+      "code": "ABC",
+      "display": "Abnormal Cervix"
+    },
+    {
+      "code": "ABD",
+      "display": "Abdominal distension"
+    },
+    {
+      "code": "ABDP",
+      "display": "Abdominal Pain"
+    },
+    {
+      "code": "ABNCXR",
+      "display": "Abnormal CXR"
+    },
+    {
+      "code": "ABNLUNGFX",
+      "display": "Abnormal Lung Function"
+    },
+    {
+      "code": "ABNSPUTUM",
+      "display": "Abnormal Sputum"
+    },
+    {
+      "code": "ABP",
+      "display": "Abnormal bowel pattern"
+    },
+    {
+      "code": "ABS",
+      "display": "Abscess"
+    },
+    {
+      "code": "AC",
+      "display": "Audiology concern NEC"
+    },
+    {
+      "code": "ACD",
+      "display": "Allergic Contacy Dermatitis"
+    },
+    {
+      "code": "ACE",
+      "display": "Acne"
+    },
+    {
+      "code": "ACHA",
+      "display": "Achalasia"
+    },
+    {
+      "code": "ACI",
+      "display": "Acidosis"
+    },
+    {
+      "code": "ACP",
+      "display": "Acute Poliomyelitis"
+    },
+    {
+      "code": "ACT",
+      "display": "Actinic Keratosis"
+    },
+    {
+      "code": "ACY",
+      "display": "Agc Cytology"
+    },
+    {
+      "code": "AD",
+      "display": "Atopic Dermatitis"
+    },
+    {
+      "code": "ADBM",
+      "display": "Abdominal mass"
+    },
+    {
+      "code": "ADD",
+      "display": "Attention Deficit Disorder"
+    },
+    {
+      "code": "ADE",
+      "display": "Adenoids"
+    },
+    {
+      "code": "ADEN",
+      "display": "Adenocarcinoma"
+    },
+    {
+      "code": "ADSITU",
+      "display": "Adenocarcinoma in-situ"
+    },
+    {
+      "code": "ADT",
+      "display": "Adenoids & Tonsils"
+    },
+    {
+      "code": "AHC",
+      "display": "Asc-H Cytology"
+    },
+    {
+      "code": "AHF",
+      "display": "Acute Heart Failure"
+    },
+    {
+      "code": "AHL",
+      "display": "Assymetrical Hearing Loss"
+    },
+    {
+      "code": "AIV",
+      "display": "Acquired Immunodeficiency Virus"
+    },
+    {
+      "code": "AL",
+      "display": "Pain in left ankle and joints of left fo"
+    },
+    {
+      "code": "ALA",
+      "display": "Alcohol Abuse"
+    },
+    {
+      "code": "ALF",
+      "display": "Allergies"
+    },
+    {
+      "code": "ALI",
+      "display": "Allergies/Intolerances"
+    },
+    {
+      "code": "ALL",
+      "display": "Allergies"
+    },
+    {
+      "code": "ALY",
+      "display": "Acute lymphadenitis"
+    },
+    {
+      "code": "ALZ",
+      "display": "Alzheimers Disease"
+    },
+    {
+      "code": "AMB",
+      "display": "Amblyopia"
+    },
+    {
+      "code": "AME",
+      "display": "Amelia"
+    },
+    {
+      "code": "AML",
+      "display": "Acute Myelogenous Leukemia"
+    },
+    {
+      "code": "AMOL",
+      "display": "Acute Monocytic Leukaemia"
+    },
+    {
+      "code": "AMP",
+      "display": "Amputation"
+    },
+    {
+      "code": "AN",
+      "display": "Anaemia"
+    },
+    {
+      "code": "ANA",
+      "display": "Anaemia"
+    },
+    {
+      "code": "ANAL",
+      "display": "Anal Fissure"
+    },
+    {
+      "code": "ANE",
+      "display": "Anaemia"
+    },
+    {
+      "code": "ANF",
+      "display": "Anti-Inflamm Injec 4 R.A."
+    },
+    {
+      "code": "ANG",
+      "display": "Angina"
+    },
+    {
+      "code": "ANH",
+      "display": "Antepartum Haemorrage"
+    },
+    {
+      "code": "ANK",
+      "display": "Ankle Pain"
+    },
+    {
+      "code": "ANO",
+      "display": "Anosmia"
+    },
+    {
+      "code": "ANTD",
+      "display": "AntiD Rh Antibodies"
+    },
+    {
+      "code": "ANX",
+      "display": "Anxiety"
+    },
+    {
+      "code": "AOM",
+      "display": "Acute otitis media"
+    },
+    {
+      "code": "APH",
+      "display": "Aphasia"
+    },
+    {
+      "code": "APL",
+      "display": "Abdominal Pain Llq"
+    },
+    {
+      "code": "APML",
+      "display": "Acute Promyelocytic Leukaemia"
+    },
+    {
+      "code": "APNOEA",
+      "display": "Apnoea"
+    },
+    {
+      "code": "APR",
+      "display": "Abdominal Pain Rlq"
+    },
+    {
+      "code": "ARR",
+      "display": "Arrhythmias"
+    },
+    {
+      "code": "ART",
+      "display": "Arthrogryposis"
+    },
+    {
+      "code": "ARTH",
+      "display": "Arthritis"
+    },
+    {
+      "code": "ARTT",
+      "display": "Arteritis"
+    },
+    {
+      "code": "ARYTHMIA",
+      "display": "Arythmia"
+    },
+    {
+      "code": "ASD",
+      "display": "Autistic Spectrum Disorder"
+    },
+    {
+      "code": "ASS",
+      "display": "Assessment"
+    },
+    {
+      "code": "AST",
+      "display": "Asthma"
+    },
+    {
+      "code": "Asthma",
+      "display": "Asthma"
+    },
+    {
+      "code": "ASY",
+      "display": "Ashermans Syndrome"
+    },
+    {
+      "code": "ATA",
+      "display": "Ataxia"
+    },
+    {
+      "code": "ATB",
+      "display": "Atrial Fib"
+    },
+    {
+      "code": "ATF",
+      "display": "Atrial Fibrillation"
+    },
+    {
+      "code": "ATL",
+      "display": "Achilles tendonitis, left leg"
+    },
+    {
+      "code": "ATR",
+      "display": "Achilles tendonitis, right leg"
+    },
+    {
+      "code": "AUC",
+      "display": "Asc-Us Cytology"
+    },
+    {
+      "code": "AUL",
+      "display": "Amputation of Upper Limb"
+    },
+    {
+      "code": "AULCR",
+      "display": "Autoimmune Ulcer"
+    },
+    {
+      "code": "AUP",
+      "display": "Aural Polyp"
+    },
+    {
+      "code": "AURE",
+      "display": "Acute urinary retention"
+    },
+    {
+      "code": "AUT",
+      "display": "Autisitic Disorder"
+    },
+    {
+      "code": "BA",
+      "display": "Bariatric"
+    },
+    {
+      "code": "BAR",
+      "display": "Bariatric"
+    },
+    {
+      "code": "BC",
+      "display": "Breast Cancer"
+    },
+    {
+      "code": "BCA",
+      "display": "Breast Cancer"
+    },
+    {
+      "code": "BCAN",
+      "display": "Breast Cancer"
+    },
+    {
+      "code": "BCC",
+      "display": "Basal Cell Carcinoma"
+    },
+    {
+      "code": "BCG",
+      "display": "Basal Cell Cancer Gum"
+    },
+    {
+      "code": "BCK",
+      "display": "Back Pain"
+    },
+    {
+      "code": "BCL",
+      "display": "B Cell Lymphoma"
+    },
+    {
+      "code": "BCM",
+      "display": "Basal Cell Cancer Mouth"
+    },
+    {
+      "code": "BCU",
+      "display": "Bicornate Uterus"
+    },
+    {
+      "code": "BDO",
+      "display": "Bleeding Disorders"
+    },
+    {
+      "code": "BEN",
+      "display": "Benign"
+    },
+    {
+      "code": "BFM",
+      "display": "Bulky Floor Of Mouth"
+    },
+    {
+      "code": "BHL",
+      "display": "Bunion,Hallux valgus,acquired, left foot"
+    },
+    {
+      "code": "BHR",
+      "display": "Bunion,Hallux valgus,acquired,right foot"
+    },
+    {
+      "code": "BKPN",
+      "display": "Back Pain"
+    },
+    {
+      "code": "BLA",
+      "display": "Bladder"
+    },
+    {
+      "code": "BLAC",
+      "display": "Bladder Cancer"
+    },
+    {
+      "code": "BLB",
+      "display": "Benign Lesion of Bone"
+    },
+    {
+      "code": "BLC",
+      "display": "Breast Left Cancer"
+    },
+    {
+      "code": "BLI",
+      "display": "Blindness/and/or Vision Impairment"
+    },
+    {
+      "code": "BLL",
+      "display": "Benign Lesion of Lip"
+    },
+    {
+      "code": "BLM",
+      "display": "Benign Lesion of Mouth"
+    },
+    {
+      "code": "BM",
+      "display": "Bladder Metastatic"
+    },
+    {
+      "code": "BMC",
+      "display": "Breast Metastatic Cancer"
+    },
+    {
+      "code": "BMET",
+      "display": "Bone Metastatic"
+    },
+    {
+      "code": "BP",
+      "display": "Blood Pressure"
+    },
+    {
+      "code": "BPEM",
+      "display": "Bullous Pemphigoid"
+    },
+    {
+      "code": "BPR",
+      "display": "Breast Primary"
+    },
+    {
+      "code": "BRA",
+      "display": "Bradycardia"
+    },
+    {
+      "code": "BRC",
+      "display": "Breast Right Cancer"
+    },
+    {
+      "code": "BRE",
+      "display": "Breast cancer"
+    },
+    {
+      "code": "BRI",
+      "display": "Brain Injury"
+    },
+    {
+      "code": "BRM",
+      "display": "Brain Metastatic"
+    },
+    {
+      "code": "BRONCHTS",
+      "display": "Bronchiectasis"
+    },
+    {
+      "code": "BRR",
+      "display": "Breast Reconstruction"
+    },
+    {
+      "code": "BT",
+      "display": "Blood Transfusion"
+    },
+    {
+      "code": "BTR",
+      "display": "Blood Transfusion"
+    },
+    {
+      "code": "BUN",
+      "display": "Bunion"
+    },
+    {
+      "code": "BUR",
+      "display": "Burns"
+    },
+    {
+      "code": "BURN",
+      "display": "Burn"
+    },
+    {
+      "code": "BVI",
+      "display": "Bacterial/Viral Infections"
+    },
+    {
+      "code": "C1",
+      "display": "Cin 1 Biopsy"
+    },
+    {
+      "code": "C2",
+      "display": "Cin 2 Biopsy"
+    },
+    {
+      "code": "C3B",
+      "display": "Cin 3 Biopsy Endocervix"
+    },
+    {
+      "code": "C3E",
+      "display": "Cin 3 Exocervix"
+    },
+    {
+      "code": "C3O",
+      "display": "Cin 3 Other Parts Of Cervix"
+    },
+    {
+      "code": "CA0",
+      "display": "Conjunctivitis"
+    },
+    {
+      "code": "CA1",
+      "display": "Pterygium"
+    },
+    {
+      "code": "CA2",
+      "display": "Other conjunctival anomaly"
+    },
+    {
+      "code": "CAD",
+      "display": "Coronary Artery Disease"
+    },
+    {
+      "code": "CAE",
+      "display": "Coeliac"
+    },
+    {
+      "code": "CAF",
+      "display": "Contracture of ankle and foot joint"
+    },
+    {
+      "code": "CAL",
+      "display": "Cancer Laryngeal"
+    },
+    {
+      "code": "CALL",
+      "display": "Callous"
+    },
+    {
+      "code": "CALUNG",
+      "display": "CA Lung"
+    },
+    {
+      "code": "CAN",
+      "display": "Cancer"
+    },
+    {
+      "code": "CAO",
+      "display": "Cancer Oropharynx"
+    },
+    {
+      "code": "CAP",
+      "display": "Cancer Pharyngeal"
+    },
+    {
+      "code": "CAR",
+      "display": "Cardiomyopathy"
+    },
+    {
+      "code": "CART",
+      "display": "Carcinoid Tumour"
+    },
+    {
+      "code": "CAT",
+      "display": "Cataract"
+    },
+    {
+      "code": "CATH",
+      "display": "Cancer Throat"
+    },
+    {
+      "code": "CATO",
+      "display": "Cancer Tongue"
+    },
+    {
+      "code": "CAU02",
+      "display": "Febrile convulsion"
+    },
+    {
+      "code": "CAY",
+      "display": "Cardiomyopathy"
+    },
+    {
+      "code": "CB",
+      "display": "Cancer Bladder"
+    },
+    {
+      "code": "CCAN",
+      "display": "Colon Cancer"
+    },
+    {
+      "code": "CCD",
+      "display": "Cognitive Communication Disorder"
+    },
+    {
+      "code": "CCN",
+      "display": "Cervical Cancer Nos"
+    },
+    {
+      "code": "CCO",
+      "display": "Congenital coxa vara"
+    },
+    {
+      "code": "CCV",
+      "display": "Congenital Coxa valga"
+    },
+    {
+      "code": "CDD",
+      "display": "Chronic renal disease"
+    },
+    {
+      "code": "CDH",
+      "display": "Congntl deformities hip,acetabular dyspl"
+    },
+    {
+      "code": "CEA",
+      "display": "Cerebrovascular Accident"
+    },
+    {
+      "code": "CECAN",
+      "display": "Cervical Cancer"
+    },
+    {
+      "code": "CED",
+      "display": "Cerebrovascular Disease"
+    },
+    {
+      "code": "CEL",
+      "display": "Cellulitis"
+    },
+    {
+      "code": "CELL",
+      "display": "Cellulitis"
+    },
+    {
+      "code": "CEM",
+      "display": "Cytologic Evidence Og Malignancy"
+    },
+    {
+      "code": "CEN",
+      "display": "Cancer Neck"
+    },
+    {
+      "code": "CEP",
+      "display": "Cerebral Palsy"
+    },
+    {
+      "code": "CER",
+      "display": "Cervicitis/Endocervicitis"
+    },
+    {
+      "code": "CF",
+      "display": "Club Foot"
+    },
+    {
+      "code": "CFH",
+      "display": "Colon Cancer Family History"
+    },
+    {
+      "code": "CFI",
+      "display": "Cystic Fibrosis"
+    },
+    {
+      "code": "CFS",
+      "display": "Chronic Fatigue Syndrome"
+    },
+    {
+      "code": "CH",
+      "display": "Clicky Hips"
+    },
+    {
+      "code": "CHAIT",
+      "display": "Chait Tube Fu"
+    },
+    {
+      "code": "CHAITR",
+      "display": "Chait Tube Removal"
+    },
+    {
+      "code": "CHD",
+      "display": "Congenital hearing disorder"
+    },
+    {
+      "code": "CHESTPAIN",
+      "display": "Chest Pain/Angina"
+    },
+    {
+      "code": "CHF",
+      "display": "Congestive Heart Failure"
+    },
+    {
+      "code": "CHFEO",
+      "display": "CHF exacerbated oedema"
+    },
+    {
+      "code": "CHL",
+      "display": "Congential Hearing loss"
+    },
+    {
+      "code": "CHO",
+      "display": "Choledocholithiasis"
+    },
+    {
+      "code": "CHOL",
+      "display": "Cholelithiasis"
+    },
+    {
+      "code": "CHR",
+      "display": "Crohns"
+    },
+    {
+      "code": "CIC",
+      "display": "Cervical Polyp"
+    },
+    {
+      "code": "CK",
+      "display": "Cancer Kidney"
+    },
+    {
+      "code": "CKD",
+      "display": "Chronic Kidney Disease"
+    },
+    {
+      "code": "CLA",
+      "display": "Contracture, left ankle"
+    },
+    {
+      "code": "CLK",
+      "display": "Contracture, left knee"
+    },
+    {
+      "code": "CLL",
+      "display": "Chronic Lymphocytic Leukaemia"
+    },
+    {
+      "code": "CLN",
+      "display": "Cancer Lymph Node"
+    },
+    {
+      "code": "CLP",
+      "display": "Cleft Palate"
+    },
+    {
+      "code": "CLS",
+      "display": "Cyst / Lesion Scalp"
+    },
+    {
+      "code": "CLT",
+      "display": "Clinical Trial"
+    },
+    {
+      "code": "CME",
+      "display": "Chronic Middle Effusion"
+    },
+    {
+      "code": "CML",
+      "display": "Chronic Myeloid Leukemia"
+    },
+    {
+      "code": "CNC",
+      "display": "Cancer Nasal"
+    },
+    {
+      "code": "CNJ",
+      "display": "Contracture of knee joint"
+    },
+    {
+      "code": "CNS",
+      "display": "CNS Lymphoma"
+    },
+    {
+      "code": "CO0",
+      "display": "Megalocornea"
+    },
+    {
+      "code": "CO1",
+      "display": "Keratitis"
+    },
+    {
+      "code": "CO3",
+      "display": "Keratoconus"
+    },
+    {
+      "code": "COA",
+      "display": "Cancer Of Adenoids"
+    },
+    {
+      "code": "COCC",
+      "display": "Combined Oral Contraception"
+    },
+    {
+      "code": "COD",
+      "display": "Congenital Diplegia"
+    },
+    {
+      "code": "COE",
+      "display": "Coeliac Disease"
+    },
+    {
+      "code": "COF",
+      "display": "Cancer Of Fundis Uteri"
+    },
+    {
+      "code": "COG",
+      "display": "Cognitive impairment"
+    },
+    {
+      "code": "COL",
+      "display": "Colon cancer history"
+    },
+    {
+      "code": "COLC",
+      "display": "Colon cancer"
+    },
+    {
+      "code": "COM",
+      "display": "Complex Regional Pain Syndrome"
+    },
+    {
+      "code": "CON",
+      "display": "Constipation"
+    },
+    {
+      "code": "CONF",
+      "display": "Confusion"
+    },
+    {
+      "code": "CONS",
+      "display": "Constipation"
+    },
+    {
+      "code": "CONT",
+      "display": "Contact Tracing"
+    },
+    {
+      "code": "COO",
+      "display": "Cancer Of Oesophagoscopy"
+    },
+    {
+      "code": "COP",
+      "display": "COPD"
+    },
+    {
+      "code": "COPD",
+      "display": "COPD"
+    },
+    {
+      "code": "COT",
+      "display": "Cancer Of Tonsils"
+    },
+    {
+      "code": "COU",
+      "display": "Cough"
+    },
+    {
+      "code": "COUGH",
+      "display": "Cough"
+    },
+    {
+      "code": "CP",
+      "display": "Carpal Tunnel"
+    },
+    {
+      "code": "CPG",
+      "display": "Cancer Of Parotid Gland"
+    },
+    {
+      "code": "CPL",
+      "display": "Congenital pes planus, left foot"
+    },
+    {
+      "code": "CPN",
+      "display": "Complication of Pregnancy NEC"
+    },
+    {
+      "code": "CPR",
+      "display": "Cancer Prostate"
+    },
+    {
+      "code": "CPS",
+      "display": "Cancer Paranasal Sinus"
+    },
+    {
+      "code": "CRA",
+      "display": "Contracture, right ankle"
+    },
+    {
+      "code": "CRF",
+      "display": "Contracture, right foot"
+    },
+    {
+      "code": "CRI",
+      "display": "Chronic renal insufficiency"
+    },
+    {
+      "code": "CRK",
+      "display": "Contracture, right knee"
+    },
+    {
+      "code": "CRM",
+      "display": "CML, BCR/ABLPositive, not Achieve Remis"
+    },
+    {
+      "code": "CRO",
+      "display": "Crohns"
+    },
+    {
+      "code": "CSA",
+      "display": "Stress Anxiety"
+    },
+    {
+      "code": "CSG",
+      "display": "Cancer Of Salivary Gland Or Duct"
+    },
+    {
+      "code": "CSL",
+      "display": "Calcaneal spur, left foot"
+    },
+    {
+      "code": "CSR",
+      "display": "Calcaneal spur, right foot"
+    },
+    {
+      "code": "CSUG",
+      "display": "Cancer Of Submandibular Gland"
+    },
+    {
+      "code": "CT",
+      "display": "Cubital Tunnel"
+    },
+    {
+      "code": "CT18",
+      "display": "Complete trisomy 18 Syndrome"
+    },
+    {
+      "code": "CT21",
+      "display": "Complete Trisomy 21 Syndrome"
+    },
+    {
+      "code": "CTD",
+      "display": "Connective Tissue Disease"
+    },
+    {
+      "code": "CTN",
+      "display": "Cancer therapies with nutrition risk"
+    },
+    {
+      "code": "CTO",
+      "display": "Connective Tissue Disorder"
+    },
+    {
+      "code": "CTR",
+      "display": "Change Of Trachae"
+    },
+    {
+      "code": "CTS",
+      "display": "Carpal Tunnel Syndrome"
+    },
+    {
+      "code": "CU",
+      "display": "Chronic uremia"
+    },
+    {
+      "code": "CURL",
+      "display": "Calcified Ulcer"
+    },
+    {
+      "code": "CVC",
+      "display": "Cancer Of Vocal Cords"
+    },
+    {
+      "code": "CX",
+      "display": "Cervical Smear"
+    },
+    {
+      "code": "CYF",
+      "display": "Cystic Fibrosis"
+    },
+    {
+      "code": "CYN",
+      "display": "Cyst Neck"
+    },
+    {
+      "code": "CYS",
+      "display": "Cyst"
+    },
+    {
+      "code": "CYSTFIB",
+      "display": "Cystitis Fibrosis"
+    },
+    {
+      "code": "CYT",
+      "display": "Cyst Throat"
+    },
+    {
+      "code": "D0101",
+      "display": "Behavioural Problems"
+    },
+    {
+      "code": "D0114",
+      "display": "Bladder Dysfunction"
+    },
+    {
+      "code": "D0115",
+      "display": "Blindness & Low Vision"
+    },
+    {
+      "code": "D0238",
+      "display": "Cataract Associated with Other Disorders"
+    },
+    {
+      "code": "D0239",
+      "display": "Cataract Secondary to Ocular Disorders"
+    },
+    {
+      "code": "D0325",
+      "display": "Corneal FB"
+    },
+    {
+      "code": "D0326",
+      "display": "Corneal Opacity & Other Disord of Cornea"
+    },
+    {
+      "code": "D0469",
+      "display": "Enuresis"
+    },
+    {
+      "code": "D0498",
+      "display": "Fasciitis"
+    },
+    {
+      "code": "D0499",
+      "display": "Feeding Difficulties & Mismanagement"
+    },
+    {
+      "code": "D0556",
+      "display": "Haematuria"
+    },
+    {
+      "code": "D0618",
+      "display": "Incontinence of Urine"
+    },
+    {
+      "code": "D062",
+      "display": "Inflammation of Eyelids"
+    },
+    {
+      "code": "D0694",
+      "display": "Mantoux Positive"
+    },
+    {
+      "code": "D0709",
+      "display": "Mixed Connective Tissue Disease"
+    },
+    {
+      "code": "D0795",
+      "display": "Obstructive Sleep Apnoea"
+    },
+    {
+      "code": "D1171",
+      "display": "Torsion of Testis"
+    },
+    {
+      "code": "D1178",
+      "display": "Training Re-Bladder Managements"
+    },
+    {
+      "code": "D1248",
+      "display": "Major Eye Trauma"
+    },
+    {
+      "code": "D509",
+      "display": "Iron deficiency anaemia, unspecified"
+    },
+    {
+      "code": "D630",
+      "display": "Anaemia in chronic diseases classified"
+    },
+    {
+      "code": "D649",
+      "display": "Anaemia, unspecified"
+    },
+    {
+      "code": "D696",
+      "display": "Thrombocytopenia, unspecified"
+    },
+    {
+      "code": "D700",
+      "display": "Agranulocytosis"
+    },
+    {
+      "code": "DAC",
+      "display": "Dacryocystorhintostomy (Dcr)"
+    },
+    {
+      "code": "DASS",
+      "display": "Dental assessment"
+    },
+    {
+      "code": "DBV",
+      "display": "Deficiency-other specified B group vitam"
+    },
+    {
+      "code": "DC",
+      "display": "Dupuytrens Contracture"
+    },
+    {
+      "code": "DCD",
+      "display": "Developmental Coordination Disorder"
+    },
+    {
+      "code": "DCIS",
+      "display": "DCIS breast"
+    },
+    {
+      "code": "DCP",
+      "display": "Ductal Carcinoma Parotid"
+    },
+    {
+      "code": "DCS",
+      "display": "Disorder of Cardiovascular System"
+    },
+    {
+      "code": "DCT",
+      "display": "Disorder of Connective Tissue"
+    },
+    {
+      "code": "DDN",
+      "display": "Dental Disorder NEC"
+    },
+    {
+      "code": "DDS",
+      "display": "Disorder of Digestive System"
+    },
+    {
+      "code": "DEAP",
+      "display": "Decrease of Appetite"
+    },
+    {
+      "code": "DECMOD",
+      "display": "Decreased Mobility"
+    },
+    {
+      "code": "DED",
+      "display": "Developmental Delay"
+    },
+    {
+      "code": "DEH",
+      "display": "Dehydration"
+    },
+    {
+      "code": "DEL",
+      "display": "Delirium"
+    },
+    {
+      "code": "DEM",
+      "display": "Dementia"
+    },
+    {
+      "code": "DENA",
+      "display": "Dental Assess"
+    },
+    {
+      "code": "DEP",
+      "display": "Depression"
+    },
+    {
+      "code": "DEPO",
+      "display": "Depo Provera"
+    },
+    {
+      "code": "DEQ",
+      "display": "Dequervains"
+    },
+    {
+      "code": "DER",
+      "display": "Dematitis"
+    },
+    {
+      "code": "DETE",
+      "display": "Decayed Teeth"
+    },
+    {
+      "code": "DEV",
+      "display": "Development Assess"
+    },
+    {
+      "code": "DFC",
+      "display": "Diabetes Follow up from Community"
+    },
+    {
+      "code": "DFK",
+      "display": "Disciform Keratitis"
+    },
+    {
+      "code": "DI1",
+      "display": "Diabetes T1DM"
+    },
+    {
+      "code": "DI2",
+      "display": "Diabetes T2DM"
+    },
+    {
+      "code": "DIA",
+      "display": "Diabetes"
+    },
+    {
+      "code": "DIABU",
+      "display": "Diabetic Ulcer"
+    },
+    {
+      "code": "DIAPHDIS",
+      "display": "Diaphram Disorder"
+    },
+    {
+      "code": "DIB",
+      "display": "Disorder of Back"
+    },
+    {
+      "code": "DIC",
+      "display": "Dilated Cardiomyopthy"
+    },
+    {
+      "code": "DIG",
+      "display": "Diabetes Gestational"
+    },
+    {
+      "code": "DIM",
+      "display": "Dietary Management"
+    },
+    {
+      "code": "DIN",
+      "display": "Diabetic Neuropathy"
+    },
+    {
+      "code": "DIP",
+      "display": "Diplopia"
+    },
+    {
+      "code": "DIS",
+      "display": "Dysphagia"
+    },
+    {
+      "code": "DISO",
+      "display": "Disorientation"
+    },
+    {
+      "code": "DIV",
+      "display": "Diverticulitis"
+    },
+    {
+      "code": "DLA",
+      "display": "Dysplasia Nos"
+    },
+    {
+      "code": "DLF",
+      "display": "Other acquired deformities of left foot"
+    },
+    {
+      "code": "DLM",
+      "display": "Mass Lip"
+    },
+    {
+      "code": "DM1",
+      "display": "Type 1 Diabetes Mellitus"
+    },
+    {
+      "code": "DM2",
+      "display": "Type 2 Diabetes Mellitus"
+    },
+    {
+      "code": "DMS",
+      "display": "Disorder of Muscular System"
+    },
+    {
+      "code": "DNS",
+      "display": "Deviated Nasal Septum"
+    },
+    {
+      "code": "DO0",
+      "display": "Acute Inflammation of Orbit"
+    },
+    {
+      "code": "DO1",
+      "display": "Proptosis"
+    },
+    {
+      "code": "DO2",
+      "display": "Deform of Orbit Incl Craniofacial Disord"
+    },
+    {
+      "code": "DO3",
+      "display": "Other Disorders of the Orbit"
+    },
+    {
+      "code": "DOC",
+      "display": "Drug or Chemical Induced"
+    },
+    {
+      "code": "DOE",
+      "display": "Disorder of Eye"
+    },
+    {
+      "code": "DONOR",
+      "display": "Donor Site"
+    },
+    {
+      "code": "DOS",
+      "display": "Downs Syndrome"
+    },
+    {
+      "code": "DOT",
+      "display": "Disorder of thyroid"
+    },
+    {
+      "code": "DOU",
+      "display": "Disorder Of Uterus"
+    },
+    {
+      "code": "DP",
+      "display": "Discharge Planning"
+    },
+    {
+      "code": "DRF",
+      "display": "Deteriorating Renal Function"
+    },
+    {
+      "code": "DS",
+      "display": "Downs Syndrome"
+    },
+    {
+      "code": "DT1",
+      "display": "Diabetes Type 1"
+    },
+    {
+      "code": "DT2",
+      "display": "Diabetes Type 2"
+    },
+    {
+      "code": "DTL",
+      "display": "Oth acquired deformities of toes,left ft"
+    },
+    {
+      "code": "DTR",
+      "display": "Other acquired deformities of toes,right"
+    },
+    {
+      "code": "DUC",
+      "display": "Duke's C Colorectal Cancer"
+    },
+    {
+      "code": "DVT",
+      "display": "Deep Vein Thrombosis"
+    },
+    {
+      "code": "DW",
+      "display": "Difficulty in walking, NEC"
+    },
+    {
+      "code": "DWP",
+      "display": "Diabetes with Nepropathy"
+    },
+    {
+      "code": "DYS",
+      "display": "Dysphagia"
+    },
+    {
+      "code": "DYSA",
+      "display": "Dysphagia"
+    },
+    {
+      "code": "DYSF",
+      "display": "Dysfluency"
+    },
+    {
+      "code": "DYSO",
+      "display": "Dysphonia"
+    },
+    {
+      "code": "DYSP",
+      "display": "Dyspareunia"
+    },
+    {
+      "code": "DYSPNOEA",
+      "display": "Dyspnoea"
+    },
+    {
+      "code": "DYSU",
+      "display": "Dysuria"
+    },
+    {
+      "code": "E039",
+      "display": "Hypothyroidism, unspecified"
+    },
+    {
+      "code": "E059",
+      "display": "Thyrotoxicosis, unspecified"
+    },
+    {
+      "code": "E109",
+      "display": "Type 1 diabetes mellitus without complic"
+    },
+    {
+      "code": "E119",
+      "display": "Type 2 diabetes mellitus without complic"
+    },
+    {
+      "code": "E161",
+      "display": "Other hypoglycaemia"
+    },
+    {
+      "code": "E237",
+      "display": "Disorder of pituitary gland, unspecified"
+    },
+    {
+      "code": "E309",
+      "display": "Disorder of puberty, unspecified"
+    },
+    {
+      "code": "E669",
+      "display": "Obesity, unspecified"
+    },
+    {
+      "code": "E840",
+      "display": "Cystic fibrosis with pulmonary manifesta"
+    },
+    {
+      "code": "E849",
+      "display": "Cystic fibrosis, unspecified"
+    },
+    {
+      "code": "E878",
+      "display": "Other disorders of electrolyte and fluid"
+    },
+    {
+      "code": "EAD",
+      "display": "Eating Disorder"
+    },
+    {
+      "code": "EAF",
+      "display": "Effusion of ankle and foot"
+    },
+    {
+      "code": "EASS",
+      "display": "ENT Assessment"
+    },
+    {
+      "code": "EBC",
+      "display": "Ear Basal Cell Carcinoma"
+    },
+    {
+      "code": "EBCC",
+      "display": "Ear Lesion Basal Cell Carcinoma"
+    },
+    {
+      "code": "EC",
+      "display": "Endocervical Cancer"
+    },
+    {
+      "code": "ECC",
+      "display": "ECC"
+    },
+    {
+      "code": "ECT",
+      "display": "Ectropion"
+    },
+    {
+      "code": "ECZ",
+      "display": "Eczema"
+    },
+    {
+      "code": "ED0",
+      "display": "Ptosis"
+    },
+    {
+      "code": "ED1",
+      "display": "Marcus Gunn"
+    },
+    {
+      "code": "ED2",
+      "display": "Haemangioma"
+    },
+    {
+      "code": "ED3",
+      "display": "Other Eyelid Disorders e.g. Cysts"
+    },
+    {
+      "code": "ED4",
+      "display": "Eyelid Synkinesis"
+    },
+    {
+      "code": "EEH",
+      "display": "Erosion Ectropion Cervix"
+    },
+    {
+      "code": "EHY",
+      "display": "Endometrial Hyplasia"
+    },
+    {
+      "code": "EIS",
+      "display": "Endometriosis In Cutaneous Scar"
+    },
+    {
+      "code": "ELA",
+      "display": "Effusion, left ankle"
+    },
+    {
+      "code": "ELB",
+      "display": "Elbow Pain"
+    },
+    {
+      "code": "ELF",
+      "display": "Effusion, left foot"
+    },
+    {
+      "code": "ELK",
+      "display": "Effusion, left knee"
+    },
+    {
+      "code": "ELL",
+      "display": "Spec enthesopathies left lwr limb exfoot"
+    },
+    {
+      "code": "ELSC",
+      "display": "Ear Lesion Squamous Cell Carcinoma"
+    },
+    {
+      "code": "EM0",
+      "display": "Oculomotor Apraxia"
+    },
+    {
+      "code": "EM1",
+      "display": "Skew Deviation"
+    },
+    {
+      "code": "EM2",
+      "display": "DVD"
+    },
+    {
+      "code": "EM3",
+      "display": "Other Disorders of Eye Movement"
+    },
+    {
+      "code": "EM4",
+      "display": "Chronic Progr External Ophthalmoplegia"
+    },
+    {
+      "code": "EM5",
+      "display": "DHD"
+    },
+    {
+      "code": "ENA",
+      "display": "Enteral Feeding - adult"
+    },
+    {
+      "code": "ENC",
+      "display": "Encephalitis"
+    },
+    {
+      "code": "ENCAN",
+      "display": "Endometrial Cancer"
+    },
+    {
+      "code": "ENCO",
+      "display": "Encopresis"
+    },
+    {
+      "code": "END",
+      "display": "Endocarditis"
+    },
+    {
+      "code": "ENDO",
+      "display": "Endometriosis Unspecified"
+    },
+    {
+      "code": "ENL",
+      "display": "Effusion of knee/lower leg"
+    },
+    {
+      "code": "ENP",
+      "display": "Enteral Feeding - paediatric"
+    },
+    {
+      "code": "ENUR",
+      "display": "Enuresis"
+    },
+    {
+      "code": "EOP",
+      "display": "Endometriosis Of Pelvic"
+    },
+    {
+      "code": "EOU",
+      "display": "Endometriosis Of Uterus"
+    },
+    {
+      "code": "EPBU",
+      "display": "Epidermolysis Bullosa"
+    },
+    {
+      "code": "EPI",
+      "display": "Epistaxes"
+    },
+    {
+      "code": "ERA",
+      "display": "Effusion, right ankle"
+    },
+    {
+      "code": "ERD",
+      "display": "Erectile Dysfunction"
+    },
+    {
+      "code": "ERF",
+      "display": "Effusion, right foot"
+    },
+    {
+      "code": "ERK",
+      "display": "Effusion, right knee"
+    },
+    {
+      "code": "ERL",
+      "display": "Spec enthesopathies right lwr limb,excft"
+    },
+    {
+      "code": "ES0",
+      "display": "Constant esotropia"
+    },
+    {
+      "code": "ES1",
+      "display": "Infantile esotropia"
+    },
+    {
+      "code": "ES10",
+      "display": "Micro esotropia without identity"
+    },
+    {
+      "code": "ES11",
+      "display": "Micro esotropia with fully accom chara"
+    },
+    {
+      "code": "ES12",
+      "display": "Micro esotropia with Conv excess chara"
+    },
+    {
+      "code": "ES13",
+      "display": "Intermitt Esotropia-Divergence Weakness"
+    },
+    {
+      "code": "ES14",
+      "display": "Sudden Onset Esotropia"
+    },
+    {
+      "code": "ES15",
+      "display": "Esotropia Associated with High Myopia"
+    },
+    {
+      "code": "ES2",
+      "display": "Partially accommodative esotropia"
+    },
+    {
+      "code": "ES3",
+      "display": "Intermittent (conv. Excess) esotropia"
+    },
+    {
+      "code": "ES4",
+      "display": "Consecutive esotropia"
+    },
+    {
+      "code": "ES5",
+      "display": "Secondary esotropia"
+    },
+    {
+      "code": "ES6",
+      "display": "Other Esotropia"
+    },
+    {
+      "code": "ES7",
+      "display": "Intermittent (Fully accom) esotropia"
+    },
+    {
+      "code": "ES8",
+      "display": "Residual esotropia"
+    },
+    {
+      "code": "ES9",
+      "display": "Micro esotropia with identity"
+    },
+    {
+      "code": "ESC",
+      "display": "Employment screening or clearance"
+    },
+    {
+      "code": "ESCC",
+      "display": "Ear Squamous Cell Carcinoma"
+    },
+    {
+      "code": "EWING",
+      "display": "Ewing Sarcoma"
+    },
+    {
+      "code": "EX0",
+      "display": "Constant Early Onset Exotropia"
+    },
+    {
+      "code": "EX1",
+      "display": "Intermittent exotropia"
+    },
+    {
+      "code": "EX10",
+      "display": "Constant Decompensated Exotropia"
+    },
+    {
+      "code": "EX2",
+      "display": "Consecutive exotropia"
+    },
+    {
+      "code": "EX3",
+      "display": "Secondary exotropia"
+    },
+    {
+      "code": "EX4",
+      "display": "Other Exotropia"
+    },
+    {
+      "code": "EX5",
+      "display": "Residual exotropia"
+    },
+    {
+      "code": "EX6",
+      "display": "Micro exotropia with identity"
+    },
+    {
+      "code": "EX7",
+      "display": "Micro exotropia without identity"
+    },
+    {
+      "code": "EX8",
+      "display": "intermittent Distance Exotropia"
+    },
+    {
+      "code": "EX9",
+      "display": "Intermittent Near Exotropia"
+    },
+    {
+      "code": "EXO",
+      "display": "Exostosis"
+    },
+    {
+      "code": "EXT",
+      "display": "Extractions"
+    },
+    {
+      "code": "EYAS",
+      "display": "Eyes Assessment"
+    },
+    {
+      "code": "EYE",
+      "display": "Eye Trauma"
+    },
+    {
+      "code": "EYE00",
+      "display": "Normal"
+    },
+    {
+      "code": "EYE01",
+      "display": "Cataract"
+    },
+    {
+      "code": "EYE02",
+      "display": "Alphakia & Other Lens"
+    },
+    {
+      "code": "EYE03",
+      "display": "Glaucoma"
+    },
+    {
+      "code": "EYE04",
+      "display": "Glaucoma Suspect"
+    },
+    {
+      "code": "EYE05",
+      "display": "Squint"
+    },
+    {
+      "code": "EYE06",
+      "display": "Amblyopia"
+    },
+    {
+      "code": "EYE07",
+      "display": "Refractive Error"
+    },
+    {
+      "code": "EYE08",
+      "display": "Blepharitis"
+    },
+    {
+      "code": "EYE09",
+      "display": "Dry Eye"
+    },
+    {
+      "code": "EYE10",
+      "display": "Lid Malposition"
+    },
+    {
+      "code": "EYE11",
+      "display": "Chalazion / Style"
+    },
+    {
+      "code": "EYE12",
+      "display": "Other Lid"
+    },
+    {
+      "code": "EYE13",
+      "display": "Keratitis"
+    },
+    {
+      "code": "EYE14",
+      "display": "Corneal Scar/Opacity/Oedema"
+    },
+    {
+      "code": "EYE15",
+      "display": "Corneal Degeneration/Dystrophy"
+    },
+    {
+      "code": "EYE16",
+      "display": "Keratoconus"
+    },
+    {
+      "code": "EYE17",
+      "display": "Pterygium"
+    },
+    {
+      "code": "EYE18",
+      "display": "Other Corneal"
+    },
+    {
+      "code": "EYE19",
+      "display": "Conjunctiva Disorders of"
+    },
+    {
+      "code": "EYE20",
+      "display": "Uvetis"
+    },
+    {
+      "code": "EYE21",
+      "display": "Hzo Herpes Zoster Ophthalmicus"
+    },
+    {
+      "code": "EYE23",
+      "display": "Lacrimal System Disorders of"
+    },
+    {
+      "code": "EYE24",
+      "display": "Orbit Disorders of"
+    },
+    {
+      "code": "EYE25",
+      "display": "Sclera & Episclera Disorders of"
+    },
+    {
+      "code": "EYE26",
+      "display": "Vitreous Disorders of"
+    },
+    {
+      "code": "EYE27",
+      "display": "Optic Nerve & Visual Pathways Disorde"
+    },
+    {
+      "code": "EYE28",
+      "display": "Iris & Ciliary Body Disorders of"
+    },
+    {
+      "code": "EYE29",
+      "display": "Chorioid Disorders of"
+    },
+    {
+      "code": "EYE30",
+      "display": "Diabetic Retinopathy"
+    },
+    {
+      "code": "EYE31",
+      "display": "Retinal Vascular Occlusion"
+    },
+    {
+      "code": "EYE32",
+      "display": "Armd Age Related Macular Degeneration"
+    },
+    {
+      "code": "EYE33",
+      "display": "Rd Defect Retinal Detachment Defect"
+    },
+    {
+      "code": "EYE34",
+      "display": "Other Retinal"
+    },
+    {
+      "code": "EYE35",
+      "display": "Penetrating Trauma"
+    },
+    {
+      "code": "EYE36",
+      "display": "Blunt Trauma"
+    },
+    {
+      "code": "EYE37",
+      "display": "Minor Trauma / Fb"
+    },
+    {
+      "code": "EYE38",
+      "display": "Other Injury"
+    },
+    {
+      "code": "EYE39",
+      "display": "Diabetic (Normal)"
+    },
+    {
+      "code": "EYE40",
+      "display": "Non Diabetic Retinopathy"
+    },
+    {
+      "code": "EYE99",
+      "display": "All Other"
+    },
+    {
+      "code": "F009",
+      "display": "Dementia in Alzheimer s disease, unspeci"
+    },
+    {
+      "code": "F030",
+      "display": "Unspecified dementia"
+    },
+    {
+      "code": "F201",
+      "display": "Schizophrenia Disorganised Type"
+    },
+    {
+      "code": "F419",
+      "display": "Anxiety disorder, unspecified"
+    },
+    {
+      "code": "F509",
+      "display": "Eating disorder, unspecified"
+    },
+    {
+      "code": "F840",
+      "display": "Childhood autism"
+    },
+    {
+      "code": "F900",
+      "display": "Disturbance of activity and attention"
+    },
+    {
+      "code": "FAI",
+      "display": "Facial Injuries"
+    },
+    {
+      "code": "FAL",
+      "display": "Fallopian"
+    },
+    {
+      "code": "FALLS",
+      "display": "Falls"
+    },
+    {
+      "code": "FAP",
+      "display": "Facial Pain"
+    },
+    {
+      "code": "FAS",
+      "display": "Fetal Alcohol Syndrome"
+    },
+    {
+      "code": "FBE",
+      "display": "Foreign Body Ear"
+    },
+    {
+      "code": "FBN",
+      "display": "Foreign Body Nasal"
+    },
+    {
+      "code": "FCO",
+      "display": "Follicular Cyst Of Ovary"
+    },
+    {
+      "code": "FCS",
+      "display": "Family/Caregiver Concerns"
+    },
+    {
+      "code": "FCTD",
+      "display": "FCT-Cancer"
+    },
+    {
+      "code": "FDC",
+      "display": "Full Dental Clearance"
+    },
+    {
+      "code": "FEB",
+      "display": "Febrile illness"
+    },
+    {
+      "code": "FELD",
+      "display": "Frail Elderly"
+    },
+    {
+      "code": "FEP",
+      "display": "Fibro Eopithelial Polyp"
+    },
+    {
+      "code": "FERT",
+      "display": "Fertility"
+    },
+    {
+      "code": "FFB",
+      "display": "Fractured Facial Bones"
+    },
+    {
+      "code": "FFL",
+      "display": "Flat foot/pes planus (acquired),left foo"
+    },
+    {
+      "code": "FFR",
+      "display": "Flat foot/pes planus (acquired),right fo"
+    },
+    {
+      "code": "FGR",
+      "display": "Faulty Growth"
+    },
+    {
+      "code": "FGTW",
+      "display": "Fungating Wound"
+    },
+    {
+      "code": "FI",
+      "display": "Feeding Issues"
+    },
+    {
+      "code": "FIBR",
+      "display": "Fibroadenoma"
+    },
+    {
+      "code": "FIE",
+      "display": "Fillings & Extractions"
+    },
+    {
+      "code": "FIL",
+      "display": "Fillings"
+    },
+    {
+      "code": "FIN",
+      "display": "Female Infertility Nos"
+    },
+    {
+      "code": "FIS",
+      "display": "Fissures"
+    },
+    {
+      "code": "FNS",
+      "display": "Fractured Nose"
+    },
+    {
+      "code": "FORE",
+      "display": "Foreskin Frenulum"
+    },
+    {
+      "code": "FORGNBDY",
+      "display": "Foreign Body"
+    },
+    {
+      "code": "FRA",
+      "display": "Fracture"
+    },
+    {
+      "code": "FRB",
+      "display": "Fractured Facial Bones"
+    },
+    {
+      "code": "FRC",
+      "display": "Fracture left Ankle"
+    },
+    {
+      "code": "FRJ",
+      "display": "Fractured Jaw"
+    },
+    {
+      "code": "FRM",
+      "display": "Fracture Mandibular"
+    },
+    {
+      "code": "FRX",
+      "display": "Fragile X Syndrome"
+    },
+    {
+      "code": "FS",
+      "display": "Frozen Shoulder"
+    },
+    {
+      "code": "FTT",
+      "display": "Failure To Thrive"
+    },
+    {
+      "code": "FUNG",
+      "display": "Fungal"
+    },
+    {
+      "code": "FUS",
+      "display": "Fussy eating/Oral aversion"
+    },
+    {
+      "code": "FXJ",
+      "display": "Fractured Jaw"
+    },
+    {
+      "code": "FXM",
+      "display": "Fractured Mandibular"
+    },
+    {
+      "code": "FXZ",
+      "display": "Fractured Zygomatic"
+    },
+    {
+      "code": "G200",
+      "display": "Parkinson Disease"
+    },
+    {
+      "code": "G350",
+      "display": "Multiple sclerosis"
+    },
+    {
+      "code": "G4090",
+      "display": "Epilepsy, unspecified, without mention"
+    },
+    {
+      "code": "G439",
+      "display": "Migraine, unspecified"
+    },
+    {
+      "code": "G458",
+      "display": "Other transient cerebral ischaemic"
+    },
+    {
+      "code": "G560",
+      "display": "Carpal tunnel syndrome"
+    },
+    {
+      "code": "G809",
+      "display": "Cerebral palsy, unspecified"
+    },
+    {
+      "code": "GAL",
+      "display": "Gallstones"
+    },
+    {
+      "code": "GALL",
+      "display": "Gallstones"
+    },
+    {
+      "code": "GALLP",
+      "display": "Gallbladder polyp"
+    },
+    {
+      "code": "GAN",
+      "display": "Ganglion"
+    },
+    {
+      "code": "GAR",
+      "display": "Gouty Arthritis"
+    },
+    {
+      "code": "GARD",
+      "display": "Gardasil Vaccination"
+    },
+    {
+      "code": "GAS",
+      "display": "Gastrosch's"
+    },
+    {
+      "code": "GASCA",
+      "display": "Gastric Cancer"
+    },
+    {
+      "code": "GASR",
+      "display": "Gastritis"
+    },
+    {
+      "code": "GASS",
+      "display": "Gynaecology assessment"
+    },
+    {
+      "code": "GAST",
+      "display": "Gastroenteritis"
+    },
+    {
+      "code": "GBS",
+      "display": "Guillion Barrie Syndrome"
+    },
+    {
+      "code": "GDD",
+      "display": "Global Developmental delay"
+    },
+    {
+      "code": "GDDM",
+      "display": "Gestational Diabetes"
+    },
+    {
+      "code": "GDS",
+      "display": "Goldenhar Syndrome"
+    },
+    {
+      "code": "GEA",
+      "display": "General Eye Assessment"
+    },
+    {
+      "code": "GED",
+      "display": "Gestational Diabetes"
+    },
+    {
+      "code": "GEN",
+      "display": "Gene Change"
+    },
+    {
+      "code": "GES",
+      "display": "Genetic Syndrome"
+    },
+    {
+      "code": "GII",
+      "display": "Gingivitis"
+    },
+    {
+      "code": "GIST",
+      "display": "Gastrointestinal Stromal Tumour"
+    },
+    {
+      "code": "GLA",
+      "display": "Glaucoma"
+    },
+    {
+      "code": "GLDR",
+      "display": "Dry AMD"
+    },
+    {
+      "code": "GLGS",
+      "display": "low risk glaucoma suspect"
+    },
+    {
+      "code": "GLHR",
+      "display": "high risk glaucoma suspect"
+    },
+    {
+      "code": "GLI",
+      "display": "Glioblastoma"
+    },
+    {
+      "code": "GLLR",
+      "display": "Low risk Glaucoma"
+    },
+    {
+      "code": "GLNA",
+      "display": "Non acute Glaucoma"
+    },
+    {
+      "code": "GLW",
+      "display": "Wet AMD"
+    },
+    {
+      "code": "GMAST",
+      "display": "Gynecomastia"
+    },
+    {
+      "code": "GMT",
+      "display": "Goitre"
+    },
+    {
+      "code": "GOR",
+      "display": "GORD"
+    },
+    {
+      "code": "GOU",
+      "display": "Gout"
+    },
+    {
+      "code": "GOUT",
+      "display": "Gout"
+    },
+    {
+      "code": "GPN",
+      "display": "Gestational Proteniuria"
+    },
+    {
+      "code": "GRC",
+      "display": "Growth Inside RT Cheek/Gum"
+    },
+    {
+      "code": "GSY",
+      "display": "Genetic syndromes"
+    },
+    {
+      "code": "GT",
+      "display": "Gouty Tophi"
+    },
+    {
+      "code": "GTT",
+      "display": "Gestational Trophoblastic Tumour"
+    },
+    {
+      "code": "GU",
+      "display": "Gastric Ulcer"
+    },
+    {
+      "code": "GUT",
+      "display": "Gut disturbances"
+    },
+    {
+      "code": "H020",
+      "display": "Entropion and trichiasis of eyelid"
+    },
+    {
+      "code": "H021",
+      "display": "Ectropion of eyelid"
+    },
+    {
+      "code": "H029",
+      "display": "Disorder of eyelid, unspecified"
+    },
+    {
+      "code": "H269",
+      "display": "Cataract, unspecified"
+    },
+    {
+      "code": "H539",
+      "display": "Visual disturbance, unspecified"
+    },
+    {
+      "code": "H669",
+      "display": "Otitis media, unspecified"
+    },
+    {
+      "code": "H813",
+      "display": "Other peripheral vertigo"
+    },
+    {
+      "code": "H919",
+      "display": "Hearing loss, unspecified"
+    },
+    {
+      "code": "H931",
+      "display": "Tinnitus"
+    },
+    {
+      "code": "HAE",
+      "display": "Haemorrhoids"
+    },
+    {
+      "code": "HAEM",
+      "display": "Haemophilia"
+    },
+    {
+      "code": "HAEMC",
+      "display": "Haemachromatosis"
+    },
+    {
+      "code": "HAEMOPTYS",
+      "display": "Haemoptysis"
+    },
+    {
+      "code": "HAR",
+      "display": "Hearing loss"
+    },
+    {
+      "code": "HAT",
+      "display": "Haemarthrosis"
+    },
+    {
+      "code": "HATMA",
+      "display": "Haematoma"
+    },
+    {
+      "code": "HBA",
+      "display": "HBA1C > 100"
+    },
+    {
+      "code": "HCL",
+      "display": "Hairy Cell Leukaemia"
+    },
+    {
+      "code": "HE0",
+      "display": "Esophoria Non Significant"
+    },
+    {
+      "code": "HE1",
+      "display": "Esophoria Significant"
+    },
+    {
+      "code": "HE2",
+      "display": "Exophoria Non Significant"
+    },
+    {
+      "code": "HE3",
+      "display": "Significant Exophoria"
+    },
+    {
+      "code": "HE6",
+      "display": "Pseudostrabismus"
+    },
+    {
+      "code": "HE7",
+      "display": "Orthophoria/ NAD"
+    },
+    {
+      "code": "HE8",
+      "display": "Other Heterophoria"
+    },
+    {
+      "code": "HE9",
+      "display": "Convergence Insufficiency"
+    },
+    {
+      "code": "HEA",
+      "display": "Head Pain"
+    },
+    {
+      "code": "HEAM",
+      "display": "Hemochromatosis"
+    },
+    {
+      "code": "HEARTFAIL",
+      "display": "Heart Failure"
+    },
+    {
+      "code": "HED",
+      "display": "Hearing Disorder"
+    },
+    {
+      "code": "HEF",
+      "display": "Heart Failure"
+    },
+    {
+      "code": "HELP",
+      "display": "Helplesssness"
+    },
+    {
+      "code": "HEM",
+      "display": "Hemiplegia"
+    },
+    {
+      "code": "HEP",
+      "display": "Hepatitis"
+    },
+    {
+      "code": "HEPB",
+      "display": "Hepatitis B"
+    },
+    {
+      "code": "HEPC",
+      "display": "Hepatitis C"
+    },
+    {
+      "code": "HER",
+      "display": "Hernia"
+    },
+    {
+      "code": "HERB",
+      "display": "Hernia Bilateral"
+    },
+    {
+      "code": "HERD",
+      "display": "Hernia Diaphragmatic"
+    },
+    {
+      "code": "HERI",
+      "display": "Hernia Inguinal"
+    },
+    {
+      "code": "HERL",
+      "display": "Hernia Left"
+    },
+    {
+      "code": "HERPU",
+      "display": "Hernia Protruding Umbilical"
+    },
+    {
+      "code": "HERR",
+      "display": "Hernia Right"
+    },
+    {
+      "code": "HERV",
+      "display": "Hernia Ventral"
+    },
+    {
+      "code": "HF",
+      "display": "Heart Failure"
+    },
+    {
+      "code": "HGC",
+      "display": "HGSIL, Cervix"
+    },
+    {
+      "code": "HGL",
+      "display": "Hypoglycemia"
+    },
+    {
+      "code": "HIDS",
+      "display": "Hidradenitis suppurativa"
+    },
+    {
+      "code": "HIN",
+      "display": "Head Injury"
+    },
+    {
+      "code": "HIP",
+      "display": "Hip Spica"
+    },
+    {
+      "code": "HIR",
+      "display": "Hirschsprung Disease"
+    },
+    {
+      "code": "HIV",
+      "display": "HIV/AIDS- Human immunodeficiency virus"
+    },
+    {
+      "code": "HNF",
+      "display": "Hernia femoral"
+    },
+    {
+      "code": "HNH",
+      "display": "Hernia hiatus"
+    },
+    {
+      "code": "HNI",
+      "display": "Hernia incisional"
+    },
+    {
+      "code": "HNIG",
+      "display": "Hernia inguinal"
+    },
+    {
+      "code": "HNU",
+      "display": "Hernia umbilical"
+    },
+    {
+      "code": "HOD",
+      "display": "Hormone Deficiency"
+    },
+    {
+      "code": "HON",
+      "display": "HONK"
+    },
+    {
+      "code": "HP",
+      "display": "Hearing Loss"
+    },
+    {
+      "code": "HPB",
+      "display": "Hepatitis B"
+    },
+    {
+      "code": "HPOG",
+      "display": "Hypoglycemia"
+    },
+    {
+      "code": "HPR",
+      "display": "Hydronephrosis"
+    },
+    {
+      "code": "HPV",
+      "display": "Human Papillomavirus"
+    },
+    {
+      "code": "HRL",
+      "display": "Hallux rigidis, left foot"
+    },
+    {
+      "code": "HRP",
+      "display": "Highlighted Result Risk Hpv-Dna Positive"
+    },
+    {
+      "code": "HRR",
+      "display": "Hallux rigidis, right foot"
+    },
+    {
+      "code": "HRT",
+      "display": "Heart Failure"
+    },
+    {
+      "code": "HSL",
+      "display": "High Sugar Levels, T2DM"
+    },
+    {
+      "code": "HT",
+      "display": "Hammer Toe"
+    },
+    {
+      "code": "HTL",
+      "display": "Hammer toes (other), left foot"
+    },
+    {
+      "code": "HTR",
+      "display": "Hammer toes (other), right foot"
+    },
+    {
+      "code": "HTS",
+      "display": "Hepatosplenomegaly"
+    },
+    {
+      "code": "HUD",
+      "display": "Huntington's Disease"
+    },
+    {
+      "code": "HUN",
+      "display": "Huntingtons Disease"
+    },
+    {
+      "code": "HVL",
+      "display": "Hallux valgus, Bunion left foot (acqurd)"
+    },
+    {
+      "code": "HVR",
+      "display": "Hallux valgus, Bunion right foot (acqrd)"
+    },
+    {
+      "code": "HWJ",
+      "display": "Hepatomegaly with jaundice"
+    },
+    {
+      "code": "HWJA",
+      "display": "Hepatomegaly without jaundice"
+    },
+    {
+      "code": "HYCAL",
+      "display": "Hypercalcaemia"
+    },
+    {
+      "code": "HYD",
+      "display": "Hydronephrosis"
+    },
+    {
+      "code": "HYE",
+      "display": "Hyperemesis"
+    },
+    {
+      "code": "HYP",
+      "display": "HypoGlycaemia"
+    },
+    {
+      "code": "HYPE",
+      "display": "Hyperglycemia"
+    },
+    {
+      "code": "HYPOXEMIA",
+      "display": "Hypoxemia"
+    },
+    {
+      "code": "HYPT",
+      "display": "Hyperparathyroidism"
+    },
+    {
+      "code": "HYT",
+      "display": "Hyperthyroidism"
+    },
+    {
+      "code": "HZ",
+      "display": "Herpes Zoster"
+    },
+    {
+      "code": "I100",
+      "display": "Essential (primary) hypertension"
+    },
+    {
+      "code": "I139",
+      "display": "Hypertensive heart and kidney disease, u"
+    },
+    {
+      "code": "I209",
+      "display": "Angina pectoris, unspecified"
+    },
+    {
+      "code": "I489",
+      "display": "Atrial fibrillation and atrial flutter,"
+    },
+    {
+      "code": "I500",
+      "display": "Congestive heart failure"
+    },
+    {
+      "code": "I640",
+      "display": "Stroke, not specified as haemorrhage or"
+    },
+    {
+      "code": "I868",
+      "display": "Varicose veins of other specified sites"
+    },
+    {
+      "code": "IAR",
+      "display": "Inflammatory Arthropathy"
+    },
+    {
+      "code": "IBB",
+      "display": "Infammatory Bowel disease"
+    },
+    {
+      "code": "IBD",
+      "display": "Inflammatory Bowel Disease"
+    },
+    {
+      "code": "IBE",
+      "display": "Incomplete Bladder Emptying"
+    },
+    {
+      "code": "IBS",
+      "display": "Irritable Bowel Syndrobe"
+    },
+    {
+      "code": "ICD",
+      "display": "Irritant Contact dermatitis"
+    },
+    {
+      "code": "ICH",
+      "display": "Interstitial Cystitis With Haematuria"
+    },
+    {
+      "code": "ICWH",
+      "display": "Interstitial Cystitis Without Haematuria"
+    },
+    {
+      "code": "IDEF",
+      "display": "Immunoglobulin Deficiency"
+    },
+    {
+      "code": "IDM",
+      "display": "Type 1"
+    },
+    {
+      "code": "IF",
+      "display": "Incontinence Functional"
+    },
+    {
+      "code": "IFD",
+      "display": "Intellectual Functioning Disability"
+    },
+    {
+      "code": "Ile",
+      "display": "Ileitis"
+    },
+    {
+      "code": "IM",
+      "display": "Impacted Wisdom Tooth"
+    },
+    {
+      "code": "IMM",
+      "display": "Immobility"
+    },
+    {
+      "code": "IMP",
+      "display": "Impertigo"
+    },
+    {
+      "code": "IMT",
+      "display": "Impacted Wisdom Teeth"
+    },
+    {
+      "code": "INA",
+      "display": "Inflammatory Arthritis"
+    },
+    {
+      "code": "INAP",
+      "display": "Increase of Appetite"
+    },
+    {
+      "code": "INB",
+      "display": "Inborn Errors of Metabolism"
+    },
+    {
+      "code": "INC",
+      "display": "Incontinence"
+    },
+    {
+      "code": "IND",
+      "display": "Intellectual Disability"
+    },
+    {
+      "code": "INF",
+      "display": "Infection"
+    },
+    {
+      "code": "INJ",
+      "display": "Head Injury"
+    },
+    {
+      "code": "INTLUNGDS",
+      "display": "Interstitial Lung Disorder"
+    },
+    {
+      "code": "IO",
+      "display": "Incontinence Overflow"
+    },
+    {
+      "code": "IOB",
+      "display": "Injury of Back"
+    },
+    {
+      "code": "IOT",
+      "display": "Infection Of Trachae"
+    },
+    {
+      "code": "IRA",
+      "display": "Infections resistant to Antibiotics"
+    },
+    {
+      "code": "IRR",
+      "display": "Irritable Bowel Syndrome"
+    },
+    {
+      "code": "IS",
+      "display": "Incontinence Stress"
+    },
+    {
+      "code": "ISB",
+      "display": "Increasing Sob"
+    },
+    {
+      "code": "ISC",
+      "display": "Ischaemic Cardiomyopathy"
+    },
+    {
+      "code": "ISHC",
+      "display": "Ischemic Heart Disease"
+    },
+    {
+      "code": "IT",
+      "display": "Intraorbital Tumour"
+    },
+    {
+      "code": "ITO",
+      "display": "Infertility-Tubal Origin"
+    },
+    {
+      "code": "ITR",
+      "display": "Incontinence Transient"
+    },
+    {
+      "code": "IU",
+      "display": "Incontinence Urinary"
+    },
+    {
+      "code": "IUCD",
+      "display": "Iucd Removal"
+    },
+    {
+      "code": "IUO",
+      "display": "Infertility-Uterine Origin"
+    },
+    {
+      "code": "IVA",
+      "display": "IV ABS in Home"
+    },
+    {
+      "code": "IWT",
+      "display": "Impacted Wisdom Tooth"
+    },
+    {
+      "code": "J029",
+      "display": "Acute pharyngitis, unspecified"
+    },
+    {
+      "code": "J050",
+      "display": "Acute obstructive laryngitis [croup]"
+    },
+    {
+      "code": "J339",
+      "display": "Nasal polyp, unspecified"
+    },
+    {
+      "code": "J350",
+      "display": "Chronic tonsillitis"
+    },
+    {
+      "code": "J370",
+      "display": "Chronic laryngitis"
+    },
+    {
+      "code": "J400",
+      "display": "Bronchitis, not specified as acute or ch"
+    },
+    {
+      "code": "J449",
+      "display": "Chronic obstructive pulmonary disease, u"
+    },
+    {
+      "code": "J459",
+      "display": "Asthma, unspecified"
+    },
+    {
+      "code": "J470",
+      "display": "Bronchiectasis"
+    },
+    {
+      "code": "JADE",
+      "display": "Jade Removal"
+    },
+    {
+      "code": "JAF",
+      "display": "Joint derangement, ankle/foot"
+    },
+    {
+      "code": "JAU",
+      "display": "Jaundice"
+    },
+    {
+      "code": "JAW",
+      "display": "Jaw Pain"
+    },
+    {
+      "code": "JBP",
+      "display": "Back Pain"
+    },
+    {
+      "code": "JCA",
+      "display": "Juvenile Chronic Arthiritis"
+    },
+    {
+      "code": "JOP",
+      "display": "Joint Pain"
+    },
+    {
+      "code": "JP",
+      "display": "Joint Pain"
+    },
+    {
+      "code": "K029",
+      "display": "Dental caries, unspecified"
+    },
+    {
+      "code": "K200",
+      "display": "Oesophagitis"
+    },
+    {
+      "code": "K219",
+      "display": "Gastro-oesophageal reflux disease withou"
+    },
+    {
+      "code": "K257",
+      "display": "Gastric ulcer, chronic without haemorrha"
+    },
+    {
+      "code": "K269",
+      "display": "Duodenal ulcer, unspecified as acute or"
+    },
+    {
+      "code": "K469",
+      "display": "Unspecified abdominal hernia without obs"
+    },
+    {
+      "code": "K500",
+      "display": "Crohn s disease of small intestine"
+    },
+    {
+      "code": "K519",
+      "display": "Ulcerative colitis, unspecified"
+    },
+    {
+      "code": "K566",
+      "display": "Other and unspecified intestinal obstruc"
+    },
+    {
+      "code": "K5790",
+      "display": "Diverticulosis of intestine, part unspec"
+    },
+    {
+      "code": "K580",
+      "display": "Irritable bowel syndrome with diarrhoea"
+    },
+    {
+      "code": "K589",
+      "display": "Irritable bowel syndrome without diarrho"
+    },
+    {
+      "code": "K590",
+      "display": "Constipation"
+    },
+    {
+      "code": "K621",
+      "display": "Rectal polyp"
+    },
+    {
+      "code": "K628",
+      "display": "Other specified diseases of anus and rec"
+    },
+    {
+      "code": "K649",
+      "display": "Haemorrhoids, unspecified"
+    },
+    {
+      "code": "K739",
+      "display": "Chronic hepatitis, unspecified"
+    },
+    {
+      "code": "K768",
+      "display": "Other specified diseases of liver"
+    },
+    {
+      "code": "K769",
+      "display": "Liver disease, unspecified"
+    },
+    {
+      "code": "K819",
+      "display": "Cholecystitis, unspecified"
+    },
+    {
+      "code": "K859",
+      "display": "Acute pancreatitis, unspecified"
+    },
+    {
+      "code": "K861",
+      "display": "Other chronic pancreatitis"
+    },
+    {
+      "code": "K900",
+      "display": "Coeliac disease"
+    },
+    {
+      "code": "K929",
+      "display": "Disease of digestive system, unspecified"
+    },
+    {
+      "code": "KDF",
+      "display": "Renal Failure"
+    },
+    {
+      "code": "KID",
+      "display": "Kidney Disease"
+    },
+    {
+      "code": "KLS",
+      "display": "Klinefelters Syndrome"
+    },
+    {
+      "code": "KUD",
+      "display": "Kufs Disease"
+    },
+    {
+      "code": "L050",
+      "display": "Pilonidal cyst with abscess"
+    },
+    {
+      "code": "L059",
+      "display": "Pilonidal cyst without abscess"
+    },
+    {
+      "code": "L309",
+      "display": "Dermatitis, unspecified"
+    },
+    {
+      "code": "L820",
+      "display": "Seborrhoeic keratosis"
+    },
+    {
+      "code": "LA0",
+      "display": "Cataract"
+    },
+    {
+      "code": "LA1",
+      "display": "Dislocated Lens"
+    },
+    {
+      "code": "LA2",
+      "display": "Other Lens Anomalies"
+    },
+    {
+      "code": "LA3",
+      "display": "Congenital Cataract"
+    },
+    {
+      "code": "LAB",
+      "display": "Labyrinthitis"
+    },
+    {
+      "code": "LABY",
+      "display": "Labyrinths"
+    },
+    {
+      "code": "LAD",
+      "display": "Lada"
+    },
+    {
+      "code": "LAP",
+      "display": "Lower Abdo Pain"
+    },
+    {
+      "code": "LAR",
+      "display": "Laryngectomy"
+    },
+    {
+      "code": "LARYNGDIS",
+      "display": "Laryngeal Disorder"
+    },
+    {
+      "code": "LAT",
+      "display": "Lactose intolerance"
+    },
+    {
+      "code": "LCA",
+      "display": "Lip Cancer"
+    },
+    {
+      "code": "LCAN",
+      "display": "Lung Cancer"
+    },
+    {
+      "code": "LCTN",
+      "display": "Laceration"
+    },
+    {
+      "code": "LDC",
+      "display": "Lower Dental Clearance"
+    },
+    {
+      "code": "LE",
+      "display": "Lupus ervthematosus"
+    },
+    {
+      "code": "LEG",
+      "display": "Leg Pain"
+    },
+    {
+      "code": "LEL",
+      "display": "Leaky Leg"
+    },
+    {
+      "code": "LES",
+      "display": "Lesion/Cyst/Lump"
+    },
+    {
+      "code": "LEU",
+      "display": "Leukoplakia"
+    },
+    {
+      "code": "LFM",
+      "display": "Large Fetus Malporportion"
+    },
+    {
+      "code": "LGC",
+      "display": "LGSIL, Cervix"
+    },
+    {
+      "code": "LHO",
+      "display": "LHO appreciation"
+    },
+    {
+      "code": "LICAN",
+      "display": "Liver Cancer"
+    },
+    {
+      "code": "LIL",
+      "display": "Low Iron Levels"
+    },
+    {
+      "code": "LIP",
+      "display": "Lichen Plantus"
+    },
+    {
+      "code": "LIPO",
+      "display": "Lipoma"
+    },
+    {
+      "code": "LIS",
+      "display": "Lichen sclerosus"
+    },
+    {
+      "code": "LISC",
+      "display": "Linear Scleroderma"
+    },
+    {
+      "code": "LIT",
+      "display": "Lip Tie"
+    },
+    {
+      "code": "LIV",
+      "display": "Liver disease"
+    },
+    {
+      "code": "LLB",
+      "display": "Leaky Leg Bilateral"
+    },
+    {
+      "code": "LLG",
+      "display": "Large Lymph Glands"
+    },
+    {
+      "code": "LLL",
+      "display": "Lesion of plantar nerve, left lwr limb"
+    },
+    {
+      "code": "LMS",
+      "display": "Liver Metastatic"
+    },
+    {
+      "code": "LNEUT",
+      "display": "Low Neutrophils"
+    },
+    {
+      "code": "LP",
+      "display": "Lichen Planus"
+    },
+    {
+      "code": "LPP",
+      "display": "Lymphadenopathy"
+    },
+    {
+      "code": "LPR",
+      "display": "Lesion of plantar nerve,right lower limb"
+    },
+    {
+      "code": "LQT",
+      "display": "Long QT Syndrome"
+    },
+    {
+      "code": "LS0",
+      "display": "Epiphora"
+    },
+    {
+      "code": "LS1",
+      "display": "Dry Eye"
+    },
+    {
+      "code": "LS2",
+      "display": "Other Lacrimal Disorders"
+    },
+    {
+      "code": "LSC",
+      "display": "Larynx Squamous Cell Carcinoma"
+    },
+    {
+      "code": "LSCC",
+      "display": "Lip Squamous Cell Carcinoma"
+    },
+    {
+      "code": "LSCL",
+      "display": "Lichen Sclerosus"
+    },
+    {
+      "code": "LSH",
+      "display": "Shin Wound"
+    },
+    {
+      "code": "LT",
+      "display": "Lip Tie"
+    },
+    {
+      "code": "LUMP",
+      "display": "Lump"
+    },
+    {
+      "code": "LUN",
+      "display": "Lung Infection"
+    },
+    {
+      "code": "LUP",
+      "display": "Lupus"
+    },
+    {
+      "code": "LYM",
+      "display": "Lymphoma"
+    },
+    {
+      "code": "LYMP",
+      "display": "Lymphoma"
+    },
+    {
+      "code": "LYMPA",
+      "display": "Lymphorrhea"
+    },
+    {
+      "code": "LYMPD",
+      "display": "Lymphoedema"
+    },
+    {
+      "code": "M1099",
+      "display": "Gout, unspecified, site unspecified"
+    },
+    {
+      "code": "M1389",
+      "display": "Other specified arthritis,site unspecifi"
+    },
+    {
+      "code": "M201",
+      "display": "Hallux valgus (acquired)"
+    },
+    {
+      "code": "M229",
+      "display": "Disorder of patella, unspecified"
+    },
+    {
+      "code": "M2454",
+      "display": "Contracture of joint, hand"
+    },
+    {
+      "code": "M2559",
+      "display": "Pain in a joint, site unspecified"
+    },
+    {
+      "code": "M653",
+      "display": "Trigger Finger"
+    },
+    {
+      "code": "M80700",
+      "display": "SQUAMOUS CELL CARCINOMA, NOT OTHERWISE S"
+    },
+    {
+      "code": "M80900",
+      "display": "BASAL CELL CARCINOMA, NOT OTHERWISE SPEC"
+    },
+    {
+      "code": "M8190",
+      "display": "Unspecified osteoporosis, multiple sites"
+    },
+    {
+      "code": "M8429",
+      "display": "Delayed union of fracture, site unspecif"
+    },
+    {
+      "code": "M97320",
+      "display": "MULTIPLE MYELOMA"
+    },
+    {
+      "code": "M98000",
+      "display": "LEUKAEMIA, NOT OTHERWISE SPECIFIED"
+    },
+    {
+      "code": "M99610",
+      "display": "PRIMARY MYELOFIBROSIS"
+    },
+    {
+      "code": "MA0",
+      "display": "Browns"
+    },
+    {
+      "code": "MA1",
+      "display": "Duanes"
+    },
+    {
+      "code": "MA10",
+      "display": "Sagging Eye Syndrome"
+    },
+    {
+      "code": "MA2",
+      "display": "Trauma/MechLimit DuctOfEyeMuscl IncBO#"
+    },
+    {
+      "code": "MA3",
+      "display": "Strabismus due to Adhesions e.g. post-op"
+    },
+    {
+      "code": "MA4",
+      "display": "Ocular Myasthenia Gravis"
+    },
+    {
+      "code": "MA5",
+      "display": "Other Limitations-MultipleSclerosis etc"
+    },
+    {
+      "code": "MA6",
+      "display": "A/V Patterns"
+    },
+    {
+      "code": "MA7",
+      "display": "Inferior Oblique Overaction"
+    },
+    {
+      "code": "MA8",
+      "display": "Thyroid Eye Disease"
+    },
+    {
+      "code": "MA9",
+      "display": "Ocular lgG4 Disease"
+    },
+    {
+      "code": "MAL",
+      "display": "Malignancy"
+    },
+    {
+      "code": "MALN",
+      "display": "Malnutrition"
+    },
+    {
+      "code": "MALP",
+      "display": "Malpresentation"
+    },
+    {
+      "code": "MAR",
+      "display": "Marfin Syndrome"
+    },
+    {
+      "code": "MAS",
+      "display": "Mastoidectomy"
+    },
+    {
+      "code": "MASD",
+      "display": "Moisture Associated Skin Damage"
+    },
+    {
+      "code": "MAVUL",
+      "display": "Mixed Arterial/Venous Ulcer"
+    },
+    {
+      "code": "MAX",
+      "display": "Maxillary Sinus"
+    },
+    {
+      "code": "MC",
+      "display": "Multiple Complications (Specify)"
+    },
+    {
+      "code": "MCER",
+      "display": "Mucosal Cleft Extending Rectal Wall"
+    },
+    {
+      "code": "MCL",
+      "display": "Mantle Cell Lymphoma"
+    },
+    {
+      "code": "MCP",
+      "display": "Monoplegic Cerebral Palsy"
+    },
+    {
+      "code": "MD",
+      "display": "Meningococcal Disease"
+    },
+    {
+      "code": "MDK",
+      "display": "Multicystic Dysplastic Kidney"
+    },
+    {
+      "code": "MDN",
+      "display": "Menopausal Disorder Nos"
+    },
+    {
+      "code": "MDS",
+      "display": "Myelodysplastic Syndrome"
+    },
+    {
+      "code": "ME",
+      "display": "Measles"
+    },
+    {
+      "code": "MED",
+      "display": "Multiple Episodes Of Dizziness"
+    },
+    {
+      "code": "MEE",
+      "display": "Middle Ear Effusions"
+    },
+    {
+      "code": "MEI",
+      "display": "Middle ear infections / discharge"
+    },
+    {
+      "code": "MEL",
+      "display": "Melanoma"
+    },
+    {
+      "code": "MELM",
+      "display": "Melanoma metastatic"
+    },
+    {
+      "code": "MELSIT",
+      "display": "Melanoma in-situ"
+    },
+    {
+      "code": "MEML",
+      "display": "Memory Loss"
+    },
+    {
+      "code": "MEN",
+      "display": "Meniere's Disease"
+    },
+    {
+      "code": "MER",
+      "display": "Merkle Cell"
+    },
+    {
+      "code": "MES",
+      "display": "Mesothelioma"
+    },
+    {
+      "code": "MET",
+      "display": "Metastasic"
+    },
+    {
+      "code": "MF",
+      "display": "Mickey Feeding"
+    },
+    {
+      "code": "MGC",
+      "display": "Mixed Germ Cell"
+    },
+    {
+      "code": "MIC",
+      "display": "Micronutrient deficiency"
+    },
+    {
+      "code": "MIG",
+      "display": "Migraines"
+    },
+    {
+      "code": "MINO",
+      "display": "Minor Surgical Follow Up"
+    },
+    {
+      "code": "MJP",
+      "display": "Muscle And Joint Pains"
+    },
+    {
+      "code": "MLCY",
+      "display": "Malignancy"
+    },
+    {
+      "code": "MLF",
+      "display": "Metatarsalgia, left foot"
+    },
+    {
+      "code": "MM",
+      "display": "Multiple Myeloma"
+    },
+    {
+      "code": "MMMN",
+      "display": "Morton's metatarsalgia/Morton's neur"
+    },
+    {
+      "code": "MMU",
+      "display": "Medial Malleolus Ulcer"
+    },
+    {
+      "code": "MND",
+      "display": "Motor Neuron Disease"
+    },
+    {
+      "code": "MNL",
+      "display": "Malignant Neoplasm Of Left Ovary"
+    },
+    {
+      "code": "MNR",
+      "display": "Malignant Neoplasm Of Right Ovary"
+    },
+    {
+      "code": "MODY",
+      "display": "Maturity Onset of the Young"
+    },
+    {
+      "code": "MON",
+      "display": "Monoarthritis"
+    },
+    {
+      "code": "MOU",
+      "display": "Malposition Of Uterus"
+    },
+    {
+      "code": "MRCA",
+      "display": "MRSA Carrier"
+    },
+    {
+      "code": "MRF",
+      "display": "Metatarsalgia, right foot"
+    },
+    {
+      "code": "MRSA",
+      "display": "MRSA Conditions"
+    },
+    {
+      "code": "MS",
+      "display": "Multiple Sclerosis"
+    },
+    {
+      "code": "MSC",
+      "display": "Multiple Sclerosis"
+    },
+    {
+      "code": "MSCC",
+      "display": "Mouth Squamous Cell Carcinoma"
+    },
+    {
+      "code": "MSY",
+      "display": "Menopausal Syndrome"
+    },
+    {
+      "code": "MU",
+      "display": "Mumps"
+    },
+    {
+      "code": "MUC",
+      "display": "Muscloskeletal Conditions"
+    },
+    {
+      "code": "MUD",
+      "display": "Multiple Disability"
+    },
+    {
+      "code": "MULS",
+      "display": "Multiple Sclerosis"
+    },
+    {
+      "code": "MULT",
+      "display": "Multiparity"
+    },
+    {
+      "code": "MUS",
+      "display": "Multiple Sclerosis"
+    },
+    {
+      "code": "MW",
+      "display": "Muscle weakness (generalized)"
+    },
+    {
+      "code": "MYG",
+      "display": "Myringotomy - Grommets"
+    },
+    {
+      "code": "MYI",
+      "display": "Myocardial Infarction"
+    },
+    {
+      "code": "MYO",
+      "display": "Myocarditis"
+    },
+    {
+      "code": "N133",
+      "display": "Other and unspecified hydronephrosis"
+    },
+    {
+      "code": "N189",
+      "display": "Chronic kidney disease, unspecified"
+    },
+    {
+      "code": "N190",
+      "display": "Unspecified kidney failure"
+    },
+    {
+      "code": "N200",
+      "display": "Calculus of kidney"
+    },
+    {
+      "code": "N201",
+      "display": "Calculus of ureter"
+    },
+    {
+      "code": "N230",
+      "display": "Unspecified renal colic"
+    },
+    {
+      "code": "N309",
+      "display": "Cystitis, unspecified"
+    },
+    {
+      "code": "N390",
+      "display": "Urinary tract infection, site not specif"
+    },
+    {
+      "code": "N433",
+      "display": "Hydrocele, unspecified"
+    },
+    {
+      "code": "N459",
+      "display": "Orchitis, epididymitis and epididymo-orc"
+    },
+    {
+      "code": "N470",
+      "display": "Redundant prepuce, phimosis and paraphim"
+    },
+    {
+      "code": "N630",
+      "display": "Unspecified lump in breast"
+    },
+    {
+      "code": "N739",
+      "display": "Female pelvic inflammatory disease, unsp"
+    },
+    {
+      "code": "N759",
+      "display": "Disease of Bartholin s gland, unspecifie"
+    },
+    {
+      "code": "N768",
+      "display": "Other specified inflammation of vagina"
+    },
+    {
+      "code": "N809",
+      "display": "Endometriosis, unspecified"
+    },
+    {
+      "code": "N819",
+      "display": "Female genital prolapse, unspecified"
+    },
+    {
+      "code": "N849",
+      "display": "Polyp of female genital tract, unspecifi"
+    },
+    {
+      "code": "N879",
+      "display": "Dysplasia of cervix uteri, unspecified"
+    },
+    {
+      "code": "N939",
+      "display": "Abnormal uterine and vaginal bleeding,"
+    },
+    {
+      "code": "N959",
+      "display": "Menopausal and perimenopausal disorder,"
+    },
+    {
+      "code": "NAC",
+      "display": "Nasopharyngeal Carinoma"
+    },
+    {
+      "code": "NAMD",
+      "display": "n AMD"
+    },
+    {
+      "code": "NAO",
+      "display": "Nasal Obstruction"
+    },
+    {
+      "code": "NAP",
+      "display": "Nasal Polypectomy"
+    },
+    {
+      "code": "NAS",
+      "display": "Nasopharyngeal"
+    },
+    {
+      "code": "NBCC",
+      "display": "Nasal Basal Cell Carcinoma"
+    },
+    {
+      "code": "NC",
+      "display": "Neurological Complication (specify)"
+    },
+    {
+      "code": "NDM",
+      "display": "Type 2"
+    },
+    {
+      "code": "NEB",
+      "display": "Neurogenic Bladder"
+    },
+    {
+      "code": "NEO",
+      "display": "Newborn Hearing Screening"
+    },
+    {
+      "code": "NEP",
+      "display": "Nephrotic Syndrome"
+    },
+    {
+      "code": "NER",
+      "display": "Neurofribromatosis"
+    },
+    {
+      "code": "NERV",
+      "display": "Nerve Pain"
+    },
+    {
+      "code": "NET",
+      "display": "Necrotic Tongue"
+    },
+    {
+      "code": "NEU",
+      "display": "Neuroblasts"
+    },
+    {
+      "code": "NEUDT",
+      "display": "Neuro-endocrine tumour"
+    },
+    {
+      "code": "NEUT",
+      "display": "Neuro-endocrine Tumour"
+    },
+    {
+      "code": "NGON",
+      "display": "Neisseria Gonorrhoea"
+    },
+    {
+      "code": "NHL",
+      "display": "Non Hodgkins Lymphoma"
+    },
+    {
+      "code": "NI",
+      "display": "No Impairment"
+    },
+    {
+      "code": "NID",
+      "display": "Non Imflammatory Disorder"
+    },
+    {
+      "code": "NLBC",
+      "display": "Nasal Lesion Basal Cell Carcinoma"
+    },
+    {
+      "code": "NPL",
+      "display": "Neoplasms"
+    },
+    {
+      "code": "NPP",
+      "display": "NeuropathIc Pain"
+    },
+    {
+      "code": "NPR",
+      "display": "Normal Pregnancy"
+    },
+    {
+      "code": "NS",
+      "display": "Nephrotic syndrome"
+    },
+    {
+      "code": "NSC",
+      "display": "Nasal Squamous Cell Carcinoma"
+    },
+    {
+      "code": "NSCC",
+      "display": "Nasal Lesion Squamous Cell Carcinoma"
+    },
+    {
+      "code": "NSD",
+      "display": "No Specific Diagnosis"
+    },
+    {
+      "code": "NSTEMI",
+      "display": "NSTEMI"
+    },
+    {
+      "code": "NSWT",
+      "display": "Night Sweats"
+    },
+    {
+      "code": "NUT",
+      "display": "Nutritional Disorder"
+    },
+    {
+      "code": "NVC",
+      "display": "Nodule On Vocal Cord"
+    },
+    {
+      "code": "NY0",
+      "display": "Manifest nystagmus"
+    },
+    {
+      "code": "NY1",
+      "display": "Latent nystagmus"
+    },
+    {
+      "code": "NY2",
+      "display": "Manifest latent nystagmus"
+    },
+    {
+      "code": "NY3",
+      "display": "Congenital nystagmus"
+    },
+    {
+      "code": "NY4",
+      "display": "See-saw nystagmus"
+    },
+    {
+      "code": "NY5",
+      "display": "Rotary nystagmus"
+    },
+    {
+      "code": "NY6",
+      "display": "Nystagmus with albinism"
+    },
+    {
+      "code": "NY7",
+      "display": "Other Nystagmus"
+    },
+    {
+      "code": "NY8",
+      "display": "Voluntary Nystagmus"
+    },
+    {
+      "code": "NYG",
+      "display": "Nystagmus"
+    },
+    {
+      "code": "O099",
+      "display": "Unspecified duration of pregnancy"
+    },
+    {
+      "code": "O159",
+      "display": "Eclampsia, unspecified as to time period"
+    },
+    {
+      "code": "O160",
+      "display": "Unspecified maternal hypertension"
+    },
+    {
+      "code": "O218",
+      "display": "Other vomiting complicating pregnancy"
+    },
+    {
+      "code": "O321",
+      "display": "Maternal care for breech presentation"
+    },
+    {
+      "code": "O419",
+      "display": "Disorder of amniotic fluid and membranes"
+    },
+    {
+      "code": "O440",
+      "display": "Placenta praevia specified as without ha"
+    },
+    {
+      "code": "O469",
+      "display": "Antepartum haemorrhage, unspecified"
+    },
+    {
+      "code": "OASS",
+      "display": "Orthopaedic assessment"
+    },
+    {
+      "code": "OBE",
+      "display": "Obesity"
+    },
+    {
+      "code": "OC",
+      "display": "Ophthalmic Complication"
+    },
+    {
+      "code": "OCA",
+      "display": "Other Cancers"
+    },
+    {
+      "code": "OCAN",
+      "display": "Ovarian Cancer"
+    },
+    {
+      "code": "OCL",
+      "display": "Oral Cavity Lesion"
+    },
+    {
+      "code": "OCN",
+      "display": "Other Specified Noninflammatory"
+    },
+    {
+      "code": "ODM",
+      "display": "Other Specific Diabetes Mellitus"
+    },
+    {
+      "code": "ODN",
+      "display": "Opthlamic Disorder NEC"
+    },
+    {
+      "code": "ODS",
+      "display": "Other Disorder of the Skin"
+    },
+    {
+      "code": "OECA",
+      "display": "Oesophageal cancer"
+    },
+    {
+      "code": "OES",
+      "display": "Oesophageal"
+    },
+    {
+      "code": "OESA",
+      "display": "Oesophageal achalasis"
+    },
+    {
+      "code": "OESO",
+      "display": "Oesophagitis"
+    },
+    {
+      "code": "OEST",
+      "display": "Oesophageal stenosis"
+    },
+    {
+      "code": "OHS",
+      "display": "Occular Hypertension Spikes"
+    },
+    {
+      "code": "OM",
+      "display": "Obesity Morbid"
+    },
+    {
+      "code": "OME",
+      "display": "Otitis Media Effusion"
+    },
+    {
+      "code": "OMET",
+      "display": "Otitis Media Effusion,Flat Tympanograms"
+    },
+    {
+      "code": "ON0",
+      "display": "Optic Atrophy"
+    },
+    {
+      "code": "ON1",
+      "display": "Optic Nerve Hypoplasia"
+    },
+    {
+      "code": "ON2",
+      "display": "Coloboma"
+    },
+    {
+      "code": "ON3",
+      "display": "Papillodema"
+    },
+    {
+      "code": "ON4",
+      "display": "Optic Neuritis"
+    },
+    {
+      "code": "ON5",
+      "display": "Other Optic Nerve Anomalies"
+    },
+    {
+      "code": "ONC",
+      "display": "Oncology"
+    },
+    {
+      "code": "ONH",
+      "display": "Optic Nerve Hypoplasia"
+    },
+    {
+      "code": "OO",
+      "display": "Other Obesity"
+    },
+    {
+      "code": "OOC",
+      "display": "Other Ovarian Cysts"
+    },
+    {
+      "code": "ORAL",
+      "display": "Oral Mucosa Lesion"
+    },
+    {
+      "code": "ORCH",
+      "display": "Orchidopexy"
+    },
+    {
+      "code": "OS",
+      "display": "Oesophageal Stricture"
+    },
+    {
+      "code": "OSA",
+      "display": "Osa (Oversized Adenoids)"
+    },
+    {
+      "code": "OSD",
+      "display": "Obstructive Sleep Disorder"
+    },
+    {
+      "code": "OSN",
+      "display": "Other Specified Noninflammatory"
+    },
+    {
+      "code": "OSP",
+      "display": "Osteoporosis"
+    },
+    {
+      "code": "OST",
+      "display": "Osteomyelitis"
+    },
+    {
+      "code": "OTH",
+      "display": "Other"
+    },
+    {
+      "code": "OTHRESP",
+      "display": "Other Respiratory"
+    },
+    {
+      "code": "OTO",
+      "display": "Otosclerosis"
+    },
+    {
+      "code": "OTP",
+      "display": "Opthlamic Puritis"
+    },
+    {
+      "code": "OVA",
+      "display": "Ovarian"
+    },
+    {
+      "code": "OW",
+      "display": "Overweight"
+    },
+    {
+      "code": "P0730",
+      "display": "Extremely low birth weight 750 - 999g"
+    },
+    {
+      "code": "P700",
+      "display": "Syndrome of infant of mother with gestat"
+    },
+    {
+      "code": "PA",
+      "display": "Abdominal Pain"
+    },
+    {
+      "code": "PA0",
+      "display": "Adie"
+    },
+    {
+      "code": "PA1",
+      "display": "Afferent Defect"
+    },
+    {
+      "code": "PA2",
+      "display": "Aniridia"
+    },
+    {
+      "code": "PA3",
+      "display": "Anisocoria"
+    },
+    {
+      "code": "PA4",
+      "display": "Argyll Robertson"
+    },
+    {
+      "code": "PA5",
+      "display": "Coloboma"
+    },
+    {
+      "code": "PA6",
+      "display": "Horners"
+    },
+    {
+      "code": "PA7",
+      "display": "Other Pupils Defects"
+    },
+    {
+      "code": "PAHL",
+      "display": "Partial Hearing Loss"
+    },
+    {
+      "code": "PAINCHEST",
+      "display": "Pain Chest"
+    },
+    {
+      "code": "PAL",
+      "display": "Palliative Care"
+    },
+    {
+      "code": "PAN",
+      "display": "Pancreatic"
+    },
+    {
+      "code": "PANCA",
+      "display": "Pancreatic cancer"
+    },
+    {
+      "code": "PANCY",
+      "display": "Pancytopaenia"
+    },
+    {
+      "code": "PANI",
+      "display": "Pancreatic Insufficiency"
+    },
+    {
+      "code": "PAP",
+      "display": "Pelvic And Perineal Pain"
+    },
+    {
+      "code": "PAR",
+      "display": "Paraplegia"
+    },
+    {
+      "code": "PARK",
+      "display": "Parkinsons Disease"
+    },
+    {
+      "code": "PAS",
+      "display": "Pre-Auricular Sinus"
+    },
+    {
+      "code": "PAST",
+      "display": "Pre Auricular Sinus Tract Abscess"
+    },
+    {
+      "code": "PBA",
+      "display": "Pump, Diabetes advice"
+    },
+    {
+      "code": "PBC",
+      "display": "Pinna Basal Cell Carcinoma"
+    },
+    {
+      "code": "PBE",
+      "display": "Occular Pain NEC"
+    },
+    {
+      "code": "PBEH01",
+      "display": "ADHD / ODD"
+    },
+    {
+      "code": "PBEH99",
+      "display": "Behaviour - Other"
+    },
+    {
+      "code": "PBF",
+      "display": "Premature Baby Follow up"
+    },
+    {
+      "code": "PBH",
+      "display": "Hand Pain"
+    },
+    {
+      "code": "PBK",
+      "display": "Knee Pain"
+    },
+    {
+      "code": "PBL",
+      "display": "Postmenopausal Bleeding"
+    },
+    {
+      "code": "PBM",
+      "display": "Plasmacytoma Bilat Maxillary Sinus"
+    },
+    {
+      "code": "PC",
+      "display": "PCOS"
+    },
+    {
+      "code": "PCAN",
+      "display": "Prostrate Cancer"
+    },
+    {
+      "code": "PCAR01",
+      "display": "Aortic Stenosis"
+    },
+    {
+      "code": "PCAR02",
+      "display": "ASD"
+    },
+    {
+      "code": "PCAR03",
+      "display": "AV Canal / AVSD"
+    },
+    {
+      "code": "PCAR04",
+      "display": "Murmur"
+    },
+    {
+      "code": "PCAR05",
+      "display": "Paroxysmal SVT / Arrhythmias"
+    },
+    {
+      "code": "PCAR06",
+      "display": "Pulmonary Hypertension"
+    },
+    {
+      "code": "PCAR07",
+      "display": "Pulmonary Stenosis"
+    },
+    {
+      "code": "PCAR08",
+      "display": "Rheumatic Fever / Valve Replacement"
+    },
+    {
+      "code": "PCAR09",
+      "display": "Tetralogy of Fallot"
+    },
+    {
+      "code": "PCAR10",
+      "display": "TGA"
+    },
+    {
+      "code": "PCAR11",
+      "display": "VSD"
+    },
+    {
+      "code": "PCAR12",
+      "display": "Coarctation Aorta"
+    },
+    {
+      "code": "PCAR99",
+      "display": "Other - Cardiac"
+    },
+    {
+      "code": "PCD",
+      "display": "Poorly Controlled Diabetes"
+    },
+    {
+      "code": "PCS",
+      "display": "Previous Caesarean Section"
+    },
+    {
+      "code": "PCYST",
+      "display": "Pancreatic Pseudocyst"
+    },
+    {
+      "code": "PD",
+      "display": "Dont Use - Parkinson's Disease"
+    },
+    {
+      "code": "PDEV01",
+      "display": "Autism / Aspergers"
+    },
+    {
+      "code": "PDEV02",
+      "display": "Chromosome - Other"
+    },
+    {
+      "code": "PDEV03",
+      "display": "Developmental Delay"
+    },
+    {
+      "code": "PDEV04",
+      "display": "Down Syndrome"
+    },
+    {
+      "code": "PDEV05",
+      "display": "Dymorphic Syndrome"
+    },
+    {
+      "code": "PDEV06",
+      "display": "Learning Disorder"
+    },
+    {
+      "code": "PDEV08",
+      "display": "Speech/Language Delay"
+    },
+    {
+      "code": "PDEV09",
+      "display": "Multiple Major Handicap"
+    },
+    {
+      "code": "PDEV99",
+      "display": "Other - Developmental"
+    },
+    {
+      "code": "PECAN",
+      "display": "Peritoneal Cancer"
+    },
+    {
+      "code": "PED",
+      "display": "Pancreatic Exocrine Disease"
+    },
+    {
+      "code": "PEE",
+      "display": "Perforated Eardrum"
+    },
+    {
+      "code": "PEL",
+      "display": "Pelvicalyceal Dilation"
+    },
+    {
+      "code": "PEN",
+      "display": "Pending Surgery"
+    },
+    {
+      "code": "PEND01",
+      "display": "Adrenal - Other"
+    },
+    {
+      "code": "PEND02",
+      "display": "Congenital Adrenal Hyperplasia"
+    },
+    {
+      "code": "PEND03",
+      "display": "Diabetes"
+    },
+    {
+      "code": "PEND04",
+      "display": "Hypopituitarism / GH Deficiency"
+    },
+    {
+      "code": "PEND05",
+      "display": "Hypothyroidism"
+    },
+    {
+      "code": "PEND06",
+      "display": "Puberty - Early / Delayed"
+    },
+    {
+      "code": "PEND07",
+      "display": "Short Stature (Non GH)"
+    },
+    {
+      "code": "PEND08",
+      "display": "Turner Syndrome"
+    },
+    {
+      "code": "PEND99",
+      "display": "Other - Endocrine"
+    },
+    {
+      "code": "PENI",
+      "display": "Penile Hypospadias"
+    },
+    {
+      "code": "PER",
+      "display": "Pertussis"
+    },
+    {
+      "code": "PERIA",
+      "display": "Perianal Abscess"
+    },
+    {
+      "code": "PERIN",
+      "display": "Perineal Groove"
+    },
+    {
+      "code": "PERS",
+      "display": "Personality Disorder"
+    },
+    {
+      "code": "PEY",
+      "display": "Peyronies"
+    },
+    {
+      "code": "PF",
+      "display": "Peg Feeding"
+    },
+    {
+      "code": "PFF",
+      "display": "Plantar fascial fibromatosis"
+    },
+    {
+      "code": "PFG",
+      "display": "Poor Fetal Growth"
+    },
+    {
+      "code": "PFH",
+      "display": "Polyps Family History"
+    },
+    {
+      "code": "PFIS",
+      "display": "Perianal Fistula"
+    },
+    {
+      "code": "PGM",
+      "display": "Pterygium"
+    },
+    {
+      "code": "PGO",
+      "display": "Parotid Gland Obstruction"
+    },
+    {
+      "code": "PGUT01",
+      "display": "Congenital Gut Anomalies"
+    },
+    {
+      "code": "PGUT02",
+      "display": "Constipation / Encopresis"
+    },
+    {
+      "code": "PGUT03",
+      "display": "GE Reflux / Oesophagitis"
+    },
+    {
+      "code": "PGUT04",
+      "display": "Liver Disease"
+    },
+    {
+      "code": "PGUT05",
+      "display": "Malabsorption"
+    },
+    {
+      "code": "PGUT06",
+      "display": "Recurrent Abdominal Pain"
+    },
+    {
+      "code": "PGUT07",
+      "display": "Inflammatory Bowel Disease"
+    },
+    {
+      "code": "PGUT99",
+      "display": "Other - Gut / Liver"
+    },
+    {
+      "code": "PH",
+      "display": "Polyps History"
+    },
+    {
+      "code": "PHA",
+      "display": "Pharyngitis"
+    },
+    {
+      "code": "PHAE01",
+      "display": "Anaemia"
+    },
+    {
+      "code": "PHAE02",
+      "display": "Haemaphilia / Bleeding Disorders"
+    },
+    {
+      "code": "PHAE03",
+      "display": "ITP"
+    },
+    {
+      "code": "PHAE04",
+      "display": "Other Haematology"
+    },
+    {
+      "code": "PHAE05",
+      "display": "Leukaemia"
+    },
+    {
+      "code": "PHAE06",
+      "display": "Brain Tumours"
+    },
+    {
+      "code": "PHAE99",
+      "display": "Other - Oncology"
+    },
+    {
+      "code": "PHAN",
+      "display": "Phantom Pain"
+    },
+    {
+      "code": "PHD",
+      "display": "Physical Disabillity"
+    },
+    {
+      "code": "PHI",
+      "display": "Phimosis"
+    },
+    {
+      "code": "PHL",
+      "display": "Permanent Hearing Loss"
+    },
+    {
+      "code": "PHLE",
+      "display": "Phlebotomy"
+    },
+    {
+      "code": "PIDTI",
+      "display": "Suspected Deep Tissue Injury"
+    },
+    {
+      "code": "PIL",
+      "display": "Pinna Lesion - Wolfe Graft"
+    },
+    {
+      "code": "PIN",
+      "display": "Parasitic Infection"
+    },
+    {
+      "code": "PINY",
+      "display": "Pancreatic insufficiency"
+    },
+    {
+      "code": "PLEURLDIS",
+      "display": "Pleural Disorder"
+    },
+    {
+      "code": "PLM",
+      "display": "Plasmacytoma Left Maxillary Sinus"
+    },
+    {
+      "code": "PLN",
+      "display": "Pain in left knee"
+    },
+    {
+      "code": "PLOC01",
+      "display": "Arthritis /Arthralgia - Other"
+    },
+    {
+      "code": "PLOC02",
+      "display": "JCA / JIA"
+    },
+    {
+      "code": "PLOC03",
+      "display": "Muscular Dystrophy / Myopathy"
+    },
+    {
+      "code": "PLOC04",
+      "display": "SLE"
+    },
+    {
+      "code": "PLOC05",
+      "display": "Spina Bifida"
+    },
+    {
+      "code": "PLOC06",
+      "display": "Spinal - Other"
+    },
+    {
+      "code": "PLOC99",
+      "display": "Other - Locomotion / Rheumatology"
+    },
+    {
+      "code": "PLP",
+      "display": "Prolonged Pregnancy"
+    },
+    {
+      "code": "PLPR",
+      "display": "Placenta Previa"
+    },
+    {
+      "code": "PLU",
+      "display": "Ulcer Posterior Leg"
+    },
+    {
+      "code": "PLYM",
+      "display": "Primary Lymphoedema"
+    },
+    {
+      "code": "PMA",
+      "display": "Pain Lwr Rt Mandibular Area"
+    },
+    {
+      "code": "PMEN",
+      "display": "Premature Menopause"
+    },
+    {
+      "code": "PMIS01",
+      "display": "Allergies / Food Intolerance"
+    },
+    {
+      "code": "PMIS02",
+      "display": "Chronic / Post Viral Fatigue"
+    },
+    {
+      "code": "PMIS03",
+      "display": "Failure to Thrive"
+    },
+    {
+      "code": "PMIS04",
+      "display": "Feeding Difficulties"
+    },
+    {
+      "code": "PMIS05",
+      "display": "Immune Defect / Recurrent Infections"
+    },
+    {
+      "code": "PMIS06",
+      "display": "Non Accidental Injury / Child Abuse"
+    },
+    {
+      "code": "PMIS07",
+      "display": "Obesity / Weight Gain"
+    },
+    {
+      "code": "PMIS08",
+      "display": "Irritable Infant/Feeding Difficulties"
+    },
+    {
+      "code": "PMIS09",
+      "display": "NAI/Abuse"
+    },
+    {
+      "code": "PMIS99",
+      "display": "Other"
+    },
+    {
+      "code": "PMN",
+      "display": "Perimenopausal Menorrhagia"
+    },
+    {
+      "code": "PN",
+      "display": "Neck Pain"
+    },
+    {
+      "code": "PNC",
+      "display": "Pancreatitis"
+    },
+    {
+      "code": "PNE",
+      "display": "Pneumonia"
+    },
+    {
+      "code": "PNEU01",
+      "display": "Cerebral Palsy / Hypertonia"
+    },
+    {
+      "code": "PNEU02",
+      "display": "Epilepsy"
+    },
+    {
+      "code": "PNEU03",
+      "display": "Eyes / Squint / Blind"
+    },
+    {
+      "code": "PNEU04",
+      "display": "Febrile Convulsions"
+    },
+    {
+      "code": "PNEU05",
+      "display": "Headaches / Migraine"
+    },
+    {
+      "code": "PNEU06",
+      "display": "Hydrocephalus / PVL / Cysts etc"
+    },
+    {
+      "code": "PNEU07",
+      "display": "Hypotonia / Clumsy / Dyspraxia"
+    },
+    {
+      "code": "PNEU08",
+      "display": "Meningitis Followup"
+    },
+    {
+      "code": "PNEU09",
+      "display": "Microcephaly"
+    },
+    {
+      "code": "PNEU10",
+      "display": "Shull Shape / Plagio / Brachycephaly"
+    },
+    {
+      "code": "PNEU11",
+      "display": "Tics / Tourettes"
+    },
+    {
+      "code": "PNEU12",
+      "display": "Head Injury"
+    },
+    {
+      "code": "PNEU99",
+      "display": "Other Neurological"
+    },
+    {
+      "code": "PNEUMONIA",
+      "display": "Pneumonia"
+    },
+    {
+      "code": "PNEUMTHRX",
+      "display": "Pneumothorax"
+    },
+    {
+      "code": "PNNF01",
+      "display": "Prematurity"
+    },
+    {
+      "code": "PNNF99",
+      "display": "Other Neonatal follow-up"
+    },
+    {
+      "code": "PO",
+      "display": "Pulmonary Oedema"
+    },
+    {
+      "code": "POH",
+      "display": "Portal Hytension"
+    },
+    {
+      "code": "POL",
+      "display": "Polytrichia"
+    },
+    {
+      "code": "POLY",
+      "display": "Polycythemia Vera"
+    },
+    {
+      "code": "POM",
+      "display": "Polymyalgia"
+    },
+    {
+      "code": "POOR",
+      "display": "Poor Dentition"
+    },
+    {
+      "code": "POPP",
+      "display": "Progesterone Only Pill"
+    },
+    {
+      "code": "POPW",
+      "display": "Open Wound"
+    },
+    {
+      "code": "POS",
+      "display": "Poor Spirometry"
+    },
+    {
+      "code": "POST",
+      "display": "Postherpetic Neuralgia"
+    },
+    {
+      "code": "POV",
+      "display": "Polyp Of Vulva"
+    },
+    {
+      "code": "PPCYST",
+      "display": "Pancreatic Pseudocyst"
+    },
+    {
+      "code": "PRC",
+      "display": "Prostate Cancer"
+    },
+    {
+      "code": "PRD",
+      "display": "Post Retinal Detachment"
+    },
+    {
+      "code": "PRE",
+      "display": "Prematurity"
+    },
+    {
+      "code": "PREE",
+      "display": "Preeclampsia"
+    },
+    {
+      "code": "PREG",
+      "display": "Pregnancy Counselling"
+    },
+    {
+      "code": "PREN01",
+      "display": "Enuresis"
+    },
+    {
+      "code": "PREN02",
+      "display": "Hydronephrosis / Congenital Anomalies"
+    },
+    {
+      "code": "PREN03",
+      "display": "Nephrotic Syndrome / Glomerulonephritis"
+    },
+    {
+      "code": "PREN04",
+      "display": "UTI"
+    },
+    {
+      "code": "PREN05",
+      "display": "Vesicoureteric Reflux"
+    },
+    {
+      "code": "PREN99",
+      "display": "Other - Renal"
+    },
+    {
+      "code": "PREPOSTCI",
+      "display": "Pre/Post Cardiac Intervention"
+    },
+    {
+      "code": "PRES01",
+      "display": "AlTE/Apnoea"
+    },
+    {
+      "code": "PRES02",
+      "display": "Asthma"
+    },
+    {
+      "code": "PRES03",
+      "display": "BPD/CLD"
+    },
+    {
+      "code": "PRES04",
+      "display": "Cystic Fibrosis"
+    },
+    {
+      "code": "PRES05",
+      "display": "Strider / Laryngo / Tracheomalacia"
+    },
+    {
+      "code": "PRES06",
+      "display": "Lower Respiratory Infection"
+    },
+    {
+      "code": "PRES07",
+      "display": "Otitis Media / URTI"
+    },
+    {
+      "code": "PRES08",
+      "display": "OSA / Sleep Disordered Breathing"
+    },
+    {
+      "code": "PRES09",
+      "display": "Rhinitis - Allergic"
+    },
+    {
+      "code": "PRES10",
+      "display": "TB / TB Contact"
+    },
+    {
+      "code": "PRES11",
+      "display": "Bronchiectasis"
+    },
+    {
+      "code": "PRES99",
+      "display": "Other Respiratory"
+    },
+    {
+      "code": "PRF",
+      "display": "Pain in right ankle & joints right foot"
+    },
+    {
+      "code": "PRK",
+      "display": "Pain in right knee"
+    },
+    {
+      "code": "PRM",
+      "display": "Plasmacytoma Right Maxillary Sinus"
+    },
+    {
+      "code": "PRO",
+      "display": "Prostate"
+    },
+    {
+      "code": "PROC",
+      "display": "Proctitis"
+    },
+    {
+      "code": "PRS",
+      "display": "Pressure Sores"
+    },
+    {
+      "code": "PRS1",
+      "display": "Pressure Injury - Stage 1"
+    },
+    {
+      "code": "PRS2",
+      "display": "Pressure Injury - Stage 2"
+    },
+    {
+      "code": "PRS3",
+      "display": "Pressure Injury - Stage 3"
+    },
+    {
+      "code": "PRS4",
+      "display": "Pressure Injury - Stage 4"
+    },
+    {
+      "code": "PRSUS",
+      "display": "Pressure Injury  Unstageable"
+    },
+    {
+      "code": "PRU",
+      "display": "Pruritis"
+    },
+    {
+      "code": "PS0",
+      "display": "Acquired III Nerve Palsy - Complete"
+    },
+    {
+      "code": "PS00",
+      "display": "Acquired Bilateral CN III"
+    },
+    {
+      "code": "PS1",
+      "display": "Acquired III Nerve Palsy - Superior Div"
+    },
+    {
+      "code": "PS10",
+      "display": "Total External Ophthalmoplegia"
+    },
+    {
+      "code": "PS11",
+      "display": "Internuclear Ophthalmoplegia"
+    },
+    {
+      "code": "PS12",
+      "display": "Supra Nuclear Palsy"
+    },
+    {
+      "code": "PS13",
+      "display": "Other Paralytic Strabismus"
+    },
+    {
+      "code": "PS14",
+      "display": "Acq III Nerve Palsy - with Pupil Sparing"
+    },
+    {
+      "code": "PS15",
+      "display": "Acq III Nerve Palsy with Aberrant Regene"
+    },
+    {
+      "code": "PS16",
+      "display": "Congenital VI"
+    },
+    {
+      "code": "PS17",
+      "display": "Double Elevator Palsy"
+    },
+    {
+      "code": "PS18",
+      "display": "Cyclic Oculomotor Palsy"
+    },
+    {
+      "code": "PS19",
+      "display": "Mobius Syndrome"
+    },
+    {
+      "code": "PS2",
+      "display": "Acquired III Nerve Palsy - Inferior Div"
+    },
+    {
+      "code": "PS20",
+      "display": "Congenital III"
+    },
+    {
+      "code": "PS21",
+      "display": "Congenital IV"
+    },
+    {
+      "code": "PS3",
+      "display": "Acquired IV Nerve Palsy"
+    },
+    {
+      "code": "PS4",
+      "display": "Acquired VI Nerve Palsy"
+    },
+    {
+      "code": "PS5",
+      "display": "Acquired Mixed nerve palsies"
+    },
+    {
+      "code": "PS6",
+      "display": "Acquired Medial Rectus Palsy"
+    },
+    {
+      "code": "PS7",
+      "display": "Acquired Superior Rectus Palsy"
+    },
+    {
+      "code": "PS8",
+      "display": "Acquired Inferior Rectus Palsy"
+    },
+    {
+      "code": "PS9",
+      "display": "Acquired Inferior Oblique Palsy"
+    },
+    {
+      "code": "PSC",
+      "display": "Pinna Squamous Cell Carcinoma"
+    },
+    {
+      "code": "PSI",
+      "display": "Pilonidal Sinus"
+    },
+    {
+      "code": "PSKI01",
+      "display": "Boils / Impetigo / Infections"
+    },
+    {
+      "code": "PSKI02",
+      "display": "Eczema"
+    },
+    {
+      "code": "PSKI03",
+      "display": "Naevi / Haemangioma / Vascular Malformat"
+    },
+    {
+      "code": "PSKI99",
+      "display": "Other - Skin"
+    },
+    {
+      "code": "PSO",
+      "display": "Psorisis"
+    },
+    {
+      "code": "PST",
+      "display": "Preauricular Skin Tag"
+    },
+    {
+      "code": "PSUR01",
+      "display": "Paediatric Surgery"
+    },
+    {
+      "code": "PSY",
+      "display": "Psychogenic Pain"
+    },
+    {
+      "code": "PSYD",
+      "display": "Psychotic Disorder"
+    },
+    {
+      "code": "PT",
+      "display": "Toe Pain"
+    },
+    {
+      "code": "PTIS",
+      "display": "Pancreatitis"
+    },
+    {
+      "code": "PTL",
+      "display": "Posterior tibial tendinitis, left leg"
+    },
+    {
+      "code": "PTM",
+      "display": "Prostate Metstatic"
+    },
+    {
+      "code": "PTR",
+      "display": "Posterior tibial tendinitis, right leg"
+    },
+    {
+      "code": "PUJ",
+      "display": "Puj Obstruction"
+    },
+    {
+      "code": "PUL",
+      "display": "Pressure Ulcer"
+    },
+    {
+      "code": "PULMONVAS",
+      "display": "Pulmonary Vascular Disorder"
+    },
+    {
+      "code": "PULRHB",
+      "display": "Pulmonary Rehab"
+    },
+    {
+      "code": "PUO",
+      "display": "Pyrexia"
+    },
+    {
+      "code": "PUT",
+      "display": "Pump Therapy"
+    },
+    {
+      "code": "PVD",
+      "display": "Peripheral Vascular Disease"
+    },
+    {
+      "code": "PYE",
+      "display": "Pyelonephritis"
+    },
+    {
+      "code": "PYG",
+      "display": "Pyoderma Gangrenosum"
+    },
+    {
+      "code": "Q5310",
+      "display": "Undescended testicle, unilateral, unspec"
+    },
+    {
+      "code": "Q549",
+      "display": "Hypospadias, unspecified"
+    },
+    {
+      "code": "QCP",
+      "display": "Quadriplegic Cerebral Palsy"
+    },
+    {
+      "code": "QUA",
+      "display": "Quadriplegia"
+    },
+    {
+      "code": "R002",
+      "display": "Palpitations"
+    },
+    {
+      "code": "R068",
+      "display": "Other and unspecified abnormalities of b"
+    },
+    {
+      "code": "R074",
+      "display": "Chest pain, unspecified"
+    },
+    {
+      "code": "R104",
+      "display": "Other and unspecified abdominal pain"
+    },
+    {
+      "code": "R180",
+      "display": "Ascites"
+    },
+    {
+      "code": "R194",
+      "display": "Change in bowel habit"
+    },
+    {
+      "code": "R310",
+      "display": "Unspecified haematuria"
+    },
+    {
+      "code": "R330",
+      "display": "Retention of urine"
+    },
+    {
+      "code": "R418",
+      "display": "Other and unspecified symptoms and signs"
+    },
+    {
+      "code": "R420",
+      "display": "Dizziness and giddiness"
+    },
+    {
+      "code": "R529",
+      "display": "Pain, unspecified"
+    },
+    {
+      "code": "R530",
+      "display": "Malaise and fatigue"
+    },
+    {
+      "code": "R540",
+      "display": "Senility"
+    },
+    {
+      "code": "R550",
+      "display": "Syncope and collapse"
+    },
+    {
+      "code": "R568",
+      "display": "Other and unspecified convulsions"
+    },
+    {
+      "code": "R609",
+      "display": "Oedema, unspecified"
+    },
+    {
+      "code": "R634",
+      "display": "Abnormal weight loss"
+    },
+    {
+      "code": "R635",
+      "display": "Abnormal weight gain"
+    },
+    {
+      "code": "R730",
+      "display": "Elevated blood glucose level"
+    },
+    {
+      "code": "RA0",
+      "display": "Refractive Error"
+    },
+    {
+      "code": "RA01",
+      "display": "Hypermetropia"
+    },
+    {
+      "code": "RA02",
+      "display": "Myopia"
+    },
+    {
+      "code": "RA03",
+      "display": "Hypermetropic Astigmatism"
+    },
+    {
+      "code": "RA04",
+      "display": "Myopic Astigmatism"
+    },
+    {
+      "code": "RA05",
+      "display": "Mixed Astigmatism"
+    },
+    {
+      "code": "RA06",
+      "display": "Hypermetropic Anisometropia"
+    },
+    {
+      "code": "RA07",
+      "display": "Myopic Anisometropia"
+    },
+    {
+      "code": "RA08",
+      "display": "Astigmatic Anisometropia"
+    },
+    {
+      "code": "RA09",
+      "display": "Presbyopia"
+    },
+    {
+      "code": "RA10",
+      "display": "Accommodative Spasm"
+    },
+    {
+      "code": "RAD",
+      "display": "Raynaud's Disease"
+    },
+    {
+      "code": "RAF",
+      "display": "Rheumatoid arthritis, ankle/foot"
+    },
+    {
+      "code": "RAP",
+      "display": "Raynauds Phenomenon"
+    },
+    {
+      "code": "RAS",
+      "display": "Renal Artery Stenosis"
+    },
+    {
+      "code": "RC",
+      "display": "Rectal prolapse"
+    },
+    {
+      "code": "RCAN",
+      "display": "Rectal Cancer"
+    },
+    {
+      "code": "RCC",
+      "display": "Renal Cell Cancer"
+    },
+    {
+      "code": "RCCAN",
+      "display": "Renal Cell Cancer"
+    },
+    {
+      "code": "RE3",
+      "display": "Other Retinal Disorders"
+    },
+    {
+      "code": "RE4",
+      "display": "Diabetic Retinopathy"
+    },
+    {
+      "code": "REC",
+      "display": "Renal Complications"
+    },
+    {
+      "code": "REF",
+      "display": "Reflux"
+    },
+    {
+      "code": "REN",
+      "display": "Renal stones"
+    },
+    {
+      "code": "RES",
+      "display": "Restorations"
+    },
+    {
+      "code": "RESPFAIL",
+      "display": "Respiratory Failure"
+    },
+    {
+      "code": "RESU",
+      "display": "Results"
+    },
+    {
+      "code": "RET",
+      "display": "Retinopathy Screening"
+    },
+    {
+      "code": "RETC",
+      "display": "Rectal Carcinoma"
+    },
+    {
+      "code": "RFI",
+      "display": "Renal failure or impairment"
+    },
+    {
+      "code": "RGO",
+      "display": "Reflux Gastro-oesophageal"
+    },
+    {
+      "code": "RH",
+      "display": "Rheumatic Fever"
+    },
+    {
+      "code": "RHA",
+      "display": "Rheumatoid Arthritis"
+    },
+    {
+      "code": "RHC",
+      "display": "Referred to other HCP"
+    },
+    {
+      "code": "RHE",
+      "display": "Rhematoid Arthritis"
+    },
+    {
+      "code": "RHF",
+      "display": "Rheumatic Fever"
+    },
+    {
+      "code": "RHI",
+      "display": "Rhinitis"
+    },
+    {
+      "code": "RI",
+      "display": "Renal Issues"
+    },
+    {
+      "code": "RIL",
+      "display": "Raised Iron Levels"
+    },
+    {
+      "code": "RIN",
+      "display": "Ringworm"
+    },
+    {
+      "code": "RIUD",
+      "display": "Retained IUCD in Pregnancy"
+    },
+    {
+      "code": "ROC",
+      "display": "Root Canal"
+    },
+    {
+      "code": "RR",
+      "display": "Retained Root"
+    },
+    {
+      "code": "RRE",
+      "display": "Recurring Red Eye"
+    },
+    {
+      "code": "RRF",
+      "display": "Rising Renal Function"
+    },
+    {
+      "code": "RUB",
+      "display": "Rubella"
+    },
+    {
+      "code": "RUP",
+      "display": "Rupture"
+    },
+    {
+      "code": "RUTI",
+      "display": "Recurrent Uti"
+    },
+    {
+      "code": "RVU",
+      "display": "Recurrence Venous Ulcers"
+    },
+    {
+      "code": "SA",
+      "display": "Staphylococcal aureus"
+    },
+    {
+      "code": "SAL",
+      "display": "Stiffness of ankle left"
+    },
+    {
+      "code": "SAR",
+      "display": "Sarcoidosis"
+    },
+    {
+      "code": "SARC",
+      "display": "Sarcoma"
+    },
+    {
+      "code": "SARCOIDOS",
+      "display": "Sarcoidosis"
+    },
+    {
+      "code": "SASS",
+      "display": "Surgical Assessment"
+    },
+    {
+      "code": "SB",
+      "display": "Spina Bifida"
+    },
+    {
+      "code": "SBW",
+      "display": "Small Bladder Volume"
+    },
+    {
+      "code": "SC",
+      "display": "Social Circumstances"
+    },
+    {
+      "code": "SCA",
+      "display": "Scale"
+    },
+    {
+      "code": "SCAB",
+      "display": "Scabies"
+    },
+    {
+      "code": "SCAN",
+      "display": "Stomach Cancer"
+    },
+    {
+      "code": "SCC",
+      "display": "Scale & Clean"
+    },
+    {
+      "code": "SCCSIT",
+      "display": "Squamous cell ca in-situ"
+    },
+    {
+      "code": "SCG",
+      "display": "Squamous Cell Cancer Gum"
+    },
+    {
+      "code": "SCH",
+      "display": "Schizophrenia"
+    },
+    {
+      "code": "SCI",
+      "display": "Severe Combined Immunodeficiency"
+    },
+    {
+      "code": "SCK",
+      "display": "Sickle Cell Disease"
+    },
+    {
+      "code": "SCL",
+      "display": "Scleroderma"
+    },
+    {
+      "code": "SCM",
+      "display": "Squamous Cell Cancer Mouth"
+    },
+    {
+      "code": "SCROM",
+      "display": "Scrotal Mass"
+    },
+    {
+      "code": "SCROS",
+      "display": "Scrotum Swelling"
+    },
+    {
+      "code": "SD",
+      "display": "Seborrheic dermatitis"
+    },
+    {
+      "code": "SDC",
+      "display": "Severe Carries"
+    },
+    {
+      "code": "SDI",
+      "display": "Segmental&somatic dysfn of ilium/sacroi"
+    },
+    {
+      "code": "SDL",
+      "display": "Segmental & somatic dysfunction lumbar"
+    },
+    {
+      "code": "SDR",
+      "display": "Scar Revision"
+    },
+    {
+      "code": "SDT",
+      "display": "Segmental & somatic dysfunction thoracic"
+    },
+    {
+      "code": "SECYST",
+      "display": "Sebaceous cyst"
+    },
+    {
+      "code": "SED",
+      "display": "Sensory Disabillity"
+    },
+    {
+      "code": "SEMI",
+      "display": "Seminoma"
+    },
+    {
+      "code": "SEP",
+      "display": "Septoplasty"
+    },
+    {
+      "code": "SEPT",
+      "display": "Septorhinoplasty"
+    },
+    {
+      "code": "SFD",
+      "display": "Suspected Fetal Demise"
+    },
+    {
+      "code": "SHA",
+      "display": "Self Harming"
+    },
+    {
+      "code": "SHIN",
+      "display": "Shingles"
+    },
+    {
+      "code": "SHL",
+      "display": "Sensorineural hearing loss"
+    },
+    {
+      "code": "SHO",
+      "display": "Shoulder Pain"
+    },
+    {
+      "code": "SHRK",
+      "display": "Shrunken Kidney"
+    },
+    {
+      "code": "SI",
+      "display": "Stress Incontinence"
+    },
+    {
+      "code": "SIN",
+      "display": "Sinusitis"
+    },
+    {
+      "code": "SJS",
+      "display": "Sjogrens Syndrome"
+    },
+    {
+      "code": "SKGR",
+      "display": "Skin Graft"
+    },
+    {
+      "code": "SKI",
+      "display": "Skin Cancer"
+    },
+    {
+      "code": "SKM",
+      "display": "Skin Metastatic"
+    },
+    {
+      "code": "SL",
+      "display": "Skin Lesion"
+    },
+    {
+      "code": "SLA",
+      "display": "Sprain - unspecified ligament left ankle"
+    },
+    {
+      "code": "SLF",
+      "display": "Stiffness of left foot, NEC"
+    },
+    {
+      "code": "SLR",
+      "display": "Sprain - unspec ligament of right ankle"
+    },
+    {
+      "code": "SM",
+      "display": "Sarcoma Metastatic"
+    },
+    {
+      "code": "SMA",
+      "display": "Spinal Muscle Atrophy"
+    },
+    {
+      "code": "SML",
+      "display": "Strain-unspec muscles&tendons lwr L leg"
+    },
+    {
+      "code": "SMR",
+      "display": "Strain-unspec muscles&tendons lwr R leg"
+    },
+    {
+      "code": "SMT",
+      "display": "Submerged tooth"
+    },
+    {
+      "code": "SN",
+      "display": "Snoring"
+    },
+    {
+      "code": "SO",
+      "display": "Sepsis Other"
+    },
+    {
+      "code": "SOB",
+      "display": "SOB"
+    },
+    {
+      "code": "SOC",
+      "display": "Stricture/Stenosis Of Cervix"
+    },
+    {
+      "code": "SOU",
+      "display": "Straining On Urination"
+    },
+    {
+      "code": "SPB",
+      "display": "Spina Bifida"
+    },
+    {
+      "code": "SPD",
+      "display": "Spastic Diplegia"
+    },
+    {
+      "code": "SPI",
+      "display": "Spinal Injury"
+    },
+    {
+      "code": "SPL",
+      "display": "Soft Palate Lesion"
+    },
+    {
+      "code": "SPR",
+      "display": "Sprain"
+    },
+    {
+      "code": "SPRA",
+      "display": "Sero-Positive Rheumatoid Arthritis"
+    },
+    {
+      "code": "SQU",
+      "display": "Squint"
+    },
+    {
+      "code": "SRF",
+      "display": "Stiffness of right foot, NEC"
+    },
+    {
+      "code": "SSC",
+      "display": "Supraglottis Sqaumous Cell Carcinoma"
+    },
+    {
+      "code": "SSD",
+      "display": "Short Stature Disorder"
+    },
+    {
+      "code": "SSL",
+      "display": "Skin Sire of Lesions"
+    },
+    {
+      "code": "SSLF",
+      "display": "Stress fracture, left foot"
+    },
+    {
+      "code": "SSRF",
+      "display": "Stress fracture, right foot"
+    },
+    {
+      "code": "SSS",
+      "display": "Segmental & somatic dysfn sacrum or sacr"
+    },
+    {
+      "code": "ST",
+      "display": "Sore Tongue"
+    },
+    {
+      "code": "STE",
+      "display": "Stress Test Evaluations"
+    },
+    {
+      "code": "STEAR",
+      "display": "Skin Tear"
+    },
+    {
+      "code": "STEMI",
+      "display": "STEMI"
+    },
+    {
+      "code": "STI",
+      "display": "Sexually Transmitted Infections"
+    },
+    {
+      "code": "STR",
+      "display": "Strabismus"
+    },
+    {
+      "code": "STROKE",
+      "display": "Stroke"
+    },
+    {
+      "code": "STT",
+      "display": "Soft Tissue Tumour"
+    },
+    {
+      "code": "SU",
+      "display": "Sepsis Urinary"
+    },
+    {
+      "code": "SUC",
+      "display": "Suboptimal Control"
+    },
+    {
+      "code": "SUDT",
+      "display": "Suicidal Tendencies"
+    },
+    {
+      "code": "SVT",
+      "display": "SVT Elevations"
+    },
+    {
+      "code": "SW",
+      "display": "Scalp Wound"
+    },
+    {
+      "code": "SWM",
+      "display": "Symptoms W Artificial Menopause"
+    },
+    {
+      "code": "SWS",
+      "display": "Sturge-Weber Syndrome"
+    },
+    {
+      "code": "SYP",
+      "display": "Syphillis"
+    },
+    {
+      "code": "SYS",
+      "display": "Systemic Lupus"
+    },
+    {
+      "code": "T01",
+      "display": "T1DM - Support with management"
+    },
+    {
+      "code": "T02",
+      "display": "T1DM, Complex History"
+    },
+    {
+      "code": "T03",
+      "display": "T2DM"
+    },
+    {
+      "code": "T04",
+      "display": "T2DM on Insulin / Declining Renal Functi"
+    },
+    {
+      "code": "T05",
+      "display": "T2DM review on insulin"
+    },
+    {
+      "code": "T06",
+      "display": "T2DM, Diabetes Education"
+    },
+    {
+      "code": "T07",
+      "display": "T2DM/ Recent Hypo"
+    },
+    {
+      "code": "T1420",
+      "display": "Fracture of unspecified body region,clsd"
+    },
+    {
+      "code": "T1421",
+      "display": "Fracture of unspecified body region,open"
+    },
+    {
+      "code": "T1D",
+      "display": "Diabetes T1DM"
+    },
+    {
+      "code": "T2D",
+      "display": "NIDDM"
+    },
+    {
+      "code": "T784",
+      "display": "Allergy, unspecified"
+    },
+    {
+      "code": "TA",
+      "display": "Talipes"
+    },
+    {
+      "code": "TALI",
+      "display": "Talipes"
+    },
+    {
+      "code": "TB",
+      "display": "TB"
+    },
+    {
+      "code": "TBI",
+      "display": "Traumatic Brain Injury"
+    },
+    {
+      "code": "TC",
+      "display": "Tongue Cancer"
+    },
+    {
+      "code": "TCA",
+      "display": "Tongue Cancer"
+    },
+    {
+      "code": "TCEL",
+      "display": "T-Cell Lymphoma / Non Hodgkins"
+    },
+    {
+      "code": "TCM",
+      "display": "Trichomonas"
+    },
+    {
+      "code": "TE",
+      "display": "Tennis Elbow"
+    },
+    {
+      "code": "TEA",
+      "display": "Tear"
+    },
+    {
+      "code": "TERA",
+      "display": "Teratoma"
+    },
+    {
+      "code": "TES",
+      "display": "Testicular Cancer"
+    },
+    {
+      "code": "TESTI",
+      "display": "Testes Inguinal"
+    },
+    {
+      "code": "TESTM",
+      "display": "Testes Maldescent"
+    },
+    {
+      "code": "TESTP",
+      "display": "Testes Poor Descent"
+    },
+    {
+      "code": "TESTU",
+      "display": "Testes Undescended"
+    },
+    {
+      "code": "TETH",
+      "display": "Tethered Cord"
+    },
+    {
+      "code": "TF",
+      "display": "Trigger Finger"
+    },
+    {
+      "code": "THA",
+      "display": "Thalassemia"
+    },
+    {
+      "code": "THY",
+      "display": "Thyroidectomy"
+    },
+    {
+      "code": "THYP",
+      "display": "Papillary Thyroid Carcinoma"
+    },
+    {
+      "code": "TINN",
+      "display": "Tinnitus"
+    },
+    {
+      "code": "TIPH",
+      "display": "Tight Phimosis"
+    },
+    {
+      "code": "TIRE",
+      "display": "Tiredness"
+    },
+    {
+      "code": "TJP",
+      "display": "Temporomandibular Joint Pain/Dysfunction"
+    },
+    {
+      "code": "TM",
+      "display": "Thyroid Metastatic"
+    },
+    {
+      "code": "TMJ",
+      "display": "TMJ Dysfunction"
+    },
+    {
+      "code": "TOA",
+      "display": "Tonsillitis & Adenoiditis"
+    },
+    {
+      "code": "TOL",
+      "display": "Tongue Lesion"
+    },
+    {
+      "code": "TON",
+      "display": "Tonsillitis"
+    },
+    {
+      "code": "TOO",
+      "display": "Torsion Of Ovary"
+    },
+    {
+      "code": "TOP",
+      "display": "Termination Of Pregnancy"
+    },
+    {
+      "code": "TOT",
+      "display": "Tongue Tie"
+    },
+    {
+      "code": "TPL",
+      "display": "Threatened Preterm Labour"
+    },
+    {
+      "code": "TRA",
+      "display": "Tracheostomy"
+    },
+    {
+      "code": "TRCHDIS",
+      "display": "Tracheal Disorder"
+    },
+    {
+      "code": "TRH",
+      "display": "Trauma Rehabilitation"
+    },
+    {
+      "code": "TRI",
+      "display": "Trisomy 18"
+    },
+    {
+      "code": "TSCAN",
+      "display": "Testicular Cancer"
+    },
+    {
+      "code": "TSCC",
+      "display": "Tongue Squamous Cell Carcinoma"
+    },
+    {
+      "code": "TSL",
+      "display": "Tarsal tunnel syndrome, left lower limb"
+    },
+    {
+      "code": "TSR",
+      "display": "Turners, Silver-Russel"
+    },
+    {
+      "code": "TSY",
+      "display": "Turner Syndrome"
+    },
+    {
+      "code": "TT",
+      "display": "Tongue Tie"
+    },
+    {
+      "code": "TU0",
+      "display": "Retinoblastoma"
+    },
+    {
+      "code": "TU1",
+      "display": "Optic Nerve Glioma"
+    },
+    {
+      "code": "TU2",
+      "display": "Other Tumours"
+    },
+    {
+      "code": "TUM",
+      "display": "Tumour"
+    },
+    {
+      "code": "UAL",
+      "display": "Ulcer Anterior Leg"
+    },
+    {
+      "code": "UAP",
+      "display": "Upper Abdo Pain"
+    },
+    {
+      "code": "UAT",
+      "display": "Arterial Ulcer"
+    },
+    {
+      "code": "UBL",
+      "display": "Ulcer Bilateral Legs"
+    },
+    {
+      "code": "UCY",
+      "display": "Unsatisfactory Cytology"
+    },
+    {
+      "code": "UDC",
+      "display": "Upper Dental Clearance"
+    },
+    {
+      "code": "UDF",
+      "display": "Ulcer Diabetic Foot"
+    },
+    {
+      "code": "UF",
+      "display": "Urinary Frequency"
+    },
+    {
+      "code": "UH",
+      "display": "Urinary Hesitancy"
+    },
+    {
+      "code": "UI",
+      "display": "Urge Incontinence"
+    },
+    {
+      "code": "UIN",
+      "display": "Uterine Myoma"
+    },
+    {
+      "code": "ULC",
+      "display": "Ulcers"
+    },
+    {
+      "code": "ULL",
+      "display": "Ulcer Left Leg"
+    },
+    {
+      "code": "ULM",
+      "display": "Ulcer Lateral Malleolus"
+    },
+    {
+      "code": "UNSTABLE",
+      "display": "Unstable Angina"
+    },
+    {
+      "code": "UOC",
+      "display": "Unspecified Ovarian Cysts"
+    },
+    {
+      "code": "UOF",
+      "display": "Unsteadiness on feet"
+    },
+    {
+      "code": "UPL",
+      "display": "Ulcer Posterior Leg"
+    },
+    {
+      "code": "URI",
+      "display": "Urinary Incontinence"
+    },
+    {
+      "code": "URL",
+      "display": "Ulcer Right Leg"
+    },
+    {
+      "code": "URR",
+      "display": "Urinary Retention"
+    },
+    {
+      "code": "URT",
+      "display": "Urticaria"
+    },
+    {
+      "code": "URU",
+      "display": "Urinary Urgency"
+    },
+    {
+      "code": "USTRC",
+      "display": "Urethral Stricture"
+    },
+    {
+      "code": "UTI",
+      "display": "Urinary Tract Infection"
+    },
+    {
+      "code": "UVU",
+      "display": "Uvula"
+    },
+    {
+      "code": "UVUL",
+      "display": "Uvulectomy"
+    },
+    {
+      "code": "UWL",
+      "display": "Unintentional weight loss >10% in 6 mths"
+    },
+    {
+      "code": "UWL2",
+      "display": "Unintentional weight loss <10% in 6 mths"
+    },
+    {
+      "code": "V1",
+      "display": "Vin 1"
+    },
+    {
+      "code": "V2",
+      "display": "Vin 2"
+    },
+    {
+      "code": "VAG",
+      "display": "Vaginismus"
+    },
+    {
+      "code": "VAS",
+      "display": "Vasculitis"
+    },
+    {
+      "code": "VASC",
+      "display": "Vasculitis"
+    },
+    {
+      "code": "VASD",
+      "display": "Vascular Dementia"
+    },
+    {
+      "code": "VCP",
+      "display": "Vocal Cord Paralysis"
+    },
+    {
+      "code": "VD",
+      "display": "Vaginal Dysplasia"
+    },
+    {
+      "code": "VD0",
+      "display": "Amblyopia (non-specific)"
+    },
+    {
+      "code": "VD01",
+      "display": "Anisometropic Amblyopia"
+    },
+    {
+      "code": "VD02",
+      "display": "Ammetropic Amblyopia"
+    },
+    {
+      "code": "VD03",
+      "display": "Strabismic Amblyopia"
+    },
+    {
+      "code": "VD04",
+      "display": "Stimulus Deprivation Amblyopia"
+    },
+    {
+      "code": "VD1",
+      "display": "Monocular Diplopia"
+    },
+    {
+      "code": "VD10",
+      "display": "Neurofibromatosis Type 1"
+    },
+    {
+      "code": "VD11",
+      "display": "Retinal Dystrophy"
+    },
+    {
+      "code": "VD12",
+      "display": "Retinal Detachment"
+    },
+    {
+      "code": "VD13",
+      "display": "ROP"
+    },
+    {
+      "code": "VD2",
+      "display": "Other Visual Disturbances"
+    },
+    {
+      "code": "VD3",
+      "display": "Reduced VA with no reason"
+    },
+    {
+      "code": "VD4",
+      "display": "Colour Vision Defect"
+    },
+    {
+      "code": "VD5",
+      "display": "Delayed Visual Maturation"
+    },
+    {
+      "code": "VD6",
+      "display": "Sig. Visual Impairment (Blind Found Reg)"
+    },
+    {
+      "code": "VD7",
+      "display": "Functional Vision Loss"
+    },
+    {
+      "code": "VD8",
+      "display": "Cerebral Visual Impairment"
+    },
+    {
+      "code": "VD9",
+      "display": "Incomplete Assessment"
+    },
+    {
+      "code": "VEF",
+      "display": "Ventricular Failure"
+    },
+    {
+      "code": "VENE",
+      "display": "Venesection"
+    },
+    {
+      "code": "VER",
+      "display": "Vertigo"
+    },
+    {
+      "code": "VES",
+      "display": "Vestublitis"
+    },
+    {
+      "code": "VF",
+      "display": "Ventricular Failure"
+    },
+    {
+      "code": "VF0",
+      "display": "Glaucoma"
+    },
+    {
+      "code": "VF1",
+      "display": "Neurological Visual Field Defect"
+    },
+    {
+      "code": "VF2",
+      "display": "Other visual field disorder"
+    },
+    {
+      "code": "VFD",
+      "display": "Visual Field Defect"
+    },
+    {
+      "code": "VIN",
+      "display": "Venous Insuff,Ulceration,Poor Wound Heal"
+    },
+    {
+      "code": "VIR",
+      "display": "Vision Review"
+    },
+    {
+      "code": "VISI",
+      "display": "Vision"
+    },
+    {
+      "code": "VNM",
+      "display": "Vulvar Neoplasm -Malignant"
+    },
+    {
+      "code": "VNN",
+      "display": "Vulvar Neoplasm -Non-Malignant"
+    },
+    {
+      "code": "VOL",
+      "display": "Volvulus"
+    },
+    {
+      "code": "VP1",
+      "display": "Homonymous Hemianopia"
+    },
+    {
+      "code": "VP2",
+      "display": "Chiasmal Compression"
+    },
+    {
+      "code": "VP3",
+      "display": "Constriction"
+    },
+    {
+      "code": "VP4",
+      "display": "Central Scotoma"
+    },
+    {
+      "code": "VP5",
+      "display": "Other Visual Pathway Defects"
+    },
+    {
+      "code": "VPRE",
+      "display": "Vulnerable Pregnancy"
+    },
+    {
+      "code": "VV",
+      "display": "Varicose Veins"
+    },
+    {
+      "code": "WDE",
+      "display": "Wound Dehiscence"
+    },
+    {
+      "code": "WEI",
+      "display": "Weight Management"
+    },
+    {
+      "code": "WEIG",
+      "display": "Weight"
+    },
+    {
+      "code": "WI",
+      "display": "Weight Issues"
+    },
+    {
+      "code": "WOM",
+      "display": "Womens Health"
+    },
+    {
+      "code": "WPU",
+      "display": "Wounds/Pressure Ulcer"
+    },
+    {
+      "code": "WRE",
+      "display": "Wound Review"
+    },
+    {
+      "code": "WRI",
+      "display": "Wrist Pain"
+    },
+    {
+      "code": "WSIN",
+      "display": "Wound Sinus"
+    },
+    {
+      "code": "WTS",
+      "display": "Warts"
+    },
+    {
+      "code": "Z133",
+      "display": "Special screening examination for mental"
+    },
+    {
+      "code": "Z369",
+      "display": "Antenatal screening, unspecified"
+    },
+    {
+      "code": "Z609",
+      "display": "Problem related to social environment, u"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 1590
+}

@@ -2,17 +2,17 @@
   "resourceType": "ConceptMap",
   "id": "nzcr-language-map",
   "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-language",
-  "description": "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes",
   "name": "NZCRLanguageConceptMap",
   "title": "NZ Central Region Language Concept Map",
+  "description": "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes",
   "experimental": false,
   "purpose": "Translates raw language codes used in WebPAS to more recognised `ietf:bcp:47` language codes",
   "status": "active",
-  "sourceUri": "https://standards.digital.health.nz/ns/central-region/raw-language",
+  "sourceUri": "https://standards.digital.health.nz/ns/central-region/pas-language",
   "targetUri": "urn:ietf:bcp:47",
   "group": [
     {
-      "source": "https://standards.digital.health.nz/ns/central-region/raw-language",
+      "source": "https://standards.digital.health.nz/ns/central-region/pas-language",
       "target": "urn:ietf:bcp:47",
       "element": [
         {
@@ -961,7 +961,7 @@
       ]
     },
     {
-      "source": "https://standards.digital.health.nz/ns/central-region/raw-language",
+      "source": "https://standards.digital.health.nz/ns/central-region/pas-language",
       "target": "https://standards.digital.health.nz/ns/central-region/proposed-language",
       "element": [
         {
@@ -979,7 +979,7 @@
       ]
     },
     {
-      "source": "https://standards.digital.health.nz/ns/central-region/raw-language",
+      "source": "https://standards.digital.health.nz/ns/central-region/pas-language",
       "target": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
       "element": [
         {

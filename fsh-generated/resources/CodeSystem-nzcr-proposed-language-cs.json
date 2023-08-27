@@ -1,11 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionProposedLanguageCodeSystem",
   "id": "nzcr-proposed-language-cs",
   "title": "NZ Central Region - Proposed Language Code System",
   "description": "3 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **PROPOSED** for ietf:bcp:47",
+  "version": "0.4.0",
   "url": "https://standards.digital.health.nz/ns/central-region/proposed-language",
   "concept": [
     {

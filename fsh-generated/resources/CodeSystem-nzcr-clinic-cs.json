@@ -1,0 +1,336 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionClinicCodeSystem",
+  "id": "nzcr-clinic-cs",
+  "title": "NZ Central Region - Clinic Code System",
+  "description": "Clinic codes; ex. WebPAS in NZ Central Region.",
+  "version": "0.4.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/clinic-code",
+  "concept": [
+    {
+      "code": "MAE",
+      "display": "MC Anaesthetics"
+    },
+    {
+      "code": "MAG",
+      "display": "MC Aged ATR Elderhealth"
+    },
+    {
+      "code": "MAN",
+      "display": "MC Anaesthetic Pre-assessment"
+    },
+    {
+      "code": "MAT",
+      "display": "MC ATR Outpatients"
+    },
+    {
+      "code": "MAU",
+      "display": "MC Audiology"
+    },
+    {
+      "code": "MCA",
+      "display": "MC Cardiology"
+    },
+    {
+      "code": "MCC",
+      "display": "MC Child Health Community"
+    },
+    {
+      "code": "MCD",
+      "display": "MC Child Development"
+    },
+    {
+      "code": "MCF",
+      "display": "MC Heart Failure Programme"
+    },
+    {
+      "code": "MCH",
+      "display": "MC Community Health Services"
+    },
+    {
+      "code": "MCL",
+      "display": "MC Clinical Trials"
+    },
+    {
+      "code": "MCM",
+      "display": "MC Cancer Community Nurses"
+    },
+    {
+      "code": "MCO",
+      "display": "MC Colposcopy"
+    },
+    {
+      "code": "MCP",
+      "display": "MC Community Paediatrics"
+    },
+    {
+      "code": "MCR",
+      "display": "MC Cardiac Rehab Nurses"
+    },
+    {
+      "code": "MCT",
+      "display": "MC Cardiothoracic"
+    },
+    {
+      "code": "MCW",
+      "display": "MC CNS Wound Care"
+    },
+    {
+      "code": "MDE",
+      "display": "MC Dental"
+    },
+    {
+      "code": "MDI",
+      "display": "MC Diabetes"
+    },
+    {
+      "code": "MDR",
+      "display": "MC Dermatology"
+    },
+    {
+      "code": "MDT",
+      "display": "MC Dietetics"
+    },
+    {
+      "code": "MED",
+      "display": "MC Endocrinology"
+    },
+    {
+      "code": "MEN",
+      "display": "MC Ear Nose Throat"
+    },
+    {
+      "code": "MEY",
+      "display": "MC Ophthalmology"
+    },
+    {
+      "code": "MFO",
+      "display": "MC Orthotics"
+    },
+    {
+      "code": "MFR",
+      "display": "MC Fracture Clinic"
+    },
+    {
+      "code": "MGA",
+      "display": "MC Gastroenterology"
+    },
+    {
+      "code": "MGE",
+      "display": "MC General Surgery"
+    },
+    {
+      "code": "MGI",
+      "display": "MC GI Endoscopy"
+    },
+    {
+      "code": "MGS",
+      "display": "MC Gastro Surgery"
+    },
+    {
+      "code": "MGY",
+      "display": "MC Gynaecology"
+    },
+    {
+      "code": "MHA",
+      "display": "MC Haematology"
+    },
+    {
+      "code": "MIF",
+      "display": "MC Infectious Diseases"
+    },
+    {
+      "code": "MIN",
+      "display": "MC General Medicine"
+    },
+    {
+      "code": "MMA",
+      "display": "MC MHAS"
+    },
+    {
+      "code": "MMD",
+      "display": "MC Multi Disciplinary Meetings"
+    },
+    {
+      "code": "MMX",
+      "display": "MC Maxillo Facial Surgery"
+    },
+    {
+      "code": "MNA",
+      "display": "MC Neurophysiology"
+    },
+    {
+      "code": "MNB",
+      "display": "MC Newborn Hearing Scr"
+    },
+    {
+      "code": "MNE",
+      "display": "MC Neurology"
+    },
+    {
+      "code": "MNN",
+      "display": "MC Neonatal"
+    },
+    {
+      "code": "MNS",
+      "display": "MC Neurosurgery"
+    },
+    {
+      "code": "MO1",
+      "display": "MC Mat Mother No Cmty LMC"
+    },
+    {
+      "code": "MO2",
+      "display": "MC Mat Mother Cmty LMC"
+    },
+    {
+      "code": "MOB",
+      "display": "MC Obstetrics"
+    },
+    {
+      "code": "MOM",
+      "display": "MC Oral & Maxillo-Facial"
+    },
+    {
+      "code": "MON",
+      "display": "MC Medical Oncology"
+    },
+    {
+      "code": "MOR",
+      "display": "MC Orthopaedics"
+    },
+    {
+      "code": "MOT",
+      "display": "MC Occupational Therapy"
+    },
+    {
+      "code": "MPA",
+      "display": "MC Pain Management"
+    },
+    {
+      "code": "MPC",
+      "display": "MC Paed Community Nursing"
+    },
+    {
+      "code": "MPD",
+      "display": "MC Paed Diabetology"
+    },
+    {
+      "code": "MPE",
+      "display": "MC Paed Endocrinology"
+    },
+    {
+      "code": "MPG",
+      "display": "MC MH Psychogeriatric"
+    },
+    {
+      "code": "MPH",
+      "display": "MC Public Health Unit"
+    },
+    {
+      "code": "MPL",
+      "display": "MC Plastic Surg (exc Burns)"
+    },
+    {
+      "code": "MPM",
+      "display": "MC Paediatric Medicine"
+    },
+    {
+      "code": "MPN",
+      "display": "MC Paediatric Neurology"
+    },
+    {
+      "code": "MPO",
+      "display": "MC Paed Spec Oncology"
+    },
+    {
+      "code": "MPR",
+      "display": "MC Podiatry"
+    },
+    {
+      "code": "MPS",
+      "display": "MC Paed Spec Surgery"
+    },
+    {
+      "code": "MPT",
+      "display": "MC Physiotherapy"
+    },
+    {
+      "code": "MPV",
+      "display": "MC Palliative Medical"
+    },
+    {
+      "code": "MRA",
+      "display": "MC Radiology"
+    },
+    {
+      "code": "MRD",
+      "display": "MC Radiation Oncology"
+    },
+    {
+      "code": "MRE",
+      "display": "MC Renal Medicine"
+    },
+    {
+      "code": "MRH",
+      "display": "MC Rheumatology"
+    },
+    {
+      "code": "MRI",
+      "display": "MC Renal Dialysis"
+    },
+    {
+      "code": "MRL",
+      "display": "MC Respiratory Sleep"
+    },
+    {
+      "code": "MRO",
+      "display": "MC Under 65 ATR"
+    },
+    {
+      "code": "MRP",
+      "display": "MC Respiratory Lab"
+    },
+    {
+      "code": "MRS",
+      "display": "MC Respiratory"
+    },
+    {
+      "code": "MRT",
+      "display": "MC Radiation Treatment"
+    },
+    {
+      "code": "MSH",
+      "display": "MC Sexual Health"
+    },
+    {
+      "code": "MSL",
+      "display": "MC Speech Language"
+    },
+    {
+      "code": "MSW",
+      "display": "MC Social Work"
+    },
+    {
+      "code": "MUR",
+      "display": "MC Urology"
+    },
+    {
+      "code": "MWA",
+      "display": "MC Womens Health Assessment"
+    },
+    {
+      "code": "MWH",
+      "display": "MC Whanau Care Service"
+    },
+    {
+      "code": "MWU",
+      "display": "MC Womens Ultrasound"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 80
+}

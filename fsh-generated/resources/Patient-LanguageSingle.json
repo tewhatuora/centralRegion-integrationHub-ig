@@ -52,13 +52,13 @@
   ],
   "address": [
     {
-      "type": "postal",
       "extension": [
         {
           "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
           "valueString": "Kelvin Grove"
         }
       ],
+      "type": "postal",
       "line": [
         "100 Cambridge Street"
       ],
@@ -116,6 +116,11 @@
     {
       "language": {
         "coding": [
+          {
+            "code": "ENG",
+            "system": "https://standards.digital.health.nz/ns/central-region/pas-language",
+            "display": "English"
+          },
           {
             "code": "en",
             "system": "urn:ietf:bcp:47",

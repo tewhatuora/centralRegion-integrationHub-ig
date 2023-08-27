@@ -1,0 +1,724 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionDepartmentCodeSystem",
+  "id": "nzcr-department-cs",
+  "title": "NZ Central Region - Department Code System",
+  "description": "Department codes; ex. WebPAS in NZ Central Region.",
+  "version": "0.4.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/-department-code",
+  "concept": [
+    {
+      "code": "MAE",
+      "display": "MC Anaesthetics"
+    },
+    {
+      "code": "MAG",
+      "display": "MC Aged ATR ElderHth"
+    },
+    {
+      "code": "MAU",
+      "display": "MC Audiology"
+    },
+    {
+      "code": "MCA",
+      "display": "MC Cardiology"
+    },
+    {
+      "code": "MCD",
+      "display": "MC Child Development"
+    },
+    {
+      "code": "MCH",
+      "display": "MC Comm Health Serv"
+    },
+    {
+      "code": "MCP",
+      "display": "MC Comm Paediatrics"
+    },
+    {
+      "code": "MCT",
+      "display": "MC Cardiothoracic"
+    },
+    {
+      "code": "MDE",
+      "display": "MC Dental"
+    },
+    {
+      "code": "MDI",
+      "display": "MC Diabetes"
+    },
+    {
+      "code": "MDR",
+      "display": "MC Dermatology"
+    },
+    {
+      "code": "MDT",
+      "display": "MC Dietetics"
+    },
+    {
+      "code": "MED",
+      "display": "MC Endocrinology"
+    },
+    {
+      "code": "MEN",
+      "display": "MC Ear Nose Throat"
+    },
+    {
+      "code": "MEY",
+      "display": "MC Ophthalmology"
+    },
+    {
+      "code": "MGA",
+      "display": "MC Gastroenterology"
+    },
+    {
+      "code": "MGE",
+      "display": "MC General Surgery"
+    },
+    {
+      "code": "MGI",
+      "display": "MC GI Endoscopy"
+    },
+    {
+      "code": "MGY",
+      "display": "MC Gynaecology"
+    },
+    {
+      "code": "MHA",
+      "display": "MC Haematology"
+    },
+    {
+      "code": "MIF",
+      "display": "MC Infectious Diseas"
+    },
+    {
+      "code": "MIN",
+      "display": "MC General Medicine"
+    },
+    {
+      "code": "MMA",
+      "display": "MC MHAS"
+    },
+    {
+      "code": "MNB",
+      "display": "MC Newborn Hear Scr"
+    },
+    {
+      "code": "MNE",
+      "display": "MC Neurology"
+    },
+    {
+      "code": "MNS",
+      "display": "MC Neurosurgery"
+    },
+    {
+      "code": "MOB",
+      "display": "MC Obstetrics"
+    },
+    {
+      "code": "MOM",
+      "display": "MC Oral MaxFacial"
+    },
+    {
+      "code": "MON",
+      "display": "MC Medical Oncology"
+    },
+    {
+      "code": "MOR",
+      "display": "MC Orthopaedics"
+    },
+    {
+      "code": "MOT",
+      "display": "MC Occupat Therapy"
+    },
+    {
+      "code": "MPA",
+      "display": "MC Pain Management"
+    },
+    {
+      "code": "MPC",
+      "display": "MC Paed Comm Nursing"
+    },
+    {
+      "code": "MPH",
+      "display": "MC PublicHealth Unit"
+    },
+    {
+      "code": "MPL",
+      "display": "MC PlasSurg ex Burns"
+    },
+    {
+      "code": "MPM",
+      "display": "MC Paediatric Med"
+    },
+    {
+      "code": "MPR",
+      "display": "MC Podiatry"
+    },
+    {
+      "code": "MPT",
+      "display": "MC Physiotherapy"
+    },
+    {
+      "code": "MPV",
+      "display": "MC Palliative Med"
+    },
+    {
+      "code": "MRA",
+      "display": "MC Radiology"
+    },
+    {
+      "code": "MRD",
+      "display": "MC RadiationOncology"
+    },
+    {
+      "code": "MRE",
+      "display": "MC Renal Medicine"
+    },
+    {
+      "code": "MRH",
+      "display": "MC Rheumatology"
+    },
+    {
+      "code": "MRL",
+      "display": "MC Respiratory Sleep"
+    },
+    {
+      "code": "MRO",
+      "display": "MC Under 65 ATR"
+    },
+    {
+      "code": "MRP",
+      "display": "MC Respiratory Lab"
+    },
+    {
+      "code": "MRS",
+      "display": "MC Respiratory"
+    },
+    {
+      "code": "MSH",
+      "display": "MC Sexual Health"
+    },
+    {
+      "code": "MSL",
+      "display": "MC Speech Language"
+    },
+    {
+      "code": "MSW",
+      "display": "MC Social Work"
+    },
+    {
+      "code": "MUR",
+      "display": "MC Urology"
+    },
+    {
+      "code": "MWH",
+      "display": "MC Whanau Care Serv"
+    },
+    {
+      "code": "WAE",
+      "display": "WH Anaesthetics"
+    },
+    {
+      "code": "WAN",
+      "display": "WH Anaes Pre-asess"
+    },
+    {
+      "code": "WAT",
+      "display": "WH ATR Outpatients"
+    },
+    {
+      "code": "WAU",
+      "display": "WH Audiology"
+    },
+    {
+      "code": "WBS",
+      "display": "WH Bowel Screening"
+    },
+    {
+      "code": "WCA",
+      "display": "WH Cardiology"
+    },
+    {
+      "code": "WCD",
+      "display": "WH Child Development"
+    },
+    {
+      "code": "WCH",
+      "display": "WH Commun Health Ser"
+    },
+    {
+      "code": "WCM",
+      "display": "WH Cancer Commun Nur"
+    },
+    {
+      "code": "WCO",
+      "display": "WH Colposcopy"
+    },
+    {
+      "code": "WCP",
+      "display": "WH Comm Paediatrics"
+    },
+    {
+      "code": "WCR",
+      "display": "WH Card Rehab Nurses"
+    },
+    {
+      "code": "WCW",
+      "display": "WH CNS Wound Care"
+    },
+    {
+      "code": "WDE",
+      "display": "WH Dental"
+    },
+    {
+      "code": "WDI",
+      "display": "WH Diabetes"
+    },
+    {
+      "code": "WDR",
+      "display": "WH Dermatology"
+    },
+    {
+      "code": "WDT",
+      "display": "WH Dietetics"
+    },
+    {
+      "code": "WEN",
+      "display": "WH Ear Nose Throat"
+    },
+    {
+      "code": "WEY",
+      "display": "WH Ophthalmology"
+    },
+    {
+      "code": "WFO",
+      "display": "WH Orthotics"
+    },
+    {
+      "code": "WGE",
+      "display": "WH General Surgery"
+    },
+    {
+      "code": "WGI",
+      "display": "WH GI Endoscopy"
+    },
+    {
+      "code": "WGS",
+      "display": "WH Gastro Surgery"
+    },
+    {
+      "code": "WGT",
+      "display": "WH Genetics"
+    },
+    {
+      "code": "WGY",
+      "display": "WH Gynaecology"
+    },
+    {
+      "code": "WHA",
+      "display": "WH Haematology"
+    },
+    {
+      "code": "WIF",
+      "display": "WH InfectiousDisease"
+    },
+    {
+      "code": "WIN",
+      "display": "WH General Medicine"
+    },
+    {
+      "code": "WMA",
+      "display": "WH MHAS"
+    },
+    {
+      "code": "WMD",
+      "display": "WH Multidisciplinary"
+    },
+    {
+      "code": "WNB",
+      "display": "WH Newborn Hear Scr"
+    },
+    {
+      "code": "WNS",
+      "display": "WH Neurosurgery"
+    },
+    {
+      "code": "WO1",
+      "display": "WH Mat mthrNoCmtyLMC"
+    },
+    {
+      "code": "WO2",
+      "display": "WH Mat mthr cmty LMC"
+    },
+    {
+      "code": "WOB",
+      "display": "WH Obstetrics"
+    },
+    {
+      "code": "WOM",
+      "display": "WH Oral Max-facial"
+    },
+    {
+      "code": "WON",
+      "display": "WH Medical Oncology"
+    },
+    {
+      "code": "WOR",
+      "display": "WH Orthopaedics"
+    },
+    {
+      "code": "WOT",
+      "display": "WH Occupat Therapy"
+    },
+    {
+      "code": "WPA",
+      "display": "WH Pain Management"
+    },
+    {
+      "code": "WPC",
+      "display": "WH Paed Comm Nursing"
+    },
+    {
+      "code": "WPD",
+      "display": "WH Paed Diabetology"
+    },
+    {
+      "code": "WPH",
+      "display": "WH PublicHealth Unit"
+    },
+    {
+      "code": "WPL",
+      "display": "WH Plastic Surgery"
+    },
+    {
+      "code": "WPM",
+      "display": "WH Paediatric Med"
+    },
+    {
+      "code": "WPO",
+      "display": "WH Spec Paed Oncol"
+    },
+    {
+      "code": "WPS",
+      "display": "WH Paed Spec Surgery"
+    },
+    {
+      "code": "WPT",
+      "display": "WH Physiotherapy"
+    },
+    {
+      "code": "WRA",
+      "display": "WH Radiology"
+    },
+    {
+      "code": "WRD",
+      "display": "WH RadiationOncology"
+    },
+    {
+      "code": "WRE",
+      "display": "WH Under 65 AT&R Com"
+    },
+    {
+      "code": "WRH",
+      "display": "WH Rheumatology"
+    },
+    {
+      "code": "WRN",
+      "display": "WH Renal Medicine"
+    },
+    {
+      "code": "WRO",
+      "display": "WH Under 65 AT&R Out"
+    },
+    {
+      "code": "WRS",
+      "display": "WH Respiratory"
+    },
+    {
+      "code": "WSH",
+      "display": "WH Sexual Health"
+    },
+    {
+      "code": "WSL",
+      "display": "WH Speech-language"
+    },
+    {
+      "code": "WSW",
+      "display": "WH Social Work"
+    },
+    {
+      "code": "WUR",
+      "display": "WH Urology"
+    },
+    {
+      "code": "WWH",
+      "display": "WH Whanau Care Serv"
+    },
+    {
+      "code": "YAC",
+      "display": "WR NASC"
+    },
+    {
+      "code": "YAE",
+      "display": "WR Anaesthetics"
+    },
+    {
+      "code": "YAG",
+      "display": "WR Aged ATR/ElderHth"
+    },
+    {
+      "code": "YAN",
+      "display": "WR AnaestheticPreAss"
+    },
+    {
+      "code": "YAT",
+      "display": "WR ATR Outpatients"
+    },
+    {
+      "code": "YAU",
+      "display": "WR Audiology"
+    },
+    {
+      "code": "YBS",
+      "display": "WR Bowel screening"
+    },
+    {
+      "code": "YCA",
+      "display": "WR Cardiology"
+    },
+    {
+      "code": "YCC",
+      "display": "WR Occupat Health"
+    },
+    {
+      "code": "YCD",
+      "display": "WR Child Development"
+    },
+    {
+      "code": "YCH",
+      "display": "WR Community Health"
+    },
+    {
+      "code": "YCM",
+      "display": "WR CancerCmty Nurses"
+    },
+    {
+      "code": "YCO",
+      "display": "WR Colposcopy"
+    },
+    {
+      "code": "YCP",
+      "display": "WR Cmty Paediatrics"
+    },
+    {
+      "code": "YCR",
+      "display": "WR Cardiac Rehab Nrs"
+    },
+    {
+      "code": "YCW",
+      "display": "WR CNS Wound Care"
+    },
+    {
+      "code": "YDE",
+      "display": "WR Dental"
+    },
+    {
+      "code": "YDI",
+      "display": "WR Diabetes"
+    },
+    {
+      "code": "YDT",
+      "display": "WR Dietetics"
+    },
+    {
+      "code": "YED",
+      "display": "WR Endocrinology"
+    },
+    {
+      "code": "YEN",
+      "display": "WR Ear Nose & Throat"
+    },
+    {
+      "code": "YEY",
+      "display": "WR Ophthalmology"
+    },
+    {
+      "code": "YFO",
+      "display": "WR Orthotics"
+    },
+    {
+      "code": "YFR",
+      "display": "WR Fracture Clinic"
+    },
+    {
+      "code": "YGA",
+      "display": "WR Gastroenterology"
+    },
+    {
+      "code": "YGE",
+      "display": "WR General Surgery"
+    },
+    {
+      "code": "YGS",
+      "display": "WR Gastro Surgery"
+    },
+    {
+      "code": "YGY",
+      "display": "WR Gynaecology"
+    },
+    {
+      "code": "YHA",
+      "display": "WR Haematology"
+    },
+    {
+      "code": "YIN",
+      "display": "WR General Medicine"
+    },
+    {
+      "code": "YMA",
+      "display": "WR MHAS"
+    },
+    {
+      "code": "YMD",
+      "display": "WR Multi-discip meet"
+    },
+    {
+      "code": "YN1",
+      "display": "WR Neonate SCBU L1"
+    },
+    {
+      "code": "YNB",
+      "display": "WR Newborn Hear. Scr"
+    },
+    {
+      "code": "YNE",
+      "display": "WR Neurology"
+    },
+    {
+      "code": "YO1",
+      "display": "WR Mat MthrNoCmtyLMC"
+    },
+    {
+      "code": "YO2",
+      "display": "WR Mat Mthr Cmty LMC"
+    },
+    {
+      "code": "YOB",
+      "display": "WR Obstetrics"
+    },
+    {
+      "code": "YON",
+      "display": "WR Medical Oncology"
+    },
+    {
+      "code": "YOR",
+      "display": "WR Orthopaedics"
+    },
+    {
+      "code": "YOT",
+      "display": "WR Occupat Therapy"
+    },
+    {
+      "code": "YPA",
+      "display": "WR Pain Management"
+    },
+    {
+      "code": "YPC",
+      "display": "WR Paed Cmty Nursing"
+    },
+    {
+      "code": "YPD",
+      "display": "WR Paed Diabetology"
+    },
+    {
+      "code": "YPG",
+      "display": "WR Psychogeriatric"
+    },
+    {
+      "code": "YPH",
+      "display": "WR Public HealthUnit"
+    },
+    {
+      "code": "YPL",
+      "display": "WR PlasSurg ex Burns"
+    },
+    {
+      "code": "YPM",
+      "display": "WR Paediatric Med"
+    },
+    {
+      "code": "YPR",
+      "display": "WR Podiatry"
+    },
+    {
+      "code": "YPS",
+      "display": "WR Paed Spec Surgery"
+    },
+    {
+      "code": "YPT",
+      "display": "WR Physiotherapy"
+    },
+    {
+      "code": "YPV",
+      "display": "WR Palliative Med"
+    },
+    {
+      "code": "YRA",
+      "display": "WR Radiology"
+    },
+    {
+      "code": "YRD",
+      "display": "WR RadiationOncology"
+    },
+    {
+      "code": "YRE",
+      "display": "WR Renal  Medicine"
+    },
+    {
+      "code": "YRN",
+      "display": "WR Under 65 ATR Cmty"
+    },
+    {
+      "code": "YRO",
+      "display": "WR Under 65 AT&R OP"
+    },
+    {
+      "code": "YRS",
+      "display": "WR Respiratory"
+    },
+    {
+      "code": "YSL",
+      "display": "WR Speech-language"
+    },
+    {
+      "code": "YSW",
+      "display": "WR Social Work"
+    },
+    {
+      "code": "YUR",
+      "display": "WR Urology"
+    },
+    {
+      "code": "WSK",
+      "display": "WH Skin lesions"
+    },
+    {
+      "code": "MNN",
+      "display": "MC Neonatal Unit"
+    },
+    {
+      "code": "WDN",
+      "display": "WH District Nursing"
+    },
+    {
+      "code": "MCC",
+      "display": "MC Child Health Comm"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 177
+}

@@ -98,13 +98,13 @@
       "text": "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND"
     },
     {
-      "type": "postal",
       "extension": [
         {
           "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
           "valueString": "Kelvin Grove"
         }
       ],
+      "type": "postal",
       "line": [
         "100 Cambridge Street"
       ],
@@ -121,8 +121,8 @@
         "type": {
           "coding": [
             {
-              "code": "LR",
               "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "LR",
               "display": "Local Registry ID"
             }
           ]

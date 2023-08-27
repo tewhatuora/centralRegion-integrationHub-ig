@@ -26,7 +26,7 @@ Description: "Complex extension recording extra data about referrals"
   * ^definition = "Which site does patient prefer to attend the referral?"
   * ^short = "Which hospital / clinic does patient prefer to attend?"
   * value[x] only Coding
-  * value[x] from nzcr-hospital-code-vs (required)   // TODO - track down appropriate referral site codes
+  * value[x] from nzcr-referral-site-vs (required)   // TODO - track down appropriate referral site codes
   * valueCoding 1..1 MS
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
@@ -38,7 +38,7 @@ Description: "Complex extension recording extra data about referrals"
   * ^definition = "Which organisation hospital department made the referral? Not to be confused with requestor which is the actual clinician."
   * ^short = "Which organisation / hospital department made the referral?"
   * value[x] only Coding
-  * value[x] from $NZCentralRegionReferralSourceCS (required)    // TODO - track down appropriate referral source
+  * value[x] from $NZCentralRegionReferralSourceVS (required)
   * valueCoding 1..1 MS
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
@@ -47,7 +47,7 @@ Description: "Complex extension recording extra data about referrals"
   * id 0..0
 
 * extension[referringPractice]
-  * ^definition = "When source is General Practice, which medical practice made the referral?"
+  * ^definition = "When source is General Practice, which medical practice (or other DHB) made the referral?"
   * ^short = "Which medical practice made the referral?"
   * value[x] only Reference
   * valueReference
@@ -58,7 +58,7 @@ Description: "Complex extension recording extra data about referrals"
     * identifier 0..1 MS
       * use 1..1 MS
       * system 1..1 MS
-      * system = $NZCentralRegionPASPractitioner
+      * system = $NZCentralRegionPASPractice
       * type 1..1 MS
         * coding MS  
           * code 1..1 MS
@@ -86,7 +86,7 @@ Description: "Complex extension recording extra data about referrals"
   * ^definition = "Which funding source is paying for the referral?"
   * ^short = "Which funding source is paying for the referral?"
   * value[x] only Coding
-  * value[x] from $NZCentralRegionHealthPurchaserCS (required)    // TODO - track down appropriate health purchaser codes
+  * value[x] from $NZCentralRegionHealthPurchaserVS (required)    // TODO - track down appropriate health purchaser codes
   * valueCoding 1..1
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
@@ -98,7 +98,7 @@ Description: "Complex extension recording extra data about referrals"
   * ^definition = "Which clinic run by the Department/Location is the referral for?"
   * ^short = "Which clinic is the referral to?"
   * value[x] only Coding
-  * value[x] from $NZCentralRegionReferralClinicCS (required)    // TODO - track down appropriate clinic type codes
+  * value[x] from $NZCentralRegionClinicVS (required)
   * valueCoding 1..1
     * version 0..0        // not versioned
     * userSelected 0..0   // not used

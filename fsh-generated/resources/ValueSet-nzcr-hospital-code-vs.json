@@ -1,11 +1,12 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionHospitalValueSet",
   "id": "nzcr-hospital-code-vs",
   "title": "NZ Central Region - Hospital Value Set",
   "description": "Hospital identification codes ex. WebPAS in NZ Central Region",
-  "url": "https://standards.digital.health.nz/fhir/central-region/hospital-code",
+  "version": "0.4.0",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-hospital-code",
   "experimental": false,
   "compose": {
     "include": [

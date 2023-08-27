@@ -1,11 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionMentalHealthLegalStatusCodeSystem",
   "id": "nzcr-mental-health-legal-status-cs",
   "title": "NZ Central Region - MentalHealthLegalStatus Code System",
   "description": "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region.",
+  "version": "0.4.0",
   "url": "https://standards.digital.health.nz/ns/central-region/mental-health-legal-status",
   "concept": [
     {

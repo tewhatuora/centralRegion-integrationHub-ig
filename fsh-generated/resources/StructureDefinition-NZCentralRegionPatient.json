@@ -2,8 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionPatient",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient",
+  "version": "0.4.0",
   "name": "NZCentralRegionPatient",
-  "status": "draft",
+  "status": "active",
   "description": "Patient resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -107,29 +108,23 @@
         ]
       },
       {
-        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept",
-        "path": "Patient.extension.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
+        "id": "Patient.extension:ethnicity.valueCodeableConcept",
+        "path": "Patient.extension.valueCodeableConcept"
       },
       {
-        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.extension",
-        "path": "Patient.extension.value[x].extension",
+        "id": "Patient.extension:ethnicity.valueCodeableConcept.extension",
+        "path": "Patient.extension.valueCodeableConcept.extension",
         "max": "0"
       },
       {
-        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding",
-        "path": "Patient.extension.value[x].coding",
+        "id": "Patient.extension:ethnicity.valueCodeableConcept.coding",
+        "path": "Patient.extension.valueCodeableConcept.coding",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding.system",
-        "path": "Patient.extension.value[x].coding.system",
+        "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.valueCodeableConcept.coding.system",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -140,13 +135,13 @@
         ]
       },
       {
-        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding.version",
-        "path": "Patient.extension.value[x].coding.version",
+        "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.valueCodeableConcept.coding.version",
         "max": "0"
       },
       {
-        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding.code",
-        "path": "Patient.extension.value[x].coding.code",
+        "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.valueCodeableConcept.coding.code",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -158,8 +153,8 @@
         ]
       },
       {
-        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding.display",
-        "path": "Patient.extension.value[x].coding.display",
+        "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.valueCodeableConcept.coding.display",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -171,13 +166,13 @@
         ]
       },
       {
-        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding.userSelected",
-        "path": "Patient.extension.value[x].coding.userSelected",
+        "id": "Patient.extension:ethnicity.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.valueCodeableConcept.coding.userSelected",
         "max": "0"
       },
       {
-        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.text",
-        "path": "Patient.extension.value[x].text",
+        "id": "Patient.extension:ethnicity.valueCodeableConcept.text",
+        "path": "Patient.extension.valueCodeableConcept.text",
         "max": "0"
       },
       {
@@ -208,7 +203,6 @@
         "id": "Patient.extension:nzCitizen.extension:status",
         "path": "Patient.extension.extension",
         "sliceName": "status",
-        "short": "Is this person a New Zealand citizen? CodeableConcept: yes / no / unknown",
         "min": 1,
         "mustSupport": true
       },
@@ -228,35 +222,25 @@
         ]
       },
       {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept",
-        "path": "Patient.extension.extension.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept",
+        "path": "Patient.extension.extension.valueCodeableConcept"
       },
       {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept.id",
-        "path": "Patient.extension.extension.value[x].id",
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.id",
+        "path": "Patient.extension.extension.valueCodeableConcept.id",
+        "short": "Is this person a New Zealand citizen? CodeableConcept: yes / no / unknown",
         "max": "0"
       },
       {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept.extension",
-        "path": "Patient.extension.extension.value[x].extension",
-        "max": "0"
-      },
-      {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept.coding",
-        "path": "Patient.extension.extension.value[x].coding",
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept.coding.system",
-        "path": "Patient.extension.extension.value[x].coding.system",
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.system",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -267,13 +251,13 @@
         ]
       },
       {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept.coding.version",
-        "path": "Patient.extension.extension.value[x].coding.version",
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.version",
         "max": "0"
       },
       {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept.coding.code",
-        "path": "Patient.extension.extension.value[x].coding.code",
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.code",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -285,8 +269,8 @@
         ]
       },
       {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept.coding.display",
-        "path": "Patient.extension.extension.value[x].coding.display",
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.display",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -298,13 +282,13 @@
         ]
       },
       {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept.coding.userSelected",
-        "path": "Patient.extension.extension.value[x].coding.userSelected",
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.userSelected",
         "max": "0"
       },
       {
-        "id": "Patient.extension:nzCitizen.extension:status.value[x]:valueCodeableConcept.text",
-        "path": "Patient.extension.extension.value[x].text",
+        "id": "Patient.extension:nzCitizen.extension:status.valueCodeableConcept.text",
+        "path": "Patient.extension.extension.valueCodeableConcept.text",
         "max": "0"
       },
       {
@@ -345,20 +329,26 @@
         ]
       },
       {
-        "id": "Patient.extension:dhb.value[x].extension",
-        "path": "Patient.extension.value[x].extension",
+        "id": "Patient.extension:dhb.valueCodeableConcept",
+        "path": "Patient.extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Patient.extension:dhb.valueCodeableConcept.extension",
+        "path": "Patient.extension.valueCodeableConcept.extension",
         "max": "0"
       },
       {
-        "id": "Patient.extension:dhb.value[x].coding",
-        "path": "Patient.extension.value[x].coding",
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding",
+        "path": "Patient.extension.valueCodeableConcept.coding",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:dhb.value[x].coding.system",
-        "path": "Patient.extension.value[x].coding.system",
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.valueCodeableConcept.coding.system",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -369,13 +359,13 @@
         ]
       },
       {
-        "id": "Patient.extension:dhb.value[x].coding.version",
-        "path": "Patient.extension.value[x].coding.version",
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.valueCodeableConcept.coding.version",
         "max": "0"
       },
       {
-        "id": "Patient.extension:dhb.value[x].coding.code",
-        "path": "Patient.extension.value[x].coding.code",
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.valueCodeableConcept.coding.code",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -387,19 +377,19 @@
         ]
       },
       {
-        "id": "Patient.extension:dhb.value[x].coding.display",
-        "path": "Patient.extension.value[x].coding.display",
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.valueCodeableConcept.coding.display",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:dhb.value[x].coding.userSelected",
-        "path": "Patient.extension.value[x].coding.userSelected",
+        "id": "Patient.extension:dhb.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.valueCodeableConcept.coding.userSelected",
         "max": "0"
       },
       {
-        "id": "Patient.extension:dhb.value[x].text",
-        "path": "Patient.extension.value[x].text",
+        "id": "Patient.extension:dhb.valueCodeableConcept.text",
+        "path": "Patient.extension.valueCodeableConcept.text",
         "max": "0"
       },
       {
@@ -424,30 +414,24 @@
         ]
       },
       {
-        "id": "Patient.extension:domicile-code.value[x]:valueCodeableConcept",
-        "path": "Patient.extension.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
+        "id": "Patient.extension:domicile-code.valueCodeableConcept",
+        "path": "Patient.extension.valueCodeableConcept"
       },
       {
-        "id": "Patient.extension:domicile-code.value[x]:valueCodeableConcept.extension",
-        "path": "Patient.extension.value[x].extension",
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.extension",
+        "path": "Patient.extension.valueCodeableConcept.extension",
         "max": "0"
       },
       {
-        "id": "Patient.extension:domicile-code.value[x]:valueCodeableConcept.coding",
-        "path": "Patient.extension.value[x].coding",
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding",
+        "path": "Patient.extension.valueCodeableConcept.coding",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:domicile-code.value[x]:valueCodeableConcept.coding.system",
-        "path": "Patient.extension.value[x].coding.system",
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.valueCodeableConcept.coding.system",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -458,13 +442,13 @@
         ]
       },
       {
-        "id": "Patient.extension:domicile-code.value[x]:valueCodeableConcept.coding.version",
-        "path": "Patient.extension.value[x].coding.version",
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.valueCodeableConcept.coding.version",
         "max": "0"
       },
       {
-        "id": "Patient.extension:domicile-code.value[x]:valueCodeableConcept.coding.code",
-        "path": "Patient.extension.value[x].coding.code",
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.valueCodeableConcept.coding.code",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -475,19 +459,19 @@
         ]
       },
       {
-        "id": "Patient.extension:domicile-code.value[x]:valueCodeableConcept.coding.display",
-        "path": "Patient.extension.value[x].coding.display",
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.valueCodeableConcept.coding.display",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:domicile-code.value[x]:valueCodeableConcept.coding.userSelected",
-        "path": "Patient.extension.value[x].coding.userSelected",
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.valueCodeableConcept.coding.userSelected",
         "max": "0"
       },
       {
-        "id": "Patient.extension:domicile-code.value[x]:valueCodeableConcept.text",
-        "path": "Patient.extension.value[x].text",
+        "id": "Patient.extension:domicile-code.valueCodeableConcept.text",
+        "path": "Patient.extension.valueCodeableConcept.text",
         "max": "0"
       },
       {
@@ -558,18 +542,17 @@
         ]
       },
       {
-        "id": "Patient.extension:nzResidency.extension:status.value[x].id",
-        "path": "Patient.extension.extension.value[x].id",
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept",
+        "path": "Patient.extension.extension.valueCodeableConcept"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.id",
+        "path": "Patient.extension.extension.valueCodeableConcept.id",
         "max": "0"
       },
       {
-        "id": "Patient.extension:nzResidency.extension:status.value[x].extension",
-        "path": "Patient.extension.extension.value[x].extension",
-        "max": "0"
-      },
-      {
-        "id": "Patient.extension:nzResidency.extension:status.value[x].coding",
-        "path": "Patient.extension.extension.value[x].coding",
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding",
         "short": "Two codings possible 'yes|no' from NZ Base, and more detailed as available from WebPAS",
         "min": 1,
         "mustSupport": true,
@@ -581,8 +564,8 @@
         ]
       },
       {
-        "id": "Patient.extension:nzResidency.extension:status.value[x].coding.system",
-        "path": "Patient.extension.extension.value[x].coding.system",
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.system",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -593,13 +576,13 @@
         ]
       },
       {
-        "id": "Patient.extension:nzResidency.extension:status.value[x].coding.version",
-        "path": "Patient.extension.extension.value[x].coding.version",
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.version",
         "max": "0"
       },
       {
-        "id": "Patient.extension:nzResidency.extension:status.value[x].coding.code",
-        "path": "Patient.extension.extension.value[x].coding.code",
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.code",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -611,8 +594,8 @@
         ]
       },
       {
-        "id": "Patient.extension:nzResidency.extension:status.value[x].coding.display",
-        "path": "Patient.extension.extension.value[x].coding.display",
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.display",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -624,13 +607,13 @@
         ]
       },
       {
-        "id": "Patient.extension:nzResidency.extension:status.value[x].coding.userSelected",
-        "path": "Patient.extension.extension.value[x].coding.userSelected",
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.extension.valueCodeableConcept.coding.userSelected",
         "max": "0"
       },
       {
-        "id": "Patient.extension:nzResidency.extension:status.value[x].text",
-        "path": "Patient.extension.extension.value[x].text",
+        "id": "Patient.extension:nzResidency.extension:status.valueCodeableConcept.text",
+        "path": "Patient.extension.extension.valueCodeableConcept.text",
         "max": "0"
       },
       {
@@ -681,19 +664,20 @@
         ]
       },
       {
-        "id": "Patient.extension:patient-religion.value[x].extension",
-        "path": "Patient.extension.value[x].extension",
-        "max": "0"
+        "id": "Patient.extension:patient-religion.valueCodeableConcept",
+        "path": "Patient.extension.valueCodeableConcept",
+        "min": 1,
+        "max": "1"
       },
       {
-        "id": "Patient.extension:patient-religion.value[x].coding",
-        "path": "Patient.extension.value[x].coding",
+        "id": "Patient.extension:patient-religion.valueCodeableConcept.coding",
+        "path": "Patient.extension.valueCodeableConcept.coding",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:patient-religion.value[x].coding.system",
-        "path": "Patient.extension.value[x].coding.system",
+        "id": "Patient.extension:patient-religion.valueCodeableConcept.coding.system",
+        "path": "Patient.extension.valueCodeableConcept.coding.system",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -704,13 +688,13 @@
         ]
       },
       {
-        "id": "Patient.extension:patient-religion.value[x].coding.version",
-        "path": "Patient.extension.value[x].coding.version",
+        "id": "Patient.extension:patient-religion.valueCodeableConcept.coding.version",
+        "path": "Patient.extension.valueCodeableConcept.coding.version",
         "max": "0"
       },
       {
-        "id": "Patient.extension:patient-religion.value[x].coding.code",
-        "path": "Patient.extension.value[x].coding.code",
+        "id": "Patient.extension:patient-religion.valueCodeableConcept.coding.code",
+        "path": "Patient.extension.valueCodeableConcept.coding.code",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -721,26 +705,33 @@
         ]
       },
       {
-        "id": "Patient.extension:patient-religion.value[x].coding.display",
-        "path": "Patient.extension.value[x].coding.display",
+        "id": "Patient.extension:patient-religion.valueCodeableConcept.coding.display",
+        "path": "Patient.extension.valueCodeableConcept.coding.display",
         "min": 1,
         "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-17.2",
+            "comment": "Appropriate value from code lookup"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:patient-religion.valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.valueCodeableConcept.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:patient-religion.valueCodeableConcept.text",
+        "path": "Patient.extension.valueCodeableConcept.text",
+        "max": "0",
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
             "map": "PID-17.2"
           }
         ]
-      },
-      {
-        "id": "Patient.extension:patient-religion.value[x].coding.userSelected",
-        "path": "Patient.extension.value[x].coding.userSelected",
-        "max": "0"
-      },
-      {
-        "id": "Patient.extension:patient-religion.value[x].text",
-        "path": "Patient.extension.value[x].text",
-        "max": "0"
       },
       {
         "id": "Patient.extension:interpreterRequired",
@@ -759,8 +750,20 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:interpreterRequired.value[x]",
-        "path": "Patient.extension.value[x]",
+        "id": "Patient.extension:interpreterRequired.url",
+        "path": "Patient.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:interpreterRequired.valueBoolean",
+        "path": "Patient.extension.valueBoolean",
+        "min": 1,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -796,8 +799,10 @@
         ]
       },
       {
-        "id": "Patient.extension:hl7v2Message.value[x]",
-        "path": "Patient.extension.value[x]",
+        "id": "Patient.extension:hl7v2Message.valueBase64Binary",
+        "path": "Patient.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -1043,8 +1048,8 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "'official' | 'nickname'",
-            "comment": "if mapping PID-5 then 'official' elif mapping PID-9 then 'nickname'"
+            "map": "'usual' | 'old'",
+            "comment": "if mapping PID-5 then 'usual' elif mapping PID-9 then 'old'"
           }
         ]
       },
@@ -1220,9 +1225,8 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.deceased[x]:deceasedDateTime",
-        "path": "Patient.deceased[x]",
-        "sliceName": "deceasedDateTime",
+        "id": "Patient.deceasedDateTime",
+        "path": "Patient.deceasedDateTime",
         "min": 0,
         "max": "1",
         "type": [
@@ -1239,9 +1243,8 @@
         ]
       },
       {
-        "id": "Patient.deceased[x]:deceasedBoolean",
-        "path": "Patient.deceased[x]",
-        "sliceName": "deceasedBoolean",
+        "id": "Patient.deceasedBoolean",
+        "path": "Patient.deceasedBoolean",
         "min": 0,
         "max": "1",
         "type": [
@@ -1279,8 +1282,20 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.address.extension:suburb.value[x]",
-        "path": "Patient.address.extension.value[x]",
+        "id": "Patient.address.extension:suburb.url",
+        "path": "Patient.address.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'http://hl7.org.nz/fhir/StructureDefinition/suburb'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.address.extension:suburb.valueString",
+        "path": "Patient.address.extension.valueString",
+        "min": 0,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -1304,26 +1319,20 @@
       {
         "id": "Patient.address.use",
         "path": "Patient.address.use",
-        "mustSupport": true,
-        "mapping": [
-          {
-            "identity": "nzcr-patient-from-hl7v2",
-            "map": "'home' | 'work'",
-            "comment": "if PID-11.7 == 'C' then 'home'\r\n\nelif PID 11.7 == 'B' then 'work'"
-          }
-        ]
+        "max": "0",
+        "mustSupport": true
       },
       {
         "id": "Patient.address.type",
         "path": "Patient.address.type",
-        "short": "Fixed value: postal",
+        "short": "PHYSICAL | POSTAL",
         "min": 1,
-        "patternCode": "postal",
         "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "'postal'"
+            "map": "'physical' | 'postal'",
+            "comment": "if PID-11.7 == 'C' then 'physical'\r\nelif PID 11.7 == 'M' then 'postal'"
           }
         ]
       },
@@ -1817,7 +1826,14 @@
         "id": "Patient.communication.language.coding",
         "path": "Patient.communication.language.coding",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "PID-15",
+            "comment": "At least two codings:\r\n * https://standards.digital.health.nz/ns/central-region/pas-language AND \r\n * urn:ietf:bcp:47"
+          }
+        ]
       },
       {
         "id": "Patient.communication.language.coding.id",
@@ -1837,7 +1853,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "urn:ietf:bcp:47",
+            "map": "https://standards.digital.health.nz/ns/central-region/pas-language OR urn:ietf:bcp:47",
             "comment": "ietf:bcp:47 includes all iso-639 language codes;"
           }
         ]
@@ -1856,7 +1872,7 @@
           {
             "identity": "nzcr-patient-from-hl7v2",
             "map": "PID-15.1",
-            "comment": "[Language Concept Map](./ConceptMap-LanguageMap.html) provides mapping from [WebPAS raw code](./CodeSystem-nzcr-raw-language-cs.html)\r\n**Note:** `zOTH` and `zTEO` codes are mapped to special systems"
+            "comment": "[Language Concept Map](./ConceptMap-LanguageMap.html) provides mapping from [WebPAS raw code](./CodeSystem-nzcr-pas-language-cs.html)\r\n**Note:** `zOTH` and `zTEO` codes are mapped to special systems"
           }
         ]
       },
@@ -1886,7 +1902,14 @@
         "id": "Patient.communication.preferred",
         "path": "Patient.communication.preferred",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'true'",
+            "comment": "PID-15 is by definition the patient's preferred language"
+          }
+        ]
       },
       {
         "id": "Patient.generalPractitioner",

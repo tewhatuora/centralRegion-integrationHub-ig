@@ -17,6 +17,8 @@ Alias:   $HL7AllergyCriticalityCS    = http://hl7.org/fhir/allergy-intolerance-c
 Alias:   $HL7AllergyClinicalStatusCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias:   $HL7AllergyVerificationCS   = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
+Alias:   $HL7RequestPriorityCS       = http://hl7.org/fhir/request-priority
+
 // Extension URLs from NZ Base 
 Alias:   $NZBasePatient         = http://hl7.org.nz/fhir/StructureDefinition/NzPatient
 Alias:   $NZBaseOrganisation    = http://hl7.org.nz/fhir/StructureDefinition/NzOrganization
@@ -30,6 +32,8 @@ Alias:   $NZBaseEthnicity       = http://hl7.org.nz/fhir.StructureDefinition/nz-
 // Patient Identifier System URLs
 Alias:   $NZBaseNHI                       = https://standards.digital.health.nz/ns/nhi-id
 Alias:   $NZCentralRegionLocalPatientId   = https://standards.digital.health.nz/ns/central_region/pas-patient-id
+Alias:   $NZCentralRegionPASPractitioner  = https://standards.digital.health.nz/ns/central-region/pas-practitioner-id
+Alias:   $NZCentralRegionPASPractice      = https://standards.digital.health.nz/ns/central-region/pas-practice-id
 
 // Other resource Identifier System URLs
 Alias:   $NZCentralRegionLocalAlertId                = https://standards.digital.health.nz/ns/pas-alert-id                // For Flag and AllergyIntolerance
@@ -48,14 +52,16 @@ Alias:   $NZCentralRegionMentalHealth          = https://standards.digital.healt
 Alias:   $NZCentralRegionReferral              = https://standards.digital.health.nz/ns/central-region/referral
 
 // Local URLs for locally defined CodeSystems
-Alias:   $NZStatsEthnicityLevel2CS              = https://standards.digital.health.nz/ns/ethnic-group-level-2-code
-Alias:   $NZCentralRegionRawLanguageCS          = https://standards.digital.health.nz/ns/central-region/raw-language         // non-IETF codes
-Alias:   $NZCentralRegionProposedLanguageCS     = https://standards.digital.health.nz/ns/central-region/proposed-language    // proposed IETF codes
-Alias:   $NZCentralRegionPASPractitioner        = https://standards.digital.health.nz/ns/central-region/pas-practitioner-id
 Alias:   $NZCentralRegionHospitalCS             = https://standards.digital.health.nz/ns/central-region/hospital-code
+Alias:   $NZCentralRegionDepartmentCS           = https://standards.digital.health.nz/ns/central-region/-department-code
+Alias:   $NZCentralRegionClinicCS               = https://standards.digital.health.nz/ns/central-region/clinic-code
+
+Alias:   $NZStatsEthnicityLevel2CS              = https://standards.digital.health.nz/ns/ethnic-group-level-2-code
+Alias:   $NZCentralRegionRawLanguageCS          = https://standards.digital.health.nz/ns/central-region/pas-language         // non-IETF codes
+Alias:   $NZCentralRegionProposedLanguageCS     = https://standards.digital.health.nz/ns/central-region/proposed-language    // proposed IETF codes
 Alias:   $NZCentralRegionExtraMaritalStatusCS   = https://standards.digital.health.nz/ns/central-region/extra-marital-status
 Alias:   $NZCentralRegionResidencyCS            = https://standards.digital.health.nz/ns/central-region/nz-residency-code
-Alias:   $NZCentralRegionPatientReligionCS      = https://standards.digital.health.nz/ns/central-region/patient-religion
+Alias:   $NZCentralRegionReligionCS             = https://standards.digital.health.nz/ns/central-region/patient-religion
 Alias:   $NZCentralRegionContactRelationshipCS  = https://standards.digital.health.nz/ns/central-region/contact-relationship
 Alias:   $NZCentralRegionAlertCategoryCS        = https://standards.digital.health.nz/ns/central-region/alert-category
 
@@ -80,28 +86,37 @@ Alias:   $NZCentralRegionMentalHealthReviewStatusCS   = https://standards.digita
 Alias:   $NZCentralRegionMentalHealthReviewLocationCS = https://standards.digital.health.nz/ns/central-region/mental-health-review-location
 Alias:   $NZCentralRegionMentalHealthCourtTypeCS      = https://standards.digital.health.nz/ns/central-region/mental-health-court-type
 
+Alias:   $NZCentralRegionReferralPriorityCS        = https://standards.digital.health.nz/ns/central-region/referral-priority
 Alias:   $NZCentralRegionReferralTypeCS            = https://standards.digital.health.nz/ns/central-region/referral-type
-Alias:   $NZCentralRegionReferralCategoryCS        = https://standards.digital.health.nz/ns/central-region/referral-category
 Alias:   $NZCentralRegionReferralReasonCS          = https://standards.digital.health.nz/ns/central-region/referral-reason
-Alias:   $NZCentralRegionReferralDepartmentCS      = https://standards.digital.health.nz/ns/central-region/referral-department   // (Location ??)
-Alias:   $NZCentralRegionReferralClinicCS          = https://standards.digital.health.nz/ns/central-region/referral-clinic       // Department has multiple clinic types
 Alias:   $NZCentralRegionReferralSiteCS            = https://standards.digital.health.nz/ns/central-region/referral-site         // (Location ??)
 Alias:   $NZCentralRegionReferralSourceCS          = https://standards.digital.health.nz/ns/central-region/referral-source
 Alias:   $NZCentralRegionHealthPurchaserCS         = https://standards.digital.health.nz/ns/central-region/health-purchaser
 
 // Local URIs for various ValueSets
+Alias:   $NZCentralRegionHospitalVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-hospital-code
+Alias:   $NZCentralRegionDepartmentVS              = https://standards.digital.health.nz/fhir/central-region/ValueSet-department-code
+Alias:   $NZCentralRegionClinicVS                  = https://standards.digital.health.nz/fhir/central-region/ValueSet-clinic-code
+
 Alias:   $NZCentralRegionEthnicityLevel2VS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2
-Alias:   $NZCentralRegionHospitalVS                = https://standards.digital.health.nz/fhir/central-region/hospital-code
 Alias:   $NZCentralRegionMaritalStatusVS           = https://standards.digital.health.nz/fhir/central-region/ValueSet-marital-status
 Alias:   $NZCentralRegionResidencyVS               = https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency
-Alias:   $NZCentralRegionPatientReligionVS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion
+Alias:   $NZCentralRegionReligionVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion
 Alias:   $NZCentralRegionContactRelationshipVS     = https://standards.digital.health.nz/fhir/central-region/ValueSet-contact-relationship
 Alias:   $NZCentralRegionLanguageVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-language             // subset of IETF codes we use
+
 Alias:   $NZCentralRegionFlagAlertCategoryVS       = https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag
 Alias:   $NZCentralRegionAllergyAlertCategoryVS    = https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-allergy
 Alias:   $NZCentralRegionAllergyAlertCodeVS        = https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-alert-code
 Alias:   $NZCentralRegionAllergyReactionVS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-reaction
 Alias:   $NZCentralRegionFlagAlertCodeVS           = https://standards.digital.health.nz/fhir/central-region/ValueSet-flag-alert-code
+
+Alias:   $NZCentralRegionReferralPriorityVS        = https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-priority
+Alias:   $NZCentralRegionReferralTypeVS            = https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-type
+Alias:   $NZCentralRegionReferralReasonVS          = https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-reason
+Alias:   $NZCentralRegionReferralSiteVS            = https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-site
+Alias:   $NZCentralRegionReferralSourceVS          = https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-source
+Alias:   $NZCentralRegionHealthPurchaserVS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-health-purchaser
 
 Alias:   $NZCentralRegionMentalHealthLegalStatusVS    = https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-legal-status
 Alias:   $NZCentralRegionMentalHealthReviewStatusVS   = https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-review-status
@@ -110,6 +125,8 @@ Alias:   $NZCentralRegionMentalHealthCourtTypeVS      = https://standards.digita
 
 
 // Local URIs for ConceptMaps
-Alias:   $NZCentralRegionLanguageConceptMap = https://standards.digital.health.nz/fhir/central-region/ConceptMap-language
-Alias:   $NZCentralRegionEthnicityConceptMap = https://standards.digital.health.nz/fhir/central-region/ConceptMap-ethnicity
-Alias:   $NZCentralRegionResidencyConceptMap = https://standards.digital.health.nz/fhir/central-region/ConceptMap-nz-residency
+Alias:   $NZCentralRegionLanguageConceptMap             = https://standards.digital.health.nz/fhir/central-region/ConceptMap-language
+Alias:   $NZCentralRegionEthnicityConceptMap            = https://standards.digital.health.nz/fhir/central-region/ConceptMap-ethnicity
+Alias:   $NZCentralRegionReligionConceptMap             = https://standards.digital.health.nz/fhir/central-region/ConceptMap-religion
+Alias:   $NZCentralRegionResidencyConceptMap            = https://standards.digital.health.nz/fhir/central-region/ConceptMap-nz-residency
+Alias:   $NZCentralRegionReferralPriorityConceptMap     = https://standards.digital.health.nz/fhir/central-region/ConceptMap-referral-priority

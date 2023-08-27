@@ -1,11 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionFlagAlertCodeLSCodeSystem",
   "id": "nzcr-flag-alert-code-ls-cs",
   "title": "NZ Central Region - Flag Alert Codes (LS)",
   "description": "LS (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+  "version": "0.4.0",
   "url": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls",
   "experimental": false,
   "caseSensitive": true

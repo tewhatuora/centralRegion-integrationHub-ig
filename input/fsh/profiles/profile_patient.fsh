@@ -43,10 +43,9 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension[nz-geocode] 0..0
   * extension[domicile-code] 0..0
   * extension[suburb] 0..1 MS
-  * use 0..1 MS
+  * use 0..0 MS  //  insufficient data
   * type 1..1 MS
-  * type = #postal
-  * type ^short = "Fixed value: postal"
+  * type ^short = "PHYSICAL | POSTAL"
   * text 1..1 MS
   * line 0..1 MS
   * city 0..1 MS
@@ -76,7 +75,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
   * valueCodeableConcept.text 0..0                // ode, Value and Display are all derived from Code value
   * valueCodeableConcept.extension 0..0
-  * extension 0..0
   * id 0..0
   
 * extension[dhb] 0..1 MS
@@ -88,7 +86,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
   * valueCodeableConcept.text 0..0                // ode, Value and Display are all derived from Code value
   * valueCodeableConcept.extension 0..0
-  * extension 0..0
   * id 0..0
 
 
@@ -108,7 +105,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-22.1
   * valueCodeableConcept.extension 0..0
   * ^short = "Two codings required: Level-2 codes as provided by WebPAS and Level-4 codes as preferred by NZ Base"
-  * extension 0..0
   * id 0..0
 
 * extension[nzCitizen] 1..1 MS
@@ -120,10 +116,8 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
     * valueCodeableConcept.coding.userSelected 0..0 // data not available
     * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-26.1
-    * valueCodeableConcept.extension 0..0
     * valueCodeableConcept.id 0..0
-    * ^short = "Is this person a New Zealand citizen? CodeableConcept: yes / no / unknown"
-    * extension 0..0
+      * ^short = "Is this person a New Zealand citizen? CodeableConcept: yes / no / unknown"
     * id 0..0
   * extension[source] 0..0
   * id 0..0
@@ -131,7 +125,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 // NZ Base v2.0.0 - hasn't defined things quite completely yet - so reusing Citizenship structure with Residency name....
 * extension contains $NZBaseNZResidency named nzResidency 0..1 MS
 * extension[nz-residency]
-  * extension[status]
+  * extension[status] 
     * valueCodeableConcept.coding 1..* MS    
       * ^short = "Two codings possible 'yes|no' from NZ Base, and more detailed as available from WebPAS"       // Multiple codings possible
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-28.1
@@ -140,10 +134,8 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
     * valueCodeableConcept.coding.userSelected 0..0 // data not available
     * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-28.1
-    * valueCodeableConcept.extension 0..0
     * valueCodeableConcept.id 0..0
     * ^short = "Two codings possible:  'yes|no' from NZ Base, and more detailed as available from WebPAS"
-    * extension 0..0
     * id 0..0
   * extension[source] 0..0
   * id 0..0
@@ -174,7 +166,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
   * valueCodeableConcept.text 0..0                //  Code, Value and Display are all derived from Code value from PID-17.1
-  * valueCodeableConcept.extension 0..0
   * extension 0..0
   * id 0..0
 

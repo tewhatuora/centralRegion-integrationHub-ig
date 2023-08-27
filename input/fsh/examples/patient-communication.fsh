@@ -35,9 +35,12 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with a 
 * address[=].text = "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
 
 * extension[interpreterRequired].valueBoolean = false
-* communication.language.coding.code = #en
-* communication.language.coding.system = "urn:ietf:bcp:47"
-* communication.language.coding.display = "English"
+* communication.language.coding[+].code = #ENG
+* communication.language.coding[=].system = $NZCentralRegionRawLanguageCS
+* communication.language.coding[=].display = "English"
+* communication.language.coding[+].code = #en
+* communication.language.coding[=].system = $IETFLanguageCS
+* communication.language.coding[=].display = "English"
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes

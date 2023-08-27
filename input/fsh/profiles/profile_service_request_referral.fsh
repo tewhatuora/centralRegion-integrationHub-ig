@@ -20,9 +20,12 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
   * type 1..1 MS
   * type.coding MS
     * code 1..1 MS
+    * code = #LR
     * system 1..1 MS
     * system = $HL7IdentifierTypeCS
     * display 1..1 MS
+    * display = "Local Registry ID"
+
   * period 0..0     // Data not available
   * assigner 0..0   // Data not availale
   * extension 0..0
@@ -37,20 +40,17 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
 
 * status 1..1 MS
 * intent 1..1 MS
-* category 1..1 MS
-* category.coding MS
-  * code 1..1 MS
-  * system 1..1 MS
-  * system = $NZCentralRegionReferralCategoryCS
-  * display 1..1 MS
+* category 0..0 MS  // Implied by the Referral profile of ServiceRequest
 
-* priority 1..1 MS   // TODO:  Mapping from WebPAS priorities to FHIR defined ones...
+* priority 1..1 MS
+* priority from nzcr-referral-priority-vs (required)   // Can we change the binding ??
 
 * doNotPerform 0..0  // N/A for referrals
 
 * code 1..1 MS
 * code.coding MS
   * code 1..1 MS
+  * code from nzcr-referral-type-vs (required)
   * system 1..1 MS
   * system = $NZCentralRegionReferralTypeCS  // TODO - Code and Category are probably different code systems
   * display 1..1 MS

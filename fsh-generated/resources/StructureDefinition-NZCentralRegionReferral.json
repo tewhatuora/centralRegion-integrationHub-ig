@@ -2,8 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionReferral",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionReferral",
+  "version": "0.4.0",
   "name": "NZCentralRegionReferral",
-  "status": "draft",
+  "status": "active",
   "description": "Referral flavour of ServiceRequest resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -113,8 +114,10 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:hl7v2Message.value[x]",
-        "path": "ServiceRequest.extension.value[x]",
+        "id": "ServiceRequest.extension:hl7v2Message.valueBase64Binary",
+        "path": "ServiceRequest.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -145,8 +148,12 @@
         "sliceName": "preferredSite"
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:preferredSite.value[x].system",
-        "path": "ServiceRequest.extension.extension.value[x].system",
+        "id": "ServiceRequest.extension:referral.extension:preferredSite.valueCoding",
+        "path": "ServiceRequest.extension.extension.valueCoding"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:preferredSite.valueCoding.system",
+        "path": "ServiceRequest.extension.extension.valueCoding.system",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -155,8 +162,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:preferredSite.value[x].code",
-        "path": "ServiceRequest.extension.extension.value[x].code",
+        "id": "ServiceRequest.extension:referral.extension:preferredSite.valueCoding.code",
+        "path": "ServiceRequest.extension.extension.valueCoding.code",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -165,8 +172,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:preferredSite.value[x].display",
-        "path": "ServiceRequest.extension.extension.value[x].display",
+        "id": "ServiceRequest.extension:referral.extension:preferredSite.valueCoding.display",
+        "path": "ServiceRequest.extension.extension.valueCoding.display",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -180,8 +187,12 @@
         "sliceName": "referralSource"
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referralSource.value[x].system",
-        "path": "ServiceRequest.extension.extension.value[x].system",
+        "id": "ServiceRequest.extension:referral.extension:referralSource.valueCoding",
+        "path": "ServiceRequest.extension.extension.valueCoding"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referralSource.valueCoding.system",
+        "path": "ServiceRequest.extension.extension.valueCoding.system",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -190,8 +201,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referralSource.value[x].code",
-        "path": "ServiceRequest.extension.extension.value[x].code",
+        "id": "ServiceRequest.extension:referral.extension:referralSource.valueCoding.code",
+        "path": "ServiceRequest.extension.extension.valueCoding.code",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -200,8 +211,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referralSource.value[x].display",
-        "path": "ServiceRequest.extension.extension.value[x].display",
+        "id": "ServiceRequest.extension:referral.extension:referralSource.valueCoding.display",
+        "path": "ServiceRequest.extension.extension.valueCoding.display",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -215,8 +226,12 @@
         "sliceName": "referringPractice"
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].type",
-        "path": "ServiceRequest.extension.extension.value[x].type",
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.valueReference",
+        "path": "ServiceRequest.extension.extension.valueReference"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.valueReference.type",
+        "path": "ServiceRequest.extension.extension.valueReference.type",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -225,8 +240,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].identifier.use",
-        "path": "ServiceRequest.extension.extension.value[x].identifier.use",
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.valueReference.identifier.use",
+        "path": "ServiceRequest.extension.extension.valueReference.identifier.use",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -235,8 +250,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].identifier.type.coding.system",
-        "path": "ServiceRequest.extension.extension.value[x].identifier.type.coding.system",
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.valueReference.identifier.type.coding.system",
+        "path": "ServiceRequest.extension.extension.valueReference.identifier.type.coding.system",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -245,8 +260,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].identifier.type.coding.code",
-        "path": "ServiceRequest.extension.extension.value[x].identifier.type.coding.code",
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.valueReference.identifier.type.coding.code",
+        "path": "ServiceRequest.extension.extension.valueReference.identifier.type.coding.code",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -255,8 +270,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].identifier.type.coding.display",
-        "path": "ServiceRequest.extension.extension.value[x].identifier.type.coding.display",
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.valueReference.identifier.type.coding.display",
+        "path": "ServiceRequest.extension.extension.valueReference.identifier.type.coding.display",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -265,8 +280,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].identifier.system",
-        "path": "ServiceRequest.extension.extension.value[x].identifier.system",
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.valueReference.identifier.system",
+        "path": "ServiceRequest.extension.extension.valueReference.identifier.system",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -275,8 +290,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].identifier.value",
-        "path": "ServiceRequest.extension.extension.value[x].identifier.value",
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.valueReference.identifier.value",
+        "path": "ServiceRequest.extension.extension.valueReference.identifier.value",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -285,8 +300,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:referringPractice.value[x].display",
-        "path": "ServiceRequest.extension.extension.value[x].display",
+        "id": "ServiceRequest.extension:referral.extension:referringPractice.valueReference.display",
+        "path": "ServiceRequest.extension.extension.valueReference.display",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -300,8 +315,12 @@
         "sliceName": "healthPurchaser"
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.value[x].system",
-        "path": "ServiceRequest.extension.extension.value[x].system",
+        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.valueCoding",
+        "path": "ServiceRequest.extension.extension.valueCoding"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.valueCoding.system",
+        "path": "ServiceRequest.extension.extension.valueCoding.system",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -310,8 +329,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.value[x].code",
-        "path": "ServiceRequest.extension.extension.value[x].code",
+        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.valueCoding.code",
+        "path": "ServiceRequest.extension.extension.valueCoding.code",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -320,8 +339,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.value[x].display",
-        "path": "ServiceRequest.extension.extension.value[x].display",
+        "id": "ServiceRequest.extension:referral.extension:healthPurchaser.valueCoding.display",
+        "path": "ServiceRequest.extension.extension.valueCoding.display",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -335,8 +354,12 @@
         "sliceName": "clinicType"
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:clinicType.value[x].system",
-        "path": "ServiceRequest.extension.extension.value[x].system",
+        "id": "ServiceRequest.extension:referral.extension:clinicType.valueCoding",
+        "path": "ServiceRequest.extension.extension.valueCoding"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:clinicType.valueCoding.system",
+        "path": "ServiceRequest.extension.extension.valueCoding.system",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -345,8 +368,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:clinicType.value[x].code",
-        "path": "ServiceRequest.extension.extension.value[x].code",
+        "id": "ServiceRequest.extension:referral.extension:clinicType.valueCoding.code",
+        "path": "ServiceRequest.extension.extension.valueCoding.code",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -355,8 +378,8 @@
         ]
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:clinicType.value[x].display",
-        "path": "ServiceRequest.extension.extension.value[x].display",
+        "id": "ServiceRequest.extension:referral.extension:clinicType.valueCoding.display",
+        "path": "ServiceRequest.extension.extension.valueCoding.display",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -386,8 +409,10 @@
         "sliceName": "informGP"
       },
       {
-        "id": "ServiceRequest.extension:referral.extension:informGP.value[x]",
-        "path": "ServiceRequest.extension.extension.value[x]",
+        "id": "ServiceRequest.extension:referral.extension:informGP.valueBoolean",
+        "path": "ServiceRequest.extension.extension.valueBoolean",
+        "min": 0,
+        "max": "1",
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -452,6 +477,7 @@
         "id": "ServiceRequest.identifier.type.coding.code",
         "path": "ServiceRequest.identifier.type.coding.code",
         "min": 1,
+        "patternCode": "LR",
         "mustSupport": true,
         "mapping": [
           {
@@ -464,6 +490,7 @@
         "id": "ServiceRequest.identifier.type.coding.display",
         "path": "ServiceRequest.identifier.type.coding.display",
         "min": 1,
+        "patternString": "Local Registry ID",
         "mustSupport": true,
         "mapping": [
           {
@@ -557,21 +584,12 @@
       {
         "id": "ServiceRequest.category",
         "path": "ServiceRequest.category",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.category.coding",
-        "path": "ServiceRequest.category.coding",
+        "max": "0",
         "mustSupport": true
       },
       {
         "id": "ServiceRequest.category.coding.system",
         "path": "ServiceRequest.category.coding.system",
-        "min": 1,
-        "patternUri": "https://standards.digital.health.nz/ns/central-region/referral-category",
-        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -582,8 +600,6 @@
       {
         "id": "ServiceRequest.category.coding.code",
         "path": "ServiceRequest.category.coding.code",
-        "min": 1,
-        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -594,8 +610,6 @@
       {
         "id": "ServiceRequest.category.coding.display",
         "path": "ServiceRequest.category.coding.display",
-        "min": 1,
-        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
@@ -608,11 +622,15 @@
         "path": "ServiceRequest.priority",
         "min": 1,
         "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-priority"
+        },
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
-            "map": "routine | urgent | asap | stat",
-            "comment": "**if** RF1-2.1 == 'SEM' **then** 'urgent'\r\n\n**elif** RF1-2.1 == 'URG' **then** 'asap'\r\n\n**if** RF1-2.1 == 'IMM' **then** 'stat'"
+            "map": "$translate(RF1-2.1)",
+            "comment": "Use [Referral Priority](ConceptMap-nzcr-referral-priority-fhir-map.html) concept map"
           }
         ]
       },
@@ -650,6 +668,10 @@
         "path": "ServiceRequest.code.coding.code",
         "min": 1,
         "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-type"
+        },
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",

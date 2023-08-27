@@ -69,13 +69,13 @@
   ],
   "address": [
     {
-      "type": "postal",
       "extension": [
         {
           "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
           "valueString": "Kelvin Grove"
         }
       ],
+      "type": "postal",
       "line": [
         "100 Cambridge Street"
       ],

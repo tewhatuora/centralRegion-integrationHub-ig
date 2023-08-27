@@ -27,13 +27,14 @@
           "valueCoding": {
             "code": "R08",
             "system": "https://standards.digital.health.nz/ns/central-region/referral-source",
-            "display": "General Practice"
+            "display": "General Practitioner"
           }
         },
         {
           "valueReference": {
+            "type": "Organisation",
             "identifier": {
-              "system": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
+              "system": "https://standards.digital.health.nz/ns/central-region/pas-practice-id",
               "type": {
                 "coding": [
                   {
@@ -46,7 +47,6 @@
               "use": "usual",
               "value": "16478"
             },
-            "type": "Organisation",
             "display": "The Palms Medical Centre"
           },
           "url": "referringPractice"
@@ -63,7 +63,7 @@
           "url": "clinicType",
           "valueCoding": {
             "code": "MDT",
-            "system": "https://standards.digital.health.nz/ns/central-region/referral-clinic",
+            "system": "https://standards.digital.health.nz/ns/central-region/clinic-code",
             "display": "MC Dietetics"
           }
         },
@@ -139,8 +139,8 @@
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "RI",
-            "display": "Referral Identifier"
+            "code": "LR",
+            "display": "Local Registry ID"
           }
         ]
       },
@@ -158,20 +158,9 @@
       }
     ]
   },
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "https://standards.digital.health.nz/ns/central-region/referral-category",
-          "code": "R02",
-          "display": "Allied Health"
-        }
-      ]
-    }
-  ],
   "status": "draft",
   "intent": "order",
-  "priority": "routine",
+  "priority": "LOW",
   "reasonCode": [
     {
       "coding": [
@@ -188,7 +177,7 @@
       "coding": [
         {
           "code": "MDT",
-          "system": "https://standards.digital.health.nz/ns/central-region/referral-department",
+          "system": "https://standards.digital.health.nz/ns/central-region/-department-code",
           "display": "MC Dietetics"
         }
       ]

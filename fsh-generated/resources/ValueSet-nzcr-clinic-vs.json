@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NZCentralRegionClinicValueSet",
+  "id": "nzcr-clinic-vs",
+  "title": "NZ Central Region - Clinic Value Set",
+  "description": "Clinic codes ex. WebPAS in NZ Central Region.",
+  "version": "0.4.0",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-clinic-code",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/clinic-code"
+      }
+    ]
+  }
+}

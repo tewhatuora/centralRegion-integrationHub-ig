@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionReferralPriorityCodeSystem",
+  "id": "nzcr-referral-priority-cs",
+  "title": "NZ Central Region - Referral Priority Code System",
+  "description": "Referral Priority codes; ex. WebPAS in NZ Central Region.",
+  "version": "0.4.0",
+  "url": "https://standards.digital.health.nz/ns/central-region/referral-priority",
+  "concept": [
+    {
+      "code": "NPR",
+      "display": "Not prioritised"
+    },
+    {
+      "code": "IMM",
+      "display": "1 Immediate"
+    },
+    {
+      "code": "URG",
+      "display": "2 Urgent"
+    },
+    {
+      "code": "SEM",
+      "display": "3 Semi-urgent"
+    },
+    {
+      "code": "ROU",
+      "display": "4 Routine"
+    },
+    {
+      "code": "LOW",
+      "display": "5 Low priority"
+    },
+    {
+      "code": "TES",
+      "display": "6 Pending test"
+    },
+    {
+      "code": "WAI",
+      "display": "7 Waiting for triage"
+    },
+    {
+      "code": "NOT",
+      "display": "8 Not seen"
+    },
+    {
+      "code": "OVR",
+      "display": "Clinical override"
+    },
+    {
+      "code": "TOS",
+      "display": "Transfr othr service"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 11
+}

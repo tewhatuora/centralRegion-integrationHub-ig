@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NZCentralRegionReferralPriorityValueSet",
+  "id": "nzcr-referral-priority-vs",
+  "title": "NZ Central Region - Referral Priority Value Set",
+  "description": "Referral Priority codes ex. WebPAS in NZ Central Region.",
+  "version": "0.4.0",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-priority",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/referral-priority"
+      }
+    ]
+  }
+}

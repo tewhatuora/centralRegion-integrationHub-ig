@@ -18,9 +18,7 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
   **elif** RF1-1.1 == 'R' **then** 'revoked'\r\n
   **else** 'unknown'"
 
-* priority -> "routine | urgent | asap | stat" "**if** RF1-2.1 == 'SEM' **then** 'urgent'\r\n
-**elif** RF1-2.1 == 'URG' **then** 'asap'\r\n
-**if** RF1-2.1 == 'IMM' **then** 'stat'"
+* priority -> "$translate(RF1-2.1)" "Use [Referral Priority](ConceptMap-nzcr-referral-priority-fhir-map.html) concept map"
 
 * intent -> "'order'"
 

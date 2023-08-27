@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZResidency",
   "id": "nz-residency",
   "title": "NZ Residency status",
   "description": "Is the person a NZ resident",
-  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code",
   "version": "1.1.0",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code",
   "experimental": false,
   "compose": {
     "include": [
