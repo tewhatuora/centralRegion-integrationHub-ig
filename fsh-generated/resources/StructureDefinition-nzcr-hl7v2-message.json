@@ -20,27 +20,27 @@
   "context": [
     {
       "type": "element",
-      "expression": "Patient"
+      "expression": "Patient.meta"
     },
     {
       "type": "element",
-      "expression": "Practitioner"
+      "expression": "Practitioner.meta"
     },
     {
       "type": "element",
-      "expression": "Flag"
+      "expression": "Flag.meta"
     },
     {
       "type": "element",
-      "expression": "AllergyIntolerance"
+      "expression": "AllergyIntolerance.meta"
     },
     {
       "type": "element",
-      "expression": "ClinicalImpression"
+      "expression": "ClinicalImpression.meta"
     },
     {
       "type": "element",
-      "expression": "ServiceRequest"
+      "expression": "ServiceRequest.meta"
     }
   ],
   "type": "Extension",

@@ -109,5 +109,5 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
   * system -> "'https://standards.digital.health.nz/ns/central-region/mental-health-court-type'"
   * display -> "ZLS-21.2"
 
-* extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
-* extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"
+* meta.extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+* meta.extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

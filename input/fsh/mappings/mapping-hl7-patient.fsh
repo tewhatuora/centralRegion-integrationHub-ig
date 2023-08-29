@@ -114,16 +114,17 @@ else 'Unknown'"
 * extension[nzResidency] -> "PID-28" "Only using status, source not available"
 * extension[nzResidency].extension[status].url -> "'status'"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding -> "Repeat for each coding"
-* extension[nzResidency].extension[status].valueCodeableConcept.coding.code -> "PID-28.1" "Raw value and mapped from webPAS residency status.  ConceptMap ?'"
+* extension[nzResidency].extension[status].valueCodeableConcept.coding.code -> "PID-28.1" "Raw value and mapped from webPAS residency status"
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.display -> "PID-28.2" "Raw value and mapped from webPAS residency status."
 * extension[nzResidency].extension[status].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/central-region/nz-residency-code AND\r\n
 https://standards.digital.health.nz/ns/nz-residency-code"
 
 * extension[patient-religion].url -> "'http://hl7.org/fhir/StructureDefinition/patient-religion'"
-* extension[patient-religion].valueCodeableConcept.text -> "PID-17.2"
-* extension[patient-religion].valueCodeableConcept.coding.code -> "PID-17.1"
+* extension[patient-religion].valueCodeableConcept.coding -> "Repeat for each coding" "Some codes don't map - eg: Ratana, No Religion, Refused to Answer, etc."
+* extension[patient-religion].valueCodeableConcept.coding.code -> "PID-17.1" "Raw value and mapped from webPAS religion codes"
 * extension[patient-religion].valueCodeableConcept.coding.display -> "PID-17.2" "Appropriate value from code lookup"
-* extension[patient-religion].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/central-region/patient-religion"
+* extension[patient-religion].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/central-region/patient-religion AND\r\n
+http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"
 
 * contact -> "NK1" "Repeat for each NK1 segment"
 * contact.relationship.coding -> "NK1" "At least two codings:\r\n * http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\n * https://standards.digital.health.nz/ns/central-region/contact-relationship"
@@ -150,5 +151,5 @@ Note: If only one phone entry with type '**CP**' then use '**phone**'"
 * deceasedBoolean -> "PID-30"
 
 
-* extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
-* extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"
+* meta.extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+* meta.extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

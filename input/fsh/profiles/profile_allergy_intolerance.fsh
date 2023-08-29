@@ -151,7 +151,6 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
 * lastOccurrence 0..0   // no data available
 
 * extension contains 
-    nzcr-hl7v2-message named hl7v2Message 1..1 MS and
     nzcr-alert named allergy-alert 1..1 MS 
 
 * extension[allergy-alert]
@@ -169,3 +168,5 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
   * extension[lastUpdatedDateTime] 0..1 MS
   * extension[recordingHospital] 1..1 MS
   * extension[comments] 0..0 MS   // AllergyIntolerance has 'note' field
+
+* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS

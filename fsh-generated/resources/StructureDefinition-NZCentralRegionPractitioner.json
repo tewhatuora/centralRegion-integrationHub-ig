@@ -53,6 +53,50 @@
         ]
       },
       {
+        "id": "Practitioner.meta.extension",
+        "path": "Practitioner.meta.extension",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.meta.extension:hl7v2Message",
+        "path": "Practitioner.meta.extension",
+        "sliceName": "hl7v2Message",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.meta.extension:hl7v2Message.url",
+        "path": "Practitioner.meta.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.meta.extension:hl7v2Message.valueBase64Binary",
+        "path": "Practitioner.meta.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-practitioner-from-hl7v2",
+            "map": "Entire incoming HL7 message",
+            "comment": "Base64 encoded"
+          }
+        ]
+      },
+      {
         "id": "Practitioner.implicitRules",
         "path": "Practitioner.implicitRules",
         "max": "0"
@@ -66,11 +110,6 @@
         "id": "Practitioner.contained",
         "path": "Practitioner.contained",
         "max": "0"
-      },
-      {
-        "id": "Practitioner.extension",
-        "path": "Practitioner.extension",
-        "min": 1
       },
       {
         "id": "Practitioner.extension:death-date",
@@ -95,45 +134,6 @@
         "path": "Practitioner.extension",
         "sliceName": "iwi",
         "max": "0"
-      },
-      {
-        "id": "Practitioner.extension:hl7v2Message",
-        "path": "Practitioner.extension",
-        "sliceName": "hl7v2Message",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Practitioner.extension:hl7v2Message.url",
-        "path": "Practitioner.extension.url",
-        "mapping": [
-          {
-            "identity": "nzcr-practitioner-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
-          }
-        ]
-      },
-      {
-        "id": "Practitioner.extension:hl7v2Message.valueBase64Binary",
-        "path": "Practitioner.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "nzcr-practitioner-from-hl7v2",
-            "map": "Entire incoming HL7 message",
-            "comment": "Base64 encoded"
-          }
-        ]
       },
       {
         "id": "Practitioner.identifier",

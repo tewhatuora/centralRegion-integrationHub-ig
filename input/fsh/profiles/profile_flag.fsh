@@ -122,7 +122,6 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
 * encounter 0..0
 
 * extension contains 
-    nzcr-hl7v2-message named hl7v2Message 1..1 MS and
     nzcr-alert named flag-alert 1..1 MS 
 
 * extension[flag-alert].extension[severityLevel]
@@ -140,3 +139,5 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
   * extension[recordingHospital] 1..1 MS
   * extension[comments] 0..1 MS
 */
+
+* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS

@@ -178,5 +178,6 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
 * relevantHistory 0..0      // N/A for referrals
 
 * extension contains 
-    nzcr-hl7v2-message named hl7v2Message 1..1 MS and
     nzcr-referral named referral 1..1 MS 
+
+* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS

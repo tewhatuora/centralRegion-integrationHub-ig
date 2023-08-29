@@ -89,5 +89,5 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * extension[flag-alert].extension[comments].url -> "'comments'"
 * extension[flag-alert].extension[comments].valueString -> "ZAL-14"
 
-* extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
-* extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"
+* meta.extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+* meta.extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

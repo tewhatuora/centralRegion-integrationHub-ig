@@ -93,8 +93,7 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
 * summary 1..1 MS
  
 * extension contains
-    nzcr-mental-health named mentalHealth 1..1 MS and
-    nzcr-hl7v2-message named hl7v2Message 1..1 MS
+    nzcr-mental-health named mentalHealth 1..1 MS
 
 * code 0..0                        // no data
 * problem 0..0                     // no data
@@ -108,3 +107,5 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
 * prognosisReference 0..0          // no data
 * supportingInfo 0..0
 * note 0..0
+
+* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS

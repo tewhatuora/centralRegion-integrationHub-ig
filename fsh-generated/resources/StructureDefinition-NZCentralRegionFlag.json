@@ -33,6 +33,50 @@
   "differential": {
     "element": [
       {
+        "id": "Flag.meta.extension",
+        "path": "Flag.meta.extension",
+        "min": 1
+      },
+      {
+        "id": "Flag.meta.extension:hl7v2Message",
+        "path": "Flag.meta.extension",
+        "sliceName": "hl7v2Message",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.meta.extension:hl7v2Message.url",
+        "path": "Flag.meta.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+          }
+        ]
+      },
+      {
+        "id": "Flag.meta.extension:hl7v2Message.valueBase64Binary",
+        "path": "Flag.meta.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "Entire incoming HL7 message",
+            "comment": "Base64 encoded"
+          }
+        ]
+      },
+      {
         "id": "Flag.implicitRules",
         "path": "Flag.implicitRules",
         "max": "0"
@@ -60,46 +104,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 2
-      },
-      {
-        "id": "Flag.extension:hl7v2Message",
-        "path": "Flag.extension",
-        "sliceName": "hl7v2Message",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Flag.extension:hl7v2Message.url",
-        "path": "Flag.extension.url",
-        "mapping": [
-          {
-            "identity": "nzcr-flag-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
-          }
-        ]
-      },
-      {
-        "id": "Flag.extension:hl7v2Message.valueBase64Binary",
-        "path": "Flag.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "nzcr-flag-from-hl7v2",
-            "map": "Entire incoming HL7 message",
-            "comment": "Base64 encoded"
-          }
-        ]
+        "min": 1
       },
       {
         "id": "Flag.extension:flag-alert",

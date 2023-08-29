@@ -270,4 +270,4 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
 
-* extension contains $NZCentralRegionHL7v2Message named hl7v2Message 0..1 MS
+* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS

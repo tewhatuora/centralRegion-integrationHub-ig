@@ -38,23 +38,13 @@
   "differential": {
     "element": [
       {
-        "id": "AllergyIntolerance.extension",
-        "path": "AllergyIntolerance.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 2
+        "id": "AllergyIntolerance.meta.extension",
+        "path": "AllergyIntolerance.meta.extension",
+        "min": 1
       },
       {
-        "id": "AllergyIntolerance.extension:hl7v2Message",
-        "path": "AllergyIntolerance.extension",
+        "id": "AllergyIntolerance.meta.extension:hl7v2Message",
+        "path": "AllergyIntolerance.meta.extension",
         "sliceName": "hl7v2Message",
         "min": 1,
         "max": "1",
@@ -69,8 +59,8 @@
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.extension:hl7v2Message.url",
-        "path": "AllergyIntolerance.extension.url",
+        "id": "AllergyIntolerance.meta.extension:hl7v2Message.url",
+        "path": "AllergyIntolerance.meta.extension.url",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -79,8 +69,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:hl7v2Message.valueBase64Binary",
-        "path": "AllergyIntolerance.extension.valueBase64Binary",
+        "id": "AllergyIntolerance.meta.extension:hl7v2Message.valueBase64Binary",
+        "path": "AllergyIntolerance.meta.extension.valueBase64Binary",
         "min": 0,
         "max": "1",
         "mapping": [
@@ -90,6 +80,21 @@
             "comment": "Base64 encoded"
           }
         ]
+      },
+      {
+        "id": "AllergyIntolerance.extension",
+        "path": "AllergyIntolerance.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
       },
       {
         "id": "AllergyIntolerance.extension:allergy-alert",

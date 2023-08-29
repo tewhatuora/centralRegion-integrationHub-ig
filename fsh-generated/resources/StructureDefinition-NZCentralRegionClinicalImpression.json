@@ -43,6 +43,50 @@
   "differential": {
     "element": [
       {
+        "id": "ClinicalImpression.meta.extension",
+        "path": "ClinicalImpression.meta.extension",
+        "min": 1
+      },
+      {
+        "id": "ClinicalImpression.meta.extension:hl7v2Message",
+        "path": "ClinicalImpression.meta.extension",
+        "sliceName": "hl7v2Message",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.meta.extension:hl7v2Message.url",
+        "path": "ClinicalImpression.meta.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+          }
+        ]
+      },
+      {
+        "id": "ClinicalImpression.meta.extension:hl7v2Message.valueBase64Binary",
+        "path": "ClinicalImpression.meta.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-clinical-impression-from-hl7v2",
+            "map": "Entire incoming HL7 message",
+            "comment": "Base64 encoded"
+          }
+        ]
+      },
+      {
         "id": "ClinicalImpression.implicitRules",
         "path": "ClinicalImpression.implicitRules",
         "max": "0"
@@ -70,7 +114,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 2
+        "min": 1
       },
       {
         "id": "ClinicalImpression.extension:mentalHealth",
@@ -690,45 +734,6 @@
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
             "map": "'https://standards.digital.health.nz/ns/central-region/alert'"
-          }
-        ]
-      },
-      {
-        "id": "ClinicalImpression.extension:hl7v2Message",
-        "path": "ClinicalImpression.extension",
-        "sliceName": "hl7v2Message",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "ClinicalImpression.extension:hl7v2Message.url",
-        "path": "ClinicalImpression.extension.url",
-        "mapping": [
-          {
-            "identity": "nzcr-clinical-impression-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
-          }
-        ]
-      },
-      {
-        "id": "ClinicalImpression.extension:hl7v2Message.valueBase64Binary",
-        "path": "ClinicalImpression.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "nzcr-clinical-impression-from-hl7v2",
-            "map": "Entire incoming HL7 message",
-            "comment": "Base64 encoded"
           }
         ]
       },

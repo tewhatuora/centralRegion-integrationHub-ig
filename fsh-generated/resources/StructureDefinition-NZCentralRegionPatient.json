@@ -58,6 +58,50 @@
         ]
       },
       {
+        "id": "Patient.meta.extension",
+        "path": "Patient.meta.extension",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta.extension:hl7v2Message",
+        "path": "Patient.meta.extension",
+        "sliceName": "hl7v2Message",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.extension:hl7v2Message.url",
+        "path": "Patient.meta.extension.url",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
+          }
+        ]
+      },
+      {
+        "id": "Patient.meta.extension:hl7v2Message.valueBase64Binary",
+        "path": "Patient.meta.extension.valueBase64Binary",
+        "min": 0,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Entire incoming HL7 message",
+            "comment": "Base64 encoded"
+          }
+        ]
+      },
+      {
         "id": "Patient.implicitRules",
         "path": "Patient.implicitRules",
         "max": "0"
@@ -589,7 +633,7 @@
           {
             "identity": "nzcr-patient-from-hl7v2",
             "map": "PID-28.1",
-            "comment": "Raw value and mapped from webPAS residency status.  ConceptMap ?'"
+            "comment": "Raw value and mapped from webPAS residency status"
           }
         ]
       },
@@ -673,7 +717,14 @@
         "id": "Patient.extension:patient-religion.valueCodeableConcept.coding",
         "path": "Patient.extension.valueCodeableConcept.coding",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-patient-from-hl7v2",
+            "map": "Repeat for each coding",
+            "comment": "Some codes don't map - eg: Ratana, No Religion, Refused to Answer, etc."
+          }
+        ]
       },
       {
         "id": "Patient.extension:patient-religion.valueCodeableConcept.coding.system",
@@ -683,7 +734,7 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "https://standards.digital.health.nz/ns/central-region/patient-religion"
+            "map": "https://standards.digital.health.nz/ns/central-region/patient-religion AND\r\n\nhttp://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"
           }
         ]
       },
@@ -700,7 +751,8 @@
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
-            "map": "PID-17.1"
+            "map": "PID-17.1",
+            "comment": "Raw value and mapped from webPAS religion codes"
           }
         ]
       },
@@ -725,13 +777,7 @@
       {
         "id": "Patient.extension:patient-religion.valueCodeableConcept.text",
         "path": "Patient.extension.valueCodeableConcept.text",
-        "max": "0",
-        "mapping": [
-          {
-            "identity": "nzcr-patient-from-hl7v2",
-            "map": "PID-17.2"
-          }
-        ]
+        "max": "0"
       },
       {
         "id": "Patient.extension:interpreterRequired",
@@ -769,45 +815,6 @@
             "identity": "nzcr-patient-from-hl7v2",
             "map": "PID-15.4",
             "comment": "if PID-15.4='Y' then 'true' else 'false'"
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:hl7v2Message",
-        "path": "Patient.extension",
-        "sliceName": "hl7v2Message",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.extension:hl7v2Message.url",
-        "path": "Patient.extension.url",
-        "mapping": [
-          {
-            "identity": "nzcr-patient-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:hl7v2Message.valueBase64Binary",
-        "path": "Patient.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
-        "mapping": [
-          {
-            "identity": "nzcr-patient-from-hl7v2",
-            "map": "Entire incoming HL7 message",
-            "comment": "Base64 encoded"
           }
         ]
       },

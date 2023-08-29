@@ -94,5 +94,5 @@ depending upon value of ZAL-2.1"
 * extension[allergy-alert].extension[recordingHospital].valueCoding.system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
 * extension[allergy-alert].extension[recordingHospital].valueCoding.display -> "ZAL-13.2"
 
-* extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7v2-message'"
-* extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"
+* meta.extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7v2-message'"
+* meta.extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"
