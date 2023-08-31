@@ -1574,7 +1574,7 @@
           {
             "identity": "nzcr-patient-from-hl7v2",
             "map": "NK1",
-            "comment": "At least two codings:\r\n * http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\n * https://standards.digital.health.nz/ns/central-region/contact-relationship"
+            "comment": "http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\nhttps://standards.digital.health.nz/ns/central-region/contact-relationship"
           }
         ]
       },
@@ -1614,7 +1614,7 @@
           {
             "identity": "nzcr-patient-from-hl7v2",
             "map": "NK1-3.1",
-            "comment": "Raw value in one entry, lookup to HL7 base value in the other.  ConceptMap ?"
+            "comment": "Raw value in one entry, and **'N'** - for Next of Kin for the other; as data is derived from NK1 segments"
           }
         ]
       },
