@@ -127,7 +127,6 @@ https://standards.digital.health.nz/ns/nz-residency-code"
 http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"
 
 * contact -> "NK1" "Repeat for each NK1 segment"
-* contact.text -> "NK1.3" "Provided text"
 * contact.relationship.coding -> "NK1" "http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\nhttps://standards.digital.health.nz/ns/central-region/contact-relationship"
 * contact.relationship.coding.code -> "NK1-3.1" "Raw value in one entry, and **'N'** - for Next of Kin for the other; as data is derived from NK1 segments"
 * contact.relationship.coding.display -> "NK1-3.2"
