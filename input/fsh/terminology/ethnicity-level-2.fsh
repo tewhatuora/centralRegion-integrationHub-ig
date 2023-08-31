@@ -11,7 +11,7 @@ Description:  "Ethnicity Level 2 codes from
 * #10	"European (nfd)"
 * #11	"NZ European"
 * #12	"Other European"
-* #21	"Māori"    // not 'NZ Māori' - to match #21111 from ethnicity-level-4 
+* #21	"NZ Māori"
 * #30	"Pacific Island (nfd)"
 * #31	"Samoan"
 * #32	"Cook Island Māori"
@@ -69,10 +69,10 @@ Description: "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper l
 * insert cmapEntry(10,  "European (nfd\)",           10000,  "European nfd")
 * insert cmapEntry(11,	"NZ European",               11111,  "New Zealand European")
 * insert cmapEntry(12,	"Other European",            10000,  "European nfd")
-* insert cmapEntry(21,	"Māori",                     21111,  "Māori")
+* insert cmapEntry(21,	"NZ Māori",                  21111,  "Māori")
 * insert cmapEntry(30,	"Pacific Island (nfd\)",     30000,  "Pacific Peoples nfd")
 * insert cmapEntry(31,	"Samoan",                    31111,  "Samoan")
-* insert cmapEntry(32,	"Cook Island Māori",         32100,  "Cook Islands Maori")
+* insert cmapEntry(32,	"Cook Island Māori",         32100,  "Cook Island Māori")
 * insert cmapEntry(33,	"Tongan",                    33111,  "Tongan")
 * insert cmapEntry(34,	"Niuean",                    34111,  "Niuean")
 * insert cmapEntry(35,	"Tokelauan",                 35111,  "Tokelauan")
