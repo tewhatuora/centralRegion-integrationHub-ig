@@ -46,9 +46,9 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
 * experimental = false
 * purpose = "Translates referral priority codes used in WebPAS to more recognised FHIR ServiceLEvel priority codes"
 * status = #active
-* sourceUri = $NZCentralRegionReferralPriorityCS
-* targetUri = $HL7RequestPriorityCS
-* group[+]
+* sourceUri = $NZCentralRegionReferralPriorityVS   // Source ValueSet
+* targetUri = $HL7RequestPriorityVS                // Target ValueSet
+* group[+]                                         // Separate Group for each Source/Target CodeSystem tuple
   * source = $NZCentralRegionReferralPriorityCS
   * target = $HL7RequestPriorityCS
 

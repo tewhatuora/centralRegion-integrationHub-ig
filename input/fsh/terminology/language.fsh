@@ -206,9 +206,9 @@ Description: "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:
 * experimental = false
 * purpose = "Translates raw language codes used in WebPAS to more recognised `ietf:bcp:47` language codes"
 * status = #active
-* sourceUri = $NZCentralRegionRawLanguageCS
-* targetUri = $IETFLanguageCS
-* group[+]
+* sourceUri = $NZCentralRegionLanguageVS       // Source ValueSet
+* targetUri = $IETFLanguageCS                  // Target ValueSet
+* group[+]                                     // Separate Group for each Source/Target CodeSystem tuple
   * source = $NZCentralRegionRawLanguageCS
   * target = $IETFLanguageCS
 

@@ -46,3 +46,133 @@ Description:  "Allergy Reaction codes ex. WebPAS in NZ Central Region."
 
 * include codes from system nzcr-allergy-reaction-a3a4-cs
 * include codes from system nzcr-allergy-reaction-h1h3-cs
+
+
+
+// FHIR Allergy Type Codes from WebPAS Allergy Reaction Codes
+Instance: nzcr-allergy-type-map
+InstanceOf: ConceptMap
+Usage: #definition
+
+Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy type codes. Added complexity as we have codes from two different code-systems"
+
+* name = "NZCRAllergyReactionTypeConceptMap"
+* title = "NZ Central Region Allergy Reaction to Type Concept Map"
+* description = "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy type codes"
+
+* url = $NZCentralRegionAllergyReactionTypeConceptMap
+* experimental = false
+* purpose = "Translates allergy reaction codes used in WebPAS to FHIR allergy type codes"
+* status = #active
+* sourceUri = $NZCentralRegionAllergyReactionVS    // Source ValueSet
+* targetUri = $HL7AllergyTypeVS                    // Target ValueSet
+* group[+]                                         // Separate Group for each Source/Target CodeSystem tuple
+  * source = $NZCentralRegionAllergyReactionA3A4CS
+  * target = $HL7AllergyTypeCS
+
+* insert cmapEntry(R01, "Bee stings", "allergy", "Allergy")
+* insert cmapEntry(R02, "Hay fever",  "allergy", "Allergy")
+* insert cmapEntry(R03, "Not known",  "allergy", "Allergy")   // for wan of an Unknown value
+* insert cmapEntry(R04, "Nuts",       "allergy", "Allergy")
+* insert cmapEntry(R05, "Medication", "allergy", "Allergy")
+
+* group[+]                                                    // Separate Group for each Source/Target CodeSystem
+  * source = $NZCentralRegionAllergyReactionH1H3CS
+  * target = $HL7AllergyCategoryCS
+
+* insert cmapEntry(R01, "Drg anaphylaxis",   "allergy", "Allergy")
+* insert cmapEntry(R02, "drug allergy",      "allergy", "Allergy")
+* insert cmapEntry(R03, "drug intolerance",  "intolerance", "Intolerance")
+* insert cmapEntry(R04, "food anaphylaxis",  "allergy", "Allergy")
+* insert cmapEntry(R05, "food allergy",      "allergy", "Allergy")
+* insert cmapEntry(R06, "food intolerance",  "intolerance", "Intolerance")
+* insert cmapEntry(R07, "other anaphylaxis", "allergy", "Allergy")
+* insert cmapEntry(R08,	"other allergy",     "allergy", "Allergy")
+* insert cmapEntry(R09,	"other intolerance", "intolerance", "Intolerance")
+
+
+
+
+// FHIR Allergy Category Codes from WebPAS Allergy Reaction Codes
+Instance: nzcr-allergy-category-map
+InstanceOf: ConceptMap
+Usage: #definition
+
+Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy category codes. Added complexity as we have codes from two different code-systems"
+
+* name = "NZCRAllergyReactionCategoryConceptMap"
+* title = "NZ Central Region Allergy Reaction to Category Concept Map"
+* description = "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy category codes"
+
+* url = $NZCentralRegionAllergyReactionCategoryConceptMap
+* experimental = false
+* purpose = "Translates allergy reaction codes used in WebPAS to FHIR allergy category codes"
+* status = #active
+* sourceUri = $NZCentralRegionAllergyReactionVS    // Source ValueSet
+* targetUri = $HL7AllergyCategoryVS                // Target ValueSet
+* group[+]                                         // Separate Group for each Source/Target CodeSystem tuple
+  * source = $NZCentralRegionAllergyReactionA3A4CS
+  * target = $HL7AllergyCategoryCS
+
+* insert cmapEntry(R01, "Bee stings", "environment", "Environment")
+* insert cmapEntry(R02, "Hay fever",  "environment", "Environment")  // Pollen in the environment
+* insert cmapEntry(R03, "Not known",  "environment", "Environment")  // Not known to be Food, Medication or Biologic
+* insert cmapEntry(R04, "Nuts",       "food", "Food")
+* insert cmapEntry(R05, "Medication", "medication", "Medication")
+
+* group[+]                                        // Separate Group for each Source/Target CodeSystem
+  * source = $NZCentralRegionAllergyReactionH1H3CS
+  * target = $HL7AllergyCategoryCS
+
+* insert cmapEntry(R01, "Drg anaphylaxis",   "medication", "Medication")
+* insert cmapEntry(R02, "drug allergy",      "medication", "Medication")
+* insert cmapEntry(R03, "drug intolerance",  "medication", "Medication")
+* insert cmapEntry(R04, "food anaphylaxis",  "food", "Food")
+* insert cmapEntry(R05, "food allergy",      "food", "Food")
+* insert cmapEntry(R06, "food intolerance",  "food", "Food")
+* insert cmapEntry(R07, "other anaphylaxis", "environment", "Environment")
+* insert cmapEntry(R08,	"other allergy",     "environment", "Environment")
+* insert cmapEntry(R09,	"other intolerance", "environment", "Environment")
+
+
+
+// FHIR allergy criticality Codes from WebPAS Allergy Reaction Codes
+Instance: nzcr-allergy-criticality-map
+InstanceOf: ConceptMap
+Usage: #definition
+
+Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy criticality codes. Added complexity as we have codes from two different code-systems"
+
+* name = "NZCRAllergyReactionCriticalityConceptMap"
+* title = "NZ Central Region Allergy Reaction to Criticality Concept Map"
+* description = "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy criticality codes"
+
+* url = $NZCentralRegionAllergyReactionCriticalityConceptMap
+* experimental = false
+* purpose = "Translates allergy reaction codes used in WebPAS to FHIR allergy criticality codes"
+* status = #active
+* sourceUri = $NZCentralRegionAllergyReactionVS    // Source ValueSet
+* targetUri = $HL7AllergyCriticalityVS             // Target ValueSet
+* group[+]                                         // Separate Group for each Source/Target CodeSystem tuple
+  * source = $NZCentralRegionAllergyReactionA3A4CS
+  * target = $HL7AllergyCriticalityCS
+
+* insert cmapEntry(R01, "Bee stings", "unable-to-assess", "Unable to Assess Risk")
+* insert cmapEntry(R02, "Hay fever",  "unable-to-assess", "Unable to Assess Risk")
+* insert cmapEntry(R03, "Not known",  "unable-to-assess", "Unable to Assess Risk")
+* insert cmapEntry(R04, "Nuts",       "unable-to-assess", "Unable to Assess Risk")
+* insert cmapEntry(R05, "Medication", "unable-to-assess", "Unable to Assess Risk")
+
+* group[+]                                        // Separate Group for each Source/Target CodeSystem
+  * source = $NZCentralRegionAllergyReactionH1H3CS
+  * target = $HL7AllergyCriticalityCS
+
+* insert cmapEntry(R01, "Drg anaphylaxis",   "high", "High Risk")
+* insert cmapEntry(R02, "drug allergy",      "low", "Low Risk")
+* insert cmapEntry(R03, "drug intolerance",  "low", "Low Risk")
+* insert cmapEntry(R04, "food anaphylaxis",  "high", "High Risk")
+* insert cmapEntry(R05, "food allergy",      "low", "Low Risk")
+* insert cmapEntry(R06, "food intolerance",  "low", "Low Risk")
+* insert cmapEntry(R07, "other anaphylaxis", "high", "High Risk")
+* insert cmapEntry(R08,	"other allergy",     "low", "Low Risk")
+* insert cmapEntry(R09,	"other intolerance", "low", "Low Risk")

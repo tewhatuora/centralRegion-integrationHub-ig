@@ -62,9 +62,9 @@ Description: "Concept map mapping raw religion codes ex. WebPAS to proper FHIR r
 * experimental = false
 * purpose = "Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes"
 * status = #active
-* sourceUri = $NZCentralRegionReligionCS
-* targetUri = $HL7PatientRelgionCS
-* group[+]
+* sourceUri = $NZCentralRegionReligionVS            // Source ValueSet
+* targetUri = $HL7PatientRelgionVS                  // Target ValueSet
+* group[+]                                          // Separate Group for each Source/Target CodeSystem tuple
   * source = $NZCentralRegionReligionCS
   * target =  $HL7PatientRelgionCS
 
@@ -102,6 +102,8 @@ Description: "Concept map mapping raw religion codes ex. WebPAS to proper FHIR r
 * insert cmapEntry(R35, "Quaker",                1071, "Friends")
 * insert cmapEntry(R36, "Roman Catholic",        1041, "Roman Catholic Church")
 * insert cmapEntry(R39, "Salvation Army",        1080, "Salvation Army")
+
+// Values with no mapping
 // * insert cmapEntry(R26, "No Religion",           R26, "No Religion")
 // * insert cmapEntry(R27, "Objects to question",   R27, "Objects to question")
 // * insert cmapEntry(R29, "Any other church",      R29, "Any other church")

@@ -19,6 +19,15 @@ Alias:   $HL7AllergyVerificationCS   = http://terminology.hl7.org/CodeSystem/all
 
 Alias:   $HL7RequestPriorityCS       = http://hl7.org/fhir/request-priority
 
+
+// Value Set URLs from FHIR base
+Alias:   $HL7PatientRelgionVS        = http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation
+Alias:   $HL7AllergyTypeVS           = http://hl7.org/fhir/ValueSet/allergy-intolerance-type
+Alias:   $HL7AllergyCategoryVS       = http://hl7.org/fhir/ValueSet/allergy-intolerance-category
+Alias:   $HL7AllergyCriticalityVS    = http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality
+Alias:   $HL7RequestPriorityVS       = http://hl7.org/fhir/ValueSet/request-priority
+
+
 // Extension URLs from NZ Base 
 Alias:   $NZBasePatient         = http://hl7.org.nz/fhir/StructureDefinition/NzPatient
 Alias:   $NZBaseOrganisation    = http://hl7.org.nz/fhir/StructureDefinition/NzOrganization
@@ -44,6 +53,10 @@ Alias:   $NZCentralRegionReferralId                  = https://standards.digital
 Alias:   $NZBaseNZCitizenshipCS    = https://standards.digital.health.nz/ns/nz-citizenship-status-code
 Alias:   $NZBaseNZResidencyCS      = https://standards.digital.health.nz/ns/nz-residency-code
 Alias:   $NZStatsEthnicityLevel4CS = https://standards.digital.health.nz/ns/ethnic-group-level-4-code
+
+Alias:   $NZBaseNZCitizenshipVS    = https://nzhts.digital.health.nz/fhir/ValueSet/nz-citizenship-status-code
+Alias:   $NZBaseNZResidencyVS      = https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code
+Alias:   $NZStatsEthnicityLevel4VS = https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code
 
 // Local URLs for locally defined extensions
 Alias:   $NZCentralRegionHL7v2Message          = https://standards.digital.health.nz/ns/central-region/hl7v2-message
@@ -125,8 +138,12 @@ Alias:   $NZCentralRegionMentalHealthCourtTypeVS      = https://standards.digita
 
 
 // Local URIs for ConceptMaps
-Alias:   $NZCentralRegionLanguageConceptMap             = https://standards.digital.health.nz/fhir/central-region/ConceptMap-language
-Alias:   $NZCentralRegionEthnicityConceptMap            = https://standards.digital.health.nz/fhir/central-region/ConceptMap-ethnicity
-Alias:   $NZCentralRegionReligionConceptMap             = https://standards.digital.health.nz/fhir/central-region/ConceptMap-religion
-Alias:   $NZCentralRegionResidencyConceptMap            = https://standards.digital.health.nz/fhir/central-region/ConceptMap-nz-residency
-Alias:   $NZCentralRegionReferralPriorityConceptMap     = https://standards.digital.health.nz/fhir/central-region/ConceptMap-referral-priority
+Alias:   $NZCentralRegionLanguageConceptMap                     = https://standards.digital.health.nz/fhir/central-region/ConceptMap-language
+Alias:   $NZCentralRegionEthnicityConceptMap                    = https://standards.digital.health.nz/fhir/central-region/ConceptMap-ethnicity
+Alias:   $NZCentralRegionReligionConceptMap                     = https://standards.digital.health.nz/fhir/central-region/ConceptMap-religion
+Alias:   $NZCentralRegionResidencyConceptMap                    = https://standards.digital.health.nz/fhir/central-region/ConceptMap-nz-residency
+Alias:   $NZCentralRegionReferralPriorityConceptMap             = https://standards.digital.health.nz/fhir/central-region/ConceptMap-referral-priority
+
+Alias:   $NZCentralRegionAllergyReactionTypeConceptMap          = https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-type
+Alias:   $NZCentralRegionAllergyReactionCategoryConceptMap      = https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-category
+Alias:   $NZCentralRegionAllergyReactionCriticalityConceptMap   = https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-criticality

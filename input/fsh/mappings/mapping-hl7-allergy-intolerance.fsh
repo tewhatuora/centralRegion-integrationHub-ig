@@ -11,9 +11,9 @@ Description: "Central Region Message Specification (1.14) - Allergy Intolerance 
 
 * clinicalStatus
   * coding
-    * code -> "ZAL-8 & ZAL-9" "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty **then** 'active' **else** 'inactive'"
+    * code -> "ZAL-8 & ZAL-9" "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty\r\n**then** 'active'\r\n**else** 'inactive'"
     * system -> "'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical'"
-    * display -> "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty **then** 'Active' **else** 'Inactive'"
+    * display -> "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty\r\n**then** 'Active'\r\n**else** 'Inactive'"
 
 
 * verificationStatus
@@ -22,11 +22,11 @@ Description: "Central Region Message Specification (1.14) - Allergy Intolerance 
     * system -> "'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification'"
     * display -> "'Confirmed'"
 
-* type -> "allergy | intolerance" "TODO:  check if data available\n**Note:** not coding, so no system or display sub-fields"
+* type -> "allergy | intolerance" "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-type-map](./ConceptMap-nzcr-allergy-type-map.html)\r\n**Note:** not coding, so no system or display sub-fields"
 
-* category -> "food | medication | environment | biologic" "Lookup from ZAL-2.1 - perhaps ConceptMap from [A3 A4 Code System](./CodeSystem-nzcr-allergy-reaction-a3a4-cs.html) or [H1 H3 Code System](/CodeSystem-nzcr-allergy-reaction-h1h3-cs.html)\n**Note:** not coding, so no system or display sub-fields"
+* category -> "food | medication | environment | biologic" "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-category-map](./ConceptMap-nzcr-allergy-category-map.html)\r\n**Note:** not coding, so no system or display sub-fields"
 
-* criticality -> "low | high | unable-to-assess" "perhaps derived from severity ??\n**Note:** not coding, so no system or display sub-fields"
+* criticality -> "low | high | unable-to-assess" "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-criticality-map](./ConceptMap-nzcr-allergy-criticality-map.html)\r\n**Note:** not coding, so no system or display sub-fields"
 
 * code.coding.code -> "ZAL-3.1"
 * code.coding.system -> " " "One of:
@@ -50,8 +50,8 @@ depending upon value of ZAL-2.1"
   * display -> "'Medical record number'"
 * patient.display -> "PID-5.1 + ', ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.5"
 
-* onsetDateTime -> "ZAL-5"  "if there is no ZAL-9 value to complete onsetPeriod\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
-* onsetPeriod.start -> "ZAL-5" "only if there is ZAL-9 value to complete Period\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
+* onsetDateTime -> "ZAL-5"  "if there is no ZAL-9 value to complete onsetPeriod\r\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
+* onsetPeriod.start -> "ZAL-5" "only if there is ZAL-9 value to complete Period\r\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 * onsetPeriod.end -> "ZAL-9" 
 
 * recorder.reference -> " " "read-only field"

@@ -60,9 +60,9 @@ Description: "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper l
 * experimental = false
 * purpose = "Translates level 2 ethnicity codes used in WebPAS to more recognised level 4 ethnicity codes"
 * status = #active
-* sourceUri = $NZStatsEthnicityLevel2CS
-* targetUri = $NZStatsEthnicityLevel4CS
-* group[+]
+* sourceUri = $NZCentralRegionEthnicityLevel2VS     // Source ValueSet
+* targetUri = $NZStatsEthnicityLevel4VS             // Target ValueSet
+* group[+]                                          // Separate Group for each Source/Target CodeSystem tuple
   * source = $NZStatsEthnicityLevel2CS
   * target = $NZStatsEthnicityLevel4CS
 
