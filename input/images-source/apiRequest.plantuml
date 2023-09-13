@@ -1,0 +1,38 @@
+@startuml
+skin rose
+autonumber "[#]"
+hide footbox
+skinparam responseMessageBelowArrow true
+skinparam sequenceMessageAlign direction
+skinparam sequenceGroupBorderThickness 1
+
+title API Calls
+
+actor "API Client Operator" as apiClientOp
+participant "API Client\n(Whanau Tahi, Scope etc.)" as apiClient
+participant "MidCentral IT\nSupport" as itSupport
+participant "Azure AD" as idProvider
+participant "SmileCDR\nIntegration Hub" as smileCDR
+
+group #azure API Request
+  group #azure Request AccessToken
+    apiClient -> apiClient: generateAccessRequest(pvtKey)
+
+    activate idProvider #lavender
+    apiClient -> idProvider: makeAccessRequest(requestJWT)
+    idProvider -> idProvider: validateAccessRequest(requestJWT, pubKey)
+    idProvider -> idProvider: generateAccessToken()
+    idProvider -> apiClient: accessTokenJWT
+    deactivate idProvider
+    apiClient -> apiClient: generateAccessRequest(pvtKey)
+  end
+
+  apiClient -> smileCDR: apiRequest(accessTokenJWT)
+  activate smileCDR #lavender
+  smileCDR -> idProvider: validate(accessTokenJWT)
+  idProvider -> smileCDR: ack
+  smileCDR -> smileCDR: processAPIRequest()
+  smileCDR -> apiClient: apiResponse()
+  deactivate smileCDR
+end
+@enduml

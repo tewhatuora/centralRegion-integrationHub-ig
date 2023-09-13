@@ -1,0 +1,51 @@
+@startuml
+skin rose
+autonumber "[#]"
+hide footbox
+skinparam responseMessageBelowArrow true
+skinparam sequenceMessageAlign direction
+skinparam sequenceGroupBorderThickness 1
+
+title API Client Provisioning
+
+actor "API Client Operator" as apiClientOp
+participant "API Client\n(Whanau Tahi, Scope etc.)" as apiClient
+participant "MidCentral IT\nSupport" as itSupport
+participant "Azure AD" as idProvider
+participant "SmileCDR\nIntegration Hub" as smileCDR
+
+note left of apiClientOp
+**Preconditions:**
+1. TEST instance of SmileCDR registered in AzureAD
+end note
+
+group #azure Client Authorisation
+  apiClientOp -> apiClientOp: generate RSA keys()
+  apiClientOp -> itSupport: requestAPIAccess(pubKeyCertificate)
+
+  activate itSupport #lavender
+
+  itSupport -> idProvider: createAPIUser()
+  activate idProvider #lavender
+  idProvider -> idProvider: generateClientIDs()
+  return clientIDs
+
+  itSupport -> idProvider: upload(pubKeyCertificate)
+  activate idProvider #lavender
+  idProvider -> idProvider: storePubKeyCertificate()
+  return ack
+  deactivate idProvider
+
+  itSupport -> idProvider: authoriseAPIUser()
+  activate idProvider #lavender
+  idProvider -> idProvider: storeAuthorisation()
+  return ack
+  deactivate idProvider
+
+  itSupport -> apiClientOp: clientIDs
+  deactivate itSupport
+
+  apiClientOp -> apiClient: load RSA keys & Client IDs()
+end
+
+@enduml
