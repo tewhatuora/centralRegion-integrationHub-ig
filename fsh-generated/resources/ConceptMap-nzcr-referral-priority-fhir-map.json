@@ -8,8 +8,8 @@
   "experimental": false,
   "purpose": "Translates referral priority codes used in WebPAS to more recognised FHIR ServiceLEvel priority codes",
   "status": "active",
-  "sourceUri": "https://standards.digital.health.nz/ns/central-region/referral-priority",
-  "targetUri": "http://hl7.org/fhir/request-priority",
+  "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-priority",
+  "targetUri": "http://hl7.org/fhir/ValueSet/request-priority",
   "group": [
     {
       "source": "https://standards.digital.health.nz/ns/central-region/referral-priority",

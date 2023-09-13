@@ -742,6 +742,30 @@
       },
       {
         "reference": {
+          "reference": "ConceptMap/nzcr-allergy-category-map"
+        },
+        "name": "nzcr-allergy-category-map",
+        "description": "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy category codes. Added complexity as we have codes from two different code-systems",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/nzcr-allergy-criticality-map"
+        },
+        "name": "nzcr-allergy-criticality-map",
+        "description": "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy criticality codes. Added complexity as we have codes from two different code-systems",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/nzcr-allergy-type-map"
+        },
+        "name": "nzcr-allergy-type-map",
+        "description": "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy type codes. Added complexity as we have codes from two different code-systems",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ConceptMap/nzcr-ethnicity-2to4-map"
         },
         "name": "nzcr-ethnicity-2to4-map",

@@ -483,7 +483,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-8 & ZAL-9",
-            "comment": "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty **then** 'active' **else** 'inactive'"
+            "comment": "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty\r\n**then** 'active'\r\n**else** 'inactive'"
           }
         ]
       },
@@ -495,7 +495,7 @@
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
-            "map": "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty **then** 'Active' **else** 'Inactive'"
+            "map": "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty\r\n**then** 'Active'\r\n**else** 'Inactive'"
           }
         ]
       },
@@ -594,7 +594,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "allergy | intolerance",
-            "comment": "TODO:  check if data available\n**Note:** not coding, so no system or display sub-fields"
+            "comment": "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-type-map](./ConceptMap-nzcr-allergy-type-map.html)\r\n**Note:** not coding, so no system or display sub-fields"
           }
         ]
       },
@@ -623,7 +623,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "food | medication | environment | biologic",
-            "comment": "Lookup from ZAL-2.1 - perhaps ConceptMap from [A3 A4 Code System](./CodeSystem-nzcr-allergy-reaction-a3a4-cs.html) or [H1 H3 Code System](/CodeSystem-nzcr-allergy-reaction-h1h3-cs.html)\n**Note:** not coding, so no system or display sub-fields"
+            "comment": "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-category-map](./ConceptMap-nzcr-allergy-category-map.html)\r\n**Note:** not coding, so no system or display sub-fields"
           }
         ]
       },
@@ -651,7 +651,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "low | high | unable-to-assess",
-            "comment": "perhaps derived from severity ??\n**Note:** not coding, so no system or display sub-fields"
+            "comment": "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-criticality-map](./ConceptMap-nzcr-allergy-criticality-map.html)\r\n**Note:** not coding, so no system or display sub-fields"
           }
         ]
       },
@@ -1004,7 +1004,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-5",
-            "comment": "if there is no ZAL-9 value to complete onsetPeriod\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
+            "comment": "if there is no ZAL-9 value to complete onsetPeriod\r\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },
@@ -1027,7 +1027,7 @@
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
             "map": "ZAL-5",
-            "comment": "only if there is ZAL-9 value to complete Period\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
+            "comment": "only if there is ZAL-9 value to complete Period\r\n**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
           }
         ]
       },

@@ -1,0 +1,181 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "nzcr-allergy-criticality-map",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-criticality",
+  "name": "NZCRAllergyReactionCriticalityConceptMap",
+  "title": "NZ Central Region Allergy Reaction to Criticality Concept Map",
+  "description": "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy criticality codes",
+  "experimental": false,
+  "purpose": "Translates allergy reaction codes used in WebPAS to FHIR allergy criticality codes",
+  "status": "active",
+  "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-reaction",
+  "targetUri": "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4",
+      "target": "http://hl7.org/fhir/allergy-intolerance-criticality",
+      "element": [
+        {
+          "code": "R01",
+          "display": "Bee stings",
+          "target": [
+            {
+              "code": "unable-to-assess",
+              "display": "Unable to Assess Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R02",
+          "display": "Hay fever",
+          "target": [
+            {
+              "code": "unable-to-assess",
+              "display": "Unable to Assess Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R03",
+          "display": "Not known",
+          "target": [
+            {
+              "code": "unable-to-assess",
+              "display": "Unable to Assess Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R04",
+          "display": "Nuts",
+          "target": [
+            {
+              "code": "unable-to-assess",
+              "display": "Unable to Assess Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R05",
+          "display": "Medication",
+          "target": [
+            {
+              "code": "unable-to-assess",
+              "display": "Unable to Assess Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3",
+      "target": "http://hl7.org/fhir/allergy-intolerance-criticality",
+      "element": [
+        {
+          "code": "R01",
+          "display": "Drg anaphylaxis",
+          "target": [
+            {
+              "code": "high",
+              "display": "High Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R02",
+          "display": "drug allergy",
+          "target": [
+            {
+              "code": "low",
+              "display": "Low Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R03",
+          "display": "drug intolerance",
+          "target": [
+            {
+              "code": "low",
+              "display": "Low Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R04",
+          "display": "food anaphylaxis",
+          "target": [
+            {
+              "code": "high",
+              "display": "High Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R05",
+          "display": "food allergy",
+          "target": [
+            {
+              "code": "low",
+              "display": "Low Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R06",
+          "display": "food intolerance",
+          "target": [
+            {
+              "code": "low",
+              "display": "Low Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R07",
+          "display": "other anaphylaxis",
+          "target": [
+            {
+              "code": "high",
+              "display": "High Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R08",
+          "display": "other allergy",
+          "target": [
+            {
+              "code": "low",
+              "display": "Low Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R09",
+          "display": "other intolerance",
+          "target": [
+            {
+              "code": "low",
+              "display": "Low Risk",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

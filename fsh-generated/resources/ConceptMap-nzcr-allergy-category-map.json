@@ -1,0 +1,181 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "nzcr-allergy-category-map",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-category",
+  "name": "NZCRAllergyReactionCategoryConceptMap",
+  "title": "NZ Central Region Allergy Reaction to Category Concept Map",
+  "description": "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy category codes",
+  "experimental": false,
+  "purpose": "Translates allergy reaction codes used in WebPAS to FHIR allergy category codes",
+  "status": "active",
+  "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-reaction",
+  "targetUri": "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4",
+      "target": "http://hl7.org/fhir/allergy-intolerance-category",
+      "element": [
+        {
+          "code": "R01",
+          "display": "Bee stings",
+          "target": [
+            {
+              "code": "environment",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R02",
+          "display": "Hay fever",
+          "target": [
+            {
+              "code": "environment",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R03",
+          "display": "Not known",
+          "target": [
+            {
+              "code": "environment",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R04",
+          "display": "Nuts",
+          "target": [
+            {
+              "code": "food",
+              "display": "Food",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R05",
+          "display": "Medication",
+          "target": [
+            {
+              "code": "medication",
+              "display": "Medication",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3",
+      "target": "http://hl7.org/fhir/allergy-intolerance-category",
+      "element": [
+        {
+          "code": "R01",
+          "display": "Drg anaphylaxis",
+          "target": [
+            {
+              "code": "medication",
+              "display": "Medication",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R02",
+          "display": "drug allergy",
+          "target": [
+            {
+              "code": "medication",
+              "display": "Medication",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R03",
+          "display": "drug intolerance",
+          "target": [
+            {
+              "code": "medication",
+              "display": "Medication",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R04",
+          "display": "food anaphylaxis",
+          "target": [
+            {
+              "code": "food",
+              "display": "Food",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R05",
+          "display": "food allergy",
+          "target": [
+            {
+              "code": "food",
+              "display": "Food",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R06",
+          "display": "food intolerance",
+          "target": [
+            {
+              "code": "food",
+              "display": "Food",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R07",
+          "display": "other anaphylaxis",
+          "target": [
+            {
+              "code": "environment",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R08",
+          "display": "other allergy",
+          "target": [
+            {
+              "code": "environment",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R09",
+          "display": "other intolerance",
+          "target": [
+            {
+              "code": "environment",
+              "display": "Environment",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

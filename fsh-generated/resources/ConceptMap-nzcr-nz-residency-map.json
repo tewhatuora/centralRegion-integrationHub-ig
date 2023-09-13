@@ -8,8 +8,8 @@
   "experimental": false,
   "purpose": "Translates raw detailed NZ Visa & Citizenship codes used in WebPAS to more generic yes | no | unknown codes from NZ Base",
   "status": "active",
-  "sourceUri": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
-  "targetUri": "https://standards.digital.health.nz/ns/nz-residency-code",
+  "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency",
+  "targetUri": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code",
   "group": [
     {
       "source": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",

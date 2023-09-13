@@ -8,8 +8,8 @@
   "experimental": false,
   "purpose": "Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes",
   "status": "active",
-  "sourceUri": "https://standards.digital.health.nz/ns/central-region/patient-religion",
-  "targetUri": "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+  "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion",
+  "targetUri": "http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation",
   "group": [
     {
       "source": "https://standards.digital.health.nz/ns/central-region/patient-religion",

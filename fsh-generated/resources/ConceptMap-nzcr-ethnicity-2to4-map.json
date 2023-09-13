@@ -8,8 +8,8 @@
   "experimental": false,
   "purpose": "Translates level 2 ethnicity codes used in WebPAS to more recognised level 4 ethnicity codes",
   "status": "active",
-  "sourceUri": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
-  "targetUri": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
+  "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2",
+  "targetUri": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code",
   "group": [
     {
       "source": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
