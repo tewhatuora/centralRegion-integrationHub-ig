@@ -7,18 +7,24 @@ This is the Implementation Guide for the [HL7® FHIR©](http://hl7.org/fhir) int
 
 - Use Cases: Expected Use Cases supported by the Integration Hub
 
-- API: The specific API features supported by Integration Hub
+  - [Refer Patient](./useCaseReferPatient.html)
+  - [Update Patient](./useCaseUpdatePatient.html)
 
-- Profiles: A list of the FHIR Resource Profiles that are defined by the guide.
+- API: The specific API features supported by the Integration Hub [Summary](./CapabilityStatement-nzcr-SmileCDR.html) or [Details](./capabilityStatement.html)
 
-- [Terminology](./artifacts.html#terminology-value-sets): List of the FHIR terminology Value Set and Code System artifacts defined within this implementation guide
+- Profiles: A list of the FHIR Resource [Profiles](./artifacts.html#2) and [Extensions](./artifacts.html#3) that are defined by the guide.
 
-- [Artifact Index](artifacts.html): A page with all artifacts (Logical Models, Profiles, Extensions, Terminology and others) defined in this guide.
+- Terminology: List of the FHIR terminology artifacts [Code Systems](./artifacts.html#terminology-code-systems), 
+       [Value Sets](./artifacts.html#terminology-value-sets), [Concept Maps](./artifacts.html#terminology-concept-maps), 
+       [Example Instances](./artifacts.html#example-example-instances) defined within this implementation guide
+
+- [Release Notes](./ReleaseNotes.html): Brief notes of recent changes made to this Implementation Guide
+
+- [Developer's Guide](./DeveloperGuide.html): Outlines the API Client provisioning process; and obtaining OAuth access tokens to authenticate API calls.
 
 ## Logical Data Model
 The Integration Hub supports a small set of FHIR Resources:
 
 <figure>
 {% include datamodel.svg %}
-<figcaption>Supported FHIR Resources</figcaption>
 </figure>

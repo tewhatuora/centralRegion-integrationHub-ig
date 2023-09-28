@@ -90,6 +90,18 @@ Description:  "3 and 4 character codes denoting Language ex. WebPAS in NZ Centra
 * #zROH  "Rohingya"
 * #zTEO  "Chinese - Teochoew"
 
+
+ValueSet: NZCentralRegionRawLanguageValueSet
+Id: nzcr-raw-language-vs
+Title: "NZ Central Region - Raw Language Value Value Set"
+Description:  "Value set being the raw 3-letter (and sometimes 4-letter) raw codes in use in Central Region"
+
+* ^url = $NZCentralRegionRawLanguageVS
+* ^experimental = false
+
+* include codes from system nzcr-raw-language-cs
+
+
 CodeSystem:  NZCentralRegionProposedLanguageCodeSystem
 Id: nzcr-proposed-language-cs
 Title: "NZ Central Region - Proposed Language Code System"
@@ -100,7 +112,6 @@ Description:  "3 character codes denoting Language ex. WebPAS in NZ Central Regi
 * ^caseSensitive = true
 
 * #tws  "Teochew"  // proposed iso-639-3
-
 
 ValueSet: NZCentralRegionLanguageValueSet
 Id: nzcr-language-vs
@@ -206,7 +217,7 @@ Description: "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:
 * experimental = false
 * purpose = "Translates raw language codes used in WebPAS to more recognised `ietf:bcp:47` language codes"
 * status = #active
-* sourceUri = $NZCentralRegionLanguageVS       // Source ValueSet
+* sourceUri = $NZCentralRegionRawLanguageVS    // Source ValueSet
 * targetUri = $IETFLanguageCS                  // Target ValueSet
 * group[+]                                     // Separate Group for each Source/Target CodeSystem tuple
   * source = $NZCentralRegionRawLanguageCS

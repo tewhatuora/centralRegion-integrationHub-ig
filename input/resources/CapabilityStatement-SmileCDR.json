@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "nzcr-SmileCDR",
-  "name": "nzcr-fhir-rest-endpoints",
+  "name": "NZCR FHIR Rest Endpoints",
   "title": "Central Region FHIR REST Endpoints",
   "status": "active",
   "date": "2023-06-09T00:19:45.478+00:00",
@@ -628,12 +628,6 @@
           ]
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
-              "valueDecimal": 26
-            }
-          ],
           "type": "AllergyIntolerance",
           "profile": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
           "supportedProfile": [
@@ -1491,12 +1485,6 @@
           ]
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
-              "valueDecimal": 58
-            }
-          ],
           "type": "Binary",
           "profile": "http://hl7.org/fhir/StructureDefinition/Binary",
           "interaction": [
@@ -2980,12 +2968,6 @@
           ]
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
-              "valueDecimal": 28
-            }
-          ],
           "type": "CodeSystem",
           "profile": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
           "interaction": [
@@ -4526,12 +4508,6 @@
           ]
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
-              "valueDecimal": 41
-            }
-          ],
           "type": "MessageHeader",
           "profile": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
           "interaction": [
@@ -5632,12 +5608,6 @@
           ]
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
-              "valueDecimal": 4
-            }
-          ],
           "type": "Patient",
           "profile": "http://hl7.org/fhir/StructureDefinition/Patient",
           "supportedProfile": [
@@ -6925,12 +6895,6 @@
           ]
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
-              "valueDecimal": 1325
-            }
-          ],
           "type": "SearchParameter",
           "profile": "http://hl7.org/fhir/StructureDefinition/SearchParameter",
           "interaction": [
@@ -7606,12 +7570,6 @@
           ]
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
-              "valueDecimal": 9
-            }
-          ],
           "type": "StructureDefinition",
           "profile": "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
           "interaction": [
@@ -8778,12 +8736,6 @@
           ]
         },
         {
-          "extension": [
-            {
-              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
-              "valueDecimal": 17
-            }
-          ],
           "type": "ValueSet",
           "profile": "http://hl7.org/fhir/StructureDefinition/ValueSet",
           "interaction": [

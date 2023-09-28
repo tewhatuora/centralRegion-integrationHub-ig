@@ -6,17 +6,17 @@ skinparam responseMessageBelowArrow true
 skinparam sequenceMessageAlign direction
 skinparam sequenceGroupBorderThickness 1
 
-title API Client Provisioning
+title API Client Provisioning Process
 
 actor "API Client Operator" as apiClientOp
 participant "API Client\n(Whanau Tahi, Scope etc.)" as apiClient
-participant "MidCentral IT\nSupport" as itSupport
-participant "Azure AD" as idProvider
-participant "SmileCDR\nIntegration Hub" as smileCDR
+actor "MidCentral IT\nSupport" as itSupport
+participant "Id Provider" as idProvider
+participant "Integration Hub" as smileCDR
 
 note left of apiClientOp
 **Preconditions:**
-1. TEST instance of SmileCDR registered in AzureAD
+DEV instance of iHub registered in idProvider
 end note
 
 group #azure Client Authorisation

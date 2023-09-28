@@ -43,7 +43,6 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
 * category 0..0 MS  // Implied by the Referral profile of ServiceRequest
 
 * priority 1..1 MS
-* priority from nzcr-referral-priority-vs (required)   // Can we change the binding ??
 
 * doNotPerform 0..0  // N/A for referrals
 

@@ -72,7 +72,7 @@ Description: "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper l
 * insert cmapEntry(21,	"NZ Māori",                  21111,  "Māori")
 * insert cmapEntry(30,	"Pacific Island (nfd\)",     30000,  "Pacific Peoples nfd")
 * insert cmapEntry(31,	"Samoan",                    31111,  "Samoan")
-* insert cmapEntry(32,	"Cook Island Māori",         32100,  "Cook Island Māori")
+* insert cmapEntry(32,	"Cook Island Māori",         32100,  "Cook Islands Maori")
 * insert cmapEntry(33,	"Tongan",                    33111,  "Tongan")
 * insert cmapEntry(34,	"Niuean",                    34111,  "Niuean")
 * insert cmapEntry(35,	"Tokelauan",                 35111,  "Tokelauan")

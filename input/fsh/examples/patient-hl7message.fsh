@@ -24,7 +24,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, includi
 
 * extension[ethnicity][+].valueCodeableConcept.coding[+].code = #21
 * extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel2CS
-* extension[ethnicity][=].valueCodeableConcept.coding[=].display = "Māori"
+* extension[ethnicity][=].valueCodeableConcept.coding[=].display = "NZ Māori"
 * extension[ethnicity][+].valueCodeableConcept.coding[+].code = #11
 * extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel2CS
 * extension[ethnicity][=].valueCodeableConcept.coding[=].display = "NZ European"

@@ -54,9 +54,9 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
   * id 0..0
   
 * effective[x] 1..1 MS
-* effective[x] only dateTime
+* effective[x] only dateTime  // ZLS-8  - review datetime
 
-* date MS
+* date MS    // ZLS-12   - date review was first recorded
 
 * assessor
   * type 1..1 MS
@@ -90,8 +90,11 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
   * extension 0..0
   * id 0..0
 
-* summary 1..1 MS
- 
+* note 1..1 MS
+  * author[x] 0..0 // no data available
+  * time 0..0      // no data available
+  * text 1..1 MS
+
 * extension contains
     nzcr-mental-health named mentalHealth 1..1 MS
 
@@ -106,6 +109,6 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
 * prognosisCodeableConcept 0..0    // no data
 * prognosisReference 0..0          // no data
 * supportingInfo 0..0
-* note 0..0
+* summary 0..0
 
 * meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS

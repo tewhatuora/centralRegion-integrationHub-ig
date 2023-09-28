@@ -25,7 +25,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with mu
 * extension[ethnicity][=].valueCodeableConcept.coding[=].display = "Māori"
 * extension[ethnicity][=].valueCodeableConcept.coding[+].code = #21
 * extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel2CS
-* extension[ethnicity][=].valueCodeableConcept.coding[=].display = "Māori"
+* extension[ethnicity][=].valueCodeableConcept.coding[=].display = "NZ Māori"
 
 
 * maritalStatus.coding[+].code = #S

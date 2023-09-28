@@ -61,7 +61,10 @@ Description: "An example of an allergy/intolerance alert derived from ZAL custom
 
 * extension[allergy-alert]
   * extension[severityLevel].valueString = "S"   // TODO: severityLevel should be integer??
-  * extension[allergyReaction].valueString = "Swelling and Rash"
+  * extension[allergyReaction].valueCoding
+    * code = #R04
+    * system = "https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4"
+    * display = "Nuts"
   * extension[reviewDate].valueDate = "2020-10-20"
   * extension[lastUpdatedBy].valueString = "melissab - Melissa Brosnan MDHB"
   * extension[lastUpdatedDateTime].valueDateTime = "2020-08-26T14:23:57+12:00"

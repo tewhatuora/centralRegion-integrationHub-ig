@@ -6,13 +6,13 @@ skinparam responseMessageBelowArrow true
 skinparam sequenceMessageAlign direction
 skinparam sequenceGroupBorderThickness 1
 
-title API Calls
+title Making FHIR API Calls
 
 actor "API Client Operator" as apiClientOp
 participant "API Client\n(Whanau Tahi, Scope etc.)" as apiClient
-participant "MidCentral IT\nSupport" as itSupport
-participant "Azure AD" as idProvider
-participant "SmileCDR\nIntegration Hub" as smileCDR
+actor "MidCentral IT\nSupport" as itSupport
+participant "Id Provider" as idProvider
+participant "Integration Hub" as smileCDR
 
 group #azure API Request
   group #azure Request AccessToken
@@ -24,7 +24,6 @@ group #azure API Request
     idProvider -> idProvider: generateAccessToken()
     idProvider -> apiClient: accessTokenJWT
     deactivate idProvider
-    apiClient -> apiClient: generateAccessRequest(pvtKey)
   end
 
   apiClient -> smileCDR: apiRequest(accessTokenJWT)

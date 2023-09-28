@@ -78,7 +78,7 @@ Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR alle
 
 * group[+]                                                    // Separate Group for each Source/Target CodeSystem
   * source = $NZCentralRegionAllergyReactionH1H3CS
-  * target = $HL7AllergyCategoryCS
+  * target = $HL7AllergyTypeCS
 
 * insert cmapEntry(R01, "Drg anaphylaxis",   "allergy", "Allergy")
 * insert cmapEntry(R02, "drug allergy",      "allergy", "Allergy")

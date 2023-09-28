@@ -142,7 +142,7 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
 * note 1..1 MS
   * author[x] 0..0 // no data available
   * time 0..0      // no data available
-  * text 1..1 MS   // no data available
+  * text 1..1 MS
 
 * reaction 0..0         // no data available - is record of specific reaction event
 * encounter 0..0        // no data available

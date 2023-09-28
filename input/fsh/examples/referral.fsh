@@ -20,13 +20,13 @@ Description: "An example of a Referral flavour of ServiceRequest resource, in Te
   * system = $NZCentralRegionReferralTypeCS
   * display = "Allied Health"
 
-* priority = #LOW
+* priority = #routine
 
 * reasonCode.coding
-  * code = #IRRBOW
+  * code = #K589
   * system = $NZCentralRegionReferralReasonCS
-  * display = "Irritable Bowel Syndrome"
-
+  * display = "Irritable bowel syndrome without diarrho"
+  
 * locationCode.coding
   * code = #MDT
   * system = $NZCentralRegionDepartmentCS

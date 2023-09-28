@@ -41,8 +41,13 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
 * extension[allergyReaction]
   * ^definition = "Allergy Reaction"
   * ^short = "Allergy Reaction"
-  * value[x] only string
-  * value[x] 1..1
+  * value[x] only Coding
+  * value[x] from nzcr-allergy-reaction-vs (required)
+  * valueCoding 1..1
+    * version 0..0        // not versioned
+    * userSelected 0..0   // not used
+    * extension 0..0
+    * id 0..0  
   * id 0..0
 
 * extension[inactiveDate]

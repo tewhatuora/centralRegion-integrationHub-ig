@@ -82,7 +82,7 @@ elif PIF-8 == '**U**' then '**unknown**'"
 * extension[interpreterRequired].valueBoolean -> "PID-15.4" "if PID-15.4='Y' then 'true' else 'false'"
 
 * communication.language.coding -> "PID-15"  "At least two codings:\r\n * https://standards.digital.health.nz/ns/central-region/pas-language AND \r\n * urn:ietf:bcp:47"
-* communication.language.coding.code -> "PID-15.1" "[Language Concept Map](./ConceptMap-LanguageMap.html) provides mapping from [WebPAS raw code](./CodeSystem-nzcr-pas-language-cs.html)\r\n**Note:** `zOTH` and `zTEO` codes are mapped to special systems"
+* communication.language.coding.code -> "PID-15.1" "[Language Concept Map](./ConceptMap-nzcr-language-map.html) provides mapping from [WebPAS raw code](./CodeSystem-nzcr-raw-language-cs.html)\r\n**Note:** `zOTH` and `zTEO` codes are mapped to special systems"
 * communication.language.coding.display -> "PID-15.2"
 * communication.language.coding.system -> "https://standards.digital.health.nz/ns/central-region/pas-language OR urn:ietf:bcp:47"  "ietf:bcp:47 includes all iso-639 language codes;"
 * communication.preferred -> "'true'" "PID-15 is by definition the patient's preferred language"

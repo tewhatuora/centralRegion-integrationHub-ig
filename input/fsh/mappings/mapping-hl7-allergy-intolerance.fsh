@@ -66,7 +66,8 @@ depending upon value of ZAL-2.1"
 
 * recorder.display -> "ZAL-10.2 + ', ' + ZAL-10.3 + ' ' + ZAL-10.4 + ' ' + ZAL-10.5"
 
-* note -> "ZAL-14"
+* note
+  * text -> "ZAL-14"
 
 * extension[allergy-alert].url -> "'https://standards.digital.health.nz/ns/central-region/alert'"
 
@@ -75,7 +76,9 @@ depending upon value of ZAL-2.1"
 * extension[allergy-alert].extension[severityLevel].valueString -> "ZAL-6"   "TODO: severityLevel should be integer"
 
 * extension[allergy-alert].extension[allergyReaction].url -> "'allergyReaction'"
-* extension[allergy-alert].extension[allergyReaction].valueString -> "ZAL-4"
+* extension[allergy-alert].extension[allergyReaction].valueCoding.code -> "ZAL-4.1"
+* extension[allergy-alert].extension[allergyReaction].valueCoding.system -> "'https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4' or 'https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3'"
+* extension[allergy-alert].extension[allergyReaction].valueCoding.display -> "ZAL-4.2"
 
 * extension[allergy-alert].extension[reviewDate].url -> "'reviewDate'"
 * extension[allergy-alert].extension[reviewDate].valueDate -> "ZAL-7" "**Note:** ISO-8601 date format includes dashes"

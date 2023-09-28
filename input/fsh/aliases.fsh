@@ -61,7 +61,7 @@ Alias:   $NZStatsEthnicityLevel4VS = https://nzhts.digital.health.nz/fhir/ValueS
 // Local URLs for locally defined extensions
 Alias:   $NZCentralRegionHL7v2Message          = https://standards.digital.health.nz/ns/central-region/hl7v2-message
 Alias:   $NZCentralRegionAlert                 = https://standards.digital.health.nz/ns/central-region/alert
-Alias:   $NZCentralRegionMentalHealth          = https://standards.digital.health.nz/ns/central-region/mental-health
+Alias:   $NZCentralRegionMentalHealth          = https://standards.digital.health.nz/ns/central-region/mental-health-status
 Alias:   $NZCentralRegionReferral              = https://standards.digital.health.nz/ns/central-region/referral
 
 // Local URLs for locally defined CodeSystems
@@ -80,6 +80,8 @@ Alias:   $NZCentralRegionAlertCategoryCS        = https://standards.digital.heal
 
 Alias:   $NZCentralRegionAllergyAlertCodeH1CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1
 Alias:   $NZCentralRegionAllergyAlertCodeH3CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
+Alias:   $NZCentralRegionAllergyAlertCodeA3CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
+Alias:   $NZCentralRegionAllergyAlertCodeA4CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
 Alias:   $NZCentralRegionAllergyReactionA3A4CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4
 Alias:   $NZCentralRegionAllergyReactionH1H3CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3
 
@@ -116,6 +118,7 @@ Alias:   $NZCentralRegionMaritalStatusVS           = https://standards.digital.h
 Alias:   $NZCentralRegionResidencyVS               = https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency
 Alias:   $NZCentralRegionReligionVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion
 Alias:   $NZCentralRegionContactRelationshipVS     = https://standards.digital.health.nz/fhir/central-region/ValueSet-contact-relationship
+Alias:   $NZCentralRegionRawLanguageVS             = https://standards.digital.health.nz/fhir/central-region/ValueSet-raw-language         // the raw language codes we start with
 Alias:   $NZCentralRegionLanguageVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-language             // subset of IETF codes we use
 
 Alias:   $NZCentralRegionFlagAlertCategoryVS       = https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag

@@ -25,6 +25,10 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
     * display -> "'Medical record number'"
   * display -> "PID-5.1 + ', ' + PID-5.2 + ' ' + PID-5.3 + ' ' + PID-5.5"
 
+* effectiveDateTime -> "ZLS-8" "Datetime the review/assessment took place"
+
+* date -> "ZLS-12" "Date the assessment was recorded"
+
 * assessor
   * reference -> " " "read-only field"
   * type -> "'Practitioner'"
@@ -37,7 +41,11 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
     * display -> "'Local registry ID'"
   * display -> "ZLS-6.2 + ', ' + ZLS-6.3 + ' ' + ZLS-6.4 + ' ' + ZLS-6.5"
 
-* extension[mentalHealth].url -> "'https://standards.digital.health.nz/ns/central-region/alert'"
+* note
+  * text -> "ZLS-10"
+
+
+* extension[mentalHealth].url -> "'https://standards.digital.health.nz/ns/central-region/mental-health'"
 
 * extension[mentalHealth].extension[legalStatus].url -> "'legalStatus'"
 * extension[mentalHealth].extension[legalStatus].valueCoding -> " "   // non breaking space to shut the validator up
@@ -65,19 +73,17 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
   * system -> "'https://standards.digital.health.nz/ns/central-region/mental-health-review-location'"
   * display -> "ZLS-7.2"
 
-* summary -> "ZLS-10"
-
 * extension[mentalHealth].extension[reminderDate].url -> "'reminderDate'"
 * extension[mentalHealth].extension[reminderDate].value[x] -> "ZLS-9" "**Note:** ISO-8601 Date has field separators"
 
 * extension[mentalHealth].extension[addedBy].url -> "'addedBy'"
-* extension[mentalHealth].extension[addedBy].value[x] -> "ZLS-11.1 + ' - ' + ZLS=11.2"
+* extension[mentalHealth].extension[addedBy].value[x] -> "ZLS-11.1 + ' - ' + ZLS-11.2"
 
 * extension[mentalHealth].extension[addedDateTime].url -> "'addedDateTime'"
 * extension[mentalHealth].extension[addedDateTime].value[x] -> "ZLS-12" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
 
 * extension[mentalHealth].extension[lastUpdatedBy].url -> "'lastUpdatedBy'"
-* extension[mentalHealth].extension[lastUpdatedBy].value[x] -> "ZLS-13.1 + ' - ' + ZLS=13.2"
+* extension[mentalHealth].extension[lastUpdatedBy].value[x] -> "ZLS-13.1 + ' - ' + ZLS-13.2"
 
 * extension[mentalHealth].extension[lastUpdatedDateTime].url -> "'addedDateTime'"
 * extension[mentalHealth].extension[lastUpdatedDateTime].value[x] -> "ZLS-14" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"

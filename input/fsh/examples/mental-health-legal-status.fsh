@@ -38,7 +38,8 @@ Description: "An example of a mental health legal status review ClinicalImpressi
 
 * effectiveDateTime = "2022-08-28T16:52:04+12:00"
 
-* summary = "This is comments made within the patients legal status Extra comments made within the patients legal status"
+* note[+]
+  * text = "This is comments made within the patients legal status Extra comments made within the patients legal status"
 
 * extension[mentalHealth]
   * extension[legalStatus].valueCoding
