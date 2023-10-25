@@ -12,11 +12,11 @@
       </div>
    </text>
    <url value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig"/>
-   <version value="0.4.0"/>
+   <version value="0.6.0"/>
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-09-14T09:17:19+12:00"/>
+   <date value="2023-10-25T16:27:27+13:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
@@ -228,6 +228,14 @@
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
          <extension url="code">
+            <valueString value="apply-wg"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
             <valueString value="active-tables"/>
          </extension>
          <extension url="value">
@@ -316,6 +324,146 @@
          <name value="Example: Example Instances"/>
          <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like."/>
       </grouping>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       <resource>
@@ -865,13 +1013,31 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nzcr-raw-language-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nzcr-raw-language-vs"/>
+         </reference>
+         <name value="NZ Central Region - Raw Language Value Value Set"/>
+         <description value="Value set being the raw 3-letter (and sometimes 4-letter) raw codes in use in Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-nzcr-referral-priority-vs.html"/>
          </extension>
          <reference>
             <reference value="ValueSet/nzcr-referral-priority-vs"/>
          </reference>
          <name value="NZ Central Region - Referral Priority Value Set"/>
-         <description value="Referral Priority codes ex. WebPAS in NZ Central Region."/>
+         <description value="Referral Priority codes ex. WebPAS in NZ Central Region, alongwith HL7 v2 defined codes from Table 0280"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -1626,7 +1792,7 @@
          <reference>
             <reference value="ConceptMap/nzcr-allergy-category-map"/>
          </reference>
-         <name value="nzcr-allergy-category-map"/>
+         <name value="NZ Central Region Allergy Reaction to Category Concept Map"/>
          <description value="Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy category codes. Added complexity as we have codes from two different code-systems"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
@@ -1644,7 +1810,7 @@
          <reference>
             <reference value="ConceptMap/nzcr-allergy-criticality-map"/>
          </reference>
-         <name value="nzcr-allergy-criticality-map"/>
+         <name value="NZ Central Region Allergy Reaction to Criticality Concept Map"/>
          <description value="Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy criticality codes. Added complexity as we have codes from two different code-systems"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
@@ -1662,7 +1828,7 @@
          <reference>
             <reference value="ConceptMap/nzcr-allergy-type-map"/>
          </reference>
-         <name value="nzcr-allergy-type-map"/>
+         <name value="NZ Central Region Allergy Reaction to Type Concept Map"/>
          <description value="Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy type codes. Added complexity as we have codes from two different code-systems"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
@@ -1680,7 +1846,7 @@
          <reference>
             <reference value="ConceptMap/nzcr-ethnicity-2to4-map"/>
          </reference>
-         <name value="nzcr-ethnicity-2to4-map"/>
+         <name value="NZ Central Region Ethnicity Concept Map"/>
          <description value="Concept map mapping level 2 ethnicity codes ex. WebPAS to proper level 4 ethnicity codes"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
@@ -1698,7 +1864,7 @@
          <reference>
             <reference value="ConceptMap/nzcr-language-map"/>
          </reference>
-         <name value="nzcr-language-map"/>
+         <name value="NZ Central Region Language Concept Map"/>
          <description value="Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
@@ -1716,7 +1882,7 @@
          <reference>
             <reference value="ConceptMap/nzcr-nz-residency-map"/>
          </reference>
-         <name value="nzcr-nz-residency-map"/>
+         <name value="NZ Central Region NZ Residency Concept Map"/>
          <description value="Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
@@ -1734,7 +1900,7 @@
          <reference>
             <reference value="ConceptMap/nzcr-referral-priority-fhir-map"/>
          </reference>
-         <name value="nzcr-referral-priority-fhir-map"/>
+         <name value="NZ Central Region Referral Priority Concept Map"/>
          <description value="Concept map mapping referral priority codes ex. WebPAS to FHIR ServiceRequest priority codes"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
@@ -1752,7 +1918,7 @@
          <reference>
             <reference value="ConceptMap/nzcr-religion-map"/>
          </reference>
-         <name value="nzcr-religion-map"/>
+         <name value="NZ Central Region Religion Concept Map"/>
          <description value="Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes"/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
@@ -2070,6 +2236,22 @@
          </page>
          <page>
             <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="DeveloperGuide.html"/>
+            </extension>
+            <nameUrl value="DeveloperGuide.html"/>
+            <title value="Developer Guide"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="ReleaseNotes.html"/>
+            </extension>
+            <nameUrl value="ReleaseNotes.html"/>
+            <title value="Release Notes"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
                <valueUrl value="technologyLandscape.html"/>
             </extension>
             <nameUrl value="technologyLandscape.html"/>
@@ -2132,23 +2314,23 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-nzcr-alert.html"/>
-               <title value="NZ Central Region Alert"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="StructureDefinition-nzcr-referral.html"/>
-               <title value="NZ Central Region Referral"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="StructureDefinition-nzcr-hl7v2-message.html"/>
                <title value="HL7 v2 Message"/>
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-nzcr-alert.html"/>
+               <title value="NZ Central Region Alert"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-nzcr-mental-health.html"/>
                <title value="NZ Central Region Mental Health"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-nzcr-referral.html"/>
+               <title value="NZ Central Region Referral"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2174,11 +2356,6 @@
             <page>
                <nameUrl value="ValueSet-nzcr-clinic-vs.html"/>
                <title value="NZ Central Region - Clinic Value Set"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="ValueSet-nzcr-contact-relationship-vs.html"/>
-               <title value="NZ Central Region - NZ ContactRelationship Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2227,18 +2404,33 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-nzcr-mental-health-legal-status-vs.html"/>
-               <title value="NZ Central Region - MentalHealthLegalStatus Value Set"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="ValueSet-nzcr-mental-health-review-location-vs.html"/>
                <title value="NZ Central Region - Mental Health Review Location Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-nzcr-mental-health-legal-status-vs.html"/>
+               <title value="NZ Central Region - MentalHealthLegalStatus Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-nzcr-mental-health-review-status-vs.html"/>
                <title value="NZ Central Region - MentalHealthReviewStatus Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nzcr-contact-relationship-vs.html"/>
+               <title value="NZ Central Region - NZ ContactRelationship Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nzcr-residency-vs.html"/>
+               <title value="NZ Central Region - NZ Residency Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nzcr-raw-language-vs.html"/>
+               <title value="NZ Central Region - Raw Language Value Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2264,11 +2456,6 @@
             <page>
                <nameUrl value="ValueSet-nzcr-referral-type-vs.html"/>
                <title value="NZ Central Region - Referral Type Value Set"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="ValueSet-nzcr-residency-vs.html"/>
-               <title value="NZ Central Region - NZ Residency Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2307,11 +2494,6 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="CodeSystem-nzcr-contact-relationship-cs.html"/>
-               <title value="NZ Central Region - NZ ContactRelationship Code System"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="CodeSystem-nzcr-department-cs.html"/>
                <title value="NZ Central Region - Department Code System"/>
                <generation value="generated"/>
@@ -2319,11 +2501,6 @@
             <page>
                <nameUrl value="CodeSystem-nzcr-ethnicity-level-2-code-system.html"/>
                <title value="NZ Central Region - Ethnicity Level 2 Code System"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="CodeSystem-nzcr-extra-marital-status-cs.html"/>
-               <title value="NZ Central Region - Marital Status Code System"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2387,13 +2564,13 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="CodeSystem-nzcr-mental-health-court-type-cs.html"/>
-               <title value="NZ Central Region - Mental Health Court Type Code System"/>
+               <nameUrl value="CodeSystem-nzcr-extra-marital-status-cs.html"/>
+               <title value="NZ Central Region - Marital Status Code System"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="CodeSystem-nzcr-mental-health-legal-status-cs.html"/>
-               <title value="NZ Central Region - MentalHealthLegalStatus Code System"/>
+               <nameUrl value="CodeSystem-nzcr-mental-health-court-type-cs.html"/>
+               <title value="NZ Central Region - Mental Health Court Type Code System"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2402,8 +2579,28 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="CodeSystem-nzcr-mental-health-legal-status-cs.html"/>
+               <title value="NZ Central Region - MentalHealthLegalStatus Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="CodeSystem-nzcr-mental-health-review-status-cs.html"/>
                <title value="NZ Central Region - MentalHealthReviewStatus Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nzcr-contact-relationship-cs.html"/>
+               <title value="NZ Central Region - NZ ContactRelationship Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nzcr-religion-cs.html"/>
+               <title value="NZ Central Region - NZ Religion Code System"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nzcr-residency-cs.html"/>
+               <title value="NZ Central Region - NZ Residency Code System"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2442,58 +2639,48 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="CodeSystem-nzcr-religion-cs.html"/>
-               <title value="NZ Central Region - NZ Religion Code System"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="CodeSystem-nzcr-residency-cs.html"/>
-               <title value="NZ Central Region - NZ Residency Code System"/>
-               <generation value="generated"/>
-            </page>
-            <page>
                <nameUrl value="CodeSystem-nz-residency.html"/>
                <title value="NZ Residency status"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="ConceptMap-nzcr-allergy-category-map.html"/>
-               <title value="nzcr-allergy-category-map"/>
+               <title value="NZ Central Region Allergy Reaction to Category Concept Map"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="ConceptMap-nzcr-allergy-criticality-map.html"/>
-               <title value="nzcr-allergy-criticality-map"/>
+               <title value="NZ Central Region Allergy Reaction to Criticality Concept Map"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="ConceptMap-nzcr-allergy-type-map.html"/>
-               <title value="nzcr-allergy-type-map"/>
+               <title value="NZ Central Region Allergy Reaction to Type Concept Map"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="ConceptMap-nzcr-ethnicity-2to4-map.html"/>
-               <title value="nzcr-ethnicity-2to4-map"/>
+               <title value="NZ Central Region Ethnicity Concept Map"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="ConceptMap-nzcr-language-map.html"/>
-               <title value="nzcr-language-map"/>
+               <title value="NZ Central Region Language Concept Map"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="ConceptMap-nzcr-nz-residency-map.html"/>
-               <title value="nzcr-nz-residency-map"/>
+               <title value="NZ Central Region NZ Residency Concept Map"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="ConceptMap-nzcr-referral-priority-fhir-map.html"/>
-               <title value="nzcr-referral-priority-fhir-map"/>
+               <title value="NZ Central Region Referral Priority Concept Map"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="ConceptMap-nzcr-religion-map.html"/>
-               <title value="nzcr-religion-map"/>
+               <title value="NZ Central Region Religion Concept Map"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -2720,6 +2907,10 @@
       </parameter>
       <parameter>
          <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-wg"/>
          <value value="true"/>
       </parameter>
       <parameter>

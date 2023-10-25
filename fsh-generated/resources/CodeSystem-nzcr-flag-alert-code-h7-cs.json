@@ -1,12 +1,11 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
+  "status": "draft",
   "content": "complete",
   "name": "NZCentralRegionFlagAlertCodeH7CodeSystem",
   "id": "nzcr-flag-alert-code-h7-cs",
   "title": "NZ Central Region - Flag Alert Codes (H7)",
   "description": "H7 (disability) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
-  "version": "0.4.0",
   "url": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h7",
   "concept": [
     {

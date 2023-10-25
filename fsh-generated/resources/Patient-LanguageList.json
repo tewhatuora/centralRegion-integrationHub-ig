@@ -637,7 +637,7 @@
           {
             "code": "mi",
             "system": "urn:ietf:bcp:47",
-            "display": "Māori"
+            "display": "Maori"
           }
         ]
       },
@@ -793,7 +793,7 @@
           {
             "code": "rar",
             "system": "urn:ietf:bcp:47",
-            "display": "Cook Island Māori"
+            "display": "Rarotongan"
           }
         ]
       },

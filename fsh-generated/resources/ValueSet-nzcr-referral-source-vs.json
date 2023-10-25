@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "NZCentralRegionReferralSourceValueSet",
   "id": "nzcr-referral-source-vs",
   "title": "NZ Central Region - Referral Source Value Set",
   "description": "Referral Source codes ex. WebPAS in NZ Central Region.",
-  "version": "0.4.0",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-source",
   "experimental": false,
   "compose": {

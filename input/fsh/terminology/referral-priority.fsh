@@ -23,12 +23,13 @@ Description:  "Referral Priority codes; ex. WebPAS in NZ Central Region."
 ValueSet: NZCentralRegionReferralPriorityValueSet
 Id: nzcr-referral-priority-vs
 Title: "NZ Central Region - Referral Priority Value Set"
-Description:  "Referral Priority codes ex. WebPAS in NZ Central Region."
+Description:  "Referral Priority codes ex. WebPAS in NZ Central Region, alongwith HL7 v2 defined codes from Table 0280"
 
 * ^url = $NZCentralRegionReferralPriorityVS
 * ^experimental = false
 
 * include codes from system nzcr-referral-priority-cs
+* include codes from system $HL7ReferralPriorityCS
 
 
 // WebPAS referral priority codes are different from FHIR Referral Priority codes...
@@ -48,7 +49,7 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
 * status = #active
 * sourceUri = $NZCentralRegionReferralPriorityVS   // Source ValueSet
 * targetUri = $HL7RequestPriorityVS                // Target ValueSet
-* group[+]                                         // Separate Group for each Source/Target CodeSystem tuple
+* group[+]                                         // Separate Group for each Source/Target CodeSystem tuple - this time WebPAS defined codes
   * source = $NZCentralRegionReferralPriorityCS
   * target = $HL7RequestPriorityCS
 
@@ -57,3 +58,11 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
 * insert cmapEntry(SEM,  "3 Semi-urgent",           urgent,  "Urgent")
 * insert cmapEntry(ROU,  "4 Routine",               routine, "Routine")
 * insert cmapEntry(LOW,  "5 Low Priority",          routine, "Routine")  // FHIR only has 4 priority levels
+
+* group[+]                                         // Separate Group for each Source/Target CodeSystem tuple - this time HL7 v2 codes
+  * source = $HL7ReferralPriorityCS
+  * target = $HL7RequestPriorityCS
+
+* insert cmapEntry(S,  "STAT",             stat,    "STAT")
+* insert cmapEntry(A,  "ASAP",             asap,    "ASAP")
+* insert cmapEntry(R,  "Routine",          routine, "Routine")

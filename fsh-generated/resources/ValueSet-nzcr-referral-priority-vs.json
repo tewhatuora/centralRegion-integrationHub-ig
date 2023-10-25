@@ -1,17 +1,19 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "NZCentralRegionReferralPriorityValueSet",
   "id": "nzcr-referral-priority-vs",
   "title": "NZ Central Region - Referral Priority Value Set",
-  "description": "Referral Priority codes ex. WebPAS in NZ Central Region.",
-  "version": "0.4.0",
+  "description": "Referral Priority codes ex. WebPAS in NZ Central Region, alongwith HL7 v2 defined codes from Table 0280",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-priority",
   "experimental": false,
   "compose": {
     "include": [
       {
         "system": "https://standards.digital.health.nz/ns/central-region/referral-priority"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0280"
       }
     ]
   }

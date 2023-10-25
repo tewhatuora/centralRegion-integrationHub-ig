@@ -17,8 +17,8 @@ Alias:   $HL7AllergyCriticalityCS    = http://hl7.org/fhir/allergy-intolerance-c
 Alias:   $HL7AllergyClinicalStatusCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias:   $HL7AllergyVerificationCS   = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
+Alias:   $HL7ReferralPriorityCS      = http://terminology.hl7.org/CodeSystem/v2-0280
 Alias:   $HL7RequestPriorityCS       = http://hl7.org/fhir/request-priority
-
 
 // Value Set URLs from FHIR base
 Alias:   $HL7PatientRelgionVS        = http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation

@@ -15,7 +15,7 @@
   "status": "completed",
   "extension": [
     {
-      "url": "https://standards.digital.health.nz/ns/central-region/mental-health",
+      "url": "https://standards.digital.health.nz/ns/central-region/mental-health-status",
       "extension": [
         {
           "url": "legalStatus",
@@ -115,5 +115,9 @@
     "display": "Barnes, Abby Dr"
   },
   "effectiveDateTime": "2022-08-28T16:52:04+12:00",
-  "summary": "This is comments made within the patients legal status Extra comments made within the patients legal status"
+  "note": [
+    {
+      "text": "This is comments made within the patients legal status Extra comments made within the patients legal status"
+    }
+  ]
 }

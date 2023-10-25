@@ -2,9 +2,9 @@
   "resourceType": "ConceptMap",
   "id": "nzcr-religion-map",
   "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-religion",
+  "description": "Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes",
   "name": "NZCRReligionConceptMap",
   "title": "NZ Central Region Religion Concept Map",
-  "description": "Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes",
   "experimental": false,
   "purpose": "Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes",
   "status": "active",
@@ -108,7 +108,7 @@
           "display": "Buddhist",
           "target": [
             {
-              "code": "1058",
+              "code": "1059",
               "display": "Zen Buddhism",
               "equivalence": "equivalent"
             }
@@ -230,7 +230,7 @@
           "target": [
             {
               "code": "1025",
-              "display": "Jehovahs Witness",
+              "display": "Jehovah's Witnesses",
               "equivalence": "equivalent"
             }
           ]
@@ -296,7 +296,7 @@
           "target": [
             {
               "code": "1062",
-              "display": "Bretheren",
+              "display": "Brethren",
               "equivalence": "equivalent"
             }
           ]

@@ -1,6 +1,11 @@
 
 Change history for this FHIR Implementation Guide is as follows: 
 
+### v0.6.1
+25-Oct-2023
+
+* Added [HL7 v2 Referral Priority](https://terminology.hl7.org/CodeSystem-v2-0280.html) code system to [Referral Priority Value Set](./ValueSet-nzcr-referral-priority-vs.html) and the matching [Concept Map](./ConceptMap-nzcr-referral-priority-fhir-map.html) as we have codes from multiple systems in use.
+
 ### v0.6.0
 29-Sep-2023
 

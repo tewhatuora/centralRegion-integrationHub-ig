@@ -2,9 +2,9 @@
   "resourceType": "ConceptMap",
   "id": "nzcr-referral-priority-fhir-map",
   "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-referral-priority",
+  "description": "Concept map mapping referral priority codes ex. WebPAS to FHIR ServiceRequest priority codes",
   "name": "NZCRReferralPriorityConceptMap",
   "title": "NZ Central Region Referral Priority Concept Map",
-  "description": "Concept map mapping referral priority codes ex. WebPAS to FHIR ServiceRequest priority codes",
   "experimental": false,
   "purpose": "Translates referral priority codes used in WebPAS to more recognised FHIR ServiceLEvel priority codes",
   "status": "active",
@@ -62,6 +62,45 @@
         {
           "code": "LOW",
           "display": "5 Low Priority",
+          "target": [
+            {
+              "code": "routine",
+              "display": "Routine",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://terminology.hl7.org/CodeSystem/v2-0280",
+      "target": "http://hl7.org/fhir/request-priority",
+      "element": [
+        {
+          "code": "S",
+          "display": "STAT",
+          "target": [
+            {
+              "code": "stat",
+              "display": "STAT",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A",
+          "display": "ASAP",
+          "target": [
+            {
+              "code": "asap",
+              "display": "ASAP",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R",
+          "display": "Routine",
           "target": [
             {
               "code": "routine",

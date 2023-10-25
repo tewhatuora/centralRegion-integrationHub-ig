@@ -34,7 +34,6 @@
         },
         {
           "valueReference": {
-            "type": "Organisation",
             "identifier": {
               "system": "https://standards.digital.health.nz/ns/central-region/pas-practice-id",
               "type": {
@@ -49,6 +48,7 @@
               "use": "usual",
               "value": "16478"
             },
+            "type": "Organisation",
             "display": "The Palms Medical Centre"
           },
           "url": "referringPractice"
@@ -162,14 +162,14 @@
   },
   "status": "draft",
   "intent": "order",
-  "priority": "LOW",
+  "priority": "routine",
   "reasonCode": [
     {
       "coding": [
         {
-          "code": "IRRBOW",
+          "code": "K589",
           "system": "https://standards.digital.health.nz/ns/central-region/referral-reason",
-          "display": "Irritable Bowel Syndrome"
+          "display": "Irritable bowel syndrome without diarrho"
         }
       ]
     }

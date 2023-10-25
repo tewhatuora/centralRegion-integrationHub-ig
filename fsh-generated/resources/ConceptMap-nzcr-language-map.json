@@ -2,13 +2,13 @@
   "resourceType": "ConceptMap",
   "id": "nzcr-language-map",
   "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-language",
+  "description": "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes",
   "name": "NZCRLanguageConceptMap",
   "title": "NZ Central Region Language Concept Map",
-  "description": "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes",
   "experimental": false,
   "purpose": "Translates raw language codes used in WebPAS to more recognised `ietf:bcp:47` language codes",
   "status": "active",
-  "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-language",
+  "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-raw-language",
   "targetUri": "urn:ietf:bcp:47",
   "group": [
     {

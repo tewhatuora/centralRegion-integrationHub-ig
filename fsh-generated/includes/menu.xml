@@ -51,6 +51,12 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="DeveloperGuide.html">Developer Guide</a>
+      </li>
+      <li>
+        <a href="ReleaseNotes.html">Release Notes</a>
+      </li>
+      <li>
         <a href="package.tgz">IG Package</a>
       </li>
       <li>

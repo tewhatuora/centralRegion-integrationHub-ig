@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "nz-residency",
   "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency",
-  "version": "0.4.0",
   "name": "NZResidency",
   "title": "NZ Residency",
   "status": "active",
@@ -65,27 +64,11 @@
       {
         "id": "Extension.extension:status.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
             "code": "CodeableConcept"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:status.valueCodeableConcept",
-        "path": "Extension.extension.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "preferred",
           "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code"
@@ -112,27 +95,11 @@
       {
         "id": "Extension.extension:source.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
             "code": "CodeableConcept"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:source.valueCodeableConcept",
-        "path": "Extension.extension.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "preferred",
           "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/information-source-code"

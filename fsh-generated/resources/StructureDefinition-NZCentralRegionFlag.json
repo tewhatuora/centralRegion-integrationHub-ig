@@ -2,9 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "NZCentralRegionFlag",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag",
-  "version": "0.4.0",
   "name": "NZCentralRegionFlag",
-  "status": "active",
+  "status": "draft",
   "description": "Flag resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -64,10 +63,8 @@
         ]
       },
       {
-        "id": "Flag.meta.extension:hl7v2Message.valueBase64Binary",
-        "path": "Flag.meta.extension.valueBase64Binary",
-        "min": 0,
-        "max": "1",
+        "id": "Flag.meta.extension:hl7v2Message.value[x]",
+        "path": "Flag.meta.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -140,10 +137,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:severityLevel.valueString",
-        "path": "Flag.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:severityLevel.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -168,14 +163,12 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:inactiveDate.valueDate",
-        "path": "Flag.extension.extension.valueDate",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:inactiveDate.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "ZAL-9"
+            "map": "ZAL-8"
           }
         ]
       },
@@ -195,10 +188,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:reviewDate.valueDate",
-        "path": "Flag.extension.extension.valueDate",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:reviewDate.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -222,10 +213,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:lastUpdatedBy.valueString",
-        "path": "Flag.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedBy.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -250,10 +239,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime.valueDateTime",
-        "path": "Flag.extension.extension.valueDateTime",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:lastUpdatedDateTime.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -278,12 +265,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.valueCoding",
-        "path": "Flag.extension.extension.valueCoding"
-      },
-      {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.valueCoding.system",
-        "path": "Flag.extension.extension.valueCoding.system",
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].system",
+        "path": "Flag.extension.extension.value[x].system",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -292,8 +275,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.valueCoding.code",
-        "path": "Flag.extension.extension.valueCoding.code",
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].code",
+        "path": "Flag.extension.extension.value[x].code",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -302,8 +285,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.valueCoding.display",
-        "path": "Flag.extension.extension.valueCoding.display",
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].display",
+        "path": "Flag.extension.extension.value[x].display",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -327,10 +310,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:comments.valueString",
-        "path": "Flag.extension.extension.valueString",
-        "min": 1,
-        "max": "1",
+        "id": "Flag.extension:flag-alert.extension:comments.value[x]",
+        "path": "Flag.extension.extension.value[x]",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",

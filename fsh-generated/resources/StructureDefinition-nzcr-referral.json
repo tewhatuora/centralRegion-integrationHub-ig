@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "nzcr-referral",
   "url": "https://standards.digital.health.nz/ns/central-region/referral",
-  "version": "0.4.0",
   "name": "NZCentralRegionExtensionReferral",
   "title": "NZ Central Region Referral",
   "status": "active",
@@ -83,52 +82,36 @@
       {
         "id": "Extension.extension:preferredSite.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-site"
         }
       },
       {
-        "id": "Extension.extension:preferredSite.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Extension.extension:preferredSite.valueCoding.id",
-        "path": "Extension.extension.valueCoding.id",
+        "id": "Extension.extension:preferredSite.value[x].id",
+        "path": "Extension.extension.value[x].id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:preferredSite.valueCoding.extension",
-        "path": "Extension.extension.valueCoding.extension",
+        "id": "Extension.extension:preferredSite.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:preferredSite.valueCoding.version",
-        "path": "Extension.extension.valueCoding.version",
+        "id": "Extension.extension:preferredSite.value[x].version",
+        "path": "Extension.extension.value[x].version",
         "max": "0"
       },
       {
-        "id": "Extension.extension:preferredSite.valueCoding.userSelected",
-        "path": "Extension.extension.valueCoding.userSelected",
+        "id": "Extension.extension:preferredSite.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
         "max": "0"
       },
       {
@@ -159,52 +142,36 @@
       {
         "id": "Extension.extension:referralSource.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
             "code": "Coding"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-source"
         }
       },
       {
-        "id": "Extension.extension:referralSource.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Extension.extension:referralSource.valueCoding.id",
-        "path": "Extension.extension.valueCoding.id",
+        "id": "Extension.extension:referralSource.value[x].id",
+        "path": "Extension.extension.value[x].id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referralSource.valueCoding.extension",
-        "path": "Extension.extension.valueCoding.extension",
+        "id": "Extension.extension:referralSource.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referralSource.valueCoding.version",
-        "path": "Extension.extension.valueCoding.version",
+        "id": "Extension.extension:referralSource.value[x].version",
+        "path": "Extension.extension.value[x].version",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referralSource.valueCoding.userSelected",
-        "path": "Extension.extension.valueCoding.userSelected",
+        "id": "Extension.extension:referralSource.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
         "max": "0"
       },
       {
@@ -230,16 +197,6 @@
       {
         "id": "Extension.extension:referringPractice.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
             "code": "Reference"
@@ -247,142 +204,136 @@
         ]
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference",
-        "path": "Extension.extension.valueReference",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:referringPractice.valueReference.id",
-        "path": "Extension.extension.valueReference.id",
+        "id": "Extension.extension:referringPractice.value[x].id",
+        "path": "Extension.extension.value[x].id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.extension",
-        "path": "Extension.extension.valueReference.extension",
+        "id": "Extension.extension:referringPractice.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.reference",
-        "path": "Extension.extension.valueReference.reference",
+        "id": "Extension.extension:referringPractice.value[x].reference",
+        "path": "Extension.extension.value[x].reference",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.type",
-        "path": "Extension.extension.valueReference.type",
+        "id": "Extension.extension:referringPractice.value[x].type",
+        "path": "Extension.extension.value[x].type",
         "short": "Medical Practice is an Organisation",
         "min": 1,
         "patternUri": "Organisation",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier",
-        "path": "Extension.extension.valueReference.identifier",
+        "id": "Extension.extension:referringPractice.value[x].identifier",
+        "path": "Extension.extension.value[x].identifier",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.id",
-        "path": "Extension.extension.valueReference.identifier.id",
+        "id": "Extension.extension:referringPractice.value[x].identifier.id",
+        "path": "Extension.extension.value[x].identifier.id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.extension",
-        "path": "Extension.extension.valueReference.identifier.extension",
+        "id": "Extension.extension:referringPractice.value[x].identifier.extension",
+        "path": "Extension.extension.value[x].identifier.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.use",
-        "path": "Extension.extension.valueReference.identifier.use",
+        "id": "Extension.extension:referringPractice.value[x].identifier.use",
+        "path": "Extension.extension.value[x].identifier.use",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type",
-        "path": "Extension.extension.valueReference.identifier.type",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type",
+        "path": "Extension.extension.value[x].identifier.type",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.id",
-        "path": "Extension.extension.valueReference.identifier.type.id",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.id",
+        "path": "Extension.extension.value[x].identifier.type.id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.extension",
-        "path": "Extension.extension.valueReference.identifier.type.extension",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.extension",
+        "path": "Extension.extension.value[x].identifier.type.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.coding",
-        "path": "Extension.extension.valueReference.identifier.type.coding",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding",
+        "path": "Extension.extension.value[x].identifier.type.coding",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.coding.id",
-        "path": "Extension.extension.valueReference.identifier.type.coding.id",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.id",
+        "path": "Extension.extension.value[x].identifier.type.coding.id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.coding.extension",
-        "path": "Extension.extension.valueReference.identifier.type.coding.extension",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.extension",
+        "path": "Extension.extension.value[x].identifier.type.coding.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.coding.system",
-        "path": "Extension.extension.valueReference.identifier.type.coding.system",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.system",
+        "path": "Extension.extension.value[x].identifier.type.coding.system",
         "min": 1,
         "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.coding.version",
-        "path": "Extension.extension.valueReference.identifier.type.coding.version",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.version",
+        "path": "Extension.extension.value[x].identifier.type.coding.version",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.coding.code",
-        "path": "Extension.extension.valueReference.identifier.type.coding.code",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.code",
+        "path": "Extension.extension.value[x].identifier.type.coding.code",
         "min": 1,
         "patternCode": "LR",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.coding.display",
-        "path": "Extension.extension.valueReference.identifier.type.coding.display",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.display",
+        "path": "Extension.extension.value[x].identifier.type.coding.display",
         "min": 1,
         "patternString": "Local Registry ID",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.coding.userSelected",
-        "path": "Extension.extension.valueReference.identifier.type.coding.userSelected",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.coding.userSelected",
+        "path": "Extension.extension.value[x].identifier.type.coding.userSelected",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.type.text",
-        "path": "Extension.extension.valueReference.identifier.type.text",
+        "id": "Extension.extension:referringPractice.value[x].identifier.type.text",
+        "path": "Extension.extension.value[x].identifier.type.text",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.system",
-        "path": "Extension.extension.valueReference.identifier.system",
+        "id": "Extension.extension:referringPractice.value[x].identifier.system",
+        "path": "Extension.extension.value[x].identifier.system",
         "min": 1,
         "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-practice-id",
         "mustSupport": true
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.period",
-        "path": "Extension.extension.valueReference.identifier.period",
+        "id": "Extension.extension:referringPractice.value[x].identifier.period",
+        "path": "Extension.extension.value[x].identifier.period",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.identifier.assigner",
-        "path": "Extension.extension.valueReference.identifier.assigner",
+        "id": "Extension.extension:referringPractice.value[x].identifier.assigner",
+        "path": "Extension.extension.value[x].identifier.assigner",
         "max": "0"
       },
       {
-        "id": "Extension.extension:referringPractice.valueReference.display",
-        "path": "Extension.extension.valueReference.display",
+        "id": "Extension.extension:referringPractice.value[x].display",
+        "path": "Extension.extension.value[x].display",
         "min": 1,
         "mustSupport": true
       },
@@ -414,16 +365,6 @@
       {
         "id": "Extension.extension:healthPurchaser.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
@@ -436,29 +377,23 @@
         }
       },
       {
-        "id": "Extension.extension:healthPurchaser.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:healthPurchaser.valueCoding.id",
-        "path": "Extension.extension.valueCoding.id",
+        "id": "Extension.extension:healthPurchaser.value[x].id",
+        "path": "Extension.extension.value[x].id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:healthPurchaser.valueCoding.extension",
-        "path": "Extension.extension.valueCoding.extension",
+        "id": "Extension.extension:healthPurchaser.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:healthPurchaser.valueCoding.version",
-        "path": "Extension.extension.valueCoding.version",
+        "id": "Extension.extension:healthPurchaser.value[x].version",
+        "path": "Extension.extension.value[x].version",
         "max": "0"
       },
       {
-        "id": "Extension.extension:healthPurchaser.valueCoding.userSelected",
-        "path": "Extension.extension.valueCoding.userSelected",
+        "id": "Extension.extension:healthPurchaser.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
         "max": "0"
       },
       {
@@ -489,16 +424,6 @@
       {
         "id": "Extension.extension:clinicType.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
@@ -511,29 +436,23 @@
         }
       },
       {
-        "id": "Extension.extension:clinicType.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:clinicType.valueCoding.id",
-        "path": "Extension.extension.valueCoding.id",
+        "id": "Extension.extension:clinicType.value[x].id",
+        "path": "Extension.extension.value[x].id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:clinicType.valueCoding.extension",
-        "path": "Extension.extension.valueCoding.extension",
+        "id": "Extension.extension:clinicType.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:clinicType.valueCoding.version",
-        "path": "Extension.extension.valueCoding.version",
+        "id": "Extension.extension:clinicType.value[x].version",
+        "path": "Extension.extension.value[x].version",
         "max": "0"
       },
       {
-        "id": "Extension.extension:clinicType.valueCoding.userSelected",
-        "path": "Extension.extension.valueCoding.userSelected",
+        "id": "Extension.extension:clinicType.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
         "max": "0"
       },
       {
