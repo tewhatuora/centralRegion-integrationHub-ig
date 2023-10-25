@@ -10,6 +10,7 @@ Description: "Complex extension recording extra data about referrals"
 * ^context[=].expression = "ServiceRequest"
 
 * extension contains
+    consultingPractitioner 0..* MS and
     preferredSite 0..1 MS and
     referralSource 0..1 MS and
     referringPractice 0..1 MS and
@@ -21,6 +22,38 @@ Description: "Complex extension recording extra data about referrals"
 * extension
   * ^definition = "Container holding the individual elements of the Referral extension."
   * ^short = "Container holding the individual elements of the Referral extension."
+
+
+* extension[consultingPractitioner]
+  * ^definition = "The consulting doctor(s) or Responsible HCP for this visit or Referral."
+  * ^short = "Consultant"
+  * value[x] only Reference
+    * identifier 0..1 MS
+      * use 1..1 MS
+      * system 1..1 MS
+      * system = $NZCentralRegionPASPractitioner
+      * type 1..1 MS
+        * coding MS  
+          * code 1..1 MS
+          * code = #LR
+          * system 1..1 MS 
+          * system = $HL7IdentifierTypeCS
+          * display 1..1 MS
+          * display = "Local Registry ID"
+          * version 0..0
+          * userSelected 0..0
+          * extension 0..0
+          * id 0..0
+        * extension 0..0
+        * id 0..0
+        * text 0..0
+      * period 0..0     // Data not available
+      * assigner 0..0   // Data not available
+      * extension 0..0
+      * id 0..0
+    * display 1..1 MS
+    * extension 0..0
+    * id 0..0
 
 * extension[preferredSite]
   * ^definition = "Which site does patient prefer to attend the referral?"

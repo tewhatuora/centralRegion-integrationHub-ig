@@ -145,6 +145,91 @@
         "mustSupport": true
       },
       {
+        "id": "ServiceRequest.extension:referral.extension:consultingPractitioner",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "consultingPractitioner"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:consultingPractitioner.value[x].type",
+        "path": "ServiceRequest.extension.extension.value[x].type",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'Practitioner'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:consultingPractitioner.value[x].identifier.use",
+        "path": "ServiceRequest.extension.extension.value[x].identifier.use",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'usual'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:consultingPractitioner.value[x].identifier.type.coding.system",
+        "path": "ServiceRequest.extension.extension.value[x].identifier.type.coding.system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:consultingPractitioner.value[x].identifier.type.coding.code",
+        "path": "ServiceRequest.extension.extension.value[x].identifier.type.coding.code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'LR'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:consultingPractitioner.value[x].identifier.type.coding.display",
+        "path": "ServiceRequest.extension.extension.value[x].identifier.type.coding.display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'Local Registry ID'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:consultingPractitioner.value[x].identifier.system",
+        "path": "ServiceRequest.extension.extension.value[x].identifier.system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:consultingPractitioner.value[x].identifier.value",
+        "path": "ServiceRequest.extension.extension.value[x].identifier.value",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-35.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:consultingPractitioner.value[x].display",
+        "path": "ServiceRequest.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "ZXV-35.2"
+          }
+        ]
+      },
+      {
         "id": "ServiceRequest.extension:referral.extension:preferredSite",
         "path": "ServiceRequest.extension.extension",
         "sliceName": "preferredSite"

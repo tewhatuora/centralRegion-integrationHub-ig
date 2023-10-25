@@ -81,6 +81,18 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
 
 
 * extension[referral]
+  * extension[consultingPractitioner].valueReference
+    * type -> "'Practitioner'"
+    * identifier
+      * use -> "'usual'"
+      * system -> "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
+      * value -> "ZXV-35.1"
+      * type.coding
+        * code -> "'LR'"
+        * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
+        * display -> "'Local Registry ID'"
+    * display -> "ZXV-35.2"
+
   * extension[preferredSite].valueCoding
     * code -> "ZXV-35.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/referral-site'"
@@ -106,10 +118,12 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
     * code -> "ZXV-51.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/health-purchaser'"
     * display -> "ZXV-51.2"
+
   * extension[clinicType].valueCoding
     * code -> "ZXV-37.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/referral-clinic'"
     * display -> "ZXV-37.2"
+
   * extension[lastUpdated].value[x] -> "ZXV-41" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
   * extension[informGP].valueBoolean -> "ZXV-19" "**if** ZXV-19 == 'Y' **then** 'true' **else** 'false'"
 

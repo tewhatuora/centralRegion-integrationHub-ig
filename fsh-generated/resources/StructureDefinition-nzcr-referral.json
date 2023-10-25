@@ -55,6 +55,156 @@
         "definition": "Container holding the individual elements of the Referral extension."
       },
       {
+        "id": "Extension.extension:consultingPractitioner",
+        "path": "Extension.extension",
+        "sliceName": "consultingPractitioner",
+        "short": "Consultant",
+        "definition": "The consulting doctor(s) or Responsible HCP for this visit or Referral.",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "consultingPractitioner"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier",
+        "path": "Extension.extension.value[x].identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.id",
+        "path": "Extension.extension.value[x].identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.extension",
+        "path": "Extension.extension.value[x].identifier.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.use",
+        "path": "Extension.extension.value[x].identifier.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type",
+        "path": "Extension.extension.value[x].identifier.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.id",
+        "path": "Extension.extension.value[x].identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.extension",
+        "path": "Extension.extension.value[x].identifier.type.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.coding",
+        "path": "Extension.extension.value[x].identifier.type.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.coding.id",
+        "path": "Extension.extension.value[x].identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.coding.extension",
+        "path": "Extension.extension.value[x].identifier.type.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.coding.system",
+        "path": "Extension.extension.value[x].identifier.type.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.coding.version",
+        "path": "Extension.extension.value[x].identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.coding.code",
+        "path": "Extension.extension.value[x].identifier.type.coding.code",
+        "min": 1,
+        "patternCode": "LR",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.coding.display",
+        "path": "Extension.extension.value[x].identifier.type.coding.display",
+        "min": 1,
+        "patternString": "Local Registry ID",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.coding.userSelected",
+        "path": "Extension.extension.value[x].identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.type.text",
+        "path": "Extension.extension.value[x].identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.system",
+        "path": "Extension.extension.value[x].identifier.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.period",
+        "path": "Extension.extension.value[x].identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].identifier.assigner",
+        "path": "Extension.extension.value[x].identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consultingPractitioner.value[x].display",
+        "path": "Extension.extension.value[x].display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Extension.extension:preferredSite",
         "path": "Extension.extension",
         "sliceName": "preferredSite",

@@ -8,6 +8,8 @@ Change history for this FHIR Implementation Guide is as follows:
 
 * Removed `category` field from Referral ServiceRequest mapping; category is implied by the use of Referral profile.
 
+* Added `consultingPractitioner` field to `referral` extension of Referral profile; populated from `PV1-9`
+
 ### v0.6.0
 29-Sep-2023
 
