@@ -606,7 +606,7 @@
           {
             "identity": "nzcr-referral-from-hl7v2",
             "map": "$translate(RF1-2.1)",
-            "comment": "Use [Referral Priority](ConceptMap-nzcr-referral-priority-fhir-map.html) concept map"
+            "comment": "Use [Referral Priority](ConceptMap-nzcr-referral-priority-fhir-map.html) concept map\r\n\n  **Note:** use of two different CodeSystems - https://standards.digital.health.nz/ns/central-region/referral-priority and http://terminology.hl7.org/CodeSystem/v2-0280"
           }
         ]
       },
