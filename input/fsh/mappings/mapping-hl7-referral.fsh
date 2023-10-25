@@ -18,7 +18,8 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
   **elif** RF1-1.1 == 'R' **then** 'revoked'\r\n
   **else** 'unknown'"
 
-* priority -> "$translate(RF1-2.1)" "Use [Referral Priority](ConceptMap-nzcr-referral-priority-fhir-map.html) concept map"
+* priority -> "$translate(RF1-2.1)" "Use [Referral Priority](ConceptMap-nzcr-referral-priority-fhir-map.html) concept map\r\n
+  **Note:** use of two different CodeSystems - https://standards.digital.health.nz/ns/central-region/referral-priority and http://terminology.hl7.org/CodeSystem/v2-0280"
 
 * intent -> "'order'"
 
