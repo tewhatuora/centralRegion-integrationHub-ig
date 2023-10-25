@@ -7,7 +7,7 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
 
 
 * identifier.use -> "'usual'"
-* identifier.system -> "'https://standards.digital.health.nz/ns/pas-clinical-impression-id'"
+* identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-clinical-impression-id'"
 * identifier.value -> "PID-3.1 + '-' + ZLS-3" "Concatenation of PatientId and startDateTime"
 
 * status -> "'completed'"

@@ -74,7 +74,7 @@
   ],
   "identifier": [
     {
-      "system": "https://standards.digital.health.nz/ns/pas-clinical-impression-id",
+      "system": "https://standards.digital.health.nz/ns/central-region/pas-clinical-impression-id",
       "use": "usual",
       "value": "ZHY5362-20220301165204"
     }

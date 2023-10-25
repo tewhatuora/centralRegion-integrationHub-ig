@@ -6,7 +6,7 @@ Title:    "Central Region Message Specification (1.14)"
 Description: "Central Region Message Specification (1.14) - Allergy Intolerance from ADT^031 ZAL where Alert Type field `ZAL-2.1` with values from  [Allergy Alert Category](./ValueSet-nzcr-allergy-alert-category-vs.html) codes."
 
 * identifier.use -> "'usual'"
-* identifier.system -> "'https://standards.digital.health.nz/ns/pas-alert-id'"
+* identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-alert-id'"
 * identifier.value -> "PID-3.1 + '-' + ZAL2.1 + '-' + ZAL-3.1" "Concatenation of PatientId, Alert Category and Alert Code"
 
 * clinicalStatus

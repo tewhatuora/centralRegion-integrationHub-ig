@@ -487,7 +487,7 @@
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/pas-referral-id'"
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-referral-id'"
           }
         ]
       },
@@ -566,36 +566,6 @@
         "path": "ServiceRequest.category",
         "max": "0",
         "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.category.coding.system",
-        "path": "ServiceRequest.category.coding.system",
-        "mapping": [
-          {
-            "identity": "nzcr-referral-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/central-region/referral-category'"
-          }
-        ]
-      },
-      {
-        "id": "ServiceRequest.category.coding.code",
-        "path": "ServiceRequest.category.coding.code",
-        "mapping": [
-          {
-            "identity": "nzcr-referral-from-hl7v2",
-            "map": "RF1-3.1"
-          }
-        ]
-      },
-      {
-        "id": "ServiceRequest.category.coding.display",
-        "path": "ServiceRequest.category.coding.display",
-        "mapping": [
-          {
-            "identity": "nzcr-referral-from-hl7v2",
-            "map": "RF1-3.2"
-          }
-        ]
       },
       {
         "id": "ServiceRequest.priority",

@@ -147,7 +147,7 @@
         ]
       },
       "use": "usual",
-      "system": "https://standards.digital.health.nz/ns/pas-referral-id",
+      "system": "https://standards.digital.health.nz/ns/central-region/pas-referral-id",
       "value": "43372609"
     }
   ],

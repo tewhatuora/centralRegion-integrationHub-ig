@@ -367,12 +367,12 @@
         "id": "Flag.identifier.system",
         "path": "Flag.identifier.system",
         "min": 1,
-        "patternUri": "https://standards.digital.health.nz/ns/pas-alert-id",
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-alert-id",
         "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/pas-alert-id'"
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-alert-id'"
           }
         ]
       },

@@ -49,7 +49,7 @@
   ],
   "identifier": [
     {
-      "system": "https://standards.digital.health.nz/ns/pas-alert-id",
+      "system": "https://standards.digital.health.nz/ns/central-region/pas-alert-id",
       "use": "usual",
       "value": "WYS1973-H2-K01"
     }

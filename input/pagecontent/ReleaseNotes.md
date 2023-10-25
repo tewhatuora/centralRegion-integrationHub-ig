@@ -6,6 +6,8 @@ Change history for this FHIR Implementation Guide is as follows:
 
 * Added [HL7 v2 Referral Priority](https://terminology.hl7.org/CodeSystem-v2-0280.html) code system to [Referral Priority Value Set](./ValueSet-nzcr-referral-priority-vs.html) and the matching [Concept Map](./ConceptMap-nzcr-referral-priority-fhir-map.html) as we have codes from multiple systems in use.
 
+* Removed `category` field from Referral ServiceRequest mapping; category is implied by the use of Referral profile.
+
 ### v0.6.0
 29-Sep-2023
 

@@ -762,12 +762,12 @@
         "id": "ClinicalImpression.identifier.system",
         "path": "ClinicalImpression.identifier.system",
         "min": 1,
-        "patternUri": "https://standards.digital.health.nz/ns/pas-clinical-impression-id",
+        "patternUri": "https://standards.digital.health.nz/ns/central-region/pas-clinical-impression-id",
         "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-clinical-impression-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/pas-clinical-impression-id'"
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-clinical-impression-id'"
           }
         ]
       },

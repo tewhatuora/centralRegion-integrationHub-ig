@@ -12,7 +12,7 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * category.coding.display -> "ZAL-2.2"
 
 * identifier.use -> "'usual'"
-* identifier.system -> "'https://standards.digital.health.nz/ns/pas-alert-id'"
+* identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-alert-id'"
 * identifier.value -> "PID-3.1 + '-' + ZAL2.1 + '-' + ZAL-3.1" "Concatenation of PatientId, Alert Category and Alert Code"
 
 * status -> "ZAL-8 & ZAL-9" "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty **then** 'active' **else** 'inactive'"

@@ -40,14 +40,14 @@ Alias:   $NZBaseEthnicity       = http://hl7.org.nz/fhir.StructureDefinition/nz-
 
 // Patient Identifier System URLs
 Alias:   $NZBaseNHI                       = https://standards.digital.health.nz/ns/nhi-id
-Alias:   $NZCentralRegionLocalPatientId   = https://standards.digital.health.nz/ns/central_region/pas-patient-id
+Alias:   $NZCentralRegionLocalPatientId   = https://standards.digital.health.nz/ns/central-region/pas-patient-id
 Alias:   $NZCentralRegionPASPractitioner  = https://standards.digital.health.nz/ns/central-region/pas-practitioner-id
 Alias:   $NZCentralRegionPASPractice      = https://standards.digital.health.nz/ns/central-region/pas-practice-id
 
 // Other resource Identifier System URLs
-Alias:   $NZCentralRegionLocalAlertId                = https://standards.digital.health.nz/ns/pas-alert-id                // For Flag and AllergyIntolerance
-Alias:   $NZCentralRegionLocalClinicalImpressionId   = https://standards.digital.health.nz/ns/pas-clinical-impression-id  // for Mental Health Legal Status
-Alias:   $NZCentralRegionReferralId                  = https://standards.digital.health.nz/ns/pas-referral-id
+Alias:   $NZCentralRegionLocalAlertId                = https://standards.digital.health.nz/ns/central-region/pas-alert-id                // For Flag and AllergyIntolerance
+Alias:   $NZCentralRegionLocalClinicalImpressionId   = https://standards.digital.health.nz/ns/central-region/pas-clinical-impression-id  // for Mental Health Legal Status
+Alias:   $NZCentralRegionReferralId                  = https://standards.digital.health.nz/ns/central-region/pas-referral-id
 
 // Code System URLs from NZ Base
 Alias:   $NZBaseNZCitizenshipCS    = https://standards.digital.health.nz/ns/nz-citizenship-status-code

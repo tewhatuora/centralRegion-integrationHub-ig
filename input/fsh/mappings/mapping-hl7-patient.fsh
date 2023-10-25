@@ -13,7 +13,7 @@ Description:    "Central Region Message Specification (1.14) - Patient from ADT^
 * identifier[NHI].value -> "PID-3.1"
 
 * identifier -> " " "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
-* identifier.system -> "'https://standards.digital.health.nz/ns/central_region/pas-patient-id'" "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
+* identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-patient-id'" "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
 * identifier.use -> "'temp'" "if PID-3.4.2 != '2.16.840.1.113883.2.18.2'"
 
 * identifier.value -> "PID-3.1"

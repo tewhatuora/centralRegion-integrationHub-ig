@@ -8,7 +8,7 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
 * -> "ServiceRequest"
 * identifier.value -> "RF1-11.1"
 * identifier.use -> "'usual'"
-* identifier.system -> "'https://standards.digital.health.nz/ns/pas-referral-id'"
+* identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-referral-id'"
 * identifier.type.coding.code -> "'RI'"
 * identifier.type.coding.system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
 * identifier.type.coding.display -> "'Referral Identifier'"
@@ -27,11 +27,6 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
   * code -> "ZXV-34.1"
   * display -> "ZXV-34.2"
   * system -> "'https://standards.digital.health.nz/ns/central-region/referral-type'"
-
-* category.coding
-  * code -> "RF1-3.1"
-  * display  -> "RF1-3.2"
-  * system -> "'https://standards.digital.health.nz/ns/central-region/referral-category'"
 
 * authoredOn -> "ZXV-9" "**Note:** ISO-8601 Date has field separators"
 
