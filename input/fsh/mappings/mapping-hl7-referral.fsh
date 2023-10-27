@@ -86,17 +86,18 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
     * identifier
       * use -> "'usual'"
       * system -> "'https://standards.digital.health.nz/ns/central-region/pas-practitioner-id'"
-      * value -> "ZXV-35.1"
+      * value -> "PV1-9.1"
       * type.coding
         * code -> "'LR'"
         * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
         * display -> "'Local Registry ID'"
-    * display -> "ZXV-35.2"
+    * display -> "PV1-9.1"
 
   * extension[preferredSite].valueCoding
     * code -> "ZXV-35.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/referral-site'"
     * display -> "ZXV-35.2"
+    
   * extension[referralSource].valueCoding
     * code -> "ZXV-15.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/referral-source'"
