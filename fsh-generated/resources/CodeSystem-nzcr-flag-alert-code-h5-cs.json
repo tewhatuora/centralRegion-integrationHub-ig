@@ -14,62 +14,66 @@
     },
     {
       "code": "C02",
-      "display": "child at risk"
+      "display": "Child at risk"
     },
     {
       "code": "C03",
-      "display": "child protection"
+      "display": "Child protection"
     },
     {
       "code": "D01",
-      "display": "dangerous dogs"
+      "display": "Dangerous dogs"
     },
     {
       "code": "D02",
-      "display": "dmestic/IP violence"
+      "display": "Domestic/IP violence"
     },
     {
       "code": "D03",
-      "display": "don't visit alone"
+      "display": "Don't visit alone"
     },
     {
       "code": "D04",
-      "display": "duplicate NHI"
+      "display": "Duplicate NHI"
     },
     {
-      "code": "D05",
-      "display": "med run"
+      "code": "D90",
+      "display": "Covid Test"
+    },
+    {
+      "code": "D91",
+      "display": "Covid Test 2"
     },
     {
       "code": "E01",
-      "display": "elder abuse/neglect"
+      "display": "Elder abuse/neglect"
     },
     {
       "code": "I01",
-      "display": "incorrect NHI"
+      "display": "Incorrect NHI"
     },
     {
       "code": "M01",
-      "display": "med run"
+      "display": "Med Run"
     },
     {
       "code": "O01",
-      "display": "other"
+      "display": "Other"
     },
     {
       "code": "P01",
-      "display": "protection order"
+      "display": "Protection order"
     },
     {
       "code": "R01",
-      "display": "risk to others/staff"
+      "display": "Risk to others/staff"
     },
     {
       "code": "R02",
-      "display": "reserve NHI"
+      "display": "Reserve NHI"
     }
   ],
   "experimental": false,
   "caseSensitive": true,
-  "count": 15
+  "count": 16
 }

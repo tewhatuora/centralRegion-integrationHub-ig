@@ -215,7 +215,7 @@
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
-            "map": "ZXV-35.1"
+            "map": "PV1-9.1"
           }
         ]
       },
@@ -225,7 +225,7 @@
         "mapping": [
           {
             "identity": "nzcr-referral-from-hl7v2",
-            "map": "ZXV-35.2"
+            "map": "PV1-9.1"
           }
         ]
       },

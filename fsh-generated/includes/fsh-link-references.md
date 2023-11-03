@@ -13,6 +13,7 @@
 [NZCentralRegionAlertTypeCodeSystem]: CodeSystem-nzcr-alert-category-cs.html
 [NZCentralRegionAllergyAlertCategoryValueSet]: ValueSet-nzcr-allergy-alert-category-vs.html
 [NZCentralRegionAllergyAlertCodeValueSet]: ValueSet-nzcr-allergy-alert-code-vs.html
+[NZCentralRegionAllergyAlertCodeA3A4CodeSystem]: CodeSystem-nzcr-allergy-alert-code-a3a4-cs.html
 [NZCentralRegionAllergyAlertCodeH1CodeSystem]: CodeSystem-nzcr-allergy-alert-code-h1-cs.html
 [NZCentralRegionAllergyAlertCodeH3CodeSystem]: CodeSystem-nzcr-allergy-alert-code-h3-cs.html
 [NZCentralRegionAllergyReactionA3A4CodeSystem]: CodeSystem-nzcr-allergy-reaction-a3a4-cs.html
@@ -26,6 +27,7 @@
 [NZCentralRegionEthnicityLevel2ValueSet]: ValueSet-nzcr-ethnicity-level-2-value-set.html
 [NZCentralRegionFlagAlertCategoryValueSet]: ValueSet-nzcr-flag-alert-category-vs.html
 [NZCentralRegionFlagAlertCodeValueSet]: ValueSet-nzcr-flag-alert-code-vs.html
+[NZCentralRegionFlagAlertCodeDACodeSystem]: CodeSystem-nzcr-flag-alert-code-da-cs.html
 [NZCentralRegionFlagAlertCodeH2CodeSystem]: CodeSystem-nzcr-flag-alert-code-h2-cs.html
 [NZCentralRegionFlagAlertCodeH4CodeSystem]: CodeSystem-nzcr-flag-alert-code-h4-cs.html
 [NZCentralRegionFlagAlertCodeH5CodeSystem]: CodeSystem-nzcr-flag-alert-code-h5-cs.html
@@ -33,8 +35,6 @@
 [NZCentralRegionFlagAlertCodeH7CodeSystem]: CodeSystem-nzcr-flag-alert-code-h7-cs.html
 [NZCentralRegionFlagAlertCodeH8CodeSystem]: CodeSystem-nzcr-flag-alert-code-h8-cs.html
 [NZCentralRegionFlagAlertCodeLSCodeSystem]: CodeSystem-nzcr-flag-alert-code-ls-cs.html
-[NZCentralRegionFlagAlertCodeMACodeSystem]: CodeSystem-nzcr-flag-alert-code-ma-cs.html
-[NZCentralRegionFlagAlertCodeMCCodeSystem]: CodeSystem-nzcr-flag-alert-code-mc-cs.html
 [NZCentralRegionFlagAlertCodeNHIMWSCodeSystem]: CodeSystem-nzcr-flag-alert-code-nhimws-cs.html
 [NZCentralRegionHealthPurchaserCodeSystem]: CodeSystem-nzcr-health-purchaser-cs.html
 [NZCentralRegionHealthPurchaserValueSet]: ValueSet-nzcr-health-purchaser-vs.html
@@ -86,6 +86,7 @@
 [NZCentralRegionAllergyIntolerance]: StructureDefinition-NZCentralRegionAllergyIntolerance.html
 [NZCentralRegionClinicalImpression]: StructureDefinition-NZCentralRegionClinicalImpression.html
 [NZCentralRegionFlag]: StructureDefinition-NZCentralRegionFlag.html
+[NZCentralRegionOrganization]: StructureDefinition-NZCentralRegionOrganization.html
 [NZCentralRegionPatient]: StructureDefinition-NZCentralRegionPatient.html
 [NZCentralRegionPractitioner]: StructureDefinition-NZCentralRegionPractitioner.html
 [NZCentralRegionReferral]: StructureDefinition-NZCentralRegionReferral.html

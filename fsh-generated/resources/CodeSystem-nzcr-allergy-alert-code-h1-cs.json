@@ -5,599 +5,1275 @@
   "name": "NZCentralRegionAllergyAlertCodeH1CodeSystem",
   "id": "nzcr-allergy-alert-code-h1-cs",
   "title": "NZ Central Region - Allergy Alert Codes (H1)",
-  "description": "H1 Allergy alert codes ex. WebPAS in NZ Central Region.",
+  "description": "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region.",
   "url": "https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1",
   "concept": [
     {
-      "code": "1",
+      "code": "A01",
+      "display": "ACE inhibitors"
+    },
+    {
+      "code": "A02",
+      "display": "Acetazolamide"
+    },
+    {
+      "code": "A03",
+      "display": "Adrenaline"
+    },
+    {
+      "code": "A04",
       "display": "Alcuronium"
     },
     {
-      "code": "2",
-      "display": "Althesin"
-    },
-    {
-      "code": "3",
-      "display": "Aminoglycosides"
-    },
-    {
-      "code": "4",
-      "display": "Aminophylline"
-    },
-    {
-      "code": "5",
-      "display": "Antihistamines (Hi)"
-    },
-    {
-      "code": "6",
-      "display": "Antineoplastics"
-    },
-    {
-      "code": "7",
-      "display": "Anti-Inflamm Drugs"
-    },
-    {
-      "code": "8",
-      "display": "Aprotonni"
-    },
-    {
-      "code": "9",
-      "display": "Aspirin"
-    },
-    {
-      "code": "10",
-      "display": "Barbiturates"
-    },
-    {
-      "code": "11",
-      "display": "Benzodiazepines"
-    },
-    {
-      "code": "12",
-      "display": "Beta Blockers"
-    },
-    {
-      "code": "13",
-      "display": "Cephalosporins"
-    },
-    {
-      "code": "14",
-      "display": "Codeine"
-    },
-    {
-      "code": "15",
-      "display": "Corticotrophins"
-    },
-    {
-      "code": "16",
-      "display": "Co-Trimoxazole"
-    },
-    {
-      "code": "17",
-      "display": "Dextropropoxyphene"
-    },
-    {
-      "code": "18",
-      "display": "Diagnostic Agents"
-    },
-    {
-      "code": "19",
-      "display": "Erythromycins"
-    },
-    {
-      "code": "20",
-      "display": "Gallamine"
-    },
-    {
-      "code": "21",
-      "display": "Iodides"
-    },
-    {
-      "code": "22",
-      "display": "Iron Compounds"
-    },
-    {
-      "code": "23",
-      "display": "Isoniazid"
-    },
-    {
-      "code": "24",
-      "display": "Local Anaesthetics"
-    },
-    {
-      "code": "25",
-      "display": "Nalidixic Acid"
-    },
-    {
-      "code": "26",
-      "display": "Nitrofurantoin"
-    },
-    {
-      "code": "27",
-      "display": "Pancuronium"
-    },
-    {
-      "code": "28",
-      "display": "Paracetamol"
-    },
-    {
-      "code": "29",
-      "display": "Pencillins"
-    },
-    {
-      "code": "30",
-      "display": "Plasma Substitutes"
-    },
-    {
-      "code": "31",
-      "display": "Propanidid"
-    },
-    {
-      "code": "32",
-      "display": "Quinidine"
-    },
-    {
-      "code": "33",
-      "display": "Steroid Hormones"
-    },
-    {
-      "code": "34",
-      "display": "Sulphonamides"
-    },
-    {
-      "code": "35",
-      "display": "Suxamethonium"
-    },
-    {
-      "code": "36",
-      "display": "Tetracyclines"
-    },
-    {
-      "code": "37",
-      "display": "Theophylline"
-    },
-    {
-      "code": "38",
-      "display": "Thiopentone"
-    },
-    {
-      "code": "39",
-      "display": "Tricclic Antidepr"
-    },
-    {
-      "code": "40",
-      "display": "Tubocuraraine"
-    },
-    {
-      "code": "41",
-      "display": "Vaccines"
-    },
-    {
-      "code": "42",
-      "display": "Iv Anaesthetics"
-    },
-    {
-      "code": "43",
-      "display": "Relaxants"
-    },
-    {
-      "code": "44",
-      "display": "Antihistamines (Hii)"
-    },
-    {
-      "code": "45",
-      "display": "Medroxyprogesterone"
-    },
-    {
-      "code": "46",
-      "display": "Morphine"
-    },
-    {
-      "code": "47",
-      "display": "Danazol"
-    },
-    {
-      "code": "48",
-      "display": "Dapsone"
-    },
-    {
-      "code": "49",
-      "display": "Tinidazole"
-    },
-    {
-      "code": "50",
-      "display": "Trimethoprim"
-    },
-    {
-      "code": "51",
-      "display": "Thiazide Diuretics"
-    },
-    {
-      "code": "52",
-      "display": "Calcium Antagonists"
-    },
-    {
-      "code": "53",
-      "display": "Metronidazole"
-    },
-    {
-      "code": "54",
-      "display": "Quinine"
-    },
-    {
-      "code": "55",
-      "display": "Atracurium"
-    },
-    {
-      "code": "56",
-      "display": "Mianserin"
-    },
-    {
-      "code": "57",
-      "display": "Phenothiazines"
-    },
-    {
-      "code": "58",
-      "display": "Plasma"
-    },
-    {
-      "code": "59",
-      "display": "Pyrantel"
-    },
-    {
-      "code": "60",
-      "display": "Halothane Hepatitis"
-    },
-    {
-      "code": "61",
-      "display": "Anticoag Hypersuscep"
-    },
-    {
-      "code": "62",
-      "display": "G6Pd Deficiency"
-    },
-    {
-      "code": "63",
-      "display": "Malig.Hyperthermia"
-    },
-    {
-      "code": "64",
-      "display": "Porphyria"
-    },
-    {
-      "code": "65",
-      "display": "Opiate Idiosyncrasy"
-    },
-    {
-      "code": "66",
-      "display": "Pseudocholin.Def"
-    },
-    {
-      "code": "67",
-      "display": "Antipsy.Drug Idiosyn"
-    },
-    {
-      "code": "68",
-      "display": "Addisons Disease"
-    },
-    {
-      "code": "69",
-      "display": "Methyldopa Hypersens"
-    },
-    {
-      "code": "70",
-      "display": "Spherocytosis"
-    },
-    {
-      "code": "71",
-      "display": "Antihyper.Bblk.Mdopa"
-    },
-    {
-      "code": "72",
-      "display": "Anticholinesterase"
-    },
-    {
-      "code": "73",
-      "display": "Antithyroid Drugs"
-    },
-    {
-      "code": "74",
+      "code": "A06",
       "display": "Allopurinol"
     },
     {
-      "code": "75",
-      "display": "Beesting Hypersensiv"
+      "code": "A07",
+      "display": "Althesin"
     },
     {
-      "code": "76",
-      "display": "Card.Arrest/Anaes"
+      "code": "A08",
+      "display": "Accupril"
     },
     {
-      "code": "77",
-      "display": "Carbamazepine"
+      "code": "A09",
+      "display": "Aminophylline"
     },
     {
-      "code": "78",
-      "display": "Phenytoin"
+      "code": "A10",
+      "display": "Amiodarone"
     },
     {
-      "code": "79",
-      "display": "Procainamide"
+      "code": "A11",
+      "display": "Amitriptyline"
     },
     {
-      "code": "80",
-      "display": "Perhexiline"
+      "code": "A12",
+      "display": "Amlodipine"
     },
     {
-      "code": "81",
-      "display": "Drug Thrombocytopen."
+      "code": "A13",
+      "display": "Amoxicillin"
     },
     {
-      "code": "82",
+      "code": "A14",
+      "display": "Ampicillin"
+    },
+    {
+      "code": "A16",
+      "display": "Antihistamines"
+    },
+    {
+      "code": "A17",
+      "display": "Aripiprazole"
+    },
+    {
+      "code": "A18",
+      "display": "Aspirin"
+    },
+    {
+      "code": "A19",
+      "display": "Atenolol"
+    },
+    {
+      "code": "A20",
+      "display": "Atorvastatin"
+    },
+    {
+      "code": "A21",
+      "display": "Atracurium"
+    },
+    {
+      "code": "A22",
+      "display": "Atropine"
+    },
+    {
+      "code": "A23",
+      "display": "Atypical antipsych"
+    },
+    {
+      "code": "A24",
+      "display": "Azathioprine"
+    },
+    {
+      "code": "A25",
+      "display": "Azithromycin"
+    },
+    {
+      "code": "A26",
+      "display": "Acipimox"
+    },
+    {
+      "code": "A27",
+      "display": "Alfentanyl"
+    },
+    {
+      "code": "A28",
+      "display": "Alginate sodium"
+    },
+    {
+      "code": "A29",
+      "display": "Aztreonam"
+    },
+    {
+      "code": "A30",
+      "display": "Amoxicillin/Clav"
+    },
+    {
+      "code": "A31",
+      "display": "Aztreonam"
+    },
+    {
+      "code": "A32",
+      "display": "Anastrazole"
+    },
+    {
+      "code": "B01",
+      "display": "Baclofen"
+    },
+    {
+      "code": "B02",
+      "display": "Bendroflumethiazide"
+    },
+    {
+      "code": "B03",
+      "display": "Benzathine penicilli"
+    },
+    {
+      "code": "B04",
+      "display": "Beta blockers"
+    },
+    {
+      "code": "B05",
+      "display": "Bromocriptine"
+    },
+    {
+      "code": "B06",
+      "display": "Bumetamide"
+    },
+    {
+      "code": "B07",
+      "display": "Bupivacaine"
+    },
+    {
+      "code": "B08",
+      "display": "Bupropion"
+    },
+    {
+      "code": "B09",
+      "display": "Bleomycin"
+    },
+    {
+      "code": "B10",
+      "display": "Budesonide"
+    },
+    {
+      "code": "B11",
+      "display": "Bleo avoid excess O2"
+    },
+    {
+      "code": "B12",
+      "display": "Bisoprolol"
+    },
+    {
+      "code": "B13",
+      "display": "Bezafibrate"
+    },
+    {
+      "code": "C01",
       "display": "Captopril"
     },
     {
-      "code": "83",
+      "code": "C02",
+      "display": "Carbamazepine"
+    },
+    {
+      "code": "C03",
+      "display": "Carbimazole"
+    },
+    {
+      "code": "C04",
+      "display": "Carboprost"
+    },
+    {
+      "code": "C05",
+      "display": "Carmustine"
+    },
+    {
+      "code": "C06",
+      "display": "Carvedilol"
+    },
+    {
+      "code": "C07",
+      "display": "Cefaclor"
+    },
+    {
+      "code": "C08",
+      "display": "Ceftriaxone"
+    },
+    {
+      "code": "C09",
+      "display": "Cefuroxime"
+    },
+    {
+      "code": "C10",
+      "display": "Cephalosporin"
+    },
+    {
+      "code": "C11",
+      "display": "Cephamycin"
+    },
+    {
+      "code": "C12",
+      "display": "Cefazolin"
+    },
+    {
+      "code": "C13",
+      "display": "Cetirizine"
+    },
+    {
+      "code": "C14",
+      "display": "Chloramphenicol"
+    },
+    {
+      "code": "C15",
+      "display": "Chlorhexidine"
+    },
+    {
+      "code": "C16",
+      "display": "Chloroquine"
+    },
+    {
+      "code": "C17",
+      "display": "Chlorpromazine"
+    },
+    {
+      "code": "C18",
+      "display": "Cilazapril"
+    },
+    {
+      "code": "C19",
+      "display": "Cinchocaine"
+    },
+    {
+      "code": "C20",
+      "display": "Ciprofloxacin"
+    },
+    {
+      "code": "C21",
+      "display": "Clarithromycin"
+    },
+    {
+      "code": "C22",
+      "display": "Clindamycin"
+    },
+    {
+      "code": "C23",
+      "display": "Clomipramine"
+    },
+    {
+      "code": "C24",
+      "display": "Clonazepam"
+    },
+    {
+      "code": "C25",
+      "display": "Clopidogrel"
+    },
+    {
+      "code": "C26",
+      "display": "Clozapine"
+    },
+    {
+      "code": "C27",
+      "display": "Co-amoxiclav"
+    },
+    {
+      "code": "C29",
+      "display": "Codeine"
+    },
+    {
+      "code": "C31",
+      "display": "Colchicine"
+    },
+    {
+      "code": "C33",
+      "display": "Cortisone"
+    },
+    {
+      "code": "C34",
+      "display": "Co-trimoxazole"
+    },
+    {
+      "code": "C35",
+      "display": "Cyclizine"
+    },
+    {
+      "code": "C36",
+      "display": "Cyclopentolate"
+    },
+    {
+      "code": "C37",
+      "display": "Cyclosporin"
+    },
+    {
+      "code": "C38",
+      "display": "Calcium carbonate"
+    },
+    {
+      "code": "C39",
+      "display": "Candesartan"
+    },
+    {
+      "code": "C40",
+      "display": "Cefalexin"
+    },
+    {
+      "code": "C41",
+      "display": "Cefepime"
+    },
+    {
+      "code": "C42",
+      "display": "Cetrimide"
+    },
+    {
+      "code": "C43",
+      "display": "Citalopram"
+    },
+    {
+      "code": "C44",
+      "display": "Clavulanic acid"
+    },
+    {
+      "code": "C45",
+      "display": "Clobazam"
+    },
+    {
+      "code": "C46",
+      "display": "Clonidine"
+    },
+    {
+      "code": "C47",
+      "display": "Clotrimazole"
+    },
+    {
+      "code": "C48",
+      "display": "Cilazapril/hydrochlo"
+    },
+    {
+      "code": "C49",
+      "display": "Contrast media- unkn"
+    },
+    {
+      "code": "C50",
+      "display": "Celecoxib"
+    },
+    {
+      "code": "c51",
+      "display": "Carvedilol"
+    },
+    {
+      "code": "D01",
+      "display": "Dabigatran"
+    },
+    {
+      "code": "D02",
+      "display": "Desipramine"
+    },
+    {
+      "code": "D03",
+      "display": "Diclofenac"
+    },
+    {
+      "code": "D04",
+      "display": "Dicloxacillin"
+    },
+    {
+      "code": "D05",
+      "display": "Diflunisal"
+    },
+    {
+      "code": "D06",
+      "display": "Digoxin"
+    },
+    {
+      "code": "D07",
+      "display": "Dihydrocodeine"
+    },
+    {
+      "code": "D08",
+      "display": "Dipyridamole"
+    },
+    {
+      "code": "D10",
+      "display": "Docusate"
+    },
+    {
+      "code": "D11",
+      "display": "Doxazosin"
+    },
+    {
+      "code": "D12",
+      "display": "Doxepin"
+    },
+    {
+      "code": "D13",
+      "display": "Doxycycline"
+    },
+    {
+      "code": "D14",
+      "display": "Droperidol"
+    },
+    {
+      "code": "D15",
+      "display": "Daclatasvir"
+    },
+    {
+      "code": "D16",
+      "display": "Dexamethasone"
+    },
+    {
+      "code": "D17",
+      "display": "Diltiazem"
+    },
+    {
+      "code": "D18",
+      "display": "Diazepam"
+    },
+    {
+      "code": "E02",
       "display": "Enalapril"
     },
     {
-      "code": "84",
+      "code": "E03",
+      "display": "Enoxaparin"
+    },
+    {
+      "code": "E05",
+      "display": "Erythromycin"
+    },
+    {
+      "code": "E06",
+      "display": "Etomidate"
+    },
+    {
+      "code": "E07",
+      "display": "Etoposide"
+    },
+    {
+      "code": "E08",
+      "display": "Etoricoxib"
+    },
+    {
+      "code": "E09",
+      "display": "Eformoterol"
+    },
+    {
+      "code": "E10",
+      "display": "Ethanol"
+    },
+    {
+      "code": "E11",
+      "display": "Ezetimibe"
+    },
+    {
+      "code": "E12",
+      "display": "Eplerenone"
+    },
+    {
+      "code": "F01",
+      "display": "Felodipine"
+    },
+    {
+      "code": "F02",
+      "display": "Fentanyl"
+    },
+    {
+      "code": "F03",
+      "display": "Flecainide"
+    },
+    {
+      "code": "F04",
+      "display": "Flucloxacillin"
+    },
+    {
+      "code": "F05",
+      "display": "Fluconazole"
+    },
+    {
+      "code": "F06",
+      "display": "Fluoroquinolone"
+    },
+    {
+      "code": "F07",
+      "display": "Fluorescein dye"
+    },
+    {
+      "code": "F08",
+      "display": "Fluoxetine"
+    },
+    {
+      "code": "F09",
+      "display": "Framycetin"
+    },
+    {
+      "code": "F10",
+      "display": "Fluorouracil"
+    },
+    {
+      "code": "F11",
+      "display": "Fucithalmic"
+    },
+    {
+      "code": "F12",
+      "display": "Furosemide"
+    },
+    {
+      "code": "G00",
+      "display": "Gadoteric acid"
+    },
+    {
+      "code": "G01",
+      "display": "Gabapentin"
+    },
+    {
+      "code": "G02",
+      "display": "Gaviscon"
+    },
+    {
+      "code": "G03",
+      "display": "Gelofusine"
+    },
+    {
+      "code": "G04",
+      "display": "Gentamicin"
+    },
+    {
+      "code": "G05",
+      "display": "Gadobenic acid"
+    },
+    {
+      "code": "G06",
+      "display": "Gadodiamide"
+    },
+    {
+      "code": "G07",
+      "display": "Gastrograffin"
+    },
+    {
+      "code": "G08",
+      "display": "Glipizide"
+    },
+    {
+      "code": "G09",
+      "display": "Gramicidin"
+    },
+    {
+      "code": "G10",
+      "display": "Gadoxetate disodium"
+    },
+    {
+      "code": "H01",
+      "display": "Haloperidol"
+    },
+    {
+      "code": "H02",
+      "display": "Halothane"
+    },
+    {
+      "code": "H03",
+      "display": "Heparin"
+    },
+    {
+      "code": "H04",
+      "display": "Hydrocortisone"
+    },
+    {
+      "code": "H5",
+      "display": "Hydralazine"
+    },
+    {
+      "code": "H6",
+      "display": "Heptaminol"
+    },
+    {
+      "code": "I01",
+      "display": "Ibuprofen"
+    },
+    {
+      "code": "I02",
+      "display": "Indomethacin"
+    },
+    {
+      "code": "I03",
+      "display": "Influenza vaccine"
+    },
+    {
+      "code": "I04",
+      "display": "Insulin"
+    },
+    {
+      "code": "I05",
+      "display": "Iodine preparations"
+    },
+    {
+      "code": "I06",
+      "display": "Ipratropium"
+    },
+    {
+      "code": "I07",
+      "display": "Iron polymaltose"
+    },
+    {
+      "code": "I08",
+      "display": "Isoniazid"
+    },
+    {
+      "code": "I09",
+      "display": "Iron carboxymaltose"
+    },
+    {
+      "code": "I10",
+      "display": "Inhalational anaesth"
+    },
+    {
+      "code": "I11",
+      "display": "Iodixanol"
+    },
+    {
+      "code": "I12",
+      "display": "Iohexol"
+    },
+    {
+      "code": "I13",
+      "display": "Iopromide"
+    },
+    {
+      "code": "K01",
+      "display": "Ketamine"
+    },
+    {
+      "code": "L01",
+      "display": "Lamotrigine"
+    },
+    {
+      "code": "L02",
+      "display": "Levodopa&Benserazide"
+    },
+    {
+      "code": "L03",
+      "display": "Levodopa & carbidopa"
+    },
+    {
+      "code": "L04",
+      "display": "Lidocaine"
+    },
+    {
+      "code": "L05",
+      "display": "Liothyronine"
+    },
+    {
+      "code": "L06",
+      "display": "Lithium carbonate"
+    },
+    {
+      "code": "L07",
+      "display": "Local anaesthetics"
+    },
+    {
+      "code": "L08",
+      "display": "Losartan"
+    },
+    {
+      "code": "L09",
+      "display": "Levetiracetam"
+    },
+    {
+      "code": "L10",
+      "display": "Lanolin"
+    },
+    {
+      "code": "L11",
+      "display": "Levomepromazine"
+    },
+    {
+      "code": "M01",
+      "display": "Maxitrol"
+    },
+    {
+      "code": "M02",
+      "display": "Mesalazine"
+    },
+    {
+      "code": "M03",
+      "display": "Methrotrexate"
+    },
+    {
+      "code": "M04",
+      "display": "Methyldopa"
+    },
+    {
+      "code": "M05",
+      "display": "Metoclopramide"
+    },
+    {
+      "code": "M06",
+      "display": "Metoprolol"
+    },
+    {
+      "code": "M07",
+      "display": "Metronidazole"
+    },
+    {
+      "code": "M08",
+      "display": "Midazolam"
+    },
+    {
+      "code": "M09",
+      "display": "Mirtazapine"
+    },
+    {
+      "code": "M10",
+      "display": "Mivacurium"
+    },
+    {
+      "code": "M11",
+      "display": "Moclobemide"
+    },
+    {
+      "code": "M12",
+      "display": "Montelukast"
+    },
+    {
+      "code": "M13",
+      "display": "Morphine"
+    },
+    {
+      "code": "M14",
+      "display": "Meloxicam"
+    },
+    {
+      "code": "M15",
+      "display": "Meromycin"
+    },
+    {
+      "code": "M16",
+      "display": "Metformin"
+    },
+    {
+      "code": "M17",
+      "display": "Methadone"
+    },
+    {
+      "code": "M18",
+      "display": "Mupirocin"
+    },
+    {
+      "code": "M19",
+      "display": "Metolazone"
+    },
+    {
+      "code": "M20",
+      "display": "Meropenem"
+    },
+    {
+      "code": "N01",
+      "display": "Nalidixic acid"
+    },
+    {
+      "code": "N02",
+      "display": "Naproxen"
+    },
+    {
+      "code": "N03",
+      "display": "Neomycin"
+    },
+    {
+      "code": "N04",
+      "display": "Nitrofurantoin"
+    },
+    {
+      "code": "N05",
+      "display": "Norfloxacin"
+    },
+    {
+      "code": "N06",
+      "display": "NSAIDs"
+    },
+    {
+      "code": "N07",
+      "display": "Nystatin"
+    },
+    {
+      "code": "N08",
+      "display": "Nafarelin acetate"
+    },
+    {
+      "code": "N09",
+      "display": "Natamycin"
+    },
+    {
+      "code": "N10",
       "display": "Nefopam"
     },
     {
-      "code": "85",
-      "display": "Dicobalt Edetate"
+      "code": "N11",
+      "display": "Neomycin sulfate"
     },
     {
-      "code": "86",
-      "display": "Tocainide"
+      "code": "N12",
+      "display": "Nifedipine"
     },
     {
-      "code": "87",
-      "display": "Vit. B6"
+      "code": "N13",
+      "display": "Nortriptyline"
     },
     {
-      "code": "88",
-      "display": "Angioedema-Drug Rela"
+      "code": "N14",
+      "display": "Nicotinic acid"
     },
     {
-      "code": "89",
-      "display": "Angioedema-Hereditar"
+      "code": "O01",
+      "display": "Olanzapine"
     },
     {
-      "code": "90",
-      "display": "Coagul.Abnormality"
+      "code": "O02",
+      "display": "Omeprazole"
     },
     {
-      "code": "91",
-      "display": "Famil.Parox.Myoglob."
+      "code": "O03",
+      "display": "Ondansetron"
     },
     {
-      "code": "92",
-      "display": "Patient Has Asthma"
+      "code": "O04",
+      "display": "Orphenadrine"
     },
     {
-      "code": "93",
-      "display": "Diabetic On Nisulin"
+      "code": "O05",
+      "display": "Oxycodone"
     },
     {
-      "code": "95",
-      "display": "Hyperten. Treatment"
+      "code": "O06",
+      "display": "Oxytocin"
     },
     {
-      "code": "96",
-      "display": "M.A.O Inhibitor"
+      "code": "O07",
+      "display": "Other drug reaction"
     },
     {
-      "code": "97",
-      "display": "Pt On Anticoagulants"
+      "code": "O08",
+      "display": "Oxybuprocaine"
     },
     {
-      "code": "98",
-      "display": "Pt On Steriods"
+      "code": "O09",
+      "display": "Oestrogen"
     },
     {
-      "code": "101",
-      "display": "Vecuronium"
+      "code": "O10",
+      "display": "Oxybutinin"
     },
     {
-      "code": "AAT",
-      "display": "A1 Anti-Trisin Def."
+      "code": "P01",
+      "display": "Pancuronium"
     },
     {
-      "code": "AL",
-      "display": "Alzheimer'S"
+      "code": "P02",
+      "display": "Pantoprazole"
     },
     {
-      "code": "AN",
-      "display": "Angina"
+      "code": "P03",
+      "display": "Paracetamol"
     },
     {
-      "code": "AST",
-      "display": "Asthma"
+      "code": "P04",
+      "display": "Paroxetine"
     },
     {
-      "code": "AY",
-      "display": "Aneurism"
+      "code": "P05",
+      "display": "Penicillin"
     },
     {
-      "code": "BLP",
-      "display": "Blood Products"
+      "code": "P06",
+      "display": "Pentazocine"
     },
     {
-      "code": "BP",
-      "display": "Bleeding Problem"
+      "code": "P07",
+      "display": "Pericyazine"
     },
     {
-      "code": "CAN",
-      "display": "Cancer"
+      "code": "P08",
+      "display": "Permethrin"
     },
     {
-      "code": "CBO",
-      "display": "Coronary Bypass Op"
+      "code": "P09",
+      "display": "Pethidine"
     },
     {
-      "code": "CD",
-      "display": "Communicable Disease"
+      "code": "P10",
+      "display": "Phenylephrine"
     },
     {
-      "code": "CHD",
-      "display": "Congenital Heart Def"
+      "code": "P11",
+      "display": "Phenytoin"
     },
     {
-      "code": "CON",
-      "display": "Cong Immunoglobulin"
+      "code": "P12",
+      "display": "Piperacillin"
     },
     {
-      "code": "CR",
-      "display": "Crohns Disease"
+      "code": "P13",
+      "display": "Potassium chloride"
     },
     {
-      "code": "CVA",
-      "display": "Cerebral Vascular Ac"
+      "code": "P14",
+      "display": "Prednisone"
     },
     {
-      "code": "DIA",
-      "display": "Diabetes"
+      "code": "P15",
+      "display": "Prilocaine"
     },
     {
-      "code": "DVT",
-      "display": "Deep Vein Thrombosis"
+      "code": "P16",
+      "display": "Procainamide"
     },
     {
-      "code": "EC",
-      "display": "Eczema"
+      "code": "P17",
+      "display": "Prochlorperazine"
     },
     {
-      "code": "EP",
-      "display": "Epilepsy"
+      "code": "P18",
+      "display": "Propofol"
     },
     {
-      "code": "G6",
-      "display": "G6Pd Deficiency"
+      "code": "P19",
+      "display": "Pseudoephedrine"
     },
     {
-      "code": "HAE",
-      "display": "Haemophilia"
+      "code": "P20",
+      "display": "Paclitaxel"
     },
     {
-      "code": "HF",
-      "display": "Hayfever"
+      "code": "P21",
+      "display": "Paliperidone"
     },
     {
-      "code": "HOP",
-      "display": "Hypertension Of Preg"
+      "code": "P22",
+      "display": "Phenothiazines"
     },
     {
-      "code": "HY",
-      "display": "Hydatids"
+      "code": "P23",
+      "display": "Phosphate"
     },
     {
-      "code": "HYP",
-      "display": "Hyperactive"
+      "code": "P24",
+      "display": "Pimozide"
     },
     {
-      "code": "IGA",
-      "display": "Iga Deficiency"
+      "code": "P25",
+      "display": "Piperacillin tazobac"
     },
     {
-      "code": "LF",
-      "display": "Renal Failure"
+      "code": "P26",
+      "display": "Polymyxin B sulfate"
     },
     {
-      "code": "M",
-      "display": "Malaria"
+      "code": "P28",
+      "display": "Povidone iodine"
     },
     {
-      "code": "MD",
-      "display": "Muscular Distrophy"
+      "code": "P29",
+      "display": "Pravastatin"
     },
     {
-      "code": "MI",
-      "display": "Myocarial Infarction"
+      "code": "P30",
+      "display": "Prazosin"
     },
     {
-      "code": "MIG",
-      "display": "Migraine"
+      "code": "P31",
+      "display": "Promethazine"
     },
     {
-      "code": "MRS",
-      "display": "Mrsa"
+      "code": "P32",
+      "display": "Pyridoxine"
     },
     {
-      "code": "MS",
-      "display": "Multiple Sclerosis"
+      "code": "Q01",
+      "display": "Quinapril"
     },
     {
-      "code": "MUR",
-      "display": "Murmur Heart/Systol."
+      "code": "Q02",
+      "display": "Quinidine"
     },
     {
-      "code": "MV",
-      "display": "Mitral Valve Defic."
+      "code": "Q03",
+      "display": "Quinine"
     },
     {
-      "code": "N",
-      "display": "Nil"
+      "code": "Q04",
+      "display": "Quinolone"
     },
     {
-      "code": "OI",
-      "display": "Osteogenesis Imperfe"
+      "code": "Q05",
+      "display": "Quetiapine"
     },
     {
-      "code": "OTH",
-      "display": "Other"
+      "code": "Q06",
+      "display": "Quinapril hydrochlor"
     },
     {
-      "code": "PE",
-      "display": "Pulmonary Embolism"
+      "code": "R01",
+      "display": "Remifentanil"
     },
     {
-      "code": "PK",
-      "display": "Parkinsons Disease"
+      "code": "R02",
+      "display": "Rifampicin"
     },
     {
-      "code": "RF",
-      "display": "Rheumatic Fever"
+      "code": "R03",
+      "display": "Risperidone"
     },
     {
-      "code": "SCA",
-      "display": "Sickle Cell Anaemia"
+      "code": "R04",
+      "display": "Rivaroxaban"
     },
     {
-      "code": "STR",
+      "code": "R05",
+      "display": "Rocuronium bromide"
+    },
+    {
+      "code": "R06",
+      "display": "Roxithromycin"
+    },
+    {
+      "code": "R07",
+      "display": "Ranitidine"
+    },
+    {
+      "code": "R8",
+      "display": "Rubella vaccine"
+    },
+    {
+      "code": "S01",
+      "display": "Simvastatin"
+    },
+    {
+      "code": "S02",
+      "display": "Sodium valproate"
+    },
+    {
+      "code": "S04",
+      "display": "Spironolactone"
+    },
+    {
+      "code": "S05",
+      "display": "Streptomycin"
+    },
+    {
+      "code": "S06",
+      "display": "Sulfamethoxazole"
+    },
+    {
+      "code": "S07",
+      "display": "Sulfasalazine"
+    },
+    {
+      "code": "S08",
+      "display": "Sulfonamides"
+    },
+    {
+      "code": "S10",
+      "display": "Sulphur"
+    },
+    {
+      "code": "S11",
+      "display": "Sumatriptan"
+    },
+    {
+      "code": "s11",
+      "display": "Sulfa drug"
+    },
+    {
+      "code": "S12",
+      "display": "Suxamethonium"
+    },
+    {
+      "code": "S13",
+      "display": "Salbutamol"
+    },
+    {
+      "code": "S14",
+      "display": "Senna"
+    },
+    {
+      "code": "S15",
+      "display": "Sodium bicarbonate"
+    },
+    {
+      "code": "S16",
+      "display": "Sertraline"
+    },
+    {
+      "code": "S17",
+      "display": "Sofosbuvir"
+    },
+    {
+      "code": "S18",
       "display": "Streptokinase"
     },
     {
-      "code": "SUB",
-      "display": "Subarachnoid Haem"
+      "code": "S19",
+      "display": "Steroids"
     },
     {
-      "code": "TB",
-      "display": "Tuberculosis"
+      "code": "S20",
+      "display": "Sulfa drug"
     },
     {
-      "code": "TD",
-      "display": "Tropical Disease"
+      "code": "T01",
+      "display": "Tazobactam"
     },
     {
-      "code": "TH",
-      "display": "Thyroid/Cushings"
+      "code": "T02",
+      "display": "Temozolomide"
     },
     {
-      "code": "TIA",
-      "display": "Trans Ischaemic Att"
+      "code": "T03",
+      "display": "Tenecteplase"
     },
     {
-      "code": "UC",
-      "display": "Ulcerative Colitis"
+      "code": "T04",
+      "display": "Terbinafine"
     },
     {
-      "code": "VR",
-      "display": "Valve Replacemen"
+      "code": "T05",
+      "display": "Tetracyclines"
+    },
+    {
+      "code": "T06",
+      "display": "Thalidomide"
+    },
+    {
+      "code": "T07",
+      "display": "Theophylline"
+    },
+    {
+      "code": "T08",
+      "display": "Thiopentone"
+    },
+    {
+      "code": "T09",
+      "display": "Ticarcillin & Clavul"
+    },
+    {
+      "code": "T10",
+      "display": "Tiotropium"
+    },
+    {
+      "code": "T12",
+      "display": "Tramadol"
+    },
+    {
+      "code": "T13",
+      "display": "Triazolam"
+    },
+    {
+      "code": "T14",
+      "display": "Trimethoprim"
+    },
+    {
+      "code": "T15",
+      "display": "Trimipramine"
+    },
+    {
+      "code": "T17",
+      "display": "Tubocuranine"
+    },
+    {
+      "code": "T18",
+      "display": "Tetracaine"
+    },
+    {
+      "code": "T19",
+      "display": "Teicoplanin"
+    },
+    {
+      "code": "T20",
+      "display": "Terazosin"
+    },
+    {
+      "code": "T21",
+      "display": "Teriparatide"
+    },
+    {
+      "code": "T22",
+      "display": "Tranexamic acid"
+    },
+    {
+      "code": "T23",
+      "display": "Tobramycin"
+    },
+    {
+      "code": "T24",
+      "display": "Tropicamide"
+    },
+    {
+      "code": "T25",
+      "display": "Tetanus/diptheria va"
+    },
+    {
+      "code": "V01",
+      "display": "Vancomycin"
+    },
+    {
+      "code": "V02",
+      "display": "Vecuronium"
+    },
+    {
+      "code": "V03",
+      "display": "Venlafaxine"
+    },
+    {
+      "code": "V04",
+      "display": "Verapamil"
+    },
+    {
+      "code": "V06",
+      "display": "Vitamin B12"
+    },
+    {
+      "code": "V07",
+      "display": "Voriconazole"
+    },
+    {
+      "code": "V08",
+      "display": "Vildagliptin"
+    },
+    {
+      "code": "W01",
+      "display": "Warfarin"
+    },
+    {
+      "code": "X01",
+      "display": "Xylocaine"
+    },
+    {
+      "code": "Z01",
+      "display": "Ziprasidone"
+    },
+    {
+      "code": "Z02",
+      "display": "Zoledronic acid"
+    },
+    {
+      "code": "Z03",
+      "display": "Zopiclone"
+    },
+    {
+      "code": "Z04",
+      "display": "Zinc"
     }
   ],
   "experimental": true,
   "caseSensitive": true,
-  "count": 147
+  "count": 316
 }

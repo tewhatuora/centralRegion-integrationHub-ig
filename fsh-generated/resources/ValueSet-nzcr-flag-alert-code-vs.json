@@ -13,13 +13,10 @@
         "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws"
       },
       {
-        "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc"
-      },
-      {
-        "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-ma"
-      },
-      {
         "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls"
+      },
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-da"
       },
       {
         "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2"

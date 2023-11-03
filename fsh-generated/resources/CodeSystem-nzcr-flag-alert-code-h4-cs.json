@@ -13,12 +13,16 @@
       "display": "CRE"
     },
     {
+      "code": "C02",
+      "display": "Drug resist C. Auris"
+    },
+    {
       "code": "E01",
-      "display": "ESBL Ecoli"
+      "display": "ESBL E.coli"
     },
     {
       "code": "E02",
-      "display": "ESBL Kleb pn"
+      "display": "ESBL Kleb pn."
     },
     {
       "code": "E03",
@@ -30,7 +34,7 @@
     },
     {
       "code": "M02",
-      "display": "Multi resist MRSA"
+      "display": "Multi-resist MRSA"
     },
     {
       "code": "M03",
@@ -38,7 +42,7 @@
     },
     {
       "code": "N01",
-      "display": "Non multi resist MRSA"
+      "display": "NonMulti-resist MRSA"
     },
     {
       "code": "O01",
@@ -46,23 +50,23 @@
     },
     {
       "code": "R01",
-      "display": "COVID 19"
+      "display": "COVID-19"
     },
     {
       "code": "R02",
-      "display": "Symptom watch"
+      "display": "Symptom Watch"
     },
     {
       "code": "R03",
-      "display": "Suspect watch"
+      "display": "Suspect Watch"
     },
     {
       "code": "R04",
-      "display": "suspect case"
+      "display": "Suspect Case"
     },
     {
       "code": "R05",
-      "display": "Overseastravel"
+      "display": "Overseas Travel"
     },
     {
       "code": "V01",
@@ -71,5 +75,5 @@
   ],
   "experimental": false,
   "caseSensitive": true,
-  "count": 15
+  "count": 16
 }

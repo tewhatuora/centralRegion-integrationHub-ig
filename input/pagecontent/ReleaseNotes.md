@@ -1,6 +1,35 @@
 
 Change history for this FHIR Implementation Guide is as follows: 
 
+### v0.7.0
+02-Nov-2023
+* Added [Organization](./StructureDefinition-NZCentralRegionOrganization.html) to the supported resources data model to hold
+  `referringPractice` field from Referrals.
+
+* Adjustments of which alert type/category values in field `ZAL-2` denote AllergyIntolerance, and which denote Flag.
+  Alert category codes A3, A4, H1 & H3 map to `AllergyIntolerance` all other allert category codes, including DA & FA map to `Flag`
+
+  * Alert type/category codes MA and MC are non-coded alerts; the matching Alert field in `ZAL-3` is free text;
+    therefore code systems `nzcr-flag-alert-code-ma-cs` and `nzcr-flag-alert-code-mc-cs` have been removed
+
+
+* Inclusion of the follwing Flag Alert type code systems:
+  * Alert category DA now has 2 codes `S00	General Surgery` and `S75	Vascular Surgery`
+  * Alert category H2 now has 14 codes from `A01 - Adrenal insufficienc` to `T01 - Transplant patient`
+  * Alert category H4 now has 16 codes from `C01 - CRE` to `V01 - CVRE`
+  * Alert category H5 now has 16 codes from `C01 - Child abuse` to `R02 - Reserve for NHI`
+  * Alert category H6 now has 4 codes from `V01 - Blood group antibodi` to `T01 - Transfusion reaction`
+  * Alert category H7 now has 7 codes from `D01 - Intellectual disabil` to `P01 - ParentalSupport reqd`
+  * Alert category H8 now has 6 codes from `A01 - Advance care plan` to `T01 - Treat/managt plan`
+  * Alert category LS now has 86 codes from `R01 - Informal patient` to `R87 - MHA S30 1 yr CTO`
+
+* Inclusion of the following Allergy Alert type code systems:
+  * Allergy category H1 now has 316 codes ranging from `A01 - ACE Inhibitors` to `Z - Zinc`
+  * Allergy category H3 now has 24 codes ranginge from `A01 - Alcohol Wipes` to `W01 - Wheat/gluten`
+  * Alert categories A3 & A4  now have 2 codes `R03 - Unknown` and `R05 - Medication`
+
+
+
 ### v0.6.1
 25-Oct-2023
 

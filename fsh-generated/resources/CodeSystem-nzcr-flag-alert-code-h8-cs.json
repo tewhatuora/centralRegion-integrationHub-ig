@@ -27,9 +27,13 @@
     {
       "code": "R01",
       "display": "Renal Dialysis"
+    },
+    {
+      "code": "T01",
+      "display": "Treat/managt plan"
     }
   ],
   "experimental": false,
   "caseSensitive": true,
-  "count": 5
+  "count": 6
 }

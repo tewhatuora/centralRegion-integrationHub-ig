@@ -22,6 +22,7 @@ rectangle "Patient Data" as clPatient <<$bDataObject>> <<verb>> #Business {
 
 rectangle "Health Practitioner" as clPractitioner <<$bDataObject>> <<verb>> #Business {
   Application_DataObject(rsPractitioner, "Practitioner\n(FHIR Resource)")
+  Application_DataObject(rsOrganization, "Organization\n(FHIR Resource)")
 }
 
 rectangle "Referral Data" as clReferral <<$bDataObject>> <<verb>> #Business {
@@ -41,6 +42,7 @@ url of rsAllergyIntolerance is [[StructureDefinition-NZCentralRegionAllergyIntol
 url of rsFlag is [[StructureDefinition-NZCentralRegionFlag.html]]
 url of rsClinicalImpression is [[StructureDefinition-NZCentralRegionClinicalImpression.html]]
 url of rsPractitioner is [[StructureDefinition-NZCentralRegionPractitioner.html]]
+url of rsOrganization is [[StructureDefinition-NZCentralRegionOrganization.html]]
 url of rsServiceRequest is [[StructureDefinition-NZCentralRegionReferral.html]]
 
 
@@ -54,6 +56,8 @@ rsPractitioner --> rsAllergyIntolerance: is recorder of
 rsPractitioner ----> rsServiceRequest: is requestor of
 rsPractitioner ----> rsServiceRequest: is performer of
 rsPractitioner ----> rsClinicalImpression: is performer of
+
+rsOrganization <-- rsServiceRequest: is referring practice of
 
 rsCodeSystem --> rsValueSet: defines values for
 rsCodeSystem ---> rsConceptMap: is source for

@@ -22,11 +22,11 @@
     },
     {
       "code": "FA",
-      "display": "Food Allergy"
+      "display": "Not Used"
     },
     {
       "code": "DA",
-      "display": "Drug Allergy"
+      "display": "HCP Arrangements"
     },
     {
       "code": "MC",

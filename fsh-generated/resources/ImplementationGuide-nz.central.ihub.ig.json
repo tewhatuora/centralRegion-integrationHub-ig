@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "nz.central.ihub.ig",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "name": "CRIntegrationHub",
   "title": "Te Whatu Ora, Central Region Integration Hub",
   "status": "draft",
@@ -160,7 +160,15 @@
           "reference": "ValueSet/nzcr-allergy-alert-code-vs"
         },
         "name": "NZ Central Region - Allergy Alert Code Value Set",
-        "description": "Allergy alert codes (H1, H3, A3 & A4) ex. WebPAS in NZ Central Region.",
+        "description": "Allergy alert codes (from categories H1, H3, A3 & A4) ex. WebPAS in NZ Central Region.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-allergy-alert-code-a3a4-cs"
+        },
+        "name": "NZ Central Region - Allergy Alert Codes (A3 & A4)",
+        "description": "Category A3 & A4 Allergy alert codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -168,7 +176,7 @@
           "reference": "CodeSystem/nzcr-allergy-alert-code-h1-cs"
         },
         "name": "NZ Central Region - Allergy Alert Codes (H1)",
-        "description": "H1 Allergy alert codes ex. WebPAS in NZ Central Region.",
+        "description": "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -176,7 +184,7 @@
           "reference": "CodeSystem/nzcr-allergy-alert-code-h3-cs"
         },
         "name": "NZ Central Region - Allergy Alert Codes (H3)",
-        "description": "H3 Allergy alert codes ex. WebPAS in NZ Central Region.",
+        "description": "Category H3 Allergy alert codes ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {
@@ -269,6 +277,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/nzcr-flag-alert-code-da-cs"
+        },
+        "name": "NZ Central Region - Flag Alert Codes (DA)",
+        "description": "DA (HCP Arrangments) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nzcr-flag-alert-code-h2-cs"
         },
         "name": "NZ Central Region - Flag Alert Codes (H2)",
@@ -325,26 +341,10 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-flag-alert-code-ma-cs"
-        },
-        "name": "NZ Central Region - Flag Alert Codes (MA)",
-        "description": "MA (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/nzcr-flag-alert-code-mc-cs"
-        },
-        "name": "NZ Central Region - Flag Alert Codes (MC)",
-        "description": "MC (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/nzcr-flag-alert-code-nhimws-cs"
         },
         "name": "NZ Central Region - Flag Alert Codes (NHIMWS)",
-        "description": "H2 (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
+        "description": "NHIMWS (medical warning system) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
         "exampleBoolean": false
       },
       {
@@ -745,6 +745,14 @@
         },
         "name": "NZCentralRegionFlag",
         "description": "Flag resource for Te Whatu Ora, Central Region",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NZCentralRegionOrganization"
+        },
+        "name": "NZCentralRegionOrganization",
+        "description": "Organization resource for Te Whatu Ora, Central Region",
         "exampleBoolean": false
       },
       {

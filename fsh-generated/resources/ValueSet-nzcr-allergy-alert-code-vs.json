@@ -4,7 +4,7 @@
   "name": "NZCentralRegionAllergyAlertCodeValueSet",
   "id": "nzcr-allergy-alert-code-vs",
   "title": "NZ Central Region - Allergy Alert Code Value Set",
-  "description": "Allergy alert codes (H1, H3, A3 & A4) ex. WebPAS in NZ Central Region.",
+  "description": "Allergy alert codes (from categories H1, H3, A3 & A4) ex. WebPAS in NZ Central Region.",
   "url": "https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-alert-code",
   "experimental": false,
   "compose": {
@@ -14,6 +14,9 @@
       },
       {
         "system": "https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3"
+      },
+      {
+        "system": "https://standards.digital.health.nz/ns/central-region/allergy-alert-code-a3-a4"
       }
     ]
   }

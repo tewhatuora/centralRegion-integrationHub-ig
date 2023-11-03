@@ -10,15 +10,15 @@
   "concept": [
     {
       "code": "D01",
-      "display": "intellectual disability"
+      "display": "Intellectual disabil"
     },
     {
       "code": "D02",
-      "display": "other disability"
+      "display": "Other disability"
     },
     {
       "code": "D03",
-      "display": "physical disability"
+      "display": "Physical disability"
     },
     {
       "code": "D04",
@@ -26,15 +26,15 @@
     },
     {
       "code": "D05",
-      "display": "sensory disability"
+      "display": "Sensory disability"
     },
     {
       "code": "D06",
-      "display": "cognitive disability"
+      "display": "Cognitive disability"
     },
     {
       "code": "P01",
-      "display": "parental support required"
+      "display": "ParentalSupport reqd"
     }
   ],
   "experimental": false,

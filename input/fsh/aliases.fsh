@@ -30,7 +30,7 @@ Alias:   $HL7RequestPriorityVS       = http://hl7.org/fhir/ValueSet/request-prio
 
 // Extension URLs from NZ Base 
 Alias:   $NZBasePatient         = http://hl7.org.nz/fhir/StructureDefinition/NzPatient
-Alias:   $NZBaseOrganisation    = http://hl7.org.nz/fhir/StructureDefinition/NzOrganization
+Alias:   $NZBaseOrganization    = http://hl7.org.nz/fhir/StructureDefinition/NzOrganization
 Alias:   $NZBasePractitioner    = http://hl7.org.nz/fhir/StructureDefinition/NzPractitioner
 Alias:   $NZBaseDomicileCode    = https://standards.digital.health.nz/ns/domicile-code
 Alias:   $NZBaseDHBCode         = https://standards.digital.health.nz/ns/dhb-code
@@ -41,10 +41,10 @@ Alias:   $NZBaseEthnicity       = http://hl7.org.nz/fhir.StructureDefinition/nz-
 // Patient Identifier System URLs
 Alias:   $NZBaseNHI                       = https://standards.digital.health.nz/ns/nhi-id
 Alias:   $NZCentralRegionLocalPatientId   = https://standards.digital.health.nz/ns/central-region/pas-patient-id
-Alias:   $NZCentralRegionPASPractitioner  = https://standards.digital.health.nz/ns/central-region/pas-practitioner-id
-Alias:   $NZCentralRegionPASPractice      = https://standards.digital.health.nz/ns/central-region/pas-practice-id
 
 // Other resource Identifier System URLs
+Alias:   $NZCentralRegionPASPractitioner             = https://standards.digital.health.nz/ns/central-region/pas-practitioner-id
+Alias:   $NZCentralRegionPASPractice                 = https://standards.digital.health.nz/ns/central-region/pas-practice-id
 Alias:   $NZCentralRegionLocalAlertId                = https://standards.digital.health.nz/ns/central-region/pas-alert-id                // For Flag and AllergyIntolerance
 Alias:   $NZCentralRegionLocalClinicalImpressionId   = https://standards.digital.health.nz/ns/central-region/pas-clinical-impression-id  // for Mental Health Legal Status
 Alias:   $NZCentralRegionReferralId                  = https://standards.digital.health.nz/ns/central-region/pas-referral-id
@@ -80,14 +80,12 @@ Alias:   $NZCentralRegionAlertCategoryCS        = https://standards.digital.heal
 
 Alias:   $NZCentralRegionAllergyAlertCodeH1CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1
 Alias:   $NZCentralRegionAllergyAlertCodeH3CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
-Alias:   $NZCentralRegionAllergyAlertCodeA3CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
-Alias:   $NZCentralRegionAllergyAlertCodeA4CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
+Alias:   $NZCentralRegionAllergyAlertCodeA3A4CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-a3-a4
 Alias:   $NZCentralRegionAllergyReactionA3A4CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4
 Alias:   $NZCentralRegionAllergyReactionH1H3CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3
 
 Alias:   $NZCentralRegionFlagAlertCodeNHIMWSCS  = https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws
-Alias:   $NZCentralRegionFlagAlertCodeMCCS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc
-Alias:   $NZCentralRegionFlagAlertCodeMACS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-ma
+Alias:   $NZCentralRegionFlagAlertCodeDACS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-da
 Alias:   $NZCentralRegionFlagAlertCodeLSCS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls
 Alias:   $NZCentralRegionFlagAlertCodeH2CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2
 Alias:   $NZCentralRegionFlagAlertCodeH4CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h4

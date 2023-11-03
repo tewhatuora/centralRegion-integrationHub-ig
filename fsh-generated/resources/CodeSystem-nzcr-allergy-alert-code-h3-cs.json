@@ -5,7 +5,7 @@
   "name": "NZCentralRegionAllergyAlertCodeH3CodeSystem",
   "id": "nzcr-allergy-alert-code-h3-cs",
   "title": "NZ Central Region - Allergy Alert Codes (H3)",
-  "description": "H3 Allergy alert codes ex. WebPAS in NZ Central Region.",
+  "description": "Category H3 Allergy alert codes ex. WebPAS in NZ Central Region.",
   "url": "https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3",
   "concept": [
     {
@@ -18,98 +18,94 @@
     },
     {
       "code": "B01",
-      "display": "bee sting hypersens"
+      "display": "Bee sting hypersens"
     },
     {
       "code": "C01",
-      "display": "cuticerin"
+      "display": "Cuticerin"
     },
     {
       "code": "D01",
-      "display": "dettol"
+      "display": "Dettol"
     },
     {
       "code": "E01",
-      "display": "egg"
+      "display": "Egg"
     },
     {
       "code": "F01",
-      "display": "fish"
+      "display": "Fish"
     },
     {
       "code": "K01",
-      "display": "kiwifruit"
+      "display": "Kiwifruit"
     },
     {
       "code": "L01",
-      "display": "latex"
+      "display": "Latex"
     },
     {
       "code": "M01",
-      "display": "metal skin staples"
+      "display": "Metal skin staples"
     },
     {
       "code": "M02",
-      "display": "milk"
+      "display": "Milk"
     },
     {
       "code": "N01",
-      "display": "nickel"
+      "display": "Nickel"
     },
     {
       "code": "N02",
-      "display": "nuts"
+      "display": "Nuts"
     },
     {
       "code": "O01",
-      "display": "other allergy"
+      "display": "Other allergy"
     },
     {
       "code": "P01",
-      "display": "peanut"
+      "display": "Peanut"
     },
     {
       "code": "P02",
-      "display": "perfume"
+      "display": "Perfume"
     },
     {
       "code": "P03",
-      "display": "plasters"
+      "display": "Plasters"
     },
     {
       "code": "P04",
-      "display": "pollen"
+      "display": "Pollen"
     },
     {
       "code": "P05",
-      "display": "pork"
+      "display": "Pork"
     },
     {
       "code": "R01",
-      "display": "rubber"
+      "display": "Rubber"
     },
     {
       "code": "S01",
-      "display": "shellfish"
+      "display": "Shellfish"
     },
     {
       "code": "S02",
-      "display": "soy"
+      "display": "Soy"
     },
     {
       "code": "T01",
-      "display": "tegaderm"
+      "display": "Tegaderm"
     },
     {
       "code": "W01",
-      "display": "wheat/gluten"
-    },
-    {
-      "code": "PEANUT",
-      "display": "Allergy to Peanuts"
+      "display": "Wheat/gluten"
     }
   ],
   "experimental": false,
   "caseSensitive": true,
-  "count": 25
+  "count": 24
 }

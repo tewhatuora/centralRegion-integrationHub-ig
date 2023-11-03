@@ -10,7 +10,7 @@
   "concept": [
     {
       "code": "A01",
-      "display": "Adrenal insufficiency"
+      "display": "Adrenal insufficienc"
     },
     {
       "code": "A02",
@@ -42,7 +42,7 @@
     },
     {
       "code": "L01",
-      "display": "Lond QT syndrome"
+      "display": "Long QT syndrome"
     },
     {
       "code": "M01",
@@ -50,7 +50,11 @@
     },
     {
       "code": "O01",
-      "display": "Other medical condition"
+      "display": "Other medical condit"
+    },
+    {
+      "code": "O02",
+      "display": "On long-term home O2"
     },
     {
       "code": "R01",
@@ -58,10 +62,10 @@
     },
     {
       "code": "T01",
-      "display": "transplant patient"
+      "display": "Transplant patient"
     }
   ],
   "experimental": false,
   "caseSensitive": true,
-  "count": 13
+  "count": 14
 }

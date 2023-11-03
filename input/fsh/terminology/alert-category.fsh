@@ -10,10 +10,10 @@ Description:  "Alert Category codes ex. WebPAS in NZ Central Region"
 * #NHIMWS	"Medical Warning System"
 * #A3   "Allergies"
 * #A4   "Allergies"
-* #FA	"Food Allergy"
-* #DA	"Drug Allergy"
-* #MC	"Miscellaneous Contraindication"
-* #MA	"Miscellaneous"
+* #FA	"Not Used"             // FA --> Future Action
+* #DA	"HCP Arrangements"     // DA --> Dr Arrangements
+* #MC	"Miscellaneous Contraindication"   // -- Free text alert, no code values
+* #MA	"Miscellaneous"                    // -- Free text alert, no code values
 * #LS	"Legal Status"
 * #H1	"Drug reaction alerts"
 * #H2	"Medical condition alerts"
@@ -41,11 +41,6 @@ Description:  "Alert Category codes ex. WebPAS in NZ Central Region that denote 
 *  nzcr-alert-category-cs#A4
 *  nzcr-alert-category-cs#H1
 *  nzcr-alert-category-cs#H3
-*  nzcr-alert-category-cs#FA     // Food Allergy --> implies it's an allergy alert type
-*  nzcr-alert-category-cs#DA     // Drug Allergy --> implies it's an allergy alert type
-
-
-
 
 
 ValueSet: NZCentralRegionFlagAlertCategoryValueSet

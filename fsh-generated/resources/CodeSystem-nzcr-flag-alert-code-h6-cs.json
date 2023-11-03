@@ -10,19 +10,19 @@
   "concept": [
     {
       "code": "B01",
-      "display": "blood group antibodies"
+      "display": "Blood group antibodi"
     },
     {
       "code": "D01",
-      "display": "difficult cross match"
+      "display": "Difficult crossmatch"
     },
     {
       "code": "J01",
-      "display": "jehovah's witness"
+      "display": "Jehovah's Witness"
     },
     {
       "code": "T01",
-      "display": "transfusion reaction"
+      "display": "Transfusion reaction"
     }
   ],
   "experimental": false,

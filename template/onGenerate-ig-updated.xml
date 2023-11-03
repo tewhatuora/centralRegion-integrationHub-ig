@@ -12,11 +12,11 @@
       </div>
    </text>
    <url value="https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig"/>
-   <version value="0.6.1"/>
+   <version value="0.7.0"/>
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-10-25T20:10:32+13:00"/>
+   <date value="2023-11-03T18:44:07+13:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
@@ -466,6 +466,7 @@
       
       
       
+      
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
             <valueInteger value="999999999"/>
@@ -534,6 +535,24 @@
          </reference>
          <name value="NZCentralRegionFlag"/>
          <description value="Flag resource for Te Whatu Ora, Central Region"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-NZCentralRegionOrganization.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/NZCentralRegionOrganization"/>
+         </reference>
+         <name value="NZCentralRegionOrganization"/>
+         <description value="Organization resource for Te Whatu Ora, Central Region"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -713,7 +732,7 @@
             <reference value="ValueSet/nzcr-allergy-alert-code-vs"/>
          </reference>
          <name value="NZ Central Region - Allergy Alert Code Value Set"/>
-         <description value="Allergy alert codes (H1, H3, A3 &amp; A4) ex. WebPAS in NZ Central Region."/>
+         <description value="Allergy alert codes (from categories H1, H3, A3 &amp; A4) ex. WebPAS in NZ Central Region."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -1157,13 +1176,31 @@
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-allergy-alert-code-a3a4-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-allergy-alert-code-a3a4-cs"/>
+         </reference>
+         <name value="NZ Central Region - Allergy Alert Codes (A3 &amp; A4)"/>
+         <description value="Category A3 &amp; A4 Allergy alert codes ex. WebPAS in NZ Central Region."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="CodeSystem-nzcr-allergy-alert-code-h1-cs.html"/>
          </extension>
          <reference>
             <reference value="CodeSystem/nzcr-allergy-alert-code-h1-cs"/>
          </reference>
          <name value="NZ Central Region - Allergy Alert Codes (H1)"/>
-         <description value="H1 Allergy alert codes ex. WebPAS in NZ Central Region."/>
+         <description value="Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
       </resource>
@@ -1181,7 +1218,7 @@
             <reference value="CodeSystem/nzcr-allergy-alert-code-h3-cs"/>
          </reference>
          <name value="NZ Central Region - Allergy Alert Codes (H3)"/>
-         <description value="H3 Allergy alert codes ex. WebPAS in NZ Central Region."/>
+         <description value="Category H3 Allergy alert codes ex. WebPAS in NZ Central Region."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
       </resource>
@@ -1272,6 +1309,24 @@
          </reference>
          <name value="NZ Central Region - Ethnicity Level 2 Code System"/>
          <description value="Ethnicity Level 2 codes from &#xA;   [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-flag-alert-code-da-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-flag-alert-code-da-cs"/>
+         </reference>
+         <name value="NZ Central Region - Flag Alert Codes (DA)"/>
+         <description value="DA (HCP Arrangments) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
       </resource>
@@ -1409,49 +1464,13 @@
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-nzcr-flag-alert-code-ma-cs.html"/>
-         </extension>
-         <reference>
-            <reference value="CodeSystem/nzcr-flag-alert-code-ma-cs"/>
-         </reference>
-         <name value="NZ Central Region - Flag Alert Codes (MA)"/>
-         <description value="MA (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-term-codesystem"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CodeSystem"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-nzcr-flag-alert-code-mc-cs.html"/>
-         </extension>
-         <reference>
-            <reference value="CodeSystem/nzcr-flag-alert-code-mc-cs"/>
-         </reference>
-         <name value="NZ Central Region - Flag Alert Codes (MC)"/>
-         <description value="MC (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-term-codesystem"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CodeSystem"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="CodeSystem-nzcr-flag-alert-code-nhimws-cs.html"/>
          </extension>
          <reference>
             <reference value="CodeSystem/nzcr-flag-alert-code-nhimws-cs"/>
          </reference>
          <name value="NZ Central Region - Flag Alert Codes (NHIMWS)"/>
-         <description value="H2 (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"/>
+         <description value="NHIMWS (medical warning system) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
       </resource>
@@ -2299,6 +2318,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-NZCentralRegionOrganization.html"/>
+               <title value="NZCentralRegionOrganization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-NZCentralRegionPatient.html"/>
                <title value="NZCentralRegionPatient"/>
                <generation value="generated"/>
@@ -2469,6 +2493,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="CodeSystem-nzcr-allergy-alert-code-a3a4-cs.html"/>
+               <title value="NZ Central Region - Allergy Alert Codes (A3 &amp; A4)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="CodeSystem-nzcr-allergy-alert-code-h1-cs.html"/>
                <title value="NZ Central Region - Allergy Alert Codes (H1)"/>
                <generation value="generated"/>
@@ -2504,6 +2533,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="CodeSystem-nzcr-flag-alert-code-da-cs.html"/>
+               <title value="NZ Central Region - Flag Alert Codes (DA)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="CodeSystem-nzcr-flag-alert-code-h2-cs.html"/>
                <title value="NZ Central Region - Flag Alert Codes (H2)"/>
                <generation value="generated"/>
@@ -2536,16 +2570,6 @@
             <page>
                <nameUrl value="CodeSystem-nzcr-flag-alert-code-ls-cs.html"/>
                <title value="NZ Central Region - Flag Alert Codes (LS)"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="CodeSystem-nzcr-flag-alert-code-ma-cs.html"/>
-               <title value="NZ Central Region - Flag Alert Codes (MA)"/>
-               <generation value="generated"/>
-            </page>
-            <page>
-               <nameUrl value="CodeSystem-nzcr-flag-alert-code-mc-cs.html"/>
-               <title value="NZ Central Region - Flag Alert Codes (MC)"/>
                <generation value="generated"/>
             </page>
             <page>
