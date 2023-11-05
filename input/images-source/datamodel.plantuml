@@ -57,7 +57,7 @@ rsPractitioner ----> rsServiceRequest: is requestor of
 rsPractitioner ----> rsServiceRequest: is performer of
 rsPractitioner ----> rsClinicalImpression: is performer of
 
-rsOrganization <-- rsServiceRequest: is referring practice of
+rsOrganization ---> rsServiceRequest: is referring practice of
 
 rsCodeSystem --> rsValueSet: defines values for
 rsCodeSystem ---> rsConceptMap: is source for

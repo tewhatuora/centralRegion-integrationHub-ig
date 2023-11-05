@@ -9,8 +9,8 @@ Change history for this FHIR Implementation Guide is as follows:
 * Adjustments of which alert type/category values in field `ZAL-2` denote AllergyIntolerance, and which denote Flag.
   Alert category codes A3, A4, H1 & H3 map to `AllergyIntolerance` all other allert category codes, including DA & FA map to `Flag`
 
-  * Alert type/category codes MA and MC are non-coded alerts; the matching Alert field in `ZAL-3` is free text;
-    therefore code systems `nzcr-flag-alert-code-ma-cs` and `nzcr-flag-alert-code-mc-cs` have been removed
+ * Alert type/category codes MA and MC are non-coded alerts; the matching Alert field in `ZAL-3` is free text;
+   therefore code systems `nzcr-flag-alert-code-ma-cs` and `nzcr-flag-alert-code-mc-cs` have been removed
 
 
 * Inclusion of the follwing Flag Alert type code systems:

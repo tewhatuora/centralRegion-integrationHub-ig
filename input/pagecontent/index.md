@@ -6,7 +6,7 @@ The purpose of the Integration Hub is to provide a FHIR API façade into the Cen
 The Integration Hub acts as an [Operational Data Store](https://en.wikipedia.org/wiki/Operational_data_store) holding snapshots of the supported FHIR resources
 that have been populated from [master data](https://en.wikipedia.org/wiki/Master_data) sources via the region's internal HL7 v2 messaging network.
 
-The Integration Hub currently only provides read-only access to the support FHIR Resources.
+The Integration Hub currently only provides read-only access to the supported FHIR Resources.
 
 ## Sections
 
