@@ -16,7 +16,7 @@
    <name value="CRIntegrationHub"/>
    <title value="Te Whatu Ora, Central Region Integration Hub"/>
    <status value="draft"/>
-   <date value="2023-11-03T18:44:07+13:00"/>
+   <date value="2023-11-10T11:08:12+13:00"/>
    <publisher value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
    <contact>
       <name value="Te Whatu Ora, Te Pae Hauora o Ruahine o Tararua, MidCentral"/>
@@ -1062,24 +1062,6 @@
             <valueString value="CodeSystem"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-nzcr-flag-alert-code-nhimws-cs.html"/>
-         </extension>
-         <reference>
-            <reference value="CodeSystem/nzcr-flag-alert-code-nhimws-cs"/>
-         </reference>
-         <name value="NZ Central Region - Flag Alert Codes (NHIMWS)"/>
-         <description value="NHIMWS (medical warning system) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-term-codesystem"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CodeSystem"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="CodeSystem-nzcr-health-purchaser-cs.html"/>
          </extension>
          <reference>
@@ -1635,24 +1617,6 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="CodeSystem"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="CodeSystem-nzcr-referral-type-cs.html"/>
-         </extension>
-         <reference>
-            <reference value="CodeSystem/nzcr-referral-type-cs"/>
-         </reference>
-         <name value="NZ Central Region - Referral Type Code System"/>
-         <description value="Referral Type codes; ex. WebPAS in NZ Central Region."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-term-codesystem"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -1662,9 +1626,45 @@
             <reference value="ValueSet/nzcr-referral-type-vs"/>
          </reference>
          <name value="NZ Central Region - Referral Type Value Set"/>
-         <description value="Referral Type codes ex. WebPAS in NZ Central Region."/>
+         <description value="Referral Type codes ex. WebPAS in NZ Central Region; Union of waiting list department codes and normal referral types."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-referral-type-ri-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-referral-type-ri-cs"/>
+         </reference>
+         <name value="NZ Central Region - RI Referral Type Code System"/>
+         <description value="Referral Type codes; ex. WebPAS in NZ Central Region - not to be confused with Waiting List Department codes."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nzcr-referral-type-wu-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nzcr-referral-type-wu-cs"/>
+         </reference>
+         <name value="NZ Central Region - WU Referral Type Code System"/>
+         <description value="Waiting List Department Referral Type codes; ex. WebPAS in NZ Central Region."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">

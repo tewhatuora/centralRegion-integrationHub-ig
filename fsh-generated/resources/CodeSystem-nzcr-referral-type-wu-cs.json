@@ -1,0 +1,179 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "NZCentralRegionReferralTypeWUCodeSystem",
+  "id": "nzcr-referral-type-wu-cs",
+  "title": "NZ Central Region - WU Referral Type Code System",
+  "description": "Waiting List Department Referral Type codes; ex. WebPAS in NZ Central Region.",
+  "url": "https://standards.digital.health.nz/ns/central-region/referral-type-wu",
+  "concept": [
+    {
+      "code": "ANE",
+      "display": "Anaesthetics"
+    },
+    {
+      "code": "ATO",
+      "display": "ATR Older People"
+    },
+    {
+      "code": "ATP",
+      "display": "ATR Physical Disabil"
+    },
+    {
+      "code": "CAR",
+      "display": "Cardiology"
+    },
+    {
+      "code": "CPT",
+      "display": "Cardiology PTCA"
+    },
+    {
+      "code": "CTH",
+      "display": "Cardiothoracic"
+    },
+    {
+      "code": "DEN",
+      "display": "Dental"
+    },
+    {
+      "code": "ED",
+      "display": "Emergency"
+    },
+    {
+      "code": "END",
+      "display": "Endoscopy"
+    },
+    {
+      "code": "ENT",
+      "display": "Ear Nose and Throat"
+    },
+    {
+      "code": "EYE",
+      "display": "Ophthalmology"
+    },
+    {
+      "code": "GAS",
+      "display": "Gastroenterology"
+    },
+    {
+      "code": "GS",
+      "display": "General Surgery"
+    },
+    {
+      "code": "GYF",
+      "display": "Gynae - Fertility"
+    },
+    {
+      "code": "GYN",
+      "display": "Gynaecology"
+    },
+    {
+      "code": "GYS",
+      "display": "Gynae - Sterilis'n"
+    },
+    {
+      "code": "HEM",
+      "display": "Haematology"
+    },
+    {
+      "code": "IM",
+      "display": "General Medicine"
+    },
+    {
+      "code": "INT",
+      "display": "Intervent Procedures"
+    },
+    {
+      "code": "MH",
+      "display": "Mental Health"
+    },
+    {
+      "code": "MXD",
+      "display": "Maxillofacial+Dental"
+    },
+    {
+      "code": "MXS",
+      "display": "Maxillo-facial Surg"
+    },
+    {
+      "code": "NES",
+      "display": "Neurosurgery"
+    },
+    {
+      "code": "NEU",
+      "display": "Neurology"
+    },
+    {
+      "code": "OBS",
+      "display": "Obstetrics"
+    },
+    {
+      "code": "ONC",
+      "display": "Oncology"
+    },
+    {
+      "code": "ORT",
+      "display": "Orthopaedics"
+    },
+    {
+      "code": "PAC",
+      "display": "Pooled Acute List"
+    },
+    {
+      "code": "PAL",
+      "display": "Palliative Medicine"
+    },
+    {
+      "code": "PED",
+      "display": "Paediatric Medicine"
+    },
+    {
+      "code": "PLA",
+      "display": "Plastics"
+    },
+    {
+      "code": "PSS",
+      "display": "Paed Spec Surgery"
+    },
+    {
+      "code": "PYG",
+      "display": "Psychogeriatric"
+    },
+    {
+      "code": "RBS",
+      "display": "Bowel screening"
+    },
+    {
+      "code": "RDT",
+      "display": "Radiotherapy"
+    },
+    {
+      "code": "REN",
+      "display": "Renal Medicine"
+    },
+    {
+      "code": "RES",
+      "display": "Respiratory"
+    },
+    {
+      "code": "RHE",
+      "display": "Rheumatology"
+    },
+    {
+      "code": "SL",
+      "display": "Skin Lesions"
+    },
+    {
+      "code": "URO",
+      "display": "Urology"
+    },
+    {
+      "code": "VAS",
+      "display": "Vascular surgery"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 41
+}

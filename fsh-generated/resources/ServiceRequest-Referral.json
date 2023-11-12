@@ -151,17 +151,17 @@
       "value": "43372609"
     }
   ],
+  "status": "draft",
+  "intent": "order",
   "code": {
     "coding": [
       {
-        "system": "https://standards.digital.health.nz/ns/central-region/referral-type",
         "code": "R02",
+        "system": "https://standards.digital.health.nz/ns/central-region/referral-type-ri",
         "display": "Allied Health"
       }
     ]
   },
-  "status": "draft",
-  "intent": "order",
   "priority": "routine",
   "reasonCode": [
     {

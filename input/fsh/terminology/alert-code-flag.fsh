@@ -1,14 +1,3 @@
-CodeSystem:  NZCentralRegionFlagAlertCodeNHIMWSCodeSystem
-Id: nzcr-flag-alert-code-nhimws-cs
-Title: "NZ Central Region - Flag Alert Codes (NHIMWS)"
-Description:  "NHIMWS (medical warning system) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
-
-* ^url = $NZCentralRegionFlagAlertCodeNHIMWSCS
-* ^experimental = false
-* ^caseSensitive = true
-
-
-
 CodeSystem:  NZCentralRegionFlagAlertCodeDACodeSystem
 Id: nzcr-flag-alert-code-da-cs
 Title: "NZ Central Region - Flag Alert Codes (DA)"
@@ -274,7 +263,6 @@ Description:  "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag 
 * ^url = $NZCentralRegionFlagAlertCodeVS
 * ^experimental = false
 
-* include codes from system nzcr-flag-alert-code-nhimws-cs
 * include codes from system nzcr-flag-alert-code-ls-cs
 * include codes from system nzcr-flag-alert-code-da-cs
 * include codes from system nzcr-flag-alert-code-h2-cs

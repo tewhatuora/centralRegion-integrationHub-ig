@@ -2,15 +2,15 @@
 Change history for this FHIR Implementation Guide is as follows: 
 
 ### v0.7.0
-02-Nov-2023
+10-Nov-2023
 * Added [Organization](./StructureDefinition-NZCentralRegionOrganization.html) to the supported resources data model to hold
   `referringPractice` field from Referrals.
 
 * Adjustments of which alert type/category values in field `ZAL-2` denote AllergyIntolerance, and which denote Flag.
   Alert category codes A3, A4, H1 & H3 map to `AllergyIntolerance` all other allert category codes, including DA & FA map to `Flag`
 
- * Alert type/category codes MA and MC are non-coded alerts; the matching Alert field in `ZAL-3` is free text;
-   therefore code systems `nzcr-flag-alert-code-ma-cs` and `nzcr-flag-alert-code-mc-cs` have been removed
+ * Alert type/category codes NHIMWS, MA and MC are non-coded alerts; the matching Alert field in `ZAL-3` is free text;
+   therefore code systems `nzcr-flag-alert-code-nhimws-cs`, `nzcr-flag-alert-code-ma-cs` and `nzcr-flag-alert-code-mc-cs` have been removed
 
 
 * Inclusion of the follwing Flag Alert type code systems:
@@ -28,6 +28,7 @@ Change history for this FHIR Implementation Guide is as follows:
   * Allergy category H3 now has 24 codes ranginge from `A01 - Alcohol Wipes` to `W01 - Wheat/gluten`
   * Alert categories A3 & A4  now have 2 codes `R03 - Unknown` and `R05 - Medication`
 
+* Valid Referral Type codes are union of RI and WU type codes
 
 
 ### v0.6.1

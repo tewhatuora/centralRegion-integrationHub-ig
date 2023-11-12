@@ -35,7 +35,6 @@
 [NZCentralRegionFlagAlertCodeH7CodeSystem]: CodeSystem-nzcr-flag-alert-code-h7-cs.html
 [NZCentralRegionFlagAlertCodeH8CodeSystem]: CodeSystem-nzcr-flag-alert-code-h8-cs.html
 [NZCentralRegionFlagAlertCodeLSCodeSystem]: CodeSystem-nzcr-flag-alert-code-ls-cs.html
-[NZCentralRegionFlagAlertCodeNHIMWSCodeSystem]: CodeSystem-nzcr-flag-alert-code-nhimws-cs.html
 [NZCentralRegionHealthPurchaserCodeSystem]: CodeSystem-nzcr-health-purchaser-cs.html
 [NZCentralRegionHealthPurchaserValueSet]: ValueSet-nzcr-health-purchaser-vs.html
 [NZCentralRegionHospitalCodeSystem]: CodeSystem-nzcr-hospital-code-cs.html
@@ -67,8 +66,9 @@
 [NZCentralRegionReferralSiteValueSet]: ValueSet-nzcr-referral-site-vs.html
 [NZCentralRegionReferralSourceCodeSystem]: CodeSystem-nzcr-referral-source-cs.html
 [NZCentralRegionReferralSourceValueSet]: ValueSet-nzcr-referral-source-vs.html
-[NZCentralRegionReferralTypeCodeSystem]: CodeSystem-nzcr-referral-type-cs.html
 [NZCentralRegionReferralTypeValueSet]: ValueSet-nzcr-referral-type-vs.html
+[NZCentralRegionReferralTypeRICodeSystem]: CodeSystem-nzcr-referral-type-ri-cs.html
+[NZCentralRegionReferralTypeWUCodeSystem]: CodeSystem-nzcr-referral-type-wu-cs.html
 [NZCentralRegionAlert]: StructureDefinition-nzcr-alert.html
 [nzcr-allergy-category-map]: ConceptMap-nzcr-allergy-category-map.html
 [nzcr-allergy-criticality-map]: ConceptMap-nzcr-allergy-criticality-map.html

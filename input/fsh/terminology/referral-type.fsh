@@ -1,9 +1,9 @@
-CodeSystem:  NZCentralRegionReferralTypeCodeSystem
-Id: nzcr-referral-type-cs
-Title: "NZ Central Region - Referral Type Code System"
-Description:  "Referral Type codes; ex. WebPAS in NZ Central Region."
+CodeSystem:  NZCentralRegionReferralTypeRICodeSystem
+Id: nzcr-referral-type-ri-cs
+Title: "NZ Central Region - RI Referral Type Code System"
+Description:  "Referral Type codes; ex. WebPAS in NZ Central Region - not to be confused with Waiting List Department codes."
 
-* ^url = $NZCentralRegionReferralTypeCS
+* ^url = $NZCentralRegionReferralTypeRICS
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -27,13 +27,64 @@ Description:  "Referral Type codes; ex. WebPAS in NZ Central Region."
 * #R18 "Data migration"
 * #R19 "Maori Health"
 
+CodeSystem:  NZCentralRegionReferralTypeWUCodeSystem
+Id: nzcr-referral-type-wu-cs
+Title: "NZ Central Region - WU Referral Type Code System"
+Description:  "Waiting List Department Referral Type codes; ex. WebPAS in NZ Central Region."
+
+* ^url = $NZCentralRegionReferralTypeWUCS
+* ^experimental = false
+* ^caseSensitive = true
+
+* #ANE "Anaesthetics"
+* #ATO "ATR Older People"
+* #ATP "ATR Physical Disabil"
+* #CAR "Cardiology"
+* #CPT "Cardiology PTCA"
+* #CTH "Cardiothoracic"
+* #DEN "Dental"
+* #ED  "Emergency"
+* #END "Endoscopy"
+* #ENT "Ear Nose and Throat"
+* #EYE "Ophthalmology"
+* #GAS "Gastroenterology"
+* #GS  "General Surgery"
+* #GYF "Gynae - Fertility"
+* #GYN "Gynaecology"
+* #GYS "Gynae - Sterilis'n"
+* #HEM "Haematology"
+* #IM  "General Medicine"
+* #INT "Intervent Procedures"
+* #MH  "Mental Health"
+* #MXD "Maxillofacial+Dental"
+* #MXS "Maxillo-facial Surg"
+* #NES "Neurosurgery"
+* #NEU "Neurology"
+* #OBS "Obstetrics"
+* #ONC "Oncology"
+* #ORT "Orthopaedics"
+* #PAC "Pooled Acute List"
+* #PAL "Palliative Medicine"
+* #PED "Paediatric Medicine"
+* #PLA "Plastics"
+* #PSS "Paed Spec Surgery"
+* #PYG "Psychogeriatric"
+* #RBS "Bowel screening"
+* #RDT "Radiotherapy"
+* #REN "Renal Medicine"
+* #RES "Respiratory"
+* #RHE "Rheumatology"
+* #SL  "Skin Lesions"
+* #URO "Urology"
+* #VAS "Vascular surgery"
 
 ValueSet: NZCentralRegionReferralTypeValueSet
 Id: nzcr-referral-type-vs
 Title: "NZ Central Region - Referral Type Value Set"
-Description:  "Referral Type codes ex. WebPAS in NZ Central Region."
+Description:  "Referral Type codes ex. WebPAS in NZ Central Region; Union of waiting list department codes and normal referral types."
 
 * ^url = $NZCentralRegionReferralTypeVS
 * ^experimental = false
 
-* include codes from system nzcr-referral-type-cs
+* include codes from system nzcr-referral-type-ri-cs
+* include codes from system nzcr-referral-type-wu-cs

@@ -685,7 +685,6 @@
         "id": "ServiceRequest.code.coding.system",
         "path": "ServiceRequest.code.coding.system",
         "min": 1,
-        "patternUri": "https://standards.digital.health.nz/ns/central-region/referral-type",
         "mustSupport": true,
         "mapping": [
           {

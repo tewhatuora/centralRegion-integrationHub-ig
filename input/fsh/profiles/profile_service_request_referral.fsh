@@ -51,7 +51,6 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
   * code 1..1 MS
   * code from nzcr-referral-type-vs (required)
   * system 1..1 MS
-  * system = $NZCentralRegionReferralTypeCS  // TODO - Code and Category are probably different code systems
   * display 1..1 MS
 
 * orderDetail 0..0 MS  // N/A for referrals

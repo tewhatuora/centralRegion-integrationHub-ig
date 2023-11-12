@@ -84,7 +84,6 @@ Alias:   $NZCentralRegionAllergyAlertCodeA3A4CS   = https://standards.digital.he
 Alias:   $NZCentralRegionAllergyReactionA3A4CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4
 Alias:   $NZCentralRegionAllergyReactionH1H3CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3
 
-Alias:   $NZCentralRegionFlagAlertCodeNHIMWSCS  = https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws
 Alias:   $NZCentralRegionFlagAlertCodeDACS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-da
 Alias:   $NZCentralRegionFlagAlertCodeLSCS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls
 Alias:   $NZCentralRegionFlagAlertCodeH2CS      = https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2
@@ -100,7 +99,8 @@ Alias:   $NZCentralRegionMentalHealthReviewLocationCS = https://standards.digita
 Alias:   $NZCentralRegionMentalHealthCourtTypeCS      = https://standards.digital.health.nz/ns/central-region/mental-health-court-type
 
 Alias:   $NZCentralRegionReferralPriorityCS        = https://standards.digital.health.nz/ns/central-region/referral-priority
-Alias:   $NZCentralRegionReferralTypeCS            = https://standards.digital.health.nz/ns/central-region/referral-type
+Alias:   $NZCentralRegionReferralTypeRICS          = https://standards.digital.health.nz/ns/central-region/referral-type-ri
+Alias:   $NZCentralRegionReferralTypeWUCS          = https://standards.digital.health.nz/ns/central-region/referral-type-wu      // essentially waiting list referral departments
 Alias:   $NZCentralRegionReferralReasonCS          = https://standards.digital.health.nz/ns/central-region/referral-reason
 Alias:   $NZCentralRegionReferralSiteCS            = https://standards.digital.health.nz/ns/central-region/referral-site         // (Location ??)
 Alias:   $NZCentralRegionReferralSourceCS          = https://standards.digital.health.nz/ns/central-region/referral-source

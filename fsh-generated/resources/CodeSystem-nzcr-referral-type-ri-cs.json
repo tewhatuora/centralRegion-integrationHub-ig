@@ -2,11 +2,11 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "NZCentralRegionReferralTypeCodeSystem",
-  "id": "nzcr-referral-type-cs",
-  "title": "NZ Central Region - Referral Type Code System",
-  "description": "Referral Type codes; ex. WebPAS in NZ Central Region.",
-  "url": "https://standards.digital.health.nz/ns/central-region/referral-type",
+  "name": "NZCentralRegionReferralTypeRICodeSystem",
+  "id": "nzcr-referral-type-ri-cs",
+  "title": "NZ Central Region - RI Referral Type Code System",
+  "description": "Referral Type codes; ex. WebPAS in NZ Central Region - not to be confused with Waiting List Department codes.",
+  "url": "https://standards.digital.health.nz/ns/central-region/referral-type-ri",
   "concept": [
     {
       "code": "R01",

@@ -10,9 +10,6 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws"
-      },
-      {
         "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls"
       },
       {

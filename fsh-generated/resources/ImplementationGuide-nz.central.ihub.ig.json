@@ -341,14 +341,6 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-flag-alert-code-nhimws-cs"
-        },
-        "name": "NZ Central Region - Flag Alert Codes (NHIMWS)",
-        "description": "NHIMWS (medical warning system) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/nzcr-health-purchaser-cs"
         },
         "name": "NZ Central Region - Health Purchaser Code System",
@@ -597,18 +589,26 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/nzcr-referral-type-cs"
+          "reference": "ValueSet/nzcr-referral-type-vs"
         },
-        "name": "NZ Central Region - Referral Type Code System",
-        "description": "Referral Type codes; ex. WebPAS in NZ Central Region.",
+        "name": "NZ Central Region - Referral Type Value Set",
+        "description": "Referral Type codes ex. WebPAS in NZ Central Region; Union of waiting list department codes and normal referral types.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/nzcr-referral-type-vs"
+          "reference": "CodeSystem/nzcr-referral-type-ri-cs"
         },
-        "name": "NZ Central Region - Referral Type Value Set",
-        "description": "Referral Type codes ex. WebPAS in NZ Central Region.",
+        "name": "NZ Central Region - RI Referral Type Code System",
+        "description": "Referral Type codes; ex. WebPAS in NZ Central Region - not to be confused with Waiting List Department codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzcr-referral-type-wu-cs"
+        },
+        "name": "NZ Central Region - WU Referral Type Code System",
+        "description": "Waiting List Department Referral Type codes; ex. WebPAS in NZ Central Region.",
         "exampleBoolean": false
       },
       {

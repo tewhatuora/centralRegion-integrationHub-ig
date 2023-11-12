@@ -17,7 +17,7 @@ Description: "An example of a Referral flavour of ServiceRequest resource, in Te
 
 * code.coding
   * code = #R02
-  * system = $NZCentralRegionReferralTypeCS
+  * system = $NZCentralRegionReferralTypeRICS
   * display = "Allied Health"
 
 * priority = #routine
