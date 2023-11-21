@@ -519,7 +519,8 @@
       {
         "id": "Flag.category.text",
         "path": "Flag.category.text",
-        "max": "0"
+        "max": "0",
+        "mustSupport": true
       },
       {
         "id": "Flag.code",
@@ -549,7 +550,6 @@
       {
         "id": "Flag.code.coding",
         "path": "Flag.code.coding",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -571,7 +571,7 @@
           {
             "identity": "nzcr-flag-from-hl7v2",
             "map": " ",
-            "comment": "One of:\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-ma\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h4\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h5\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h6\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h7\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8"
+            "comment": "One of:\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h4\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h5\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h6\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h7\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8"
           }
         ]
       },
@@ -612,7 +612,14 @@
       {
         "id": "Flag.code.text",
         "path": "Flag.code.text",
-        "max": "0"
+        "mustSupport": true,
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "ZAL-3.2",
+            "comment": "When ZAL-3.1 is one of:\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc\n* https://standards.digital.health.nz/ns/central-region/flag-alert-code-ma\nie: these categories denote 'free-text' alert codes\n"
+          }
+        ]
       },
       {
         "id": "Flag.subject",

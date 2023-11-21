@@ -32,14 +32,14 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
   * coding.userSelected 0..0 // data not available
   * coding.extension 0..0
   * coding.id 0..0
-  * text 0..0                // code, Value and Display are all derived from Code value
+  * text 0..0 MS
   * extension 0..0
   * id 0..0
 
 
 * code from nzcr-flag-alert-code-vs (required)
 * code 1..1 MS
-  * coding 1..* MS
+  * coding 0..* MS       // Categories NHIMWS, MA & MC are 'free-text' categories, which can't be coded
     * code 1..1 MS 
     * system 1..1 MS
     * display 1..1 MS
@@ -47,7 +47,7 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
     * userSelected 0..0  // data not available
     * extension 0..0
     * id 0..0
-  * text 0..0                // ode, Value and Display are all derived from Code value
+  * text 0..1 MS        // Used for categories NHIMWS, MA & MC
   * extension 0..0
   * id 0..0
 

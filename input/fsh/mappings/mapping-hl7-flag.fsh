@@ -25,9 +25,6 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * code -> "ZAL-3"
 * code.coding.code -> "ZAL-3.1"
 * code.coding.system -> " " "One of:
-* https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws
-* https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc
-* https://standards.digital.health.nz/ns/central-region/flag-alert-code-ma
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-h4
@@ -36,6 +33,12 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-h7
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8"
 * code.coding.display -> "ZAL-3.2"
+* code.text -> "ZAL-3.2" "When ZAL-3.1 is one of:
+* https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws
+* https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc
+* https://standards.digital.health.nz/ns/central-region/flag-alert-code-ma
+ie: these categories denote 'free-text' alert codes
+"
 
 * subject.reference -> " " "read-only field"
 * subject.type -> "'Patient'"

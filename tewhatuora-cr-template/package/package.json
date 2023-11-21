@@ -1,10 +1,10 @@
 {
-    "name": "ihe.fhir.template",
+    "name": "nzcr.fhir.template",
     "version": "0.1.0",
     "type": "fhir.template",
     "license": "CC0-1.0",
-    "description": "Stu's Custom FHIR Template",
-    "author": "Stuart McGrigor",
+    "description": "Te Whatu Ora, Central Region, Custom FHIR Template, implements Te Whatu ora branding guidelines",
+    "author": "Stuart McGrigor, Te Whatu Ora, Central Region",
     "canonical": "http://hl7.org.nz/tewhatuora/central-region/stu-template",
     "base": "fhir.base.template",
     "dependencies": {
