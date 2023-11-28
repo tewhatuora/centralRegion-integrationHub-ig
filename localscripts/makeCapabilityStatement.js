@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generates input/pagecontent/capabilityStatement.xml based on the SUSHI-generated Capability Statement
- *  (which was generated as an example instance, in file fsh-generated/resources/CapabilityStatement-*.json)
+ * Generates input/pagecontent/capabilityStatement.xml based on static capability statement from SmileCDR software
  * 
  */
 let fs = require('fs');
