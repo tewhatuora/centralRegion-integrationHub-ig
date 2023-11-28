@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "type": "fhir.template",
     "license": "CC0-1.0",
-    "description": "Te Whatu Ora, Central Region, Custom FHIR Template, implements Te Whatu ora branding guidelines",
+    "description": "Te Whatu Ora, Central Region, Custom FHIR Template, implements Te Whatu ora branding guidelines; and selects the differential mapping fragments",
     "author": "Stuart McGrigor, Te Whatu Ora, Central Region",
     "canonical": "http://hl7.org.nz/tewhatuora/central-region/stu-template",
     "base": "fhir.base.template",
