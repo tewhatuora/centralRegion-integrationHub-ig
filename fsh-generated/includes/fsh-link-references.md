@@ -1,5 +1,5 @@
 [Address-Suburb]: Patient-Address-Suburb.html
-[NZCR FHIR Rest Endpoints]: CapabilityStatement-nzcr-SmileCDR.html
+[MDHB FHIR REST Endpoint]: CapabilityStatement-nzcr-SmileCDR.html
 [Contact]: Patient-Contact.html
 [Ethnicity-MultipleCodings]: Patient-Ethnicity-MultipleCodings.html
 [GeneralPractitioner]: Patient-GeneralPractitioner.html
