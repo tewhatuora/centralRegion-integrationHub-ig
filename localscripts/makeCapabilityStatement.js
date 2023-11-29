@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generates input/pagecontent/capabilityStatement.xml based on static capability statement from SmileCDR software
+ * Generates input/pagecontent/capabilityStatement.xml - which summarizes the static capability statement from SmileCDR software
  * 
  */
 let fs = require('fs');
@@ -40,7 +40,7 @@ if (fs.existsSync(rootPath)) {
             let contents = fs.readFileSync(fullFileName).toString();
             let capStmt = JSON.parse(contents)
 
-            ar.push("<div>API Summary (Generated from the CapabilityStatement:" + capStmt.id + ")</div>")
+            ar.push("<div>API Summary (Generated from the CapabilityStatement: " + capStmt.id + ")</div>")
 
             //todo - convert markdown into HTML...
             if (capStmt.description) {
