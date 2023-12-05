@@ -77,8 +77,8 @@ menu:
      Refer Patient: useCaseReferPatient.html
      Update Patient: useCaseUpdatePatient.html
   APIs:
-     Summary: CapabilityStatement-nzcr-SmileCDR.html
-     Details: capabilityStatement.html
+     Summary: capabilityStatement.html
+     Details: CapabilityStatement-nzcr-SmileCDR.html
   Artifacts: artifacts.html
   Support:
      Developer Guide: DeveloperGuide.html
