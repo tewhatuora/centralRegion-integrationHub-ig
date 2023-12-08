@@ -35,10 +35,16 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="capabilityStatement.html">Summary</a>
+        <a href="clinicalResources.html">Clinical Resources</a>
       </li>
       <li>
-        <a href="CapabilityStatement-nzcr-SmileCDR.html">Details</a>
+        <a href="terminologyResources.html">Terminoloy Resources</a>
+      </li>
+      <li>
+        <a href="foundationResources.html">FHIR Foundation Resources</a>
+      </li>
+      <li>
+        <a href="CapabilityStatement-nzcr-SmileCDR.html">All Resources</a>
       </li>
     </ul>
   </li>

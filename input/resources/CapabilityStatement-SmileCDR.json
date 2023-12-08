@@ -90,7 +90,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -137,7 +137,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -177,7 +177,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -225,7 +225,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -272,7 +272,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -310,7 +310,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -354,7 +354,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -423,7 +423,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -464,7 +464,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -508,7 +508,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -551,7 +551,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -626,7 +626,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         },
@@ -679,7 +679,7 @@
             {
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-              "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+              "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
             }
           ]
         }
@@ -704,7 +704,7 @@
         {
           "name": "diff",
           "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
-          "documentation": "This operation examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+          "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
         },
         {
           "name": "perform-reindexing-pass",

@@ -77,8 +77,10 @@ menu:
      Refer Patient: useCaseReferPatient.html
      Update Patient: useCaseUpdatePatient.html
   APIs:
-     Summary: capabilityStatement.html
-     Details: CapabilityStatement-nzcr-SmileCDR.html
+     Clinical Resources: clinicalResources.html
+     Terminoloy Resources: terminologyResources.html
+     FHIR Foundation Resources: foundationResources.html
+     All Resources: CapabilityStatement-nzcr-SmileCDR.html
   Artifacts: artifacts.html
   Support:
      Developer Guide: DeveloperGuide.html

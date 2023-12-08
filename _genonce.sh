@@ -1,4 +1,12 @@
 #!/bin/bash
+
+# filter the CapabilityStatement into three separate files (to make the HTML more human readable)
+for i in clinical terminology foundation 
+do
+   ./localscripts/makeCapabilityStatement.js $i
+done
+
+## ...and now the normal stuff
 publisher_jar=publisher.jar
 input_cache_path=./input-cache/
 echo Checking internet connection...

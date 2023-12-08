@@ -839,14 +839,19 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "capabilityStatement.html",
-          "title": "Capability Statement",
+          "nameUrl": "clinicalResources.html",
+          "title": "Clinical Resources",
           "generation": "html"
         },
         {
           "nameUrl": "DeveloperGuide.html",
           "title": "Developer Guide",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "foundationResources.html",
+          "title": "Foundation Resources",
+          "generation": "html"
         },
         {
           "nameUrl": "ReleaseNotes.html",
@@ -857,6 +862,11 @@
           "nameUrl": "technologyLandscape.html",
           "title": "Technology Landscape",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminologyResources.html",
+          "title": "Terminology Resources",
+          "generation": "html"
         },
         {
           "nameUrl": "useCaseReferPatient.html",
