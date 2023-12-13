@@ -12,7 +12,7 @@
   "targetUri": "http://hl7.org/fhir/ValueSet/request-priority",
   "group": [
     {
-      "source": "https://standards.digital.health.nz/ns/central-region/referral-priority",
+      "source": "https://standards.digital.health.nz/ns/central-region/pas-referral-priority",
       "target": "http://hl7.org/fhir/request-priority",
       "element": [
         {

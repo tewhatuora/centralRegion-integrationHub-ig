@@ -6,7 +6,7 @@
   "id": "nzcr-referral-priority-cs",
   "title": "NZ Central Region - Referral Priority Code System",
   "description": "Referral Priority codes; ex. WebPAS in NZ Central Region.",
-  "url": "https://standards.digital.health.nz/ns/central-region/referral-priority",
+  "url": "https://standards.digital.health.nz/ns/central-region/pas-referral-priority",
   "concept": [
     {
       "code": "NPR",

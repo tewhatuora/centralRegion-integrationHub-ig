@@ -98,7 +98,8 @@ Alias:   $NZCentralRegionMentalHealthReviewStatusCS   = https://standards.digita
 Alias:   $NZCentralRegionMentalHealthReviewLocationCS = https://standards.digital.health.nz/ns/central-region/mental-health-review-location
 Alias:   $NZCentralRegionMentalHealthCourtTypeCS      = https://standards.digital.health.nz/ns/central-region/mental-health-court-type
 
-Alias:   $NZCentralRegionReferralPriorityCS        = https://standards.digital.health.nz/ns/central-region/referral-priority
+Alias:   $NZCentralRegionReferralStatusCS          = https://standards.digital.health.nz/ns/central-region/pas-referral-status
+Alias:   $NZCentralRegionReferralPriorityCS        = https://standards.digital.health.nz/ns/central-region/pas-referral-priority
 Alias:   $NZCentralRegionReferralTypeRICS          = https://standards.digital.health.nz/ns/central-region/referral-type-ri
 Alias:   $NZCentralRegionReferralTypeWUCS          = https://standards.digital.health.nz/ns/central-region/referral-type-wu      // essentially waiting list referral departments
 Alias:   $NZCentralRegionReferralReasonCS          = https://standards.digital.health.nz/ns/central-region/referral-reason
@@ -125,6 +126,7 @@ Alias:   $NZCentralRegionAllergyAlertCodeVS        = https://standards.digital.h
 Alias:   $NZCentralRegionAllergyReactionVS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-reaction
 Alias:   $NZCentralRegionFlagAlertCodeVS           = https://standards.digital.health.nz/fhir/central-region/ValueSet-flag-alert-code
 
+Alias:   $NZCentralRegionReferralStatusVS          = https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-status
 Alias:   $NZCentralRegionReferralPriorityVS        = https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-priority
 Alias:   $NZCentralRegionReferralTypeVS            = https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-type
 Alias:   $NZCentralRegionReferralReasonVS          = https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-reason

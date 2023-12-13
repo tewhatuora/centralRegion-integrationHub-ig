@@ -76,6 +76,22 @@
         {
           "url": "informGP",
           "valueBoolean": false
+        },
+        {
+          "url": "webPASPriority",
+          "valueCoding": {
+            "code": "URG",
+            "system": "https://standards.digital.health.nz/ns/central-region/pas-referral-priority",
+            "display": "2 Urgent"
+          }
+        },
+        {
+          "url": "webPASStatus",
+          "valueCoding": {
+            "code": "P",
+            "system": "https://standards.digital.health.nz/ns/central-region/pas-referral-status",
+            "display": "Pending"
+          }
         }
       ]
     }

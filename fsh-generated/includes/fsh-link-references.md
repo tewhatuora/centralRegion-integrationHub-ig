@@ -66,6 +66,8 @@
 [NZCentralRegionReferralSiteValueSet]: ValueSet-nzcr-referral-site-vs.html
 [NZCentralRegionReferralSourceCodeSystem]: CodeSystem-nzcr-referral-source-cs.html
 [NZCentralRegionReferralSourceValueSet]: ValueSet-nzcr-referral-source-vs.html
+[NZCentralRegionReferralStatusCodeSystem]: CodeSystem-nzcr-referral-status-cs.html
+[NZCentralRegionReferralStatusValueSet]: ValueSet-nzcr-referral-status-vs.html
 [NZCentralRegionReferralTypeValueSet]: ValueSet-nzcr-referral-type-vs.html
 [NZCentralRegionReferralTypeRICodeSystem]: CodeSystem-nzcr-referral-type-ri-cs.html
 [NZCentralRegionReferralTypeWUCodeSystem]: CodeSystem-nzcr-referral-type-wu-cs.html

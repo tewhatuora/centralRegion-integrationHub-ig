@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "NZCentralRegionReferralStatusCodeSystem",
+  "id": "nzcr-referral-status-cs",
+  "title": "NZ Central Region - Referral Status Code System",
+  "description": "Referral Status codes; ex. WebPAS in NZ Central Region.",
+  "url": "https://standards.digital.health.nz/ns/central-region/pas-referral-status",
+  "concept": [
+    {
+      "code": "A",
+      "display": "Active"
+    },
+    {
+      "code": "E",
+      "display": "Expired"
+    },
+    {
+      "code": "D",
+      "display": "Draft"
+    },
+    {
+      "code": "P",
+      "display": "Pending"
+    },
+    {
+      "code": "R",
+      "display": "Revoked"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 5
+}

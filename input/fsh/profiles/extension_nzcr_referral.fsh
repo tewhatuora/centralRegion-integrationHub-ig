@@ -17,12 +17,13 @@ Description: "Complex extension recording extra data about referrals"
     healthPurchaser 0..1 MS and
     clinicType 0..1 MS and
     lastUpdated 0..1 MS and
-    informGP 0..1 MS
+    informGP 0..1 MS and
+    webPASPriority 0..1 MS and
+    webPASStatus 0..1 MS
    
 * extension
   * ^definition = "Container holding the individual elements of the Referral extension."
   * ^short = "Container holding the individual elements of the Referral extension."
-
 
 * extension[consultingPractitioner]
   * ^definition = "The consulting doctor(s) or Responsible HCP for this visit or Referral."
@@ -151,4 +152,28 @@ Description: "Complex extension recording extra data about referrals"
   * value[x] only boolean
   * id 0..0
 
+* extension[webPASPriority]
+  * ^definition = "What was the original raw priority setting on the referral?"
+  * ^short = "Raw referral priority?"
+  * value[x] only Coding
+  * value[x] from $NZCentralRegionReferralPriorityVS (required)
+  * valueCoding 1..1
+    * version 0..0        // not versioned
+    * userSelected 0..0   // not used
+    * extension 0..0
+    * id 0..0  
+  * id 0..0
+
+* extension[webPASStatus]
+  * ^definition = "What was the original raw status setting on the referral?"
+  * ^short = "Raw referral status?"
+  * value[x] only Coding
+  * value[x] from $NZCentralRegionReferralStatusVS (required)
+  * valueCoding 1..1
+    * version 0..0        // not versioned
+    * userSelected 0..0   // not used
+    * extension 0..0
+    * id 0..0  
+  * id 0..0
+  
 * id 0..0

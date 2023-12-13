@@ -1,5 +1,8 @@
 
 Change history for this FHIR Implementation Guide is as follows: 
+### v0.7.1
+* Added [Referral Status]() code system so that we can include raw referral Priority and Status values in referrals
+* 
 
 ### v0.7.0
 10-Nov-2023

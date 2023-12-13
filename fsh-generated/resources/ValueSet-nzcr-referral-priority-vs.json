@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/central-region/referral-priority"
+        "system": "https://standards.digital.health.nz/ns/central-region/pas-referral-priority"
       },
       {
         "system": "http://terminology.hl7.org/CodeSystem/v2-0280"

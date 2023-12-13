@@ -674,6 +674,124 @@
         ]
       },
       {
+        "id": "Extension.extension:webPASPriority",
+        "path": "Extension.extension",
+        "sliceName": "webPASPriority",
+        "short": "Raw referral priority?",
+        "definition": "What was the original raw priority setting on the referral?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:webPASPriority.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASPriority.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASPriority.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "webPASPriority"
+      },
+      {
+        "id": "Extension.extension:webPASPriority.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-priority"
+        }
+      },
+      {
+        "id": "Extension.extension:webPASPriority.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASPriority.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASPriority.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASPriority.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASStatus",
+        "path": "Extension.extension",
+        "sliceName": "webPASStatus",
+        "short": "Raw referral status?",
+        "definition": "What was the original raw status setting on the referral?",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:webPASStatus.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASStatus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "webPASStatus"
+      },
+      {
+        "id": "Extension.extension:webPASStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-status"
+        }
+      },
+      {
+        "id": "Extension.extension:webPASStatus.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASStatus.value[x].extension",
+        "path": "Extension.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASStatus.value[x].version",
+        "path": "Extension.extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webPASStatus.value[x].userSelected",
+        "path": "Extension.extension.value[x].userSelected",
+        "max": "0"
+      },
+      {
         "id": "Extension.url",
         "path": "Extension.url",
         "fixedUri": "https://standards.digital.health.nz/ns/central-region/referral"
