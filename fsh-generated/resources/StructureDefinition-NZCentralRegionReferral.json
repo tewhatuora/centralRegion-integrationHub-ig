@@ -487,6 +487,76 @@
         ]
       },
       {
+        "id": "ServiceRequest.extension:referral.extension:webPASPriority",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "webPASPriority"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:webPASPriority.value[x].system",
+        "path": "ServiceRequest.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-referral-priority'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:webPASPriority.value[x].code",
+        "path": "ServiceRequest.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "RF1.1.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:webPASPriority.value[x].display",
+        "path": "ServiceRequest.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "RF1.1.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:webPASStatus",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "webPASStatus"
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:webPASStatus.value[x].system",
+        "path": "ServiceRequest.extension.extension.value[x].system",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "'https://standards.digital.health.nz/ns/central-region/pas-referral-status'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:webPASStatus.value[x].code",
+        "path": "ServiceRequest.extension.extension.value[x].code",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "RF1.1.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referral.extension:webPASStatus.value[x].display",
+        "path": "ServiceRequest.extension.extension.value[x].display",
+        "mapping": [
+          {
+            "identity": "nzcr-referral-from-hl7v2",
+            "map": "RF1.1.1"
+          }
+        ]
+      },
+      {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "min": 1,

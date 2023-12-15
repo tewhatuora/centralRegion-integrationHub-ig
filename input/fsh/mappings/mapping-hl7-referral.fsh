@@ -127,6 +127,15 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
 
   * extension[lastUpdated].value[x] -> "ZXV-41" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
   * extension[informGP].valueBoolean -> "ZXV-19" "**if** ZXV-19 == 'Y' **then** 'true' **else** 'false'"
+  * extension[webPASStatus].valueCoding
+    * code -> "RF1.1.1"
+    * system -> "'https://standards.digital.health.nz/ns/central-region/pas-referral-status'"
+    * display -> "RF1.1.1"
+
+  * extension[webPASPriority].valueCoding
+    * code -> "RF1.1.2"
+    * system -> "'https://standards.digital.health.nz/ns/central-region/pas-referral-priority'"
+    * display -> "RF1.1.2"
 
 * meta.extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
 * meta.extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"
