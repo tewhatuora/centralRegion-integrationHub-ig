@@ -54,3 +54,45 @@ Description:  "Alert Category codes ex. WebPAS in NZ Central Region that denote 
 * include codes from system nzcr-alert-category-cs
 * exclude codes from valueset nzcr-allergy-alert-category-vs
 
+
+
+
+
+// FHIR Flag category Codes from WebPAS Alert category codes
+Instance: nzcr-flag-category-map
+InstanceOf: ConceptMap
+Usage: #definition
+
+Description: "Concept map mapping alert category codes ex. WebPAS to FHIR Flag category codes."
+
+* name = "NZCRFlagCategoryConceptMap"
+* title = "NZ Central Region Flag Category Concept Map"
+* description = "Concept map mapping alert category codes ex. WebPAS to FHIR Flag category codes"
+
+* url = $NZCentralRegionFlagCategoryConceptMap
+* experimental = false
+* purpose = "Translates alert category codes used in WebPAS to FHIR flag category codes"
+* status = #active
+* sourceUri = $NZCentralRegionFlagAlertCategoryVS  // Source ValueSet
+* targetUri = $HL7FlagCategoryCS                   // Target ValueSet
+* group[+]                                         // Separate Group for each Source/Target CodeSystem tuple
+  * source = $NZCentralRegionAlertCategoryCS
+  * target = $HL7FlagCategoryCS
+
+* insert cmapEntry(NHIMWS,	"Medical Warning System",         "safety",   "Safety")
+* insert cmapEntry(A3,      "Allergies",                      "safety",   "Safety")
+* insert cmapEntry(A4,      "Allergies",                      "safety",   "Safety")
+* insert cmapEntry(FA,	    "Not Used",                       "safety",   "Safety")
+* insert cmapEntry(DA,	    "HCP Arrangements",               "safety",   "Safety")
+* insert cmapEntry(MC,	    "Miscellaneous Contraindication", "safety",   "Safety")
+* insert cmapEntry(MA,	    "Miscellaneous",                  "safety",   "Safety")
+* insert cmapEntry(LS,	    "Legal Status",                   "clinical", "Clinical")   // Mental Health Legal Status
+* insert cmapEntry(H1,	    "Drug reaction alerts",           "safety",   "Safety")     // Maybe drug ??
+* insert cmapEntry(H2,	    "Medical condition alerts",       "safety",   "Safety")
+* insert cmapEntry(H3,	"Other allergy alerts",               "safety",   "Safety")
+* insert cmapEntry(H4,	"Infection prevention alerts",        "safety",   "Safety")
+* insert cmapEntry(H5,	"Situational alerts",                 "safety",   "Safety")
+* insert cmapEntry(H6,	"Transfusion issue alerts",           "safety",   "Safety")
+* insert cmapEntry(H7,	"Disability Alerts",                  "safety",   "Safety")
+* insert cmapEntry(H8,	"Care planning alerts",               "safety",   "Safety")
+

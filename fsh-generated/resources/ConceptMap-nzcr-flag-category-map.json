@@ -1,0 +1,197 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "nzcr-flag-category-map",
+  "url": "https://standards.digital.health.nz/fhir/central-region/ConceptMap-flag-category",
+  "description": "Concept map mapping alert category codes ex. WebPAS to FHIR Flag category codes",
+  "name": "NZCRFlagCategoryConceptMap",
+  "title": "NZ Central Region Flag Category Concept Map",
+  "experimental": false,
+  "purpose": "Translates alert category codes used in WebPAS to FHIR flag category codes",
+  "status": "active",
+  "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag",
+  "targetUri": "http://terminology.hl7.org/CodeSystem/flag-category",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/central-region/alert-category",
+      "target": "http://terminology.hl7.org/CodeSystem/flag-category",
+      "element": [
+        {
+          "code": "NHIMWS",
+          "display": "Medical Warning System",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A3",
+          "display": "Allergies",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "A4",
+          "display": "Allergies",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FA",
+          "display": "Not Used",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DA",
+          "display": "HCP Arrangements",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MC",
+          "display": "Miscellaneous Contraindication",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MA",
+          "display": "Miscellaneous",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "LS",
+          "display": "Legal Status",
+          "target": [
+            {
+              "code": "clinical",
+              "display": "Clinical",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "H1",
+          "display": "Drug reaction alerts",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "H2",
+          "display": "Medical condition alerts",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "H3",
+          "display": "Other allergy alerts",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "H4",
+          "display": "Infection prevention alerts",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "H5",
+          "display": "Situational alerts",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "H6",
+          "display": "Transfusion issue alerts",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "H7",
+          "display": "Disability Alerts",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "H8",
+          "display": "Care planning alerts",
+          "target": [
+            {
+              "code": "safety",
+              "display": "Safety",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

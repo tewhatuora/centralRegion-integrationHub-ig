@@ -1,8 +1,8 @@
 
 Change history for this FHIR Implementation Guide is as follows: 
 ### v0.7.1
-* Added [Referral Status]() code system so that we can include raw referral Priority and Status values in referrals
-* 
+* Added [Referral Status](./CodeSystem-nzcr-referral-status-cs.html) code system so that we can include raw referral Priority and Status values in referrals.
+* Added [Alert Category](./ConceptMap-nzcr-flag-category-map.html) concept map so that we can map WebPAS alert categories to appropriate FHIR Flag categories.
 
 ### v0.7.0
 10-Nov-2023

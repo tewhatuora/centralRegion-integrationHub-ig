@@ -669,6 +669,14 @@
       },
       {
         "reference": {
+          "reference": "ConceptMap/nzcr-flag-category-map"
+        },
+        "name": "NZ Central Region Flag Category Concept Map",
+        "description": "Concept map mapping alert category codes ex. WebPAS to FHIR Flag category codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ConceptMap/nzcr-language-map"
         },
         "name": "NZ Central Region Language Concept Map",

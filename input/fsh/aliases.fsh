@@ -17,6 +17,8 @@ Alias:   $HL7AllergyCriticalityCS    = http://hl7.org/fhir/allergy-intolerance-c
 Alias:   $HL7AllergyClinicalStatusCS = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias:   $HL7AllergyVerificationCS   = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
+Alias:   $HL7FlagCategoryCS          = http://terminology.hl7.org/CodeSystem/flag-category
+
 Alias:   $HL7ReferralPriorityCS      = http://terminology.hl7.org/CodeSystem/v2-0280
 Alias:   $HL7RequestPriorityCS       = http://hl7.org/fhir/request-priority
 
@@ -150,3 +152,5 @@ Alias:   $NZCentralRegionReferralPriorityConceptMap             = https://standa
 Alias:   $NZCentralRegionAllergyReactionTypeConceptMap          = https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-type
 Alias:   $NZCentralRegionAllergyReactionCategoryConceptMap      = https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-category
 Alias:   $NZCentralRegionAllergyReactionCriticalityConceptMap   = https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-criticality
+
+Alias:   $NZCentralRegionFlagCategoryConceptMap                 = https://standards.digital.health.nz/fhir/central-region/ConceptMap-flag-category

@@ -76,6 +76,7 @@
 [nzcr-allergy-criticality-map]: ConceptMap-nzcr-allergy-criticality-map.html
 [nzcr-allergy-type-map]: ConceptMap-nzcr-allergy-type-map.html
 [nzcr-ethnicity-2to4-map]: ConceptMap-nzcr-ethnicity-2to4-map.html
+[nzcr-flag-category-map]: ConceptMap-nzcr-flag-category-map.html
 [nzcr-language-map]: ConceptMap-nzcr-language-map.html
 [NZCentralRegionMentalHealth]: StructureDefinition-nzcr-mental-health.html
 [nzcr-nz-residency-map]: ConceptMap-nzcr-nz-residency-map.html
