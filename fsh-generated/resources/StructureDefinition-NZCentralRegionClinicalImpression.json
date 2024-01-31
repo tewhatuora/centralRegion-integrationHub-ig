@@ -3,7 +3,7 @@
   "id": "NZCentralRegionClinicalImpression",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionClinicalImpression",
   "name": "NZCentralRegionClinicalImpression",
-  "status": "draft",
+  "status": "active",
   "description": "ClinicalImpression resource for Te Whatu Ora, Central Region - holds mental health legal statuses",
   "fhirVersion": "4.0.1",
   "mapping": [

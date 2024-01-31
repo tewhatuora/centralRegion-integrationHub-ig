@@ -8,10 +8,10 @@ canonical: https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig
 name: CRIntegrationHub
 title: Te Whatu Ora, Central Region Integration Hub
 description: Implementation Guide for Central Region's FHIR based Integration Hub
-status: draft # draft | active | retired | unknown
-version: 0.7.1
+status: active # draft | active | retired | unknown
+version: 1.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2023+
+copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#NZ "New Zealand"

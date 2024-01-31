@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionFlagAlertCodeH7CodeSystem",
   "id": "nzcr-flag-alert-code-h7-cs",

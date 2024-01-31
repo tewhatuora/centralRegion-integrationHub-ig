@@ -3,7 +3,7 @@
   "id": "NZCentralRegionOrganization",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionOrganization",
   "name": "NZCentralRegionOrganization",
-  "status": "draft",
+  "status": "active",
   "description": "Organization resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [

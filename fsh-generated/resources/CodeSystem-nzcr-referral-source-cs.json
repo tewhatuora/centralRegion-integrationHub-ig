@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionReferralSourceCodeSystem",
   "id": "nzcr-referral-source-cs",

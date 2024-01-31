@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionReferralTypeValueSet",
   "id": "nzcr-referral-type-vs",
   "title": "NZ Central Region - Referral Type Value Set",

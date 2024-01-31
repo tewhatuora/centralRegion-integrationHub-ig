@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionContactRelationshipValueSet",
   "id": "nzcr-contact-relationship-vs",
   "title": "NZ Central Region - NZ ContactRelationship Value Set",

@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionAllergyReactionH1H3CodeSystem",
   "id": "nzcr-allergy-reaction-h1h3-cs",

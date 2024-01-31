@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionResidencyValueSet",
   "id": "nzcr-residency-vs",
   "title": "NZ Central Region - NZ Residency Value Set",

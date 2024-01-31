@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionClinicValueSet",
   "id": "nzcr-clinic-vs",
   "title": "NZ Central Region - Clinic Value Set",

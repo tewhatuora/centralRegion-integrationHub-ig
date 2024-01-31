@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionEthnicityLevel2ValueSet",
   "id": "nzcr-ethnicity-level-2-value-set",
   "title": "NZ Central Region - Ethnicity Level 2 Value Set",

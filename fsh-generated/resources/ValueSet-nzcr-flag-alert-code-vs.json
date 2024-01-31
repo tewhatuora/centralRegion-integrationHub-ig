@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionFlagAlertCodeValueSet",
   "id": "nzcr-flag-alert-code-vs",
   "title": "NZ Central Region - Flag Alert Code Value Set",

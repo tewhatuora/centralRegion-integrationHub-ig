@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionAllergyAlertCodeValueSet",
   "id": "nzcr-allergy-alert-code-vs",
   "title": "NZ Central Region - Allergy Alert Code Value Set",

@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionMentalHealthCourtTypeValueSet",
   "id": "nzcr-mental-health-court-type-vs",
   "title": "NZ Central Region - Mental Health Court Type Value Set",

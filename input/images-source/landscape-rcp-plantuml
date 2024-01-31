@@ -1,0 +1,46 @@
+@startuml
+
+!include <archimate/Archimate>
+
+skinparam <<verb>> {
+roundCorner 25
+}
+
+sprite $aService jar:archimate/application-service
+sprite $aComponent jar:archimate/application-component
+
+Business_Actor(AC1, "Clinicians")
+Business_Actor(AC2, "Clinicians")
+Business_Actor(AC3, "Clinicians")
+Application_Service(PAS, "WebPAS\nPatient Admin")
+Application_Service(HL7, "HL7 v2\nHub & Spoke")
+Application_Service(CLIENT, "API Client\n(Mai ī Kowhai, Scope, etc)")
+
+' Manufacture a pretend ApplicationService ...
+rectangle "FHIR API Integration Hub" as HUB <<$aService>> <<verb>> #Application {
+  Application_Interface(Listener, "HL7 Listener")
+  Application_DataObject(Repo, "FHIR Resources")
+  Application_Interface(APIs, "FHIR EndPoints")
+}
+
+
+rectangle "Regional Clinical Portal" as RCP <<$aService>> <<verb>> #Application {
+  Application_Interface(DOC, "Document\nWebService\n(XML + SOAP)")
+  Application_DataObject(CDR, "Clinical\nDocument\nRepository")
+}
+
+Rel_Triggering_Right(AC1, PAS,   "use")
+Rel_Triggering_Left(AC2, CLIENT, "use")
+Rel_Triggering_Down(AC3, RCP,    "use")
+
+Rel_Flow_Right(PAS, HL7, "HL7 v2\nADT & REF")
+Rel_Flow(HL7, Listener, "HL7 v2\nADT & REF")
+Rel_Flow_Right(Listener, Repo, "FHIR Resources")
+Rel_Flow_Right(Repo, APIs, "FHIR Resources")
+
+Rel_Flow(APIs, CLIENT, "Patient, Flag,\nAllergy\netc.")
+
+Rel_Flow_Up(APIs, DOC, "Documents")
+Rel_Flow_Up(CLIENT, APIs, "Documents")
+
+@enduml

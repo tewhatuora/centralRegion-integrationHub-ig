@@ -3,7 +3,7 @@
   "id": "NZCentralRegionAllergyIntolerance",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionAllergyIntolerance",
   "name": "NZCentralRegionAllergyIntolerance",
-  "status": "draft",
+  "status": "active",
   "description": "AllergyIntolerance resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionReferralPriorityValueSet",
   "id": "nzcr-referral-priority-vs",
   "title": "NZ Central Region - Referral Priority Value Set",

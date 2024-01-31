@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionDepartmentValueSet",
   "id": "nzcr-department-vs",
   "title": "NZ Central Region - Department Value Set",

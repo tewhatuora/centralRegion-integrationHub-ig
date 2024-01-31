@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionMentalHealthReviewLocationCodeSystem",
   "id": "nzcr-mental-health-review-location-code-cs",

@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionMentalHealthReviewLocationValueSet",
   "id": "nzcr-mental-health-review-location-vs",
   "title": "NZ Central Region - Mental Health Review Location Value Set",

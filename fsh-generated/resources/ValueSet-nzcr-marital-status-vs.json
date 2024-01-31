@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionMaritalStatusValueSet",
   "id": "nzcr-marital-status-vs",
   "title": "NZ Central Region - Marital Status Value Set",

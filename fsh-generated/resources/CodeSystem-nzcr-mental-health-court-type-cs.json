@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionMentalHealthCourtTypeCodeSystem",
   "id": "nzcr-mental-health-court-type-cs",

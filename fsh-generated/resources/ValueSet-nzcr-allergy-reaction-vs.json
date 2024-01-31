@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "NZCentralRegionAllergyReactionValueSet",
   "id": "nzcr-allergy-reaction-vs",
   "title": "NZ Central Region - Allergy Reaction Value Set",

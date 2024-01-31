@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "NZCentralRegionAllergyAlertCodeA3A4CodeSystem",
   "id": "nzcr-allergy-alert-code-a3a4-cs",

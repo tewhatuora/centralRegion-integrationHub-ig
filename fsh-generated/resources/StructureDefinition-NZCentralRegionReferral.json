@@ -3,7 +3,7 @@
   "id": "NZCentralRegionReferral",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionReferral",
   "name": "NZCentralRegionReferral",
-  "status": "draft",
+  "status": "active",
   "description": "Referral flavour of ServiceRequest resource for Te Whatu Ora, Central Region",
   "fhirVersion": "4.0.1",
   "mapping": [
