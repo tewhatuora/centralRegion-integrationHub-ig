@@ -22,7 +22,6 @@ This can be done with the following command:
 
 ```bash
 openssl req -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out myIHubClient.crt -keyout myIHubClient.pvtKey -subj '/L=City/O=Company Name/OU=Developer/CN=email.address@example.co.nz'
-gzip myIHubCDRClient.crt
 ```
 
 Depending upon which [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-overview) you use to
@@ -34,7 +33,7 @@ openssl x509  -in myIHUbClient.crt -noout -pubkey > myIHubClient.pubKey
 
 ### Key Expiry and Rollover
 * Keys for development environment [DEV] will be accepted with 1 year expiry dates (ie: 365 days)
-* Keys for test and production [UAT, PROD] are limited to 6 months expiry dates (ie: 180 days). This means that Steps 1, 2 & 3 in the above process must be repeated every 180 days for test [UAT] and production [PROD] environments.
+* Keys for uat and production [PREPROD, PROD] are limited to 6 months expiry dates (ie: 180 days). This means that Steps 1, 2 & 3 in the above process must be repeated every 180 days for uat [PREPROD] and production [PROD] environments.
 
 ### IdProvider, Scope and Client Identifiers
 At the completion of the API Client Provisioning process, MidCentral IT Support Team will return the following pieces of information to you:
