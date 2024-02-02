@@ -83,7 +83,15 @@ Once you have an access token you can authenticate multiple FHIR API calls by pl
 * [10] Integration Hub returns FHIR API response.
 
 ## Sample Code
-Depending upon the particular [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-overview) library and technology you are using, you will need the following:
+Sample code is available for the following languages, mostly using the 
+[Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/en-us/azure/active-directory/develop/msal-overview) library.
+
+* [cURL & bash](#curl--bash)
+* [javascript](#javascript)
+* [python](#python)
+* [C# .Net](#c-net)
+
+Depending upon which technology you are using, you will need the following:
 
 * `UUID` or `URL` address of the the IdProvider we're using.
 * Scope `UUID` or `URI` to indicate which Integration Hub environment [DEV, UAT, or PROD] you will be accessing. 
@@ -123,7 +131,7 @@ scope="api://0e1840b7-b897-4573-b677-489731b1e319/.default"
 #
 ## API clientId, Certificate & pvtKey
 myClientId="a UUID goes here"
-myCrtFile="${HOME}/.ssh/myIHubCDRClient.crt"
+myCrtFile="${HOME}/.ssh/myIHubClient.crt"
 myPvtKeyFile="${HOME}/.ssh/myIHubClient.pvtKey"    ## Obviously this should be more secure
 
 # errors in pipelines please
@@ -400,6 +408,78 @@ if not "access_token" in result:
 accessToken = result["access_token"]
 
 print(accessToken)
+```
+
+### C# .Net
+
+This C# .Net example lets the MSAL do all the hard work; you need to have the following pre-requisites in place:
+* Your `.crt`~and .pvtKey` files need to be available
+* [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) package from nuget
+* [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) package from nuget
+
+
+``` c#
+using Microsoft.Identity.Client;
+using System.Security.Cryptography.X509Certificates;
+using Newtonsoft.Json;
+
+using System;
+using Newtonsoft.Json.Linq;
+class Program
+{
+    public static async Task Main(string[] args)
+    {
+        // We're using MidCentral's Azure AD...
+        var tenantId = "8407d85d-ed23-4577-91c2-92e22dafe8e5";   
+
+        // My client and certificate details...
+        var clientId = "your client UUID";
+        var myCRTFile = "location of your .crt file";
+        var myKeyFile = "location of your .pvtkey file";
+
+
+        // Assemble CRT & pvtKey into useable certificate
+        X509Certificate2 myCert = X509Certificate2.CreateFromPemFile(myCRTFile, myKeyFile);
+
+        // We want to use DEV instance of IHub
+        var scopes = new String[] { "api://0e1840b7-b897-4573-b677-489731b1e319/.default" };
+
+        // Build CCA
+        IConfidentialClientApplication app = ConfidentialClientApplicationBuilder.Create(clientId)
+            .WithCertificate(myCert)
+            .WithTenantId(tenantId)
+            .Build();
+
+        // Go get the accessToken
+        AuthenticationResult tokenResult = await app.AcquireTokenForClient(scopes)
+            .ExecuteAsync();
+
+
+        // Let's make an HTTP request ....
+        using var client = new HttpClient();
+
+        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokenResult.AccessToken);       // put the accessToken in place
+        client.DefaultRequestHeaders.Add("User-Agent", "C# Testing Client");                          // WAF won't let request through without a User-Agent header...
+
+        var url = "https://test-smilecdr.mdhb.health.nz:8000/Patient?_summary=count";    // Count the no of Patient records
+
+        var response = await client.GetAsync(url);
+        if (response.IsSuccessStatusCode)
+        {
+            // Grab the response (as a JSON string)
+            var responseContent = await response.Content.ReadAsStringAsync();
+
+            // Turn response into an object with named properties
+            JObject result = (JObject)JsonConvert.DeserializeObject(responseContent);
+
+            Console.WriteLine("There are {0} Patients", result.GetValue("total"));
+        }
+        else
+        {
+            Console.WriteLine("Failed - " + response.ToString());
+        }            
+    }
+}
 ```
 
 ## API Client Access Roles
