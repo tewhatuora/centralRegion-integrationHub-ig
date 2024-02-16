@@ -411,7 +411,6 @@ print(accessToken)
 ```
 
 ### C# .Net
-
 This C# .Net example lets the MSAL do all the hard work; you need to have the following pre-requisites in place:
 * Your `.crt`~and .pvtKey` files need to be available
 * [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) package from nuget
@@ -478,6 +477,131 @@ class Program
         {
             Console.WriteLine("Failed - " + response.ToString());
         }            
+    }
+}
+```
+
+### Java
+This C# .Net example lets the MSAL do all the hard work; you need to have the following pre-requisites in place:
+*  Your `.crt`~and .pvtKey` files need to be available
+*  [msal4j](https://mvnrepository.com/artifact/com.microsoft.azure/msal4j)
+*  [commons codec](https://mvnrepository.com/artifact/commons-codec/commons-codec)
+
+``` java
+// Borrowed from  MSAL Java examples
+//
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+//
+import com.google.gson.Gson;
+import com.google.gson.internal.LinkedTreeMap;
+import com.microsoft.aad.msal4j.ClientCredentialFactory;
+import com.microsoft.aad.msal4j.ClientCredentialParameters;
+import com.microsoft.aad.msal4j.ConfidentialClientApplication;
+import com.microsoft.aad.msal4j.IAuthenticationResult;
+import com.nimbusds.oauth2.sdk.http.HTTPResponse;
+
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.security.KeyFactory;
+import java.security.PrivateKey;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.util.Collections;
+import java.util.Properties;
+import java.util.concurrent.CompletableFuture;
+
+import org.apache.commons.codec.binary.Base64;
+
+class ClientCredentialGrant {
+
+    private static String authority;
+    private static String clientId;
+    private static String scope;
+    private static String keyPath;
+    private static String certPath;
+    private static ConfidentialClientApplication app;
+
+    public static void main(String args[]) throws Exception {
+
+        setUpSampleData();
+
+        try {
+            BuildConfidentialClientObject();
+            IAuthenticationResult result = getAccessTokenByClientCredentialGrant();
+
+            System.out.println("AccessToken: " + result.accessToken());
+
+        } catch (Exception ex) {
+            System.out.println("Oops! We have an exception of type - " + ex.getClass());
+            System.out.println("Exception message - " + ex.getMessage());
+            throw ex;
+        }
+    }
+
+    private static void BuildConfidentialClientObject() throws Exception {
+
+        // Uh Oh ... the library doesn't like our .pvtKey file
+        // PKCS8EncodedKeySpec(Files.readAllBytes(Paths.get(keyPath)));
+
+        // So we'll do it ourselves...
+        String keyStr = new String(Files.readAllBytes(Paths.get(keyPath)), Charset.defaultCharset())
+                .replace("-----BEGIN PRIVATE KEY-----", "")
+                .replaceAll(System.lineSeparator(), "")
+                .replace("-----END PRIVATE KEY-----", "");
+        PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(Base64.decodeBase64(keyStr));
+        PrivateKey key = KeyFactory.getInstance("RSA").generatePrivate(keySpec);
+
+        // But the .crt file is okay...
+        InputStream certStream = new ByteArrayInputStream(Files.readAllBytes(Paths.get(certPath)));
+        X509Certificate cert = (X509Certificate) CertificateFactory.getInstance("X.509")
+                .generateCertificate(certStream);
+
+        app = ConfidentialClientApplication.builder(
+                clientId,
+                ClientCredentialFactory.createFromCertificate(key, cert))
+                .authority(authority)
+                .build();
+    }
+
+    private static IAuthenticationResult getAccessTokenByClientCredentialGrant() throws Exception {
+
+        // With client credentials flows the scope is ALWAYS of the shape
+        // "resource/.default", as the
+        // application permissions need to be set statically (in the portal), and then
+        // granted by a tenant administrator
+        ClientCredentialParameters clientCredentialParam = ClientCredentialParameters.builder(
+                Collections.singleton(scope))
+                .build();
+
+        CompletableFuture<IAuthenticationResult> future = app.acquireToken(clientCredentialParam);
+        return future.get();
+    }
+
+    /**
+     * Helper function unique to this sample setting. In a real application these
+     * wouldn't be so hardcoded, for example
+     * different users may need different authority endpoints and the key/cert paths
+     * could come from a secure keyvault
+     */
+    private static void setUpSampleData() throws IOException {
+        // Load properties file and set properties used throughout the sample
+        Properties properties = new Properties();
+        properties.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("application.properties"));
+        authority = properties.getProperty("AUTHORITY");
+        clientId = properties.getProperty("CLIENT_ID");
+        keyPath = properties.getProperty("KEY_PATH");
+        certPath = properties.getProperty("CERT_PATH");
+        scope = properties.getProperty("SCOPE");
     }
 }
 ```
