@@ -2153,6 +2153,30 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.link.other.reference",
+        "path": "Patient.link.other.reference",
+        "max": "0"
+      },
+      {
+        "id": "Patient.link.other.type",
+        "path": "Patient.link.other.type",
+        "short": "Patient",
+        "patternUri": "Patient",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.link.other.identifier",
+        "path": "Patient.link.other.identifier",
+        "short": "Business-level identifier for the Patient being replaced",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.link.other.display",
+        "path": "Patient.link.other.display",
+        "max": "0"
+      },
+      {
         "id": "Patient.link.type",
         "path": "Patient.link.type",
         "short": "replaced-by | replaces",

@@ -264,8 +264,15 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * ^short = "deceasedBoolean = true if patient is deceased and deceased date/time is unknown, deceasedDateTime if known"
 
 * link MS // Link to another patient resource that concerns the same actual person  
-  * other  MS  
-  * type   MS 
+  * other  MS
+    * identifier 1..1 MS  // We're only using business-level identifiers
+    * identifier ^short = "Business-level identifier for the Patient being replaced"
+    * type MS
+    * type = "Patient"    // Link to Resource of type Patient
+    * type ^short = "Patient"
+    * reference 0..0
+    * display 0..0
+  * type   MS             // link.type
   * type ^short = "replaced-by | replaces"
   * extension 0..0
   * id 0..0

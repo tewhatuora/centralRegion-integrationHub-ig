@@ -65,7 +65,7 @@ StructureDefinition-NZCentralRegionAllergyIntolerance.json  NZCentralRegionAller
 StructureDefinition-NZCentralRegionClinicalImpression.json  NZCentralRegionClinicalImpression                    Profile     profiles/profile_clinical_impression.fsh       2 - 114
 StructureDefinition-NZCentralRegionFlag.json                NZCentralRegionFlag                                  Profile     profiles/profile_flag.fsh                      2 - 143
 StructureDefinition-NZCentralRegionOrganization.json        NZCentralRegionOrganization                          Profile     profiles/profile_organization.fsh              2 - 29
-StructureDefinition-NZCentralRegionPatient.json             NZCentralRegionPatient                               Profile     profiles/profile_patient.fsh                   4 - 273
+StructureDefinition-NZCentralRegionPatient.json             NZCentralRegionPatient                               Profile     profiles/profile_patient.fsh                   4 - 280
 StructureDefinition-NZCentralRegionPractitioner.json        NZCentralRegionPractitioner                          Profile     profiles/profile_practitioner.fsh              2 - 42
 StructureDefinition-NZCentralRegionReferral.json            NZCentralRegionReferral                              Profile     profiles/profile_service_request_referral.fsh  6 - 181
 StructureDefinition-nz-residency.json                       NZResidency                                          Extension   profiles/extension_nzResidency.fsh             36 - 71

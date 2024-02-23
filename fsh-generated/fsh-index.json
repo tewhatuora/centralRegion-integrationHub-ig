@@ -533,7 +533,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_patient.fsh",
     "startLine": 4,
-    "endLine": 273
+    "endLine": 280
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionPractitioner.json",
