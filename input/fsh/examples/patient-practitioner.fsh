@@ -2,6 +2,7 @@
 Instance: GeneralPractitioner
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with General Practitioner element"
+Usage:  #example
 
 * identifier
   * use = #official

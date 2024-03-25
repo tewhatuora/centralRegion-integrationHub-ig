@@ -4,6 +4,7 @@ Title: "NZ Central Region - Referral Reason Code System"
 Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionReferralReasonCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1604,6 +1605,7 @@ Title: "NZ Central Region - Referral Reason Value Set"
 Description:  "Referral Reason codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionReferralReasonVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-referral-reason-cs

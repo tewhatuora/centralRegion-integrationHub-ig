@@ -4,6 +4,7 @@ Title: "NZ Central Region - Clinic Code System"
 Description:  "Clinic codes; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionClinicCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -96,6 +97,7 @@ Title: "NZ Central Region - Clinic Value Set"
 Description:  "Clinic codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionClinicVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-clinic-cs

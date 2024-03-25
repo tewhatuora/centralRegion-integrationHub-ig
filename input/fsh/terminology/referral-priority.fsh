@@ -4,6 +4,7 @@ Title: "NZ Central Region - Referral Priority Code System"
 Description:  "Referral Priority codes; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionReferralPriorityCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -26,6 +27,7 @@ Title: "NZ Central Region - Referral Priority Value Set"
 Description:  "Referral Priority codes ex. WebPAS in NZ Central Region, alongwith HL7 v2 defined codes from Table 0280"
 
 * ^url = $NZCentralRegionReferralPriorityVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-referral-priority-cs
@@ -44,9 +46,9 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
 * description = "Concept map mapping referral priority codes ex. WebPAS to FHIR ServiceRequest priority codes"
 
 * url = $NZCentralRegionReferralPriorityConceptMap
+* status = #active
 * experimental = false
 * purpose = "Translates referral priority codes used in WebPAS to more recognised FHIR ServiceLEvel priority codes"
-* status = #active
 * sourceUri = $NZCentralRegionReferralPriorityVS   // Source ValueSet
 * targetUri = $HL7RequestPriorityVS                // Target ValueSet
 * group[+]                                         // Separate Group for each Source/Target CodeSystem tuple - this time WebPAS defined codes

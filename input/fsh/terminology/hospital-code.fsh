@@ -4,6 +4,7 @@ Title: "NZ Central Region - Hospital Code System"
 Description:  "Hospital identification codes ex. WebPAS in NZ Central Region"
 
 * ^url = $NZCentralRegionHospitalCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -16,6 +17,7 @@ Title: "NZ Central Region - Hospital Value Set"
 Description:  "Hospital identification codes ex. WebPAS in NZ Central Region"
 
 * ^url = $NZCentralRegionHospitalVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-hospital-code-cs

@@ -2,6 +2,7 @@
 Instance: Referral
 InstanceOf: NZCentralRegionReferral
 Description: "An example of a Referral flavour of ServiceRequest resource, in Te Whatu Ora Central Region"
+Usage:  #example
 
 * identifier
   * use = #usual

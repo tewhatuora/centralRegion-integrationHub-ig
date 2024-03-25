@@ -2,6 +2,7 @@
 Instance: MentalHealthLegalStatus
 InstanceOf: NZCentralRegionClinicalImpression
 Description: "An example of a mental health legal status review ClinicalImpression derived from ZLS custom segment, in Te Whatu Ora Central Region"
+Usage:  #example
 
 * identifier
   * use = #usual

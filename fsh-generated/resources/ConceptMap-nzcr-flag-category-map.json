@@ -5,9 +5,9 @@
   "description": "Concept map mapping alert category codes ex. WebPAS to FHIR Flag category codes",
   "name": "NZCRFlagCategoryConceptMap",
   "title": "NZ Central Region Flag Category Concept Map",
+  "status": "active",
   "experimental": false,
   "purpose": "Translates alert category codes used in WebPAS to FHIR flag category codes",
-  "status": "active",
   "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag",
   "targetUri": "http://terminology.hl7.org/CodeSystem/flag-category",
   "group": [

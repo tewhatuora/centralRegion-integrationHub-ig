@@ -482,7 +482,7 @@ class Program
 ```
 
 ### Java
-This C# .Net example lets the MSAL do all the hard work; you need to have the following pre-requisites in place:
+This Java example lets the MSAL do all the hard work; you need to have the following pre-requisites in place:
 *  Your `.crt`~and .pvtKey` files need to be available
 *  [msal4j](https://mvnrepository.com/artifact/com.microsoft.azure/msal4j)
 *  [commons codec](https://mvnrepository.com/artifact/commons-codec/commons-codec)
@@ -493,6 +493,21 @@ This C# .Net example lets the MSAL do all the hard work; you need to have the fo
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 //
+/* You'll need some dependencies in a pom.xml file
+
+        <dependency>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>msal4j</artifactId>
+            <version>1.10.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.13</version>
+        </dependency>
+
+*/
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
 import com.microsoft.aad.msal4j.ClientCredentialFactory;

@@ -4,6 +4,7 @@ Title: "NZ Central Region - Marital Status Code System"
 Description:  "A few extra Marital Status codes that are in use in Central Region"
 
 * ^url = $NZCentralRegionExtraMaritalStatusCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -16,6 +17,7 @@ Title: "NZ Central Region - Marital Status Value Set"
 Description:  "Combined Marital Status value set with values that are in use in Central Region"
 
 * ^url = $NZCentralRegionMaritalStatusVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from valueset http://hl7.org/fhir/ValueSet/marital-status

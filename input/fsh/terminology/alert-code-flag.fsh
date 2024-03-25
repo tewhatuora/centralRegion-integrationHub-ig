@@ -4,6 +4,7 @@ Title: "NZ Central Region - Flag Alert Codes (DA)"
 Description:  "DA (HCP Arrangments) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
 
 * ^url = $NZCentralRegionFlagAlertCodeDACS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -21,6 +22,7 @@ Title: "NZ Central Region - Flag Alert Codes (LS)"
 Description:  "LS (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
 
 * ^url = $NZCentralRegionFlagAlertCodeLSCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -119,6 +121,7 @@ Title: "NZ Central Region - Flag Alert Codes (H2)"
 Description:  "H2 (medical condition) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
 
 * ^url = $NZCentralRegionFlagAlertCodeH2CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -147,6 +150,7 @@ Title: "NZ Central Region - Flag Alert Codes (H4)"
 Description:  "H4 (infection prevention) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
 
 * ^url = $NZCentralRegionFlagAlertCodeH4CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -176,6 +180,7 @@ Title: "NZ Central Region - Flag Alert Codes (H5)"
 Description:  "H5 (situational) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
 
 * ^url = $NZCentralRegionFlagAlertCodeH5CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -204,6 +209,7 @@ Title: "NZ Central Region - Flag Alert Codes (H6)"
 Description:  "H6 (transfusion) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
 
 * ^url = $NZCentralRegionFlagAlertCodeH6CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -222,6 +228,7 @@ Title: "NZ Central Region - Flag Alert Codes (H7)"
 Description:  "H7 (disability) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
 
 * ^url = $NZCentralRegionFlagAlertCodeH7CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -241,6 +248,7 @@ Title: "NZ Central Region - Flag Alert Codes (H8)"
 Description:  "H8 (care plan) alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
 
 * ^url = $NZCentralRegionFlagAlertCodeH8CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -261,6 +269,7 @@ Title: "NZ Central Region - Flag Alert Code Value Set"
 Description:  "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag resource"
 
 * ^url = $NZCentralRegionFlagAlertCodeVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-flag-alert-code-ls-cs

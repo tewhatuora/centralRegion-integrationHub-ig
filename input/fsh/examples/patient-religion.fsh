@@ -4,6 +4,7 @@ InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with religious affiliation requiring two codings:
  * The raw coding from WebPAS with coding from https://standards.digital.health.nz/ns/central-region/patient-religion
  * Equivalent coding from http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"
+Usage:  #example
 
 * identifier
   * use = #official

@@ -4,6 +4,7 @@ Title: "NZ Central Region - NZ Religion Code System"
 Description:  "Religion codes ex. WebPAS in NZ Central Region"
 
 * ^url = $NZCentralRegionReligionCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -59,9 +60,9 @@ Description: "Concept map mapping raw religion codes ex. WebPAS to proper FHIR r
 * description = "Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes"
 
 * url = $NZCentralRegionReligionConceptMap
+* status = #active
 * experimental = false
 * purpose = "Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes"
-* status = #active
 * sourceUri = $NZCentralRegionReligionVS            // Source ValueSet
 * targetUri = $HL7PatientRelgionVS                  // Target ValueSet
 * group[+]                                          // Separate Group for each Source/Target CodeSystem tuple

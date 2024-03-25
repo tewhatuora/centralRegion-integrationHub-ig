@@ -4,6 +4,7 @@ Title: "NZ Central Region - NZ Residency Code System"
 Description:  "Residency codes ex. WebPAS in NZ Central Region"
 
 * ^url = $NZCentralRegionResidencyCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -38,6 +39,7 @@ Title: "NZ Central Region - NZ Residency Value Set"
 Description:  "NZ Residency Codes ex. WebPAS in NZ Central Region"
 
 * ^url = $NZCentralRegionResidencyVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-residency-cs
@@ -53,6 +55,7 @@ Description: "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to 
 * description = "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base"
 
 * url = $NZCentralRegionResidencyConceptMap
+* status = #active
 * experimental = false
 * purpose = "Translates raw detailed NZ Visa & Citizenship codes used in WebPAS to more generic yes | no | unknown codes from NZ Base"
 * status = #active

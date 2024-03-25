@@ -4,6 +4,7 @@ Title: "NZ Central Region - Raw Language Code System"
 Description:  "3 and 4 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **NOT** from ietf:bcp:47"
 
 * ^url = $NZCentralRegionRawLanguageCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -97,6 +98,7 @@ Title: "NZ Central Region - Raw Language Value Value Set"
 Description:  "Value set being the raw 3-letter (and sometimes 4-letter) raw codes in use in Central Region"
 
 * ^url = $NZCentralRegionRawLanguageVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-raw-language-cs
@@ -108,6 +110,7 @@ Title: "NZ Central Region - Proposed Language Code System"
 Description:  "3 character codes denoting Language ex. WebPAS in NZ Central Region; Codes are **PROPOSED** for ietf:bcp:47"
 
 * ^url = $NZCentralRegionProposedLanguageCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -119,6 +122,7 @@ Title: "NZ Central Region - Language Value Set"
 Description:  "IETF equivalent Language codes, matching the raw codes used by WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionLanguageVS
+* ^status = #active
 * ^experimental = false
 
 * $IETFLanguageCS#ace    // Aceh, Indonesia
@@ -214,9 +218,9 @@ Description: "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:
 * description = "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:bcp:47` language codes"
 
 * url = $NZCentralRegionLanguageConceptMap
+* status = #active
 * experimental = false
 * purpose = "Translates raw language codes used in WebPAS to more recognised `ietf:bcp:47` language codes"
-* status = #active
 * sourceUri = $NZCentralRegionRawLanguageVS    // Source ValueSet
 * targetUri = $IETFLanguageCS                  // Target ValueSet
 * group[+]                                     // Separate Group for each Source/Target CodeSystem tuple

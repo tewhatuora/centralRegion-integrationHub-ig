@@ -17,7 +17,7 @@
       "display": "Medication"
     }
   ],
-  "experimental": true,
+  "experimental": false,
   "caseSensitive": true,
   "count": 2
 }

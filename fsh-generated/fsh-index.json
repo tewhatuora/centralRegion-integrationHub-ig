@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "examples/allergy-peanut.fsh",
     "startLine": 2,
-    "endLine": 76
+    "endLine": 77
   },
   {
     "outputFile": "ClinicalImpression-MentalHealthLegalStatus.json",
@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "examples/mental-health-legal-status.fsh",
     "startLine": 2,
-    "endLine": 71
+    "endLine": 72
   },
   {
     "outputFile": "CodeSystem-nz-residency.json",
@@ -29,15 +29,15 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-category.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 28
   },
   {
     "outputFile": "CodeSystem-nzcr-allergy-alert-code-a3a4-cs.json",
     "fshName": "NZCentralRegionAllergyAlertCodeA3A4CodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-allergy.fsh",
-    "startLine": 365,
-    "endLine": 375
+    "startLine": 367,
+    "endLine": 378
   },
   {
     "outputFile": "CodeSystem-nzcr-allergy-alert-code-h1-cs.json",
@@ -45,15 +45,15 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-allergy.fsh",
     "startLine": 1,
-    "endLine": 325
+    "endLine": 326
   },
   {
     "outputFile": "CodeSystem-nzcr-allergy-alert-code-h3-cs.json",
     "fshName": "NZCentralRegionAllergyAlertCodeH3CodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-allergy.fsh",
-    "startLine": 330,
-    "endLine": 362
+    "startLine": 331,
+    "endLine": 364
   },
   {
     "outputFile": "CodeSystem-nzcr-allergy-reaction-a3a4-cs.json",
@@ -61,15 +61,15 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/allergy-reaction.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 15
   },
   {
     "outputFile": "CodeSystem-nzcr-allergy-reaction-h1h3-cs.json",
     "fshName": "NZCentralRegionAllergyReactionH1H3CodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/allergy-reaction.fsh",
-    "startLine": 17,
-    "endLine": 34
+    "startLine": 18,
+    "endLine": 36
   },
   {
     "outputFile": "CodeSystem-nzcr-clinic-cs.json",
@@ -77,7 +77,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/clinic.fsh",
     "startLine": 1,
-    "endLine": 89
+    "endLine": 90
   },
   {
     "outputFile": "CodeSystem-nzcr-contact-relationship-cs.json",
@@ -93,7 +93,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/department.fsh",
     "startLine": 1,
-    "endLine": 186
+    "endLine": 187
   },
   {
     "outputFile": "CodeSystem-nzcr-ethnicity-level-2-code-system.json",
@@ -101,7 +101,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/ethnicity-level-2.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 36
   },
   {
     "outputFile": "CodeSystem-nzcr-extra-marital-status-cs.json",
@@ -109,7 +109,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/maritalStatus.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 12
   },
   {
     "outputFile": "CodeSystem-nzcr-flag-alert-code-da-cs.json",
@@ -117,63 +117,63 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-flag.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 12
   },
   {
     "outputFile": "CodeSystem-nzcr-flag-alert-code-h2-cs.json",
     "fshName": "NZCentralRegionFlagAlertCodeH2CodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-flag.fsh",
-    "startLine": 116,
-    "endLine": 138
+    "startLine": 118,
+    "endLine": 141
   },
   {
     "outputFile": "CodeSystem-nzcr-flag-alert-code-h4-cs.json",
     "fshName": "NZCentralRegionFlagAlertCodeH4CodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-flag.fsh",
-    "startLine": 144,
-    "endLine": 168
+    "startLine": 147,
+    "endLine": 172
   },
   {
     "outputFile": "CodeSystem-nzcr-flag-alert-code-h5-cs.json",
     "fshName": "NZCentralRegionFlagAlertCodeH5CodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-flag.fsh",
-    "startLine": 173,
-    "endLine": 197
+    "startLine": 177,
+    "endLine": 202
   },
   {
     "outputFile": "CodeSystem-nzcr-flag-alert-code-h6-cs.json",
     "fshName": "NZCentralRegionFlagAlertCodeH6CodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-flag.fsh",
-    "startLine": 201,
-    "endLine": 213
+    "startLine": 206,
+    "endLine": 219
   },
   {
     "outputFile": "CodeSystem-nzcr-flag-alert-code-h7-cs.json",
     "fshName": "NZCentralRegionFlagAlertCodeH7CodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-flag.fsh",
-    "startLine": 219,
-    "endLine": 234
+    "startLine": 225,
+    "endLine": 241
   },
   {
     "outputFile": "CodeSystem-nzcr-flag-alert-code-h8-cs.json",
     "fshName": "NZCentralRegionFlagAlertCodeH8CodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-flag.fsh",
-    "startLine": 238,
-    "endLine": 252
+    "startLine": 245,
+    "endLine": 260
   },
   {
     "outputFile": "CodeSystem-nzcr-flag-alert-code-ls-cs.json",
     "fshName": "NZCentralRegionFlagAlertCodeLSCodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/alert-code-flag.fsh",
-    "startLine": 18,
-    "endLine": 112
+    "startLine": 19,
+    "endLine": 114
   },
   {
     "outputFile": "CodeSystem-nzcr-health-purchaser-cs.json",
@@ -181,7 +181,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/health-purchaser.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 24
   },
   {
     "outputFile": "CodeSystem-nzcr-hospital-code-cs.json",
@@ -189,7 +189,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/hospital-code.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 11
   },
   {
     "outputFile": "CodeSystem-nzcr-mental-health-court-type-cs.json",
@@ -197,7 +197,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/mental-health-court.fsh",
     "startLine": 1,
-    "endLine": 12
+    "endLine": 13
   },
   {
     "outputFile": "CodeSystem-nzcr-mental-health-legal-status-cs.json",
@@ -205,7 +205,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/mental-health-legal-status.fsh",
     "startLine": 1,
-    "endLine": 81
+    "endLine": 82
   },
   {
     "outputFile": "CodeSystem-nzcr-mental-health-review-location-code-cs.json",
@@ -213,7 +213,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/mental-health-review-location.fsh",
     "startLine": 1,
-    "endLine": 49
+    "endLine": 50
   },
   {
     "outputFile": "CodeSystem-nzcr-mental-health-review-status-cs.json",
@@ -221,15 +221,15 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/mental-health-review-status.fsh",
     "startLine": 1,
-    "endLine": 13
+    "endLine": 14
   },
   {
     "outputFile": "CodeSystem-nzcr-proposed-language-cs.json",
     "fshName": "NZCentralRegionProposedLanguageCodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/language.fsh",
-    "startLine": 105,
-    "endLine": 114
+    "startLine": 107,
+    "endLine": 117
   },
   {
     "outputFile": "CodeSystem-nzcr-raw-language-cs.json",
@@ -237,7 +237,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/language.fsh",
     "startLine": 1,
-    "endLine": 91
+    "endLine": 92
   },
   {
     "outputFile": "CodeSystem-nzcr-referral-priority-cs.json",
@@ -245,7 +245,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/referral-priority.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "CodeSystem-nzcr-referral-reason-cs.json",
@@ -253,7 +253,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/referral-reason.fsh",
     "startLine": 1,
-    "endLine": 1599
+    "endLine": 1600
   },
   {
     "outputFile": "CodeSystem-nzcr-referral-site-cs.json",
@@ -261,7 +261,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/referral-site.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 11
   },
   {
     "outputFile": "CodeSystem-nzcr-referral-source-cs.json",
@@ -269,7 +269,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/referral-source.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 46
   },
   {
     "outputFile": "CodeSystem-nzcr-referral-status-cs.json",
@@ -277,7 +277,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/referral-status.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 15
   },
   {
     "outputFile": "CodeSystem-nzcr-referral-type-ri-cs.json",
@@ -285,15 +285,15 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/referral-type.fsh",
     "startLine": 1,
-    "endLine": 28
+    "endLine": 29
   },
   {
     "outputFile": "CodeSystem-nzcr-referral-type-wu-cs.json",
     "fshName": "NZCentralRegionReferralTypeWUCodeSystem",
     "fshType": "CodeSystem",
     "fshFile": "terminology/referral-type.fsh",
-    "startLine": 30,
-    "endLine": 79
+    "startLine": 31,
+    "endLine": 81
   },
   {
     "outputFile": "CodeSystem-nzcr-religion-cs.json",
@@ -301,7 +301,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/religion.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 49
   },
   {
     "outputFile": "CodeSystem-nzcr-residency-cs.json",
@@ -309,79 +309,79 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/nz-residency-status.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 33
   },
   {
     "outputFile": "ConceptMap-nzcr-allergy-category-map.json",
     "fshName": "nzcr-allergy-category-map",
     "fshType": "Instance",
     "fshFile": "terminology/allergy-reaction.fsh",
-    "startLine": 97,
-    "endLine": 135
+    "startLine": 101,
+    "endLine": 139
   },
   {
     "outputFile": "ConceptMap-nzcr-allergy-criticality-map.json",
     "fshName": "nzcr-allergy-criticality-map",
     "fshType": "Instance",
     "fshFile": "terminology/allergy-reaction.fsh",
-    "startLine": 140,
-    "endLine": 178
+    "startLine": 144,
+    "endLine": 182
   },
   {
     "outputFile": "ConceptMap-nzcr-allergy-type-map.json",
     "fshName": "nzcr-allergy-type-map",
     "fshType": "Instance",
     "fshFile": "terminology/allergy-reaction.fsh",
-    "startLine": 53,
-    "endLine": 91
+    "startLine": 56,
+    "endLine": 95
   },
   {
     "outputFile": "ConceptMap-nzcr-ethnicity-2to4-map.json",
     "fshName": "nzcr-ethnicity-2to4-map",
     "fshType": "Instance",
     "fshFile": "terminology/ethnicity-level-2.fsh",
-    "startLine": 49,
-    "endLine": 93
+    "startLine": 51,
+    "endLine": 95
   },
   {
     "outputFile": "ConceptMap-nzcr-flag-category-map.json",
     "fshName": "nzcr-flag-category-map",
     "fshType": "Instance",
     "fshFile": "terminology/alert-category.fsh",
-    "startLine": 62,
-    "endLine": 97
+    "startLine": 65,
+    "endLine": 100
   },
   {
     "outputFile": "ConceptMap-nzcr-language-map.json",
     "fshName": "nzcr-language-map",
     "fshType": "Instance",
     "fshFile": "terminology/language.fsh",
-    "startLine": 207,
-    "endLine": 331
+    "startLine": 211,
+    "endLine": 335
   },
   {
     "outputFile": "ConceptMap-nzcr-nz-residency-map.json",
     "fshName": "nzcr-nz-residency-map",
     "fshType": "Instance",
     "fshFile": "terminology/nz-residency-status.fsh",
-    "startLine": 46,
-    "endLine": 87
+    "startLine": 48,
+    "endLine": 90
   },
   {
     "outputFile": "ConceptMap-nzcr-referral-priority-fhir-map.json",
     "fshName": "nzcr-referral-priority-fhir-map",
     "fshType": "Instance",
     "fshFile": "terminology/referral-priority.fsh",
-    "startLine": 36,
-    "endLine": 68
+    "startLine": 38,
+    "endLine": 70
   },
   {
     "outputFile": "ConceptMap-nzcr-religion-map.json",
     "fshName": "nzcr-religion-map",
     "fshType": "Instance",
     "fshFile": "terminology/religion.fsh",
-    "startLine": 52,
-    "endLine": 104
+    "startLine": 53,
+    "endLine": 105
   },
   {
     "outputFile": "Flag-PalliativeCare.json",
@@ -389,7 +389,7 @@
     "fshType": "Instance",
     "fshFile": "examples/flag-palliative-care.fsh",
     "startLine": 2,
-    "endLine": 63
+    "endLine": 64
   },
   {
     "outputFile": "Patient-Address-Suburb.json",
@@ -397,7 +397,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-address.fsh",
     "startLine": 2,
-    "endLine": 63
+    "endLine": 64
   },
   {
     "outputFile": "Patient-Contact.json",
@@ -405,7 +405,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-contact.fsh",
     "startLine": 2,
-    "endLine": 72
+    "endLine": 73
   },
   {
     "outputFile": "Patient-Ethnicity-MultipleCodings.json",
@@ -413,7 +413,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-ethnicity.fsh",
     "startLine": 2,
-    "endLine": 63
+    "endLine": 64
   },
   {
     "outputFile": "Patient-GeneralPractitioner.json",
@@ -421,7 +421,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-practitioner.fsh",
     "startLine": 2,
-    "endLine": 64
+    "endLine": 65
   },
   {
     "outputFile": "Patient-HL7Message.json",
@@ -429,15 +429,15 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-hl7message.fsh",
     "startLine": 2,
-    "endLine": 123
+    "endLine": 124
   },
   {
     "outputFile": "Patient-LanguageList.json",
     "fshName": "LanguageList",
     "fshType": "Instance",
     "fshFile": "examples/patient-communication.fsh",
-    "startLine": 65,
-    "endLine": 206
+    "startLine": 66,
+    "endLine": 207
   },
   {
     "outputFile": "Patient-LanguageSingle.json",
@@ -445,7 +445,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-communication.fsh",
     "startLine": 1,
-    "endLine": 56
+    "endLine": 57
   },
   {
     "outputFile": "Patient-MaritalStatus-CivilUnion.json",
@@ -453,23 +453,23 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-maritalStatus.fsh",
     "startLine": 2,
-    "endLine": 54
+    "endLine": 55
   },
   {
     "outputFile": "Patient-MaritalStatus-Single.json",
     "fshName": "MaritalStatus-Single",
     "fshType": "Instance",
     "fshFile": "examples/patient-maritalStatus.fsh",
-    "startLine": 56,
-    "endLine": 108
+    "startLine": 57,
+    "endLine": 109
   },
   {
     "outputFile": "Patient-Religion-NoAnswer.json",
     "fshName": "Religion-NoAnswer",
     "fshType": "Instance",
     "fshFile": "examples/patient-religion.fsh",
-    "startLine": 66,
-    "endLine": 124
+    "startLine": 67,
+    "endLine": 125
   },
   {
     "outputFile": "Patient-Religion-Presbyterian.json",
@@ -477,7 +477,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-religion.fsh",
     "startLine": 2,
-    "endLine": 64
+    "endLine": 65
   },
   {
     "outputFile": "Patient-Residency.json",
@@ -485,7 +485,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-residency.fsh",
     "startLine": 2,
-    "endLine": 58
+    "endLine": 59
   },
   {
     "outputFile": "ServiceRequest-Referral.json",
@@ -493,7 +493,7 @@
     "fshType": "Instance",
     "fshFile": "examples/referral.fsh",
     "startLine": 2,
-    "endLine": 122
+    "endLine": 123
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionAllergyIntolerance.json",
@@ -604,32 +604,32 @@
     "fshName": "NZCentralRegionAllergyAlertCategoryValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/alert-category.fsh",
-    "startLine": 32,
-    "endLine": 43
+    "startLine": 33,
+    "endLine": 45
   },
   {
     "outputFile": "ValueSet-nzcr-allergy-alert-code-vs.json",
     "fshName": "NZCentralRegionAllergyAlertCodeValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/alert-code-allergy.fsh",
-    "startLine": 379,
-    "endLine": 390
+    "startLine": 382,
+    "endLine": 394
   },
   {
     "outputFile": "ValueSet-nzcr-allergy-reaction-vs.json",
     "fshName": "NZCentralRegionAllergyReactionValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/allergy-reaction.fsh",
-    "startLine": 39,
-    "endLine": 48
+    "startLine": 41,
+    "endLine": 51
   },
   {
     "outputFile": "ValueSet-nzcr-clinic-vs.json",
     "fshName": "NZCentralRegionClinicValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/clinic.fsh",
-    "startLine": 93,
-    "endLine": 101
+    "startLine": 94,
+    "endLine": 103
   },
   {
     "outputFile": "ValueSet-nzcr-contact-relationship-vs.json",
@@ -637,166 +637,166 @@
     "fshType": "ValueSet",
     "fshFile": "terminology/contactRelationship.fsh",
     "startLine": 47,
-    "endLine": 57
+    "endLine": 58
   },
   {
     "outputFile": "ValueSet-nzcr-department-vs.json",
     "fshName": "NZCentralRegionDepartmentValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/department.fsh",
-    "startLine": 189,
-    "endLine": 197
+    "startLine": 190,
+    "endLine": 199
   },
   {
     "outputFile": "ValueSet-nzcr-ethnicity-level-2-value-set.json",
     "fshName": "NZCentralRegionEthnicityLevel2ValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/ethnicity-level-2.fsh",
-    "startLine": 37,
-    "endLine": 45
+    "startLine": 38,
+    "endLine": 47
   },
   {
     "outputFile": "ValueSet-nzcr-flag-alert-category-vs.json",
     "fshName": "NZCentralRegionFlagAlertCategoryValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/alert-category.fsh",
-    "startLine": 46,
-    "endLine": 55
+    "startLine": 48,
+    "endLine": 58
   },
   {
     "outputFile": "ValueSet-nzcr-flag-alert-code-vs.json",
     "fshName": "NZCentralRegionFlagAlertCodeValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/alert-code-flag.fsh",
-    "startLine": 258,
-    "endLine": 273
+    "startLine": 266,
+    "endLine": 282
   },
   {
     "outputFile": "ValueSet-nzcr-health-purchaser-vs.json",
     "fshName": "NZCentralRegionHealthPurchaserValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/health-purchaser.fsh",
-    "startLine": 25,
-    "endLine": 33
+    "startLine": 26,
+    "endLine": 35
   },
   {
     "outputFile": "ValueSet-nzcr-hospital-code-vs.json",
     "fshName": "NZCentralRegionHospitalValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/hospital-code.fsh",
-    "startLine": 13,
-    "endLine": 21
+    "startLine": 14,
+    "endLine": 23
   },
   {
     "outputFile": "ValueSet-nzcr-language-vs.json",
     "fshName": "NZCentralRegionLanguageValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/language.fsh",
-    "startLine": 116,
-    "endLine": 204
+    "startLine": 119,
+    "endLine": 208
   },
   {
     "outputFile": "ValueSet-nzcr-marital-status-vs.json",
     "fshName": "NZCentralRegionMaritalStatusValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/maritalStatus.fsh",
-    "startLine": 13,
-    "endLine": 22
+    "startLine": 14,
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-nzcr-mental-health-court-type-vs.json",
     "fshName": "NZCentralRegionMentalHealthCourtTypeValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/mental-health-court.fsh",
-    "startLine": 16,
-    "endLine": 24
+    "startLine": 17,
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-nzcr-mental-health-legal-status-vs.json",
     "fshName": "NZCentralRegionMentalHealthLegalStatusValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/mental-health-legal-status.fsh",
-    "startLine": 84,
-    "endLine": 92
+    "startLine": 85,
+    "endLine": 94
   },
   {
     "outputFile": "ValueSet-nzcr-mental-health-review-location-vs.json",
     "fshName": "NZCentralRegionMentalHealthReviewLocationValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/mental-health-review-location.fsh",
-    "startLine": 52,
-    "endLine": 61
+    "startLine": 53,
+    "endLine": 63
   },
   {
     "outputFile": "ValueSet-nzcr-mental-health-review-status-vs.json",
     "fshName": "NZCentralRegionMentalHealthReviewStatusValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/mental-health-review-status.fsh",
-    "startLine": 16,
-    "endLine": 24
+    "startLine": 17,
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-nzcr-raw-language-vs.json",
     "fshName": "NZCentralRegionRawLanguageValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/language.fsh",
-    "startLine": 94,
-    "endLine": 102
+    "startLine": 95,
+    "endLine": 104
   },
   {
     "outputFile": "ValueSet-nzcr-referral-priority-vs.json",
     "fshName": "NZCentralRegionReferralPriorityValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/referral-priority.fsh",
-    "startLine": 23,
-    "endLine": 32
+    "startLine": 24,
+    "endLine": 34
   },
   {
     "outputFile": "ValueSet-nzcr-referral-reason-vs.json",
     "fshName": "NZCentralRegionReferralReasonValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/referral-reason.fsh",
-    "startLine": 1601,
-    "endLine": 1609
+    "startLine": 1602,
+    "endLine": 1611
   },
   {
     "outputFile": "ValueSet-nzcr-referral-site-vs.json",
     "fshName": "NZCentralRegionReferralSiteValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/referral-site.fsh",
-    "startLine": 12,
-    "endLine": 20
+    "startLine": 13,
+    "endLine": 22
   },
   {
     "outputFile": "ValueSet-nzcr-referral-source-vs.json",
     "fshName": "NZCentralRegionReferralSourceValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/referral-source.fsh",
-    "startLine": 48,
-    "endLine": 56
+    "startLine": 49,
+    "endLine": 58
   },
   {
     "outputFile": "ValueSet-nzcr-referral-status-vs.json",
     "fshName": "NZCentralRegionReferralStatusValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/referral-status.fsh",
-    "startLine": 17,
-    "endLine": 25
+    "startLine": 18,
+    "endLine": 27
   },
   {
     "outputFile": "ValueSet-nzcr-referral-type-vs.json",
     "fshName": "NZCentralRegionReferralTypeValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/referral-type.fsh",
-    "startLine": 81,
-    "endLine": 90
+    "startLine": 83,
+    "endLine": 93
   },
   {
     "outputFile": "ValueSet-nzcr-residency-vs.json",
     "fshName": "NZCentralRegionResidencyValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/nz-residency-status.fsh",
-    "startLine": 35,
-    "endLine": 43
+    "startLine": 36,
+    "endLine": 45
   }
 ]

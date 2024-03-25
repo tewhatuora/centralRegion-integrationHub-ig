@@ -4,6 +4,7 @@ Title: "NZ Central Region - Allergy Reaction (A3, A4) Code System"
 Description:  "Allergy Reaction codes for categories A3 & A4; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyReactionA3A4CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -20,6 +21,7 @@ Title: "NZ Central Region - Allergy Reaction (H1, H3) Code System"
 Description:  "Allergy Reaction codes for categories H1 & H3; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyReactionH1H3CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -42,6 +44,7 @@ Title: "NZ Central Region - Allergy Reaction Value Set"
 Description:  "Allergy Reaction codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyReactionVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-allergy-reaction-a3a4-cs
@@ -61,6 +64,7 @@ Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR alle
 * description = "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy type codes"
 
 * url = $NZCentralRegionAllergyReactionTypeConceptMap
+* status = #active
 * experimental = false
 * purpose = "Translates allergy reaction codes used in WebPAS to FHIR allergy type codes"
 * status = #active
@@ -105,9 +109,9 @@ Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR alle
 * description = "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy category codes"
 
 * url = $NZCentralRegionAllergyReactionCategoryConceptMap
+* status = #active
 * experimental = false
 * purpose = "Translates allergy reaction codes used in WebPAS to FHIR allergy category codes"
-* status = #active
 * sourceUri = $NZCentralRegionAllergyReactionVS    // Source ValueSet
 * targetUri = $HL7AllergyCategoryVS                // Target ValueSet
 * group[+]                                         // Separate Group for each Source/Target CodeSystem tuple
@@ -148,9 +152,9 @@ Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR alle
 * description = "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy criticality codes"
 
 * url = $NZCentralRegionAllergyReactionCriticalityConceptMap
+* status = #active
 * experimental = false
 * purpose = "Translates allergy reaction codes used in WebPAS to FHIR allergy criticality codes"
-* status = #active
 * sourceUri = $NZCentralRegionAllergyReactionVS    // Source ValueSet
 * targetUri = $HL7AllergyCriticalityVS             // Target ValueSet
 * group[+]                                         // Separate Group for each Source/Target CodeSystem tuple

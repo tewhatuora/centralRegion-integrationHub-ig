@@ -2,6 +2,7 @@
 Instance: PalliativeCare
 InstanceOf: NZCentralRegionFlag
 Description: "An example of a Flag alert derived from ZAL custom segment, in Te Whatu Ora Central Region"
+Usage:  #example
 
 * identifier
   * use = #usual

@@ -5,9 +5,9 @@
   "description": "Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes",
   "name": "NZCRReligionConceptMap",
   "title": "NZ Central Region Religion Concept Map",
+  "status": "active",
   "experimental": false,
   "purpose": "Concept map mapping raw religion codes ex. WebPAS to proper FHIR religion codes",
-  "status": "active",
   "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion",
   "targetUri": "http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation",
   "group": [

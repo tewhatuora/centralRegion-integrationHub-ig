@@ -52,6 +52,7 @@ Description:  "NZ ContactRelationship Codes ex. WebPAS in NZ Central Region
 This codeset is to be used alongside the HL7 defined general relationship codeset http://terminology.hl7.org/CodeSystem/v2-0131"
 
 * ^url = $NZCentralRegionContactRelationshipVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-contact-relationship-cs

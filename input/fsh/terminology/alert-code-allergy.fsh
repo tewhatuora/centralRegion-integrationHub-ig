@@ -4,7 +4,8 @@ Title: "NZ Central Region - Allergy Alert Codes (H1)"
 Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyAlertCodeH1CS
-* ^experimental = true
+* ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 
 * #A01 "ACE inhibitors"
@@ -333,6 +334,7 @@ Title: "NZ Central Region - Allergy Alert Codes (H3)"
 Description:  "Category H3 Allergy alert codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyAlertCodeH3CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -368,7 +370,8 @@ Title: "NZ Central Region - Allergy Alert Codes (A3 & A4)"
 Description:  "Category A3 & A4 Allergy alert codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyAlertCodeA3A4CS
-* ^experimental = true
+* ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 
 * #R03 "Unknown"
@@ -382,6 +385,7 @@ Title: "NZ Central Region - Allergy Alert Code Value Set"
 Description:  "Allergy alert codes (from categories H1, H3, A3 & A4) ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionAllergyAlertCodeVS
+* ^status = #active
 * ^experimental = false
 
 // We're still missing the codes for alert-code-a3 and alert-code-a4

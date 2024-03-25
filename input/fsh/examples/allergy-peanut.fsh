@@ -2,6 +2,7 @@
 Instance: PeanutAllergy
 InstanceOf: NZCentralRegionAllergyIntolerance
 Description: "An example of an allergy/intolerance alert derived from ZAL custom segment, in Te Whatu Ora Central Region"
+Usage:  #example
 
 * identifier
   * use = #usual

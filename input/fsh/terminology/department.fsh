@@ -4,6 +4,7 @@ Title: "NZ Central Region - Department Code System"
 Description:  "Department codes; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionDepartmentCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -192,6 +193,7 @@ Title: "NZ Central Region - Department Value Set"
 Description:  "Department codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionDepartmentVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-department-cs

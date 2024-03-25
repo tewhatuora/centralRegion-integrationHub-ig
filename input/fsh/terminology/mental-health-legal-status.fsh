@@ -4,6 +4,7 @@ Title: "NZ Central Region - MentalHealthLegalStatus Code System"
 Description:  "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionMentalHealthLegalStatusCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -87,6 +88,7 @@ Title: "NZ Central Region - MentalHealthLegalStatus Value Set"
 Description:  "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionMentalHealthLegalStatusVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-mental-health-legal-status-cs

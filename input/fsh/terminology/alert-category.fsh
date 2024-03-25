@@ -4,6 +4,7 @@ Title: "NZ Central Region - Alert Category Code System"
 Description:  "Alert Category codes ex. WebPAS in NZ Central Region"
 
 * ^url = $NZCentralRegionAlertCategoryCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -35,6 +36,7 @@ Title: "NZ Central Region - Allergy Alert Category Value Set"
 Description:  "Alert Category codes ex. WebPAS in NZ Central Region that denote an AllergyIntolerance"
 
 * ^url = $NZCentralRegionAllergyAlertCategoryVS
+* ^status = #active
 * ^experimental = false
 
 *  nzcr-alert-category-cs#A3
@@ -49,6 +51,7 @@ Title: "NZ Central Region - Flag Alert Category Value Set"
 Description:  "Alert Category codes ex. WebPAS in NZ Central Region that denote a Flag"
 
 * ^url = $NZCentralRegionFlagAlertCategoryVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-alert-category-cs
@@ -70,9 +73,9 @@ Description: "Concept map mapping alert category codes ex. WebPAS to FHIR Flag c
 * description = "Concept map mapping alert category codes ex. WebPAS to FHIR Flag category codes"
 
 * url = $NZCentralRegionFlagCategoryConceptMap
+* status = #active
 * experimental = false
 * purpose = "Translates alert category codes used in WebPAS to FHIR flag category codes"
-* status = #active
 * sourceUri = $NZCentralRegionFlagAlertCategoryVS  // Source ValueSet
 * targetUri = $HL7FlagCategoryCS                   // Target ValueSet
 * group[+]                                         // Separate Group for each Source/Target CodeSystem tuple

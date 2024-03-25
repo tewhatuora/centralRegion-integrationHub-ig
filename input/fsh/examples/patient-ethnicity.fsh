@@ -2,6 +2,7 @@
 Instance: Ethnicity-MultipleCodings
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with multiple ethnicity codings included"
+Usage:  #example
 
 * identifier
   * use = #official

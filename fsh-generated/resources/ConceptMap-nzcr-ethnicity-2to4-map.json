@@ -5,9 +5,9 @@
   "description": "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper level 4 ethnicity codes",
   "name": "NZCREthnicityConceptMap",
   "title": "NZ Central Region Ethnicity Concept Map",
+  "status": "active",
   "experimental": false,
   "purpose": "Translates level 2 ethnicity codes used in WebPAS to more recognised level 4 ethnicity codes",
-  "status": "active",
   "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2",
   "targetUri": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code",
   "group": [

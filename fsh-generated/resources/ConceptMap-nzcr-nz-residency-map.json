@@ -5,9 +5,9 @@
   "description": "Concept map mapping raw detailed NZ Residency codes ex. WebPAS to yes | no | unknown codes from NZ Base",
   "name": "NZCRResidencyConceptMap",
   "title": "NZ Central Region NZ Residency Concept Map",
+  "status": "active",
   "experimental": false,
   "purpose": "Translates raw detailed NZ Visa & Citizenship codes used in WebPAS to more generic yes | no | unknown codes from NZ Base",
-  "status": "active",
   "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency",
   "targetUri": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code",
   "group": [

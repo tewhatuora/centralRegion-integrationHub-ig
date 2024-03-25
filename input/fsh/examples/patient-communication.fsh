@@ -1,6 +1,7 @@
 Instance: LanguageSingle
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with a single language of communication"
+Usage:  #example
 
 * identifier
   * use = #official

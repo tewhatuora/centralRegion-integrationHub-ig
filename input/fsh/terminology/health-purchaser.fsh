@@ -4,6 +4,7 @@ Title: "NZ Central Region - Health Purchaser Code System"
 Description:  "Health Purchaser codes; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionHealthPurchaserCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -28,6 +29,7 @@ Title: "NZ Central Region - Health Purchaser Value Set"
 Description:  "Health Purchaser codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionHealthPurchaserVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-health-purchaser-cs

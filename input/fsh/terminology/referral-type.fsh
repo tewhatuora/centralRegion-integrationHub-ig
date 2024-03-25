@@ -4,6 +4,7 @@ Title: "NZ Central Region - RI Referral Type Code System"
 Description:  "Referral Type codes; ex. WebPAS in NZ Central Region - not to be confused with Waiting List Department codes."
 
 * ^url = $NZCentralRegionReferralTypeRICS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -33,6 +34,7 @@ Title: "NZ Central Region - WU Referral Type Code System"
 Description:  "Waiting List Department Referral Type codes; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionReferralTypeWUCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -84,6 +86,7 @@ Title: "NZ Central Region - Referral Type Value Set"
 Description:  "Referral Type codes ex. WebPAS in NZ Central Region; Union of waiting list department codes and normal referral types."
 
 * ^url = $NZCentralRegionReferralTypeVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-referral-type-ri-cs

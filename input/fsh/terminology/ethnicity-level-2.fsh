@@ -5,6 +5,7 @@ Description:  "Ethnicity Level 2 codes from
    [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"
 
 * ^url = $NZStatsEthnicityLevel2CS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -40,6 +41,7 @@ Title: "NZ Central Region - Ethnicity Level 2 Value Set"
 Description:  "Ethnicity Level 2 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"
 
 * ^url = $NZCentralRegionEthnicityLevel2VS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-ethnicity-level-2-code-system
@@ -57,9 +59,9 @@ Description: "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper l
 * description = "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper level 4 ethnicity codes"
 
 * url = $NZCentralRegionEthnicityConceptMap
+* status = #active
 * experimental = false
 * purpose = "Translates level 2 ethnicity codes used in WebPAS to more recognised level 4 ethnicity codes"
-* status = #active
 * sourceUri = $NZCentralRegionEthnicityLevel2VS     // Source ValueSet
 * targetUri = $NZStatsEthnicityLevel4VS             // Target ValueSet
 * group[+]                                          // Separate Group for each Source/Target CodeSystem tuple

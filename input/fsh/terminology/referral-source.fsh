@@ -4,6 +4,7 @@ Title: "NZ Central Region - Referral Source Code System"
 Description:  "Referral Source codes; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionReferralSourceCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -51,6 +52,7 @@ Title: "NZ Central Region - Referral Source Value Set"
 Description:  "Referral Source codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionReferralSourceVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-referral-source-cs

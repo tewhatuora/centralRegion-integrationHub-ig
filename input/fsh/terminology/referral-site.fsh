@@ -4,6 +4,7 @@ Title: "NZ Central Region - Referral Site Code System"
 Description:  "Referral Preferred Site codes; ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionReferralSiteCS
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -15,6 +16,7 @@ Title: "NZ Central Region - Referral Site Value Set"
 Description:  "Referral Preferred Site codes ex. WebPAS in NZ Central Region."
 
 * ^url = $NZCentralRegionReferralSiteVS
+* ^status = #active
 * ^experimental = false
 
 * include codes from system nzcr-referral-site-cs

@@ -2,6 +2,7 @@
 Instance: Contact
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with Contact that has multiple codings for the relationship"
+Usage:  #example
 
 * identifier
   * use = #official

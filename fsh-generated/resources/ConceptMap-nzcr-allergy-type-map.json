@@ -5,9 +5,9 @@
   "description": "Concept map mapping allergy reaction codes ex. WebPAS to FHIR allergy type codes",
   "name": "NZCRAllergyReactionTypeConceptMap",
   "title": "NZ Central Region Allergy Reaction to Type Concept Map",
+  "status": "active",
   "experimental": false,
   "purpose": "Translates allergy reaction codes used in WebPAS to FHIR allergy type codes",
-  "status": "active",
   "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-reaction",
   "targetUri": "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
   "group": [

@@ -3,6 +3,7 @@ Instance: Address-Suburb
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with address containing suburb field,
   and mappings to Domicile and DHB codes."
+Usage:  #example
 
 * identifier
   * use = #official

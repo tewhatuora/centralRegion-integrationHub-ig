@@ -7,13 +7,6 @@
   "status": "active",
   "description": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

@@ -5,9 +5,9 @@
   "description": "Concept map mapping referral priority codes ex. WebPAS to FHIR ServiceRequest priority codes",
   "name": "NZCRReferralPriorityConceptMap",
   "title": "NZ Central Region Referral Priority Concept Map",
+  "status": "active",
   "experimental": false,
   "purpose": "Translates referral priority codes used in WebPAS to more recognised FHIR ServiceLEvel priority codes",
-  "status": "active",
   "sourceUri": "https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-priority",
   "targetUri": "http://hl7.org/fhir/ValueSet/request-priority",
   "group": [

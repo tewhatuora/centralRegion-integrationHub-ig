@@ -2,6 +2,7 @@
 Instance: MaritalStatus-CivilUnion
 InstanceOf: NZCentralRegionPatient
 Description: "An example of a patient from Te Whatu Ora, Central Region, with one of the extra marital status codes"
+Usage:  #example
 
 * identifier
   * use = #official
