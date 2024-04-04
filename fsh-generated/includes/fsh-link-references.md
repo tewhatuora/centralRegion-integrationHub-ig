@@ -5,6 +5,7 @@
 [GeneralPractitioner]: Patient-GeneralPractitioner.html
 [NZCentralRegionHL7v2Message]: StructureDefinition-nzcr-hl7v2-message.html
 [HL7Message]: Patient-HL7Message.html
+[L4HTemplateVersion]: StructureDefinition-nzcr-l4hmeta-template-version.html
 [LanguageList]: Patient-LanguageList.html
 [LanguageSingle]: Patient-LanguageSingle.html
 [MaritalStatus-CivilUnion]: Patient-MaritalStatus-CivilUnion.html
@@ -58,6 +59,7 @@
 [NZCentralRegionProposedLanguageCodeSystem]: CodeSystem-nzcr-proposed-language-cs.html
 [NZCentralRegionRawLanguageCodeSystem]: CodeSystem-nzcr-raw-language-cs.html
 [NZCentralRegionRawLanguageValueSet]: ValueSet-nzcr-raw-language-vs.html
+[NZCentralRegionReferralCategoryCodeSystem]: CodeSystem-nzcr-referral-category-cs.html
 [NZCentralRegionReferralPriorityCodeSystem]: CodeSystem-nzcr-referral-priority-cs.html
 [NZCentralRegionReferralPriorityValueSet]: ValueSet-nzcr-referral-priority-vs.html
 [NZCentralRegionReferralReasonCodeSystem]: CodeSystem-nzcr-referral-reason-cs.html
@@ -95,7 +97,13 @@
 [NZCentralRegionReferral]: StructureDefinition-NZCentralRegionReferral.html
 [PalliativeCare]: Flag-PalliativeCare.html
 [PeanutAllergy]: AllergyIntolerance-PeanutAllergy.html
+[L4HProcessClientId]: StructureDefinition-nzcr-l4hmeta-process-client-id.html
+[L4HTimestamp]: StructureDefinition-nzcr-l4hmeta-timestamp.html
 [Referral]: ServiceRequest-Referral.html
 [Religion-NoAnswer]: Patient-Religion-NoAnswer.html
 [Religion-Presbyterian]: Patient-Religion-Presbyterian.html
 [Residency]: Patient-Residency.html
+[L4HSourceDataModelVersion]: StructureDefinition-nzcr-l4hmeta-source-data-model-version.html
+[L4HSourceEventTrigger]: StructureDefinition-nzcr-l4hmeta-source-event-trigger.html
+[L4HSourceRecordId]: StructureDefinition-nzcr-l4hmeta-source-record-id.html
+[L4HSourceRecordType]: StructureDefinition-nzcr-l4hmeta-source-record-type.html

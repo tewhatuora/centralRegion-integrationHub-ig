@@ -80,7 +80,6 @@
       {
         "id": "Extension.extension:severityLevel.value[x]",
         "path": "Extension.extension.value[x]",
-        "min": 1,
         "type": [
           {
             "code": "string"
@@ -115,10 +114,9 @@
       {
         "id": "Extension.extension:allergyReaction.value[x]",
         "path": "Extension.extension.value[x]",
-        "min": 1,
         "type": [
           {
-            "code": "Coding"
+            "code": "CodeableConcept"
           }
         ],
         "binding": {
@@ -137,13 +135,53 @@
         "max": "0"
       },
       {
-        "id": "Extension.extension:allergyReaction.value[x].version",
-        "path": "Extension.extension.value[x].version",
+        "id": "Extension.extension:allergyReaction.value[x].coding",
+        "path": "Extension.extension.value[x].coding",
+        "short": "Multiple codings possible, one is original valuee from WebPAS...",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:allergyReaction.value[x].coding.id",
+        "path": "Extension.extension.value[x].coding.id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:allergyReaction.value[x].userSelected",
-        "path": "Extension.extension.value[x].userSelected",
+        "id": "Extension.extension:allergyReaction.value[x].coding.extension",
+        "path": "Extension.extension.value[x].coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:allergyReaction.value[x].coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:allergyReaction.value[x].coding.version",
+        "path": "Extension.extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:allergyReaction.value[x].coding.code",
+        "path": "Extension.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:allergyReaction.value[x].coding.display",
+        "path": "Extension.extension.value[x].coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:allergyReaction.value[x].coding.userSelected",
+        "path": "Extension.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:allergyReaction.value[x].text",
+        "path": "Extension.extension.value[x].text",
         "max": "0"
       },
       {
@@ -314,10 +352,9 @@
       {
         "id": "Extension.extension:recordingHospital.value[x]",
         "path": "Extension.extension.value[x]",
-        "min": 1,
         "type": [
           {
-            "code": "Coding"
+            "code": "CodeableConcept"
           }
         ],
         "binding": {
@@ -336,13 +373,52 @@
         "max": "0"
       },
       {
-        "id": "Extension.extension:recordingHospital.value[x].version",
-        "path": "Extension.extension.value[x].version",
+        "id": "Extension.extension:recordingHospital.value[x].coding",
+        "path": "Extension.extension.value[x].coding",
+        "short": "Multiple codings possible, one is original value from WebPAS...",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].coding.id",
+        "path": "Extension.extension.value[x].coding.id",
         "max": "0"
       },
       {
-        "id": "Extension.extension:recordingHospital.value[x].userSelected",
-        "path": "Extension.extension.value[x].userSelected",
+        "id": "Extension.extension:recordingHospital.value[x].coding.extension",
+        "path": "Extension.extension.value[x].coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].coding.version",
+        "path": "Extension.extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].coding.code",
+        "path": "Extension.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].coding.display",
+        "path": "Extension.extension.value[x].coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].coding.userSelected",
+        "path": "Extension.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recordingHospital.value[x].text",
+        "path": "Extension.extension.value[x].text",
         "max": "0"
       },
       {

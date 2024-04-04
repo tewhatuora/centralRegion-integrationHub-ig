@@ -42,35 +42,35 @@
     },
     {
       "code": "H1",
-      "display": "Drug reaction alerts"
+      "display": "Drug reaction"
     },
     {
       "code": "H2",
-      "display": "Medical condition alerts"
+      "display": "Medical condition"
     },
     {
       "code": "H3",
-      "display": "Other allergy alerts"
+      "display": "Other allergy"
     },
     {
       "code": "H4",
-      "display": "Infection prevention alerts"
+      "display": "Infection prevention"
     },
     {
       "code": "H5",
-      "display": "Situational alerts"
+      "display": "Situational"
     },
     {
       "code": "H6",
-      "display": "Transfusion issue alerts"
+      "display": "Transfusion issue"
     },
     {
       "code": "H7",
-      "display": "Disability Alerts"
+      "display": "Disability"
     },
     {
       "code": "H8",
-      "display": "Care planning alerts"
+      "display": "Care planning"
     },
     {
       "code": "food",

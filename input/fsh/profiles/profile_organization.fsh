@@ -26,4 +26,5 @@ Description: "Organization resource for Te Whatu Ora, Central Region"
 * extension[established] 0..0
 * extension[funded-programme] 0..0
 
-* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS
+// We have a standard set of fields in all Resource.meta blocks
+* meta insert ResourceMetaFields

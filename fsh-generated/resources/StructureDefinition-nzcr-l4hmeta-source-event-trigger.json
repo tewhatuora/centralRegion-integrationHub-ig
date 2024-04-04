@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nzcr-hl7v2-message",
-  "url": "https://standards.digital.health.nz/ns/central-region/hl7v2-message",
-  "name": "NZCentralRegionHL7v2Message",
-  "title": "HL7 v2 Message",
+  "id": "nzcr-l4hmeta-source-event-trigger",
+  "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger",
+  "name": "L4HSourceEventTrigger",
+  "title": "Source Event Trigger",
   "status": "active",
-  "description": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource",
+  "description": "The HL7v2 message/event trigger that was translated into FHIR Resource (eg A31, I13, etc)",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -47,8 +47,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "HL7 v2 Message",
-        "definition": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource"
+        "short": "Source Event Trigger",
+        "definition": "The HL7v2 message/event trigger that was translated into FHIR Resource (eg A31, I13, etc)"
       },
       {
         "id": "Extension.extension",
@@ -58,16 +58,20 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
+        "fixedUri": "http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "base64Binary"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0003"
+        }
       }
     ]
   }

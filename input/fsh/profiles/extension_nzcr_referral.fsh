@@ -19,7 +19,8 @@ Description: "Complex extension recording extra data about referrals"
     lastUpdated 0..1 MS and
     informGP 0..1 MS and
     webPASPriority 0..1 MS and
-    webPASStatus 0..1 MS
+    webPASStatus 0..1 MS and
+    dateReceived 0..1 MS
    
 * extension
   * ^definition = "Container holding the individual elements of the Referral extension."
@@ -52,7 +53,7 @@ Description: "Complex extension recording extra data about referrals"
       * assigner 0..0   // Data not available
       * extension 0..0
       * id 0..0
-    * display 1..1 MS
+    * display 0..0
     * extension 0..0
     * id 0..0
 
@@ -86,7 +87,7 @@ Description: "Complex extension recording extra data about referrals"
   * value[x] only Reference
   * valueReference
     * type 1..1 MS
-    * type = "Organisation"
+    * type = "Organization"   // Resoource name has the 'Z'
       * ^short = "Medical Practice is an Organisation"
     * reference 0..1 MS
     * identifier 0..1 MS
@@ -112,7 +113,7 @@ Description: "Complex extension recording extra data about referrals"
       * assigner 0..0   // Data not available
       * extension 0..0
       * id 0..0
-    * display 1..1 MS
+    * display 0..0
     * extension 0..0
     * id 0..0
 
@@ -176,4 +177,10 @@ Description: "Complex extension recording extra data about referrals"
     * id 0..0  
   * id 0..0
   
+* extension[dateReceived]
+  * ^definition = "The date on which the referral was received by PAS system."
+  * ^short = "The date on which the referral was received by PAS system."
+  * value[x] only date
+  * id 0..0  
+
 * id 0..0

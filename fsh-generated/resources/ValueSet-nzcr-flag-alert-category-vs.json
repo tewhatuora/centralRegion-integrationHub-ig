@@ -10,13 +10,44 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/central-region/alert-category"
-      }
-    ],
-    "exclude": [
-      {
-        "valueSet": [
-          "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-allergy"
+        "system": "https://standards.digital.health.nz/ns/central-region/alert-category",
+        "concept": [
+          {
+            "code": "NHIMWS"
+          },
+          {
+            "code": "FA"
+          },
+          {
+            "code": "DA"
+          },
+          {
+            "code": "MC"
+          },
+          {
+            "code": "MA"
+          },
+          {
+            "code": "LS"
+          },
+          {
+            "code": "H2"
+          },
+          {
+            "code": "H4"
+          },
+          {
+            "code": "H5"
+          },
+          {
+            "code": "H6"
+          },
+          {
+            "code": "H7"
+          },
+          {
+            "code": "H8"
+          }
         ]
       }
     ]

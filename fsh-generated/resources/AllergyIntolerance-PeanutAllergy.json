@@ -17,24 +17,32 @@
       "url": "https://standards.digital.health.nz/ns/central-region/alert",
       "extension": [
         {
-          "url": "severityLevel",
-          "valueString": "S"
-        },
-        {
           "url": "allergyReaction",
-          "valueCoding": {
-            "code": "R04",
-            "system": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4",
-            "display": "Nuts"
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "R04",
+                "system": "https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4",
+                "display": "Nuts"
+              }
+            ]
           }
         },
         {
           "url": "recordingHospital",
-          "valueCoding": {
-            "code": "PNH",
-            "system": "https://standards.digital.health.nz/ns/central-region/hospital-code",
-            "display": "Palmerston North Hospital"
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "PNH",
+                "system": "https://standards.digital.health.nz/ns/central-region/hospital-code",
+                "display": "Palmerston North Hospital"
+              }
+            ]
           }
+        },
+        {
+          "url": "severityLevel",
+          "valueString": "S"
         },
         {
           "url": "reviewDate",

@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nzcr-hl7v2-message",
-  "url": "https://standards.digital.health.nz/ns/central-region/hl7v2-message",
-  "name": "NZCentralRegionHL7v2Message",
-  "title": "HL7 v2 Message",
+  "id": "nzcr-l4hmeta-source-record-type",
+  "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-record-type",
+  "name": "L4HSourceRecordType",
+  "title": "Source Record Type",
   "status": "active",
-  "description": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource",
+  "description": "The HL7v2 record type that was translated into FHIR Resource (eg ADT, REF, etc)",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -17,6 +17,10 @@
     {
       "type": "element",
       "expression": "Practitioner.meta"
+    },
+    {
+      "type": "element",
+      "expression": "Organization.meta"
     },
     {
       "type": "element",
@@ -47,8 +51,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "HL7 v2 Message",
-        "definition": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource"
+        "short": "Source Record Type",
+        "definition": "The HL7v2 record type that was translated into FHIR Resource (eg ADT, REF, etc)"
       },
       {
         "id": "Extension.extension",
@@ -58,16 +62,20 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
+        "fixedUri": "http://ibm.com/fhir/cdm/StructureDefinition/source-record-type"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "base64Binary"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0076"
+        }
       }
     ]
   }

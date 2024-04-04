@@ -80,6 +80,20 @@ Description:  "Waiting List Department Referral Type codes; ex. WebPAS in NZ Cen
 * #URO "Urology"
 * #VAS "Vascular surgery"
 
+
+CodeSystem:  NZCentralRegionReferralCategoryCodeSystem
+Id: nzcr-referral-category-cs
+Title: "NZ Central Region - Referral Category Code System"
+Description:  "Referral Category Type codes; ex. WebPAS in NZ Central Region; used as referral type, when no referral type provided."
+
+* ^url = $NZCentralRegionReferralCategoryCS
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+
+* #R "Referral"
+* #W "Waiting List Request"
+
 ValueSet: NZCentralRegionReferralTypeValueSet
 Id: nzcr-referral-type-vs
 Title: "NZ Central Region - Referral Type Value Set"
@@ -91,3 +105,4 @@ Description:  "Referral Type codes ex. WebPAS in NZ Central Region; Union of wai
 
 * include codes from system nzcr-referral-type-ri-cs
 * include codes from system nzcr-referral-type-wu-cs
+* include codes from system nzcr-referral-category-cs

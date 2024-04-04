@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "examples/allergy-peanut.fsh",
     "startLine": 2,
-    "endLine": 77
+    "endLine": 79
   },
   {
     "outputFile": "ClinicalImpression-MentalHealthLegalStatus.json",
@@ -189,7 +189,7 @@
     "fshType": "CodeSystem",
     "fshFile": "terminology/hospital-code.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 71
   },
   {
     "outputFile": "CodeSystem-nzcr-mental-health-court-type-cs.json",
@@ -238,6 +238,14 @@
     "fshFile": "terminology/language.fsh",
     "startLine": 1,
     "endLine": 92
+  },
+  {
+    "outputFile": "CodeSystem-nzcr-referral-category-cs.json",
+    "fshName": "NZCentralRegionReferralCategoryCodeSystem",
+    "fshType": "CodeSystem",
+    "fshFile": "terminology/referral-type.fsh",
+    "startLine": 84,
+    "endLine": 95
   },
   {
     "outputFile": "CodeSystem-nzcr-referral-priority-cs.json",
@@ -348,8 +356,8 @@
     "fshName": "nzcr-flag-category-map",
     "fshType": "Instance",
     "fshFile": "terminology/alert-category.fsh",
-    "startLine": 65,
-    "endLine": 100
+    "startLine": 79,
+    "endLine": 114
   },
   {
     "outputFile": "ConceptMap-nzcr-language-map.json",
@@ -389,7 +397,7 @@
     "fshType": "Instance",
     "fshFile": "examples/flag-palliative-care.fsh",
     "startLine": 2,
-    "endLine": 64
+    "endLine": 69
   },
   {
     "outputFile": "Patient-Address-Suburb.json",
@@ -493,7 +501,7 @@
     "fshType": "Instance",
     "fshFile": "examples/referral.fsh",
     "startLine": 2,
-    "endLine": 123
+    "endLine": 132
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionAllergyIntolerance.json",
@@ -501,7 +509,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_allergy_intolerance.fsh",
     "startLine": 2,
-    "endLine": 172
+    "endLine": 173
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionClinicalImpression.json",
@@ -509,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_clinical_impression.fsh",
     "startLine": 2,
-    "endLine": 114
+    "endLine": 115
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionFlag.json",
@@ -517,7 +525,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_flag.fsh",
     "startLine": 2,
-    "endLine": 143
+    "endLine": 146
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionOrganization.json",
@@ -525,7 +533,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_organization.fsh",
     "startLine": 2,
-    "endLine": 29
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionPatient.json",
@@ -533,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_patient.fsh",
     "startLine": 4,
-    "endLine": 280
+    "endLine": 293
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionPractitioner.json",
@@ -541,7 +549,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_practitioner.fsh",
     "startLine": 2,
-    "endLine": 42
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionReferral.json",
@@ -549,7 +557,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_service_request_referral.fsh",
     "startLine": 6,
-    "endLine": 181
+    "endLine": 192
   },
   {
     "outputFile": "StructureDefinition-nz-residency.json",
@@ -565,15 +573,71 @@
     "fshType": "Extension",
     "fshFile": "profiles/extension_nzcr_alert.fsh",
     "startLine": 1,
-    "endLine": 100
+    "endLine": 116
   },
   {
     "outputFile": "StructureDefinition-nzcr-hl7v2-message.json",
     "fshName": "NZCentralRegionHL7v2Message",
     "fshType": "Extension",
-    "fshFile": "profiles/extension_hl7message.fsh",
-    "startLine": 1,
-    "endLine": 22
+    "fshFile": "profiles/extension_l4hmeta.fsh",
+    "startLine": 2,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-nzcr-l4hmeta-process-client-id.json",
+    "fshName": "L4HProcessClientId",
+    "fshType": "Extension",
+    "fshFile": "profiles/extension_l4hmeta.fsh",
+    "startLine": 171,
+    "endLine": 194
+  },
+  {
+    "outputFile": "StructureDefinition-nzcr-l4hmeta-source-data-model-version.json",
+    "fshName": "L4HSourceDataModelVersion",
+    "fshType": "Extension",
+    "fshFile": "profiles/extension_l4hmeta.fsh",
+    "startLine": 143,
+    "endLine": 166
+  },
+  {
+    "outputFile": "StructureDefinition-nzcr-l4hmeta-source-event-trigger.json",
+    "fshName": "L4HSourceEventTrigger",
+    "fshType": "Extension",
+    "fshFile": "profiles/extension_l4hmeta.fsh",
+    "startLine": 56,
+    "endLine": 80
+  },
+  {
+    "outputFile": "StructureDefinition-nzcr-l4hmeta-source-record-id.json",
+    "fshName": "L4HSourceRecordId",
+    "fshType": "Extension",
+    "fshFile": "profiles/extension_l4hmeta.fsh",
+    "startLine": 115,
+    "endLine": 138
+  },
+  {
+    "outputFile": "StructureDefinition-nzcr-l4hmeta-source-record-type.json",
+    "fshName": "L4HSourceRecordType",
+    "fshType": "Extension",
+    "fshFile": "profiles/extension_l4hmeta.fsh",
+    "startLine": 85,
+    "endLine": 111
+  },
+  {
+    "outputFile": "StructureDefinition-nzcr-l4hmeta-template-version.json",
+    "fshName": "L4HTemplateVersion",
+    "fshType": "Extension",
+    "fshFile": "profiles/extension_l4hmeta.fsh",
+    "startLine": 200,
+    "endLine": 223
+  },
+  {
+    "outputFile": "StructureDefinition-nzcr-l4hmeta-timestamp.json",
+    "fshName": "L4HTimestamp",
+    "fshType": "Extension",
+    "fshFile": "profiles/extension_l4hmeta.fsh",
+    "startLine": 28,
+    "endLine": 51
   },
   {
     "outputFile": "StructureDefinition-nzcr-mental-health.json",
@@ -589,7 +653,7 @@
     "fshType": "Extension",
     "fshFile": "profiles/extension_nzcr_referral.fsh",
     "startLine": 1,
-    "endLine": 179
+    "endLine": 186
   },
   {
     "outputFile": "ValueSet-nz-residency.json",
@@ -605,7 +669,7 @@
     "fshType": "ValueSet",
     "fshFile": "terminology/alert-category.fsh",
     "startLine": 33,
-    "endLine": 45
+    "endLine": 46
   },
   {
     "outputFile": "ValueSet-nzcr-allergy-alert-code-vs.json",
@@ -660,8 +724,8 @@
     "fshName": "NZCentralRegionFlagAlertCategoryValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/alert-category.fsh",
-    "startLine": 48,
-    "endLine": 58
+    "startLine": 49,
+    "endLine": 69
   },
   {
     "outputFile": "ValueSet-nzcr-flag-alert-code-vs.json",
@@ -684,8 +748,8 @@
     "fshName": "NZCentralRegionHospitalValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/hospital-code.fsh",
-    "startLine": 14,
-    "endLine": 23
+    "startLine": 73,
+    "endLine": 82
   },
   {
     "outputFile": "ValueSet-nzcr-language-vs.json",
@@ -788,8 +852,8 @@
     "fshName": "NZCentralRegionReferralTypeValueSet",
     "fshType": "ValueSet",
     "fshFile": "terminology/referral-type.fsh",
-    "startLine": 83,
-    "endLine": 93
+    "startLine": 97,
+    "endLine": 108
   },
   {
     "outputFile": "ValueSet-nzcr-residency-vs.json",

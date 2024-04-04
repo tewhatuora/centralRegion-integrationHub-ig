@@ -90,7 +90,7 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
   * extension 0..0
   * id 0..0
 
-* note 1..1 MS
+* note 0..1 MS
   * author[x] 0..0 // no data available
   * time 0..0      // no data available
   * text 1..1 MS
@@ -111,4 +111,5 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
 * supportingInfo 0..0
 * summary 0..0
 
-* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS
+// We have a standard set of fields in all Resource.meta blocks
+* meta insert ResourceMetaFields

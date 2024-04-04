@@ -1,5 +1,30 @@
 
-Change history for this FHIR Implementation Guide is as follows: 
+Change history for this FHIR Implementation Guide is as follows:
+### v1.0.1
+We turned on FHIR validation, which required the following fixes in the ImplementationGuide:
+* `Flag.extension[alert].extension[allergyReaction]` changed from `valueCoding` to `valueCodeableConcept` 
+* `Flag.extension[alert].extension[recordingHospital]` changed from `valueCoding` to `valueCodeableConcept` 
+* `Flag.category` has two codings 'https://standards.digital.health.nz/ns/central-region/alert-category' and 'http://terminology.hl7.org/CodeSystem/flag-category'
+* `AllergyIntolerance.note` is optional, it may not be populated in `ZAL.14`
+* `AllergyIntolerance.extension[severityLevel]` is optional, it may not be populated in `ZAL.6`
+* Added numeric codes for Hospitals from [Te Whatu Ora's Facility Code Tables](https://www.tewhatuora.govt.nz/assets/Our-health-system/Data-and-statistics/Common-code-tables/Facilities20240401.xlsx) to [Hospital Codes](./CodeSystem-nzcr-hospital-code-cs.html) as they are used to identify recording hospital for NHIMWS based alerts.
+* Display text for [Alert Category](./CodeSystem-nzcr-alert-category-cs.html) codes now match what actually appears in source HL7 messages.
+* Display text for [Referral Status](./CodeSystem-nzcr-referral-status-cs.html) code `#A` is `Accepted` rather than `Active` and now matches what actually appears in source HL7 messages.
+* Required identifier type on `ServiceRequest.identifier` is `RI` - `Referral Identifier`
+* `meta.extension` fields recording the HL7 version number, triggering event/message,  and l4h templates version number are now defined
+* `ServiceRequest.identifier.type` is `#FILL` - `Filler Identifier` - denoting that PAS has assigned identifier.
+* Added `ServiceRequest.extension[referral].extension[dateReceived]` field to [Referral profile](./StructureDefinition-NZCentralRegionReferral.html).
+* Added [Referral Category](./CodeSystem-nzcr-referral-category-cs.html) codes to use in `ServiceRequest.code` when no specific referral type is provided.
+* `ServiceRequest.reasonCode` is optional as field `ZXV-7` is optional in the source HL7 messages.
+* `ServiceRequest.performer.display`, `ServiceRequest.requestor.display`,  `ServiceRequest.extension[consultingPractitioner].display`, and `ServiceRequest.extension[referringPractice].display` are marked as unused.
+* `ClinicalImpression.note` is optional, it may not be populated in `ZLS.10`
+* `Patient.extension[ethnicity]`, `Patient.extension[nz-residency].extension[status]`, and `Patient.extension[patient-religion]` all have two bindings, the original from NZBase and a CentralRegion defined alternative which holds the (usually) finer grained original value received from source HL7 message.
+* `Patient.address.country` is optional, it may not be populated in `PID.11.6`
+* `Patient.address.extension[domicile-code]` is optional, it may not be populated in `PID.12` 
+
+### v1.0.0
+* Changed status of all the CodeSystems and ValueSets to `active` and published as the first edition.
+
 ### v0.7.1
 * Added [Referral Status](./CodeSystem-nzcr-referral-status-cs.html) code system so that we can include raw referral Priority and Status values in referrals.
 * Added [Alert Category](./ConceptMap-nzcr-flag-category-map.html) concept map so that we can map WebPAS alert categories to appropriate FHIR Flag categories.

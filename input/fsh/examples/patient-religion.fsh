@@ -37,7 +37,7 @@ Usage:  #example
 * address[=].city = "Palmerston North"
 * address[=].postalCode = "4410"
 * address[=].country = "NEW ZEALAND"
-* address[=].text = "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
+* address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
 * communication.language.coding.code = #en
@@ -100,7 +100,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * address[=].city = "Palmerston North"
 * address[=].postalCode = "4410"
 * address[=].country = "NEW ZEALAND"
-* address[=].text = "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
+* address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
 * communication.language.coding.code = #en

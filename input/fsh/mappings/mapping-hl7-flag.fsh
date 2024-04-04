@@ -17,10 +17,11 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 
 * status -> "ZAL-8 & ZAL-9" "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty **then** 'active' **else** 'inactive'"
 
-* category -> "ZAL-2"
-* category.coding.code -> "ZAL-2.1"
-* category.coding.system -> "'https://standards.digital.health.nz/ns/central-region/alert-category'"
-* category.coding.display -> "ZAL-2.2"
+* category -> "ZAL-2" "Repeat for each coding"
+* category.coding -> "" "Repeat for each coding"
+* category.coding.system -> "http://terminology.hl7.org/CodeSystem/flag-category"
+* category.coding.code -> "ZAL-2.1" "Raw value and mapped from webPAS alert category"
+* category.coding.display -> "ZAL-2.2" "Raw value and mapped from webPAS alert category"
 
 * code -> "ZAL-3"
 * code.coding.code -> "ZAL-3.1"
@@ -85,9 +86,10 @@ ie: these categories denote 'free-text' alert codes
 * extension[flag-alert].extension[lastUpdatedBy].valueString -> "ZAL-12.1 + ' - ' + ZAL-12.2" "Not to be confused with Author"
 
 * extension[flag-alert].extension[recordingHospital].url -> "'recordingHospital'"
-* extension[flag-alert].extension[recordingHospital].valueCoding.code -> "ZAL-13.1"
-* extension[flag-alert].extension[recordingHospital].valueCoding.system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
-* extension[flag-alert].extension[recordingHospital].valueCoding.display -> "ZAL-13.2"
+* extension[flag-alert].extension[recordingHospital].valueCodeableConcept
+  * coding.code -> "ZAL-13.1"
+  * coding.system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
+  * coding.display -> "ZAL-13.2"
 
 * extension[flag-alert].extension[comments].url -> "'comments'"
 * extension[flag-alert].extension[comments].valueString -> "ZAL-14"

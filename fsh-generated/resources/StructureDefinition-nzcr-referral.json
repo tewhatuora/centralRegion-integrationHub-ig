@@ -194,8 +194,7 @@
       {
         "id": "Extension.extension:consultingPractitioner.value[x].display",
         "path": "Extension.extension.value[x].display",
-        "min": 1,
-        "mustSupport": true
+        "max": "0"
       },
       {
         "id": "Extension.extension:preferredSite",
@@ -366,7 +365,7 @@
         "path": "Extension.extension.value[x].type",
         "short": "Medical Practice is an Organisation",
         "min": 1,
-        "patternUri": "Organisation",
+        "patternUri": "Organization",
         "mustSupport": true
       },
       {
@@ -477,8 +476,7 @@
       {
         "id": "Extension.extension:referringPractice.value[x].display",
         "path": "Extension.extension.value[x].display",
-        "min": 1,
-        "mustSupport": true
+        "max": "0"
       },
       {
         "id": "Extension.extension:healthPurchaser",
@@ -783,6 +781,40 @@
         "id": "Extension.extension:webPASStatus.value[x].userSelected",
         "path": "Extension.extension.value[x].userSelected",
         "max": "0"
+      },
+      {
+        "id": "Extension.extension:dateReceived",
+        "path": "Extension.extension",
+        "sliceName": "dateReceived",
+        "short": "The date on which the referral was received by PAS system.",
+        "definition": "The date on which the referral was received by PAS system.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:dateReceived.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dateReceived.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dateReceived.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dateReceived"
+      },
+      {
+        "id": "Extension.extension:dateReceived.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
       },
       {
         "id": "Extension.url",

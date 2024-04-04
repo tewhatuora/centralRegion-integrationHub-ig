@@ -64,6 +64,118 @@
         ]
       },
       {
+        "id": "AllergyIntolerance.meta.extension:process-timestamp",
+        "path": "AllergyIntolerance.meta.extension",
+        "sliceName": "process-timestamp",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.meta.extension:source-event-trigger",
+        "path": "AllergyIntolerance.meta.extension",
+        "sliceName": "source-event-trigger",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.meta.extension:source-record-type",
+        "path": "AllergyIntolerance.meta.extension",
+        "sliceName": "source-record-type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-record-type"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.meta.extension:source-record-id",
+        "path": "AllergyIntolerance.meta.extension",
+        "sliceName": "source-record-id",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-record-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.meta.extension:source-data-mode-version",
+        "path": "AllergyIntolerance.meta.extension",
+        "sliceName": "source-data-mode-version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.meta.extension:process-client-id",
+        "path": "AllergyIntolerance.meta.extension",
+        "sliceName": "process-client-id",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.meta.extension:l4h-template-version",
+        "path": "AllergyIntolerance.meta.extension",
+        "sliceName": "l4h-template-version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/l4h-template-version"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "AllergyIntolerance.extension",
         "path": "AllergyIntolerance.extension",
         "slicing": {
@@ -97,15 +209,14 @@
       {
         "id": "AllergyIntolerance.extension:allergy-alert.extension",
         "path": "AllergyIntolerance.extension.extension",
-        "min": 3
+        "min": 2
       },
       {
         "id": "AllergyIntolerance.extension:allergy-alert.extension:severityLevel",
         "path": "AllergyIntolerance.extension.extension",
         "sliceName": "severityLevel",
         "short": "Severity level in range '0'..'9'",
-        "definition": "Severity level in range '0'..'9'",
-        "min": 1
+        "definition": "Severity level in range '0'..'9'"
       },
       {
         "id": "AllergyIntolerance.extension:allergy-alert.extension:severityLevel.url",
@@ -132,8 +243,8 @@
         "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction",
         "path": "AllergyIntolerance.extension.extension",
         "sliceName": "allergyReaction",
-        "short": "Allergy reaction - should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)",
-        "definition": "Allergy reaction code - defined as string, should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)",
+        "short": "Allergy reaction code from [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)",
+        "definition": "Allergy reaction code from [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)",
         "min": 1
       },
       {
@@ -147,8 +258,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.value[x].system",
-        "path": "AllergyIntolerance.extension.extension.value[x].system",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.value[x].coding.system",
+        "path": "AllergyIntolerance.extension.extension.value[x].coding.system",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -157,8 +268,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.value[x].code",
-        "path": "AllergyIntolerance.extension.extension.value[x].code",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.value[x].coding.code",
+        "path": "AllergyIntolerance.extension.extension.value[x].coding.code",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -167,8 +278,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.value[x].display",
-        "path": "AllergyIntolerance.extension.extension.value[x].display",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:allergyReaction.value[x].coding.display",
+        "path": "AllergyIntolerance.extension.extension.value[x].coding.display",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -296,8 +407,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.value[x].system",
-        "path": "AllergyIntolerance.extension.extension.value[x].system",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.value[x].coding.system",
+        "path": "AllergyIntolerance.extension.extension.value[x].coding.system",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -306,8 +417,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.value[x].code",
-        "path": "AllergyIntolerance.extension.extension.value[x].code",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.value[x].coding.code",
+        "path": "AllergyIntolerance.extension.extension.value[x].coding.code",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -316,8 +427,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.value[x].display",
-        "path": "AllergyIntolerance.extension.extension.value[x].display",
+        "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.value[x].coding.display",
+        "path": "AllergyIntolerance.extension.extension.value[x].coding.display",
         "mapping": [
           {
             "identity": "nzcr-allergyintolerance-from-hl7v2",
@@ -1253,7 +1364,6 @@
       {
         "id": "AllergyIntolerance.note",
         "path": "AllergyIntolerance.note",
-        "min": 1,
         "max": "1",
         "mustSupport": true
       },

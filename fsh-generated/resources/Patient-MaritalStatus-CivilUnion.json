@@ -99,13 +99,13 @@
   "address": [
     {
       "type": "postal",
-      "text": "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND",
       "line": [
         "100 Broadway Avenue"
       ],
       "city": "Palmerston North",
       "postalCode": "4410",
-      "country": "NEW ZEALAND"
+      "country": "NEW ZEALAND",
+      "use": "home"
     }
   ],
   "communication": [

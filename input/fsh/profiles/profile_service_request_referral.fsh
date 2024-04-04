@@ -20,11 +20,11 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
   * type 1..1 MS
   * type.coding MS
     * code 1..1 MS
-    * code = #LR
+    * code = #FILL
     * system 1..1 MS
     * system = $HL7IdentifierTypeCS
     * display 1..1 MS
-    * display = "Local Registry ID"
+    * display = "Filler Identifier"
 
   * period 0..0     // Data not available
   * assigner 0..0   // Data not availale
@@ -47,9 +47,9 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
 * doNotPerform 0..0  // N/A for referrals
 
 * code 1..1 MS
+* code from nzcr-referral-type-vs (required)
 * code.coding MS
   * code 1..1 MS
-  * code from nzcr-referral-type-vs (required)
   * system 1..1 MS
   * display 1..1 MS
 
@@ -120,7 +120,7 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
     * assigner 0..0   // Data not available
     * extension 0..0
     * id 0..0
-  * display 0..1 MS
+  * display 0..0
   * extension 0..0
   * id 0..0
 
@@ -154,15 +154,25 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
     * assigner 0..0   // Data not available
     * extension 0..0
     * id 0..0
-  * display 0..1 MS
+  * display 0..0
   * extension 0..0
   * id 0..0
 
+* locationCode from nzcr-department-vs
 * locationCode 1..1 MS
+  * coding MS
+    * code 1..1 MS
+    * system 1..1 MS
+    * display 1..1 MS
+    * version 0..0
+    * userSelected 0..0
+    * extension 0..0
+    * id 0..0
+  * text 0..0
 * locationReference 0..0 MS  // We don't have Location resources (yet)
 
 
-* reasonCode 1..1 MS
+* reasonCode 0..1 MS
 * reasonReference 0..0      // We don't have Condition, Observation, DiagnosticReport, DocumentReference) resources
 
 
@@ -178,4 +188,5 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
 * extension contains 
     nzcr-referral named referral 1..1 MS 
 
-* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS
+// We have a standard set of fields in all Resource.meta blocks
+* meta insert ResourceMetaFields

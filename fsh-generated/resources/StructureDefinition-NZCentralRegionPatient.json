@@ -74,6 +74,118 @@
         ]
       },
       {
+        "id": "Patient.meta.extension:process-timestamp",
+        "path": "Patient.meta.extension",
+        "sliceName": "process-timestamp",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.extension:source-event-trigger",
+        "path": "Patient.meta.extension",
+        "sliceName": "source-event-trigger",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.extension:source-record-type",
+        "path": "Patient.meta.extension",
+        "sliceName": "source-record-type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-record-type"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.extension:source-record-id",
+        "path": "Patient.meta.extension",
+        "sliceName": "source-record-id",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-record-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.extension:source-data-mode-version",
+        "path": "Patient.meta.extension",
+        "sliceName": "source-data-mode-version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.extension:process-client-id",
+        "path": "Patient.meta.extension",
+        "sliceName": "process-client-id",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.extension:l4h-template-version",
+        "path": "Patient.meta.extension",
+        "sliceName": "l4h-template-version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/l4h-template-version"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Patient.implicitRules",
         "path": "Patient.implicitRules",
         "max": "0"
@@ -97,7 +209,6 @@
         "id": "Patient.extension:ethnicity",
         "path": "Patient.extension",
         "sliceName": "ethnicity",
-        "short": "Two codings required: Level-2 codes as provided by WebPAS and Level-4 codes as preferred by NZ Base",
         "max": "3",
         "mustSupport": true,
         "mapping": [
@@ -131,7 +242,26 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+              "extension": [
+                {
+                  "url": "purpose",
+                  "valueCode": "required"
+                },
+                {
+                  "url": "valueSet",
+                  "valueCanonical": "https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.extension",
@@ -551,8 +681,7 @@
       {
         "id": "Patient.extension:nzResidency.extension:status",
         "path": "Patient.extension.extension",
-        "sliceName": "status",
-        "short": "Two codings possible:  'yes|no' from NZ Base, and more detailed as available from WebPAS"
+        "sliceName": "status"
       },
       {
         "id": "Patient.extension:nzResidency.extension:status.id",
@@ -570,6 +699,29 @@
         ]
       },
       {
+        "id": "Patient.extension:nzResidency.extension:status.value[x]",
+        "path": "Patient.extension.extension.value[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+              "extension": [
+                {
+                  "url": "purpose",
+                  "valueCode": "required"
+                },
+                {
+                  "url": "valueSet",
+                  "valueCanonical": "https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Patient.extension:nzResidency.extension:status.value[x].id",
         "path": "Patient.extension.extension.value[x].id",
         "max": "0"
@@ -577,7 +729,6 @@
       {
         "id": "Patient.extension:nzResidency.extension:status.value[x].coding",
         "path": "Patient.extension.extension.value[x].coding",
-        "short": "Two codings possible 'yes|no' from NZ Base, and more detailed as available from WebPAS",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -686,6 +837,29 @@
             "map": "'http://hl7.org/fhir/StructureDefinition/patient-religion'"
           }
         ]
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x]",
+        "path": "Patient.extension.value[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+              "extension": [
+                {
+                  "url": "purpose",
+                  "valueCode": "required"
+                },
+                {
+                  "url": "valueSet",
+                  "valueCanonical": "https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Patient.extension:patient-religion.value[x].coding",
@@ -1293,12 +1467,72 @@
         "id": "Patient.address.extension:domicile-code",
         "path": "Patient.address.extension",
         "sliceName": "domicile-code",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.id",
+        "path": "Patient.address.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.value[x]:valueCodeableConcept",
+        "path": "Patient.address.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.value[x]:valueCodeableConcept.extension",
+        "path": "Patient.address.extension.value[x].extension",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.value[x]:valueCodeableConcept.coding",
+        "path": "Patient.address.extension.value[x].coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.value[x]:valueCodeableConcept.coding.system",
+        "path": "Patient.address.extension.value[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.value[x]:valueCodeableConcept.coding.version",
+        "path": "Patient.address.extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.value[x]:valueCodeableConcept.coding.code",
+        "path": "Patient.address.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.value[x]:valueCodeableConcept.coding.display",
+        "path": "Patient.address.extension.value[x].coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.value[x]:valueCodeableConcept.coding.userSelected",
+        "path": "Patient.address.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.extension:domicile-code.value[x]:valueCodeableConcept.text",
+        "path": "Patient.address.extension.value[x].text",
         "max": "0"
       },
       {
         "id": "Patient.address.use",
         "path": "Patient.address.use",
-        "max": "0",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -1318,8 +1552,7 @@
       {
         "id": "Patient.address.text",
         "path": "Patient.address.text",
-        "min": 1,
-        "mustSupport": true,
+        "max": "0",
         "mapping": [
           {
             "identity": "nzcr-patient-from-hl7v2",
@@ -1383,7 +1616,6 @@
       {
         "id": "Patient.address.country",
         "path": "Patient.address.country",
-        "min": 1,
         "mustSupport": true,
         "mapping": [
           {

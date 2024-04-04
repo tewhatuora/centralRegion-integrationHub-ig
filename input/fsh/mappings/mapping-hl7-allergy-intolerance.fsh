@@ -76,9 +76,10 @@ depending upon value of ZAL-2.1"
 * extension[allergy-alert].extension[severityLevel].valueString -> "ZAL-6"   "TODO: severityLevel should be integer"
 
 * extension[allergy-alert].extension[allergyReaction].url -> "'allergyReaction'"
-* extension[allergy-alert].extension[allergyReaction].valueCoding.code -> "ZAL-4.1"
-* extension[allergy-alert].extension[allergyReaction].valueCoding.system -> "'https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4' or 'https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3'"
-* extension[allergy-alert].extension[allergyReaction].valueCoding.display -> "ZAL-4.2"
+* extension[allergy-alert].extension[allergyReaction].valueCodeableConcept
+  * coding.code -> "ZAL-4.1"
+  * coding.system -> "'https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4' or 'https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3'"
+  * coding.display -> "ZAL-4.2"
 
 * extension[allergy-alert].extension[reviewDate].url -> "'reviewDate'"
 * extension[allergy-alert].extension[reviewDate].valueDate -> "ZAL-7" "**Note:** ISO-8601 date format includes dashes"
@@ -93,9 +94,10 @@ depending upon value of ZAL-2.1"
 * extension[allergy-alert].extension[lastUpdatedBy].valueString -> "ZAL-12.1 + ' - ' + ZAL-12.2" "Not to be confused with Recorder"
 
 * extension[allergy-alert].extension[recordingHospital].url -> "'recordingHospital'"
-* extension[allergy-alert].extension[recordingHospital].valueCoding.code -> "ZAL-13.1"
-* extension[allergy-alert].extension[recordingHospital].valueCoding.system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
-* extension[allergy-alert].extension[recordingHospital].valueCoding.display -> "ZAL-13.2"
+* extension[allergy-alert].extension[recordingHospital].valueCodeableConcept
+  * coding.code -> "ZAL-13.1"
+  * coding.system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
+  * coding.display -> "ZAL-13.2"
 
 * meta.extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7v2-message'"
 * meta.extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

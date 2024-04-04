@@ -22,10 +22,22 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
 
 * status 1..1 MS
 
-* category from nzcr-flag-alert-category-vs (required)
 * category 1..1 MS
-  * coding 1..* MS
-  * coding.code 1..1 MS 
+* category from $HL7FlagCategoryVS (required)
+* category insert AdditionalBinding(#required, $NZCentralRegionFlagAlertCategoryVS)
+
+//  * coding ^slicing.discriminator.type = #pattern
+//  * coding ^slicing.discriminator.path = "system"
+//  * coding ^slicing.rules = #open
+//  * coding ^slicing.description = "Slice based on the coding[].system"
+//  * coding contains origFhir 1..1 and webPAS 1..1
+
+//  * coding[origFhir].system = "http://terminology.hl7.org/CodeSystem/flag-category" (exactly)
+//  * coding[origFhir].code from $HL7FlagCategoryVS (required)
+
+//  * coding[webPAS].system = "https://standards.digital.health.nz/ns/central-region/alert-category" (exactly)
+//  * coding[webPAS].code from $NZCentralRegionFlagAlertCategoryVS (required)
+
   * coding.system 1..1 MS
   * coding.display 1..1 MS
   * coding.version 0..0      // code systems are not explicitly versioned
@@ -37,10 +49,10 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
   * id 0..0
 
 
-* code from nzcr-flag-alert-code-vs (required)
 * code 1..1 MS
   * coding 0..* MS       // Categories NHIMWS, MA & MC are 'free-text' categories, which can't be coded
-    * code 1..1 MS 
+    * code 0..1 MS 
+    * code from nzcr-flag-alert-code-vs (required)
     * system 1..1 MS
     * display 1..1 MS
     * version 0..0       // code systems are not explicitly versioned
@@ -50,6 +62,8 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
   * text 0..1 MS        // Used for categories NHIMWS, MA & MC
   * extension 0..0
   * id 0..0
+
+* obeys nzcr-uncoded-flags and nzcr-coded-flags
 
 * subject 1..1 MS
   * type 1..1 MS
@@ -87,7 +101,7 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
 
-* author 1..1 MS
+* author 0..1 MS
   * type 1..1 MS
   * type = "Practitioner"
     * ^short = "Type the reference refers to (e.g. 'Practitioner')"
@@ -128,16 +142,5 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
   * ^definition = "Severity Level - 'W' for Alert/Flag"
   * ^short = "Severity Level - 'W' for Alert/Flag"
 
-/*
-* extension[flag-alert]
-  * extension[allergyReaction] 0..0  // only for allergies
-  * extension[severityLevel] 1..1 MS
-  * extension[inactiveDate] 0..1 MS   // not to be confused with period.end
-  * extension[reviewDate] 0..1 MS
-  * extension[lastUpdatedBy] 0..1 MS
-  * extension[lastUpdatedDateTime] 0..1 MS
-  * extension[recordingHospital] 1..1 MS
-  * extension[comments] 0..1 MS
-*/
-
-* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS
+// We have a standard set of fields in all Resource.meta blocks
+* meta insert ResourceMetaFields

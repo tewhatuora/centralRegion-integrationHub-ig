@@ -31,7 +31,6 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
 * extension[severityLevel]
   * ^definition = "Severity Level in range 0-9 for Allergy/Intolerance; 'W' for Alert/Flag"
   * ^short = "Severity Level in range 0-9 for Allergy/Intolerance; 'W' for Alert/Flag"
-  * value[x] 1..1
   * value[x] only string
   // * value[x] only integer
   // * valueInteger ^minValueInteger = 0
@@ -41,14 +40,23 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
 * extension[allergyReaction]
   * ^definition = "Allergy Reaction"
   * ^short = "Allergy Reaction"
-  * value[x] only Coding
+  * value[x] only CodeableConcept
   * value[x] from nzcr-allergy-reaction-vs (required)
-  * valueCoding 1..1
-    * version 0..0        // not versioned
-    * userSelected 0..0   // not used
-    * extension 0..0
-    * id 0..0  
+  * valueCodeableConcept
+    * coding 1..* MS
+      * ^short = "Multiple codings possible, one is original valuee from WebPAS..."
+      * code 1..1 MS
+      * system 1..1 MS    
+      * display 1..1 MS
+      * version 0..0      // code systems are not explicitly versioned
+      * userSelected 0..0 // data not available
+      * extension 0..0
+      * id 0..0
+    * text 0..0           //  Code, Value and Display are all derived from Code value from PID-28.1
+    * extension 0..0      //  no extension
+    * id 0..0
   * id 0..0
+
 
 * extension[inactiveDate]
   * ^definition = "When will/did this alert stop being active?"
@@ -81,13 +89,21 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
 * extension[recordingHospital]
   * ^definition = "Which hospital recorded the alert?"
   * ^short = "Which hospital recorded the alert?"
-  * value[x] only Coding
+  * value[x] only CodeableConcept
   * value[x] from nzcr-hospital-code-vs (required)
-  * valueCoding 1..1
-    * version 0..0        // not versioned
-    * userSelected 0..0   // not used
-    * extension 0..0
-    * id 0..0  
+  * valueCodeableConcept
+    * coding 1..* MS
+      * ^short = "Multiple codings possible, one is original value from WebPAS..."
+      * code 1..1 MS
+      * system 1..1 MS    
+      * display 0..1 MS
+      * version 0..0      // code systems are not explicitly versioned
+      * userSelected 0..0 // data not available
+      * extension 0..0
+      * id 0..0
+    * text 0..0           //  Code, Value and Display are all derived from Code value from PID-28.1
+    * extension 0..0      //  no extension
+    * id 0..0
   * id 0..0
 
 * extension[comments]

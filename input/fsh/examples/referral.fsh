@@ -9,9 +9,9 @@ Usage:  #example
   * system = $NZCentralRegionReferralId
   * value = "43372609"
   * type.coding
-    * code = #LR
+    * code = #FILL
     * system = $HL7IdentifierTypeCS
-    * display = "Local Registry ID"
+    * display = "Filler Identifier"
 
 * status = #draft
 * intent = #order
@@ -58,7 +58,6 @@ Usage:  #example
         * display = "Local Registry ID"
     * system = $NZCentralRegionPASPractitioner
     * value = "25339"
-  * display = "Hanekom, Petrus Jurgens Dr"
 
 * performer
   * type = #Practitioner
@@ -71,9 +70,20 @@ Usage:  #example
         * display = "Local Registry ID"
     * system = $NZCentralRegionPASPractitioner
     * value = "80791"
-  * display = "Beale, Claire"
 
 * extension[referral]
+  * extension[consultingPractitioner].valueReference
+    * type = #Practitioner
+    * identifier
+      * use = #usual
+      * type
+        * coding
+          * code = #LR
+          * system = $HL7IdentifierTypeCS
+          * display = "Local Registry ID"
+      * system = $NZCentralRegionPASPractitioner
+      * value = "99233"
+
   * extension[preferredSite].valueCoding
     * code = #POPD
     * system = $NZCentralRegionReferralSiteCS
@@ -85,7 +95,7 @@ Usage:  #example
     * display = "General Practitioner"
 
   * extension[referringPractice].valueReference
-    * type = "Organisation"
+    * type = "Organization"
     * identifier
       * use = #usual
       * system = $NZCentralRegionPASPractice
@@ -94,7 +104,6 @@ Usage:  #example
         * code = #LR
         * system = $HL7IdentifierTypeCS
         * display = "Local Registry ID"
-    * display = "The Palms Medical Centre"
 
   * extension[healthPurchaser].valueCoding
     * code = #35M

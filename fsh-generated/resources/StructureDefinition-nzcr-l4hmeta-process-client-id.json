@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "nzcr-hl7v2-message",
-  "url": "https://standards.digital.health.nz/ns/central-region/hl7v2-message",
-  "name": "NZCentralRegionHL7v2Message",
-  "title": "HL7 v2 Message",
+  "id": "nzcr-l4hmeta-process-client-id",
+  "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id",
+  "name": "L4HProcessClientId",
+  "title": "Process Client ID",
   "status": "active",
-  "description": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource",
+  "description": "The HL7v2 Source Client Id for the message/event that was translated into FHIR Resource",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -47,8 +47,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "HL7 v2 Message",
-        "definition": "Base64 encoded string containing the original HL7 v2 message that was used to create / update the FHIR resource"
+        "short": "Process Client ID",
+        "definition": "The HL7v2 Source Client Id for the message/event that was translated into FHIR Resource"
       },
       {
         "id": "Extension.extension",
@@ -58,14 +58,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://standards.digital.health.nz/ns/central-region/hl7v2-message"
+        "fixedUri": "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "base64Binary"
+            "code": "string"
           }
         ]
       }

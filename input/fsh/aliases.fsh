@@ -2,6 +2,7 @@
 // Extension URLs from FHIR base
 Alias:   $HL7PatientReligion       = http://hl7.org/fhir/StructureDefinition/patient-religion
 Alias:   $HL7InterpreterRequired   = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
+Alias:   $HL7AdditionalBinding     = http://hl7.org/fhir/tools/StructureDefinition/additional-binding
 
 // Code System URLs from FHIR base
 Alias:   $IETFLanguageCS             = urn:ietf:bcp:47
@@ -18,6 +19,7 @@ Alias:   $HL7AllergyClinicalStatusCS = http://terminology.hl7.org/CodeSystem/all
 Alias:   $HL7AllergyVerificationCS   = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
 Alias:   $HL7FlagCategoryCS          = http://terminology.hl7.org/CodeSystem/flag-category
+Alias:   $HL7FlagCategoryVS          = http://hl7.org/fhir/ValueSet/flag-category
 
 Alias:   $HL7ReferralPriorityCS      = http://terminology.hl7.org/CodeSystem/v2-0280
 Alias:   $HL7RequestPriorityCS       = http://hl7.org/fhir/request-priority
@@ -68,7 +70,7 @@ Alias:   $NZCentralRegionReferral              = https://standards.digital.healt
 
 // Local URLs for locally defined CodeSystems
 Alias:   $NZCentralRegionHospitalCS             = https://standards.digital.health.nz/ns/central-region/hospital-code
-Alias:   $NZCentralRegionDepartmentCS           = https://standards.digital.health.nz/ns/central-region/-department-code
+Alias:   $NZCentralRegionDepartmentCS           = https://standards.digital.health.nz/ns/central-region/department-code
 Alias:   $NZCentralRegionClinicCS               = https://standards.digital.health.nz/ns/central-region/clinic-code
 
 Alias:   $NZStatsEthnicityLevel2CS              = https://standards.digital.health.nz/ns/ethnic-group-level-2-code
@@ -102,6 +104,7 @@ Alias:   $NZCentralRegionMentalHealthCourtTypeCS      = https://standards.digita
 
 Alias:   $NZCentralRegionReferralStatusCS          = https://standards.digital.health.nz/ns/central-region/pas-referral-status
 Alias:   $NZCentralRegionReferralPriorityCS        = https://standards.digital.health.nz/ns/central-region/pas-referral-priority
+Alias:   $NZCentralRegionReferralCategoryCS        = https://standards.digital.health.nz/ns/central-region/pas-referral-category
 Alias:   $NZCentralRegionReferralTypeRICS          = https://standards.digital.health.nz/ns/central-region/referral-type-ri
 Alias:   $NZCentralRegionReferralTypeWUCS          = https://standards.digital.health.nz/ns/central-region/referral-type-wu      // essentially waiting list referral departments
 Alias:   $NZCentralRegionReferralReasonCS          = https://standards.digital.health.nz/ns/central-region/referral-reason
@@ -154,3 +157,12 @@ Alias:   $NZCentralRegionAllergyReactionCategoryConceptMap      = https://standa
 Alias:   $NZCentralRegionAllergyReactionCriticalityConceptMap   = https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-criticality
 
 Alias:   $NZCentralRegionFlagCategoryConceptMap                 = https://standards.digital.health.nz/fhir/central-region/ConceptMap-flag-category
+
+// Local URLs for IBM defined extensions for l4h-templates
+Alias:   $L4HProcessTimestamp    = http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp
+Alias:   $L4HEventTrigger        = http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger
+Alias:   $L4HRecordType          = http://ibm.com/fhir/cdm/StructureDefinition/source-record-type
+Alias:   $L4HRecordId            = http://ibm.com/fhir/cdm/StructureDefinition/source-record-id
+Alias:   $L4HDataModelVersion    = http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version
+Alias:   $L4HClientId            = http://ibm.com/fhir/cdm/StructureDefinition/process-client-id
+Alias:   $L4HTemplateVersion     = https://standards.digital.health.nz/ns/central-region/l4h-template-version

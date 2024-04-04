@@ -139,7 +139,7 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
   
-* note 1..1 MS
+* note 0..1 MS
   * author[x] 0..0 // no data available
   * time 0..0      // no data available
   * text 1..1 MS
@@ -154,13 +154,13 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
     nzcr-alert named allergy-alert 1..1 MS 
 
 * extension[allergy-alert]
-  * extension[severityLevel] 1..1 MS     
+  * extension[severityLevel] 0..1 MS
     * ^definition = "Severity level in range '0'..'9'"
     * ^short = "Severity level in range '0'..'9'"
 
   * extension[allergyReaction] 1..1 MS
-    * ^definition = "Allergy reaction code - defined as string, should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)"
-    * ^short = "Allergy reaction - should be [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)"
+    * ^definition = "Allergy reaction code from [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)"
+    * ^short = "Allergy reaction code from [allergy-reaction-code](./ValueSet-nzcr-allergy-reaction-vs.html)"
 
   * extension[inactiveDate] 0..1 MS     // not to be confused with period.end
   * extension[reviewDate] 0..1 MS
@@ -169,4 +169,5 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
   * extension[recordingHospital] 1..1 MS
   * extension[comments] 0..0 MS   // AllergyIntolerance has 'note' field
 
-* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS
+// We have a standard set of fields in all Resource.meta blocks
+* meta insert ResourceMetaFields

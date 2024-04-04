@@ -6,7 +6,7 @@
   "id": "nzcr-department-cs",
   "title": "NZ Central Region - Department Code System",
   "description": "Department codes; ex. WebPAS in NZ Central Region.",
-  "url": "https://standards.digital.health.nz/ns/central-region/-department-code",
+  "url": "https://standards.digital.health.nz/ns/central-region/department-code",
   "concept": [
     {
       "code": "MAE",

@@ -41,18 +41,27 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * address 0..* MS
   * extension[building-name] 0..0
   * extension[nz-geocode] 0..0
-  * extension[domicile-code] 0..0
+  * extension[domicile-code] 0..1 MS
+    * valueCodeableConcept.coding 1..1 MS
+    * valueCodeableConcept.coding.code 1..1 MS 
+    * valueCodeableConcept.coding.system 1..1 MS
+    * valueCodeableConcept.coding.display 1..1 MS
+    * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
+    * valueCodeableConcept.coding.userSelected 0..0 // data not available
+    * valueCodeableConcept.text 0..0                // Code, Value and Display are all derived from Code value
+    * valueCodeableConcept.extension 0..0
+    * id 0..0  
   * extension[suburb] 0..1 MS
-  * use 0..0 MS  //  insufficient data
+  * use 1..1 MS           // hard-coded to 'home' in templates
   * type 1..1 MS
   * type ^short = "PHYSICAL | POSTAL"
-  * text 1..1 MS
+  * text 0..0             // not using it
   * line 0..1 MS
   * city 0..1 MS
   * district 0..0
-  * state 0..1 MS // req'd for foreign addresses
+  * state 0..1 MS         // req'd for foreign addresses
   * postalCode 0..1 MS
-  * country 1..1 MS
+  * country 0..1 MS       //   WebPAS seems to be leaving out the country on NZ addresses
   * period 0..0
   * id 0..0
 
@@ -95,6 +104,8 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * multipleBirth[x] 0..0
 * extension[sex-at-birth] 0..0
 
+* extension[ethnicity].valueCodeableConcept from $NZStatsEthnicityLevel4VS (required)
+* extension[ethnicity].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionEthnicityLevel2VS)
 * extension[ethnicity] 0..3 MS
   * valueCodeableConcept.coding 1..* MS           //  <<<---- THIS ONE HERE is required to make the publisher work with the rest
   * valueCodeableConcept.coding.code 1..1 MS      // from PID-22.1
@@ -104,7 +115,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
   * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-22.1
   * valueCodeableConcept.extension 0..0
-  * ^short = "Two codings required: Level-2 codes as provided by WebPAS and Level-4 codes as preferred by NZ Base"
   * id 0..0
 
 * extension[nzCitizen] 1..1 MS
@@ -125,9 +135,10 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 // NZ Base v2.0.0 - hasn't defined things quite completely yet - so reusing Citizenship structure with Residency name....
 * extension contains $NZBaseNZResidency named nzResidency 0..1 MS
 * extension[nz-residency]
+  * extension[status].valueCodeableConcept from $NZBaseNZResidencyVS
+  * extension[status].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionResidencyVS)
   * extension[status] 
     * valueCodeableConcept.coding 1..* MS    
-      * ^short = "Two codings possible 'yes|no' from NZ Base, and more detailed as available from WebPAS"       // Multiple codings possible
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-28.1
     * valueCodeableConcept.coding.system 1..1 MS    
     * valueCodeableConcept.coding.display 1..1 MS   // from PID-28.2 or by lookup from PID-28.1 ??
@@ -135,7 +146,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * valueCodeableConcept.coding.userSelected 0..0 // data not available
     * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-28.1
     * valueCodeableConcept.id 0..0
-    * ^short = "Two codings possible:  'yes|no' from NZ Base, and more detailed as available from WebPAS"
     * id 0..0
   * extension[source] 0..0
   * id 0..0
@@ -158,6 +168,8 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * photo 0..0
 
 * extension contains $HL7PatientReligion named patient-religion 0..1 MS
+* extension[patient-religion].valueCodeableConcept from $HL7PatientRelgionVS
+* extension[patient-religion].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionReligionVS)
 * extension[patient-religion] 0..1 MS
   * valueCodeableConcept.coding 1..* MS           //  <<<---- THIS ONE HERE is required to make the publisher work with the rest
   * valueCodeableConcept.coding.code 1..1 MS      // from PID-17.1
@@ -277,4 +289,5 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
 
-* meta.extension contains nzcr-hl7v2-message named hl7v2Message 1..1 MS
+// We have a standard set of fields in all Resource.meta blocks
+* meta insert ResourceMetaFields

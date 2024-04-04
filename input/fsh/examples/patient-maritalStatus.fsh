@@ -30,11 +30,11 @@ Usage:  #example
 * telecom[=].use = #home
 
 * address[+].type = #postal
-* address[=].text = "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND"
 * address[=].line[+] = "100 Broadway Avenue"
 * address[=].city = "Palmerston North"
 * address[=].postalCode = "4410"
 * address[=].country = "NEW ZEALAND"
+* address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
 * communication.language.coding.code = #en
@@ -84,11 +84,11 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 * telecom[=].use = #home
 
 * address[+].type = #postal
-* address[=].text = "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND"
 * address[=].line[+] = "100 Broadway Avenue"
 * address[=].city = "Palmerston North"
 * address[=].postalCode = "4410"
 * address[=].country = "NEW ZEALAND"
+* address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
 * communication.language.coding.code = #en

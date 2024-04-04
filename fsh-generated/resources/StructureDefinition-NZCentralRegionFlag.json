@@ -22,6 +22,26 @@
   "differential": {
     "element": [
       {
+        "id": "Flag",
+        "path": "Flag",
+        "constraint": [
+          {
+            "key": "nzcr-uncoded-flags",
+            "severity": "error",
+            "human": "Flag categories NHIMWS, MA & MC are free-text uncoded Categories, and can't have Author or recordingHospital.display",
+            "expression": "category.coding.where(code = 'NHIMWS' or code = 'MA' or code='MC').exists() implies \n    code.text.exists() and \n    code.coding.exists().not() and\n    author.exists().not() and\n    extension[flag-alert].extension[recordingHospital].coding.display.exists().not()",
+            "source": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag"
+          },
+          {
+            "key": "nzcr-coded-flags",
+            "severity": "error",
+            "human": "Flag categories other than NHIMWS, MA & MC are not free-text uncoded Categories, and must have Author and recordingHospital.display",
+            "expression": "category.coding.where(code != 'NHIMWS' and code != 'MA' and code='MC').exists() implies \n   code.text.exists().not() and \n   code.coding.exists() and\n   author.exists() and\n   extension[flag-alert].extension[recordingHospital].coding.display.exists()",
+            "source": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag"
+          }
+        ]
+      },
+      {
         "id": "Flag.meta.extension",
         "path": "Flag.meta.extension",
         "min": 1
@@ -62,6 +82,118 @@
             "comment": "Base64 encoded"
           }
         ]
+      },
+      {
+        "id": "Flag.meta.extension:process-timestamp",
+        "path": "Flag.meta.extension",
+        "sliceName": "process-timestamp",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.meta.extension:source-event-trigger",
+        "path": "Flag.meta.extension",
+        "sliceName": "source-event-trigger",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.meta.extension:source-record-type",
+        "path": "Flag.meta.extension",
+        "sliceName": "source-record-type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-record-type"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.meta.extension:source-record-id",
+        "path": "Flag.meta.extension",
+        "sliceName": "source-record-id",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-record-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.meta.extension:source-data-mode-version",
+        "path": "Flag.meta.extension",
+        "sliceName": "source-data-mode-version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.meta.extension:process-client-id",
+        "path": "Flag.meta.extension",
+        "sliceName": "process-client-id",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.meta.extension:l4h-template-version",
+        "path": "Flag.meta.extension",
+        "sliceName": "l4h-template-version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/l4h-template-version"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Flag.implicitRules",
@@ -255,8 +387,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].system",
-        "path": "Flag.extension.extension.value[x].system",
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].coding.system",
+        "path": "Flag.extension.extension.value[x].coding.system",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -265,8 +397,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].code",
-        "path": "Flag.extension.extension.value[x].code",
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].coding.code",
+        "path": "Flag.extension.extension.value[x].coding.code",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -275,8 +407,8 @@
         ]
       },
       {
-        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].display",
-        "path": "Flag.extension.extension.value[x].display",
+        "id": "Flag.extension:flag-alert.extension:recordingHospital.value[x].coding.display",
+        "path": "Flag.extension.extension.value[x].coding.display",
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -409,7 +541,22 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag"
+          "valueSet": "http://hl7.org/fhir/ValueSet/flag-category",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+              "extension": [
+                {
+                  "url": "purpose",
+                  "valueCode": "required"
+                },
+                {
+                  "url": "valueSet",
+                  "valueCanonical": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag"
+                }
+              ]
+            }
+          ]
         },
         "mapping": [
           {
@@ -418,7 +565,8 @@
           },
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "ZAL-2"
+            "map": "ZAL-2",
+            "comment": "Repeat for each coding"
           }
         ]
       },
@@ -435,8 +583,13 @@
       {
         "id": "Flag.category.coding",
         "path": "Flag.category.coding",
-        "min": 1,
-        "mustSupport": true
+        "mapping": [
+          {
+            "identity": "nzcr-flag-from-hl7v2",
+            "map": "",
+            "comment": "Repeat for each coding"
+          }
+        ]
       },
       {
         "id": "Flag.category.coding.id",
@@ -460,7 +613,7 @@
           },
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "'https://standards.digital.health.nz/ns/central-region/alert-category'"
+            "map": "http://terminology.hl7.org/CodeSystem/flag-category"
           }
         ]
       },
@@ -472,8 +625,6 @@
       {
         "id": "Flag.category.coding.code",
         "path": "Flag.category.coding.code",
-        "min": 1,
-        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -481,7 +632,8 @@
           },
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "ZAL-2.1"
+            "map": "ZAL-2.1",
+            "comment": "Raw value and mapped from webPAS alert category"
           }
         ]
       },
@@ -497,7 +649,8 @@
           },
           {
             "identity": "nzcr-flag-from-hl7v2",
-            "map": "ZAL-2.2"
+            "map": "ZAL-2.2",
+            "comment": "Raw value and mapped from webPAS alert category"
           }
         ]
       },
@@ -516,10 +669,6 @@
         "id": "Flag.code",
         "path": "Flag.code",
         "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-flag-alert-code"
-        },
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -573,8 +722,11 @@
       {
         "id": "Flag.code.coding.code",
         "path": "Flag.code.coding.code",
-        "min": 1,
         "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-flag-alert-code"
+        },
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -863,7 +1015,6 @@
       {
         "id": "Flag.author",
         "path": "Flag.author",
-        "min": 1,
         "mustSupport": true
       },
       {

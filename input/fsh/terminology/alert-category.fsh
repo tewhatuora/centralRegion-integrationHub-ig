@@ -16,14 +16,14 @@ Description:  "Alert Category codes ex. WebPAS in NZ Central Region"
 * #MC	"Miscellaneous Contraindication"   // -- Free text alert, no code values
 * #MA	"Miscellaneous"                    // -- Free text alert, no code values
 * #LS	"Legal Status"
-* #H1	"Drug reaction alerts"
-* #H2	"Medical condition alerts"
-* #H3	"Other allergy alerts"
-* #H4	"Infection prevention alerts"
-* #H5	"Situational alerts"
-* #H6	"Transfusion issue alerts"
-* #H7	"Disability Alerts"
-* #H8	"Care planning alerts"
+* #H1	"Drug reaction"
+* #H2	"Medical condition"
+* #H3	"Other allergy"
+* #H4	"Infection prevention"
+* #H5	"Situational"
+* #H6	"Transfusion issue"
+* #H7	"Disability"
+* #H8	"Care planning"
 
 * #food "Food Allergy"   // from sample not documentation
 
@@ -43,6 +43,7 @@ Description:  "Alert Category codes ex. WebPAS in NZ Central Region that denote 
 *  nzcr-alert-category-cs#A4
 *  nzcr-alert-category-cs#H1
 *  nzcr-alert-category-cs#H3
+*  nzcr-alert-category-cs#food
 
 
 ValueSet: NZCentralRegionFlagAlertCategoryValueSet
@@ -54,8 +55,21 @@ Description:  "Alert Category codes ex. WebPAS in NZ Central Region that denote 
 * ^status = #active
 * ^experimental = false
 
-* include codes from system nzcr-alert-category-cs
-* exclude codes from valueset nzcr-allergy-alert-category-vs
+* nzcr-alert-category-cs#NHIMWS
+* nzcr-alert-category-cs#FA
+* nzcr-alert-category-cs#DA
+* nzcr-alert-category-cs#MC
+* nzcr-alert-category-cs#MA
+* nzcr-alert-category-cs#LS
+* nzcr-alert-category-cs#H2
+* nzcr-alert-category-cs#H4
+* nzcr-alert-category-cs#H5
+* nzcr-alert-category-cs#H6
+* nzcr-alert-category-cs#H7
+* nzcr-alert-category-cs#H8
+
+// * include codes from system nzcr-alert-category-cs
+// * exclude codes from valueset nzcr-allergy-alert-category-vs
 
 
 

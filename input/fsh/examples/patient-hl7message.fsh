@@ -38,7 +38,7 @@ Usage:  #example
 * address[=].city = "Palmerston North"
 * address[=].postalCode = "4410"
 * address[=].country = "NEW ZEALAND"
-* address[=].text = "100 Broadway Avenue Palmerston North 4410 NEW ZEALAND"
+* address[=].use = #home
 
 * telecom[+].system = #phone
 * telecom[=].value = "02758880032"
@@ -54,7 +54,7 @@ Usage:  #example
 * address[=].city = "Palmerston North"
 * address[=].postalCode = "4410"
 * address[=].country = "NEW ZEALAND"
-* address[=].text = "100 Cambridge Street Kelvin Grove Palmerston North 4410 NEW ZEALAND"
+* address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
 * communication.language.coding.code = #en

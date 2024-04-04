@@ -101,6 +101,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nzcr-l4hmeta-template-version"
+        },
+        "name": "L4H Template Version",
+        "description": "The version number of the l4h templates used to translate the hl7v2 message into FHIR Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Patient/LanguageList"
         },
         "name": "LanguageList",
@@ -525,6 +533,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/nzcr-referral-category-cs"
+        },
+        "name": "NZ Central Region - Referral Category Code System",
+        "description": "Referral Category Type codes; ex. WebPAS in NZ Central Region; used as referral type, when no referral type provided.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/nzcr-referral-priority-cs"
         },
         "name": "NZ Central Region - Referral Priority Code System",
@@ -821,6 +837,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nzcr-l4hmeta-process-client-id"
+        },
+        "name": "Process Client ID",
+        "description": "The HL7v2 Source Client Id for the message/event that was translated into FHIR Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nzcr-l4hmeta-timestamp"
+        },
+        "name": "Process TimeStamp",
+        "description": "Date and time the source HL7v2 message was translated into FHIR Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/Referral"
         },
         "name": "Referral",
@@ -850,6 +882,38 @@
         "name": "Residency",
         "description": "An example of a patient from Te Whatu Ora, Central Region, with multiple NZ Residency codings",
         "exampleCanonical": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionPatient"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nzcr-l4hmeta-source-data-model-version"
+        },
+        "name": "Source Data Model Version",
+        "description": "The HL7v2 version number for the message/event that was translated into FHIR Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nzcr-l4hmeta-source-event-trigger"
+        },
+        "name": "Source Event Trigger",
+        "description": "The HL7v2 message/event trigger that was translated into FHIR Resource (eg A31, I13, etc)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nzcr-l4hmeta-source-record-id"
+        },
+        "name": "Source Record ID",
+        "description": "The HL7v2 record ID that was translated into FHIR Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nzcr-l4hmeta-source-record-type"
+        },
+        "name": "Source Record Type",
+        "description": "The HL7v2 record type that was translated into FHIR Resource (eg ADT, REF, etc)",
+        "exampleBoolean": false
       }
     ],
     "page": {

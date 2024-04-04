@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NZCentralRegionReferralCategoryCodeSystem",
+  "id": "nzcr-referral-category-cs",
+  "title": "NZ Central Region - Referral Category Code System",
+  "description": "Referral Category Type codes; ex. WebPAS in NZ Central Region; used as referral type, when no referral type provided.",
+  "url": "https://standards.digital.health.nz/ns/central-region/pas-referral-category",
+  "concept": [
+    {
+      "code": "R",
+      "display": "Referral"
+    },
+    {
+      "code": "W",
+      "display": "Waiting List Request"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 2
+}

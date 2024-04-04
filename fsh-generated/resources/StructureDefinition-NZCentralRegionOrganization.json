@@ -35,6 +35,118 @@
         "mustSupport": true
       },
       {
+        "id": "Organization.meta.extension:process-timestamp",
+        "path": "Organization.meta.extension",
+        "sliceName": "process-timestamp",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.meta.extension:source-event-trigger",
+        "path": "Organization.meta.extension",
+        "sliceName": "source-event-trigger",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.meta.extension:source-record-type",
+        "path": "Organization.meta.extension",
+        "sliceName": "source-record-type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-record-type"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.meta.extension:source-record-id",
+        "path": "Organization.meta.extension",
+        "sliceName": "source-record-id",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-record-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.meta.extension:source-data-mode-version",
+        "path": "Organization.meta.extension",
+        "sliceName": "source-data-mode-version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.meta.extension:process-client-id",
+        "path": "Organization.meta.extension",
+        "sliceName": "process-client-id",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.meta.extension:l4h-template-version",
+        "path": "Organization.meta.extension",
+        "sliceName": "l4h-template-version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://standards.digital.health.nz/ns/central-region/l4h-template-version"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Organization.implicitRules",
         "path": "Organization.implicitRules",
         "max": "0"
