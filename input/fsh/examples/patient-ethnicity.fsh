@@ -21,12 +21,14 @@ Usage:  #example
 * birthDate = "1966-01-05"
 * gender = #male
 
-* extension[ethnicity][+].valueCodeableConcept.coding[+].code = #21111
-* extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel4CS
-* extension[ethnicity][=].valueCodeableConcept.coding[=].display = "Māori"
-* extension[ethnicity][=].valueCodeableConcept.coding[+].code = #21
-* extension[ethnicity][=].valueCodeableConcept.coding[=].system = $NZStatsEthnicityLevel2CS
-* extension[ethnicity][=].valueCodeableConcept.coding[=].display = "NZ Māori"
+* extension[ethnicity][+].valueCodeableConcept.coding[level4]
+  * code = #21111
+  * display = "Māori"
+  // * system = $NZStatsEthnicityLevel4CS
+* extension[ethnicity][=].valueCodeableConcept.coding[level2]
+  * code = #21
+  * display = "NZ Māori"
+  * system = $NZStatsEthnicityLevel2CS
 
 
 * maritalStatus.coding[+].code = #S
@@ -55,9 +57,13 @@ Usage:  #example
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "Yes"
 
-* extension[nzResidency].extension[status].valueCodeableConcept.coding.code = #no
-* extension[nzResidency].extension[status].valueCodeableConcept.coding.system = $NZBaseNZResidencyCS
-* extension[nzResidency].extension[status].valueCodeableConcept.coding.display = "Not a Permanent Resident"
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[nzBase]
+  * code = #no
+  * display = "Not a Permanent Resident"
+  // * system = $NZBaseNZResidencyCS
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[rawSource]
+  * code = #STU
+  * display = "Student visa"
 
 * deceasedBoolean = false
 

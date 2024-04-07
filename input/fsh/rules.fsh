@@ -19,10 +19,12 @@ RuleSet: cmapEntryComment(from, frDisplay, to, toDisplay, comment)
     * equivalence = #equivalent
     * comment = {comment}
 
+
 // We make extensive use of additional-bindings
-RuleSet: AdditionalBinding(purpose, canonical)
+RuleSet: AdditionalBindingByExtension(purpose, canonical)
 * ^binding.extension[$HL7AdditionalBinding][+].extension[purpose].valueCode = {purpose}
 * ^binding.extension[$HL7AdditionalBinding][=].extension[valueSet].valueCanonical = {canonical}
+
 
 
 // Every resource has a default set of meta fields

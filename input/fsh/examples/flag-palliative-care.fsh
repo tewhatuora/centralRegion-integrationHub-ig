@@ -12,14 +12,14 @@ Usage:  #example
 * status = #active
 
 * category
-  * coding[+]
+  * coding[fhirOrig]
     * code = #H2
-    * system = $NZCentralRegionAlertCategoryCS
     * display = "Medical condition alerts"
-  * coding[+]
+    // * system = $NZCentralRegionAlertCategoryCS
+  * coding[rawSource]
     * code = #safety
-    * system = $HL7FlagCategoryCS 
     * display = "Safety"
+    // * system = $HL7FlagCategoryCS 
 
 * code
   * coding 

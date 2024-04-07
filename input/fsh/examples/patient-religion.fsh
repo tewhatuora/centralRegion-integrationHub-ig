@@ -49,16 +49,22 @@ Usage:  #example
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "Yes"
 
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #no
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].system = $NZBaseNZResidencyCS
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Not a Permanent Resident"
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[nzBase]
+  * code = #no
+  * display = "Not a Permanent Resident"
+  // * system = $NZBaseNZResidencyCS
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[rawSource]
+  * code = #STU
+  * display = "Student visa"
 
-* extension[patient-religion].valueCodeableConcept.coding[+].code = #1076
-* extension[patient-religion].valueCodeableConcept.coding[=].system = $HL7PatientRelgionCS
-* extension[patient-religion].valueCodeableConcept.coding[=].display = "Presbyterian"
-* extension[patient-religion].valueCodeableConcept.coding[+].code = #R33
-* extension[patient-religion].valueCodeableConcept.coding[=].system = $NZCentralRegionReligionCS
-* extension[patient-religion].valueCodeableConcept.coding[=].display = "Presbyterian"
+* extension[patient-religion].valueCodeableConcept.coding[origFhir]
+  * code = #1076
+  * display = "Presbyterian"
+  // * system = $HL7PatientRelgionCS
+* extension[patient-religion].valueCodeableConcept.coding[rawSource]
+  * code = #R33
+  * display = "Presbyterian"
+  // * system = $NZCentralRegionReligionCS
 
 * deceasedBoolean = false
 
@@ -112,13 +118,18 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "Yes"
 
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #no
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].system = $NZBaseNZResidencyCS
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Not a Permanent Resident"
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[nzBase]
+  * code = #no
+  * display = "Not a Permanent Resident"
+  // * system = $NZBaseNZResidencyCS
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[rawSource]
+  * code = #STU
+  * display = "Student visa"
 
-* extension[patient-religion].valueCodeableConcept.coding[+].code = #R27
-* extension[patient-religion].valueCodeableConcept.coding[=].system = $NZCentralRegionReligionCS
-* extension[patient-religion].valueCodeableConcept.coding[=].display = "Objects to question"
+* extension[patient-religion].valueCodeableConcept.coding[rawSource]
+  * code = #R27
+  * display = "Objects to question"
+  // * system = $NZCentralRegionReligionCS
 
 * deceasedBoolean = false
 

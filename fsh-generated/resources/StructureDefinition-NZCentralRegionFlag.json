@@ -541,22 +541,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/flag-category",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-              "extension": [
-                {
-                  "url": "purpose",
-                  "valueCode": "required"
-                },
-                {
-                  "url": "valueSet",
-                  "valueCanonical": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag"
-                }
-              ]
-            }
-          ]
+          "valueSet": "http://hl7.org/fhir/ValueSet/flag-category"
         },
         "mapping": [
           {
@@ -583,6 +568,18 @@
       {
         "id": "Flag.category.coding",
         "path": "Flag.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice based on the coding[].system"
+        },
+        "min": 2,
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -656,6 +653,102 @@
       },
       {
         "id": "Flag.category.coding.userSelected",
+        "path": "Flag.category.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding:fhirOrig",
+        "path": "Flag.category.coding",
+        "sliceName": "fhirOrig",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Flag.category.coding:fhirOrig.id",
+        "path": "Flag.category.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding:fhirOrig.extension",
+        "path": "Flag.category.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding:fhirOrig.system",
+        "path": "Flag.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/flag-category",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.category.coding:fhirOrig.version",
+        "path": "Flag.category.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding:fhirOrig.code",
+        "path": "Flag.category.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/flag-category"
+        }
+      },
+      {
+        "id": "Flag.category.coding:fhirOrig.display",
+        "path": "Flag.category.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.category.coding:fhirOrig.userSelected",
+        "path": "Flag.category.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding:rawSource",
+        "path": "Flag.category.coding",
+        "sliceName": "rawSource",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Flag.category.coding:rawSource.id",
+        "path": "Flag.category.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding:rawSource.extension",
+        "path": "Flag.category.coding.extension",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding:rawSource.system",
+        "path": "Flag.category.coding.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/central-region/alert-category",
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.category.coding:rawSource.version",
+        "path": "Flag.category.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Flag.category.coding:rawSource.code",
+        "path": "Flag.category.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag"
+        }
+      },
+      {
+        "id": "Flag.category.coding:rawSource.display",
+        "path": "Flag.category.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Flag.category.coding:rawSource.userSelected",
         "path": "Flag.category.coding.userSelected",
         "max": "0"
       },

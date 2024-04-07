@@ -1,5 +1,8 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.2 
+*  Rules requiring multiple coding entries on `Flag.category`, `Patient.extension[ethnicity]` etc are done using array slicing rather than [FHIR AdditionalBinding extension](https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-additional-binding.html)
+
 ### v1.0.1
 We turned on FHIR validation, which required the following fixes in the ImplementationGuide:
 * `Flag.extension[alert].extension[allergyReaction]` changed from `valueCoding` to `valueCodeableConcept` 
@@ -10,7 +13,6 @@ We turned on FHIR validation, which required the following fixes in the Implemen
 * Added numeric codes for Hospitals from [Te Whatu Ora's Facility Code Tables](https://www.tewhatuora.govt.nz/assets/Our-health-system/Data-and-statistics/Common-code-tables/Facilities20240401.xlsx) to [Hospital Codes](./CodeSystem-nzcr-hospital-code-cs.html) as they are used to identify recording hospital for NHIMWS based alerts.
 * Display text for [Alert Category](./CodeSystem-nzcr-alert-category-cs.html) codes now match what actually appears in source HL7 messages.
 * Display text for [Referral Status](./CodeSystem-nzcr-referral-status-cs.html) code `#A` is `Accepted` rather than `Active` and now matches what actually appears in source HL7 messages.
-* Required identifier type on `ServiceRequest.identifier` is `RI` - `Referral Identifier`
 * `meta.extension` fields recording the HL7 version number, triggering event/message,  and l4h templates version number are now defined
 * `ServiceRequest.identifier.type` is `#FILL` - `Filler Identifier` - denoting that PAS has assigned identifier.
 * Added `ServiceRequest.extension[referral].extension[dateReceived]` field to [Referral profile](./StructureDefinition-NZCentralRegionReferral.html).

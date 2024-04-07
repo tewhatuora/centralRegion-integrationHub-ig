@@ -245,22 +245,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-              "extension": [
-                {
-                  "url": "purpose",
-                  "valueCode": "required"
-                },
-                {
-                  "url": "valueSet",
-                  "valueCanonical": "https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2"
-                }
-              ]
-            }
-          ]
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code"
         }
       },
       {
@@ -271,7 +256,17 @@
       {
         "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding",
         "path": "Patient.extension.value[x].coding",
-        "min": 1,
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice based on the coding[].system"
+        },
+        "min": 2,
         "mustSupport": true
       },
       {
@@ -319,6 +314,86 @@
       },
       {
         "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding.userSelected",
+        "path": "Patient.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level2",
+        "path": "Patient.extension.value[x].coding",
+        "sliceName": "level2",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level2.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level2.version",
+        "path": "Patient.extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level2.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2"
+        }
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level2.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level2.userSelected",
+        "path": "Patient.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level4",
+        "path": "Patient.extension.value[x].coding",
+        "sliceName": "level4",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level4.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level4.version",
+        "path": "Patient.extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level4.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code"
+        }
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level4.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.coding:level4.userSelected",
         "path": "Patient.extension.value[x].coding.userSelected",
         "max": "0"
       },
@@ -703,22 +778,7 @@
         "path": "Patient.extension.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-              "extension": [
-                {
-                  "url": "purpose",
-                  "valueCode": "required"
-                },
-                {
-                  "url": "valueSet",
-                  "valueCanonical": "https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency"
-                }
-              ]
-            }
-          ]
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code"
         }
       },
       {
@@ -729,7 +789,17 @@
       {
         "id": "Patient.extension:nzResidency.extension:status.value[x].coding",
         "path": "Patient.extension.extension.value[x].coding",
-        "min": 1,
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice based on the coding[].system"
+        },
+        "min": 2,
         "mustSupport": true,
         "mapping": [
           {
@@ -783,6 +853,86 @@
       },
       {
         "id": "Patient.extension:nzResidency.extension:status.value[x].coding.userSelected",
+        "path": "Patient.extension.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:nzBase",
+        "path": "Patient.extension.extension.value[x].coding",
+        "sliceName": "nzBase",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:nzBase.system",
+        "path": "Patient.extension.extension.value[x].coding.system",
+        "min": 1,
+        "patternUri": "https://standards.digital.health.nz/ns/nz-residency-code",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:nzBase.version",
+        "path": "Patient.extension.extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:nzBase.code",
+        "path": "Patient.extension.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code"
+        }
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:nzBase.display",
+        "path": "Patient.extension.extension.value[x].coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:nzBase.userSelected",
+        "path": "Patient.extension.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:rawSource",
+        "path": "Patient.extension.extension.value[x].coding",
+        "sliceName": "rawSource",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:rawSource.system",
+        "path": "Patient.extension.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:rawSource.version",
+        "path": "Patient.extension.extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:rawSource.code",
+        "path": "Patient.extension.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency"
+        }
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:rawSource.display",
+        "path": "Patient.extension.extension.value[x].coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nzResidency.extension:status.value[x].coding:rawSource.userSelected",
         "path": "Patient.extension.extension.value[x].coding.userSelected",
         "max": "0"
       },
@@ -843,27 +993,22 @@
         "path": "Patient.extension.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-              "extension": [
-                {
-                  "url": "purpose",
-                  "valueCode": "required"
-                },
-                {
-                  "url": "valueSet",
-                  "valueCanonical": "https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion"
-                }
-              ]
-            }
-          ]
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation"
         }
       },
       {
         "id": "Patient.extension:patient-religion.value[x].coding",
         "path": "Patient.extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice based on the coding[].system"
+        },
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -919,6 +1064,86 @@
       },
       {
         "id": "Patient.extension:patient-religion.value[x].coding.userSelected",
+        "path": "Patient.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:origFhir",
+        "path": "Patient.extension.value[x].coding",
+        "sliceName": "origFhir",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:origFhir.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:origFhir.version",
+        "path": "Patient.extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:origFhir.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation"
+        }
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:origFhir.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:origFhir.userSelected",
+        "path": "Patient.extension.value[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:rawSource",
+        "path": "Patient.extension.value[x].coding",
+        "sliceName": "rawSource",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:rawSource.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/central-region/patient-religion",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:rawSource.version",
+        "path": "Patient.extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:rawSource.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion"
+        }
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:rawSource.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:patient-religion.value[x].coding:rawSource.userSelected",
         "path": "Patient.extension.value[x].coding.userSelected",
         "max": "0"
       },

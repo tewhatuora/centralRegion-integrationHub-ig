@@ -61,16 +61,21 @@
     {
       "extension": [
         {
-          "url": "status",
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "no",
                 "system": "https://standards.digital.health.nz/ns/nz-residency-code",
+                "code": "no",
                 "display": "Not a Permanent Resident"
+              },
+              {
+                "system": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
+                "code": "STU",
+                "display": "Student visa"
               }
             ]
-          }
+          },
+          "url": "status"
         }
       ],
       "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency"

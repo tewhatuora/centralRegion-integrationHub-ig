@@ -24,20 +24,23 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
 
 * category 1..1 MS
 * category from $HL7FlagCategoryVS (required)
-* category insert AdditionalBinding(#required, $NZCentralRegionFlagAlertCategoryVS)
 
-//  * coding ^slicing.discriminator.type = #pattern
-//  * coding ^slicing.discriminator.path = "system"
-//  * coding ^slicing.rules = #open
-//  * coding ^slicing.description = "Slice based on the coding[].system"
-//  * coding contains origFhir 1..1 and webPAS 1..1
+// SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+// * category insert AdditionalBindingByExtension(#required, $NZCentralRegionFlagAlertCategoryVS)
 
-//  * coding[origFhir].system = "http://terminology.hl7.org/CodeSystem/flag-category" (exactly)
-//  * coding[origFhir].code from $HL7FlagCategoryVS (required)
+  * coding ^slicing.discriminator.type = #pattern
+  * coding ^slicing.discriminator.path = "system"
+  * coding ^slicing.rules = #open
+  * coding ^slicing.description = "Slice based on the coding[].system"
+  * coding contains fhirOrig 1..1 and rawSource 1..1
 
-//  * coding[webPAS].system = "https://standards.digital.health.nz/ns/central-region/alert-category" (exactly)
-//  * coding[webPAS].code from $NZCentralRegionFlagAlertCategoryVS (required)
+  * coding[fhirOrig].system = "http://terminology.hl7.org/CodeSystem/flag-category" (exactly)
+  * coding[fhirOrig].code from $HL7FlagCategoryVS (required)
 
+  * coding[rawSource].system = "https://standards.digital.health.nz/ns/central-region/alert-category" (exactly)
+  * coding[rawSource].code from $NZCentralRegionFlagAlertCategoryVS (required)
+
+  * coding MS
   * coding.system 1..1 MS
   * coding.display 1..1 MS
   * coding.version 0..0      // code systems are not explicitly versioned

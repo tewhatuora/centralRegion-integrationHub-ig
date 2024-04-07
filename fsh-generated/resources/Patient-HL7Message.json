@@ -31,40 +31,21 @@
       ]
     },
     {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "21",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
+            "code": "21111",
+            "display": "Māori"
+          },
+          {
             "system": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
+            "code": "21",
             "display": "NZ Māori"
           }
         ]
-      }
-    },
-    {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "11",
-            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
-            "display": "NZ European"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "32",
-            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-2-code",
-            "display": "Cook Island Māori"
-          }
-        ]
-      }
+      },
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
@@ -73,16 +54,21 @@
     {
       "extension": [
         {
-          "url": "status",
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "no",
                 "system": "https://standards.digital.health.nz/ns/nz-residency-code",
+                "code": "no",
                 "display": "Not a Permanent Resident"
+              },
+              {
+                "system": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
+                "code": "STU",
+                "display": "Student visa"
               }
             ]
-          }
+          },
+          "url": "status"
         }
       ],
       "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency"

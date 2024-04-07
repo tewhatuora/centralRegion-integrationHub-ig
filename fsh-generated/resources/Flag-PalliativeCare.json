@@ -75,6 +75,22 @@
       "value": "WYS1973"
     }
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/flag-category",
+          "code": "H2",
+          "display": "Medical condition alerts"
+        },
+        {
+          "system": "https://standards.digital.health.nz/ns/central-region/alert-category",
+          "code": "safety",
+          "display": "Safety"
+        }
+      ]
+    }
+  ],
   "author": {
     "type": "Practitioner",
     "identifier": {
@@ -94,22 +110,6 @@
     "display": "Ramadan, Mohamed Mahmoud S DR"
   },
   "status": "active",
-  "category": [
-    {
-      "coding": [
-        {
-          "code": "H2",
-          "system": "https://standards.digital.health.nz/ns/central-region/alert-category",
-          "display": "Medical condition alerts"
-        },
-        {
-          "code": "safety",
-          "system": "http://terminology.hl7.org/CodeSystem/flag-category",
-          "display": "Safety"
-        }
-      ]
-    }
-  ],
   "code": {
     "coding": [
       {

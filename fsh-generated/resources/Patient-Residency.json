@@ -37,21 +37,21 @@
     {
       "extension": [
         {
-          "url": "status",
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "unknown",
                 "system": "https://standards.digital.health.nz/ns/nz-residency-code",
+                "code": "unknown",
                 "display": "Unknown"
               },
               {
-                "code": "DET",
                 "system": "https://standards.digital.health.nz/ns/central-region/nz-residency-code",
+                "code": "DET",
                 "display": "Details required"
               }
             ]
-          }
+          },
+          "url": "status"
         }
       ],
       "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency"

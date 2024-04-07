@@ -105,9 +105,25 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension[sex-at-birth] 0..0
 
 * extension[ethnicity].valueCodeableConcept from $NZStatsEthnicityLevel4VS (required)
-* extension[ethnicity].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionEthnicityLevel2VS)
+
+// SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+// * extension[ethnicity].valueCodeableConcept insert AdditionalBindingByExtension(#required, $NZCentralRegionEthnicityLevel2VS)
+
 * extension[ethnicity] 0..3 MS
-  * valueCodeableConcept.coding 1..* MS           //  <<<---- THIS ONE HERE is required to make the publisher work with the rest
+  * valueCodeableConcept
+    * coding ^slicing.discriminator.type = #pattern
+    * coding ^slicing.discriminator.path = "system"
+    * coding ^slicing.rules = #open
+    * coding ^slicing.description = "Slice based on the coding[].system"
+    * coding contains level2 1..1 and level4 1..1
+
+    * coding[level2].system = $NZStatsEthnicityLevel2CS (exactly)
+    * coding[level2].code from $NZCentralRegionEthnicityLevel2VS (required)
+
+    * coding[level4].system = $NZStatsEthnicityLevel4CS (exactly)
+    * coding[level4].code from $NZStatsEthnicityLevel4VS (required)
+
+  * valueCodeableConcept.coding MS
   * valueCodeableConcept.coding.code 1..1 MS      // from PID-22.1
   * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-22.1
   * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-22.1 ??
@@ -136,9 +152,25 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension contains $NZBaseNZResidency named nzResidency 0..1 MS
 * extension[nz-residency]
   * extension[status].valueCodeableConcept from $NZBaseNZResidencyVS
-  * extension[status].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionResidencyVS)
+
+// SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+//  * extension[status].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionResidencyVS)
+
   * extension[status] 
-    * valueCodeableConcept.coding 1..* MS    
+    * valueCodeableConcept
+      * coding ^slicing.discriminator.type = #pattern
+      * coding ^slicing.discriminator.path = "system"
+      * coding ^slicing.rules = #open
+      * coding ^slicing.description = "Slice based on the coding[].system"
+      * coding contains nzBase 1..1 and rawSource 1..1
+ 
+      * coding[nzBase].system = $NZBaseNZResidencyCS
+      * coding[nzBase].code from $NZBaseNZResidencyVS (required)
+
+      * coding[rawSource].system = $NZCentralRegionResidencyCS (exactly)
+      * coding[rawSource].code from $NZCentralRegionResidencyVS (required)
+
+    * valueCodeableConcept.coding MS    
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-28.1
     * valueCodeableConcept.coding.system 1..1 MS    
     * valueCodeableConcept.coding.display 1..1 MS   // from PID-28.2 or by lookup from PID-28.1 ??
@@ -169,9 +201,25 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * extension contains $HL7PatientReligion named patient-religion 0..1 MS
 * extension[patient-religion].valueCodeableConcept from $HL7PatientRelgionVS
-* extension[patient-religion].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionReligionVS)
+
+// SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+// * extension[patient-religion].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionReligionVS)
+
 * extension[patient-religion] 0..1 MS
-  * valueCodeableConcept.coding 1..* MS           //  <<<---- THIS ONE HERE is required to make the publisher work with the rest
+  * valueCodeableConcept
+    * coding ^slicing.discriminator.type = #pattern
+    * coding ^slicing.discriminator.path = "system"
+    * coding ^slicing.rules = #open
+    * coding ^slicing.description = "Slice based on the coding[].system"
+    * coding contains origFhir 0..1 and rawSource 1..1    // some values like 'Refuse to Answer' have no code in the origFhir coding
+
+    * coding[origFhir].system = $HL7PatientRelgionCS (exactly)
+    * coding[origFhir].code from $HL7PatientRelgionVS (required)
+
+    * coding[rawSource].system = $NZCentralRegionReligionCS (exactly)
+    * coding[rawSource].code from $NZCentralRegionReligionVS (required)
+
+  * valueCodeableConcept.coding MS
   * valueCodeableConcept.coding.code 1..1 MS      // from PID-17.1
   * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-17.1
   * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-17.1 ??

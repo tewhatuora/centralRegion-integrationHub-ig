@@ -405,7 +405,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-address.fsh",
     "startLine": 2,
-    "endLine": 64
+    "endLine": 68
   },
   {
     "outputFile": "Patient-Contact.json",
@@ -413,7 +413,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-contact.fsh",
     "startLine": 2,
-    "endLine": 73
+    "endLine": 77
   },
   {
     "outputFile": "Patient-Ethnicity-MultipleCodings.json",
@@ -421,7 +421,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-ethnicity.fsh",
     "startLine": 2,
-    "endLine": 64
+    "endLine": 70
   },
   {
     "outputFile": "Patient-GeneralPractitioner.json",
@@ -429,7 +429,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-practitioner.fsh",
     "startLine": 2,
-    "endLine": 65
+    "endLine": 69
   },
   {
     "outputFile": "Patient-HL7Message.json",
@@ -437,15 +437,15 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-hl7message.fsh",
     "startLine": 2,
-    "endLine": 124
+    "endLine": 127
   },
   {
     "outputFile": "Patient-LanguageList.json",
     "fshName": "LanguageList",
     "fshType": "Instance",
     "fshFile": "examples/patient-communication.fsh",
-    "startLine": 66,
-    "endLine": 207
+    "startLine": 70,
+    "endLine": 215
   },
   {
     "outputFile": "Patient-LanguageSingle.json",
@@ -453,7 +453,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-communication.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 61
   },
   {
     "outputFile": "Patient-MaritalStatus-CivilUnion.json",
@@ -461,23 +461,23 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-maritalStatus.fsh",
     "startLine": 2,
-    "endLine": 55
+    "endLine": 59
   },
   {
     "outputFile": "Patient-MaritalStatus-Single.json",
     "fshName": "MaritalStatus-Single",
     "fshType": "Instance",
     "fshFile": "examples/patient-maritalStatus.fsh",
-    "startLine": 57,
-    "endLine": 109
+    "startLine": 61,
+    "endLine": 117
   },
   {
     "outputFile": "Patient-Religion-NoAnswer.json",
     "fshName": "Religion-NoAnswer",
     "fshType": "Instance",
     "fshFile": "examples/patient-religion.fsh",
-    "startLine": 67,
-    "endLine": 125
+    "startLine": 73,
+    "endLine": 136
   },
   {
     "outputFile": "Patient-Religion-Presbyterian.json",
@@ -485,7 +485,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-religion.fsh",
     "startLine": 2,
-    "endLine": 65
+    "endLine": 71
   },
   {
     "outputFile": "Patient-Residency.json",
@@ -493,7 +493,7 @@
     "fshType": "Instance",
     "fshFile": "examples/patient-residency.fsh",
     "startLine": 2,
-    "endLine": 59
+    "endLine": 60
   },
   {
     "outputFile": "ServiceRequest-Referral.json",
@@ -525,7 +525,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_flag.fsh",
     "startLine": 2,
-    "endLine": 146
+    "endLine": 149
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionOrganization.json",
@@ -541,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/profile_patient.fsh",
     "startLine": 4,
-    "endLine": 293
+    "endLine": 341
   },
   {
     "outputFile": "StructureDefinition-NZCentralRegionPractitioner.json",

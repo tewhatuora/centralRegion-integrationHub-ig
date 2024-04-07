@@ -47,12 +47,13 @@ Usage:  #example
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "No"
 
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #unknown
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].system = $NZBaseNZResidencyCS
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Unknown"
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[+].code = #DET
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].system = $NZCentralRegionResidencyCS
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[=].display = "Details required"
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[nzBase]
+  * code = #unknown
+  * display = "Unknown"
+  // * system = $NZBaseNZResidencyCS
+* extension[nzResidency].extension[status].valueCodeableConcept.coding[rawSource]
+  * code = #DET
+  * display = "Details required"
 
 * deceasedBoolean = false
 
