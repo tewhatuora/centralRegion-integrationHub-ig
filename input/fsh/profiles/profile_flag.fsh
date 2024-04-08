@@ -23,9 +23,9 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
 * status 1..1 MS
 
 * category 1..1 MS
-* category from $HL7FlagCategoryVS (required)
 
 // SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+// * category from $HL7FlagCategoryVS (required)
 // * category insert AdditionalBindingByExtension(#required, $NZCentralRegionFlagAlertCategoryVS)
 
   * coding ^slicing.discriminator.type = #pattern

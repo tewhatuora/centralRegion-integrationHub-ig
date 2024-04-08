@@ -104,9 +104,9 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * multipleBirth[x] 0..0
 * extension[sex-at-birth] 0..0
 
-* extension[ethnicity].valueCodeableConcept from $NZStatsEthnicityLevel4VS (required)
 
 // SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+// * extension[ethnicity].valueCodeableConcept from $NZStatsEthnicityLevel4VS (required)
 // * extension[ethnicity].valueCodeableConcept insert AdditionalBindingByExtension(#required, $NZCentralRegionEthnicityLevel2VS)
 
 * extension[ethnicity] 0..3 MS
@@ -151,9 +151,9 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 // NZ Base v2.0.0 - hasn't defined things quite completely yet - so reusing Citizenship structure with Residency name....
 * extension contains $NZBaseNZResidency named nzResidency 0..1 MS
 * extension[nz-residency]
-  * extension[status].valueCodeableConcept from $NZBaseNZResidencyVS
 
 // SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+//  * extension[status].valueCodeableConcept from $NZBaseNZResidencyVS
 //  * extension[status].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionResidencyVS)
 
   * extension[status] 
@@ -200,9 +200,9 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * photo 0..0
 
 * extension contains $HL7PatientReligion named patient-religion 0..1 MS
-* extension[patient-religion].valueCodeableConcept from $HL7PatientRelgionVS
 
 // SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+// * extension[patient-religion].valueCodeableConcept from $HL7PatientRelgionVS
 // * extension[patient-religion].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionReligionVS)
 
 * extension[patient-religion] 0..1 MS

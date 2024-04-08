@@ -1,16 +1,6 @@
-[Address-Suburb]: Patient-Address-Suburb.html
 [MDHB FHIR REST Endpoint]: CapabilityStatement-nzcr-SmileCDR.html
-[Contact]: Patient-Contact.html
-[Ethnicity-MultipleCodings]: Patient-Ethnicity-MultipleCodings.html
-[GeneralPractitioner]: Patient-GeneralPractitioner.html
 [NZCentralRegionHL7v2Message]: StructureDefinition-nzcr-hl7v2-message.html
-[HL7Message]: Patient-HL7Message.html
 [L4HTemplateVersion]: StructureDefinition-nzcr-l4hmeta-template-version.html
-[LanguageList]: Patient-LanguageList.html
-[LanguageSingle]: Patient-LanguageSingle.html
-[MaritalStatus-CivilUnion]: Patient-MaritalStatus-CivilUnion.html
-[MaritalStatus-Single]: Patient-MaritalStatus-Single.html
-[MentalHealthLegalStatus]: ClinicalImpression-MentalHealthLegalStatus.html
 [NZCentralRegionAlertTypeCodeSystem]: CodeSystem-nzcr-alert-category-cs.html
 [NZCentralRegionAllergyAlertCategoryValueSet]: ValueSet-nzcr-allergy-alert-category-vs.html
 [NZCentralRegionAllergyAlertCodeValueSet]: ValueSet-nzcr-allergy-alert-code-vs.html
@@ -95,14 +85,8 @@
 [NZCentralRegionPatient]: StructureDefinition-NZCentralRegionPatient.html
 [NZCentralRegionPractitioner]: StructureDefinition-NZCentralRegionPractitioner.html
 [NZCentralRegionReferral]: StructureDefinition-NZCentralRegionReferral.html
-[PalliativeCare]: Flag-PalliativeCare.html
-[PeanutAllergy]: AllergyIntolerance-PeanutAllergy.html
 [L4HProcessClientId]: StructureDefinition-nzcr-l4hmeta-process-client-id.html
 [L4HTimestamp]: StructureDefinition-nzcr-l4hmeta-timestamp.html
-[Referral]: ServiceRequest-Referral.html
-[Religion-NoAnswer]: Patient-Religion-NoAnswer.html
-[Religion-Presbyterian]: Patient-Religion-Presbyterian.html
-[Residency]: Patient-Residency.html
 [L4HSourceDataModelVersion]: StructureDefinition-nzcr-l4hmeta-source-data-model-version.html
 [L4HSourceEventTrigger]: StructureDefinition-nzcr-l4hmeta-source-event-trigger.html
 [L4HSourceRecordId]: StructureDefinition-nzcr-l4hmeta-source-record-id.html

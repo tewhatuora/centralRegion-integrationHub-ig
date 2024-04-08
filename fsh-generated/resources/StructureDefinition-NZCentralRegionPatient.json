@@ -242,11 +242,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code"
-        }
+        ]
       },
       {
         "id": "Patient.extension:ethnicity.value[x]:valueCodeableConcept.extension",
@@ -774,14 +770,6 @@
         ]
       },
       {
-        "id": "Patient.extension:nzResidency.extension:status.value[x]",
-        "path": "Patient.extension.extension.value[x]",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code"
-        }
-      },
-      {
         "id": "Patient.extension:nzResidency.extension:status.value[x].id",
         "path": "Patient.extension.extension.value[x].id",
         "max": "0"
@@ -987,14 +975,6 @@
             "map": "'http://hl7.org/fhir/StructureDefinition/patient-religion'"
           }
         ]
-      },
-      {
-        "id": "Patient.extension:patient-religion.value[x]",
-        "path": "Patient.extension.value[x]",
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation"
-        }
       },
       {
         "id": "Patient.extension:patient-religion.value[x].coding",
