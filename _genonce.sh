@@ -37,7 +37,6 @@ else
 	fi
 fi
 
-
 # SmileCDR chokes on the examples in the IG package.tgz - gotta do a fixup
 echo "Fixing ImplementationGuide in package.tgz..."
 cd output
@@ -48,8 +47,8 @@ rm ImplementationGuide-nz.central.ihub.ig.json
 mv fixed.json ImplementationGuide-nz.central.ihub.ig.json
 cd ..
 mv package.tgz package.orig.tgz
-tar czf package.fixed.tgz package
+tar czf package.tgz package
 rm -rf package
 cd ..
-echo "Fixed IG in package.fixed.tgz"
+echo "Fixed IG in package.tgz"
 
