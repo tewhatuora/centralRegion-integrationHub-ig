@@ -2,6 +2,7 @@
 Change history for this FHIR Implementation Guide is as follows:
 ### v1.0.2 
 *  Rules requiring multiple coding entries on `Flag.category`, `Patient.extension[ethnicity]` etc are done using array slicing rather than [FHIR AdditionalBinding extension](https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-additional-binding.html).   This means the original ValueSet bindings are removed.
+* `Patient.telecom` cardinality put back to `0..*`
 
 ### v1.0.1
 We turned on FHIR validation, which required the following fixes in the ImplementationGuide:

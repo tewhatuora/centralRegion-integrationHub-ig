@@ -65,7 +65,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * period 0..0
   * id 0..0
 
-* telecom 1..3
+* telecom 0..* MS
   * extension[cp-purpose] 0..0
   * period 0..0
   * rank 0..0
