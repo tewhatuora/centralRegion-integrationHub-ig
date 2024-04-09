@@ -5,7 +5,7 @@ Description: "Flag categories NHIMWS, MA & MC are free-text uncoded Categories, 
 Severity: #error
 Expression: "category.coding.where(code = 'NHIMWS' or code = 'MA' or code='MC').exists() implies 
     code.text.exists() and 
-    code.coding.exists().not() and
+    code.coding.code.memberOf('http://terminology.hl7.org/ValueSet/v3-NullFlavor') and
     author.exists().not() and
     extension[flag-alert].extension[recordingHospital].coding.display.exists().not()"
 

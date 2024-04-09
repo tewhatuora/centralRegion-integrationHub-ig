@@ -13,6 +13,26 @@
       "display": "Palmerston North Hospital"
     },
     {
+      "code": "WRH",
+      "display": "Wairarapa Hospital"
+    },
+    {
+      "code": "WHN",
+      "display": "Whanganui Hospital"
+    },
+    {
+      "code": "5750",
+      "display": "Whanganui Mental Health Services"
+    },
+    {
+      "code": "1234",
+      "display": "New Zealand Health Information Service"
+    },
+    {
+      "code": "6001",
+      "display": "Centre for Adverse Reaction Monitoring"
+    },
+    {
       "code": "3914",
       "display": "Alexandra Hospital"
     },
@@ -251,5 +271,5 @@
   ],
   "experimental": false,
   "caseSensitive": true,
-  "count": 60
+  "count": 65
 }

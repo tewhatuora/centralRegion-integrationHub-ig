@@ -53,8 +53,8 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
   * extension 0..0
   * id 0..0
   
-* effective[x] 1..1 MS
-* effective[x] only dateTime  // ZLS-8  - review datetime
+* effective[x] 0..1 MS        
+* effective[x] only dateTime  // ZLS-8  - review datetime  (which is optional)
 
 * date MS    // ZLS-12   - date review was first recorded
 

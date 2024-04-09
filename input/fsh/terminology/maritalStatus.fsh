@@ -8,6 +8,7 @@ Description:  "A few extra Marital Status codes that are in use in Central Regio
 * ^experimental = false
 * ^caseSensitive = true
 
+* #X "Separated" "Person is Separated, but not 'Legally Separated'"
 * #V "Civil Union" "Person is in a Civil Union"
 * #C "de Facto" "Person is in a de Facto relationship"   // Why didn't they just use #T Domestic Partner ? or #C Common law
 

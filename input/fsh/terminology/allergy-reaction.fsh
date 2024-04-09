@@ -25,7 +25,7 @@ Description:  "Allergy Reaction codes for categories H1 & H3; ex. WebPAS in NZ C
 * ^experimental = false
 * ^caseSensitive = true
 
-* #R01  "Drg anaphylaxis"
+* #R01  "Drug anaphylaxis"
 * #R02  "drug allergy"
 * #R03  "drug intolerance"
 * #R04  "food anaphylaxis"
@@ -49,7 +49,7 @@ Description:  "Allergy Reaction codes ex. WebPAS in NZ Central Region."
 
 * include codes from system nzcr-allergy-reaction-a3a4-cs
 * include codes from system nzcr-allergy-reaction-h1h3-cs
-
+* include $HL7NullFlavorCS#NP
 
 
 // FHIR Allergy Type Codes from WebPAS Allergy Reaction Codes
@@ -84,7 +84,7 @@ Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR alle
   * source = $NZCentralRegionAllergyReactionH1H3CS
   * target = $HL7AllergyTypeCS
 
-* insert cmapEntry(R01, "Drg anaphylaxis",   "allergy", "Allergy")
+* insert cmapEntry(R01, "Drug anaphylaxis",  "allergy", "Allergy")
 * insert cmapEntry(R02, "drug allergy",      "allergy", "Allergy")
 * insert cmapEntry(R03, "drug intolerance",  "intolerance", "Intolerance")
 * insert cmapEntry(R04, "food anaphylaxis",  "allergy", "Allergy")
@@ -128,7 +128,7 @@ Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR alle
   * source = $NZCentralRegionAllergyReactionH1H3CS
   * target = $HL7AllergyCategoryCS
 
-* insert cmapEntry(R01, "Drg anaphylaxis",   "medication", "Medication")
+* insert cmapEntry(R01, "Drug anaphylaxis",   "medication", "Medication")
 * insert cmapEntry(R02, "drug allergy",      "medication", "Medication")
 * insert cmapEntry(R03, "drug intolerance",  "medication", "Medication")
 * insert cmapEntry(R04, "food anaphylaxis",  "food", "Food")
@@ -171,7 +171,7 @@ Description: "Concept map mapping allergy reaction codes ex. WebPAS to FHIR alle
   * source = $NZCentralRegionAllergyReactionH1H3CS
   * target = $HL7AllergyCriticalityCS
 
-* insert cmapEntry(R01, "Drg anaphylaxis",   "high", "High Risk")
+* insert cmapEntry(R01, "Drug anaphylaxis",  "high", "High Risk")
 * insert cmapEntry(R02, "drug allergy",      "low", "Low Risk")
 * insert cmapEntry(R03, "drug intolerance",  "low", "Low Risk")
 * insert cmapEntry(R04, "food anaphylaxis",  "high", "High Risk")

@@ -56,7 +56,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * type 1..1 MS
   * type ^short = "PHYSICAL | POSTAL"
   * text 0..0             // not using it
-  * line 0..1 MS
+  * line 0..2 MS          // PID-11.1 and PID-11.2  get a line each
   * city 0..1 MS
   * district 0..0
   * state 0..1 MS         // req'd for foreign addresses

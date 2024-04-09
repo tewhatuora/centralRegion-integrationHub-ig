@@ -83,24 +83,6 @@
       "value": "WYS1973"
     }
   },
-  "recorder": {
-    "type": "Practitioner",
-    "identifier": {
-      "system": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
-      "type": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code": "LR",
-            "display": "Local Registry ID"
-          }
-        ]
-      },
-      "use": "usual",
-      "value": "22548"
-    },
-    "display": "Ramadan, Mohamed Mahmoud S DR"
-  },
   "clinicalStatus": {
     "coding": [
       {
@@ -118,6 +100,24 @@
         "display": "Confirmed"
       }
     ]
+  },
+  "recorder": {
+    "type": "Practitioner",
+    "identifier": {
+      "system": "https://standards.digital.health.nz/ns/central-region/pas-practitioner-id",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "LR",
+            "display": "Local Registry ID"
+          }
+        ]
+      },
+      "use": "usual",
+      "value": "22548"
+    },
+    "display": "Ramadan, Mohamed Mahmoud S DR"
   },
   "type": "allergy",
   "category": [

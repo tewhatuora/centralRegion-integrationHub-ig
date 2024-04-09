@@ -20,7 +20,7 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
     reviewDate 0..1 MS and
     lastUpdatedBy 0..1 MS and
     lastUpdatedDateTime 0..1 MS and
-    recordingHospital 1..1 MS and
+    recordingHospital 0..1 MS and
     comments 0..1 MS
 
 * extension

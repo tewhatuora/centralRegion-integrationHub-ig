@@ -8,7 +8,13 @@ Description:  "Hospital identification codes ex. WebPAS in NZ Central Region"
 * ^experimental = false
 * ^caseSensitive = true
 
-* #PNH "Palmerston North Hospital"
+* #PNH     "Palmerston North Hospital"
+* #WRH     "Wairarapa Hospital"
+* #WHN     "Whanganui Hospital"
+
+* #5750    "Whanganui Mental Health Services"
+* #1234    "New Zealand Health Information Service"
+* #6001    "Centre for Adverse Reaction Monitoring"
 
 * #3914    "Alexandra Hospital"
 * #3111    "Ashburton Hospital"
@@ -80,3 +86,4 @@ Description:  "Hospital identification codes ex. WebPAS in NZ Central Region"
 * ^experimental = false
 
 * include codes from system nzcr-hospital-code-cs
+* include $HL7NullFlavorCS#NP

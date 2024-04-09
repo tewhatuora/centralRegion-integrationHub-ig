@@ -1,5 +1,17 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.3-rc1
+* Field `AllergyIntolerance.recorder` field is now optional, as field `ZAL.10` may not be present in source HL7 message.
+* Added `http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NP` to [Allergy Reaction Code](./ValueSet-nzcr-allergy-reaction-vs.html) to denote when field `ZAL.4.1` is not present in the source HL7 message.
+* Added `http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NP` to [Flag Alert Code](./ValueSet-nzcr-flag-alert-code-vs.html) to denote when `ZAL` segment is denotes an `NHIMWS` category alert that has only free-text rather than a code value in the source HL7 message
+* Field `ClinicalImpression.effectiveDateTime` is now optional, as field `ZLS-8` may not be present in the source HL7 message.
+* Added codes `#WRH` and `#WHN` for `Wairarapa Hospital` and `Whanganui Hospital`, as well as `#5750`  `Whanganui Mental Health Services`, `#1234` `New Zealand Health Information Service`,  `#6001` `Centre for Adverse Reaction Monitoring` to [Hospital Codes](./CodeSystem-nzcr-hospital-code-cs.html)
+* Contact [RelationshipCodes](./CodeSystem-nzcr-contact-relationship-cs.html)  `1` `Mother` through `9` `Nephew` are actually `01` through `09`.
+* Cardinality of `Patient.Adress.line` updated to `0..2` as can get lines from `PID-11.1` and `PID-11.2`
+* Added code `#X` `Separated` to [Marital Codes](./CodeSystem-nzcr-extra-marital-status-cs.html) to sit alongside `#L` `Legally Separated`
+* Corrected typo in `R01` `Drug anaphylaxis` from [Allergy Reaction](./CodeSystem-nzcr-allergy-reaction-h1h3-cs.html)
+* Added `http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NP` to [Hospital Codes](./ValueSet-nzcr-hospital-code-vs.html) to denote when field `ZAL.13.1` is not present in the source HL7 message.
+
 ### v1.0.2 
 *  Rules requiring multiple coding entries on `Flag.category`, `Patient.extension[ethnicity]` etc are done using array slicing rather than [FHIR AdditionalBinding extension](https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-additional-binding.html).   This means the original ValueSet bindings are removed.
 * `Patient.telecom` cardinality put back to `0..*`

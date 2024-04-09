@@ -9,39 +9,39 @@
   "url": "https://standards.digital.health.nz/ns/central-region/contact-relationship",
   "concept": [
     {
-      "code": "1",
+      "code": "01",
       "display": "Mother"
     },
     {
-      "code": "2",
+      "code": "02",
       "display": "Father"
     },
     {
-      "code": "3",
+      "code": "03",
       "display": "Sister"
     },
     {
-      "code": "4",
+      "code": "04",
       "display": "Brother"
     },
     {
-      "code": "5",
+      "code": "05",
       "display": "Son"
     },
     {
-      "code": "6",
+      "code": "06",
       "display": "Daughter"
     },
     {
-      "code": "7",
+      "code": "07",
       "display": "Uncle"
     },
     {
-      "code": "8",
+      "code": "08",
       "display": "Aunt"
     },
     {
-      "code": "9",
+      "code": "09",
       "display": "Nephew"
     },
     {

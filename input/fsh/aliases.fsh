@@ -11,6 +11,7 @@ Alias:   $HL7IdentifierTypeCS        = http://terminology.hl7.org/CodeSystem/v2-
 Alias:   $HL7MaritalStatusCS         = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias:   $HL7RelationshipCS          = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias:   $HL7PatientRelgionCS        = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
+Alias:   $HL7NullFlavorCS            = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 
 Alias:   $HL7AllergyTypeCS           = http://hl7.org/fhir/allergy-intolerance-type
 Alias:   $HL7AllergyCategoryCS       = http://hl7.org/fhir/allergy-intolerance-category

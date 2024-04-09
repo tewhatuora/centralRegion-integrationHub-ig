@@ -32,6 +32,14 @@
       },
       {
         "system": "https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "NP"
+          }
+        ]
       }
     ]
   }

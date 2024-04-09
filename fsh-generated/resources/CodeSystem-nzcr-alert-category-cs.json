@@ -54,23 +54,23 @@
     },
     {
       "code": "H4",
-      "display": "Infection prevention"
+      "display": "Infection prevention alerts"
     },
     {
       "code": "H5",
-      "display": "Situational"
+      "display": "Situational alerts"
     },
     {
       "code": "H6",
-      "display": "Transfusion issue"
+      "display": "Transfusion issue alerts"
     },
     {
       "code": "H7",
-      "display": "Disability"
+      "display": "Disability alerts"
     },
     {
       "code": "H8",
-      "display": "Care planning"
+      "display": "Care planning alerts"
     },
     {
       "code": "food",

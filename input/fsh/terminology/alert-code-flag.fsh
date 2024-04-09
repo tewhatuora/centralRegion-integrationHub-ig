@@ -280,3 +280,4 @@ Description:  "Alert codes ex. WebPAS in NZ Central Region, that appear in Flag 
 * include codes from system nzcr-flag-alert-code-h6-cs
 * include codes from system nzcr-flag-alert-code-h7-cs
 * include codes from system nzcr-flag-alert-code-h8-cs
+* include $HL7NullFlavorCS#NP

@@ -29,7 +29,7 @@
             "key": "nzcr-uncoded-flags",
             "severity": "error",
             "human": "Flag categories NHIMWS, MA & MC are free-text uncoded Categories, and can't have Author or recordingHospital.display",
-            "expression": "category.coding.where(code = 'NHIMWS' or code = 'MA' or code='MC').exists() implies \n    code.text.exists() and \n    code.coding.exists().not() and\n    author.exists().not() and\n    extension[flag-alert].extension[recordingHospital].coding.display.exists().not()",
+            "expression": "category.coding.where(code = 'NHIMWS' or code = 'MA' or code='MC').exists() implies \n    code.text.exists() and \n    code.coding.code.memberOf('http://terminology.hl7.org/ValueSet/v3-NullFlavor') and\n    author.exists().not() and\n    extension[flag-alert].extension[recordingHospital].coding.display.exists().not()",
             "source": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/StructureDefinition/NZCentralRegionFlag"
           },
           {
@@ -242,6 +242,11 @@
         "mustSupport": true
       },
       {
+        "id": "Flag.extension:flag-alert.extension",
+        "path": "Flag.extension.extension",
+        "min": 1
+      },
+      {
         "id": "Flag.extension:flag-alert.extension:severityLevel",
         "path": "Flag.extension.extension",
         "sliceName": "severityLevel",
@@ -374,7 +379,8 @@
       {
         "id": "Flag.extension:flag-alert.extension:recordingHospital",
         "path": "Flag.extension.extension",
-        "sliceName": "recordingHospital"
+        "sliceName": "recordingHospital",
+        "min": 1
       },
       {
         "id": "Flag.extension:flag-alert.extension:recordingHospital.url",
@@ -758,6 +764,10 @@
         "id": "Flag.code",
         "path": "Flag.code",
         "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-flag-alert-code"
+        },
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",
@@ -812,10 +822,6 @@
         "id": "Flag.code.coding.code",
         "path": "Flag.code.coding.code",
         "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/central-region/ValueSet-flag-alert-code"
-        },
         "mapping": [
           {
             "identity": "nzcr-flag-from-hl7v2",

@@ -19,11 +19,11 @@ Description:  "Alert Category codes ex. WebPAS in NZ Central Region"
 * #H1	"Drug reaction"
 * #H2	"Medical condition"
 * #H3	"Other allergy"
-* #H4	"Infection prevention"
-* #H5	"Situational"
-* #H6	"Transfusion issue"
-* #H7	"Disability"
-* #H8	"Care planning"
+* #H4	"Infection prevention alerts"
+* #H5	"Situational alerts"
+* #H6	"Transfusion issue alerts"
+* #H7	"Disability alerts"
+* #H8	"Care planning alerts"
 
 * #food "Food Allergy"   // from sample not documentation
 

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "nz.central.ihub.ig",
   "url": "https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig/ImplementationGuide/nz.central.ihub.ig",
-  "version": "1.0.2",
+  "version": "1.0.3-rc1",
   "name": "CRIntegrationHub",
   "title": "Te Whatu Ora, Central Region Integration Hub",
   "status": "active",

@@ -9,6 +9,11 @@
   "url": "https://standards.digital.health.nz/ns/central-region/extra-marital-status",
   "concept": [
     {
+      "code": "X",
+      "display": "Separated",
+      "definition": "Person is Separated, but not 'Legally Separated'"
+    },
+    {
       "code": "V",
       "display": "Civil Union",
       "definition": "Person is in a Civil Union"
@@ -21,5 +26,5 @@
   ],
   "experimental": false,
   "caseSensitive": true,
-  "count": 2
+  "count": 3
 }

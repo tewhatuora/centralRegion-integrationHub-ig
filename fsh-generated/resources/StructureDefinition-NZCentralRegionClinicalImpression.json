@@ -1125,7 +1125,6 @@
       {
         "id": "ClinicalImpression.effective[x]",
         "path": "ClinicalImpression.effective[x]",
-        "min": 1,
         "type": [
           {
             "code": "dateTime"

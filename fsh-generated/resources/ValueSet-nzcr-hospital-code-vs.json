@@ -11,6 +11,14 @@
     "include": [
       {
         "system": "https://standards.digital.health.nz/ns/central-region/hospital-code"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "NP"
+          }
+        ]
       }
     ]
   }

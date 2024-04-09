@@ -78,7 +78,7 @@
       "element": [
         {
           "code": "R01",
-          "display": "Drg anaphylaxis",
+          "display": "Drug anaphylaxis",
           "target": [
             {
               "code": "allergy",

@@ -394,7 +394,8 @@
       {
         "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital",
         "path": "AllergyIntolerance.extension.extension",
-        "sliceName": "recordingHospital"
+        "sliceName": "recordingHospital",
+        "min": 1
       },
       {
         "id": "AllergyIntolerance.extension:allergy-alert.extension:recordingHospital.url",
@@ -1148,7 +1149,6 @@
       {
         "id": "AllergyIntolerance.recorder",
         "path": "AllergyIntolerance.recorder",
-        "min": 1,
         "mustSupport": true
       },
       {

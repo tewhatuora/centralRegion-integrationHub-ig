@@ -52,10 +52,10 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
   * id 0..0
 
 
+* code from nzcr-flag-alert-code-vs (required)
 * code 1..1 MS
   * coding 0..* MS       // Categories NHIMWS, MA & MC are 'free-text' categories, which can't be coded
     * code 0..1 MS 
-    * code from nzcr-flag-alert-code-vs (required)
     * system 1..1 MS
     * display 1..1 MS
     * version 0..0       // code systems are not explicitly versioned
@@ -141,9 +141,17 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
 * extension contains 
     nzcr-alert named flag-alert 1..1 MS 
 
-* extension[flag-alert].extension[severityLevel]
-  * ^definition = "Severity Level - 'W' for Alert/Flag"
-  * ^short = "Severity Level - 'W' for Alert/Flag"
+* extension[flag-alert]
+  * extension[severityLevel]
+    * ^definition = "Severity Level - 'W' for Alert/Flag"
+    * ^short = "Severity Level - 'W' for Alert/Flag"
+
+  * extension[inactiveDate] 0..1 MS     // not to be confused with period.end
+  * extension[reviewDate] 0..1 MS
+  * extension[lastUpdatedBy] 0..1 MS
+  * extension[lastUpdatedDateTime] 0..1 MS
+  * extension[recordingHospital] 1..1 MS
+  * extension[comments] 0..1 MS        // Flag doesn't have 'note' field
 
 // We have a standard set of fields in all Resource.meta blocks
 * meta insert ResourceMetaFields

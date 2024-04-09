@@ -107,7 +107,7 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
 * onsetDateTime MS
 * onsetPeriod MS
 
-* recorder 1..1 MS
+* recorder 0..1 MS   // DT1_WebPAS doesn't require so we can't
   * type 1..1 MS
   * type = "Practitioner"
     * ^short = "Resource the reference refers to (e.g. 'Practitioner')"
