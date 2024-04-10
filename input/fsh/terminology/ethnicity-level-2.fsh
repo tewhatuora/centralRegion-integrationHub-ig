@@ -47,6 +47,20 @@ Description:  "Ethnicity Level 2 codes from [Ministry of Health](https://www.hea
 * include codes from system nzcr-ethnicity-level-2-code-system
 
 
+ValueSet: NZCentralRegionCombinedEthnicityValueSet
+Id: nzcr-combined-ethnicity-vs
+Title: "NZ Central Region - Combined Ethnicity Value Set"
+Description:  "Ethnicity Level 2 and Level 4 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"
+
+* ^url = $NZCentralRegionAllergyAlertCategoryVS
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system nzcr-ethnicity-level-2-code-system
+* include codes from system $NZStatsEthnicityLevel4CS
+
+
 // WebPAS ethnicity codes are the wrong level...
 Instance: nzcr-ethnicity-2to4-map
 InstanceOf: ConceptMap

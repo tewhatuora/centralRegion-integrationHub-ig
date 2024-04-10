@@ -4,4 +4,4 @@ template
 input-cache
 node_modules
 packages
-fsh=generated
+fsh-generated

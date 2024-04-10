@@ -21,11 +21,11 @@ Usage:  #example
 * birthDate = "1966-01-05"
 * gender = #male
 
-* extension[ethnicity][+].valueCodeableConcept.coding[level4]
+* extension[ethnicity][+].valueCodeableConcept.coding
   * code = #21111
   * display = "Māori"
-  // * system = $NZStatsEthnicityLevel4CS
-* extension[ethnicity][=].valueCodeableConcept.coding[level2]
+  * system = $NZStatsEthnicityLevel4CS
+* extension[ethnicity][+].valueCodeableConcept.coding
   * code = #21
   * display = "NZ Māori"
   * system = $NZStatsEthnicityLevel2CS

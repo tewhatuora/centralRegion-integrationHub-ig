@@ -110,19 +110,21 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 // * extension[ethnicity].valueCodeableConcept insert AdditionalBindingByExtension(#required, $NZCentralRegionEthnicityLevel2VS)
 
 * extension[ethnicity] 0..3 MS
-  * valueCodeableConcept
-    * coding ^slicing.discriminator.type = #pattern
-    * coding ^slicing.discriminator.path = "system"
-    * coding ^slicing.rules = #open
-    * coding ^slicing.description = "Slice based on the coding[].system"
-    * coding contains level2 1..1 and level4 1..1
+* extension[ethnicity].valueCodeableConcept from nzcr-combined-ethnicity-vs (required)
+//  * valueCodeableConcept
+//    * coding ^slicing.discriminator.type = #pattern
+//    * coding ^slicing.discriminator.path = "system"
+//    * coding ^slicing.rules = #open
+//    * coding ^slicing.description = "Slice based on the coding[].system"
+//    * coding contains level2 1..1 and level4 1..1
 
-    * coding[level2].system = $NZStatsEthnicityLevel2CS (exactly)
-    * coding[level2].code from $NZCentralRegionEthnicityLevel2VS (required)
+//    * coding[level2].system = $NZStatsEthnicityLevel2CS (exactly)
+//    * coding[level2].code from $NZCentralRegionEthnicityLevel2VS (required)
 
-    * coding[level4].system = $NZStatsEthnicityLevel4CS (exactly)
-    * coding[level4].code from $NZStatsEthnicityLevel4VS (required)
+//    * coding[level4].system = $NZStatsEthnicityLevel4CS (exactly)
+//    * coding[level4].code from $NZStatsEthnicityLevel4VS (required)
 
+* extension[ethnicity]
   * valueCodeableConcept.coding MS
   * valueCodeableConcept.coding.code 1..1 MS      // from PID-22.1
   * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-22.1

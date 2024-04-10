@@ -1,5 +1,8 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.3-rc2
+* Combined [level 4](https://simplifier.net/packages/fhir.org.nz.ig.base/2.0.0/files/783771/) and [Level 2](./CodeSystem-nzcr-ethnicity-level-2-code-system.html) codes into one [Combined Ethnicity]() value set for `Patient.extension[ethnicity]` validation.
+
 ### v1.0.3-rc1
 * Field `AllergyIntolerance.recorder` field is now optional, as field `ZAL.10` may not be present in source HL7 message.
 * Added `http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NP` to [Allergy Reaction Code](./ValueSet-nzcr-allergy-reaction-vs.html) to denote when field `ZAL.4.1` is not present in the source HL7 message.

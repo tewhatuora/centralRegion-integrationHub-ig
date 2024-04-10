@@ -119,6 +119,7 @@ Alias:   $NZCentralRegionDepartmentVS              = https://standards.digital.h
 Alias:   $NZCentralRegionClinicVS                  = https://standards.digital.health.nz/fhir/central-region/ValueSet-clinic-code
 
 Alias:   $NZCentralRegionEthnicityLevel2VS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2
+Alias:   $NZCentralRegionCombinedEthnicityVS       = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-ethnicity
 Alias:   $NZCentralRegionMaritalStatusVS           = https://standards.digital.health.nz/fhir/central-region/ValueSet-marital-status
 Alias:   $NZCentralRegionResidencyVS               = https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency
 Alias:   $NZCentralRegionReligionVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion
