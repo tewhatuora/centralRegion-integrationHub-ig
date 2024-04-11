@@ -52,7 +52,7 @@ Id: nzcr-combined-ethnicity-vs
 Title: "NZ Central Region - Combined Ethnicity Value Set"
 Description:  "Ethnicity Level 2 and Level 4 codes from [Ministry of Health](https://www.health.govt.nz/nz-health-statistics/data-references/code-tables/common-code-tables/ethnicity-code-tables)"
 
-* ^url = $NZCentralRegionAllergyAlertCategoryVS
+* ^url = $NZCentralRegionCombinedEthnicityVS
 
 * ^status = #active
 * ^experimental = false

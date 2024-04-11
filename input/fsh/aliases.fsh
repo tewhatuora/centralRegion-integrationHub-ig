@@ -68,6 +68,8 @@ Alias:   $NZCentralRegionHL7v2Message          = https://standards.digital.healt
 Alias:   $NZCentralRegionAlert                 = https://standards.digital.health.nz/ns/central-region/alert
 Alias:   $NZCentralRegionMentalHealth          = https://standards.digital.health.nz/ns/central-region/mental-health-status
 Alias:   $NZCentralRegionReferral              = https://standards.digital.health.nz/ns/central-region/referral
+Alias:   $NZCentralRegionEthnicity             = https://standards.digital.health.nz/ns/central-region/nz-ethnicity
+Alias:   $NZCentralRegionResidency             = https://standards.digital.health.nz/ns/central-region/nz-residency
 
 // Local URLs for locally defined CodeSystems
 Alias:   $NZCentralRegionHospitalCS             = https://standards.digital.health.nz/ns/central-region/hospital-code
@@ -119,7 +121,6 @@ Alias:   $NZCentralRegionDepartmentVS              = https://standards.digital.h
 Alias:   $NZCentralRegionClinicVS                  = https://standards.digital.health.nz/fhir/central-region/ValueSet-clinic-code
 
 Alias:   $NZCentralRegionEthnicityLevel2VS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2
-Alias:   $NZCentralRegionCombinedEthnicityVS       = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-ethnicity
 Alias:   $NZCentralRegionMaritalStatusVS           = https://standards.digital.health.nz/fhir/central-region/ValueSet-marital-status
 Alias:   $NZCentralRegionResidencyVS               = https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency
 Alias:   $NZCentralRegionReligionVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion
@@ -146,6 +147,9 @@ Alias:   $NZCentralRegionMentalHealthReviewStatusVS   = https://standards.digita
 Alias:   $NZCentralRegionMentalHealthReviewLocationVS = https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-review-location
 Alias:   $NZCentralRegionMentalHealthCourtTypeVS      = https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-court-type
 
+// Local URIs for COMBINED ValueSets
+Alias:   $NZCentralRegionCombinedEthnicityVS       = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-ethnicity
+Alias:   $NZCentralRegionCombinedResidencyVS       = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-nz-residency
 
 // Local URIs for ConceptMaps
 Alias:   $NZCentralRegionLanguageConceptMap                     = https://standards.digital.health.nz/fhir/central-region/ConceptMap-language

@@ -110,13 +110,13 @@ elif PID-26.1='N' then 'No'
 else 'Unknown'"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/nz-citizenship-status-code"
 
-* extension[nzResidency].url -> "'http://hl7.org.nz/fhir/StructureDefinition/nz-residency'"
-* extension[nzResidency] -> "PID-28" "Only using status, source not available"
-* extension[nzResidency].extension[status].url -> "'status'"
-* extension[nzResidency].extension[status].valueCodeableConcept.coding -> "Repeat for each coding"
-* extension[nzResidency].extension[status].valueCodeableConcept.coding.code -> "PID-28.1" "Raw value and mapped from webPAS residency status"
-* extension[nzResidency].extension[status].valueCodeableConcept.coding.display -> "PID-28.2" "Raw value and mapped from webPAS residency status."
-* extension[nzResidency].extension[status].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/central-region/nz-residency-code AND\r\n
+* extension[nzcrResidency].url -> "'http://hl7.org.nz/fhir/StructureDefinition/nz-residency'"
+* extension[nzcrResidency] -> "PID-28" "Only using status, source not available"
+* extension[nzcrResidency].extension[status].url -> "'status'"
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding -> "Repeat for each coding"
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding.code -> "PID-28.1" "Raw value and mapped from webPAS residency status"
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding.display -> "PID-28.2" "Raw value and mapped from webPAS residency status."
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/central-region/nz-residency-code AND\r\n
 https://standards.digital.health.nz/ns/nz-residency-code"
 
 * extension[patient-religion].url -> "'http://hl7.org/fhir/StructureDefinition/patient-religion'"

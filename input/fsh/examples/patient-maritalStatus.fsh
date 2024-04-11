@@ -46,13 +46,14 @@ Usage:  #example
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "Yes"
 
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[nzBase]
-  * code = #no
-  * display = "Not a Permanent Resident"
-  // * system = $NZBaseNZResidencyCS
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[rawSource]
-  * code = #STU
-  * display = "Student visa"
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding[nzBase]
+  * code = #unknown
+  * display = "Unknown"
+  //* system = $NZBaseNZResidencyCS
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding[rawSource]
+  * code = #DET
+  * display = "Details required"
+  //* system = $NZCentralRegionResidencyCS
 
 * deceasedBoolean = false
 
@@ -104,13 +105,14 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with on
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "Yes"
 
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[nzBase]
-  * code = #no
-  * display = "Not a Permanent Resident"
-  // * system = $NZBaseNZResidencyCS
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[rawSource]
-  * code = #STU
-  * display = "Student visa"
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding[nzBase]
+  * code = #unknown
+  * display = "Unknown"
+  //* system = $NZBaseNZResidencyCS
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding[rawSource]
+  * code = #DET
+  * display = "Details required"
+  //* system = $NZCentralRegionResidencyCS
 
 * deceasedBoolean = false
 

@@ -1,5 +1,9 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.3-rc3
+* Created [nzcrResidency](./StructureDefinition-nzcr-residency.html) and [nzcrEthnicity](./StructureDefinition-nzcr-ethnicity.html) extensions as duplicates of their cousins in the NZBase, so we don't break our validator.
+* Created [NZCentralRegionPatientAdditionalBinding](./StructureDefinition-NZCentralRegionPatientAdditionalBinding.html) a special profile of [NZCentralRegionPatient](./StructureDefinition-NZCentralRegionPatient.html) that makes use of [AdditionalBinding extension](https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-additional-binding.html) to require multiple `coding` entries on `ethnicity` and `nz-residency` fields.
+
 ### v1.0.3-rc2
 * Combined [level 4](https://simplifier.net/packages/fhir.org.nz.ig.base/2.0.0/files/783771/) and [Level 2](./CodeSystem-nzcr-ethnicity-level-2-code-system.html) codes into one [Combined Ethnicity](./ValueSet-nzcr-combined-ethnicity-vs.html) value set for `Patient.extension[ethnicity]` validation.
 

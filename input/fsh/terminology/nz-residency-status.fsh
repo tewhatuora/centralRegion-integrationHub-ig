@@ -32,7 +32,6 @@ Description:  "Residency codes ex. WebPAS in NZ Central Region"
 * #VO2	"Work visa > 2 years"
 * #VU2	"Work visa < 2 years"
 
-
 ValueSet: NZCentralRegionResidencyValueSet
 Id: nzcr-residency-vs
 Title: "NZ Central Region - NZ Residency Value Set"
@@ -43,6 +42,21 @@ Description:  "NZ Residency Codes ex. WebPAS in NZ Central Region"
 * ^experimental = false
 
 * include codes from system nzcr-residency-cs
+
+
+ValueSet: NZCentralRegionCombinedResidencyValueSet
+Id: nzcr-combined-residency-vs
+Title: "NZ Central Region - Combined NZ Residency Value Set"
+Description:  "NZ Residency Codes ex. WebPAS in NZ Central Region + Status codes from NZBase"
+
+* ^url = $NZCentralRegionCombinedResidencyVS
+* ^status = #active
+* ^experimental = false
+
+* include codes from system nzcr-residency-cs
+* include codes from system $NZBaseNZResidencyCS
+
+
 
 // WebPAS residency codes are far too detailed...
 Instance: nzcr-nz-residency-map

@@ -23,14 +23,14 @@ Usage:  #example
 * birthDate = "1972-03-23"
 * gender = #male
 
-* extension[ethnicity][+].valueCodeableConcept.coding
+* extension[nzcrEthnicity][+].valueCodeableConcept.coding[level4]
   * code = #21111
   * display = "Māori"
-  * system = $NZStatsEthnicityLevel4CS
-* extension[ethnicity][+].valueCodeableConcept.coding
+  //* system = $NZStatsEthnicityLevel4CS
+* extension[nzcrEthnicity][=].valueCodeableConcept.coding[level2]
   * code = #21
   * display = "NZ Māori"
-  * system = $NZStatsEthnicityLevel2CS
+  //* system = $NZStatsEthnicityLevel2CS
 
 * address[+].type = #postal
 * address[=].line[+] = "100 Broadway Avenue"
@@ -65,13 +65,14 @@ Usage:  #example
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.display = "Yes"
 
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[nzBase]
-  * code = #no
-  * display = "Not a Permanent Resident"
-  // * system = $NZBaseNZResidencyCS
-* extension[nzResidency].extension[status].valueCodeableConcept.coding[rawSource]
-  * code = #STU
-  * display = "Student visa"
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding[nzBase]
+  * code = #unknown
+  * display = "Unknown"
+  //* system = $NZBaseNZResidencyCS
+* extension[nzcrResidency].extension[status].valueCodeableConcept.coding[rawSource]
+  * code = #DET
+  * display = "Details required"
+  //* system = $NZCentralRegionResidencyCS
 
 * generalPractitioner.type = #Practitioner
 * generalPractitioner.identifier.use = #usual

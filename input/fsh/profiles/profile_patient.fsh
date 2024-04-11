@@ -106,25 +106,22 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 
 // SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
-// * extension[ethnicity].valueCodeableConcept from $NZStatsEthnicityLevel4VS (required)
-// * extension[ethnicity].valueCodeableConcept insert AdditionalBindingByExtension(#required, $NZCentralRegionEthnicityLevel2VS)
+* extension contains nzcr-ethnicity named nzcrEthnicity 0..3 MS
+* extension[nzcrEthnicity]
+  * valueCodeableConcept
+    * coding ^slicing.discriminator.type = #pattern
+    * coding ^slicing.discriminator.path = "system"
+    * coding ^slicing.rules = #open
+    * coding ^slicing.description = "Slice based on the coding[].system"
+    * coding contains level2 1..1 and level4 1..1
 
-* extension[ethnicity] 0..3 MS
-* extension[ethnicity].valueCodeableConcept from nzcr-combined-ethnicity-vs (required)
-//  * valueCodeableConcept
-//    * coding ^slicing.discriminator.type = #pattern
-//    * coding ^slicing.discriminator.path = "system"
-//    * coding ^slicing.rules = #open
-//    * coding ^slicing.description = "Slice based on the coding[].system"
-//    * coding contains level2 1..1 and level4 1..1
+    * coding[level2].system = $NZStatsEthnicityLevel2CS (exactly)
+    * coding[level2].code from $NZCentralRegionEthnicityLevel2VS (required)
 
-//    * coding[level2].system = $NZStatsEthnicityLevel2CS (exactly)
-//    * coding[level2].code from $NZCentralRegionEthnicityLevel2VS (required)
+    * coding[level4].system = $NZStatsEthnicityLevel4CS (exactly)
+    * coding[level4].code from $NZStatsEthnicityLevel4VS (required)
 
-//    * coding[level4].system = $NZStatsEthnicityLevel4CS (exactly)
-//    * coding[level4].code from $NZStatsEthnicityLevel4VS (required)
-
-* extension[ethnicity]
+* extension[nzcrEthnicity]
   * valueCodeableConcept.coding MS
   * valueCodeableConcept.coding.code 1..1 MS      // from PID-22.1
   * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-22.1
@@ -150,15 +147,12 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * extension[source] 0..0
   * id 0..0
 
-// NZ Base v2.0.0 - hasn't defined things quite completely yet - so reusing Citizenship structure with Residency name....
-* extension contains $NZBaseNZResidency named nzResidency 0..1 MS
-* extension[nz-residency]
+// NZ Base v2.0.0 - has defined the Residency but not added it to the NZPatient profile
+* extension contains $NZCentralRegionResidency named nzcrResidency 0..1 MS
+* extension[nzcrResidency]
 
-// SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
-//  * extension[status].valueCodeableConcept from $NZBaseNZResidencyVS
-//  * extension[status].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionResidencyVS)
-
-  * extension[status] 
+  // SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+  * extension[status]
     * valueCodeableConcept
       * coding ^slicing.discriminator.type = #pattern
       * coding ^slicing.discriminator.path = "system"
@@ -201,12 +195,8 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 * photo 0..0
 
+
 * extension contains $HL7PatientReligion named patient-religion 0..1 MS
-
-// SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
-// * extension[patient-religion].valueCodeableConcept from $HL7PatientRelgionVS
-// * extension[patient-religion].valueCodeableConcept insert AdditionalBinding(#required, $NZCentralRegionReligionVS)
-
 * extension[patient-religion] 0..1 MS
   * valueCodeableConcept
     * coding ^slicing.discriminator.type = #pattern
