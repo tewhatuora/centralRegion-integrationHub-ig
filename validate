@@ -1,0 +1,50 @@
+#/bin/bash
+
+## Make sure we've got a file
+if [ -z "$1" ]
+then
+   echo "instance file missing !!"
+   exit
+fi
+
+if [ ! -f "$1" ]
+then
+   echo "Can't find file $1"
+   exit
+fi
+
+req_template='
+{
+    "resourceType": "Parameters",
+    "parameter": [
+        {
+            "name": "resource",
+            "resource": {}
+        },
+        {
+            "name": "mode",
+            "valueCode": "update"
+        },
+        {
+            "name": "profile",
+            "valueString": "NZCentralPatient"
+        }
+    ]
+}'
+
+#
+## Use JQ to fill in the template...
+populate_req() {
+        local rsFile=$1
+
+        jq -c \
+            --argjson rs "$(cat $rsFile)" \
+        '.parameter[0].resource = $rs' <<<"$req_template" | tr -d '\n'
+}
+payload=$(populate_req $1)
+
+curl -X 'POST' \
+  'http://localhost:8080/fhir/Patient/$validate' \
+  -H 'accept: application/fhir+json' \
+  -H 'Content-Type: application/fhir+json' \
+  -d "$payload"
