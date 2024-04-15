@@ -116,6 +116,11 @@ Description:  "3 character codes denoting Language ex. WebPAS in NZ Central Regi
 
 * #tws  "Teochew"  // proposed iso-639-3
 
+
+
+
+
+
 ValueSet: NZCentralRegionLanguageValueSet
 Id: nzcr-language-vs
 Title: "NZ Central Region - Language Value Set"
@@ -206,6 +211,27 @@ Description:  "IETF equivalent Language codes, matching the raw codes used by We
 
 * $NZCentralRegionProposedLanguageCS#tws    // Teochew - Chinese (proposed in iso-639-3)
 * $HL7NullFlavourCS#OTH  // Other
+
+
+
+
+ValueSet: NZCentralRegionCombinedLanguageValueSet
+Id: nzcr-combined-language-vs
+Title: "NZ Central Region - Combined NZ Language Value Set"
+Description:  "Language Codes ex. WebPAS in NZ Central Region + ietf codes"
+
+* ^url = $NZCentralRegionCombinedLanguageVS
+* ^status = #active
+* ^experimental = false
+
+* include codes from system nzcr-raw-language-cs
+* include codes from system $IETFLanguageCS
+
+
+
+
+
+
 
 // WebPAS language codes are nearly right...
 Instance: nzcr-language-map

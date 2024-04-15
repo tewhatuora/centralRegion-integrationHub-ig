@@ -40,9 +40,14 @@ Usage:  #example
 * address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
-* communication.language.coding.code = #en
-* communication.language.coding.system = "urn:ietf:bcp:47"
-* communication.language.coding.display = "English"
+* communication.language.coding[+]
+  * code = #en
+  * display = "English"
+  * system = "urn:ietf:bcp:47"
+//* communication.language.coding[rawSource]
+  //* code = #ENG
+  //* display = "English"
+  //* system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
@@ -56,10 +61,10 @@ Usage:  #example
   * code = #DET
   * display = "Details required"
 
-* extension[patient-religion].valueCodeableConcept.coding[origFhir]
+* extension[nzcrReligion].valueCodeableConcept.coding[origFhir]
   * code = #1076
   * display = "Presbyterian"
-* extension[patient-religion].valueCodeableConcept.coding[rawSource]
+* extension[nzcrReligion].valueCodeableConcept.coding[rawSource]
   * code = #R33
   * display = "Presbyterian"
 
@@ -108,9 +113,14 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
-* communication.language.coding.code = #en
-* communication.language.coding.system = "urn:ietf:bcp:47"
-* communication.language.coding.display = "English"
+* communication.language.coding[+]
+  * code = #en
+  * display = "English"
+  * system = "urn:ietf:bcp:47"
+//* communication.language.coding[rawSource]
+  //* code = #ENG
+  //* display = "English"
+  //* system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
@@ -125,7 +135,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
   * display = "Details required"
 
 // Only one coding, for no-answer
-* extension[patient-religion].valueCodeableConcept.coding[rawSource]
+* extension[nzcrReligion].valueCodeableConcept.coding[rawSource]
   * code = #R27
   * display = "Objects to question"
 
@@ -178,10 +188,16 @@ Usage:  #example
 * address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
-* communication.language.coding.code = #en
-* communication.language.coding.system = "urn:ietf:bcp:47"
-* communication.language.coding.display = "English"
+* communication.language.coding[+]
+  * code = #en
+  * display = "English"
+  * system = "urn:ietf:bcp:47"
+//* communication.language.coding[rawSource]
+  //* code = #ENG
+  //* display = "English"
+  //* system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
+
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system = $NZBaseNZCitizenshipCS
@@ -196,12 +212,14 @@ Usage:  #example
   * display = "Details required"
   * system = $NZCentralRegionResidencyCS
 
-* extension[patient-religion].valueCodeableConcept.coding[origFhir]
+* extension[patient-religion].valueCodeableConcept.coding[+]
   * code = #1076
   * display = "Presbyterian"
-* extension[patient-religion].valueCodeableConcept.coding[rawSource]
+  * system = $HL7PatientRelgionCS
+* extension[patient-religion].valueCodeableConcept.coding[+]
   * code = #R33
   * display = "Presbyterian"
+  * system = $NZCentralRegionReligionCS 
 
 * deceasedBoolean = false
 
@@ -246,9 +264,14 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
-* communication.language.coding.code = #en
-* communication.language.coding.system = "urn:ietf:bcp:47"
-* communication.language.coding.display = "English"
+* communication.language.coding[+]
+  * code = #en
+  * display = "English"
+  * system = "urn:ietf:bcp:47"
+//* communication.language.coding[rawSource]
+  //* code = #ENG
+  //* display = "English"
+  //* system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
@@ -264,10 +287,10 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
   * display = "Details required"
   * system = $NZCentralRegionResidencyCS
 
-* extension[patient-religion].valueCodeableConcept.coding[rawSource]
+* extension[patient-religion].valueCodeableConcept.coding[+]
   * code = #R27
   * display = "Objects to question"
-  // * system = $NZCentralRegionReligionCS
+  * system = $NZCentralRegionReligionCS
 
 * deceasedBoolean = false
 

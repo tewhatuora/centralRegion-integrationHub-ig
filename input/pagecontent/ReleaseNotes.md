@@ -1,5 +1,10 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.4-rc1
+* Added code `M32` for `PN Emergency Dept` in [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html) code system.
+* Added [nzcrRelgion](./ValueSet-nzcr-combined-religion-vs.html) combined value set to also allow us to have multiple codings and not break the validator.
+* Fields `Patient.communication.language` and  `Patient.contact.relationship` no-longer permit alternate codings.
+
 ### v1.0.3-rc3
 * Created [nzcrResidency](./StructureDefinition-nzcr-residency.html) and [nzcrEthnicity](./StructureDefinition-nzcr-ethnicity.html) extensions as duplicates of their cousins in the NZBase, so we don't break our validator.
 * Created [NZCentralRegionPatientAdditionalBinding](./StructureDefinition-NZCentralRegionPatientAdditionalBinding.html) a special profile of [NZCentralRegionPatient](./StructureDefinition-NZCentralRegionPatient.html) that makes use of [AdditionalBinding extension](https://build.fhir.org/ig/FHIR/fhir-tools-ig/StructureDefinition-additional-binding.html) to require multiple `coding` entries on `ethnicity` and `nz-residency` fields.

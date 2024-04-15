@@ -56,9 +56,14 @@ Usage:  #example
 * address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
-* communication.language.coding.code = #en
-* communication.language.coding.system = "urn:ietf:bcp:47"
-* communication.language.coding.display = "English"
+* communication.language.coding[+]
+  * code = #en
+  * display = "English"
+  * system = "urn:ietf:bcp:47"
+//* communication.language.coding[rawSource]
+  //* code = #ENG
+  //* display = "English"
+  // * system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
@@ -83,46 +88,60 @@ Usage:  #example
 * generalPractitioner.identifier.value = "666665"
 * generalPractitioner.display = "Dr Amber-Lea Aroha"
 
-* contact[+].relationship.coding[+].system = "http://terminology.hl7.org/CodeSystem/v2-0131"
-* contact[=].relationship.coding[=].code = #O
-* contact[=].relationship.coding[=].display = "Other"
-* contact[=].relationship.coding[+].system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
-* contact[=].relationship.coding[=].code = #3
-* contact[=].relationship.coding[=].display = "Sister"
-* contact[=].name.family = "Lake"
-* contact[=].name.given = "Elaine"
-* contact[=].name.prefix = "Mrs"
-* contact[=].name.text = "Mrs Elaine Lake"
-* contact[=].telecom[+].value = "027 8887743"
-* contact[=].telecom[=].system = #phone
-* contact[=].telecom[=].use = #home
+* contact[+]
+  * relationship.coding[+]
+    * code = #C
+    * display = "Emergency Contact" 
+    * system = "http://terminology.hl7.org/CodeSystem/v2-0131"
+  //* relationship.coding[rawSource]
+    //* code = #3
+    //* display = "Sister"
+    //* system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
 
-* contact[+].relationship.coding[+].system = "http://terminology.hl7.org/CodeSystem/v2-0131"
-* contact[=].relationship.coding[=].code = #O
-* contact[=].relationship.coding[=].display = "Other"
-* contact[=].relationship.coding[+].system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
-* contact[=].relationship.coding[=].code = #1
-* contact[=].relationship.coding[=].display = "Mother"
-* contact[=].name.family = "Pond"
-* contact[=].name.given = "Gwenyth"
-* contact[=].name.prefix = "Mrs"
-* contact[=].name.text = "Mrs Gwenyth Pond"
-* contact[=].telecom[+].value = "027 5 666 325"
-* contact[=].telecom[=].system = #phone
-* contact[=].telecom[=].use = #home
+  * name.family = "Lake"
+  * name.given = "Elaine"
+  * name.prefix = "Mrs"
+  * name.text = "Mrs Elaine Lake"
+  * telecom[+].value = "027 8887743"
+  * telecom[=].system = #phone
+  * telecom[=].use = #home
 
-* contact[+].relationship.coding[+].system = "http://terminology.hl7.org/CodeSystem/v2-0131"
-* contact[=].relationship.coding[=].code = #N
-* contact[=].relationship.coding[=].display = "Next-of-Kin"
-* contact[=].relationship.coding[+].system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
-* contact[=].relationship.coding[=].code = #18
-* contact[=].relationship.coding[=].display = "De facto"
-* contact[=].name.family = "Moneypenny"
-* contact[=].name.given = "Louise"
-* contact[=].name.prefix = "Miss"
-* contact[=].name.text = "Miss Louise Moneypenny"
-* contact[=].telecom[+].value = "021 555 888 6"
-* contact[=].telecom[=].system = #phone
-* contact[=].telecom[=].use = #home
+* contact[+]
+  * relationship.coding[+]
+    * code = #C
+    * display = "Emergency Contact" 
+    * system = "http://terminology.hl7.org/CodeSystem/v2-0131"
+  //* relationship.coding[rawSource]
+    //* code = #1
+    //* display = "Mother"
+    //* system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
+  * name
+    * family = "Pond"
+    * given = "Gwenyth"
+    * prefix = "Mrs"
+    * text = "Mrs Gwenyth Pond"
+  * telecom[+]
+    * value = "027 5 666 325"
+    * system = #phone
+    * use = #home
+
+* contact[+]
+  * relationship.coding[+]
+    * code = #N
+    * display = "Next-of-Kin"
+    * system = "http://terminology.hl7.org/CodeSystem/v2-0131"
+  //* relationship.coding[rawSource]
+    //* code = #18
+    //* display = "De facto"
+    //* system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
+  * name
+    * family = "Moneypenny"
+    * given = "Louise"
+    * prefix = "Miss"
+    * text = "Miss Louise Moneypenny"
+  * telecom[+]
+    * value = "021 555 888 6"
+    * system = #phone
+    * use = #home
 
 * deceasedBoolean = false

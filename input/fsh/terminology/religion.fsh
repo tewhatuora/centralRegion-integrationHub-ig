@@ -49,6 +49,21 @@ Description:  "Religion codes ex. WebPAS in NZ Central Region"
 * #R39	"Salvation Army"
 
 
+
+ValueSet: NZCentralRegionCombinedReligionValueSet
+Id: nzcr-combined-religion-vs
+Title: "NZ Central Region - Combined Religion Value Set"
+Description:  "Religion codes ex. WebPAS and HL7 "
+
+* ^url = $NZCentralRegionCombinedReligionVS
+
+* ^status = #active
+* ^experimental = false
+
+* include codes from system $HL7PatientRelgionCS
+* include codes from system nzcr-religion-cs
+
+
 // WebPAS religion codes are very customised
 Instance: nzcr-religion-map
 InstanceOf: ConceptMap

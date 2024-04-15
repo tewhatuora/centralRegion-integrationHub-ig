@@ -38,9 +38,15 @@ Usage:  #example
 * address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
-* communication.language.coding.code = #en
-* communication.language.coding.system = "urn:ietf:bcp:47"
-* communication.language.coding.display = "English"
+
+* communication.language.coding[+]
+  * code = #en
+  * display = "English"
+  * system = "urn:ietf:bcp:47"
+//* communication.language.coding[rawSource]
+  //* code = #ENG
+  //* display = "English"
+  //* system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
@@ -57,12 +63,14 @@ Usage:  #example
   //* system = $NZCentralRegionResidencyCS
 
 * contact
-  * relationship.coding[+].code = #S
-  * relationship.coding[=].system = "http://terminology.hl7.org/CodeSystem/v2-0131"
-  * relationship.coding[=].display = "State Agency" 
-  * relationship.coding[+].code = #21
-  * relationship.coding[=].system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
-  * relationship.coding[=].display = "Dept of Correction (NZ)"
+  * relationship.coding[+]
+    * code = #S
+    * display = "State Agency" 
+    * system = "http://terminology.hl7.org/CodeSystem/v2-0131"
+  //* relationship.coding[rawSource]
+    //* code = #21
+    //* display = "Dept of Correction (NZ)"
+    //* system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
 
   * name.family = "O'Leary"
   * name.given = "Karen"

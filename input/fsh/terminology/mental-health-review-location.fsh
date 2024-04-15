@@ -35,6 +35,7 @@ Description:  "Mental Health Review Location identification codes ex. WebPAS in 
 * #M25   "HCMH"
 * #M26   "DCMH"
 * #M27   "PCMH"
+* #M32   "PN Emergency Dept"
 * #M36   "PN Police"
 * #WLB   "Lambie Building"
 * #WOD   "Outpatient Dept"

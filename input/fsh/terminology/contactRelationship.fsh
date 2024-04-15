@@ -56,3 +56,25 @@ This codeset is to be used alongside the HL7 defined general relationship codese
 * ^experimental = false
 
 * include codes from system nzcr-contact-relationship-cs
+
+
+
+
+
+
+ValueSet: NZCentralRegionCombinedContactRelationshipValueSet
+Id: nzcr-combined-contact-relationship-vs
+Title: "NZ Central Region - Combined NZ Contact Relationship Value Set"
+Description:  "Language Codes ex. WebPAS in NZ Central Region + FHIR broad categories"
+
+* ^url = $NZCentralRegionCombinedContactRelationshipVS
+* ^status = #active
+* ^experimental = false
+
+* include codes from system nzcr-contact-relationship-cs
+* include codes from valueset $HL7RelationshipVS
+
+
+
+
+

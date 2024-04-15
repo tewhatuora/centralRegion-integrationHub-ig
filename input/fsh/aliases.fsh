@@ -26,12 +26,13 @@ Alias:   $HL7ReferralPriorityCS      = http://terminology.hl7.org/CodeSystem/v2-
 Alias:   $HL7RequestPriorityCS       = http://hl7.org/fhir/request-priority
 
 // Value Set URLs from FHIR base
+Alias:   $IETFLanguageVS             = http://hl7.org/fhir/ValueSet/all-languages
 Alias:   $HL7PatientRelgionVS        = http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation
+Alias:   $HL7RelationshipVS          = http://hl7.org/fhir/ValueSet/patient-contactrelationship
 Alias:   $HL7AllergyTypeVS           = http://hl7.org/fhir/ValueSet/allergy-intolerance-type
 Alias:   $HL7AllergyCategoryVS       = http://hl7.org/fhir/ValueSet/allergy-intolerance-category
 Alias:   $HL7AllergyCriticalityVS    = http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality
 Alias:   $HL7RequestPriorityVS       = http://hl7.org/fhir/ValueSet/request-priority
-
 
 // Extension URLs from NZ Base 
 Alias:   $NZBasePatient         = http://hl7.org.nz/fhir/StructureDefinition/NzPatient
@@ -70,6 +71,7 @@ Alias:   $NZCentralRegionMentalHealth          = https://standards.digital.healt
 Alias:   $NZCentralRegionReferral              = https://standards.digital.health.nz/ns/central-region/referral
 Alias:   $NZCentralRegionEthnicity             = https://standards.digital.health.nz/ns/central-region/nz-ethnicity
 Alias:   $NZCentralRegionResidency             = https://standards.digital.health.nz/ns/central-region/nz-residency
+Alias:   $NZCentralRegionReligion              = https://standards.digital.health.nz/ns/central-region/religion
 
 // Local URLs for locally defined CodeSystems
 Alias:   $NZCentralRegionHospitalCS             = https://standards.digital.health.nz/ns/central-region/hospital-code
@@ -148,8 +150,11 @@ Alias:   $NZCentralRegionMentalHealthReviewLocationVS = https://standards.digita
 Alias:   $NZCentralRegionMentalHealthCourtTypeVS      = https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-court-type
 
 // Local URIs for COMBINED ValueSets
-Alias:   $NZCentralRegionCombinedEthnicityVS       = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-ethnicity
-Alias:   $NZCentralRegionCombinedResidencyVS       = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-nz-residency
+Alias:   $NZCentralRegionCombinedEthnicityVS             = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-ethnicity
+Alias:   $NZCentralRegionCombinedResidencyVS             = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-nz-residency
+Alias:   $NZCentralRegionCombinedReligionVS              = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-religion
+Alias:   $NZCentralRegionCombinedLanguageVS              = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-language
+Alias:   $NZCentralRegionCombinedContactRelationshipVS   = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-contact-relationship
 
 // Local URIs for ConceptMaps
 Alias:   $NZCentralRegionLanguageConceptMap                     = https://standards.digital.health.nz/fhir/central-region/ConceptMap-language

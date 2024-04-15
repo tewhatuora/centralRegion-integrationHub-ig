@@ -38,9 +38,14 @@ Usage:  #example
 * address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
-* communication.language.coding.code = #en
-* communication.language.coding.system = "urn:ietf:bcp:47"
-* communication.language.coding.display = "English"
+* communication.language.coding[+]
+  * code = #en
+  * display = "English"
+  * system = "urn:ietf:bcp:47"
+//* communication.language.coding[rawSource]
+  //* code = #ENG
+  //* display = "English"
+  //* system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes

@@ -195,36 +195,46 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 * photo 0..0
 
+// SmileCDR validator doesn't recognise addition-binding extension so gotta do slicing (for now)
+* extension contains nzcr-religion named nzcrReligion 0..1 MS
+* extension[nzcrReligion].valueCodeableConcept
+  * coding ^slicing.discriminator.type = #pattern
+  * coding ^slicing.discriminator.path = "system"
+  * coding ^slicing.rules = #open
+  * coding ^slicing.description = "Slice based on the coding[].system"
+  * coding contains origFhir 0..1 and rawSource 1..1    // some values like 'Refuse to Answer' have no code in the origFhir coding
 
-* extension contains $HL7PatientReligion named patient-religion 0..1 MS
-* extension[patient-religion] 0..1 MS
-  * valueCodeableConcept
-    * coding ^slicing.discriminator.type = #pattern
-    * coding ^slicing.discriminator.path = "system"
-    * coding ^slicing.rules = #open
-    * coding ^slicing.description = "Slice based on the coding[].system"
-    * coding contains origFhir 0..1 and rawSource 1..1    // some values like 'Refuse to Answer' have no code in the origFhir coding
+  * coding[origFhir].system = $HL7PatientRelgionCS (exactly)
+  * coding[origFhir].code from $HL7PatientRelgionVS (required)
 
-    * coding[origFhir].system = $HL7PatientRelgionCS (exactly)
-    * coding[origFhir].code from $HL7PatientRelgionVS (required)
+  * coding[rawSource].system = $NZCentralRegionReligionCS (exactly)
+  * coding[rawSource].code from $NZCentralRegionReligionVS (required)
 
-    * coding[rawSource].system = $NZCentralRegionReligionCS (exactly)
-    * coding[rawSource].code from $NZCentralRegionReligionVS (required)
-
-  * valueCodeableConcept.coding MS
-  * valueCodeableConcept.coding.code 1..1 MS      // from PID-17.1
-  * valueCodeableConcept.coding.system 1..1 MS    // based on which code from PID-17.1
-  * valueCodeableConcept.coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-17.1 ??
-  * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
-  * valueCodeableConcept.coding.userSelected 0..0 // data not available
-  * valueCodeableConcept.text 0..0                //  Code, Value and Display are all derived from Code value from PID-17.1
-  * extension 0..0
+  * coding MS
+  * coding.code 1..1 MS      // from PID-17.1
+  * coding.system 1..1 MS    // based on which code from PID-17.1
+  * coding.display 1..1 MS   // from PID-22.2 or by lookup from PID-17.1 ??
+  * coding.version 0..0      // code systems are not explicitly versioned
+  * coding.userSelected 0..0 // data not available
+  * text 0..0                //  Code, Value and Display are all derived from Code value from PID-17.1
   * id 0..0
 
 * contact 0..* MS // A contact party (e.g. guardian, partner, friend) for the patient
+  //* relationship from nzcr-combined-contact-relationship-vs
   * relationship 1..1 MS
-    * coding 2..* MS           // Both original raw value and value from http://terminology.hl7.org/CodeSystem/v2-0131
-      * ^short = "One each for\r\n * http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\n * https://standards.digital.health.nz/ns/central-region/contact-relationship"
+    //* coding ^slicing.discriminator.type = #pattern
+    //* coding ^slicing.discriminator.path = "system"
+    //* coding ^slicing.rules = #open
+    //* coding ^slicing.description = "Slice based on the coding[].system"
+    //* coding contains origFhir 1..1 and rawSource 1..1
+
+    //* coding[origFhir].system = $HL7RelationshipCS (exactly)
+    //* coding[origFhir].code from $HL7RelationshipVS (required)
+
+    //* coding[rawSource].system = $NZCentralRegionContactRelationshipCS  (exactly)
+    //* coding[rawSource].code from nzcr-contact-relationship-vs (required)
+
+    * ^short = "One each for\r\n * http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\n * https://standards.digital.health.nz/ns/central-region/contact-relationship"
     * coding.code 1..1 MS      // from NK1-3.1
     * coding.system 1..1 MS    // based on which code from NK1-3.1
     * coding.display 1..1 MS   // from NK1-3.2 or by lookup from NK1-3.1 ??
@@ -235,6 +245,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * text 0..0    //  Code, Value and Display are all derived from Code value from PID-16.1
     * extension 0..0
     * id 0..0
+
   * name 1..1 MS
     * use 0..0
     * text 1..1 MS
@@ -262,8 +273,21 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension contains $HL7InterpreterRequired named interpreterRequired 0..1 MS
 
 * communication 0..* MS
+  //* language from nzcr-combined-language-vs
   * language 1..1 MS
-    * coding 1..* MS
+
+    //* coding ^slicing.discriminator.type = #pattern
+    //* coding ^slicing.discriminator.path = "system"
+    //* coding ^slicing.rules = #open
+    //* coding ^slicing.description = "Slice based on the coding[].system"
+    //* coding contains ietf 1..1 and rawSource 1..1
+
+    //* coding[ietf].system = $IETFLanguageCS (exactly)
+    //* coding[ietf].code from $NZCentralRegionEthnicityLevel2VS (required)
+
+    //* coding[rawSource].system = $NZCentralRegionRawLanguageCS  (exactly)
+    //* coding[rawSource].code from nzcr-language-vs (required)
+
     * coding.code 1..1 MS      // from PID-15.1
     * coding.system 1..1 MS    // based on which code from PID-15.1
     * coding.display 1..1 MS   // from PID-15.2 or by lookup from PID-15.1 ??

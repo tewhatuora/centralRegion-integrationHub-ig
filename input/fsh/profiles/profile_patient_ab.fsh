@@ -22,7 +22,22 @@ Description: "Patient resource for Te Whatu Ora, Central Region, with additional
   * extension[status].valueCodeableConcept insert AdditionalBindingByExtension(#required, $NZCentralRegionResidencyVS)
 
 
+// religion requires codes from two ValueSets
+* extension contains $HL7PatientReligion named patient-religion 0..1 MS
+* extension[patient-religion].valueCodeableConcept from $HL7PatientRelgionVS
+* extension[patient-religion].valueCodeableConcept insert AdditionalBindingByExtension(#required, $NZCentralRegionReligionVS)
+
+
 // not using the local re-creations
 * extension[nzcrEthnicity] 0..0
 * extension[nzcrResidency] 0..0
+* extension[nzcrReligion] 0..0
 
+
+// communication.language requires codes from two ValueSets
+* communication.language from $IETFLanguageVS
+* communication.language insert AdditionalBindingByExtension(#required, $NZCentralRegionRawLanguageVS)
+
+// contact.relationship requires codes from two ValueSets
+* contact.relationship from $HL7RelationshipVS
+* contact.relationship insert AdditionalBindingByExtension(#required, $NZCentralRegionContactRelationshipVS)
