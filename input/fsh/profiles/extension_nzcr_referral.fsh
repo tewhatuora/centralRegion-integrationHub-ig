@@ -157,7 +157,7 @@ Description: "Complex extension recording extra data about referrals"
   * ^definition = "What was the original raw priority setting on the referral?"
   * ^short = "Raw referral priority?"
   * value[x] only Coding
-  * value[x] from $NZCentralRegionReferralPriorityVS (required)
+  * valueCoding from nzcr-referral-priority-vs (required)
   * valueCoding 1..1
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
@@ -169,7 +169,7 @@ Description: "Complex extension recording extra data about referrals"
   * ^definition = "What was the original raw status setting on the referral?"
   * ^short = "Raw referral status?"
   * value[x] only Coding
-  * value[x] from $NZCentralRegionReferralStatusVS (required)
+  * valueCoding from nzcr-referral-status-vs (required)
   * valueCoding 1..1
     * version 0..0        // not versioned
     * userSelected 0..0   // not used

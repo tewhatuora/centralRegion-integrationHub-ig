@@ -8,6 +8,8 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * ^experimental = false
 * ^caseSensitive = true
 
+/*  These 'Referral Reasons' seem to be more applicable to Condition
+
 * #AA "Axillary Abscess"
 * #AAA "Abdominal aortic anuerysm"
 * #ABC "Abnormal Cervix"
@@ -1598,6 +1600,16 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #Z133 "Special screening examination for mental"
 * #Z369 "Antenatal screening, unspecified"
 * #Z609 "Problem related to social environment, u"
+
+*/
+
+// values noted from DT1_WebPAS
+* #AMBBP   "Ambulatory BP Machine"
+* #CLINIC  "Antenatal Clinic Obstetric"
+* #ECV     "External Cephalic Version"
+* #GENCARD "General Cardiology"
+* #OTH     "Other"
+* #PLP     "Planned procedure"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs

@@ -90,9 +90,9 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
   * extension 0..0
   * id 0..0
 
-* authoredOn 1..1 MS
+* authoredOn 0..1 MS
 
-* requester 1..1 MS
+* requester 0..1 MS
   * type 1..1 MS
   * type = "Practitioner"
     * ^short = "Type the reference refers to (e.g. 'Practitioner')"
@@ -126,7 +126,7 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
 
 * performerType 0..0  // N/A for referral
 
-* performer 1..1 MS   // TODO - check HL7 message definition
+* performer 0..1 MS   // samples from DT1_WebPAS leave out all the Drs (sigh)
   * type 1..1 MS
   * type = "Practitioner"
     * ^short = "Type the reference refers to (e.g. 'Practitioner')"
@@ -159,7 +159,7 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
   * id 0..0
 
 * locationCode from nzcr-department-vs
-* locationCode 1..1 MS
+* locationCode 0..1 MS
   * coding MS
     * code 1..1 MS
     * system 1..1 MS
@@ -173,6 +173,7 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
 
 
 * reasonCode 0..1 MS
+* reasonCode from nzcr-referral-reason-vs (required)
 * reasonReference 0..0      // We don't have Condition, Observation, DiagnosticReport, DocumentReference) resources
 
 

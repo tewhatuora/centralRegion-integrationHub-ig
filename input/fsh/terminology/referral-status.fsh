@@ -8,7 +8,7 @@ Description:  "Referral Status codes; ex. WebPAS in NZ Central Region."
 * ^experimental = false
 * ^caseSensitive = true
 
-* #A	"Accepted"  // Sample data from DT1_WebPAS - not Active as in provided codesets
+* #A	"Accepted"        // Sample data from DT1_WebPAS - not Active as in provided codesets
 * #E	"Expired"
 * #D	"Draft"
 * #P	"Pending"

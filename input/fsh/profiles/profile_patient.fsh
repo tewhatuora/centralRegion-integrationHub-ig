@@ -25,7 +25,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * implicitRules 0..0
 * language 0..0
 
-* active 0..0  // insufficient data
+* active 0..1     // set to #true or #false for each side of ADT^A40 patient merge message
 
 * name 1..* MS
   * use 1..1 MS

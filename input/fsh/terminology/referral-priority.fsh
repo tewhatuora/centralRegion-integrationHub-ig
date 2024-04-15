@@ -20,6 +20,8 @@ Description:  "Referral Priority codes; ex. WebPAS in NZ Central Region."
 * #OVR	"Clinical override"
 * #TOS	"Transfr othr service"
 
+* #AR   "Active review"       // Sample data from DT1_WebPAS -- looks like a referralStatus rather than a priority
+* #PLP  "Planned procedure"   // Sample data from DT1_WebPAS -- looks like a referralType rather than a priority
 
 ValueSet: NZCentralRegionReferralPriorityValueSet
 Id: nzcr-referral-priority-vs
@@ -60,6 +62,14 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
 * insert cmapEntry(SEM,  "3 Semi-urgent",           urgent,  "Urgent")
 * insert cmapEntry(ROU,  "4 Routine",               routine, "Routine")
 * insert cmapEntry(LOW,  "5 Low Priority",          routine, "Routine")  // FHIR only has 4 priority levels
+* insert cmapEntry(WAI,  "7 Waiting for triage",    routine, "Routine")
+* insert cmapEntry(TES,	 "6 Pending test",          routine, "Routine")
+* insert cmapEntry(NOT,	 "8 Not seen",              routine, "Routine")
+* insert cmapEntry(OVR,	 "Clinical override",       routine, "Routine")
+* insert cmapEntry(TOS,	 "Transfr othr service",    routine, "Routine")
+
+* insert cmapEntry(AR,   "Active review",           routine, "Routine")  // is this REALLY a priority ??
+* insert cmapEntry(PLP,  "Planned procedure",       routine, "Routine")  // is this REALLY a priority ??
 
 * group[+]                                         // Separate Group for each Source/Target CodeSystem tuple - this time HL7 v2 codes
   * source = $HL7ReferralPriorityCS

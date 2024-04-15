@@ -1,6 +1,24 @@
 
 Change history for this FHIR Implementation Guide is as follows:
-### v1.0.4-rc1
+### v1.0.5
+* Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system.
+  * `AMBBP` for `Ambulatory BP Machine` 
+  * `ECV` for `External Cephalic Version`
+  * `GENCARD` for `General Cardiology`
+  * `PLP` for `Planned Procedure`
+  * `CLINIC` for `Antenatal Clinic Obstetric`
+* Added codes to [Referral Status](./CodeSystem-nzcr-referral-priority-cs.html) code system
+  * `AR` for `Active review`
+  * `PLP` for `Planned procedure`
+* Field `Patient.active` is now optional, as it is used when `ADT^A40` PatientMerge messages are received.
+* Field `ServiceRequest.reasonCode` bound to [Referral Reason](./ValueSet-nzcr-referral-reason-vs.html) value set.
+* Field `ServiceRequest.authoredOn` is now optional, as field `ZXV.9` may not be present in source HL7 message.
+* Field `ServiceRequest.requester` is now optional, as fields `PV1.8` and `PV1.9` may not be present in source HL7 message.
+* Field `ServiceRequest.performer` is now optional, as fields `PV1.7` and `PV1.9` may not be present in source HL7 message.
+* Field `ServiceRequest.locationCode` is now optional, as field `ZXV.40` may not be present in source HL7 message.
+
+
+### v1.0.4
 * Added code `M32` for `PN Emergency Dept` in [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html) code system.
 * Added [nzcrRelgion](./ValueSet-nzcr-combined-religion-vs.html) combined value set to also allow us to have multiple codings and not break the validator.
 * Fields `Patient.communication.language` and  `Patient.contact.relationship` no-longer permit alternate codings.
