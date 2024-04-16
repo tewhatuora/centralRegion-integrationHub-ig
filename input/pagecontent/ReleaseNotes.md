@@ -1,5 +1,8 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.6
+* Updated [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system with all of it's correct 745 codes.
+
 ### v1.0.5
 * Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system.
   * `AMBBP` for `Ambulatory BP Machine` 
