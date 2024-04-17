@@ -154,6 +154,7 @@ Description:  "H4 (infection prevention) alert codes ex. WebPAS in NZ Central Re
 * ^experimental = false
 * ^caseSensitive = true
 
+* #B02 "Brugada syndrome"
 * #C01 "CRE"
 * #C02 "Drug resist C. Auris"
 * #E01 "ESBL E.coli"

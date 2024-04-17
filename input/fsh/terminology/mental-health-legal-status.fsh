@@ -80,7 +80,16 @@ Description:  "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region."
 * #R70   "SA(CAT) Act - S46"
 * #R71   "SA(CAT) Act- S47"
 * #R73   "MHA S15(2) Ext"
-
+* #R75	 "MHA S09 DAO notice"
+* #R76	 "MHA S11(5)(b)"
+* #R77	 "MHA S13(5)(b)"
+* #R78	 "MHA S109 Police"
+* #R79	 "Notice of death S132"
+* #R80	 "Cust Sent S36(2)(b))"
+* #R82	 "CPMIP S25(1)a UTST"
+* #R83	 "S11(4) Cancel Leave"
+* #R84	 "S13(4) Ntce Can Leav"
+* #R85	 "S16 Withdrawn"
 
 ValueSet: NZCentralRegionMentalHealthLegalStatusValueSet
 Id: nzcr-mental-health-legal-status-vs

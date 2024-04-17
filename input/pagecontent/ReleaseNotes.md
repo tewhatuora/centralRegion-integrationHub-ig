@@ -1,7 +1,20 @@
 
 Change history for this FHIR Implementation Guide is as follows:
-### v1.0.6
+### v1.0.6-rc2
 * Updated [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system with all of it's correct 745 codes.
+* Added codes to the [Mental Health Legal Status](./CodeSystem-nzcr-mental-health-legal-status-cs.html) codes.
+  * `R75`	-  `MHA S09 DAO notice`
+  * `R76`	-  `MHA S11(5)(b)`
+  * `R77`	-  `MHA S13(5)(b)`
+  * `R78`	-  `MHA S109 Police`
+  * `R79`	-  `Notice of death S132`
+  * `R80`	-  `Cust Sent S36(2)(b))`
+  * `R82`	-  `CPMIP S25(1)a UTST`
+  * `R83`	-  `S11(4) Cancel Leave`
+  * `R84`	-  `S13(4) Ntce Can Leav`
+  * `R85`	-  `S16 Withdrawn`
+* Added codes to the [H4 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h4-cs.html)
+  * `B02` - `Brugada syndrome`
 
 ### v1.0.5
 * Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system.
