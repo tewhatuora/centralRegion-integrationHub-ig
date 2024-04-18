@@ -1,6 +1,6 @@
 
 Change history for this FHIR Implementation Guide is as follows:
-### v1.0.6-rc2
+### v1.0.6-rc3
 * Updated [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system with all of it's correct 745 codes.
 * Added codes to the [Mental Health Legal Status](./CodeSystem-nzcr-mental-health-legal-status-cs.html) codes.
   * `R75`	-  `MHA S09 DAO notice`
@@ -15,6 +15,9 @@ Change history for this FHIR Implementation Guide is as follows:
   * `R85`	-  `S16 Withdrawn`
 * Added codes to the [H4 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h4-cs.html)
   * `B02` - `Brugada syndrome`
+* Patient and Subject links in [Flag](./StructureDefinition-NZCentralRegionFlag.html), [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html), [ClinicalImpression](./StructureDefinition-NZCentralRegionClinicalImpression.html) and [ServiceRequest](./StructureDefinition-NZCentralRegionReferral.html) resources can be non-NHI, when there is only a `temp` patient identifier available.
+* Added code `M35` for `Levin Police` to [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html) codes.
+* Added code `IN` for `NZ Indian` to [Level 2 Ethnicity](./CodeSystem-nzcr-ethnicity-level-2-code-system.html) codes
 
 ### v1.0.5
 * Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system.

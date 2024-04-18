@@ -12,6 +12,7 @@ Description:  "Ethnicity Level 2 codes from
 * #10	"European (nfd)"
 * #11	"NZ European"
 * #12	"Other European"
+* #IN "NZ Indian"
 * #21	"NZ Māori"
 * #30	"Pacific Island (nfd)"
 * #31	"Samoan"
@@ -98,6 +99,7 @@ Description: "Concept map mapping level 2 ethnicity codes ex. WebPAS to proper l
 * insert cmapEntry(41,	"Southeast Asian",           41000,  "Southeast Asian nfd")
 * insert cmapEntry(42,	"Chinese",                   42100,  "Chinese nfd")
 * insert cmapEntry(43,	"Indian",                    43100,  "Indian nfd")
+* insert cmapEntry(IN,  "NZ Indian",                 43199,  "Indian nec")
 * insert cmapEntry(44,	"Other Asian",               40000,  "Asian nfd")
 * insert cmapEntry(51,	"Middle Eastern",            51100,  "Middle Eastern nfd")
 * insert cmapEntry(52,	"Latin American / Hispanic", 52100,  "Latin American nfd")

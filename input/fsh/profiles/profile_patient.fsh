@@ -7,7 +7,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * ^derivation = #constraint
 
-* identifier 1..* MS  // We must have at least local ID
+* identifier 1..* MS  // We must have at least one ID
   * use 1..1 MS
   * system 1..1 MS
   * value 1..1 MS

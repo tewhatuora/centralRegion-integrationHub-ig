@@ -67,7 +67,6 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
   * identifier 1..1 MS  // We must have only the NHI
     * use 1..1 MS
     * system 1..1 MS
-    * system = $NZBaseNHI
     * value 1..1 MS
     * type 1..1 MS
       * coding MS  

@@ -76,7 +76,6 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
   * identifier 1..1 MS
     * use 1..1 MS
     * system 1..1 MS
-    * system = $NZBaseNHI
     * value 1..1 MS
     * type 1..1 MS
       * coding MS  
