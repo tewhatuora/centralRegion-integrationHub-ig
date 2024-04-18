@@ -55,6 +55,11 @@ Usage:  #example
   * display = "Ramadan, Mohamed Mahmoud S DR"
 
 * extension[flag-alert]
+  * extension[webPASCategory].valueCoding
+    * code = #H2
+    * system = "https://standards.digital.health.nz/ns/central-region/alert-category"
+    * display = "Medical condition"
+
   * extension[severityLevel].valueString = "9"    // TODO: severityLevel should be integer??
   * extension[reviewDate].valueDate = "2020-10-20"
   * extension[lastUpdatedBy].valueString = "melissab - Melissa Brosnan MDHB"

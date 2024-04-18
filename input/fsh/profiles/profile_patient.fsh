@@ -132,7 +132,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.extension 0..0
   * id 0..0
 
-* extension[nzCitizen] 1..1 MS
+* extension[nzCitizen] 0..1 MS
   * extension[status] 1..1 MS
     * valueCodeableConcept.coding 1..1 MS
     * valueCodeableConcept.coding.code 1..1 MS      // from PID-26.1

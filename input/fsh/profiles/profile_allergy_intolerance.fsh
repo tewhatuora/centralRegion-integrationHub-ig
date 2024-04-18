@@ -153,6 +153,8 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
     nzcr-alert named allergy-alert 1..1 MS 
 
 * extension[allergy-alert]
+  * extension[webPASCategory].valueCoding from nzcr-allergy-alert-category-vs (required)
+
   * extension[severityLevel] 0..1 MS
     * ^definition = "Severity level in range '0'..'9'"
     * ^short = "Severity level in range '0'..'9'"

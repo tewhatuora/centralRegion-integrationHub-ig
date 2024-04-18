@@ -141,6 +141,8 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
     nzcr-alert named flag-alert 1..1 MS 
 
 * extension[flag-alert]
+  * extension[webPASCategory].valueCoding from nzcr-flag-alert-category-vs (required)
+
   * extension[severityLevel]
     * ^definition = "Severity Level - 'W' for Alert/Flag"
     * ^short = "Severity Level - 'W' for Alert/Flag"

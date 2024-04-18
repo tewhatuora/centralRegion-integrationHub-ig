@@ -71,6 +71,12 @@ depending upon value of ZAL-2.1"
 
 * extension[allergy-alert].url -> "'https://standards.digital.health.nz/ns/central-region/alert'"
 
+* extension[allergy-alert].extension[webPASCategory].url -> "'webPASCategory'"
+* extension[allergy-alert].extension[webPASCategory].valueCoding
+  * code -> "ZAL-2.1" 
+  * display -> "ZAL-2.2"
+  * system -> "'https://standards.digital.health.nz/ns/central-region/alert-category'"
+
 // TODO: severityLevel should be integer??
 * extension[allergy-alert].extension[severityLevel].url -> "'severityLevel'"
 * extension[allergy-alert].extension[severityLevel].valueString -> "ZAL-6"   "TODO: severityLevel should be integer"

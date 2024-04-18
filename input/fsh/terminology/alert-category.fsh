@@ -28,6 +28,16 @@ Description:  "Alert Category codes ex. WebPAS in NZ Central Region"
 * #food "Food Allergy"   // from sample not documentation
 
 
+ValueSet: NZCentralRegionCombinedAlertCategoryValueSet
+Id: nzcr-acombined-alert-category-vs
+Title: "NZ Central Region - Combined Alert Category Value Set"
+Description:  "Alert Category codes ex. WebPAS in NZ Central Region that denote a Flag or an AllergyIntolerance"
+
+* ^url = $NZCentralRegionCombinedAlertCategoryVS
+* ^status = #active
+* ^experimental = false
+
+* include codes from system nzcr-alert-category-cs
 
 
 ValueSet: NZCentralRegionAllergyAlertCategoryValueSet

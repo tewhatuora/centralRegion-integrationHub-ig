@@ -1,6 +1,6 @@
 
 Change history for this FHIR Implementation Guide is as follows:
-### v1.0.6-rc3
+### v1.0.6-rc4
 * Updated [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system with all of it's correct 745 codes.
 * Added codes to the [Mental Health Legal Status](./CodeSystem-nzcr-mental-health-legal-status-cs.html) codes.
   * `R75`	-  `MHA S09 DAO notice`
@@ -18,6 +18,8 @@ Change history for this FHIR Implementation Guide is as follows:
 * Patient and Subject links in [Flag](./StructureDefinition-NZCentralRegionFlag.html), [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html), [ClinicalImpression](./StructureDefinition-NZCentralRegionClinicalImpression.html) and [ServiceRequest](./StructureDefinition-NZCentralRegionReferral.html) resources can be non-NHI, when there is only a `temp` patient identifier available.
 * Added code `M35` for `Levin Police` to [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html) codes.
 * Added code `IN` for `NZ Indian` to [Level 2 Ethnicity](./CodeSystem-nzcr-ethnicity-level-2-code-system.html) codes
+* Patient.extension[nzCitizenship] is optional
+* Added field `extension[allergy-alert].extension[webPASCategory]` to [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html) and [Flag](./StructureDefinition-NZCentralRegionFlag.html) resources to hold the original value of field `ZAL.2.1` the alert category.
 
 ### v1.0.5
 * Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system.

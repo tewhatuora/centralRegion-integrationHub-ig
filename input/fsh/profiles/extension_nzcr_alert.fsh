@@ -14,6 +14,7 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
 * ^context[=].expression = "AllergyIntolerance"
 
 * extension contains
+    webPASCategory 1..1 MS and
     severityLevel 0..1 MS and
     allergyReaction 0..1 MS and
     inactiveDate 0..1 MS and
@@ -26,6 +27,22 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
 * extension
   * ^definition = "Container holding the individual elements of the Alert extension."
   * ^short = "Container holding the individual elements of the Alert extension."
+
+* extension[webPASCategory]
+  * ^definition = "What was the original raw alert category on the Flag / AllergyIntolerance?"
+  * ^short = "Raw alert category"
+  * value[x] only Coding
+  * valueCoding from nzcr-acombined-alert-category-vs (required)
+  * valueCoding 1..1
+    * code 1..1 MS
+    * system 1..1 MS
+    * display 1..1 MS
+    * version 0..0        // not versioned
+    * userSelected 0..0   // not used
+    * extension 0..0
+    * id 0..0  
+  * id 0..0
+
 
 // TODO: - Regional message spec says integer in range 0..9 - but samples have 'W' and 'S' values
 * extension[severityLevel]

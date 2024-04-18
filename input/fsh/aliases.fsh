@@ -89,7 +89,7 @@ Alias:   $NZCentralRegionAlertCategoryCS        = https://standards.digital.heal
 
 Alias:   $NZCentralRegionAllergyAlertCodeH1CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1
 Alias:   $NZCentralRegionAllergyAlertCodeH3CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
-Alias:   $NZCentralRegionAllergyAlertCodeA3A4CS   = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-a3-a4
+Alias:   $NZCentralRegionAllergyAlertCodeA3A4CS = https://standards.digital.health.nz/ns/central-region/allergy-alert-code-a3-a4
 Alias:   $NZCentralRegionAllergyReactionA3A4CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4
 Alias:   $NZCentralRegionAllergyReactionH1H3CS  = https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3
 
@@ -130,6 +130,7 @@ Alias:   $NZCentralRegionContactRelationshipVS     = https://standards.digital.h
 Alias:   $NZCentralRegionRawLanguageVS             = https://standards.digital.health.nz/fhir/central-region/ValueSet-raw-language         // the raw language codes we start with
 Alias:   $NZCentralRegionLanguageVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-language             // subset of IETF codes we use
 
+Alias:   $NZCentralRegionCombinedAlertCategoryVS   = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-alert-type
 Alias:   $NZCentralRegionFlagAlertCategoryVS       = https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag
 Alias:   $NZCentralRegionAllergyAlertCategoryVS    = https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-allergy
 Alias:   $NZCentralRegionAllergyAlertCodeVS        = https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-alert-code

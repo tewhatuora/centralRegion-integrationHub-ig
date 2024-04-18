@@ -159,6 +159,9 @@ Description: "Complex extension recording extra data about referrals"
   * value[x] only Coding
   * valueCoding from nzcr-referral-priority-vs (required)
   * valueCoding 1..1
+    * code 1..1 MS
+    * system 1..1 MS
+    * display 1..1 MS
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
     * extension 0..0
@@ -171,6 +174,9 @@ Description: "Complex extension recording extra data about referrals"
   * value[x] only Coding
   * valueCoding from nzcr-referral-status-vs (required)
   * valueCoding 1..1
+    * code 1..1 MS
+    * system 1..1 MS
+    * display 1..1 MS
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
     * extension 0..0

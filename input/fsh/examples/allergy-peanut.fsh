@@ -61,6 +61,11 @@ Usage:  #example
 * note.text = "Palliative Care, Contact Arohanui Hospice, Ph (06) 3566606"
 
 * extension[allergy-alert]
+  * extension[webPASCategory].valueCoding
+    * code = #H1
+    * system = "https://standards.digital.health.nz/ns/central-region/alert-category"
+    * display = "Allergies"
+  
   * extension[severityLevel].valueString = "S"   // TODO: severityLevel should be integer??
   * extension[allergyReaction].valueCodeableConcept
     * coding

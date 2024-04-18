@@ -70,6 +70,12 @@ ie: these categories denote 'free-text' alert codes
 * extension[flag-alert].url -> "'https://standards.digital.health.nz/ns/central-region/alert'"
 
 // TODO: severityLevel should be integer??
+* extension[flag-alert].extension[webPASCategory].url -> "'webPASCategory'"
+* extension[flag-alert].extension[webPASCategory].valueCoding
+  * code -> "ZAL-2.1" 
+  * display -> "ZAL-2.2"
+  * system -> "'https://standards.digital.health.nz/ns/central-region/alert-category'"
+
 * extension[flag-alert].extension[severityLevel].url -> "'severityLevel'"
 * extension[flag-alert].extension[severityLevel].valueString -> "ZAL-6"  "TODO: severityLevel should be integer"
 
@@ -88,7 +94,7 @@ ie: these categories denote 'free-text' alert codes
 * extension[flag-alert].extension[recordingHospital].url -> "'recordingHospital'"
 * extension[flag-alert].extension[recordingHospital].valueCodeableConcept
   * coding.code -> "ZAL-13.1"
-  * coding.system -> "'https://standards.digital.health.nz/fhir/central-region/hospital-code'"
+  * coding.system -> "'https://standards.digital.health.nz/ns/central-region/hospital-code'"
   * coding.display -> "ZAL-13.2"
 
 * extension[flag-alert].extension[comments].url -> "'comments'"
