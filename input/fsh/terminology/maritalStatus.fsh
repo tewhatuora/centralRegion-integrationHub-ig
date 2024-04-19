@@ -11,6 +11,7 @@ Description:  "A few extra Marital Status codes that are in use in Central Regio
 * #X "Separated" "Person is Separated, but not 'Legally Separated'"
 * #V "Civil Union" "Person is in a Civil Union"
 * #C "de Facto" "Person is in a de Facto relationship"   // Why didn't they just use #T Domestic Partner ? or #C Common law
+* #F "De facto" "Person is in a de Facto relationship"   // C from DT1 and F from PROD ... go figure
 
 ValueSet: NZCentralRegionMaritalStatusValueSet
 Id: nzcr-marital-status-vs

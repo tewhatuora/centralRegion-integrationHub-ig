@@ -20,6 +20,9 @@ Description:  "Referral Priority codes; ex. WebPAS in NZ Central Region."
 * #OVR	"Clinical override"
 * #TOS	"Transfr othr service"
 
+* #U    "Urgent"
+* #S    "Semi-urgent"
+
 * #AR   "Active review"       // Sample data from DT1_WebPAS -- looks like a referralStatus rather than a priority
 * #PLP  "Planned procedure"   // Sample data from DT1_WebPAS -- looks like a referralType rather than a priority
 
@@ -67,6 +70,9 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
 * insert cmapEntry(NOT,	 "8 Not seen",              routine, "Routine")
 * insert cmapEntry(OVR,	 "Clinical override",       routine, "Routine")
 * insert cmapEntry(TOS,	 "Transfr othr service",    routine, "Routine")
+
+* insert cmapEntry(U,    "Urgent",                  asap,    "ASAP")
+* insert cmapEntry(S,    "Semi-urgent",             urgent,  "Urgent")
 
 * insert cmapEntry(AR,   "Active review",           routine, "Routine")  // is this REALLY a priority ??
 * insert cmapEntry(PLP,  "Planned procedure",       routine, "Routine")  // is this REALLY a priority ??

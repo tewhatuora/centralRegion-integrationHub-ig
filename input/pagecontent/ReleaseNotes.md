@@ -13,13 +13,31 @@ Change history for this FHIR Implementation Guide is as follows:
   * `R83`	-  `S11(4) Cancel Leave`
   * `R84`	-  `S13(4) Ntce Can Leav`
   * `R85`	-  `S16 Withdrawn`
+  * `R86` -  `MHA S29 CTO 12-Month`
 * Added codes to the [H4 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h4-cs.html)
   * `B02` - `Brugada syndrome`
 * Patient and Subject links in [Flag](./StructureDefinition-NZCentralRegionFlag.html), [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html), [ClinicalImpression](./StructureDefinition-NZCentralRegionClinicalImpression.html) and [ServiceRequest](./StructureDefinition-NZCentralRegionReferral.html) resources can be non-NHI, when there is only a `temp` patient identifier available.
-* Added code `M35` for `Levin Police` to [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html) codes.
-* Added code `IN` for `NZ Indian` to [Level 2 Ethnicity](./CodeSystem-nzcr-ethnicity-level-2-code-system.html) codes
+ Added code `IN` for `NZ Indian` to [Level 2 Ethnicity](./CodeSystem-nzcr-ethnicity-level-2-code-system.html) codes
 * Patient.extension[nzCitizenship] is optional
 * Added field `extension[allergy-alert].extension[webPASCategory]` to [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html) and [Flag](./StructureDefinition-NZCentralRegionFlag.html) resources to hold the original value of field `ZAL.2.1` the alert category.
+* Added code `F` for `De Facto` to [Extra Marital Status](./CodeSystem-nzcr-extra-marital-status-cs.html) codes 
+* Added code `R40` for `Seventh Day Advents` to [Patient Relgion](./CodeSystem-nzcr-religion-cs.html) codes
+* Added codes to the [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+  * `B13` - `Benzodiazepines`
+* Added codes to [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html) codes
+  * `M35` for `Levin Police`
+  * `M31` for `Star 1` 
+  * `M38` for `OTHER`
+* Added codes to [Referral Priority](./CodeSystem-nzcr-referral-priority-cs.html) codes
+  * `U` for `Urgent`
+  * `S` for `Semi-urgent`
+* Added 229 codes for all the Private Hospitals, DHB based Mental Health facilities, and many Non-Hospital Mental Health facilites to [Hospital Codes](./ValueSet-nzcr-hospital-code-vs.html) as recording locations for NHIMWS warnings
+* Admitted defeat and down-graded [Hospital Codes](./ValueSet-nzcr-hospital-code-vs.html) to `example` in [Flag & AllergyIntolerance](./StructureDefinition-nzcr-alert.html) extension
+* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
+  * `P33` for `Pregabalin`
+
+
+
 
 ### v1.0.5
 * Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system.

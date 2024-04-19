@@ -47,6 +47,7 @@ Description:  "Religion codes ex. WebPAS in NZ Central Region"
 * #R37	"Ringatu"
 * #R38	"Ratana"
 * #R39	"Salvation Army"
+* #R40  "Seventh Day Advents"
 
 
 
@@ -118,6 +119,7 @@ Description: "Concept map mapping raw religion codes ex. WebPAS to proper FHIR r
 * insert cmapEntry(R35, "Quaker",                1071, "Friends")
 * insert cmapEntry(R36, "Roman Catholic",        1041, "Roman Catholic Church")
 * insert cmapEntry(R39, "Salvation Army",        1080, "Salvation Army")
+* insert cmapEntry(R40, "Seventh Day Advents",   1001, "Adventist")
 
 // Values with no mapping
 // * insert cmapEntry(R26, "No Religion",           R26, "No Religion")

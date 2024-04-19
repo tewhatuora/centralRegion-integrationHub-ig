@@ -107,7 +107,7 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
   * ^definition = "Which hospital recorded the alert?"
   * ^short = "Which hospital recorded the alert?"
   * value[x] only CodeableConcept
-  * value[x] from nzcr-hospital-code-vs (required)
+  * value[x] from nzcr-hospital-code-vs (extensible)
   * valueCodeableConcept
     * coding 1..* MS
       * ^short = "Multiple codings possible, one is original value from WebPAS..."

@@ -35,9 +35,12 @@ Description:  "Mental Health Review Location identification codes ex. WebPAS in 
 * #M25   "HCMH"
 * #M26   "DCMH"
 * #M27   "PCMH"
+* #M31   "Star 1"
 * #M32   "PN Emergency Dept"
+* #M34   "OH"
 * #M35   "Levin Police"
 * #M36   "PN Police"
+* #M38   "OTHER"
 * #WLB   "Lambie Building"
 * #WOD   "Outpatient Dept"
 * #WOT   "OT Dept"
@@ -51,6 +54,7 @@ Description:  "Mental Health Review Location identification codes ex. WebPAS in 
 * #YHO   "WR Mstn Hospital"
 * #YSS   "WR SSH Hospital"
 
+// mising codes ACT,  HOME,  OH, OTHER, Ward 25, Ward 26, Ward 27
 
 ValueSet: NZCentralRegionMentalHealthReviewLocationValueSet
 Id: nzcr-mental-health-review-location-vs
