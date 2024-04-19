@@ -45,7 +45,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * valueCodeableConcept.coding 1..1 MS
     * valueCodeableConcept.coding.code 1..1 MS 
     * valueCodeableConcept.coding.system 1..1 MS
-    * valueCodeableConcept.coding.display 1..1 MS
+    * valueCodeableConcept.coding.display 0..1 MS   // might not know the code
     * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
     * valueCodeableConcept.coding.userSelected 0..0 // data not available
     * valueCodeableConcept.text 0..0                // Code, Value and Display are all derived from Code value
@@ -79,7 +79,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding 1..1 MS
   * valueCodeableConcept.coding.code 1..1 MS 
   * valueCodeableConcept.coding.system 1..1 MS
-  * valueCodeableConcept.coding.display 1..1 MS
+  * valueCodeableConcept.coding.display 0..1 MS   // might not recognise the code...
   * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
   * valueCodeableConcept.text 0..0                // ode, Value and Display are all derived from Code value

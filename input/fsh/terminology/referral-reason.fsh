@@ -784,6 +784,11 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #CLINIC  "Antenatal Clinic Obstetric"
 * #PLP     "Planned procedure"
 
+// values noted from PROD
+* #ANTENATAL "Antenatal"
+* #MATCARE   "Maternity Care"
+
+
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
 Title: "NZ Central Region - Referral Reason Value Set"

@@ -38,6 +38,8 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #A30 "Amoxicillin/Clav"
 * #A31 "Aztreonam"
 * #A32 "Anastrazole"
+// what about A33 through A36 ??
+* #A37 "Alteplase"
 * #B01 "Baclofen"
 * #B02 "Bendroflumethiazide"
 * #B03 "Benzathine penicilli"
@@ -313,6 +315,10 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #T23 "Tobramycin"
 * #T24 "Tropicamide"
 * #T25 "Tetanus/diptheria va"
+
+// Whatabout T26 - T27??
+* #T28 "Ticagrelor"
+
 * #V01 "Vancomycin"
 * #V02 "Vecuronium"
 * #V03 "Venlafaxine"

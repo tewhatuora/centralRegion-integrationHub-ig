@@ -1,7 +1,20 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.6-rc5
+* Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) based upon messages from PROD
+  * `ANTENATAL` - `Antenatal`
+  * `MATCARE`   - `Maternity Care`
+
+* Added codes to [Referral Priority](./CodeSystem-nzcr-referral-priority-cs.html) codes
+  * `NPR` - `Not prioritised`
+  * `STP` - `Staged procedure`
+
+* Added codes to the [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+  * `A37` - `Alteplase`
+  * `T28` - `Ticagrelor`
+
 ### v1.0.6-rc4
-* Updated [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system with all of it's correct 745 codes.
+* Updated [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) code system with all of it's correct 745 codes
 * Added codes to the [Mental Health Legal Status](./CodeSystem-nzcr-mental-health-legal-status-cs.html) codes.
   * `R75`	-  `MHA S09 DAO notice`
   * `R76`	-  `MHA S11(5)(b)`
