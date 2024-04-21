@@ -1,5 +1,10 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.06-rc6
+* ADded codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) based upon messages from PROD
+  * `BPPET` - `Hypertension or PET Assessment`
+  * `MOVEMENT` - `Concern with fetal movements`
+  
 ### v1.0.6-rc5
 * Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) based upon messages from PROD
   * `ANTENATAL` - `Antenatal`

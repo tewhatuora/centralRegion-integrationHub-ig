@@ -785,8 +785,10 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #PLP     "Planned procedure"
 
 // values noted from PROD
-* #ANTENATAL "Antenatal"
-* #MATCARE   "Maternity Care"
+* #ANTENATAL    "Antenatal"
+* #MATCARE      "Maternity Care"
+* #BPPET        "Hypertension or PET Assessment"
+* #MOVEMENT     "Concern with fetal movements"
 
 
 ValueSet: NZCentralRegionReferralReasonValueSet
