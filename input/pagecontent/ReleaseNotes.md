@@ -1,10 +1,25 @@
 
 Change history for this FHIR Implementation Guide is as follows:
-### v1.0.06-rc6
-* ADded codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) based upon messages from PROD
+
+### v1.0.7-rc7
+* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+* `L18` - `Loratadine`
+* `M21` - `Methylphenidate`
+* `R09` - `Rosuvastatin`
+* `s21` - `Sotalol`
+
+* Added codes to [Patient Relgion](./CodeSystem-nzcr-religion-cs.html)
+* `R41` - `Sikh`
+
+* Aded codes to [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html)
+* `M30` -  `Ward 27`
+* `M37` -  `HOME`
+
+### v1.0.6-rc6
+* Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) based upon messages from PROD
   * `BPPET` - `Hypertension or PET Assessment`
   * `MOVEMENT` - `Concern with fetal movements`
-  
+
 ### v1.0.6-rc5
 * Added codes to [Rerral Reason](./CodeSystem-nzcr-referral-reason-cs.html) based upon messages from PROD
   * `ANTENATAL` - `Antenatal`
