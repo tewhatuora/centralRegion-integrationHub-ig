@@ -1,5 +1,13 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc8
+* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+  * `A34` - `Alcohol contain meds`
+  * `A39` - `Adalimumab`
+  * `B15` - `Benzydamine`
+  * `H08` - `Hyoscine`
+  * `L14` - `Lorazepam`
+  * `L16` - `Leflunomide`
 
 ### v1.0.7-rc7
 * Added codes to [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
