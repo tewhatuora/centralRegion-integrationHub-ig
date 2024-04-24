@@ -1,6 +1,45 @@
 
 Change history for this FHIR Implementation Guide is as follows:
-### v1.0.7-rc8
+### v1.0.6-rc9
+* Aded codes to [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html)
+  * #M33   "ACT"
+  * #M34   "OH"
+  * #M28   "Ward 25"
+  * #M29   "Ward 26"
+  * #YAH   "WR Allied Health Gym"
+
+* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+  * #A33	"Anaesthetic agent"
+  * #A35  "Antiinflammatories"
+  * #A36	"Atomoxetine"
+  * #A38	"Awaiting CARM reply"
+  * #B16	"Benzalkonium"
+  * #C51  "Caffeine"
+  * #C52  "Cefotaxime"
+  * #D19  "Donepezil"
+  * #G11	"Gadobutrol"
+  * #g12  "GTN spray"
+  * #H7	  "Hydroxychloroquine"
+  * #L12	"Labetalol"
+  * #L13	"Lurasidone"
+  * #L15	"Lidocaine/prilocaine"
+  * #L17	"Lisinopril"
+  * #L18  "Loratadine"
+  * #N15  "Neostigmine"
+  * #O11	"Ornidazole"
+  * #P34  "Patent Blue"
+  * #Q07  "QT-prolonging drugs"
+  * #s11  "Sulfa drug"
+  * #S21  "SSRIs"
+  * #s21  "Sotalol"
+  * #T26  "Thiazide"
+  * #T27  "Tamsulosin"
+  * #U1   "Unclear agent"
+  * #V09  "Varenicline"
+
+
+
+### v1.0.6-rc8
 * Added codes to [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
   * `A34` - `Alcohol contain meds`
   * `A39` - `Adalimumab`
@@ -9,7 +48,7 @@ Change history for this FHIR Implementation Guide is as follows:
   * `L14` - `Lorazepam`
   * `L16` - `Leflunomide`
 
-### v1.0.7-rc7
+### v1.0.6-rc7
 * Added codes to [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
 * `L18` - `Loratadine`
 * `M21` - `Methylphenidate`
