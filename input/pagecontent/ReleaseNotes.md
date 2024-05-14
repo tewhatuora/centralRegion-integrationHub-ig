@@ -1,5 +1,8 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc1
+* `Flag.extension[flag-alert].extension[allergyReaction]` is not populated for `Flag` resource.
+
 ### v1.0.6-rc9
 * Aded codes to [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html)
   * #M33   "ACT"
