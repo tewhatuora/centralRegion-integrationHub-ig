@@ -8,6 +8,7 @@ Description:  "Referral Priority codes; ex. WebPAS in NZ Central Region."
 * ^experimental = false
 * ^caseSensitive = true
 
+// Values defined by webPAS
 * #NPR	"Not prioritised"
 * #IMM	"1 Immediate"
 * #URG	"2 Urgent"
@@ -20,14 +21,14 @@ Description:  "Referral Priority codes; ex. WebPAS in NZ Central Region."
 * #OVR	"Clinical override"
 * #TOS	"Transfr othr service"
 
-// Values seen from PROD
+// Values defined by RHIP-ReferralStatus
+* #AR   "Active review"
+* #PLP  "Planned procedure"
 * #STP  "Staged procedure"
 * #U    "Urgent"
 * #S    "Semi-urgent"
-
-// Values seen from DT1
-* #AR   "Active review"       // Sample data from DT1_WebPAS -- looks like a referralStatus rather than a priority
-* #PLP  "Planned procedure"   // Sample data from DT1_WebPAS -- looks like a referralType rather than a priority
+* #A    "ASAP"
+* #R    "Routine"
 
 ValueSet: NZCentralRegionReferralPriorityValueSet
 Id: nzcr-referral-priority-vs
@@ -63,6 +64,7 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
   * source = $NZCentralRegionReferralPriorityCS
   * target = $HL7RequestPriorityCS
 
+// values from webPAS
 * insert cmapEntry(IMM,  "1 Immediate",             stat,    "STAT")
 * insert cmapEntry(URG,  "2 Urgent",                asap,    "ASAP")
 * insert cmapEntry(SEM,  "3 Semi-urgent",           urgent,  "Urgent")
@@ -75,14 +77,15 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
 * insert cmapEntry(TOS,	 "Transfr othr service",    routine, "Routine")
 * insert cmapEntry(NPR,  "Not prioritised",         routine, "Routine")
 
-// Values seen from PROD
+// values from RHIP-ReferralStatus
+* insert cmapEntry(AR,   "Active review",           routine, "Routine")
+* insert cmapEntry(PLP,  "Planned procedure",       routine, "Routine")
 * insert cmapEntry(STP,  "Staged procedure",        routine, "Routine")
+
+* insert cmapEntry(A,    "ASAP",                    stat,    "STAT")
 * insert cmapEntry(U,    "Urgent",                  asap,    "ASAP")
 * insert cmapEntry(S,    "Semi-urgent",             urgent,  "Urgent")
-
-// Values seen from DT1
-* insert cmapEntry(AR,   "Active review",           routine, "Routine")  // is this REALLY a priority ??
-* insert cmapEntry(PLP,  "Planned procedure",       routine, "Routine")  // is this REALLY a priority ??
+* insert cmapEntry(R,    "Routine",                 routine, "Routine")
 
 * group[+]                                         // Separate Group for each Source/Target CodeSystem tuple - this time HL7 v2 codes
   * source = $HL7ReferralPriorityCS
@@ -91,3 +94,4 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
 * insert cmapEntry(S,  "STAT",             stat,    "STAT")
 * insert cmapEntry(A,  "ASAP",             asap,    "ASAP")
 * insert cmapEntry(R,  "Routine",          routine, "Routine")
+

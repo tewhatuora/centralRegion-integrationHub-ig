@@ -1,5 +1,13 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc2
+* Re-labelled codes `R86` and `R87` codes, and added codes `R88` and `R89` in the [Mental Health Legal Status](./CodeSystem-nzcr-mental-health-legal-status-cs.html) codes:
+  * #R86   "MHA S29 (do not use)"
+  * #R87   "MHA S30 (do not use)"
+  * #R88   "MHA S29 CTO 12-Month"
+  * #R89   "MHA S30 CTO 12-Month"
+* Added `R` - `Routine` to  [Referral Priority](./CodeSystem-nzcr-referral-priority-cs.html) codes
+
 ### v1.0.7-rc1
 * `Flag.extension[flag-alert].extension[allergyReaction]` is not populated for `Flag` resource.
 

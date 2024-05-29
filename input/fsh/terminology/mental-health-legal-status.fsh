@@ -90,7 +90,10 @@ Description:  "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region."
 * #R83	 "S11(4) Cancel Leave"
 * #R84	 "S13(4) Ntce Can Leav"
 * #R85	 "S16 Withdrawn"
-* #R86   "MHA S29 CTO 12-Month"
+* #R86   "MHA S29 (do not use)"
+* #R87   "MHA S30 (do not use)"
+* #R88   "MHA S29 CTO 12-Month"
+* #R89   "MHA S30 CTO 12-Month"
 
 
 ValueSet: NZCentralRegionMentalHealthLegalStatusValueSet
