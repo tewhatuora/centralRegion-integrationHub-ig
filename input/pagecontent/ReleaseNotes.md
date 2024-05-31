@@ -7,6 +7,7 @@ Change history for this FHIR Implementation Guide is as follows:
   * #R88   "MHA S29 CTO 12-Month"
   * #R89   "MHA S30 CTO 12-Month"
 * Added `R` - `Routine` to  [Referral Priority](./CodeSystem-nzcr-referral-priority-cs.html) codes
+* `Flag.extension[flag-alert].extension[allergyReaction]` is optional for `Flag` resource; as it is used by some `H2` Medical Condition alerts.
 
 ### v1.0.7-rc1
 * `Flag.extension[flag-alert].extension[allergyReaction]` is not populated for `Flag` resource.

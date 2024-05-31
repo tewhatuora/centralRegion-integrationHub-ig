@@ -147,7 +147,7 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
     * ^definition = "Severity Level - 'W' for Alert/Flag"
     * ^short = "Severity Level - 'W' for Alert/Flag"
 
-  * extension[allergyReaction] 0..0     // not applicable/mappable for FLAG categories
+  * extension[allergyReaction] 0..1 MS   // Some H2 'Medical Condition' flags include allergyReaction - which begs the question why not use an Allergy alert class?77
 
   * extension[inactiveDate] 0..1 MS     // not to be confused with period.end
   * extension[reviewDate] 0..1 MS
