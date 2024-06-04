@@ -11,9 +11,9 @@ Description: "Central Region Message Specification (1.14) - Allergy Intolerance 
 
 * clinicalStatus
   * coding
-    * code -> "ZAL-8 & ZAL-9" "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty\r\n**then** 'active'\r\n**else** 'inactive'"
+    * code -> "ZAL-5 & ZAL-9" "**if** ZAL-5 is empty **AND** ZAL-9 is in the future or empty\r\n**then** 'active'\r\n**else** 'inactive'"
     * system -> "'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical'"
-    * display -> "**if** ZAL-8 is empty **AND** ZAL-9 is in the future or empty\r\n**then** 'Active'\r\n**else** 'Inactive'"
+    * display -> "**if** ZAL-5 is empty **AND** ZAL-9 is in the future or empty\r\n**then** 'Active'\r\n**else** 'Inactive'"
 
 
 * verificationStatus

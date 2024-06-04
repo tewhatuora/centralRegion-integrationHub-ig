@@ -1,5 +1,9 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc3
+* Updated mapping for [AllergyIntolerance Mapping](./StructureDefinition-NZCentralRegionAllergyIntolerance-mappings.html) as
+  `clinicalStatus` is derived from `ZAL-5` and `ZAL-9` fields and current dateTime, rather than `ZAL-8`
+
 ### v1.0.7-rc2
 * Re-labelled codes `R86` and `R87` codes, and added codes `R88` and `R89` in the [Mental Health Legal Status](./CodeSystem-nzcr-mental-health-legal-status-cs.html) codes:
   * #R86   "MHA S29 (do not use)"
