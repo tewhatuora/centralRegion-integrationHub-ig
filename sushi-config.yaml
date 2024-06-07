@@ -75,19 +75,21 @@ menu:
   Home: index.html
   Technology Landscape: technologyLandscape.html
   Use Cases:
-     Refer Patient: useCaseReferPatient.html
-     Update Patient: useCaseUpdatePatient.html
+    Refer Patient: useCaseReferPatient.html
+    Update Patient: useCaseUpdatePatient.html
   APIs:
-     Clinical Resources: clinicalResources.html
-     Terminoloy Resources: terminologyResources.html
-     FHIR Foundation Resources: foundationResources.html
-     All Resources: CapabilityStatement-nzcr-SmileCDR.html
+    Clinical Resources: clinicalResources.html
+    Terminoloy Resources: terminologyResources.html
+    FHIR Foundation Resources: foundationResources.html
+    All Resources: CapabilityStatement-nzcr-SmileCDR.html
   Artifacts: artifacts.html
+  Developer Guide:
+      Onboarding: apiClientOnboarding.html
+      Subscriptions: devGuide-Subscriptions.html
   Support:
-     Developer Guide: DeveloperGuide.html
-     Release Notes: ReleaseNotes.html 
-     IG Package: package.tgz
-     IG Q&A: qa.html
+    Release Notes: ReleaseNotes.html 
+    IG Package: package.tgz
+    IG Q&A: qa.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

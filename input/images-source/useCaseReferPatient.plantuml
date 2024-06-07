@@ -14,11 +14,15 @@ participant "HL7 v2\nHub & Spoke" as HL7
 participant "FHIR API\nIntegration Hub" as HUB
 participant "API Client\n(ConnectedCare, Scope, etc)" as CLIENT
 
-note left of WebPAS
+note right of CLIENT
 **Preconditions:**
 1. Have OAuth AccessToken
-2. Subscribe to ServiceRequest resource
+2. ServiceRequest Subscription
+   **Payload Options**
+   - PUT - callback/ServiceRequest - single resource payload
+   - POST - callback - multi-resource bundle including
 end note
+
 
 group #azure Patient Referral
   Clinician -> WebPAS: Create Patient Referral to Medical Speciality
@@ -30,13 +34,17 @@ group #azure Patient Referral
   return ack/nak
   deactivate HUB
 
-... some time later ...
+... milliseconds later ...
 
-  HUB -> CLIENT: POST /callback/ServiceRequest({patiendId})
+  HUB -> CLIENT: PUT or POST /fhir/callback
   return ack/nak
 end
 
 ... ...
+
+note right of CLIENT
+for PUT ServiceRequest payload
+end note
 
 group #azure Retrieve Patient Details
   CLIENT -> HUB: GET /fhir/Patient/{id}
@@ -48,12 +56,20 @@ end
 
 ... ...
 
+note right of CLIENT
+**Callback Payload Options**
+1. PUT - callback/Patient/{id} - single resource payload
+2. POST - callback - multi-resource bundle 
+end note
+
 group #azure Subscribe Patient Updates
-  CLIENT -> HUB: POST /fhir/Subscription({patientId})
+  CLIENT -> HUB: POST /fhir/Subscription
   activate HUB #lavender
   HUB -> HUB: validateSubscription
   HUB -> HUB: saveResource()
   return ack/nak
   deactivate HUB
 end
+
+Clinician --> CLIENT: Acts on Referral
 @enduml

@@ -15,7 +15,7 @@ participant "HL7 v2\nHub & Spoke" as HL7
 participant "FHIR API\nIntegration Hub" as HUB
 participant "API Client\n(ConnectedCare, Scope, etc)" as CLIENT
 
-note left of HUB
+note right of CLIENT
 **PreConditions**
 1. Have valid API AccessToken
 2. Subscribed to Patient Resource Updates
@@ -35,13 +35,19 @@ end
 
 ... ...
 
+note right of CLIENT
+**Callback Payload Options**
+1. PUT - callback/Patient/{id} - single resource payload
+2. POST - callback - multi-resource bundle 
+end note
+
 group #azure Notify Resource Update
-  HUB -> CLIENT: notifyPatientUpdate(_{id}_)
-  ...  ...
-  CLIENT -> HUB: GET /fhir/Patient/_{id}_
-  activate HUB #lavender
-  HUB -> HUB: retrieveResource(_{id}_)
-  return _response(Patient, _{id}_)
+  HUB -> CLIENT: PUT or POST /fhir/callback
+  activate CLIENT #lavender
+  CLIENT -> CLIENT: processCallback()
+  return ack/nak
   deactivate HUB
 end
+
+Clinician -> CLIENT: Act on Patent Data Update
 @enduml

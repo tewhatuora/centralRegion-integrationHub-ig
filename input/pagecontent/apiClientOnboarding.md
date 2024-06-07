@@ -1,6 +1,4 @@
 
-## API Client Provisioning
-
 The one-off process for registering an API Client for the Central Region Integration Hub (iHub) is as follows:
 
 <figure>
@@ -14,7 +12,7 @@ The one-off process for registering an API Client for the Central Region Integra
 * [6-8]  MidCentral IT Support Team loads your provided PublicKey Certificate against your API Client registration into AzureAD.
 * [9-11] MidCentral IT Support Team grants your API Client appropriate access roles
 * [12] MidCentral IT Support Team returns ClientId and Scope Identifiers that match your API Client Registration.
-* [13] You load PrivateKey, PublicKey, ScopeId and ClientId into your API Client software.
+* [13] You load PrivateKey, PublicKey Certificate, ScopeId and ClientId into your API Client software.
 
 ### Key Generation
 Step 1 of the process involves generation of a set of RSA keys, giving both PrivateKey and matching PublicKey Certificate.
@@ -272,7 +270,7 @@ echo $accessToken
 ### javascript
 
 This javascript example lets the MSAL do all the hard work; you need to have the following environment variables set:
-* IHUB_PVT_KEY - holds the contents of your `.pvtKey` file.
+* IHUB_PVT_KEY - holds the **contents** of your `.pvtKey` file.
 * IHUB_CERT_THUMBNAIL - the thumbnail of your `.crt` file in `hex` format
 * IHUB_CLIENT_ID - the client UUID returned in the provisioning process.
 
@@ -483,7 +481,7 @@ class Program
 
 ### Java
 This Java example lets the MSAL do all the hard work; you need to have the following pre-requisites in place:
-*  Your `.crt`~and .pvtKey` files need to be available
+*  Your `.crt` and `.pvtKey` files need to be available
 *  [msal4j](https://mvnrepository.com/artifact/com.microsoft.azure/msal4j)
 *  [commons codec](https://mvnrepository.com/artifact/commons-codec/commons-codec)
 
