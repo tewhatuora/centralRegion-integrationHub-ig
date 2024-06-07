@@ -8,7 +8,7 @@ Description:  "Hospital identification codes ex. WebPAS in NZ Central Region"
 * ^experimental = false
 * ^caseSensitive = true
 
-* ^content = #fragment   // This codeSystem Resource is incomplete
+* ^content = #complete   // This codeSystem Resource is no longer a #frgament
 
 * #PNH     "Palmerston North Hospital"
 * #WRH     "Wairarapa Hospital"

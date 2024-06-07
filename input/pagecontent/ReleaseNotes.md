@@ -1,5 +1,8 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc4
+* Updated [Hospital Codes](CodeSystem-nzcr-hospital-code-cs.html) to no-longer be a `fragment`; We shall update the code system as new codes come to light.
+
 ### v1.0.7-rc3
 * Updated mapping for [AllergyIntolerance Mapping](./StructureDefinition-NZCentralRegionAllergyIntolerance-mappings.html) as
   `clinicalStatus` is derived from `ZAL-5` and `ZAL-9` fields and current dateTime, rather than `ZAL-8`
