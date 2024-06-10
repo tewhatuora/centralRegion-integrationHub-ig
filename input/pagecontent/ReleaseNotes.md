@@ -1,5 +1,9 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc5
+* Added code `3511` for `NHIMWS` to the [Hospital Codes](CodeSystem-nzcr-hospital-code-cs.html) 
+* Added code `R42` for `Spiritualist` to [Patient Relgion Codes](./CodeSystem-nzcr-religion-cs.html)
+
 ### v1.0.7-rc4
 * Updated [Hospital Codes](CodeSystem-nzcr-hospital-code-cs.html) to no-longer be a `fragment`; We shall update the code system as new codes come to light.
 * Updated mapping for [Flag Mapping](./StructureDefinition-NZCentralRegionFlag-mappings.html) as

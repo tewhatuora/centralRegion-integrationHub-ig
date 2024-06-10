@@ -16,7 +16,9 @@ Description:  "Hospital identification codes ex. WebPAS in NZ Central Region"
 
 * #1234    "New Zealand Health Information Service"
 * #6001    "Centre for Adverse Reaction Monitoring"
+* #3511    "NHIMWS"
 
+// Public Hospitals
 * #3914    "Alexandra Hospital"
 * #3111    "Ashburton Hospital"
 * #3260    "Auckland City Hospital"

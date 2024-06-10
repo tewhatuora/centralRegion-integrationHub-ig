@@ -49,6 +49,7 @@ Description:  "Religion codes ex. WebPAS in NZ Central Region"
 * #R39	"Salvation Army"
 * #R40  "Seventh Day Advents"
 * #R41  "Sikh"
+* #R42  "Spiritualist"
 
 
 ValueSet: NZCentralRegionCombinedReligionValueSet
@@ -121,6 +122,7 @@ Description: "Concept map mapping raw religion codes ex. WebPAS to proper FHIR r
 * insert cmapEntry(R39, "Salvation Army",        1080, "Salvation Army")
 * insert cmapEntry(R40, "Seventh Day Advents",   1001, "Adventist")
 * insert cmapEntry(R41, "Sikh",                  1047, "Sikism")
+* insert cmapEntry(R42, "Spiritualist",          1048, "Spiritualism")
 
 // Values with no mapping
 // * insert cmapEntry(R26, "No Religion",           R26, "No Religion")
