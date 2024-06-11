@@ -9,17 +9,7 @@
   "kind": "instance",
   "software": {
     "name": "Smile CDR",
-    "version": "2023.08.R03",
-    "extension": [
-      {
-        "url": "l4hConverterVersion",
-        "stringValue": "vxx.yy.zz"
-      },
-      {
-        "url": "l4hTemplatesVersion",
-        "stringValue": "vxx.yy.zz"
-      }
-    ]
+    "version": "2023.08.R03"
   },
   "implementation": {
     "description": "FHIR Endpoint powered by Smile CDR",
@@ -627,6 +617,11 @@
               "name": "diff",
               "definition": "http://localhost:8000/OperationDefinition/Global-is-diff",
               "documentation": "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences."
+            },
+            {
+               "name": "trigger-subscription",
+              "definition": "http://localhost:8000/OperationDefinition/Trigger-subscription",
+              "documentation" : "Triggers the Subscription as if the resources returned by the given searchUrl paratmeter had triggered the Subscription.  [details](https://smilecdr.com/docs/subscription/manual_triggering.html) Only available on `test-smileCDR.mdhb.health.nz` instance."
             }
           ]
         },

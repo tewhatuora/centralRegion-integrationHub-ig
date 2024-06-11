@@ -58,7 +58,6 @@ hashOperation['expunge']= "Physically delete, rather than logically delete, old 
 hashOperation['diff']= "Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences. [details](https://hapifhir.io/hapi-fhir/docs/server_jpa/diff.html) - `[base]/[Resource]/[id]/$diff`";
 
 
-
 // Which resources are in which set ?
 let resourceSets = {};
 resourceSets['clinical']    = [ 'Patient', 'Flag', 'AllergyIntolerance', 'ClinicalImpression', 'Organization', 'Practitioner', 'ServiceRequest' ];

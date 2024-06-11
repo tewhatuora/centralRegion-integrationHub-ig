@@ -1,5 +1,8 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc6
+* Added documentation of `$trigger-subscription` operation to `Subscription` api endpoint and [developer's guide](./devGuide-Subscriptions.html#manual-subscription-triggering).
+
 ### v1.0.7-rc5
 * Added code `3511` for `NHIMWS` to the [Hospital Codes](CodeSystem-nzcr-hospital-code-cs.html) 
 * Added code `R42` for `Spiritualist` to [Patient Relgion Codes](./CodeSystem-nzcr-religion-cs.html)

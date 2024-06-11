@@ -8,7 +8,7 @@
 <h3>Central Region FHIR REST Endpoints</h3>
 <div>
 <ul>
-<li>Implementation Guide Version: 1.0.7-rc5</li>
+<li>Implementation Guide Version: 1.0.7-rc6</li>
 <li>FHIR Version: 4.0.1</li>
 <li>Formats:
 <code>application/fhir+xml</code>, 
@@ -291,6 +291,11 @@
 <tr>
 <td>$diff</td>
 <td><p>Examines two resource versions (can be two versions of the same resource, or two different resources) and generates a FHIR Patch document showing the differences.</p>
+</td>
+</tr>
+<tr>
+<td>$trigger-subscription</td>
+<td><p>Triggers the Subscription as if the resources returned by the given searchUrl paratmeter had triggered the Subscription.  <a href="https://smilecdr.com/docs/subscription/manual_triggering.html">details</a> Only available on <code>test-smileCDR.mdhb.health.nz</code> instance.</p>
 </td>
 </tr>
 </tbody></table><br/>

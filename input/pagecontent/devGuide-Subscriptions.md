@@ -86,3 +86,25 @@ The expected notification will have the form:
   } ]
 }
 ```
+
+### Manual Subscription Triggering
+
+The test instance of SmileCDR at `test-smilecdr.mdhb.health.nz` has been configured to allow manual triggering of subscriptions.
+Full details on this capability are available at [SmileCDR Documentation](https://smilecdr.com/docs/subscription/manual_triggering.html).
+
+In short, posting a suitable `Parameter` structure to `https://test-smilecdr.mdhb.health.nz:8000/Subscripton/{id}/$trigger-subscription`
+will cause the Subscription's notification(s) to be sent out. 
+
+The `Parameter` request body is as follows:
+
+```json
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "searchUrl",
+      "valueString": "Patient?identifier=ZKG3868"
+    }
+  ]
+}
+```
