@@ -38,14 +38,27 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+pages:
+  index.md:
+    title: Home
+  technologyLandscape.md:
+    title: Technology Landscape
+  useCaseReferPatient.md:
+    title: "Use Case: Refer Patient"
+  useCaseUpdatePatient.md:
+    title: "Use Case: Update Patient Details"
+  clinicalResources.xml:
+    title: Clinical Resources
+  terminologyResources.xml:
+    title: Terminology Resources
+  foundationResources.xml:
+    title: Foundation Resources
+  devGuide-Onboarding.md:
+    title: API Client Onboarding
+  devGuide-Subscriptions.md:
+    title: Patient Update Subscriptions
+  ReleaseNotes.md:
+    title: Release Notes
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -84,8 +97,8 @@ menu:
     All Resources: CapabilityStatement-nzcr-SmileCDR.html
   Artifacts: artifacts.html
   Developer Guide:
-      Onboarding: apiClientOnboarding.html
-      Subscriptions: devGuide-Subscriptions.html
+    Onboarding: devGuide-Onboarding.html
+    Subscriptions: devGuide-Subscriptions.html
   Support:
     Release Notes: ReleaseNotes.html 
     IG Package: package.tgz

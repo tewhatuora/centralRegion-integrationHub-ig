@@ -8,27 +8,6 @@ that have been populated from [master data](https://en.wikipedia.org/wiki/Master
 
 The Integration Hub currently only provides read-only access to the supported FHIR Resources.
 
-## Sections
-
-- [Technology Landscape](./technologyLandscape.html): Technology landscape of the Integration Hub.
-
-- Use Cases: Expected Use Cases supported by the Integration Hub
-
-  - [Refer Patient](./useCaseReferPatient.html)
-  - [Update Patient](./useCaseUpdatePatient.html)
-
-- API: The specific API features supported by the Integration Hub [Summary](./CapabilityStatement-nzcr-SmileCDR.html) or [Details](./capabilityStatement.html)
-
-- Profiles: A list of the FHIR Resource [Profiles](./artifacts.html#2) and [Extensions](./artifacts.html#3) that are defined by the guide.
-
-- Terminology: List of the FHIR terminology artifacts [Code Systems](./artifacts.html#terminology-code-systems), 
-       [Value Sets](./artifacts.html#terminology-value-sets), [Concept Maps](./artifacts.html#terminology-concept-maps), 
-       [Example Instances](./artifacts.html#example-example-instances) defined within this implementation guide
-
-- [Release Notes](./ReleaseNotes.html): Brief notes of recent changes made to this Implementation Guide
-
-- [Developer's Guide](./DeveloperGuide.html): Outlines the API Client provisioning process; and obtaining OAuth access tokens to authenticate API calls.
-
 ## Logical Data Model
 The Integration Hub supports a small set of FHIR Resources:
 
