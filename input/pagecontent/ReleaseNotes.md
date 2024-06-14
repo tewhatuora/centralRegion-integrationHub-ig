@@ -1,10 +1,20 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc7
+* Some [Hospital Code](CodeSystem-nzcr-hospital-code-cs.html) values from field `ZAL-13` are not defined; in which case 
+the value will be placed in the `text` field, rather than `coding`.
+* Added mapping descriptions for:
+  * [AllergyIntolerance](StructureDefinition-NZCentralRegionAllergyIntolerance-mappings.html)
+    * default values on `type`, `category` and `criticality` fields when field `ZAL-4.1` is missing.
+    * `extension[recordingHospital]` can have a simple `text` value when the code in `ZAL-13.1` is unknown.
+  * [Flag](StructureDefinition-NZCentralRegionFlag-mappings.html)
+    * `extension[allergyReaction]` can be populated for some `Flag` alerts
+    * `extension[recordingHospital]` can have a simple `text` value when the code in `ZAL-13.1` is unknown.
+
 ### v1.0.7-rc6
 * Added documentation of `$trigger-subscription` operation to `Subscription` api endpoint and [developer's guide](./devGuide-Subscriptions.html#manual-subscription-triggering).
 
 ### v1.0.7-rc5
-* Added code `3511` for `NHIMWS` to the [Hospital Codes](CodeSystem-nzcr-hospital-code-cs.html) 
 * Added code `R42` for `Spiritualist` to [Patient Relgion Codes](./CodeSystem-nzcr-religion-cs.html)
 
 ### v1.0.7-rc4

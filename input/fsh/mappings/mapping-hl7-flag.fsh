@@ -79,6 +79,12 @@ ie: these categories denote 'free-text' alert codes
 * extension[flag-alert].extension[severityLevel].url -> "'severityLevel'"
 * extension[flag-alert].extension[severityLevel].valueString -> "ZAL-6"  "TODO: severityLevel should be integer"
 
+* extension[flag-alert].extension[allergyReaction].url -> "'allergyReaction'"
+* extension[flag-alert].extension[allergyReaction].valueCodeableConcept -> " " "Optional field which is populated when `ZAL-4.1` is present."
+  * coding.code -> "ZAL-4.1"
+  * coding.system -> "'https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4' or 'https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3'"
+  * coding.display -> "ZAL-4.2"
+
 * extension[flag-alert].extension[reviewDate].url -> "'reviewDate'"
 * extension[flag-alert].extension[reviewDate].valueDate -> "ZAL-7"
 
@@ -93,9 +99,10 @@ ie: these categories denote 'free-text' alert codes
 
 * extension[flag-alert].extension[recordingHospital].url -> "'recordingHospital'"
 * extension[flag-alert].extension[recordingHospital].valueCodeableConcept
-  * coding.code -> "ZAL-13.1"
+  * coding.code -> "ZAL-13.1" "if `ZAL-13.1` is a recognised medical facility code"
   * coding.system -> "'https://standards.digital.health.nz/ns/central-region/hospital-code'"
-  * coding.display -> "ZAL-13.2"
+  * coding.display -> "ZAL-13.2" "if `ZAL-13.1` is a recognised medical facility code"
+  * text -> "`ZAL-13.3` + ' defined code:' + `ZAL-13.1`" "if `ZAL-13.1` is **not** a recognised medical facility code"
 
 * extension[flag-alert].extension[comments].url -> "'comments'"
 * extension[flag-alert].extension[comments].valueString -> "ZAL-14"

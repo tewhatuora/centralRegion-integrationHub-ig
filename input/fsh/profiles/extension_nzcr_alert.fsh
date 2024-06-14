@@ -104,8 +104,8 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
   * id 0..0
 
 * extension[recordingHospital]
-  * ^definition = "Which hospital recorded the alert?"
-  * ^short = "Which hospital recorded the alert?"
+  * ^definition = "Which hospital (or other medical care facility) recorded the alert?"
+  * ^short = "Which hospital/facility recorded the alert?"
   * value[x] only CodeableConcept
   * value[x] from nzcr-hospital-code-vs (extensible)
   * valueCodeableConcept
@@ -118,7 +118,10 @@ and [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance
       * userSelected 0..0 // data not available
       * extension 0..0
       * id 0..0
-    * text 0..0           //  Code, Value and Display are all derived from Code value from PID-28.1
+    * text 0..1 MS        //  Sometimes Code, Value and Display can't be picked up from ZAL-13.1 ... so we'll put what we have in as text 
+      * ^definition = "Describe received code values that are unable to be validated"
+      * ^short = "Describe received code values that are unable to be validated"
+
     * extension 0..0      //  no extension
     * id 0..0
   * id 0..0

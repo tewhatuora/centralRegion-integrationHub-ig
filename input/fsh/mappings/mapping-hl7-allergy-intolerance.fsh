@@ -22,11 +22,25 @@ Description: "Central Region Message Specification (1.14) - Allergy Intolerance 
     * system -> "'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification'"
     * display -> "'Confirmed'"
 
-* type -> "allergy | intolerance" "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-type-map](./ConceptMap-nzcr-allergy-type-map.html)\r\n**Note:** not coding, so no system or display sub-fields"
+* type -> "allergy | intolerance" "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-type-map](./ConceptMap-nzcr-allergy-type-map.html)
 
-* category -> "food | medication | environment | biologic" "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-category-map](./ConceptMap-nzcr-allergy-category-map.html)\r\n**Note:** not coding, so no system or display sub-fields"
+**Default Value:** 'allergy' when field `ZAL-4` is missing
 
-* criticality -> "low | high | unable-to-assess" "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-criticality-map](./ConceptMap-nzcr-allergy-criticality-map.html)\r\n**Note:** not coding, so no system or display sub-fields"
+**Note:** not coding, so no system or display sub-fields"
+
+* category -> "food | medication | environment | biologic" "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-category-map](./ConceptMap-nzcr-allergy-category-map.html)
+
+**Default Value:** when field `ZAL-4` is missing
+* 'medication' if `ZAL-2.1` is `H1`
+* 'environment' if `ZAL-2.1` is `H3`
+
+**Note:** not coding, so no system or display sub-fields"
+
+* criticality -> "low | high | unable-to-assess" "ConceptMap translation from ZAL-4.1 - [nzcr-allergy-criticality-map](./ConceptMap-nzcr-allergy-criticality-map.html)
+
+**Default Value:** 'unable-to-assess' when field `ZAL-4` is missing
+
+**Note:** not coding, so no system or display sub-fields"
 
 * code.coding.code -> "ZAL-3.1"
 * code.coding.system -> " " "One of:
@@ -83,9 +97,9 @@ depending upon value of ZAL-2.1"
 
 * extension[allergy-alert].extension[allergyReaction].url -> "'allergyReaction'"
 * extension[allergy-alert].extension[allergyReaction].valueCodeableConcept
-  * coding.code -> "ZAL-4.1"
+  * coding.code -> "ZAL-4.1"  "**Note:** can be `NP` for `Not Present` when field `ZAL-4.1` is missing"
   * coding.system -> "'https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4' or 'https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3'"
-  * coding.display -> "ZAL-4.2"
+  * coding.display -> "ZAL-4.2" "**Note:** can be `Not Present` when field `ZAL-4.1` is missing"
 
 * extension[allergy-alert].extension[reviewDate].url -> "'reviewDate'"
 * extension[allergy-alert].extension[reviewDate].valueDate -> "ZAL-7" "**Note:** ISO-8601 date format includes dashes"
