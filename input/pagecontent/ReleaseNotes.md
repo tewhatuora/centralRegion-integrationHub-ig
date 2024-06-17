@@ -1,5 +1,8 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc8
+* `extension[recordingHospital].coding.display` is now populated and is no longer missing for `NHIMWS`, `MA` and `MC` category Flags
+
 ### v1.0.7-rc7
 * Some [Hospital Code](CodeSystem-nzcr-hospital-code-cs.html) values from field `ZAL-13` are not defined; in which case 
 the value will be placed in the `text` field, rather than `coding`.
