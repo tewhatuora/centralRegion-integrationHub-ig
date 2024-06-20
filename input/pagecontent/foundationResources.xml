@@ -8,7 +8,7 @@
 <h3>Central Region FHIR REST Endpoints</h3>
 <div>
 <ul>
-<li>Implementation Guide Version: 1.0.7-rc8</li>
+<li>Implementation Guide Version: 1.0.7-rc9</li>
 <li>FHIR Version: 4.0.1</li>
 <li>Formats:
 <code>application/fhir+xml</code>, 
@@ -81,7 +81,6 @@
 <code>patch</code>, 
 <code>history-type</code>, 
 <code>history-instance</code>, 
-<code>delete</code>, 
 <code>create</code>
 </td>
 <td>
@@ -246,11 +245,6 @@
 <tr>
 <td>history-instance</td>
 <td><p>Retrieves  a resource by its ID. Will return a Bundle, with history of that resource  The history-instance interaction is performed by an HTTP <code>GET</code> command - <code>[base]/[resource-type]/[id]/_history</code></p>
-</td>
-</tr>
-<tr>
-<td>delete</td>
-<td><p>Deletes a resource.</p>
 </td>
 </tr>
 <tr>

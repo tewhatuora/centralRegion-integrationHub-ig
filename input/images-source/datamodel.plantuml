@@ -45,6 +45,10 @@ url of rsPractitioner is [[StructureDefinition-NZCentralRegionPractitioner.html]
 url of rsOrganization is [[StructureDefinition-NZCentralRegionOrganization.html]]
 url of rsServiceRequest is [[StructureDefinition-NZCentralRegionReferral.html]]
 
+url of rsSubscription is [[https://hl7.org/fhir/R4/subscription.html]]
+url of rsCodeSystem is [[https://hl7.org/fhir/R4/codesystem.html]]
+url of rsValueSet is [[https://hl7.org/fhir/R4/valueset.html]]
+url of rsConceptMap is [[https://hl7.org/fhir/R4/conceptmap.html]]
 
 rsPatient -r-> rsClinicalImpression: is subject of
 rsPatient -l-> rsFlag: is subject of

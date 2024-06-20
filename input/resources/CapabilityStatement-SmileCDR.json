@@ -571,9 +571,6 @@
               "code": "history-instance"
             },
             {
-              "code": "delete"
-            },
-            {
               "code": "create"
             }
           ],

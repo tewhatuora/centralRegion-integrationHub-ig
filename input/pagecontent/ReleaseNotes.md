@@ -1,5 +1,10 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc9
+* Updated rc no to match l4h-templates:
+*  - `Flag.extension[recordingHospital]` already allows NP-Not Present value
+* Removed Subscription DELETE operation, as it breaks notification engine; please set Subscription.status to `off` when Subscription is no-longer used
+
 ### v1.0.7-rc8
 * `extension[recordingHospital].coding.display` is now populated and is no longer missing for `NHIMWS`, `MA` and `MC` category Flags
 

@@ -1,7 +1,7 @@
 
-The [Refer Patient](./useCaseReferPatient.html) use case includes a step whereby API client registers a Subscription to receive notifications for updates to a particular Patient record.
+The [Refer Patient](./useCaseReferPatient.html) use case includes a step whereby API client registers a [Subscription](https://hl7.org/fhir/R4/subscription.html) to receive notifications for updates to a particular Patient record.
 
-The Central Region Integration Hub only accepts Subscriptions with the `rest-hook` channel type.
+The Central Region Integration Hub only accepts subscriptions with the [`rest-hook`](https://hl7.org/fhir/R4/subscription.html#2.46.7.1) channel type.
 The API client is able to choose between two styles of notification:
 1. Single resource notifications, where the updated resource is included in the notification call-back.
 2. Bundle resource notifocations, where the notifcation call-back payload can be an arbitrary bundle of resources.
@@ -108,3 +108,10 @@ The `Parameter` request body is as follows:
   ]
 }
 ```
+
+### Subscription Status
+
+Subscriptions once created can be switched on and off by setting the [status](https://hl7.org/fhir/R4/valueset-subscription-status.html) field to the appropriate value:
+* `active` - The subscription is active.
+* `off`    - The subscription has expired.
+
