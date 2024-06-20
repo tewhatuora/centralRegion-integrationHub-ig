@@ -4,12 +4,13 @@ Change history for this FHIR Implementation Guide is as follows:
 * Updated rc no to match l4h-templates:
 *  - `Flag.extension[recordingHospital]` already allows NP-Not Present value
 * Removed Subscription DELETE operation, as it breaks notification engine; please set Subscription.status to `off` when Subscription is no-longer used
+* Added value `UNC` for `Unencoded` to [Hospital ValueSet](./ValueSet-nzcr-hospital-code-vs.html) to record codes that are not defined.
 
 ### v1.0.7-rc8
 * `extension[recordingHospital].coding.display` is now populated and is no longer missing for `NHIMWS`, `MA` and `MC` category Flags
 
 ### v1.0.7-rc7
-* Some [Hospital Code](CodeSystem-nzcr-hospital-code-cs.html) values from field `ZAL-13` are not defined; in which case 
+* Some [Hospital Code](./CodeSystem-nzcr-hospital-code-cs.html) values from field `ZAL-13` are not defined; in which case 
 the value will be placed in the `text` field, rather than `coding`.
 * Added mapping descriptions for:
   * [AllergyIntolerance](StructureDefinition-NZCentralRegionAllergyIntolerance-mappings.html)

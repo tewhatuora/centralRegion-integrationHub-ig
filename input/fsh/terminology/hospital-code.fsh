@@ -332,3 +332,4 @@ Description:  "Hospital identification codes ex. WebPAS in NZ Central Region"
 
 * include codes from system nzcr-hospital-code-cs
 * include $HL7NullFlavorCS#NP
+* include $HL7NullFlavorCS#UNC
