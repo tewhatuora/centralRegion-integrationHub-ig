@@ -269,7 +269,7 @@ Description: "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:
 * insert cmapEntryComment(BUL, "Bulgarian",            bg,  "Bulgarian", "iso-639-1 takes precedence")
 * insert cmapEntryComment(CDO, "Chinese - Foochow",    cdo, "Min Dong Chinese",  "note name correction")
 * insert cmapEntryComment(CES, "Czechoslovakian",      cs,  "Czech",      "note name correction; iso-639-1 takes precedence")
-* insert cmapEntryComment(CHM, "Chinese - Mandarin",   cmn, "Mandarin",   "please use correct iso code")
+* insert cmapEntryComment(CHM, "Chinese - Mandarin",   cmn, "Mandarin Chinese",   "please use correct iso code")
 * insert cmapEntryComment(DAN, "Danish",               da,  "Danish",     "iso-639-1 takes precedence")
 * insert cmapEntryComment(DUT, "Dutch",                nl,  "Dutch",      "iso-639-1 takes precedence")
 * insert cmapEntryComment(DZO, "Bhutanese",            dz,  "Dzongkha",   "note name correction; iso-639-1 takes precedence")

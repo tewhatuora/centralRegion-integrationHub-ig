@@ -789,7 +789,7 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #MATCARE      "Maternity Care"
 * #BPPET        "Hypertension or PET Assessment"
 * #MOVEMENT     "Concern with fetal movements"
-
+* #LABOUR       "Term Labour Assessment"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs

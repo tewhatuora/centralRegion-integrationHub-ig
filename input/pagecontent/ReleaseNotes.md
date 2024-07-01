@@ -1,5 +1,12 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.7-rc11
+* Added code `LABOUR` for `Term Labour Assessment` to [Referral Reason](./ValueSet-nzcr-referral-reason-vs.html) codes
+* Updated display string for `ietf:bcp:47#cmn` to `Mandarin Chinese`
+
+### v1.0.7-rc10
+* No change to IG - HL7 mapping template change.
+
 ### v1.0.7-rc9
 * Updated rc no to match l4h-templates:
 *  - `Flag.extension[recordingHospital]` already allows NP-Not Present value
