@@ -6,12 +6,11 @@ Alias:   $HL7AdditionalBinding     = http://hl7.org/fhir/tools/StructureDefiniti
 
 // Code System URLs from FHIR base
 Alias:   $IETFLanguageCS             = urn:ietf:bcp:47
-Alias:   $HL7NullFlavourCS           = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
+Alias:   $HL7NullFlavorCS            = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias:   $HL7IdentifierTypeCS        = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias:   $HL7MaritalStatusCS         = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias:   $HL7RelationshipCS          = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias:   $HL7PatientRelgionCS        = http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
-Alias:   $HL7NullFlavorCS            = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 
 Alias:   $HL7AllergyTypeCS           = http://hl7.org/fhir/allergy-intolerance-type
 Alias:   $HL7AllergyCategoryCS       = http://hl7.org/fhir/allergy-intolerance-category
@@ -28,6 +27,7 @@ Alias:   $HL7RequestPriorityCS       = http://hl7.org/fhir/request-priority
 // Value Set URLs from FHIR base
 Alias:   $IETFLanguageVS             = http://hl7.org/fhir/ValueSet/all-languages
 Alias:   $HL7PatientRelgionVS        = http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation
+Alias:   $HL7MaritalStatusVS         = http://hl7.org/fhir/ValueSet/marital-status
 Alias:   $HL7RelationshipVS          = http://hl7.org/fhir/ValueSet/patient-contactrelationship
 Alias:   $HL7AllergyTypeVS           = http://hl7.org/fhir/ValueSet/allergy-intolerance-type
 Alias:   $HL7AllergyCategoryVS       = http://hl7.org/fhir/ValueSet/allergy-intolerance-category
@@ -81,7 +81,7 @@ Alias:   $NZCentralRegionClinicCS               = https://standards.digital.heal
 Alias:   $NZStatsEthnicityLevel2CS              = https://standards.digital.health.nz/ns/ethnic-group-level-2-code
 Alias:   $NZCentralRegionRawLanguageCS          = https://standards.digital.health.nz/ns/central-region/pas-language         // non-IETF codes
 Alias:   $NZCentralRegionProposedLanguageCS     = https://standards.digital.health.nz/ns/central-region/proposed-language    // proposed IETF codes
-Alias:   $NZCentralRegionExtraMaritalStatusCS   = https://standards.digital.health.nz/ns/central-region/extra-marital-status
+Alias:   $NZCentralRegionRawMaritalStatusCS     = https://standards.digital.health.nz/ns/central-region/raw-marital-status   // HL7 v2.4 + extras
 Alias:   $NZCentralRegionResidencyCS            = https://standards.digital.health.nz/ns/central-region/nz-residency-code
 Alias:   $NZCentralRegionReligionCS             = https://standards.digital.health.nz/ns/central-region/patient-religion
 Alias:   $NZCentralRegionContactRelationshipCS  = https://standards.digital.health.nz/ns/central-region/contact-relationship
@@ -123,6 +123,7 @@ Alias:   $NZCentralRegionDepartmentVS              = https://standards.digital.h
 Alias:   $NZCentralRegionClinicVS                  = https://standards.digital.health.nz/fhir/central-region/ValueSet-clinic-code
 
 Alias:   $NZCentralRegionEthnicityLevel2VS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2
+Alias:   $NZCentralRegionRawMaritalStatusVS        = https://standards.digital.health.nz/fhir/central-region/ValueSet-raw-marital-status
 Alias:   $NZCentralRegionMaritalStatusVS           = https://standards.digital.health.nz/fhir/central-region/ValueSet-marital-status
 Alias:   $NZCentralRegionResidencyVS               = https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency
 Alias:   $NZCentralRegionReligionVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-patient-religion
@@ -163,6 +164,7 @@ Alias:   $NZCentralRegionEthnicityConceptMap                    = https://standa
 Alias:   $NZCentralRegionReligionConceptMap                     = https://standards.digital.health.nz/fhir/central-region/ConceptMap-religion
 Alias:   $NZCentralRegionResidencyConceptMap                    = https://standards.digital.health.nz/fhir/central-region/ConceptMap-nz-residency
 Alias:   $NZCentralRegionReferralPriorityConceptMap             = https://standards.digital.health.nz/fhir/central-region/ConceptMap-referral-priority
+Alias:   $NZCentralRegionMaritalStatusConceptMap                = https://standards.digital.health.nz/fhir/central-region/ConceptMap-marital-status
 
 Alias:   $NZCentralRegionAllergyReactionTypeConceptMap          = https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-type
 Alias:   $NZCentralRegionAllergyReactionCategoryConceptMap      = https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-category

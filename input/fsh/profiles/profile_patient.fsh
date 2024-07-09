@@ -182,7 +182,8 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * maritalStatus 1..1 MS
 * maritalStatus from  nzcr-marital-status-vs (required)
-  * coding 1..1 MS
+* maritalStatus insert AdditionalBindingByExtension(#required, $NZCentralRegionMaritalStatusVS)
+  * coding 1..* MS
   * coding.code 1..1 MS      // from PID-16.1
   * coding.system 1..1 MS    // based on which code from PID-16.1
   * coding.display 1..1 MS   // from PID-16.2 or by lookup from PID-16.1 ??
@@ -273,21 +274,9 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension contains $HL7InterpreterRequired named interpreterRequired 0..1 MS
 
 * communication 0..* MS
-  //* language from nzcr-combined-language-vs
+  * language from $IETFLanguageVS
   * language 1..1 MS
-
-    //* coding ^slicing.discriminator.type = #pattern
-    //* coding ^slicing.discriminator.path = "system"
-    //* coding ^slicing.rules = #open
-    //* coding ^slicing.description = "Slice based on the coding[].system"
-    //* coding contains ietf 1..1 and rawSource 1..1
-
-    //* coding[ietf].system = $IETFLanguageCS (exactly)
-    //* coding[ietf].code from $NZCentralRegionEthnicityLevel2VS (required)
-
-    //* coding[rawSource].system = $NZCentralRegionRawLanguageCS  (exactly)
-    //* coding[rawSource].code from nzcr-language-vs (required)
-
+  * language insert AdditionalBindingByExtension(#required, $NZCentralRegionRawLanguageVS)
     * coding.code 1..1 MS      // from PID-15.1
     * coding.system 1..1 MS    // based on which code from PID-15.1
     * coding.display 1..1 MS   // from PID-15.2 or by lookup from PID-15.1 ??

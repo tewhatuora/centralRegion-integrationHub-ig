@@ -21,7 +21,6 @@ Description: "ClinicalImpression resource for Te Whatu Ora, Central Region - hol
   * id 0..0
 
 * status 1..1 MS
-* status = #completed
 
 * subject 1..1 MS
   * type 1..1 MS

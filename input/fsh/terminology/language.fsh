@@ -210,7 +210,7 @@ Description:  "IETF equivalent Language codes, matching the raw codes used by We
 * $IETFLanguageCS#yue    // Yue Chinese
 
 * $NZCentralRegionProposedLanguageCS#tws    // Teochew - Chinese (proposed in iso-639-3)
-* $HL7NullFlavourCS#OTH  // Other
+* $HL7NullFlavorCS#OTH   // Other
 
 
 
@@ -350,7 +350,7 @@ Description: "Concept map mapping raw Language codes ex. WebPAS to proper `ietf:
 // ... and the orphan OTH value
 * group[+]
   * source = $NZCentralRegionRawLanguageCS
-  * target = $HL7NullFlavourCS
+  * target = $HL7NullFlavorCS
   * element[+]
     * code = #zOTH
     * display = "Other - Not Further Defined"

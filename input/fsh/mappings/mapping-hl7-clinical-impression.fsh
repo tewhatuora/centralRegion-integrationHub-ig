@@ -10,7 +10,7 @@ Description: "Central Region Message Specification (1.14) - ClinicalImpression f
 * identifier.system -> "'https://standards.digital.health.nz/ns/central-region/pas-clinical-impression-id'"
 * identifier.value -> "PID-3.1 + '-' + ZLS-3" "Concatenation of PatientId and startDateTime"
 
-* status -> "'completed'"
+* status -> "ZLS-3 & ZLS-4" "**if** ZLS-3 is in the past **AND** ZLS-4 is in the future or empty\r\n**then** 'completed'\r\n**else** 'in-progress'"
 
 * subject
   * reference -> " " "read-only field"

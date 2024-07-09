@@ -52,10 +52,10 @@ Usage:  #example
   * code = #en
   * display = "English"
   * system = "urn:ietf:bcp:47"
-//* communication.language.coding[rawSource]
-  //* code = #ENG
-  //* display = "English"
-  //* system = $NZCentralRegionRawLanguageCS
+* communication.language.coding[+]
+  * code = #ENG
+  * display = "English"
+  * system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes
@@ -130,10 +130,10 @@ Usage:  #example
   * code = #en
   * display = "English"
   * system = "urn:ietf:bcp:47"
-//* communication.language.coding[rawSource]
-  //* code = #ENG
-  //* display = "English"
-  //* system = $NZCentralRegionRawLanguageCS
+* communication.language.coding[+]
+  * code = #ENG
+  * display = "English"
+  * system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes

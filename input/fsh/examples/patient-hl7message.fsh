@@ -44,7 +44,7 @@ Usage:  #example
 * telecom[=].use = #home
 
 * maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(nzcr-extra-marital-status-cs)
+* maritalStatus.coding[=].system = Canonical(nzcr-raw-marital-status-cs)
 * maritalStatus.coding[=].display = "Civil Union"
 
 * address[+].type = #postal
@@ -60,10 +60,10 @@ Usage:  #example
   * code = #en
   * display = "English"
   * system = "urn:ietf:bcp:47"
-//* communication.language.coding[rawSource]
-  //* code = #ENG
-  //* display = "English"
-  // * system = $NZCentralRegionRawLanguageCS
+* communication.language.coding[+]
+  * code = #ENG
+  * display = "English"
+  * system = $NZCentralRegionRawLanguageCS
 * communication.preferred = true
 
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.code = #yes

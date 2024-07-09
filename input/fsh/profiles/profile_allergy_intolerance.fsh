@@ -99,7 +99,9 @@ Description: "AllergyIntolerance resource for Te Whatu Ora, Central Region"
   * id 0..0
   
   
-* onset[x] 1..1 MS
+// Very occaisionally we end up with a ZAL segment without startDate (ZAL.5)
+//  -- or even startDate is after endDate
+* onset[x] 0..1 MS
   * ^short = "Use onsetDateTime when only start time is known; otherwise use onsetPeriod when both start and end time are known"
   * ^definition = "Use onsetDateTime when only start time is known; otherwise use onsetPeriod when both start and end time are known"
 * onset[x] only dateTime or Period

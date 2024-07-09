@@ -97,7 +97,9 @@ Description: "Flag resource for Te Whatu Ora, Central Region"
   * extension 0..0
   * id 0..0
   
-* period 1..1 MS
+// Very occaisionally we end up with a ZAL segment without startDate (ZAL.5)
+//  -- or even startDate is after endDate
+* period 0..1 MS
   * start 1..1 MS
   * end 0..1 MS
   * extension 0..0

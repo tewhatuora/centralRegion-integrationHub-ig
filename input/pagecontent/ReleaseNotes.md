@@ -1,5 +1,13 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.1.0-rc1
+* Field `Flag.period` is now optional as very occasionally we don't get given a start date in `ZAL.5` or start date is after end date in `ZAL.9`
+* Field `AllergyIntolerance.onset` is now optional as very occaisionally we don't get given a start date in `ZAL.5` or start date is after end date in `ZAL.9`
+* Added `OTH` and `UNK` from [Null Flavour](http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NP) to the [Marital Status](./nzcr-marital-status-vs.html) Value Set
+* Added [Marital Status ConceptMap](./nzcr-marital-status-map.html) to map marital status codes from [HL7 v2.4](https://hl7-definition.caristix.com/v2/HL7v2.4/Tables/0002)
+* `ClinicalImpression.status` is derived from the legal status startDate (`ZLS-3`) and endDate (`ZLS-4`) fields.
+* Fields `Patient.communication.language` and `Patient.maritalStatus` holding multiple codings.
+
 ### v1.0.7-rc11
 * Added code `LABOUR` for `Term Labour Assessment` to [Referral Reason](./ValueSet-nzcr-referral-reason-vs.html) codes
 * Updated display string for `ietf:bcp:47#cmn` to `Mandarin Chinese`
