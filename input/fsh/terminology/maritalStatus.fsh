@@ -48,7 +48,7 @@ Description:  "Raw Marital Status value set with values ex WebPAS"
 ValueSet: NZCentralRegionMaritalStatusValueSet
 Id: nzcr-marital-status-vs
 Title: "NZ Central Region - Marital Status Value Set"
-Description:  "Combined Marital Status value set with #OTH and #UNK from NullFlavor, as used in the Central Region"
+Description:  "Combined Marital Status value set with HL7 defined valueset plus #OTH from NullFlavor, as used in the Central Region"
 
 * ^url = $NZCentralRegionMaritalStatusVS
 * ^status = #active
@@ -56,7 +56,6 @@ Description:  "Combined Marital Status value set with #OTH and #UNK from NullFla
 
 * include codes from valueset $HL7MaritalStatusVS
 * $HL7NullFlavorCS#OTH  // Other
-* $HL7NullFlavorCS#UNK  // Unknown
 
 
 // WebPAS marital status codes need to be translated to (expanded) FHIR codes...

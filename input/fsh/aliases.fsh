@@ -172,6 +172,9 @@ Alias:   $NZCentralRegionAllergyReactionCriticalityConceptMap   = https://standa
 
 Alias:   $NZCentralRegionFlagCategoryConceptMap                 = https://standards.digital.health.nz/fhir/central-region/ConceptMap-flag-category
 
+// URLs for Search Parameters
+Alias:   $NZCentralRegionReferralClinicTypeSearchParam          = https://standards.digital.health.nz/fhir/central-region/SearchParam-referral-clinic-type
+
 // Local URLs for IBM defined extensions for l4h-templates
 Alias:   $L4HProcessTimestamp    = http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp
 Alias:   $L4HEventTrigger        = http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger

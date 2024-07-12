@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Generates input/pagecontent/capabilityStatement.xml - which summarizes the static capability statement from SmileCDR software
+ * Generates input/pagecontent/*Resources.xml files - which summarise the static capability statement from SmileCDR software
  * 
  */
 let fs = require('fs');

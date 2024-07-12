@@ -364,6 +364,7 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #Z02 "Zoledronic acid"
 * #Z03 "Zopiclone"
 * #Z04 "Zinc"
+* #Z05 "Zuclopenthixol"
 
 
 

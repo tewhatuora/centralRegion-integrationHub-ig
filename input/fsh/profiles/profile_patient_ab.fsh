@@ -9,11 +9,14 @@ Description: "Patient resource for Te Whatu Ora, Central Region, with additional
 
 * ^derivation = #constraint
 
+// maritalStatus requires codes from two ValueSets
+* maritalStatus from  nzcr-marital-status-vs (required)
+* maritalStatus insert AdditionalBindingByExtension(#required, $NZCentralRegionMaritalStatusVS)
+
 
 // ethnicity requires codes from two ValueSets
 * extension[ethnicity].valueCodeableConcept from $NZStatsEthnicityLevel4VS (required)
 * extension[ethnicity].valueCodeableConcept insert AdditionalBindingByExtension(#required, $NZCentralRegionEthnicityLevel2VS)
-
 
 // NZ Base v2.0.0 - has defined the Residency but not added it to the NZPatient profile
 * extension contains $NZBaseNZResidency named nz-residency 0..1 MS

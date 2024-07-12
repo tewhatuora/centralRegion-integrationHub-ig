@@ -182,7 +182,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * maritalStatus 1..1 MS
 * maritalStatus from  nzcr-marital-status-vs (required)
-* maritalStatus insert AdditionalBindingByExtension(#required, $NZCentralRegionMaritalStatusVS)
   * coding 1..* MS
   * coding.code 1..1 MS      // from PID-16.1
   * coding.system 1..1 MS    // based on which code from PID-16.1

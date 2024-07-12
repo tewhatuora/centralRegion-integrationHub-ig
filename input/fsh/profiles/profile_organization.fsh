@@ -14,7 +14,6 @@ Description: "Organization resource for Te Whatu Ora, Central Region"
 * name 1..1 MS
 
 // A whole bunch of fields we can't populate
-* text 0..0
 * type 0..0
 * alias 0..0
 * telecom 0..0

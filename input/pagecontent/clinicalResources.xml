@@ -8,7 +8,7 @@
 <h3>Central Region FHIR REST Endpoints</h3>
 <div>
 <ul>
-<li>Implementation Guide Version: 1.1.0-rc1</li>
+<li>Implementation Guide Version: 1.0.8-rc1</li>
 <li>FHIR Version: 4.0.1</li>
 <li>Formats:
 <code>application/fhir+xml</code>, 
@@ -162,7 +162,8 @@
 </td>
 <td>
 <code>identifier</code>, 
-<code>_id</code>
+<code>_id</code>, 
+<code>clinicType</code>
 </td>
 <td/><td/>
 </tr>
@@ -575,6 +576,12 @@
 <td>_id</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
 <td><p>The ID of the resource</p>
+</td>
+</tr>
+<tr>
+<td>clinicType</td>
+<td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
+<td><div>Definition: https://standards.digital.health.nz/fhir/central-region/SearchParam-referral-clinic-type</div><p>This SearchParameter enables query of referral flavour of ServiceRequest by clinicType to support Subscribers receiving notifcations off a subset of referrals.</p>
 </td>
 </tr>
 </tbody></table><br/>

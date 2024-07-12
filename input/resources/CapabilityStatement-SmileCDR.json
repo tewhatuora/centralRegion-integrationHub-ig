@@ -483,6 +483,12 @@
               "name": "_id",
               "type": "token",
               "documentation": "The ID of the resource"
+            },
+            {
+              "name": "clinicType",
+              "definition": "https://standards.digital.health.nz/fhir/central-region/SearchParam-referral-clinic-type",
+              "type": "token",
+              "documentation": "This SearchParameter enables query of referral flavour of ServiceRequest by clinicType to support Subscribers receiving notifcations off a subset of referrals."
             }
           ],
           "operation": [

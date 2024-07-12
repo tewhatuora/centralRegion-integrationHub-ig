@@ -43,6 +43,12 @@ Sample `Subscription` for a bundle resource notification on changes to Patient w
   * be an http `POST` rest call to the given endpoint value:  `http:localhost:3000/fhir/callback`
   * contain an arbitrary `Bundle` resource containing the various resources included in the `payload-search-criteria` parameter.
 
+  Details on all the various query parameters that can be included in the `payload-search-criteria` parameter are given in the relevant [FHIR Tutorial](https://github.com/hapifhir/fhir-tutorial/blob/master/Search_References_ChainHasIncludeRevinclude/lesson.md). In the following example we get the triggering Patient resource plus:
+  * Flag resources with the given Patient as `subject`.
+  * AllergyIntolerance resources with the given Patient as `patient`.
+  * ClinicalImpression resources with the given Patient as `subject`.
+  * ServiceRequest resources with the given Patient as `subject`.
+
 ```json
 {
     "resourceType": "Subscription",
@@ -73,7 +79,7 @@ The expected notification will have the form:
   "total": 1,
   "link": [ {
     "relation": "self",
-    "url": "http://localhost:8080/fhir/Patient?_id=326&_include=*&_revinclude=Flag%3A*&_revinclude=AllergyIntolerance%3A*&_revinclude=ClinicalImpression%3A*&_revinclude=ServiceRequest%3A*"
+    "url": "http://localhost:8080/fhir/Patient?_id=326&_include=*&_revinclude=Flag:*&_revinclude=AllergyIntolerance:*&_revinclude=ClinicalImpression:*&_revinclude=ServiceRequest:*"
   } ],
   "entry": [ {
     "fullUrl": "http://localhost:8080/fhir/Patient/326",

@@ -15,8 +15,8 @@ do
   done
 done
 
-# NZ Central Region has all three
-for rs in ValueSet CodeSystem ConceptMap
+# NZ Central Region has all three plus SearchParameters
+for rs in ValueSet CodeSystem ConceptMap SearchParameter
 do
   for i in output/$rs-nz*.json
   do
