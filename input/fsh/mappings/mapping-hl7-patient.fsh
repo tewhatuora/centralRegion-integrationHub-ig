@@ -74,9 +74,9 @@ elif PIF-8 == '**U**' then '**unknown**'"
 * extension[dhb].valueCodeableConcept.coding.code -> "PID-12" "one-to-many mapping from PID-12. Perhaps with ConceptMap ??"
 * extension[dhb].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/dhb-code"
 
-* maritalStatus.coding.code -> "PID-16.1"  "At least 2 codings, one from each code system"
+* maritalStatus.coding.code -> "PID-16.1"
 * maritalStatus.coding.display -> "PID-16.2"
-* maritalStatus.coding.system -> "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus or https://standards.digital.health.nz/ns/central-region/marital-status"
+* maritalStatus.coding.system -> "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus or http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
 
 * extension[interpreterRequired].url -> "'http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired'"
 * extension[interpreterRequired].valueBoolean -> "PID-15.4" "if PID-15.4='Y' then 'true' else 'false'"
