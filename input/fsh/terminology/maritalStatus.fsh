@@ -54,7 +54,8 @@ Description:  "Combined Marital Status value set with HL7 defined valueset plus 
 * ^status = #active
 * ^experimental = false
 
-* include codes from valueset $HL7MaritalStatusVS
+* include codes from system $HL7MaritalStatusCS
+* $HL7NullFlavorCS#UNK  // Unknown
 * $HL7NullFlavorCS#OTH  // Other
 
 
@@ -66,7 +67,9 @@ Description: "Concept map mapping raw marital status codes ex. WebPAS to (slight
 
 * name = "NZCRMaritalStatusConceptMap"
 * title = "NZ Central Region Marital Status Concept Map"
-* description = "Concept map mapping raw marital status codes ex. WebPAS to (slightly expanded) FHIR Terminology marital status codes"
+* description = "Concept map mapping raw marital status codes ex. WebPAS to (slightly expanded) FHIR Terminology marital status codes. 
+
+**Note:** We are mapping to R4 edition of MaritalStatus codes, which does NOT include code `#C` for `Common Law`, we are mapoing all 'informa' marriages to `#T` for `Domestic partner`"
 
 * url = $NZCentralRegionMaritalStatusConceptMap
 * status = #active
@@ -80,15 +83,15 @@ Description: "Concept map mapping raw marital status codes ex. WebPAS to (slight
 
 * insert cmapEntry(A, "Separated",          "L", "Legally Separated")
 * insert cmapEntry(B, "Unmarried",          "U", "Unmarried")
-* insert cmapEntry(C, "Common law",         "C", "Common Law")
+* insert cmapEntry(C, "Common law",         "T", "Domestic partner")
 * insert cmapEntry(D, "Divorced",           "D", "Divorced")
 * insert cmapEntry(E, "Legally Separated",  "L", "Legally Separated")
-* insert cmapEntry(F, "De Facto",           "C", "Common Law")
+* insert cmapEntry(F, "De Facto",           "T", "Domestic partner")
 * insert cmapEntry(I, "Interlocutory",      "I", "Interlocutory")
 * insert cmapEntry(L, "Legally Separated",  "L", "Legally Separated")
 * insert cmapEntry(M, "Married",            "M", "Married")
 * insert cmapEntry(N, "Annulled",           "A", "Annulled")
-* insert cmapEntry(P, "Domestic Partner",   "C", "Common Law")
+* insert cmapEntry(P, "Domestic Partner",   "T", "Domestic partner")
 * insert cmapEntry(S, "Single",             "S", "Never Married")
 * insert cmapEntry(W, "Widowed",            "W", "Widowed")
 * insert cmapEntry(X, "Separated",          "L", "Legally Separated")

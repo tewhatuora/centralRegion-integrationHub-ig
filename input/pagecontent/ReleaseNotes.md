@@ -1,5 +1,12 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.8-rc3
+* Updated [Marital Status ValueSet](./ValueSet-nzcr-marital-status-vs.html) to be defined in terms of base CodeSystems (just in case)
+* Updated [Marital Status ConceptMap](./ConceptMap-nzcr-marital-status-map.html) to map all 'informal' marriages to `T` for `Domestic partner` as code `C` for `Common Law` is not available in R4.
+
+### v1.0.8-rc2
+* No change to IG - HL7 mapping template change.
+
 ### v1.0.8-rc1
 * Added SearchParameter `clinicType` on `ServiceRequest`
 * Added `Z05` for `Zuclopenthixol` to [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)

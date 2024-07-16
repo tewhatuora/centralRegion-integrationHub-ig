@@ -5,3 +5,6 @@ input-cache
 node_modules
 packages
 fsh-generated
+package.tgz
+validate
+validation.log
