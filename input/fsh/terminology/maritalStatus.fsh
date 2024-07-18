@@ -11,7 +11,7 @@ Description:  "Raw HL7 v2.4 Marital Status codes that are in use in Central Regi
 // from HL7 v2.4
 * #A "Separated"
 * #B "Unmarried"
-* #C "Common law"
+//* #C "Common law"       -- see Civil Union below
 * #D "Divorced"
 * #E "Legally Separated"
 * #G "Living together"
@@ -27,6 +27,7 @@ Description:  "Raw HL7 v2.4 Marital Status codes that are in use in Central Regi
 * #W "Widowed"
 
 // extras used by WebPAS
+* #C "Civil union" "Not to be confused with Common Law"
 * #L "Legally Separated"
 * #X "Separated" "Person is Separated, but not 'Legally Separated'"
 * #V "Civil Union" "Person is in a Civil Union"
@@ -83,7 +84,6 @@ Description: "Concept map mapping raw marital status codes ex. WebPAS to (slight
 
 * insert cmapEntry(A, "Separated",          "L", "Legally Separated")
 * insert cmapEntry(B, "Unmarried",          "U", "Unmarried")
-* insert cmapEntry(C, "Common law",         "T", "Domestic partner")
 * insert cmapEntry(D, "Divorced",           "D", "Divorced")
 * insert cmapEntry(E, "Legally Separated",  "L", "Legally Separated")
 * insert cmapEntry(F, "De Facto",           "T", "Domestic partner")
@@ -99,6 +99,7 @@ Description: "Concept map mapping raw marital status codes ex. WebPAS to (slight
 * group[+]                                       // Separate Group for each Source/Target CodeSystem tuple
   * source = $NZCentralRegionRawMaritalStatusCS
   * target = $HL7NullFlavorCS
+* insert cmapEntry(C, "Civil union",                 "OTH", "other")
 * insert cmapEntry(G, "Living together",             "OTH", "other")
 * insert cmapEntry(V, "Civil Union",                 "OTH", "other")
 * insert cmapEntry(R, "Registered domestic partner", "OTH", "other")

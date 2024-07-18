@@ -8,7 +8,7 @@
 <h3>Central Region FHIR REST Endpoints</h3>
 <div>
 <ul>
-<li>Implementation Guide Version: 1.0.8-rc3</li>
+<li>Implementation Guide Version: 1.0.8-rc4</li>
 <li>FHIR Version: 4.0.1</li>
 <li>Formats:
 <code>application/fhir+xml</code>, 

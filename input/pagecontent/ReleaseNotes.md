@@ -1,5 +1,9 @@
 
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.8-rc4
+* Updated [Marital Status ConceptMap](./ConceptMap-nzcr-marital-status-map.html) as some codes in WebPAS do not conform to HL70002 marital status codes table. 
+   * code `C` is for `Civil union` and is mapped to `OTH`
+   
 ### v1.0.8-rc3
 * Updated [Marital Status ValueSet](./ValueSet-nzcr-marital-status-vs.html) to be defined in terms of base CodeSystems (just in case)
 * Updated [Marital Status ConceptMap](./ConceptMap-nzcr-marital-status-map.html) to map all 'informal' marriages to `T` for `Domestic partner` as code `C` for `Common Law` is not available in R4.
