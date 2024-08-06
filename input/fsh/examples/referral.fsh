@@ -112,8 +112,12 @@ Usage:  #example
 
   * extension[clinicType].valueCoding
     * code = #MDT
-    * system = $NZCentralRegionClinicCS
+    * system = $NZCentralRegionClinicTypeCS
     * display = "MC Dietetics"
+
+  * extension[clinicId].valueString = "MDTAXDW"
+  * extension[healthSpeciality].valueString = "ORD"
+  * extension[financialClass].valueString = "17"
 
   * extension[lastUpdated].valueDateTime = "2022-02-10T12:55:27+12:00"
 

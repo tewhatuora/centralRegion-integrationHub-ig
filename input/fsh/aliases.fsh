@@ -76,7 +76,8 @@ Alias:   $NZCentralRegionReligion              = https://standards.digital.healt
 // Local URLs for locally defined CodeSystems
 Alias:   $NZCentralRegionHospitalCS             = https://standards.digital.health.nz/ns/central-region/hospital-code
 Alias:   $NZCentralRegionDepartmentCS           = https://standards.digital.health.nz/ns/central-region/department-code
-Alias:   $NZCentralRegionClinicCS               = https://standards.digital.health.nz/ns/central-region/clinic-code
+Alias:   $NZCentralRegionClinicTypeCS           = https://standards.digital.health.nz/ns/central-region/clinic-code         // should've been called /clinic-type-code but too late
+Alias:   $NZCentralRegionClinicIdCS             = https://standards.digital.health.nz/ns/central-region/clinic-id           // not usable as it's too changeable
 
 Alias:   $NZStatsEthnicityLevel2CS              = https://standards.digital.health.nz/ns/ethnic-group-level-2-code
 Alias:   $NZCentralRegionRawLanguageCS          = https://standards.digital.health.nz/ns/central-region/pas-language         // non-IETF codes
@@ -120,7 +121,8 @@ Alias:   $NZCentralRegionHealthPurchaserCS         = https://standards.digital.h
 // Local URIs for various ValueSets
 Alias:   $NZCentralRegionHospitalVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-hospital-code
 Alias:   $NZCentralRegionDepartmentVS              = https://standards.digital.health.nz/fhir/central-region/ValueSet-department-code
-Alias:   $NZCentralRegionClinicVS                  = https://standards.digital.health.nz/fhir/central-region/ValueSet-clinic-code
+Alias:   $NZCentralRegionClinicTypeVS              = https://standards.digital.health.nz/fhir/central-region/ValueSet-clinic-code   // should've been ../clinic-type-code, but too late.
+Alias:   $NZCentralRegionClinicIdVS                = https://standards.digital.health.nz/fhir/central-region/ValueSet-clinic-id     // not usable as it's too changeable
 
 Alias:   $NZCentralRegionEthnicityLevel2VS         = https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2
 Alias:   $NZCentralRegionRawMaritalStatusVS        = https://standards.digital.health.nz/fhir/central-region/ValueSet-raw-marital-status

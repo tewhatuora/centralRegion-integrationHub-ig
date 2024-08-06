@@ -12,7 +12,7 @@ Description:  "Referral Status codes; ex. WebPAS in NZ Central Region."
 * #E	"Expired"
 * #D	"Draft"
 * #P	"Pending"
-* #R	"Revoked"
+* #R	"Rejected"
 
 ValueSet: NZCentralRegionReferralStatusValueSet
 Id: nzcr-referral-status-vs

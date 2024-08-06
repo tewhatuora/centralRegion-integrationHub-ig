@@ -1,9 +1,9 @@
-CodeSystem:  NZCentralRegionClinicCodeSystem
+CodeSystem:  NZCentralRegionClinicTypeCodeSystem
 Id: nzcr-clinic-cs
-Title: "NZ Central Region - Clinic Code System"
-Description:  "Clinic codes; ex. WebPAS in NZ Central Region."
+Title: "NZ Central Region - Clinic Type Code System"
+Description:  "Clinic Type codes; ex. WebPAS in NZ Central Region."
 
-* ^url = $NZCentralRegionClinicCS
+* ^url = $NZCentralRegionClinicTypeCS
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -91,12 +91,12 @@ Description:  "Clinic codes; ex. WebPAS in NZ Central Region."
 
 
 
-ValueSet: NZCentralRegionClinicValueSet
+ValueSet: NZCentralRegionClinicTypeValueSet
 Id: nzcr-clinic-vs
-Title: "NZ Central Region - Clinic Value Set"
-Description:  "Clinic codes ex. WebPAS in NZ Central Region."
+Title: "NZ Central Region - Clinic Type Value Set"
+Description:  "Clinic type codes ex. WebPAS in NZ Central Region."
 
-* ^url = $NZCentralRegionClinicVS
+* ^url = $NZCentralRegionClinicTypeVS
 * ^status = #active
 * ^experimental = false
 

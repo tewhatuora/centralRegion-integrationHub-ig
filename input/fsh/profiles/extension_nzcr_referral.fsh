@@ -16,6 +16,9 @@ Description: "Complex extension recording extra data about referrals"
     referringPractice 0..1 MS and
     healthPurchaser 0..1 MS and
     clinicType 0..1 MS and
+    clinicId 0..1 MS and
+    healthSpeciality 1..1 MS and
+    financialClass 1..1 MS and
     lastUpdated 0..1 MS and
     informGP 0..1 MS and
     webPASPriority 0..1 MS and
@@ -130,15 +133,33 @@ Description: "Complex extension recording extra data about referrals"
   * id 0..0
 
 * extension[clinicType]
-  * ^definition = "Which clinic run by the Department/Location is the referral for?"
-  * ^short = "Which clinic is the referral to?"
+  * ^definition = "Which clinic Type, run by the Department/Location, is the referral for?"
+  * ^short = "Which clinic Type is the referral to?"
   * value[x] only Coding
-  * value[x] from $NZCentralRegionClinicVS (required)
+  * value[x] from $NZCentralRegionClinicTypeVS (required)
   * valueCoding 1..1
     * version 0..0        // not versioned
     * userSelected 0..0   // not used
     * extension 0..0
     * id 0..0  
+  * id 0..0
+
+* extension[clinicId]
+  * ^definition = "Which individual clinic, run by the Department/Location, is the referral for? CodeSystem would be too dynamic, so recorded as a String value"
+  * ^short = "Which particular clinic is the referral for?"
+  * value[x] only string
+  * id 0..0
+
+* extension[healthSpeciality]
+  * ^definition = "What category of treatment is the patient to receive?  Coding values unknown, so recorded as a String value"
+  * ^short = "What category of treatment is the patient to receive?"
+  * value[x] only string
+  * id 0..0
+
+* extension[financialClass]
+  * ^definition = "Identifies the source of payment/reimbursement for treatment. Coding values unknown, so recorded as a String value"
+  * ^short = "The source of payment/reimbursement for treatment."
+  * value[x] only string
   * id 0..0
 
 * extension[lastUpdated]

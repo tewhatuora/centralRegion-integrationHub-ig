@@ -19,7 +19,7 @@ to referrals being created.  A sample subscription, returning the triggered Serv
 {
     "resourceType": "Subscription",
     "status": "active",
-    "criteria": "ServiceRequest?_clinicType=MMA",
+    "criteria": "ServiceRequest?clinicType=MMA",
     "channel": {
         "type": "rest-hook",
         "endpoint": "http://localhost:3000/fhir/callback/ServiceRequest",
@@ -28,7 +28,7 @@ to referrals being created.  A sample subscription, returning the triggered Serv
 }
 ```
 **Notes**
-* The use of [_clinicType](SearchParameter-nzcr-referral-clinic-type.html) search parameter, to target the subscription to the particular hospital clinic.
+* The use of [clinicType](SearchParameter-nzcr-referral-clinic-type.html) search parameter, to target the subscription to the particular hospital clinic.
 * The rest-hook callback will use an HTTP `PUT` call to the endpoint URL;  You may require separate callback addresses, one for each resource type you expect to receive.
 
 ### Bundle Resource Notification Subscription (ServiceRequest)

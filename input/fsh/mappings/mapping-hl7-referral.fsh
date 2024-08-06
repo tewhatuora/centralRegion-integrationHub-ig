@@ -108,12 +108,12 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
     * identifier
       * use -> "'usual'"
       * system -> "'https://standards.digital.health.nz/ns/central-region/referring-practice'"
-      * value -> "ZXV-35.1"
+      * value -> "ZXV-49.1"
       * type.coding
         * code -> "'LR'"
         * system -> "'http://terminology.hl7.org/CodeSystem/v2-0203'"
         * display -> "'Local Registry ID'"
-    * display -> "ZXV-35.2"
+    * display -> "ZXV-49.2"
 
   * extension[healthPurchaser].valueCoding
     * code -> "ZXV-51.1"
@@ -132,7 +132,7 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
     * system -> "'https://standards.digital.health.nz/ns/central-region/pas-referral-status'"
     * display -> "RF1.1.1"
 
-  * extension[webPASPriority].valueCoding
+  * extension[webPASPriority].valueCoding -> "RF1.1" "If present"
     * code -> "RF1.1.2"
     * system -> "'https://standards.digital.health.nz/ns/central-region/pas-referral-priority'"
     * display -> "RF1.1.2"

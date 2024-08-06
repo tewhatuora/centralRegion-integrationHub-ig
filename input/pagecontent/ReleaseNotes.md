@@ -1,5 +1,13 @@
-
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.9-rc1
+5-Aug-2024
+* Renamed (the human readable names) of [nzcr-clinic-vs](./ValueSet-nzcr-clinic-vs.html) and [nzcr-clinic-cs](./CodeSystem-nzcr-clinic-cs.html) 
+to `ClinicTypeCodeSystem` and `ClinicTypeValueSet` to distinguish `clinicId` field from `clinicType` field.
+* Added `ServiceRequest.extension[referral].extension[clinicId]` as a `valueString` extension field to hold the `clinicId` along-side `clinicType`. 
+There are more than 1300 unique clinicIds, and they change regularly; so it is not practible to add this as a `valueCoding` field.
+* Added `ServiceRequest.extension[referral].extension[healthSpeciality]` to hold required field `PV1-10`. Codings not currently known, so only available as `valueString`
+* Added `ServiceRequest.extension[referral].extension[financialClass]` to hold required field `PV1-20`. Codings not currently known, so only available as `valueString`
+
 ### v1.0.8-rc4
 * Updated [Marital Status ConceptMap](./ConceptMap-nzcr-marital-status-map.html) as some codes in WebPAS do not conform to HL70002 marital status codes table. 
    * code `C` is for `Civil union` and is mapped to `OTH`
@@ -310,7 +318,6 @@ We turned on FHIR validation, which required the following fixes in the Implemen
 
 ### v0.6.0
 29-Sep-2023
-
 * Added [Allergy Reaction](./ValueSet-nzcr-allergy-reaction-vs.html) code system, to record the nature of allergic reaction
   along with concept maps to provide suitable FHIR code fields:
 

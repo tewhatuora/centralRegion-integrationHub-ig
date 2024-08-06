@@ -8,7 +8,7 @@ Description:  "Religion codes ex. WebPAS in NZ Central Region"
 * ^experimental = false
 * ^caseSensitive = true
 
-* #R01	"C of E/Anglican"
+* #R01	"C of  E/Anglican"
 * #R02	"Agnostic"
 * #R03	"Assembly of God"
 * #R04	"Apostolic"
