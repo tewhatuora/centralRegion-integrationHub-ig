@@ -185,3 +185,8 @@ Alias:   $L4HRecordId            = http://ibm.com/fhir/cdm/StructureDefinition/s
 Alias:   $L4HDataModelVersion    = http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version
 Alias:   $L4HClientId            = http://ibm.com/fhir/cdm/StructureDefinition/process-client-id
 Alias:   $L4HTemplateVersion     = https://standards.digital.health.nz/ns/central-region/l4h-template-version
+
+
+// Local URls for HAPI FHIR defined extension in Subscription resource
+Alias:   $HAPISubscriptionPayloadQuery = http://hapifhir.io/fhir/StructureDefinition/subscription-payload-search-criteria
+Alias:   $HAPISubscriptionRetryCount   = http://hapifhir.io/fhir/StructureDefinition/subscription-delivery-retry-count

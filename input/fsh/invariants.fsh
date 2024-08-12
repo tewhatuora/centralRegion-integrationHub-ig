@@ -16,3 +16,9 @@ Expression: "category.coding.where(code != 'NHIMWS' and code != 'MA' and code='M
    code.coding.exists() and
    author.exists() and
    extension[flag-alert].extension[recordingHospital].coding.display.exists()"
+
+Invariant: nzcr-invariant-subscription-query-nospaces
+Description: "Subscription extension field 'subscription-payload-search-criteria' must not contain spaces"
+Severity: #error
+Expression: "contains(' ').not()"
+

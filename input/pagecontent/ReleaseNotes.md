@@ -1,4 +1,14 @@
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.9-rc2
+12-Aug-2024
+* Added [Subscription](./StructureDefinition-NZCentralRegionSubscription.html) profile requiring:
+  * `Subscription.type` is required and can only be `rest-hook`
+  * `Subscription.channel.payload` is required and can only be `application/json` (The field states the mime-type of the payload)
+  * `Subscription.extension[subscription-payload-search-criteria].valueString` allows API clients to be notified with whole bundles.
+  * `Subscription.channel.extension[subscription-delivery-retry-count].valueString` allows API clients to limit the number of retries a subscription notification
+  will conduct, before placing the notification into the Dead Letter Queue.
+* Added code `I` for `Inactive` to [ReferralStatus](./CodeSystem-nzcr-referral-status-cs.html) to account for delete referrals received in `REF^I14` messages.
+  
 ### v1.0.9-rc1
 5-Aug-2024
 * Renamed (the human readable names) of [nzcr-clinic-vs](./ValueSet-nzcr-clinic-vs.html) and [nzcr-clinic-cs](./CodeSystem-nzcr-clinic-cs.html) 
