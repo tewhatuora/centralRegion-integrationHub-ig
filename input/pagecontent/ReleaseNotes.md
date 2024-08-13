@@ -1,4 +1,10 @@
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.9-rc4
+13-Aug-2024
+* `Patient.communication[].langauge.text` is used to record "Other" language code as ietf language codes don't include an OTHER value.
+* `Patient.communication[].preferred` is optional, as it can't be set when language is OTHER.
+
+
 ### v1.0.9-rc2
 12-Aug-2024
 * Added [Subscription](./StructureDefinition-NZCentralRegionSubscription.html) profile requiring:

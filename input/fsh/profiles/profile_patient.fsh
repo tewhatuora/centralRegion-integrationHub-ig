@@ -273,20 +273,20 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 * extension contains $HL7InterpreterRequired named interpreterRequired 0..1 MS
 
 * communication 0..* MS
-  * language from $IETFLanguageVS
+//  * language from $IETFLanguageVS
   * language 1..1 MS
   * language insert AdditionalBindingByExtension(#required, $NZCentralRegionRawLanguageVS)
-    * coding.code 1..1 MS      // from PID-15.1
-    * coding.system 1..1 MS    // based on which code from PID-15.1
-    * coding.display 1..1 MS   // from PID-15.2 or by lookup from PID-15.1 ??
+    * coding.code 0..1 MS      // from PID-15.1
+    * coding.system 0..1 MS    // based on which code from PID-15.1
+    * coding.display 0..1 MS   // from PID-15.2 or by lookup from PID-15.1 ??
     * coding.version 0..0      // code systems are not explicitly versioned
     * coding.userSelected 0..0 // data not available
     * coding.extension 0..0
     * coding.id 0..0
-    * text 0..0    //  Code, Value and Display are all derived from Code value from PID-15.1
+    * text 0..1        //  We gotta put something in when value zOTH is used
     * extension 0..0
     * id 0..0
-  * preferred 1..1 MS
+  * preferred 0..1 MS  //  can't set language to preferred when it is 'OTHER'
   * extension 0..0
   * id 0..0
 
