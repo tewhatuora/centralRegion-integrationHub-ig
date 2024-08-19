@@ -286,6 +286,7 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #P32 "Pyridoxine"
 * #P33 "Pregabalin"
 * #P34 "Patent Blue"
+* #P35 "Perindopril"
 * #Q01 "Quinapril"
 * #Q02 "Quinidine"
 * #Q03 "Quinine"
@@ -365,6 +366,7 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #Z03 "Zopiclone"
 * #Z04 "Zinc"
 * #Z05 "Zuclopenthixol"
+* #Z5  "Zuclopenthixol"     // Someone entered it as `Z5` instead of `Z05`
 
 
 

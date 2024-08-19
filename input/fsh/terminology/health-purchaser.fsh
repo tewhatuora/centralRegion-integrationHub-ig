@@ -8,6 +8,7 @@ Description:  "Health Purchaser codes; ex. WebPAS in NZ Central Region."
 * ^experimental = false
 * ^caseSensitive = true
 
+* #06  "Privately funded NZ"  // Can't tell if the code is '6' or '06'
 * #6   "Privately funded NZ"
 * #17  "Accredited employer"
 * #19  "Overseas chargeable"

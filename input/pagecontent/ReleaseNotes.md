@@ -1,4 +1,11 @@
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.9-rc5
+19-Aug-2024
+* Added `Z5` for `Zuclopenthixol` alongside `Z05` to [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
+* Added `P35` for `Perindopril` to [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
+* Added `06` for `Privately funded NZ` alongside `6` to [Referral Health Purchaser](./CodeSystem-nzcr-health-purchaser-cs.html)
+
+
 ### v1.0.9-rc4
 13-Aug-2024
 * `Patient.communication[].langauge.text` is used to record "Other" language code as ietf language codes don't include an OTHER value.

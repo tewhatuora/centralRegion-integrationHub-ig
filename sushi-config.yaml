@@ -5,11 +5,12 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: nz.central.ihub.ig
 canonical: https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig
+#canonical:  https://fhir-ig.digital.health.nz/central-region-integration-hub   /// Maybe this would be better?
 name: CRIntegrationHub
 title: Te Whatu Ora, Central Region Integration Hub
 description: Implementation Guide for Central Region's FHIR based Integration Hub
 status: active # draft | active | retired | unknown
-version: 1.0.9-rc3
+version: 1.0.9-rc5
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
