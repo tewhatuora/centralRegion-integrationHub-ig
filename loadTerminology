@@ -1,13 +1,6 @@
 #!/bin/bash
 
 
-if [ -z "${ACCESS_TOKEN}" ]
-then
-   # Nope - so go get one
-   source getAccessToken
-fi
-
-
 # NZ Base provides ValueSet and CodeSystem resources...
 for rs in ValueSet CodeSystem
 do

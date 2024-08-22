@@ -1,4 +1,10 @@
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.9-rc6
+21-Aug-2024
+* Added `WMHH` for `Whanganui Mental Health Hospital` to [Referral Site Codes](./CodeSystem-nzcr-referral-site-cs.html)
+* Added `WOPD` for `Whanganui Outpatients` to [Referral Site Codes](./CodeSystem-nzcr-referral-site-cs.html)
+* Added `YOPD` for `Wairarapa Hospital Outpatients` [Referral Site Codes](./CodeSystem-nzcr-referral-site-cs.html)
+
 ### v1.0.9-rc5
 19-Aug-2024
 * Added `Z5` for `Zuclopenthixol` alongside `Z05` to [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
