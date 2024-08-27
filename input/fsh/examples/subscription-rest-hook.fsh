@@ -11,6 +11,7 @@ Usage:  #example
 * criteria = "ServiceRequest?clinicType=MMA"
 * channel
   * extension[hapi-subscription-retry-count].valueInteger = 5
+  * extension[custom-delivery-class].valueString = "nz.govt.tewhatuora.central.cdr.subscription.whanautahi.CustomRestHookSubscriptionsDeliverer"
   * type = #rest-hook
   * endpoint = "https://example.com/fhir-callback"
   * payload = #application/json

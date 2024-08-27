@@ -53,8 +53,8 @@ There are more than 1300 unique clinicIds, and they change regularly; so it is n
 * Added `Z05` for `Zuclopenthixol` to [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
 * Field `Flag.period` is now optional as very occasionally we don't get given a start date in `ZAL.5` or start date is after end date in `ZAL.9`
 * Field `AllergyIntolerance.onset` is now optional as very occaisionally we don't get given a start date in `ZAL.5` or start date is after end date in `ZAL.9`
-* Added `OTH` and `UNK` from [Null Flavour](http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NP) to the [Marital Status](./nzcr-marital-status-vs.html) Value Set
-* Added [Marital Status ConceptMap](./nzcr-marital-status-map.html) to map marital status codes from [HL7 v2.4](https://hl7-definition.caristix.com/v2/HL7v2.4/Tables/0002)
+* Added `OTH` and `UNK` from [Null Flavour](http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NP) to the [Marital Status Value Set](./ValueSet-nzcr-marital-status-vs.html)
+* Added [Marital Status ConceptMap](./ConceptMap-nzcr-marital-status-map.html) to map marital status codes from [HL7 v2.4](https://hl7-definition.caristix.com/v2/HL7v2.4/Tables/0002)
 * `ClinicalImpression.status` is derived from the legal status startDate (`ZLS-3`) and endDate (`ZLS-4`) fields.
 * Fields `Patient.communication.language` and `Patient.maritalStatus` holding multiple codings.
 * Updated [Patient with Additional Bindings](./StructureDefinition-NZCentralRegionPatientAdditionalBinding.html) profile to have additional binding on `Patient.maritalStatus`
@@ -121,7 +121,7 @@ the value will be placed in the `text` field, rather than `coding`.
   * #M29   "Ward 26"
   * #YAH   "WR Allied Health Gym"
 
-* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
   * #A33	"Anaesthetic agent"
   * #A35  "Antiinflammatories"
   * #A36	"Atomoxetine"
@@ -153,7 +153,7 @@ the value will be placed in the `text` field, rather than `coding`.
 
 
 ### v1.0.6-rc8
-* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
   * `A34` - `Alcohol contain meds`
   * `A39` - `Adalimumab`
   * `B15` - `Benzydamine`
@@ -162,7 +162,7 @@ the value will be placed in the `text` field, rather than `coding`.
   * `L16` - `Leflunomide`
 
 ### v1.0.6-rc7
-* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+* Added codes to [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
 * `L18` - `Loratadine`
 * `M21` - `Methylphenidate`
 * `R09` - `Rosuvastatin`
@@ -189,7 +189,7 @@ the value will be placed in the `text` field, rather than `coding`.
   * `NPR` - `Not prioritised`
   * `STP` - `Staged procedure`
 
-* Added codes to the [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+* Added codes to the [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
   * `A37` - `Alteplase`
   * `T28` - `Ticagrelor`
 
@@ -213,9 +213,9 @@ the value will be placed in the `text` field, rather than `coding`.
  Added code `IN` for `NZ Indian` to [Level 2 Ethnicity](./CodeSystem-nzcr-ethnicity-level-2-code-system.html) codes
 * Patient.extension[nzCitizenship] is optional
 * Added field `extension[allergy-alert].extension[webPASCategory]` to [AllergyIntolerance](./StructureDefinition-NZCentralRegionAllergyIntolerance.html) and [Flag](./StructureDefinition-NZCentralRegionFlag.html) resources to hold the original value of field `ZAL.2.1` the alert category.
-* Added code `F` for `De Facto` to [Extra Marital Status](./CodeSystem-nzcr-extra-marital-status-cs.html) codes 
+* Added code `F` for `De Facto` to [Marital Status](./CodeSystem-nzcr-raw-marital-status-cs.html) codes 
 * Added code `R40` for `Seventh Day Advents` to [Patient Relgion](./CodeSystem-nzcr-religion-cs.html) codes
-* Added codes to the [H1 Alert Codes](./CodeSystem-nzcr-flag-alert-code-h1-cs.html)
+* Added codes to the [H1 Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
   * `B13` - `Benzodiazepines`
 * Added codes to [Mental Health Review Location](./CodeSystem-nzcr-mental-health-review-location-code-cs.html) codes
   * `M35` for `Levin Police`
@@ -270,7 +270,7 @@ the value will be placed in the `text` field, rather than `coding`.
 * Added codes `#WRH` and `#WHN` for `Wairarapa Hospital` and `Whanganui Hospital`, as well as `#5750`  `Whanganui Mental Health Services`, `#1234` `New Zealand Health Information Service`,  `#6001` `Centre for Adverse Reaction Monitoring` to [Hospital Codes](./CodeSystem-nzcr-hospital-code-cs.html)
 * Contact [RelationshipCodes](./CodeSystem-nzcr-contact-relationship-cs.html)  `1` `Mother` through `9` `Nephew` are actually `01` through `09`.
 * Cardinality of `Patient.Adress.line` updated to `0..2` as can get lines from `PID-11.1` and `PID-11.2`
-* Added code `#X` `Separated` to [Marital Codes](./CodeSystem-nzcr-extra-marital-status-cs.html) to sit alongside `#L` `Legally Separated`
+* Added code `#X` `Separated` to [Marital Codes](./CodeSystem-nzcr-raw-marital-status-cs.html) to sit alongside `#L` `Legally Separated`
 * Corrected typo in `R01` `Drug anaphylaxis` from [Allergy Reaction](./CodeSystem-nzcr-allergy-reaction-h1h3-cs.html)
 * Added `http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NP` to [Hospital Codes](./ValueSet-nzcr-hospital-code-vs.html) to denote when field `ZAL.13.1` is not present in the source HL7 message.
 
@@ -356,7 +356,7 @@ We turned on FHIR validation, which required the following fixes in the Implemen
 
 * Switched from using the `ClinicalImpression.summary` field to using the `ClinicalImpression.note` field to hold the comments recorded with the alert.
 
-* Added [Developer Guide](./DeveloperGuide.html) outlining the process for provisioning API clients, and obtaining an OAuth access token
+* Added [Developer Guide](./devGuide-Onboarding.html) outlining the process for provisioning API clients, and obtaining an OAuth access token
   to authenticate subsequent FHIR API calls.
 
 * Added this release history page

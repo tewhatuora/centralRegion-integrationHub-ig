@@ -205,10 +205,10 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * coding contains origFhir 0..1 and rawSource 1..1    // some values like 'Refuse to Answer' have no code in the origFhir coding
 
   * coding[origFhir].system = $HL7PatientRelgionCS (exactly)
-  * coding[origFhir].code from $HL7PatientRelgionVS (required)
+  * coding[origFhir].code from $HL7PatientRelgionVS (required)  // Sometime we gotta leave this one out
 
   * coding[rawSource].system = $NZCentralRegionReligionCS (exactly)
-  * coding[rawSource].code from $NZCentralRegionReligionVS (required)
+  * coding[rawSource].code from $NZCentralRegionCombinedReligionVS (required)
 
   * coding MS
   * coding.code 1..1 MS      // from PID-17.1

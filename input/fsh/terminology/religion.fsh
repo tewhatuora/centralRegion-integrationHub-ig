@@ -8,7 +8,7 @@ Description:  "Religion codes ex. WebPAS in NZ Central Region"
 * ^experimental = false
 * ^caseSensitive = true
 
-* #R01	"C of  E/Anglican"
+* #R01	"C of  E/Anglican"   // Yes there's TWO spaces in the middle there
 * #R02	"Agnostic"
 * #R03	"Assembly of God"
 * #R04	"Apostolic"
@@ -86,7 +86,7 @@ Description: "Concept map mapping raw religion codes ex. WebPAS to proper FHIR r
   * source = $NZCentralRegionReligionCS
   * target =  $HL7PatientRelgionCS
 
-* insert cmapEntry(R01, "C of E/Anglican",       1005, "Anglican")
+* insert cmapEntry(R01, "C of  E/Anglican",      1005, "Anglican")
 * insert cmapEntry(R02, "Agnostic",              1004, "Agnosticism")
 * insert cmapEntry(R03, "Assembly of God",       1061, "Assembly of God")
 * insert cmapEntry(R04, "Apostolic",             1038, "Pentecostal")

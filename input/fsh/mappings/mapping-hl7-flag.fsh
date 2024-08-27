@@ -18,7 +18,7 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * status -> "ZAL-5 & ZAL-9" "**if** ZAL-5 is in the past **AND** ZAL-9 is in the future or empty\r\n**then** 'active'\r\n**else** 'inactive'"
 
 * category -> "ZAL-2" "Repeat for each coding"
-* category.coding -> "" "Repeat for each coding"
+* category.coding -> "ZAL-2" "Repeat for each coding"
 * category.coding.system -> "http://terminology.hl7.org/CodeSystem/flag-category"
 * category.coding.code -> "ZAL-2.1" "Raw value and mapped from webPAS alert category"
 * category.coding.display -> "ZAL-2.2" "Raw value and mapped from webPAS alert category"
@@ -38,8 +38,7 @@ Description: "Central Region Message Specification (1.14) - Flag from ADT^031 ZA
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-nhimws
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-mc
 * https://standards.digital.health.nz/ns/central-region/flag-alert-code-ma
-ie: these categories denote 'free-text' alert codes
-"
+ie: these categories denote 'free-text' alert codes"
 
 * subject.reference -> " " "read-only field"
 * subject.type -> "'Patient'"
@@ -80,7 +79,7 @@ ie: these categories denote 'free-text' alert codes
 * extension[flag-alert].extension[severityLevel].valueString -> "ZAL-6"  "TODO: severityLevel should be integer"
 
 * extension[flag-alert].extension[allergyReaction].url -> "'allergyReaction'"
-* extension[flag-alert].extension[allergyReaction].valueCodeableConcept -> " " "Optional field which is populated when `ZAL-4.1` is present."
+* extension[flag-alert].extension[allergyReaction].valueCodeableConcept -> "ZAL-4.1" "Optional field which is populated when `ZAL-4.1` is present."
   * coding.code -> "ZAL-4.1"
   * coding.system -> "'https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4' or 'https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3'"
   * coding.display -> "ZAL-4.2"

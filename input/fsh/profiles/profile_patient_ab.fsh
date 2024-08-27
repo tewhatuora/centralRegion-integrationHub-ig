@@ -27,7 +27,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region, with additional
 
 // religion requires codes from two ValueSets
 * extension contains $HL7PatientReligion named patient-religion 0..1 MS
-* extension[patient-religion].valueCodeableConcept from $HL7PatientRelgionVS
+* extension[patient-religion].valueCodeableConcept from $HL7PatientRelgionVS (extensible)
 * extension[patient-religion].valueCodeableConcept insert AdditionalBindingByExtension(#required, $NZCentralRegionReligionVS)
 
 

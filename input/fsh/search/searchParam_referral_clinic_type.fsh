@@ -6,7 +6,6 @@ Usage: #definition
 * status = #active
 * experimental = false
 
-* url = $NZCentralRegionReferralClinicTypeSearchParam
 * description = "This SearchParameter enables query of referral flavour of ServiceRequest by clinicType to support Subscribers receiving notifcations off a subset of referrals."
 * name = "clinicType"
 * code = #clinicType

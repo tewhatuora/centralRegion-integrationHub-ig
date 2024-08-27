@@ -4,8 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: nz.central.ihub.ig
-canonical: https://fhir.org.nz/ig/tewhatuora/crih-fhir-ig
-#canonical:  https://fhir-ig.digital.health.nz/central-region-integration-hub   /// Maybe this would be better?
+canonical: https://fhir-ig.digital.health.nz/crih
 name: CRIntegrationHub
 title: Te Whatu Ora, Central Region Integration Hub
 description: Implementation Guide for Central Region's FHIR based Integration Hub
@@ -67,8 +66,10 @@ pages:
 # than a list of code/value pairs (as in the ImplementationGuide
 # resource), the code is the YAML key. If a parameter allows repeating
 # values, the value in the YAML should be a sequence/array.
+#
 # For parameters defined by core FHIR see:
 # http://build.fhir.org/codesystem-guide-parameter-code.html
+#
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
@@ -76,6 +77,129 @@ parameters:
   excludettl: true
   excludexml: true
   autoload-resources: false
+
+  ## Because we don't use the `canonical` URL above as the root of all the URLs for the artefacts we're defining.
+  ##   HISO has rules about how standards.digital.health.nz URLs are defined, that pre-date FHIR's plethora of URLs.
+  ##   So we have to list them all specifically here, so we don't get a "Canonical URL doesn't match actual URL" error.
+  special-url:
+    ## Extension URLs
+    - https://standards.digital.health.nz/ns/central-region/alert
+    - https://standards.digital.health.nz/ns/central-region/referral
+    - https://standards.digital.health.nz/ns/central-region/mental-health-status
+
+    - https://standards.digital.health.nz/ns/central-region/nz-ethnicity
+    - https://standards.digital.health.nz/ns/central-region/religion
+    - https://standards.digital.health.nz/ns/central-region/nz-residency
+    
+    - http://ibm.com/fhir/cdm/StructureDefinition/process-client-id
+    - http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version
+    - http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger
+    - http://ibm.com/fhir/cdm/StructureDefinition/source-record-id
+    - http://ibm.com/fhir/cdm/StructureDefinition/source-record-type
+    - http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp
+
+    - https://standards.digital.health.nz/ns/central-region/hl7v2-message
+    - https://standards.digital.health.nz/ns/central-region/l4h-template-version
+    
+    ## ValueSet URLs
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-allergy
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-alert-code
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-reaction
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-clinic-code
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-contact-relationship
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-ethnicity
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-language
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-religion
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-nz-residency
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-contact-relationship
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-department-code
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-ethnicity-level-2
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-flag
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-flag-alert-code
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-health-purchaser
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-hospital-code
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-language
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-marital-status
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-court-type
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-legal-status
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-review-location
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-mental-health-review-status
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-raw-language
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-raw-marital-status
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-priority
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-reason
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-site
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-source
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-status
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-referral-type
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-nz-residency
+
+    ## CodeSystem URLs
+    - https://standards.digital.health.nz/ns/central-region/alert-category
+    - https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h1
+    - https://standards.digital.health.nz/ns/central-region/allergy-alert-code-h3
+    - https://standards.digital.health.nz/ns/central-region/allergy-alert-code-a3-a4
+    - https://standards.digital.health.nz/ns/central-region/allergy-reaction-a3-a4
+    - https://standards.digital.health.nz/ns/central-region/allergy-reaction-h1-h3
+    
+    - https://standards.digital.health.nz/ns/central-region/flag-alert-code-da
+    - https://standards.digital.health.nz/ns/central-region/flag-alert-code-h2
+    - https://standards.digital.health.nz/ns/central-region/flag-alert-code-h4
+    - https://standards.digital.health.nz/ns/central-region/flag-alert-code-h5
+    - https://standards.digital.health.nz/ns/central-region/flag-alert-code-h6
+    - https://standards.digital.health.nz/ns/central-region/flag-alert-code-h7
+    - https://standards.digital.health.nz/ns/central-region/flag-alert-code-h8
+    - https://standards.digital.health.nz/ns/central-region/flag-alert-code-ls
+
+    - https://standards.digital.health.nz/ns/central-region/health-purchaser
+    - https://standards.digital.health.nz/ns/central-region/hospital-code
+
+    - https://standards.digital.health.nz/ns/central-region/mental-health-court-type
+    - https://standards.digital.health.nz/ns/central-region/mental-health-legal-status
+    - https://standards.digital.health.nz/ns/central-region/mental-health-review-location
+    - https://standards.digital.health.nz/ns/central-region/mental-health-review-status
+
+    - https://standards.digital.health.nz/ns/central-region/clinic-code
+    - https://standards.digital.health.nz/ns/central-region/contact-relationship
+    - https://standards.digital.health.nz/ns/central-region/department-code
+    - https://standards.digital.health.nz/ns/central-region/proposed-language
+    - https://standards.digital.health.nz/ns/central-region/pas-language
+    - https://standards.digital.health.nz/ns/central-region/raw-marital-status
+    - https://standards.digital.health.nz/ns/central-region/pas-referral-category
+    - https://standards.digital.health.nz/ns/central-region/pas-referral-priority
+    - https://standards.digital.health.nz/ns/central-region/pas-referral-status
+    - https://standards.digital.health.nz/ns/central-region/referral-reason
+    - https://standards.digital.health.nz/ns/central-region/referral-site
+    - https://standards.digital.health.nz/ns/central-region/referral-source
+    - https://standards.digital.health.nz/ns/central-region/referral-type-ri
+    - https://standards.digital.health.nz/ns/central-region/referral-type-wu
+
+    - https://standards.digital.health.nz/ns/central-region/patient-religion
+    - https://standards.digital.health.nz/ns/ethnic-group-level-2-code
+    - https://standards.digital.health.nz/ns/central-region/nz-residency-code
+
+    ## ValueSet urls
+    - https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-alert-type
+
+    ## ConceptMap urls
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-flag-category
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-category
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-criticality
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-allergy-reaction-type
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-ethnicity
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-language
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-marital-status
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-nz-residency
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-religion
+    - https://standards.digital.health.nz/fhir/central-region/ConceptMap-referral-priority
+
+    ## HAPI FHIR extensions for Subscription resource
+    - http://hapifhir.io/fhir/StructureDefinition/subscription-payload-search-criteria
+    - http://hapifhir.io/fhir/StructureDefinition/subscription-delivery-retry-count
+
+    ## SmileCDR extensions
+    - https://smilecdr.com/fhir/ns/StructureDefinition/subscription-channel-rest-delivery-class
+    
 #   validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

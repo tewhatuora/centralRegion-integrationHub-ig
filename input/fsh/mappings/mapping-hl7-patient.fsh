@@ -34,12 +34,14 @@ Do NOT attempt to separate middle names"
 
 * telecom -> "PID-13 and PID-14" "Repeat for PID-13 and PID-14"
 * telecom.value -> "PID-13.1 or PID-14.1"
-* telecom.use -> "'home' | 'work'" "if mapping PID-13 then '**home**'\r\n elif mapping PID-14 then '**work**'"
-* telecom.system -> "PID-13.3 or PID-14.3" "if 'PH' then '**phone**'\r\n
-if 'FX' then '**fax**'\r\n
-if 'CP' then '**sms**'\r\n
-if 'BP' then '**pager**'\r\n
-if 'NET' then '**email**'\r\n
+* telecom.use -> "'home' | 'work'" "if mapping PID-13 then '**home**'\r\n
+elif mapping PID-14 then '**work**'"
+
+* telecom.system -> "PID-13.3 or PID-14.3" "if '**PH**' then '**phone**'
+if '**FX**' then '**fax**'\r\n
+if '**CP**' then '**sms**'\r\n
+if '**BP**' then '**pager**'\r\n
+if '**NET**' then '**email**'\r\n
 
 Note: If only one phone entry with type '**CP**' then use '**phone**'"
 
@@ -70,13 +72,14 @@ elif PIF-8 == '**U**' then '**unknown**'"
 * extension[domicile-code].valueCodeableConcept.coding.code -> "PID-12"
 * extension[domicile-code].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/domicile-code"
 
-* extension[dhb].url -> "'http://hl7.org.nz/fhir/StructureDefinition/dhb'"
+* extension[dhb] -> " " "Not used, as no suitable ConceptMap available"
+* extension[dhb].url -> "'http://hl7.org.nz/fhir/StructureDefinition/dhb'" "Not used, as no suitable ConceptMap available"
 * extension[dhb].valueCodeableConcept.coding.code -> "PID-12" "one-to-many mapping from PID-12. Perhaps with ConceptMap ??"
-* extension[dhb].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/dhb-code"
+* extension[dhb].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/dhb-code" "Not used, as no suitable ConceptMap available"
 
 * maritalStatus.coding.code -> "PID-16.1"
 * maritalStatus.coding.display -> "PID-16.2"
-* maritalStatus.coding.system -> "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus or http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+* maritalStatus.coding.system -> "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus or http://terminology.hl7.org/CodeSystem/v3-NullFlavor" "According to [Marital Status Concept Map](./ConceptMap-nzcr-marital-status-map.html)"
 
 * extension[interpreterRequired].url -> "'http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired'"
 * extension[interpreterRequired].valueBoolean -> "PID-15.4" "if PID-15.4='Y' then 'true' else 'false'"
@@ -102,12 +105,12 @@ elif PIF-8 == '**U**' then '**unknown**'"
 * extension[nzCitizen] -> "PID-26" "Only using status, source not available"
 * extension[nzCitizen].url -> "'http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship'"
 * extension[nzCitizen].extension[status].url -> "'status'"
-* extension[nzCitizen].extension[status].valueCodeableConcept.coding.code -> "PID-26.1" "if PID-26.1 = 'Y' then 'yes'
-elif PID-26.1='N' then 'no'
-else 'unknown'"
-* extension[nzCitizen].extension[status].valueCodeableConcept.coding.display -> "PID-26.1" "if PID-26.1 = 'Y' then 'Yes'
-elif PID-26.1='N' then 'No'
-else 'Unknown'"
+* extension[nzCitizen].extension[status].valueCodeableConcept.coding.code -> "PID-26.1" "if PID-26.1 = '**Y**' then '**yes***'\r\n
+elif PID-26.1='**N**' then '**no**'\r\n
+else '**unknown**'"
+* extension[nzCitizen].extension[status].valueCodeableConcept.coding.display -> "PID-26.1" "if PID-26.1 = '**Y**' then '**Yes**'\r\n
+elif PID-26.1='**N**' then '**No**'\r\n
+else '**Unknown**'"
 * extension[nzCitizen].extension[status].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/nz-citizenship-status-code"
 
 * extension[nzcrResidency].url -> "'http://hl7.org.nz/fhir/StructureDefinition/nz-residency'"

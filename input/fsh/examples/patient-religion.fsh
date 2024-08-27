@@ -23,9 +23,13 @@ Usage:  #example
 * birthDate = "1966-01-05"
 * gender = #male
 
-* maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(nzcr-raw-marital-status-cs)
-* maritalStatus.coding[=].display = "Civil Union"
+// SmileCDR is broken and can't let us put the original coding in along-side the FHIR defined set
+// * maritalStatus.coding[+].code = #V
+// * maritalStatus.coding[=].system = Canonical(nzcr-raw-marital-status-cs)
+// * maritalStatus.coding[=].display = "Civil Union"
+* maritalStatus.coding[+].code = #OTH
+* maritalStatus.coding[=].system = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+* maritalStatus.coding[=].display = "other"
 
 * telecom[+].system = #phone
 * telecom[=].value = "021 555 888 6"
@@ -70,7 +74,7 @@ Usage:  #example
 
 * deceasedBoolean = false
 
-* meta.extension[hl7v2Message].valueBase64Binary = "TVNIfF5+XCZ8UFJPRF9XZWJQQVNeUlBBU3xNQ0RIQl5HMDAwMzN8UmVnaW9uYWwgSFVCXlJIVUJ8UkhJUF5HMDk5OTl8MjAyMjAzMTYwOTE0MTAwMDArMTMwMHx8QURUXkEzMXwzNDFQMDAwMDAwMDAwMDQ2MjA0MXxQfDIuNApFVk58fDIwMjIwMzE2MDkxMzU4ClBJRHx8fFpIWTQ4NDZeXl4mMi4xNi44NDAuMS4xMTM4ODMuMi4xOC4yfHxQb25kXkphbWVzXl5eRlJ8fDE5NzIwMjIzMDAwMDAwfE18fDIxXk5aIE1hb3JpXk5aSElTfDEwMCBCcm9hZHdheSBBdmVudWVeXlBhbG1lcnN0b24gTm9ydGheXjQ0MTBeTkVXIFpFQUxBTkReQ35eXl5eXk5FVyBaRUFMQU5EXk18MTg0NXxeUFJOXlBIfjAyNzU4ODgwMDMyXk9STl5DUHxeV1BOXlBIfEVOR15FbmdsaXNoXk5IREQtMTMyXlV8Vl5DaXZpbCBVbmlvbl5ITDcwMDAyfHx8fHx8MjFeTlogTWFvcmleTlpISVN+MTFeTlogRXVyb3BlYW4gLyBQYWtlaGFeTlpISVN+MzJeQ29vayBJc2xhbmQgTWFvcmleTlpISVN8fHx8WXx8TlpeTmV3IFplYWxhbmQgY2l0aXplbl5SSElQX1Jlc2lkZW50X1N0YXR1c3x8TgpQRDF8fHxGZWlsZGluZyBIZWFsdGggQ2FyZV5eMTI0ODJeXl4mMi4xNi44NDAuMS4xMTM4ODMuMi4xOC42Ni4zLjMuMHw2NjY2NV5SZXJla3VyYV5BbWJlci1MZWEgQXJvaGFeXl5Ecl5eXiYyLjE2Ljg0MC4xLjExMzg4My4yLjE4LjY2LjMuMi4wCk5LMXwxfExha2VeRWxhaW5lXl5eTXJzfDAzXlNpc3Rlcl53ZWJQQVN8fF5QUk5eUEh+MDI3IDg4ODc3NDNeT1JOXkNQfF5XUE5eUEgKTksxfDJ8UG9uZF5Hd2VueXRoXl5eTXJzfDAxXk1vdGhlcl53ZWJQQVN8fF5QUk5eUEh+MDI3IDUgNjY2IDMyNV5PUk5eQ1B8XldQTl5QSApOSzF8M3xNb25leXBlbm55XkxvdWlzZV5eXk1pc3N8MTheRGUgRmFjdG9ed2ViUEFTfHxeUFJOXlBIfjAyMSA1NTUgODg4IDZeT1JOXkNQfF5XUE5eUEg="
+* meta.extension[hl7v2Message].valueBase64Binary = "QmFzZTY0IEp1bms="
 
 
 
@@ -96,9 +100,13 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * birthDate = "1966-01-05"
 * gender = #male
 
-* maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(nzcr-raw-marital-status-cs)
-* maritalStatus.coding[=].display = "Civil Union"
+// SmileCDR is broken and can't let us put the original coding in along-side the FHIR defined set
+// * maritalStatus.coding[+].code = #V
+// * maritalStatus.coding[=].system = Canonical(nzcr-raw-marital-status-cs)
+// * maritalStatus.coding[=].display = "Civil Union"
+* maritalStatus.coding[+].code = #OTH
+* maritalStatus.coding[=].system = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+* maritalStatus.coding[=].display = "other"
 
 * telecom[+].system = #phone
 * telecom[=].value = "021 555 888 6"
@@ -141,7 +149,7 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 
 * deceasedBoolean = false
 
-* meta.extension[hl7v2Message].valueBase64Binary = "TVNIfF5+XCZ8UFJPRF9XZWJQQVNeUlBBU3xNQ0RIQl5HMDAwMzN8UmVnaW9uYWwgSFVCXlJIVUJ8UkhJUF5HMDk5OTl8MjAyMjAzMTYwOTE0MTAwMDArMTMwMHx8QURUXkEzMXwzNDFQMDAwMDAwMDAwMDQ2MjA0MXxQfDIuNApFVk58fDIwMjIwMzE2MDkxMzU4ClBJRHx8fFpIWTQ4NDZeXl4mMi4xNi44NDAuMS4xMTM4ODMuMi4xOC4yfHxQb25kXkphbWVzXl5eRlJ8fDE5NzIwMjIzMDAwMDAwfE18fDIxXk5aIE1hb3JpXk5aSElTfDEwMCBCcm9hZHdheSBBdmVudWVeXlBhbG1lcnN0b24gTm9ydGheXjQ0MTBeTkVXIFpFQUxBTkReQ35eXl5eXk5FVyBaRUFMQU5EXk18MTg0NXxeUFJOXlBIfjAyNzU4ODgwMDMyXk9STl5DUHxeV1BOXlBIfEVOR15FbmdsaXNoXk5IREQtMTMyXlV8Vl5DaXZpbCBVbmlvbl5ITDcwMDAyfHx8fHx8MjFeTlogTWFvcmleTlpISVN+MTFeTlogRXVyb3BlYW4gLyBQYWtlaGFeTlpISVN+MzJeQ29vayBJc2xhbmQgTWFvcmleTlpISVN8fHx8WXx8TlpeTmV3IFplYWxhbmQgY2l0aXplbl5SSElQX1Jlc2lkZW50X1N0YXR1c3x8TgpQRDF8fHxGZWlsZGluZyBIZWFsdGggQ2FyZV5eMTI0ODJeXl4mMi4xNi44NDAuMS4xMTM4ODMuMi4xOC42Ni4zLjMuMHw2NjY2NV5SZXJla3VyYV5BbWJlci1MZWEgQXJvaGFeXl5Ecl5eXiYyLjE2Ljg0MC4xLjExMzg4My4yLjE4LjY2LjMuMi4wCk5LMXwxfExha2VeRWxhaW5lXl5eTXJzfDAzXlNpc3Rlcl53ZWJQQVN8fF5QUk5eUEh+MDI3IDg4ODc3NDNeT1JOXkNQfF5XUE5eUEgKTksxfDJ8UG9uZF5Hd2VueXRoXl5eTXJzfDAxXk1vdGhlcl53ZWJQQVN8fF5QUk5eUEh+MDI3IDUgNjY2IDMyNV5PUk5eQ1B8XldQTl5QSApOSzF8M3xNb25leXBlbm55XkxvdWlzZV5eXk1pc3N8MTheRGUgRmFjdG9ed2ViUEFTfHxeUFJOXlBIfjAyMSA1NTUgODg4IDZeT1JOXkNQfF5XUE5eUEg="
+* meta.extension[hl7v2Message].valueBase64Binary = "QmFzZTY0IEp1bms="
 
 
 
@@ -171,9 +179,14 @@ Usage:  #example
 * birthDate = "1966-01-05"
 * gender = #male
 
-* maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(nzcr-raw-marital-status-cs)
-* maritalStatus.coding[=].display = "Civil Union"
+// SmileCDR is broken and can't let us put the original coding in along-side the FHIR defined set
+// * maritalStatus.coding[+].code = #V
+// * maritalStatus.coding[=].system = Canonical(nzcr-raw-marital-status-cs)
+// * maritalStatus.coding[=].display = "Civil Union"
+* maritalStatus.coding[+].code = #OTH
+* maritalStatus.coding[=].system = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+* maritalStatus.coding[=].display = "other"
+
 
 * telecom[+].system = #phone
 * telecom[=].value = "021 555 888 6"
@@ -188,6 +201,8 @@ Usage:  #example
 * address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
+
+// SmileCDR is broken and can't let us put the original coding in along-side the FHIR defined set
 * communication.language.coding[+]
   * code = #en
   * display = "English"
@@ -223,7 +238,7 @@ Usage:  #example
 
 * deceasedBoolean = false
 
-* meta.extension[hl7v2Message].valueBase64Binary = "TVNIfF5+XCZ8UFJPRF9XZWJQQVNeUlBBU3xNQ0RIQl5HMDAwMzN8UmVnaW9uYWwgSFVCXlJIVUJ8UkhJUF5HMDk5OTl8MjAyMjAzMTYwOTE0MTAwMDArMTMwMHx8QURUXkEzMXwzNDFQMDAwMDAwMDAwMDQ2MjA0MXxQfDIuNApFVk58fDIwMjIwMzE2MDkxMzU4ClBJRHx8fFpIWTQ4NDZeXl4mMi4xNi44NDAuMS4xMTM4ODMuMi4xOC4yfHxQb25kXkphbWVzXl5eRlJ8fDE5NzIwMjIzMDAwMDAwfE18fDIxXk5aIE1hb3JpXk5aSElTfDEwMCBCcm9hZHdheSBBdmVudWVeXlBhbG1lcnN0b24gTm9ydGheXjQ0MTBeTkVXIFpFQUxBTkReQ35eXl5eXk5FVyBaRUFMQU5EXk18MTg0NXxeUFJOXlBIfjAyNzU4ODgwMDMyXk9STl5DUHxeV1BOXlBIfEVOR15FbmdsaXNoXk5IREQtMTMyXlV8Vl5DaXZpbCBVbmlvbl5ITDcwMDAyfHx8fHx8MjFeTlogTWFvcmleTlpISVN+MTFeTlogRXVyb3BlYW4gLyBQYWtlaGFeTlpISVN+MzJeQ29vayBJc2xhbmQgTWFvcmleTlpISVN8fHx8WXx8TlpeTmV3IFplYWxhbmQgY2l0aXplbl5SSElQX1Jlc2lkZW50X1N0YXR1c3x8TgpQRDF8fHxGZWlsZGluZyBIZWFsdGggQ2FyZV5eMTI0ODJeXl4mMi4xNi44NDAuMS4xMTM4ODMuMi4xOC42Ni4zLjMuMHw2NjY2NV5SZXJla3VyYV5BbWJlci1MZWEgQXJvaGFeXl5Ecl5eXiYyLjE2Ljg0MC4xLjExMzg4My4yLjE4LjY2LjMuMi4wCk5LMXwxfExha2VeRWxhaW5lXl5eTXJzfDAzXlNpc3Rlcl53ZWJQQVN8fF5QUk5eUEh+MDI3IDg4ODc3NDNeT1JOXkNQfF5XUE5eUEgKTksxfDJ8UG9uZF5Hd2VueXRoXl5eTXJzfDAxXk1vdGhlcl53ZWJQQVN8fF5QUk5eUEh+MDI3IDUgNjY2IDMyNV5PUk5eQ1B8XldQTl5QSApOSzF8M3xNb25leXBlbm55XkxvdWlzZV5eXk1pc3N8MTheRGUgRmFjdG9ed2ViUEFTfHxeUFJOXlBIfjAyMSA1NTUgODg4IDZeT1JOXkNQfF5XUE5eUEg="
+* meta.extension[hl7v2Message].valueBase64Binary = "QmFzZTY0IEp1bms="
 
 Instance: Religion-NoAnswer-AdditionalBindings
 InstanceOf: NZCentralRegionPatientAdditionalBinding
@@ -247,9 +262,13 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * birthDate = "1966-01-05"
 * gender = #male
 
-* maritalStatus.coding[+].code = #V
-* maritalStatus.coding[=].system = Canonical(nzcr-raw-marital-status-cs)
-* maritalStatus.coding[=].display = "Civil Union"
+// SmileCDR is broken and can't let us put the original coding in along-side the FHIR defined set
+// * maritalStatus.coding[+].code = #V
+// * maritalStatus.coding[=].system = Canonical(nzcr-raw-marital-status-cs)
+// * maritalStatus.coding[=].display = "Civil Union"
+* maritalStatus.coding[+].code = #OTH
+* maritalStatus.coding[=].system = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+* maritalStatus.coding[=].display = "other"
 
 * telecom[+].system = #phone
 * telecom[=].value = "021 555 888 6"
@@ -264,6 +283,8 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
 * address[=].use = #home
 
 * extension[interpreterRequired].valueBoolean = false
+
+// SmileCDR is broken and can't let us put the original coding in along-side the FHIR defined set
 * communication.language.coding[+]
   * code = #en
   * display = "English"
@@ -287,11 +308,13 @@ Description: "An example of a patient from Te Whatu Ora, Central Region, with re
   * display = "Details required"
   * system = $NZCentralRegionResidencyCS
 
-* extension[patient-religion].valueCodeableConcept.coding[+]
-  * code = #R27
-  * display = "Objects to question"
-  * system = $NZCentralRegionReligionCS
+// FHIR code system doesn't have an equivalent to "Objects to question" so only one coding
+* extension[patient-religion].valueCodeableConcept
+  * coding[+]
+    * code = #R27
+    * display = "Objects to question"
+    * system = $NZCentralRegionReligionCS
 
 * deceasedBoolean = false
 
-* meta.extension[hl7v2Message].valueBase64Binary = "TVNIfF5+XCZ8UFJPRF9XZWJQQVNeUlBBU3xNQ0RIQl5HMDAwMzN8UmVnaW9uYWwgSFVCXlJIVUJ8UkhJUF5HMDk5OTl8MjAyMjAzMTYwOTE0MTAwMDArMTMwMHx8QURUXkEzMXwzNDFQMDAwMDAwMDAwMDQ2MjA0MXxQfDIuNApFVk58fDIwMjIwMzE2MDkxMzU4ClBJRHx8fFpIWTQ4NDZeXl4mMi4xNi44NDAuMS4xMTM4ODMuMi4xOC4yfHxQb25kXkphbWVzXl5eRlJ8fDE5NzIwMjIzMDAwMDAwfE18fDIxXk5aIE1hb3JpXk5aSElTfDEwMCBCcm9hZHdheSBBdmVudWVeXlBhbG1lcnN0b24gTm9ydGheXjQ0MTBeTkVXIFpFQUxBTkReQ35eXl5eXk5FVyBaRUFMQU5EXk18MTg0NXxeUFJOXlBIfjAyNzU4ODgwMDMyXk9STl5DUHxeV1BOXlBIfEVOR15FbmdsaXNoXk5IREQtMTMyXlV8Vl5DaXZpbCBVbmlvbl5ITDcwMDAyfHx8fHx8MjFeTlogTWFvcmleTlpISVN+MTFeTlogRXVyb3BlYW4gLyBQYWtlaGFeTlpISVN+MzJeQ29vayBJc2xhbmQgTWFvcmleTlpISVN8fHx8WXx8TlpeTmV3IFplYWxhbmQgY2l0aXplbl5SSElQX1Jlc2lkZW50X1N0YXR1c3x8TgpQRDF8fHxGZWlsZGluZyBIZWFsdGggQ2FyZV5eMTI0ODJeXl4mMi4xNi44NDAuMS4xMTM4ODMuMi4xOC42Ni4zLjMuMHw2NjY2NV5SZXJla3VyYV5BbWJlci1MZWEgQXJvaGFeXl5Ecl5eXiYyLjE2Ljg0MC4xLjExMzg4My4yLjE4LjY2LjMuMi4wCk5LMXwxfExha2VeRWxhaW5lXl5eTXJzfDAzXlNpc3Rlcl53ZWJQQVN8fF5QUk5eUEh+MDI3IDg4ODc3NDNeT1JOXkNQfF5XUE5eUEgKTksxfDJ8UG9uZF5Hd2VueXRoXl5eTXJzfDAxXk1vdGhlcl53ZWJQQVN8fF5QUk5eUEh+MDI3IDUgNjY2IDMyNV5PUk5eQ1B8XldQTl5QSApOSzF8M3xNb25leXBlbm55XkxvdWlzZV5eXk1pc3N8MTheRGUgRmFjdG9ed2ViUEFTfHxeUFJOXlBIfjAyMSA1NTUgODg4IDZeT1JOXkNQfF5XUE5eUEg="
+* meta.extension[hl7v2Message].valueBase64Binary = "QmFzZTY0IEp1bms="

@@ -1,4 +1,9 @@
 
+// Resource Profiles we're maintaining
+Alias:   $NZCentralRegionPatient          = https://standards.digital.health.nz/ns/central-region/StructureDefinition/NZCentralRegionPatient
+Alias:   $NZCentralRegionPatientAB        = https://standards.digital.health.nz/ns/central-region/StructureDefinition/NZCentralRegionPatientAdditionalBinding
+
+
 // Extension URLs from FHIR base
 Alias:   $HL7PatientReligion       = http://hl7.org/fhir/StructureDefinition/patient-religion
 Alias:   $HL7InterpreterRequired   = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
@@ -190,3 +195,6 @@ Alias:   $L4HTemplateVersion     = https://standards.digital.health.nz/ns/centra
 // Local URls for HAPI FHIR defined extension in Subscription resource
 Alias:   $HAPISubscriptionPayloadQuery = http://hapifhir.io/fhir/StructureDefinition/subscription-payload-search-criteria
 Alias:   $HAPISubscriptionRetryCount   = http://hapifhir.io/fhir/StructureDefinition/subscription-delivery-retry-count
+
+// Local URLs for SmileCDR defined extensions
+Alias:   $SmileCDRSubscriptionCustomDeliveryClass = https://smilecdr.com/fhir/ns/StructureDefinition/subscription-channel-rest-delivery-class

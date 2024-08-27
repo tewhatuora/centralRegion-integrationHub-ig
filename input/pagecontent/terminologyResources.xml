@@ -5,7 +5,7 @@
 </div>
 <div>API Summary (Generated from the CapabilityStatement: nzcr-SmileCDR)</div>
 <a name="EndPoints"> </a>
-<h3>Central Region FHIR REST Endpoints</h3>
+<h3>Central Region Integration Hub</h3>
 <div>
 <ul>
 <li>Implementation Guide Version: 1.0.9-rc6</li>
