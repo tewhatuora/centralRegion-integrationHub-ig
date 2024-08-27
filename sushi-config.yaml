@@ -280,24 +280,9 @@ menu:
 # The following are simple examples to demonstrate what this might
 # look like:
 #
-resources:
-  Patient/Address-Suburb: omit
-  Patient/Contact: omit
-  Patient/Ethnicity-MultipleCodings: omit
-  Patient/GeneralPractitioner: omit
-  Patient/HL7Message: omit
-  Patient/LanguageList: omit
-  Patient/LanguageSingle: omit
-  Patient/MaritalStatus-CivilUnion: omit
-  Patient/MaritalStatus-Single: omit
-  Patient/Religion-NoAnswer: omit
-  Patient/Religion-Presbyterian: omit
-  Patient/Residency: omit
-  Flag/PalliativeCare: omit
-  AllergyIntolerance/PeanutAllergy: omit
-  ServiceRequest/Referral: omit
-  ClinicalImpression/MentalHealthLegalStatus: omit
-  
+# resources:
+#
+# 
 #   Patient/my-example-patient:
 #     name: My Example Patient
 #     description: An example Patient
