@@ -282,7 +282,10 @@ menu:
 # The following are simple examples to demonstrate what this might
 # look like:
 #
-# resources:
+resources:
+  CapabilityStatement/nzcr-SmileCDR:
+    name: Central Region Integration Hub Capabilities
+    description: "FHIR Endpoints as a facade on Regional HL7 Messages, powered by Smile CDR"
 #
 # 
 #   Patient/my-example-patient:

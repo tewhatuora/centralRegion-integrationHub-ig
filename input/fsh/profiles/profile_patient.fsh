@@ -166,14 +166,13 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
       * coding[rawSource].system = $NZCentralRegionResidencyCS (exactly)
       * coding[rawSource].code from $NZCentralRegionResidencyVS (required)
 
-    * valueCodeableConcept.coding MS    
-    * valueCodeableConcept.coding.code 1..1 MS      // from PID-28.1
-    * valueCodeableConcept.coding.system 1..1 MS    
-    * valueCodeableConcept.coding.display 1..1 MS   // from PID-28.2 or by lookup from PID-28.1 ??
-    * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
-    * valueCodeableConcept.coding.userSelected 0..0 // data not available
-    * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-28.1
-    * valueCodeableConcept.id 0..0
+      * coding MS    
+      * coding.code 1..1 MS      // from PID-28.1
+      * coding.system 1..1 MS    
+      * coding.display 1..1 MS   // from PID-28.2 or by lookup from PID-28.1 ??
+      * coding.version 0..0      // code systems are not explicitly versioned
+      * coding.userSelected 0..0 // data not available
+      * text 0..0    //  Code, Value and Display are all derived from Code value from PID-28.1
     * id 0..0
   * extension[source] 0..0
   * id 0..0

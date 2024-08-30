@@ -72,7 +72,7 @@ elif PIF-8 == '**U**' then '**unknown**'"
 * extension[domicile-code].valueCodeableConcept.coding.code -> "PID-12"
 * extension[domicile-code].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/domicile-code"
 
-* extension[dhb] -> " " "Not used, as no suitable ConceptMap available"
+* extension[dhb] -> "-" "Not used, as no suitable ConceptMap available"
 * extension[dhb].url -> "'http://hl7.org.nz/fhir/StructureDefinition/dhb'" "Not used, as no suitable ConceptMap available"
 * extension[dhb].valueCodeableConcept.coding.code -> "PID-12" "one-to-many mapping from PID-12. Perhaps with ConceptMap ??"
 * extension[dhb].valueCodeableConcept.coding.system -> "https://standards.digital.health.nz/ns/dhb-code" "Not used, as no suitable ConceptMap available"
