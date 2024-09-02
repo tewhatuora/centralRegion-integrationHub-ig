@@ -49,7 +49,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
     * valueCodeableConcept.coding.userSelected 0..0 // data not available
     * valueCodeableConcept.text 0..0                // Code, Value and Display are all derived from Code value
-    * valueCodeableConcept.extension 0..0
     * id 0..0  
   * extension[suburb] 0..1 MS
   * use 1..1 MS           // hard-coded to 'home' in templates
@@ -82,8 +81,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding.display 0..1 MS   // might not recognise the code...
   * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
-  * valueCodeableConcept.text 0..0                // ode, Value and Display are all derived from Code value
-  * valueCodeableConcept.extension 0..0
+  * valueCodeableConcept.text 0..0                // code, Value and Display are all derived from Code value
   * id 0..0
   
 * extension[dhb] 0..1 MS
@@ -93,8 +91,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding.display 1..1 MS
   * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
-  * valueCodeableConcept.text 0..0                // ode, Value and Display are all derived from Code value
-  * valueCodeableConcept.extension 0..0
+  * valueCodeableConcept.text 0..0                // code, Value and Display are all derived from Code value
   * id 0..0
 
 
@@ -129,7 +126,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * valueCodeableConcept.coding.version 0..0      // code systems are not explicitly versioned
   * valueCodeableConcept.coding.userSelected 0..0 // data not available
   * valueCodeableConcept.text 0..0    //  Code, Value and Display are all derived from Code value from PID-22.1
-  * valueCodeableConcept.extension 0..0
   * id 0..0
 
 * extension[nzCitizen] 0..1 MS
@@ -172,7 +168,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
       * coding.display 1..1 MS   // from PID-28.2 or by lookup from PID-28.1 ??
       * coding.version 0..0      // code systems are not explicitly versioned
       * coding.userSelected 0..0 // data not available
-      * text 0..0    //  Code, Value and Display are all derived from Code value from PID-28.1
+      * text 0..0                //  Code, Value and Display are all derived from Code value from PID-28.1
     * id 0..0
   * extension[source] 0..0
   * id 0..0
