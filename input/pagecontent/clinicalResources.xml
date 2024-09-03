@@ -8,7 +8,7 @@
 <h3>Central Region Integration Hub</h3>
 <div>
 <ul>
-<li>Implementation Guide Version: 1.0.9-rc7</li>
+<li>Implementation Guide Version: 1.0.10-rc1</li>
 <li>FHIR Version: 4.0.1</li>
 <li>Formats:
 <code>application/fhir+xml</code>, 
@@ -163,7 +163,9 @@
 <td>
 <code>identifier</code>, 
 <code>_id</code>, 
-<code>clinicType</code>
+<code>clinicType</code>, 
+<code>referringPractice</code>, 
+<code>consultingPractitioner</code>
 </td>
 <td/><td/>
 </tr>
@@ -581,7 +583,19 @@
 <tr>
 <td>clinicType</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><div>Definition: https://standards.digital.health.nz/fhir/central-region/SearchParam-referral-clinic-type</div><p>This SearchParameter enables query of referral flavour of ServiceRequest by clinicType to support Subscribers receiving notifcations off a subset of referrals.</p>
+<td><div>Definition: https://standards.digital.health.nz/fhir/central-region/SearchParam-nzcr-referral-clinic-type</div><p>This SearchParameter enables query of referral flavour of ServiceRequest by clinicType to support Subscribers receiving notifcations off a subset of referrals.</p>
+</td>
+</tr>
+<tr>
+<td>referringPractice</td>
+<td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
+<td><div>Definition: https://standards.digital.health.nz/fhir/central-region/SearchParam-nzcr-referral-referring-practice</div><p>This SearchParameter enables query of referral flavour of ServiceRequest by referringPractice to support Subscribers receiving notifcations that include the referringPractice's Organization resource</p>
+</td>
+</tr>
+<tr>
+<td>consultingPractitioner</td>
+<td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
+<td><div>Definition: https://standards.digital.health.nz/fhir/central-region/SearchParam-nzcr-referral-consulting-practitioner</div><p>This SearchParameter enables query of referral flavour of ServiceRequest by consultingPractitioner to support Subscribers receiving notifcations that include the consultingPractitioner's Practitioner resource</p>
 </td>
 </tr>
 </tbody></table><br/>

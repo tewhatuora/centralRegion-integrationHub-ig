@@ -486,9 +486,21 @@
             },
             {
               "name": "clinicType",
-              "definition": "https://standards.digital.health.nz/fhir/central-region/SearchParam-referral-clinic-type",
+              "definition": "https://standards.digital.health.nz/fhir/central-region/SearchParam-nzcr-referral-clinic-type",
               "type": "token",
               "documentation": "This SearchParameter enables query of referral flavour of ServiceRequest by clinicType to support Subscribers receiving notifcations off a subset of referrals."
+            },
+            {
+              "name": "referringPractice",
+              "definition": "https://standards.digital.health.nz/fhir/central-region/SearchParam-nzcr-referral-referring-practice",
+              "type": "reference",
+              "documentation": "This SearchParameter enables query of referral flavour of ServiceRequest by referringPractice to support Subscribers receiving notifcations that include the referringPractice's Organization resource"
+            },
+            {
+              "name": "consultingPractitioner",
+              "definition": "https://standards.digital.health.nz/fhir/central-region/SearchParam-nzcr-referral-consulting-practitioner",
+              "type": "reference",
+              "documentation": "This SearchParameter enables query of referral flavour of ServiceRequest by consultingPractitioner to support Subscribers receiving notifcations that include the consultingPractitioner's Practitioner resource"
             }
           ],
           "operation": [

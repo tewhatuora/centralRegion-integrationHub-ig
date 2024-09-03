@@ -7,7 +7,7 @@ The API client is able to choose between two styles of notification:
 2. Bundle resource notifocations, where the notifcation call-back payload can be an arbitrary bundle of resources.
 
 
-### Single Resource Notification
+### Single Resource Notification (Patient)
 
 Sample `Subscription` for a single resource notification on changes to Patient with NHI of `ZKG3868`.  The matching callback will:
   * be an http `PUT` rest call to a url constructed from the given endpoint value plus the patient resource identifier, eg:  `http:localhost:3000/fhir/callback/Patient/1956`
@@ -37,7 +37,7 @@ The expected notification will have the form:
 }
 ```
 
-### Bundle Resource Notification
+### Bundle Resource Notification (Patient)
 
 Sample `Subscription` for a bundle resource notification on changes to Patient with NHI of `ZKG3868`.  The matching callback will:
   * be an http `POST` rest call to the given endpoint value:  `http:localhost:3000/fhir/callback`
@@ -92,6 +92,69 @@ The expected notification will have the form:
   } ]
 }
 ```
+
+### Bundle Resource Notification (Referral)
+
+Sample `Subscription` for a bundle resource notification on patient referrals to the `Mental Health and Additiction Serivces` clinics.  The matching callback will:
+  * be an http `POST` rest call to the given endpoint value:  `http:localhost:3000/fhir/callback`
+  * contain an arbitrary `Bundle` resource containing the various resources included in the `payload-search-criteria` parameter.
+
+  Details on all the various query parameters that can be included in the `payload-search-criteria` parameter are given in the relevant [FHIR Tutorial](https://github.com/hapifhir/fhir-tutorial/blob/master/Search_References_ChainHasIncludeRevinclude/lesson.md). In the following example we get the triggering ServiceRequest resource plus:
+  * Practitioner resources for the three Practitioners involved in the referral:
+    1. requestor
+    2. performer
+    3. consultingPractitioner
+  * Organization resource for the `referringPractice` in the referral.
+  * Patient resource for the referred patient.
+  * Flag resources with the referred Patient as `subject`.
+  * AllergyIntolerance resources with the referred Patient as `patient`.
+  * ClinicalImpression resources with the referred Patient as `subject`.
+```json
+{
+    "resourceType": "Subscription",
+    "id": "325",
+    "status": "active",
+    "criteria": "ServiceRequest?clinicType=MMA",
+    "channel": {
+        "type": "rest-hook",
+        "endpoint": "http://localhost:3000/fhir/callback",
+        "payload": "application/json"
+    },
+    "extension": [ {
+        "url": "http://hapifhir.io/fhir/StructureDefinition/subscription-payload-search-criteria",
+        "valueString": "ServiceRequest?_id=${matched_resource_id}&_include=ServiceRequest:*&_include=Patient:*&_revinclude:iterate=AllergyIntolerance:*&_revinclude:iterate=Flag:*&_revinclude:iterate=ClinicalImpression:*"
+      } ]
+}
+```
+
+The expected notification will have the form:
+```json
+{
+  "resourceType": "Bundle",
+  "id": "b1a0635f-3527-4d6c-b5c0-c727d2a2d2be",
+  "meta": {
+    "lastUpdated": "2024-06-07T12:55:31.933+12:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [ {
+    "relation": "self",
+    "url": "http://localhost:8080/fhir/Patient?_id=326&_include=*&_revinclude=Flag:*&_revinclude=AllergyIntolerance:*&_revinclude=ClinicalImpression:*&_revinclude=ServiceRequest:*"
+  } ],
+  "entry": [ {
+    "fullUrl": "http://localhost:8080/fhir/Patient/326",
+    "resource": {
+      "resourceType": "Patient",
+      "id": "326"
+
+      ...
+    } 
+  } ]
+}
+```
+
+
+
 
 ### Manual Subscription Triggering
 

@@ -16,6 +16,3 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/flag-categor
 
 # DHB codes are in draft
 Reference to draft CodeSystem https://standards.digital.health.nz/ns/dhb-code|1.0.0
-
-# clinicType is a perfectly usable identifier
-Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'

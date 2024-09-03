@@ -7,7 +7,7 @@ Usage: #definition
 * experimental = false
 
 * description = "This SearchParameter enables query of referral flavour of ServiceRequest by clinicType to support Subscribers receiving notifcations off a subset of referrals."
-* name = "clinicType"
+* name = "NZCentralRegionSearchParamClinicType"
 * code = #clinicType
 
 * base[+] = #ServiceRequest

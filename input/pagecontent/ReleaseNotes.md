@@ -1,4 +1,15 @@
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.10-rc1
+3-Sep-2024
+* Added two search parameters to [Referral](/StructureDefinition-NZCentralRegionReferral.html) allowing API clients to include more resources in the Subscription notification call-back bundle:
+  * [referringPractice](./SearchParameter-nzcr-referral-referring-practice.html)
+  * [consultingPractitioner](./SearchParameter-nzcr-referral-consulting-practitioner.html)
+  
+### v1.0.9-rc7
+2-Sep-2024
+* Added `P36` for `Protamine` to [Allergy Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
+* Added `FLOWSTUD` for `Flow Studies` to [Referral Reason Codes](./CodeSystem-nzcr-referral-reason-cs.html)
+
 ### v1.0.9-rc6
 21-Aug-2024
 * Added `WMHH` for `Whanganui Mental Health Hospital` to [Referral Site Codes](./CodeSystem-nzcr-referral-site-cs.html)
