@@ -8,7 +8,7 @@ Change history for this FHIR Implementation Guide is as follows:
 ### v1.0.9-rc7
 2-Sep-2024
 * Added `P36` for `Protamine` to [Allergy Alert Codes](./CodeSystem-nzcr-allergy-alert-code-h1-cs.html)
-* Added `FLOWSTUD` for `Flow Studies` to [Referral Reason Codes](./CodeSystem-nzcr-referral-reason-cs.html)
+* Added `FLOWSTUDS` for `Flow Studies` to [Referral Reason Codes](./CodeSystem-nzcr-referral-reason-cs.html)
 
 ### v1.0.9-rc6
 21-Aug-2024

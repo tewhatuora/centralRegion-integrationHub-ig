@@ -790,7 +790,7 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #BPPET        "Hypertension or PET Assessment"
 * #MOVEMENT     "Concern with fetal movements"
 * #LABOUR       "Term Labour Assessment"
-* #FLOWSTUD     "Flow Studies"
+* #FLOWSTUDS    "Flow Studies"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
