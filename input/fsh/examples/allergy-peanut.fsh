@@ -79,5 +79,3 @@ Usage:  #example
       * code = #PNH
       * system = $NZCentralRegionHospitalCS
       * display = "Palmerston North Hospital"
-
-* meta.extension[hl7v2Message].valueBase64Binary = "QmFzZTY0IEp1bms="

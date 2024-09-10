@@ -40,7 +40,3 @@ Description:    "Central Region Message Specification (1.14) - Practitioner from
 * name.family -> "ZLS-6.2"
 * name.given -> "ZLS-6.3"
 * name.prefix -> "ZLS-6.4"
-
-
-* meta.extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
-* meta.extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

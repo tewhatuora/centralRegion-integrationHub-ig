@@ -10,16 +10,6 @@ Description: "Base64 encoded string containing the original HL7 v2 message that 
 * ^context[+].type = #element
 * ^context[=].expression = "Patient.meta"
 * ^context[+].type = #element
-* ^context[=].expression = "Practitioner.meta"
-* ^context[+].type = #element
-* ^context[=].expression = "Organization.meta"
-* ^context[+].type = #element
-* ^context[=].expression = "Flag.meta"
-* ^context[+].type = #element
-* ^context[=].expression = "AllergyIntolerance.meta"
-* ^context[+].type = #element
-* ^context[=].expression = "ClinicalImpression.meta"
-* ^context[+].type = #element
 * ^context[=].expression = "ServiceRequest.meta"
 * value[x] only base64Binary
 

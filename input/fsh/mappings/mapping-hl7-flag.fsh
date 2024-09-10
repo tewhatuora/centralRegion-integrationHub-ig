@@ -105,6 +105,3 @@ ie: these categories denote 'free-text' alert codes"
 
 * extension[flag-alert].extension[comments].url -> "'comments'"
 * extension[flag-alert].extension[comments].valueString -> "ZAL-14"
-
-* meta.extension[hl7v2Message].url -> "'https://standards.digital.health.nz/ns/central-region/hl7-message'"
-* meta.extension[hl7v2Message].valueBase64Binary -> "Entire incoming HL7 message" "Base64 encoded"

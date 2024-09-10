@@ -69,4 +69,3 @@ Usage:  #example
   * extension[lastUpdatedBy].valueString = "theresby - Theresa Byrne MDHB"
   * extension[lastUpdatedDateTime].valueDateTime = "2022-03-01T16:53:26+12:00"
 
-* meta.extension[hl7v2Message].valueBase64Binary = "QmFzZTY0IEp1bms="

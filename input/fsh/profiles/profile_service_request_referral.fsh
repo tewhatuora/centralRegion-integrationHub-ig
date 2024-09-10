@@ -189,4 +189,4 @@ Description: "Referral flavour of ServiceRequest resource for Te Whatu Ora, Cent
     nzcr-referral named referral 1..1 MS 
 
 // We have a standard set of fields in all Resource.meta blocks
-* meta insert ResourceMetaFields
+* meta insert HeadlineResourceMetaFields

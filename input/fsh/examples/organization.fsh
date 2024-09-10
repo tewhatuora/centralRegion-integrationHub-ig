@@ -15,5 +15,3 @@ Usage:  #example
   * value = "76730"
 
 * name = "Wicksteed St Medical Centre"
-
-* meta.extension[hl7v2Message].valueBase64Binary = "QmFzZTY0IEp1bms="

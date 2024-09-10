@@ -20,5 +20,3 @@ Usage:  #example
   * family = "Binti Mazlan"
   * given[0] = "Nadhila"
   * prefix[0] = "Dr"
-
-* meta.extension[hl7v2Message].valueBase64Binary = "QmFzZTY0IEp1bms="

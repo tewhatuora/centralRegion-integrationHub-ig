@@ -70,5 +70,3 @@ Usage:  #example
       * system = $NZCentralRegionHospitalCS
       * display = "Palmerston North Hospital"
   * extension[comments].valueString = "Palliative Care, Contact Arohanui Hospice, Ph (06) 3566606"
-
-* meta.extension[hl7v2Message].valueBase64Binary = "QmFzZTY0IEp1bms="

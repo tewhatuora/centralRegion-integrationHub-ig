@@ -29,7 +29,7 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
 
 * name 1..* MS
   * use 1..1 MS
-    * ^short = "one of: official / nickname"
+    * ^short = "one of: usual / old"
   * text 1..1 MS
   * family 1..1 MS
   * given MS
@@ -337,4 +337,4 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 
 // We have a standard set of fields in all Resource.meta blocks
-* meta insert ResourceMetaFields
+* meta insert HeadlineResourceMetaFields

@@ -1,4 +1,8 @@
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.11-rc1
+10-Sep-2024
+* Removing `hl7v2-message` from `meta` on all resources except `Patient` and `ServiceRequest` - it was getting a bit repetitive.
+
 ### v1.0.10-rc1
 3-Sep-2024
 * Added two search parameters to [Referral](/StructureDefinition-NZCentralRegionReferral.html) allowing API clients to include more resources in the Subscription notification call-back bundle:

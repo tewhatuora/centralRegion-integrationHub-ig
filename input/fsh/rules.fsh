@@ -27,8 +27,18 @@ RuleSet: AdditionalBindingByExtension(purpose, canonical)
 
 
 
-// Every resource has a default set of meta fields
+// Some resources have a default set of meta fields
 RuleSet: ResourceMetaFields
+* extension contains nzcr-l4hmeta-timestamp                     named process-timestamp 0..1 MS
+* extension contains nzcr-l4hmeta-source-event-trigger          named source-event-trigger 0..1 MS
+* extension contains nzcr-l4hmeta-source-record-type            named source-record-type 0..1 MS
+* extension contains nzcr-l4hmeta-source-record-id              named source-record-id 0..1 MS
+* extension contains nzcr-l4hmeta-source-data-model-version     named source-data-mode-version 0..1 MS
+* extension contains nzcr-l4hmeta-process-client-id             named process-client-id 0..1 MS
+* extension contains nzcr-l4hmeta-template-version              named l4h-template-version 0..1 MS
+
+// Headline resources have all the meta fields
+RuleSet: HeadlineResourceMetaFields
 * extension contains nzcr-hl7v2-message                         named hl7v2Message 1..1 MS
 * extension contains nzcr-l4hmeta-timestamp                     named process-timestamp 0..1 MS
 * extension contains nzcr-l4hmeta-source-event-trigger          named source-event-trigger 0..1 MS
