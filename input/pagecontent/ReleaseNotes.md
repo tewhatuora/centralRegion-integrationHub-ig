@@ -2,7 +2,7 @@ Change history for this FHIR Implementation Guide is as follows:
 ### v1.0.11-rc1
 11-Sep-2024
 * Removing `hl7v2-message` from `meta` on all resources except `Patient` and `ServiceRequest` - it was getting a bit repetitive.
-* Field `Patient.contact.relationship` has `extension[webPASRelationship]` to hold original webPAS relationship code.
+* Field `Patient.contact.relationship` has [extension](./StructureDefinition-nzcr-extn-contact-relationship.html) field to hold original webPAS relationship code.
 
 ### v1.0.10-rc1
 3-Sep-2024
