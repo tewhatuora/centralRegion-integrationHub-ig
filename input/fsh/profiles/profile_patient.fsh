@@ -215,7 +215,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
   * id 0..0
 
 * contact 0..* MS // A contact party (e.g. guardian, partner, friend) for the patient
-  //* relationship from nzcr-combined-contact-relationship-vs
   * relationship 1..1 MS
     //* coding ^slicing.discriminator.type = #pattern
     //* coding ^slicing.discriminator.path = "system"
@@ -229,7 +228,9 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     //* coding[rawSource].system = $NZCentralRegionContactRelationshipCS  (exactly)
     //* coding[rawSource].code from nzcr-contact-relationship-vs (required)
 
-    * ^short = "One each for\r\n * http://terminology.hl7.org/CodeSystem/v2-0131 AND\r\n * https://standards.digital.health.nz/ns/central-region/contact-relationship"
+    // Sometimes there is no contact relationship field in NK1-3
+    * extension contains $NZCentralRegionRelationship named contact-relationship 0..1 MS
+
     * coding.code 1..1 MS      // from NK1-3.1
     * coding.system 1..1 MS    // based on which code from NK1-3.1
     * coding.display 1..1 MS   // from NK1-3.2 or by lookup from NK1-3.1 ??
@@ -238,7 +239,6 @@ Description: "Patient resource for Te Whatu Ora, Central Region"
     * coding.extension 0..0
     * coding.id 0..0
     * text 0..0    //  Code, Value and Display are all derived from Code value from PID-16.1
-    * extension 0..0
     * id 0..0
 
   * name 1..1 MS

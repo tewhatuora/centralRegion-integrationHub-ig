@@ -75,6 +75,10 @@ Usage:  #example
     //* code = #21
     //* display = "Dept of Correction (NZ)"
     //* system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
+  * relationship.extension[contact-relationship].valueCoding
+    * code = #21
+    * display = "Dept of Correction (NZ)"
+    * system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
 
   * name.family = "O'Leary"
   * name.given = "Karen"

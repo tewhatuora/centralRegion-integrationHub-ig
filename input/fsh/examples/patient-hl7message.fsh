@@ -114,9 +114,13 @@ Usage:  #example
     * display = "Emergency Contact" 
     * system = "http://terminology.hl7.org/CodeSystem/v2-0131"
   //* relationship.coding[rawSource]
-    //* code = #3
+    //* code = #03
     //* display = "Sister"
     //* system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
+  * relationship.extension[contact-relationship].valueCoding
+    * code = #03
+    * display = "Sister"
+    * system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
 
   * name.family = "Lake"
   * name.given = "Elaine"
@@ -132,9 +136,13 @@ Usage:  #example
     * display = "Emergency Contact" 
     * system = "http://terminology.hl7.org/CodeSystem/v2-0131"
   //* relationship.coding[rawSource]
-    //* code = #1
+    //* code = #01
     //* display = "Mother"
     //* system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
+  * relationship.extension[contact-relationship].valueCoding
+    * code = #01
+    * display = "Mother"
+    * system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
   * name
     * family = "Pond"
     * given = "Gwenyth"
@@ -154,6 +162,11 @@ Usage:  #example
     //* code = #18
     //* display = "De facto"
     //* system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
+  * relationship.extension[contact-relationship].valueCoding
+    * code = #18
+    * display = "De facto"
+    * system = "https://standards.digital.health.nz/ns/central-region/contact-relationship"
+
   * name
     * family = "Moneypenny"
     * given = "Louise"

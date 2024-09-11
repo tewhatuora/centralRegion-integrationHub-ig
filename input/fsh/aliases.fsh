@@ -77,6 +77,7 @@ Alias:   $NZCentralRegionReferral              = https://standards.digital.healt
 Alias:   $NZCentralRegionEthnicity             = https://standards.digital.health.nz/ns/central-region/nz-ethnicity
 Alias:   $NZCentralRegionResidency             = https://standards.digital.health.nz/ns/central-region/nz-residency
 Alias:   $NZCentralRegionReligion              = https://standards.digital.health.nz/ns/central-region/religion
+Alias:   $NZCentralRegionRelationship          = https://standards.digital.health.nz/fhir/central-region/extn-contact-relationship
 
 // Local URLs for locally defined CodeSystems
 Alias:   $NZCentralRegionHospitalCS             = https://standards.digital.health.nz/ns/central-region/hospital-code
@@ -163,7 +164,6 @@ Alias:   $NZCentralRegionCombinedEthnicityVS             = https://standards.dig
 Alias:   $NZCentralRegionCombinedResidencyVS             = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-nz-residency
 Alias:   $NZCentralRegionCombinedReligionVS              = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-religion
 Alias:   $NZCentralRegionCombinedLanguageVS              = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-language
-Alias:   $NZCentralRegionCombinedContactRelationshipVS   = https://standards.digital.health.nz/fhir/central-region/ValueSet-combined-contact-relationship
 
 // Local URIs for ConceptMaps
 Alias:   $NZCentralRegionLanguageConceptMap                     = https://standards.digital.health.nz/fhir/central-region/ConceptMap-language

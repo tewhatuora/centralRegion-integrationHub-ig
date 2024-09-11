@@ -93,6 +93,8 @@ parameters:
     - https://standards.digital.health.nz/ns/central-region/religion
     - https://standards.digital.health.nz/ns/central-region/nz-residency
     
+    - https://standards.digital.health.nz/fhir/central-region/extn-contact-relationship
+
     - http://ibm.com/fhir/cdm/StructureDefinition/process-client-id
     - http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version
     - http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger
@@ -102,7 +104,7 @@ parameters:
 
     - https://standards.digital.health.nz/ns/central-region/hl7v2-message
     - https://standards.digital.health.nz/ns/central-region/l4h-template-version
-    
+
     ## ValueSet URLs
     - https://standards.digital.health.nz/fhir/central-region/ValueSet-alert-type-allergy
     - https://standards.digital.health.nz/fhir/central-region/ValueSet-allergy-alert-code
