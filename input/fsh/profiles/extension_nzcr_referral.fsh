@@ -23,7 +23,8 @@ Description: "Complex extension recording extra data about referrals"
     informGP 0..1 MS and
     webPASPriority 0..1 MS and
     webPASStatus 0..1 MS and
-    dateReceived 0..1 MS
+    dateReceived 0..1 MS and
+    effectiveDateTime 0..1 MS
    
 * extension
   * ^definition = "Container holding the individual elements of the Referral extension."
@@ -205,9 +206,15 @@ Description: "Complex extension recording extra data about referrals"
   * id 0..0
   
 * extension[dateReceived]
-  * ^definition = "The date on which the referral was received by PAS system."
-  * ^short = "The date on which the referral was received by PAS system."
+  * ^definition = "The date on which the referral was entered into the PAS system; this may be hours after it was received by Mental Health staff"
+  * ^short = "The date on which the referral was entered into the PAS system."
   * value[x] only date
+  * id 0..0  
+
+* extension[effectiveDateTime]
+  * ^definition = "The date & time on which the referral was received by Mental Health staff, this may be hours before it was entered into the PAS system."
+  * ^short = "The date & time on which the referral was received by Mental Health staff"
+  * value[x] only dateTime
   * id 0..0  
 
 * id 0..0

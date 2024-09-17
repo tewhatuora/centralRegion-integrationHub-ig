@@ -93,6 +93,10 @@ Description:    "Central Region Message Specification (1.14) - Referral (Service
         * display -> "'Local Registry ID'"
     * display -> "PV1-9.1"
 
+  * extension[dateReceived].valueDate -> "ZXV-36" "**Note:** ISO-8601 Date has field separators"
+  * extension[effectiveDateTime].valueDateTime -> "RF1-7" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
+  * extension[lastUpdated].valueDateTime -> "ZXV-41" "**Note:** ISO-8601 datetime format includes dashes, colons, 'T' and '+12:00' timezone"
+
   * extension[preferredSite].valueCoding
     * code -> "ZXV-35.1"
     * system -> "'https://standards.digital.health.nz/ns/central-region/referral-site'"

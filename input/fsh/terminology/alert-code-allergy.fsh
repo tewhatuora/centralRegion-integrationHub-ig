@@ -325,6 +325,7 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #S20 "Sulfa drug"
 * #S21 "SSRIs"
 * #s21 "Sotalo"             // Yes with a lower-case  S - seen in PROD
+* #S22 "Serotonergic meds"
 * #T01 "Tazobactam"
 * #T02 "Temozolomide"
 * #T03 "Tenecteplase"
