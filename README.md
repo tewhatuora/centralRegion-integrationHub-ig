@@ -8,6 +8,48 @@ You can learn about Learn about FSH (FHIR Shorthand) at - [FSH School](https://f
 sushi - validates the FSH source and generates the matching FHIR ImplementationGuide
 ```
 
+# Environemnt setup
+
+The following dependancies are required to build and publish the IG package.
+
+- nodejs
+- nvm (node version manager)
+- sushi
+- jekyll
+- graphviz (dot)
+
+```bash
+sudo apt-get install nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm install 18
+nvm use 18
+npm install -g fsh-sushi
+sudo apt-get install jekyll
+sudo apt-get install graphviz
+```
+
+# Build and Publish IG
+
+Generate the FHIR from the FSH
+
+```bash
+sushi build
+```
+
+Download / Update the publisher (must run when running for the first time)
+
+```bash
+./_updatePublisher.sh
+```
+
+Running the publisher
+
+```bash
+./_genonce.sh
+```
+
+This will generate the static HTML assets and IG zip package in ./output/
+
 # API Provider - HL7 v2.4 Listener
 The Central Region Integration Platform provides a FHIR facade for the following HL7 v2.4 messages:
 * ADT A28 - Create New Patient
