@@ -791,6 +791,7 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #MOVEMENT     "Concern with fetal movements"
 * #LABOUR       "Term Labour Assessment"
 * #FLOWSTUDS    "Flow Studies"
+* #CNSAS        "CNS Assessment"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
