@@ -139,6 +139,7 @@ Description:  "H2 (medical condition) alert codes ex. WebPAS in NZ Central Regio
 * #O02 "On long-term home O2"
 * #R01 "Respiratory Mx plan"
 * #T01 "Transplant patient"
+* #P01 "Pancytopenia"
 
 
 

@@ -792,6 +792,18 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #LABOUR       "Term Labour Assessment"
 * #FLOWSTUDS    "Flow Studies"
 * #CNSAS        "CNS Assessment"
+* #PH5          "PH5 Communicable Disease"
+* #ADVIC        "Advice"
+* #INFLIXMAB    "Infliximab"
+* #ProstateC    "Prostate CA Follow Up"
+* #POSTNATAL    "Post Natal"
+* #KidneyCA     "Kidney CA Follow up"
+* #FRAGFR       "Fragility Fracture"
+* #Macroscop    "Macroscopic Haematuria"
+* #PDIAL        "Pre-Dialysis Education"
+* #Other        "Other"
+* #CMTYMW       "Community Midwife"
+* #OBS          "Obstetric review and ANC overflow"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs

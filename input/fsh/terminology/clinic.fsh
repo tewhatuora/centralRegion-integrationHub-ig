@@ -88,6 +88,8 @@ Description:  "Clinic Type codes; ex. WebPAS in NZ Central Region."
 * #MWA "MC Womens Health Assessment"
 * #MWH "MC Whanau Care Service"
 * #MWU "MC Womens Ultrasound"
+* #WRN "WH Renal Medicine"
+* #YUR "WR Urology"
 
 
 

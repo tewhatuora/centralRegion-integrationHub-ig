@@ -408,6 +408,7 @@ Description:  "Category H3 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #S02 "Soy"
 * #T01 "Tegaderm"
 * #W01 "Wheat/gluten"
+* #C53 "Cephal delabelling"
 
 
 CodeSystem:  NZCentralRegionAllergyAlertCodeA3A4CodeSystem

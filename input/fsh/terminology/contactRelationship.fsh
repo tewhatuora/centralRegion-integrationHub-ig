@@ -42,6 +42,8 @@ This codeset is to be used alongside the HL7 defined general relationship codese
 * #31	"Solicitor/Lawyer"
 * #32	"Ex-partner"
 * #33	"EPOA"   // Enduring Power of Attorney
+* #34   "Sibling"
+* #36   "Relative"
 
 
 ValueSet: NZCentralRegionContactRelationshipValueSet
