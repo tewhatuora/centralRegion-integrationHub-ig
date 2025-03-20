@@ -46,6 +46,7 @@ Description:  "Mental Health Review Location identification codes ex. WebPAS in 
 * #M36   "PN Police"
 * #M37   "HOME"
 * #M38   "OTHER"
+* #M39   "AVL"
 * #WLB   "Lambie Building"
 * #WOD   "Outpatient Dept"
 * #WOT   "OT Dept"
