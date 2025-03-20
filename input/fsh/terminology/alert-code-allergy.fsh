@@ -371,7 +371,8 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #Z04 "Zinc"
 * #Z05 "Zuclopenthixol"
 * #Z5  "Zuclopenthixol"     // Someone entered it as `Z5` instead of `Z05`
-
+* #C53 "Cephal delabelling"
+* #A41 "Antibiotic delabel"
 
 
 CodeSystem:  NZCentralRegionAllergyAlertCodeH3CodeSystem
@@ -408,7 +409,6 @@ Description:  "Category H3 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #S02 "Soy"
 * #T01 "Tegaderm"
 * #W01 "Wheat/gluten"
-* #C53 "Cephal delabelling"
 
 
 CodeSystem:  NZCentralRegionAllergyAlertCodeA3A4CodeSystem
