@@ -373,6 +373,7 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #Z5  "Zuclopenthixol"     // Someone entered it as `Z5` instead of `Z05`
 * #C53 "Cephal delabelling"
 * #A41 "Antibiotic delabel"
+* #M22 "Macrolide antibiotic"
 
 
 CodeSystem:  NZCentralRegionAllergyAlertCodeH3CodeSystem
