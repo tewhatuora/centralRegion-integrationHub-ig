@@ -804,6 +804,7 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #Other        "Other"
 * #CMTYMW       "Community Midwife"
 * #OBS          "Obstetric review and ANC overflow"
+* #PH6          "School Based Health Service"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs

@@ -43,6 +43,7 @@ This codeset is to be used alongside the HL7 defined general relationship codese
 * #32	"Ex-partner"
 * #33	"EPOA"   // Enduring Power of Attorney
 * #34   "Sibling"
+* #35   "Child"
 * #36   "Relative"
 
 
