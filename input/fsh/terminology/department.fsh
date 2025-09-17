@@ -185,6 +185,7 @@ Description:  "Department codes; ex. WebPAS in NZ Central Region."
 * #MNN "MC Neonatal Unit"
 * #WDN "WH District Nursing"
 * #MCC "MC Child Health Comm"
+* #MDN "MC District Nurses"
 
 
 ValueSet: NZCentralRegionDepartmentValueSet

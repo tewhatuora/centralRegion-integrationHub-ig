@@ -374,6 +374,12 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #C53 "Cephal delabelling"
 * #A41 "Antibiotic delabel"
 * #M22 "Macrolide antibiotic"
+* #A42 "Articaine"
+* #D20 "Dulaglutide"
+* #M23 "Meningococcal vacc"
+* #S23 "Sotalol"
+* #G12 "GTN Spray"
+* #C54 "COVID-19 vaccine"
 
 
 CodeSystem:  NZCentralRegionAllergyAlertCodeH3CodeSystem

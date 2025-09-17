@@ -94,6 +94,7 @@ Description:  "MentalHealthLegalStatus codes ex. WebPAS in NZ Central Region."
 * #R87   "MHA S30 (do not use)"
 * #R88   "MHA S29 CTO 12-Month"
 * #R89   "MHA S30 CTO 12-Month"
+* #R72  "SA(CAT) Act - S39"
 
 
 ValueSet: NZCentralRegionMentalHealthLegalStatusValueSet
