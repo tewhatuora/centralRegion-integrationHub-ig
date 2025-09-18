@@ -90,6 +90,7 @@ Description:  "Clinic Type codes; ex. WebPAS in NZ Central Region."
 * #MWU "MC Womens Ultrasound"
 * #WRN "WH Renal Medicine"
 * #YUR "WR Urology"
+* #MDN "MC District Nurses"
 
 
 
