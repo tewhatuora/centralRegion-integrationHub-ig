@@ -806,6 +806,8 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #OBS          "Obstetric review and ANC overflow"
 * #PH6          "School Based Health Service"
 * #Hand         "Hand / Wrist"
+* #LARM         "Left Arm"
+* #FLC          "Unknown Code"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
