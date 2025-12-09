@@ -808,6 +808,8 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #Hand         "Hand / Wrist"
 * #LARM         "Left Arm"
 * #FLC          "Unknown Code"
+* #FRENASSES    "Frenulum Assessment"
+* #COMMDIS      "Communicable Disease"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
