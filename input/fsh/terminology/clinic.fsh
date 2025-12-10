@@ -91,6 +91,7 @@ Description:  "Clinic Type codes; ex. WebPAS in NZ Central Region."
 * #WRN "WH Renal Medicine"
 * #YUR "WR Urology"
 * #MDN "MC District Nurses"
+* #MMS "MC Ortho MSK ACPP"
 
 
 
