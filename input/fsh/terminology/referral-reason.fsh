@@ -810,6 +810,7 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #FLC          "Unknown Code"
 * #FRENASSES    "Frenulum Assessment"
 * #COMMDIS      "Communicable Disease"
+* #MET          "Metastatic"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
