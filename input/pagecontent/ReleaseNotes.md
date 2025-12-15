@@ -1,4 +1,8 @@
 Change history for this FHIR Implementation Guide is as follows:
+### v1.0.12-rc3
+15-Dec-2025
+* Added a number of additional CodeSystem values that were encountered in Production
+
 ### v1.0.12-rc1
 17-Sep-2024
 * Added extension field `effectiveDateTime` to [Referral](./StructureDefinition-NZCentralRegionReferral.html)
