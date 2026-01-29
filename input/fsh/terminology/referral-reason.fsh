@@ -811,6 +811,8 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #FRENASSES    "Frenulum Assessment"
 * #COMMDIS      "Communicable Disease"
 * #MET          "Metastatic"
+* #MALIGNAN     "Malignant"
+* #NONMALIG     "Non-Malignant"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
