@@ -813,6 +813,8 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #MET          "Metastatic"
 * #MALIGNAN     "Malignant"
 * #NONMALIG     "Non-Malignant"
+* #BRETHCONC    "Breathing Concern"
+* #JADELLE      "JADELLE"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
