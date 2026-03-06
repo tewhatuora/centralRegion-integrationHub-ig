@@ -815,6 +815,8 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #NONMALIG     "Non-Malignant"
 * #BRETHCONC    "Breathing Concern"
 * #JADELLE      "JADELLE"
+* #SORETH       "Sore Throat"
+* #SORITCH      "Sores/Itchy Skin or Head"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
