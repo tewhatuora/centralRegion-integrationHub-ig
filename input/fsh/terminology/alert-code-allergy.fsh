@@ -380,6 +380,8 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #S23 "Sotalol"
 * #G12 "GTN Spray"
 * #C54 "COVID-19 vaccine"
+* #C55 "Calcitriol"
+
 
 
 CodeSystem:  NZCentralRegionAllergyAlertCodeH3CodeSystem
