@@ -381,6 +381,9 @@ Description:  "Category H1 Allergy alert codes ex. WebPAS in NZ Central Region."
 * #G12 "GTN Spray"
 * #C54 "COVID-19 vaccine"
 * #C55 "Calcitriol"
+* #I17 "Infliximab"
+* #C56 "Combined oral contra"
+* #F13 "Folic acid"
 
 
 

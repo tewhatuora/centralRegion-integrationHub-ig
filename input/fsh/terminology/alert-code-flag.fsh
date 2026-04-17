@@ -131,6 +131,7 @@ Description:  "H2 (medical condition) alert codes ex. WebPAS in NZ Central Regio
 * #B02 "Brugada syndrome"
 * #D01 "Diabetic Mx plan"
 * #D02 "Difficult intub/airw"
+* #D03 "Difficult IV access"
 * #I01 "Immunosuppressed"
 * #K01 "Known hospice/pall"
 * #L01 "Long QT syndrome"
