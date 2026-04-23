@@ -22,6 +22,8 @@ Description:  "Referral Priority codes; ex. WebPAS in NZ Central Region."
 * #TOS	"Transfr othr service"
 * #BEN  "RO6 Benign"
 * #PDL  "RO5 Planned Delay"
+* #ADV  "RO7 Advice"
+
 
 // Values defined by RHIP-ReferralStatus
 * #AR   "Active review"
@@ -80,6 +82,7 @@ Description: "Concept map mapping referral priority codes ex. WebPAS to FHIR Ser
 * insert cmapEntry(NPR,  "Not prioritised",         routine, "Routine")
 * insert cmapEntry(BEN,  "RO6 Benign",              routine, "Routine")
 * insert cmapEntry(PDL,  "RO5 Planned Delay",       routine, "Routine")
+* insert cmapEntry(ADV,  "RO7 Advice",              routine, "Routine")
 
 // values from RHIP-ReferralStatus
 * insert cmapEntry(AR,   "Active review",           routine, "Routine")
