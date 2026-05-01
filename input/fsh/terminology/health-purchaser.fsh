@@ -23,6 +23,7 @@ Description:  "Health Purchaser codes; ex. WebPAS in NZ Central Region."
 * #35W "WDHB funded"
 * #35Y "WRDHB funded"
 * #A0  "ACC direct purchase"
+* #33M "MDHB MoH screening"
 
 ValueSet: NZCentralRegionHealthPurchaserValueSet
 Id: nzcr-health-purchaser-vs
