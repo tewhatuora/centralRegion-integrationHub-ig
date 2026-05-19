@@ -817,6 +817,7 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #JADELLE      "JADELLE"
 * #SORETH       "Sore Throat"
 * #SORITCH      "Sores/Itchy Skin or Head"
+* #FITKIT       "FIT Kit"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
