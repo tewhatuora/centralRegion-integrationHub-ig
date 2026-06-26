@@ -818,6 +818,10 @@ Description:  "Referral Reason codes; ex. WebPAS in NZ Central Region."
 * #SORETH       "Sore Throat"
 * #SORITCH      "Sores/Itchy Skin or Head"
 * #FITKIT       "FIT Kit"
+* #HAND         "Hand"
+* #PHYSREHAB    "Physio Rehab"
+* #PHYSTKJR     "Physio TKJR"
+* #PHYSCOMM     "Physio Comm"
 
 ValueSet: NZCentralRegionReferralReasonValueSet
 Id: nzcr-referral-reason-vs
